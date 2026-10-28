@@ -2,42 +2,80 @@
   {
     "path": "Datasets/GossipCop/GossipCop_0.05.bin",
     "bytes": 174733682,
-    "sha256": "9b486ff167fd2b3a26e3e607ae9e91b15da6d826f9065a958ac39b8bc3902bd8"
+    "sha256": "9b486ff167fd2b3a26e3e607ae9e91b15da6d826f9065a958ac39b8bc3902bd8",
+    "kind": "official archive member"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_adj2_0.npz",
+    "bytes": 96209143,
+    "sha256": "2b13c6a0bdf7d0dad9cf0700be8ba2629fb1317d1ca2408e57c173b3efa5c3f7",
+    "kind": "derived cache from fixed official inputs"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_degree_0.npy",
+    "bytes": 461792,
+    "sha256": "41e401162c923650eeb825d582f96ac17498a6fed782c829efedbc95ac693ed9",
+    "kind": "derived cache from fixed official inputs"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_feat_sum_0.npy",
+    "bytes": 354558080,
+    "sha256": "4fa52be37a5154019722918a7706d18407a0db5afeb470242ab4557d3d72c2de",
+    "kind": "derived cache from fixed official inputs"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_sequence_0.npy",
+    "bytes": 354558080,
+    "sha256": "caf9f30772e2977f20ef3dcb4cb127d7cdf73e3986f7cc5599f5753cb3aa1b89",
+    "kind": "derived cache from fixed official inputs"
   },
   {
     "path": "Datasets/GossipCop/data_split/target_assign_matrix_0.npz",
     "bytes": 50859,
-    "sha256": "7348373fdbf66a5807628c1214b633785cc31d9084d8d910e76319fc37128de8"
+    "sha256": "7348373fdbf66a5807628c1214b633785cc31d9084d8d910e76319fc37128de8",
+    "kind": "official archive member"
   },
   {
     "path": "Datasets/GossipCop/data_split/test_idx_surro_0.npy",
     "bytes": 26644,
-    "sha256": "21c249817b52902eb20d8d785700c01d60ef8150cda96f2f7422322367a4e151"
+    "sha256": "21c249817b52902eb20d8d785700c01d60ef8150cda96f2f7422322367a4e151",
+    "kind": "official archive member"
   },
   {
     "path": "Datasets/GossipCop/data_split/test_target_mask_0.npy",
     "bytes": 3764,
-    "sha256": "0e6ee63fc3a0d9b9e5450eac0029885dc7d9f36a06fc82ffc8c0d199550fdec4"
+    "sha256": "0e6ee63fc3a0d9b9e5450eac0029885dc7d9f36a06fc82ffc8c0d199550fdec4",
+    "kind": "official archive member"
   },
   {
     "path": "Datasets/GossipCop/data_split/train_idx_surro_0.npy",
     "bytes": 26508,
-    "sha256": "80c2f401ff51809f7af492d14d5739ce76cc59d594e73102a4e8389a0dd3b1ec"
+    "sha256": "80c2f401ff51809f7af492d14d5739ce76cc59d594e73102a4e8389a0dd3b1ec",
+    "kind": "official archive member"
   },
   {
     "path": "Datasets/GossipCop/data_split/train_target_mask_0.npy",
     "bytes": 3876,
-    "sha256": "9dcd786d7ef5457e42d81a140b1bc42f7918698256ca784b5e59fec638732853"
+    "sha256": "9dcd786d7ef5457e42d81a140b1bc42f7918698256ca784b5e59fec638732853",
+    "kind": "official archive member"
   },
   {
     "path": "Datasets/GossipCop/data_split/valid_idx_surro_0.npy",
     "bytes": 13184,
-    "sha256": "37d27843b1d2726ec66ee01e56c3bdb550bcfd6ef6867efdc929658c570206a2"
+    "sha256": "37d27843b1d2726ec66ee01e56c3bdb550bcfd6ef6867efdc929658c570206a2",
+    "kind": "official archive member"
   },
   {
     "path": "Datasets/GossipCop/data_split/valid_target_mask_0.npy",
     "bytes": 2496,
-    "sha256": "bacd467efc1c10b80d8b9728d9cc98b9b2079e675f670a7c6960c9b64300fb9b"
+    "sha256": "bacd467efc1c10b80d8b9728d9cc98b9b2079e675f670a7c6960c9b64300fb9b",
+    "kind": "official archive member"
+  },
+  {
+    "path": "Datasets/GossipCop/h_GCN.npy",
+    "bytes": 4221056,
+    "sha256": "e761da352675bfb8b43e98b974e73b8564e1e9fe9ba4a344eceb4927637ba20b",
+    "kind": "derived cache from fixed official inputs"
   },
   {
     "path": "models/pretrained_models/surrogate_models/GCN-gossipcop_0.05-0.pickle",

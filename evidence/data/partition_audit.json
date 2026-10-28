@@ -1,6 +1,9 @@
 {
   "nodes": 16488,
-  "edges": 7746604,
+  "stored_directed_arcs": 7746604,
+  "self_loops": 16488,
+  "symmetric": true,
+  "undirected_nonself_edges": 3865058,
   "feature_shape": [
     16488,
     768

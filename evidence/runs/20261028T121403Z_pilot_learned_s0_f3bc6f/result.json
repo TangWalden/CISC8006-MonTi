@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "phase": "pilot",
+  "result": {
+    "test_skipped": 1.0
+  },
+  "clean": {
+    "accuracy": 0.6826923076923077,
+    "misclf_rate": 0.3173076923076923
+  },
+  "best_epoch": 2,
+  "train_and_validation_seconds": 4.2003607749938965,
+  "completed_epochs": 2,
+  "train_groups": 16,
+  "valid_groups": 8,
+  "peak_reserved_bytes": 3357540352,
+  "checkpoint": "runs/20261028T121403Z_pilot_learned_s0_f3bc6f/20261028T121403Z_pilot_learned_s0_f3bc6f/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+  "checkpoint_sha256": "17be68d43e541d7d4345ec4a2024a4ac050799578f551089ef8c8b043e43cd26",
+  "elapsed_seconds": 189.1823511900002,
+  "gpu_wall_hours": 0.05255065310833339
+}

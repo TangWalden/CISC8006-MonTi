@@ -19,6 +19,8 @@ def main():
         raise RuntimeError('Commit tracked changes before launching frozen baseline.')
     previous_seconds = sum(json.loads(p.read_text()).get('elapsed_seconds', 0) for p in (ROOT / 'evidence/runs').glob('*/result.json'))
     remaining = protocol['gpu_hour_limit'] * 3600 - previous_seconds
+    if remaining <= 0:
+        raise RuntimeError('Registered GPU wall-time allowance is exhausted.')
     consumed = 0.0
     (ROOT / 'runs').mkdir(exist_ok=True)
     events = ROOT / 'evidence/queue_events.jsonl'

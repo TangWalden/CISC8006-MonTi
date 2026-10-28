@@ -21,6 +21,8 @@ def main():
     for run in formal:
         key = (run['registration']['mode'], run['registration']['seed'])
         cells.setdefault(key, []).append(run)
+    failed_attempts = [dict(evidence=x['evidence'], status=x['status']) for x in formal if x['status']['status'] == 'failed']
+    cells = {key: [run for run in attempts if run['status']['status'] == 'completed'] for key, attempts in cells.items()}
     seeds = [0, 1, 2]
     if not all(len(cells.get((mode, seed), [])) == 1 and cells[(mode, seed)][0]['status']['status'] == 'completed'
                for mode in ('learned', 'random') for seed in seeds):
@@ -37,6 +39,7 @@ def main():
     low, high = mean-half, mean+half
     conclusion = 'supported' if low > 0 else ('not supported' if high <= 0 else 'inconclusive')
     result = dict(rows=rows, paired_mean_difference_pp=mean, paired_sample_std_pp=std,
+                  failed_attempts=failed_attempts,
                   learned_mean_mr_percent=float(np.mean([r['learned_mr_percent'] for r in rows])),
                   learned_sample_std_percent=float(np.std([r['learned_mr_percent'] for r in rows], ddof=1)),
                   random_mean_mr_percent=float(np.mean([r['random_mr_percent'] for r in rows])),

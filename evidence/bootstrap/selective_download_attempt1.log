@@ -1,0 +1,29 @@
+CONNECT best_models
+MEMBER configs/GCN-GAGA-gossipcop_0.05-best_config.json 737 322
+CHUNKS 1 / 1
+VERIFIED best_models/configs/GCN-GAGA-gossipcop_0.05-best_config.json
+CONNECT Datasets
+MEMBER GossipCop/data_split/target_assign_matrix_0.npz 50859 50048
+CHUNKS 1 / 1
+VERIFIED Datasets/GossipCop/data_split/target_assign_matrix_0.npz
+MEMBER GossipCop/data_split/test_idx_surro_0.npy 26644 16721
+CHUNKS 1 / 1
+VERIFIED Datasets/GossipCop/data_split/test_idx_surro_0.npy
+MEMBER GossipCop/data_split/test_target_mask_0.npy 3764 1386
+CHUNKS 1 / 1
+VERIFIED Datasets/GossipCop/data_split/test_target_mask_0.npy
+MEMBER GossipCop/data_split/train_idx_surro_0.npy 26508 16650
+CHUNKS 1 / 1
+VERIFIED Datasets/GossipCop/data_split/train_idx_surro_0.npy
+MEMBER GossipCop/data_split/train_target_mask_0.npy 3876 1424
+CHUNKS 1 / 1
+VERIFIED Datasets/GossipCop/data_split/train_target_mask_0.npy
+MEMBER GossipCop/data_split/valid_idx_surro_0.npy 13184 8275
+CHUNKS 1 / 1
+VERIFIED Datasets/GossipCop/data_split/valid_idx_surro_0.npy
+MEMBER GossipCop/data_split/valid_target_mask_0.npy 2496 949
+CHUNKS 1 / 1
+VERIFIED Datasets/GossipCop/data_split/valid_target_mask_0.npy
+MEMBER GossipCop/GossipCop_0.05.bin 174733682 56811538
+CHUNKS 8 / 109
+CHUNKS 16 / 109

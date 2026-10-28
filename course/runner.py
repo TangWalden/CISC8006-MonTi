@@ -12,6 +12,8 @@ import uuid
 
 import numpy as np
 import torch
+import dgl
+import scipy
 
 from modules.data_handler import DataHandler
 import modules.experiment_handler as upstream
@@ -139,7 +141,9 @@ def main():
                       config_sha256=sha256(evidence / 'config.json'), mode=args.mode,
                       candidate_sampling='uniform without replacement, resampled every forward in train and evaluation' if args.mode == 'random' else 'upstream learned selector',
                       seed=args.seed, phase=args.phase, gpu=args.gpu,
-                      torch=torch.__version__, gpu_name=torch.cuda.get_device_name(args.gpu),
+                      torch=torch.__version__, dgl=dgl.__version__, numpy=np.__version__, scipy=scipy.__version__,
+                      gpu_name=torch.cuda.get_device_name(args.gpu),
+                      gpu_snapshot=subprocess.check_output(['nvidia-smi', '--query-gpu=index,memory.total,memory.free,utilization.gpu', '--format=csv,noheader'], text=True).strip(),
                       cost_unit='one GPU wall-clock hour; monetary price unavailable')
     write_json(evidence / 'registered.json', registered)
     started = time.monotonic()
@@ -151,6 +155,9 @@ def main():
             if not (ROOT / 'course/frozen_protocol.json').exists():
                 raise RuntimeError('Formal reproduction requires frozen_protocol.json.')
             frozen = json.loads((ROOT / 'course/frozen_protocol.json').read_text())
+            runtime = json.loads((ROOT / 'environment/runtime.json').read_text())
+            if any(registered[name] != runtime[name] for name in ('torch', 'dgl', 'numpy', 'scipy')):
+                raise RuntimeError('Runtime versions differ from the locked environment.')
             if sha256(args.config) != frozen['source_config_sha256'] or args.seed not in frozen['seeds']:
                 raise RuntimeError('Configuration or seed differs from frozen protocol.')
             for item in frozen['inputs'] + frozen['scientific_code'] + frozen['caches']:

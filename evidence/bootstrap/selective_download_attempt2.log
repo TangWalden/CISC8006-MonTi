@@ -1,0 +1,44 @@
+CONNECT best_models
+Traceback (most recent call last):
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=1A5d3l4-4_N9jUzok9J6TFd_DHALDBDgV (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "selective_assets.py", line 58, in <module>
+    session, url, total = connect(file_id)
+  File "selective_assets.py", line 27, in connect
+    response = session.get(url, stream=True, timeout=(90, 90))
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/requests/sessions.py", line 600, in get
+    return self.request("GET", url, **kwargs)
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/requests/adapters.py", line 559, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?id=1A5d3l4-4_N9jUzok9J6TFd_DHALDBDgV (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response')))

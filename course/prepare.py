@@ -13,9 +13,15 @@ from utils.utils import load_data
 def main():
     data = load_data('gossipcop_0.05', split=0)
     graph = data['graph']
+    adjacency = graph.adj_external(scipy_fmt='csr')
+    self_loops = int(adjacency.diagonal().sum())
+    symmetric = (adjacency != adjacency.T).nnz == 0
     if not torch.isfinite(graph.ndata['x']).all():
         raise RuntimeError('Nonfinite input features')
-    report = dict(nodes=graph.num_nodes(), edges=graph.num_edges(), feature_shape=list(graph.ndata['x'].shape),
+    report = dict(nodes=graph.num_nodes(), stored_directed_arcs=graph.num_edges(), self_loops=self_loops,
+                  symmetric=bool(symmetric),
+                  undirected_nonself_edges=(graph.num_edges()-self_loops)//2 if symmetric else None,
+                  feature_shape=list(graph.ndata['x'].shape),
                   label_counts=torch.bincount(graph.ndata['y'].long()).tolist(),
                   target_assignment_shape=list(data['target_assignment'].shape), partitions={})
     for split in ('train', 'valid', 'test'):
@@ -38,7 +44,8 @@ def main():
     files = []
     for path in sorted((ROOT / 'Datasets/GossipCop').rglob('*')):
         if path.is_file():
-            files.append(dict(path=str(path.relative_to(ROOT)), bytes=path.stat().st_size, sha256=sha256(path)))
+            kind = 'derived cache from fixed official inputs' if path.name.startswith('h_') or '_gaga_' in path.name else 'official archive member'
+            files.append(dict(path=str(path.relative_to(ROOT)), bytes=path.stat().st_size, sha256=sha256(path), kind=kind))
     for relative in ['models/pretrained_models/surrogate_models/GCN-gossipcop_0.05-0.pickle',
                      'models/pretrained_models/victim_models/GAGA-gossipcop_0.05-0.pickle']:
         path = ROOT / relative
