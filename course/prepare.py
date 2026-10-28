@@ -27,7 +27,7 @@ def main():
             raise RuntimeError('Duplicate partition node indices')
         if not np.isin(selected_nodes, nodes).all():
             raise RuntimeError('Target group crosses its registered node partition')
-        if not torch.all(graph.ndata['y'][torch.tensor(selected_nodes)] == 1):
+        if not torch.all(graph.ndata['y'][torch.tensor(selected_nodes, dtype=torch.long)] == 1):
             raise RuntimeError('Nonfraud node in target set')
         report['partitions'][split] = dict(nodes=len(nodes), groups=len(groups), target_occurrences=int(assignment.sum()))
     for left, right in [('train', 'valid'), ('train', 'test'), ('valid', 'test')]:

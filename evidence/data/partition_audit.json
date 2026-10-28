@@ -1,0 +1,33 @@
+{
+  "nodes": 16488,
+  "edges": 7746604,
+  "feature_shape": [
+    16488,
+    768
+  ],
+  "label_counts": [
+    12590,
+    3898
+  ],
+  "target_assignment_shape": [
+    2438,
+    16488
+  ],
+  "partitions": {
+    "train": {
+      "nodes": 6595,
+      "groups": 937,
+      "target_occurrences": 11211
+    },
+    "valid": {
+      "nodes": 3264,
+      "groups": 592,
+      "target_occurrences": 4963
+    },
+    "test": {
+      "nodes": 6629,
+      "groups": 909,
+      "target_occurrences": 10515
+    }
+  }
+}

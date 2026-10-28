@@ -1,0 +1,98 @@
+CISC8006 Course Project and Grading: Student Guide
+Short student version · 2026-09-02
+No midterm or final examination: the course project is 100% of the grade.
+
+This guide summarizes the main grading rules. Exact dates, team size, resource limits, report length, submission method, late policy, and presentation schedule will be announced in UMMoodle. Follow the final UMMoodle announcement if it differs from this guide.
+
+At a glance
+The project is completed in a team, but 15 points are individual.
+Your goal is to test one clear claim, not to reproduce an entire paper.
+A larger or more expensive project does not automatically receive a higher grade.
+Coding agents such as Claude Code or Codex must be used and documented.
+Project path: choose 1 claim → reproduce it → propose 3 improvements → pilot 2 → fully test 1 → freeze the evidence → present and defend it.
+
+What your team must do
+1. Choose one paper and one claim
+Choose a machine-learning or deep-learning paper with a result that your team can test. The target may be one table row, figure trend, method comparison, or important component.
+
+The instructor will approve one reproduction level:
+
+Exact: rerun the original setup.
+Scaled-faithful: use less data or compute but keep the same research question and fair comparison.
+Component: rebuild and test one important part of the method.
+All three levels can receive full marks. Running the official repository without checking, rebuilding, or testing an important part is not enough.
+
+2. Reproduce the claim
+Freeze the claim, data split, data preparation, baseline, metric, units, compute limit, and decision rule before the final runs. Record all important differences from the paper.
+
+Test the evaluation code on a small known or synthetic example. Use at least three random seeds for comparisons affected by randomness, unless the instructor approves another uncertainty check. Compare your result directly with the paper and report the claim as:
+
+supported;
+not supported; or
+inconclusive—the evidence is not clear enough.
+3. Improve upon the paper
+Use the reproduction result to find a real weakness or failure. Your team must:
+
+propose at least three improvement ideas;
+pilot at least two approved ideas; and
+fully evaluate at least one idea against the frozen reproduction baseline.
+Use fair controls and ablations—tests that remove or change one part to show what it does. Report uncertainty, limitations, failed runs, and negative results. An improvement does not need to win: a careful and honestly explained null or negative result can receive full credit.
+
+How to use coding agents
+Record at least one important coding-agent interaction in each phase:
+
+paper understanding, code review, or reproduction planning;
+implementation, testing, debugging, or experiment runs; and
+improvement design, result analysis, or critical review.
+Keep the record in AI_USAGE.md. For each important interaction, note the task, tool, decision, human checks, and an evidence link. Include at least one case where your team checks an agent suggestion and then accepts, changes, or rejects it for a clear reason.
+
+You are responsible for every submitted line of code, command, citation, result, and claim. You must be able to explain the work during the defense. Never send passwords, personal data, confidential material, or restricted data to an agent.
+
+What the repository must contain
+Keep one version-controlled repository with meaningful commit history. It must include:
+
+clear setup instructions, a locked environment, and one command that quickly checks whether the system works;
+data/code/model sources, versions, licences, preparation steps, and checksums;
+versioned code, configurations, exact run commands, and tests;
+an experiment record linking every reported result to its commit, configuration, seed, runtime, cost, and saved output;
+failed and negative experiment records;
+AI_USAGE.md and CONTRIBUTIONS.md; and
+the final report, slides, demonstration instructions, and fixed Week 12 Git tag and commit hash.
+Large data and model files should normally stay outside Git. Do not commit credentials or overwrite old runs to make the record look cleaner.
+
+Grading: 100 points
+Component	Points	Type
+Scope and understanding of the claim	5	Team
+Reproduction protocol and evaluation design	10	Team
+Pilot implementation and audit readiness	10	Team
+Final reproduction and difference analysis	20	Team
+Improvement experiments and ablations	20	Team
+Repository, report, and agent-use record	15	Team
+Team presentation and demonstration	5	Team
+Individual technical defense	10	Individual
+Individual contribution	5	Individual
+Total	100	85 team + 15 individual
+Key milestones
+When	Required progress
+Weeks 1–2	Form the team, shortlist three papers, check feasibility, create the repository, and start AI_USAGE.md.
+Week 3	Freeze the paper, reproduction level, one claim, fallback, inherited dependencies, and compute limit.
+Weeks 4–5	Submit the claim map, reproduction protocol, agent plan, evaluation check, and one-command system check.
+Weeks 6–7	Lock the environment and data path, produce a small baseline, and pass the live code/configuration review. One approved rescope is allowed through the end of Week 7 without penalty.
+Weeks 8–9	Submit the final reproduction, paper comparison, difference analysis, uncertainty, and three improvement ideas.
+Weeks 10–11	Pilot two improvements, fully test one, run controls and ablations, and complete the peer evidence check.
+Week 12	Freeze the complete repository, experiment record, results, report, slides, agent record, and contribution record. All teams share this deadline.
+Weeks 13–15	Give the team presentation and demonstration. Every member must speak and complete an individual defense.
+Weeks 3, 5, and 6 allow one corrective revision within seven days of instructor feedback. Weeks 9, 11, and 12 are final evidence deadlines for their graded components.
+
+Important grading rules
+Every result must link to the code, configuration, registered run, and saved output that produced it.
+Improvement marks require a fair and traceable reproduction baseline.
+Preserve failed and negative runs; do not report only favourable results.
+Missing the required three-phase agent use without an approved alternative gives 0/3 for the agent-record item.
+Missing the individual defense without an approved accommodation gives 0/10 for the defense.
+Do not use a live agent to answer assessed defense questions unless the instructor explicitly allows a demonstration.
+After the common Week 12 freeze, do not add experiments or change scientific results. A short answers addendum is due within 72 hours after the presentation, but it cannot replace frozen evidence.
+Fabricated evidence, plagiarism, hidden test-set tuning, concealed agent use, and prohibited data use are handled under UM academic-integrity procedures.
+For unusual cases and full operational rules, consult the detailed course-project specification and the final UMMoodle announcements.
+
+Last modified: Wednesday, 2 September 2026, 6:10 PM

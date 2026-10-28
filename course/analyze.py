@@ -37,6 +37,10 @@ def main():
     low, high = mean-half, mean+half
     conclusion = 'supported' if low > 0 else ('not supported' if high <= 0 else 'inconclusive')
     result = dict(rows=rows, paired_mean_difference_pp=mean, paired_sample_std_pp=std,
+                  learned_mean_mr_percent=float(np.mean([r['learned_mr_percent'] for r in rows])),
+                  learned_sample_std_percent=float(np.std([r['learned_mr_percent'] for r in rows], ddof=1)),
+                  random_mean_mr_percent=float(np.mean([r['random_mr_percent'] for r in rows])),
+                  random_sample_std_percent=float(np.std([r['random_mr_percent'] for r in rows], ddof=1)),
                   paired_95ci_pp=[low, high], conclusion=conclusion,
                   scope='fixed split 0 and fixed official surrogate/victim, corrected selector mapping',
                   paper_table5=dict(learned=43.70, random=39.13, difference_pp=4.57),

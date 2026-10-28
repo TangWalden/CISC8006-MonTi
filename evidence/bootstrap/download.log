@@ -1,0 +1,9 @@
+START best_models 1793187570.845295
+Traceback (most recent call last):
+  File "download_assets.py", line 24, in <module>
+    with zipfile.ZipFile(path) as archive:
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/zipfile.py", line 1271, in __init__
+    self._RealGetContents()
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/zipfile.py", line 1338, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file

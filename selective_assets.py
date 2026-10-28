@@ -7,6 +7,7 @@ import json
 import pathlib
 import struct
 import time
+import threading
 import zipfile
 import zlib
 
@@ -15,11 +16,17 @@ import requests
 ROOT = pathlib.Path(__file__).resolve().parent
 CHUNK = 512 * 1024
 manifest = []
+thread_state = threading.local()
 confirm = importlib.import_module('gdown.download').get_url_from_gdrive_confirmation
 
 
-def connect(file_id):
+def connect(name, file_id):
     session = requests.Session()
+    session.trust_env = False
+    routing = ROOT / 'downloads/drive-download-urls.json'
+    if routing.exists():
+        cached = json.loads(routing.read_text(encoding='utf-8-sig'))[name]
+        return session, cached['url'], cached['bytes']
     url = 'https://drive.google.com/uc?id=' + file_id
     for attempt in range(4):
         response = session.get(url, stream=True, timeout=(90, 90))
@@ -53,8 +60,9 @@ def fetch(session, url, start, stop):
 
 for name, file_id in [('best_models', '1A5d3l4-4_N9jUzok9J6TFd_DHALDBDgV'), ('Datasets', '1sLcalw491WFjZ3rzgD32DldsSU6MNjHx')]:
     print('CONNECT', name, flush=True)
-    session, url, total = connect(file_id)
-    tail = fetch(session, url, total-65536, total-1)
+    session, url, total = connect(name, file_id)
+    tail_path = ROOT / 'downloads' / (name + '_tail.bin')
+    tail = tail_path.read_bytes() if tail_path.exists() else fetch(session, url, total-65536, total-1)
     archive = zipfile.ZipFile(io.BytesIO(tail))
     offset_adjustment = total-len(tail)
     entries = archive.infolist()
@@ -70,11 +78,6 @@ for name, file_id in [('best_models', '1A5d3l4-4_N9jUzok9J6TFd_DHALDBDgV'), ('Da
         raise RuntimeError('Archive layout differs: matched %s of %s' % ([x.filename for x in selected], wanted))
     for entry in selected:
         offset = entry.header_offset + offset_adjustment
-        header = fetch(session, url, offset, offset+1023)
-        fields = struct.unpack_from('<4s5H3I2H', header)
-        if fields[0] != b'PK\x03\x04' or fields[2] & 8:
-            raise RuntimeError('Unexpected local ZIP header')
-        data_start = offset + 30 + fields[9] + fields[10]
         relative = entry.filename
         if relative.startswith(name + '/'):
             relative = relative[len(name)+1:]
@@ -83,6 +86,20 @@ for name, file_id in [('best_models', '1A5d3l4-4_N9jUzok9J6TFd_DHALDBDgV'), ('Da
             raise RuntimeError('Unsafe member path')
         output.parent.mkdir(parents=True, exist_ok=True)
         print('MEMBER', entry.filename, entry.file_size, entry.compress_size, flush=True)
+        if output.exists() and output.stat().st_size == entry.file_size:
+            existing = output.read_bytes()
+            if zlib.crc32(existing) & 0xffffffff == entry.CRC:
+                manifest.append(dict(archive=name, google_drive_id=file_id, archive_bytes=total, member=entry.filename,
+                                     bytes=len(existing), crc32=entry.CRC, sha256=hashlib.sha256(existing).hexdigest(),
+                                     local_path=str(output.relative_to(ROOT)), method='cached verified exact HTTP ranges + ZIP CRC32'))
+                (ROOT / 'evidence/bootstrap/selected_assets.json').write_text(json.dumps(manifest, indent=2))
+                print('VERIFIED_CACHED', str(output.relative_to(ROOT)), flush=True)
+                continue
+        header = fetch(session, url, offset, offset+1023)
+        fields = struct.unpack_from('<4s5H3I2H', header)
+        if fields[0] != b'PK\x03\x04' or fields[2] & 8:
+            raise RuntimeError('Unexpected local ZIP header')
+        data_start = offset + 30 + fields[9] + fields[10]
         pieces = list(range(0, entry.compress_size, CHUNK))
         piece_dir = ROOT / 'downloads' / 'range_chunks' / hashlib.sha256((name + '/' + relative).encode()).hexdigest()[:16]
         piece_dir.mkdir(parents=True, exist_ok=True)
@@ -91,13 +108,16 @@ for name, file_id in [('best_models', '1A5d3l4-4_N9jUzok9J6TFd_DHALDBDgV'), ('Da
             size = min(CHUNK, entry.compress_size-position)
             piece = piece_dir / str(position)
             if not piece.exists() or piece.stat().st_size != size:
-                worker = requests.Session()
-                worker.cookies.update(session.cookies)
+                if not hasattr(thread_state, 'session'):
+                    thread_state.session = requests.Session()
+                    thread_state.session.trust_env = False
+                    thread_state.session.cookies.update(session.cookies)
+                worker = thread_state.session
                 data = fetch(worker, url, data_start+position, data_start+position+size-1)
                 piece.write_bytes(data)
             return position
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=16) as pool:
             for completed, _ in enumerate(pool.map(get_piece, pieces), 1):
                 if completed % 8 == 0 or completed == len(pieces):
                     print('CHUNKS', completed, '/', len(pieces), flush=True)

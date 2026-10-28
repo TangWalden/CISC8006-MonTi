@@ -1,0 +1,128 @@
+[
+  {
+    "name": "checkpoints/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 0,
+    "crc32": 0
+  },
+  {
+    "name": "checkpoints/GCN-CAREGNN-gossipcop_0.05-best_model.pickle",
+    "size": 7765425,
+    "compressed": 7505763,
+    "offset": 42,
+    "crc32": 353194044
+  },
+  {
+    "name": "checkpoints/GCN-CAREGNN-yelpchi_rtr-best_model.pickle",
+    "size": 7008511,
+    "compressed": 6872693,
+    "offset": 7505891,
+    "crc32": 711177235
+  },
+  {
+    "name": "checkpoints/GCN-GAGA-gossipcop_0.05-best_model.pickle",
+    "size": 7765119,
+    "compressed": 7466159,
+    "offset": 14378667,
+    "crc32": 3103861045
+  },
+  {
+    "name": "checkpoints/GCN-GAGA-yelpchi_rtr-best_model.pickle",
+    "size": 7008205,
+    "compressed": 6838110,
+    "offset": 21844909,
+    "crc32": 2931351327
+  },
+  {
+    "name": "checkpoints/GCN-GCN-ogbproducts-best_model.pickle",
+    "size": 7077481,
+    "compressed": 6729838,
+    "offset": 28683099,
+    "crc32": 1288059543
+  },
+  {
+    "name": "checkpoints/GCN-GCN-pubmed-best_model.pickle",
+    "size": 2732715,
+    "compressed": 2513800,
+    "offset": 35413016,
+    "crc32": 312786330
+  },
+  {
+    "name": "checkpoints/GCN-PCGNN-gossipcop_0.05-best_model.pickle",
+    "size": 7765221,
+    "compressed": 7415881,
+    "offset": 37926890,
+    "crc32": 3903766718
+  },
+  {
+    "name": "checkpoints/GCN-PCGNN-yelpchi_rtr-best_model.pickle",
+    "size": 7008307,
+    "compressed": 6825899,
+    "offset": 45342855,
+    "crc32": 2536981333
+  },
+  {
+    "name": "configs/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 52168835,
+    "crc32": 0
+  },
+  {
+    "name": "configs/GCN-CAREGNN-gossipcop_0.05-best_config.json",
+    "size": 740,
+    "compressed": 326,
+    "offset": 52168873,
+    "crc32": 1307043747
+  },
+  {
+    "name": "configs/GCN-CAREGNN-yelpchi_rtr-best_config.json",
+    "size": 741,
+    "compressed": 328,
+    "offset": 52169280,
+    "crc32": 3431153974
+  },
+  {
+    "name": "configs/GCN-GAGA-gossipcop_0.05-best_config.json",
+    "size": 737,
+    "compressed": 322,
+    "offset": 52169686,
+    "crc32": 1930134733
+  },
+  {
+    "name": "configs/GCN-GAGA-yelpchi_rtr-best_config.json",
+    "size": 741,
+    "compressed": 324,
+    "offset": 52170086,
+    "crc32": 2572297923
+  },
+  {
+    "name": "configs/GCN-GCN-ogbproducts-best_config.json",
+    "size": 729,
+    "compressed": 314,
+    "offset": 52170485,
+    "crc32": 3705404435
+  },
+  {
+    "name": "configs/GCN-GCN-pubmed-best_config.json",
+    "size": 723,
+    "compressed": 309,
+    "offset": 52170873,
+    "crc32": 1602684780
+  },
+  {
+    "name": "configs/GCN-PCGNN-gossipcop_0.05-best_config.json",
+    "size": 738,
+    "compressed": 323,
+    "offset": 52171251,
+    "crc32": 870197656
+  },
+  {
+    "name": "configs/GCN-PCGNN-yelpchi_rtr-best_config.json",
+    "size": 734,
+    "compressed": 321,
+    "offset": 52171653,
+    "crc32": 167355520
+  }
+]

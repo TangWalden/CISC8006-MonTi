@@ -1,0 +1,66 @@
+[
+  {
+    "path": "Datasets/GossipCop/GossipCop_0.05.bin",
+    "bytes": 174733682,
+    "sha256": "9b486ff167fd2b3a26e3e607ae9e91b15da6d826f9065a958ac39b8bc3902bd8"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/target_assign_matrix_0.npz",
+    "bytes": 50859,
+    "sha256": "7348373fdbf66a5807628c1214b633785cc31d9084d8d910e76319fc37128de8"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/test_idx_surro_0.npy",
+    "bytes": 26644,
+    "sha256": "21c249817b52902eb20d8d785700c01d60ef8150cda96f2f7422322367a4e151"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/test_target_mask_0.npy",
+    "bytes": 3764,
+    "sha256": "0e6ee63fc3a0d9b9e5450eac0029885dc7d9f36a06fc82ffc8c0d199550fdec4"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/train_idx_surro_0.npy",
+    "bytes": 26508,
+    "sha256": "80c2f401ff51809f7af492d14d5739ce76cc59d594e73102a4e8389a0dd3b1ec"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/train_target_mask_0.npy",
+    "bytes": 3876,
+    "sha256": "9dcd786d7ef5457e42d81a140b1bc42f7918698256ca784b5e59fec638732853"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/valid_idx_surro_0.npy",
+    "bytes": 13184,
+    "sha256": "37d27843b1d2726ec66ee01e56c3bdb550bcfd6ef6867efdc929658c570206a2"
+  },
+  {
+    "path": "Datasets/GossipCop/data_split/valid_target_mask_0.npy",
+    "bytes": 2496,
+    "sha256": "bacd467efc1c10b80d8b9728d9cc98b9b2079e675f670a7c6960c9b64300fb9b"
+  },
+  {
+    "path": "models/pretrained_models/surrogate_models/GCN-gossipcop_0.05-0.pickle",
+    "bytes": 216679,
+    "sha256": "cbd561057e37d2a90b4797b16b8c0fff1229cf47145c4dfb860fc12b8bd8fe5e",
+    "verified_against": "official Git LFS pointer"
+  },
+  {
+    "path": "models/pretrained_models/victim_models/GAGA-gossipcop_0.05-0.pickle",
+    "bytes": 618699,
+    "sha256": "729b8624baac7429bd60e7bc2d3741a9d9ee7c4c7df921d618b53ceb0435c383",
+    "verified_against": "official Git LFS pointer"
+  },
+  {
+    "path": "models/pretrained_models/configs/GCN-gossipcop_0.05-0.json",
+    "sha256": "d354afe731161acfaaf82f65a30f7add90cfad5cc27b4691fff9385d70461e20"
+  },
+  {
+    "path": "models/pretrained_models/configs/GAGA-gossipcop_0.05-0.json",
+    "sha256": "6e0282a0e03344fea6b77200baf84fb31bd23220f264bd9aeecbf3c072cb37b7"
+  },
+  {
+    "path": "best_models/configs/GCN-GAGA-gossipcop_0.05-best_config.json",
+    "sha256": "e27fd6959f35ab1786f35e4e70c89bec5156da1a6577f4481287310ebf552c2a"
+  }
+]

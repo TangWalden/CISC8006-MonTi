@@ -1,0 +1,247 @@
+[
+  {
+    "name": "Benchmark/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 0,
+    "crc32": 0
+  },
+  {
+    "name": "Benchmark/ogbproducts/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 40,
+    "crc32": 0
+  },
+  {
+    "name": "Benchmark/ogbproducts/data_split/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 92,
+    "crc32": 0
+  },
+  {
+    "name": "Benchmark/ogbproducts/data_split/test_idx_surro_public.npy",
+    "size": 16920,
+    "compressed": 5499,
+    "offset": 155,
+    "crc32": 1911695504
+  },
+  {
+    "name": "Benchmark/ogbproducts/data_split/train_idx_surro_public.npy",
+    "size": 53848,
+    "compressed": 17431,
+    "offset": 5742,
+    "crc32": 1874313135
+  },
+  {
+    "name": "Benchmark/ogbproducts/data_split/valid_idx_surro_public.npy",
+    "size": 13560,
+    "compressed": 4435,
+    "offset": 23262,
+    "crc32": 3715486383
+  },
+  {
+    "name": "Benchmark/ogbproducts/h_GCN.npy",
+    "size": 2686592,
+    "compressed": 2491960,
+    "offset": 27786,
+    "crc32": 966275239
+  },
+  {
+    "name": "Benchmark/ogbproducts/ogbproducts.bin",
+    "size": 4908482,
+    "compressed": 4024336,
+    "offset": 2519807,
+    "crc32": 1823264549
+  },
+  {
+    "name": "Benchmark/pubmed/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 6544210,
+    "crc32": 0
+  },
+  {
+    "name": "Benchmark/pubmed/data_split/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 6544257,
+    "crc32": 0
+  },
+  {
+    "name": "Benchmark/pubmed/data_split/test_idx_surro_public.npy",
+    "size": 8128,
+    "compressed": 1636,
+    "offset": 6544315,
+    "crc32": 2959813061
+  },
+  {
+    "name": "Benchmark/pubmed/data_split/train_idx_surro_public.npy",
+    "size": 608,
+    "compressed": 191,
+    "offset": 6546034,
+    "crc32": 206460963
+  },
+  {
+    "name": "Benchmark/pubmed/data_split/valid_idx_surro_public.npy",
+    "size": 4128,
+    "compressed": 883,
+    "offset": 6546309,
+    "crc32": 2500903346
+  },
+  {
+    "name": "Benchmark/pubmed/h_GCN.npy",
+    "size": 5047680,
+    "compressed": 4600303,
+    "offset": 6547276,
+    "crc32": 2486144742
+  },
+  {
+    "name": "Benchmark/pubmed/pubmed.bin",
+    "size": 41015130,
+    "compressed": 5523155,
+    "offset": 11147635,
+    "crc32": 3967042505
+  },
+  {
+    "name": "GossipCop/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 16670847,
+    "crc32": 0
+  },
+  {
+    "name": "GossipCop/data_split/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 16670887,
+    "crc32": 0
+  },
+  {
+    "name": "GossipCop/data_split/target_assign_matrix_0.npz",
+    "size": 50859,
+    "compressed": 50048,
+    "offset": 16670938,
+    "crc32": 2801241696
+  },
+  {
+    "name": "GossipCop/data_split/test_idx_surro_0.npy",
+    "size": 26644,
+    "compressed": 16721,
+    "offset": 16721063,
+    "crc32": 1298039189
+  },
+  {
+    "name": "GossipCop/data_split/test_target_mask_0.npy",
+    "size": 3764,
+    "compressed": 1386,
+    "offset": 16737855,
+    "crc32": 1541159880
+  },
+  {
+    "name": "GossipCop/data_split/train_idx_surro_0.npy",
+    "size": 26508,
+    "compressed": 16650,
+    "offset": 16739314,
+    "crc32": 1820982316
+  },
+  {
+    "name": "GossipCop/data_split/train_target_mask_0.npy",
+    "size": 3876,
+    "compressed": 1424,
+    "offset": 16756036,
+    "crc32": 850613451
+  },
+  {
+    "name": "GossipCop/data_split/valid_idx_surro_0.npy",
+    "size": 13184,
+    "compressed": 8275,
+    "offset": 16757534,
+    "crc32": 1150564655
+  },
+  {
+    "name": "GossipCop/data_split/valid_target_mask_0.npy",
+    "size": 2496,
+    "compressed": 949,
+    "offset": 16765881,
+    "crc32": 1903099765
+  },
+  {
+    "name": "GossipCop/GossipCop_0.05.bin",
+    "size": 174733682,
+    "compressed": 56811538,
+    "offset": 16766904,
+    "crc32": 1672911094
+  },
+  {
+    "name": "YelpChi_RTR/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 73578500,
+    "crc32": 0
+  },
+  {
+    "name": "YelpChi_RTR/data_split/",
+    "size": 0,
+    "compressed": 0,
+    "offset": 73578542,
+    "crc32": 0
+  },
+  {
+    "name": "YelpChi_RTR/data_split/target_assign_matrix_0.npz",
+    "size": 18819,
+    "compressed": 14568,
+    "offset": 73578595,
+    "crc32": 2923989406
+  },
+  {
+    "name": "YelpChi_RTR/data_split/test_idx_surro_0.npy",
+    "size": 147088,
+    "compressed": 51828,
+    "offset": 73593242,
+    "crc32": 4218977323
+  },
+  {
+    "name": "YelpChi_RTR/data_split/test_target_mask_0.npy",
+    "size": 2320,
+    "compressed": 897,
+    "offset": 73645143,
+    "crc32": 1756120697
+  },
+  {
+    "name": "YelpChi_RTR/data_split/train_idx_surro_0.npy",
+    "size": 147008,
+    "compressed": 51790,
+    "offset": 73646115,
+    "crc32": 3384029761
+  },
+  {
+    "name": "YelpChi_RTR/data_split/train_target_mask_0.npy",
+    "size": 2352,
+    "compressed": 905,
+    "offset": 73697979,
+    "crc32": 659926698
+  },
+  {
+    "name": "YelpChi_RTR/data_split/valid_idx_surro_0.npy",
+    "size": 73488,
+    "compressed": 26000,
+    "offset": 73698960,
+    "crc32": 347272133
+  },
+  {
+    "name": "YelpChi_RTR/data_split/valid_target_mask_0.npy",
+    "size": 1452,
+    "compressed": 602,
+    "offset": 73725034,
+    "crc32": 3333593838
+  },
+  {
+    "name": "YelpChi_RTR/YelpChi.bin",
+    "size": 130450160,
+    "compressed": 10496536,
+    "offset": 73725712,
+    "crc32": 162095135
+  }
+]

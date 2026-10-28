@@ -1,0 +1,101 @@
+[
+  {
+    "archive": "best_models",
+    "google_drive_id": "1A5d3l4-4_N9jUzok9J6TFd_DHALDBDgV",
+    "archive_bytes": 52174348,
+    "member": "configs/GCN-GAGA-gossipcop_0.05-best_config.json",
+    "bytes": 737,
+    "crc32": 1930134733,
+    "sha256": "e27fd6959f35ab1786f35e4e70c89bec5156da1a6577f4481287310ebf552c2a",
+    "local_path": "best_models/configs/GCN-GAGA-gossipcop_0.05-best_config.json",
+    "method": "cached verified exact HTTP ranges + ZIP CRC32"
+  },
+  {
+    "archive": "Datasets",
+    "google_drive_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+    "archive_bytes": 84226498,
+    "member": "GossipCop/data_split/target_assign_matrix_0.npz",
+    "bytes": 50859,
+    "crc32": 2801241696,
+    "sha256": "7348373fdbf66a5807628c1214b633785cc31d9084d8d910e76319fc37128de8",
+    "local_path": "Datasets/GossipCop/data_split/target_assign_matrix_0.npz",
+    "method": "cached verified exact HTTP ranges + ZIP CRC32"
+  },
+  {
+    "archive": "Datasets",
+    "google_drive_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+    "archive_bytes": 84226498,
+    "member": "GossipCop/data_split/test_idx_surro_0.npy",
+    "bytes": 26644,
+    "crc32": 1298039189,
+    "sha256": "21c249817b52902eb20d8d785700c01d60ef8150cda96f2f7422322367a4e151",
+    "local_path": "Datasets/GossipCop/data_split/test_idx_surro_0.npy",
+    "method": "cached verified exact HTTP ranges + ZIP CRC32"
+  },
+  {
+    "archive": "Datasets",
+    "google_drive_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+    "archive_bytes": 84226498,
+    "member": "GossipCop/data_split/test_target_mask_0.npy",
+    "bytes": 3764,
+    "crc32": 1541159880,
+    "sha256": "0e6ee63fc3a0d9b9e5450eac0029885dc7d9f36a06fc82ffc8c0d199550fdec4",
+    "local_path": "Datasets/GossipCop/data_split/test_target_mask_0.npy",
+    "method": "cached verified exact HTTP ranges + ZIP CRC32"
+  },
+  {
+    "archive": "Datasets",
+    "google_drive_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+    "archive_bytes": 84226498,
+    "member": "GossipCop/data_split/train_idx_surro_0.npy",
+    "bytes": 26508,
+    "crc32": 1820982316,
+    "sha256": "80c2f401ff51809f7af492d14d5739ce76cc59d594e73102a4e8389a0dd3b1ec",
+    "local_path": "Datasets/GossipCop/data_split/train_idx_surro_0.npy",
+    "method": "cached verified exact HTTP ranges + ZIP CRC32"
+  },
+  {
+    "archive": "Datasets",
+    "google_drive_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+    "archive_bytes": 84226498,
+    "member": "GossipCop/data_split/train_target_mask_0.npy",
+    "bytes": 3876,
+    "crc32": 850613451,
+    "sha256": "9dcd786d7ef5457e42d81a140b1bc42f7918698256ca784b5e59fec638732853",
+    "local_path": "Datasets/GossipCop/data_split/train_target_mask_0.npy",
+    "method": "cached verified exact HTTP ranges + ZIP CRC32"
+  },
+  {
+    "archive": "Datasets",
+    "google_drive_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+    "archive_bytes": 84226498,
+    "member": "GossipCop/data_split/valid_idx_surro_0.npy",
+    "bytes": 13184,
+    "crc32": 1150564655,
+    "sha256": "37d27843b1d2726ec66ee01e56c3bdb550bcfd6ef6867efdc929658c570206a2",
+    "local_path": "Datasets/GossipCop/data_split/valid_idx_surro_0.npy",
+    "method": "cached verified exact HTTP ranges + ZIP CRC32"
+  },
+  {
+    "archive": "Datasets",
+    "google_drive_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+    "archive_bytes": 84226498,
+    "member": "GossipCop/data_split/valid_target_mask_0.npy",
+    "bytes": 2496,
+    "crc32": 1903099765,
+    "sha256": "bacd467efc1c10b80d8b9728d9cc98b9b2079e675f670a7c6960c9b64300fb9b",
+    "local_path": "Datasets/GossipCop/data_split/valid_target_mask_0.npy",
+    "method": "cached verified exact HTTP ranges + ZIP CRC32"
+  },
+  {
+    "archive": "Datasets",
+    "google_drive_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+    "archive_bytes": 84226498,
+    "member": "GossipCop/GossipCop_0.05.bin",
+    "bytes": 174733682,
+    "crc32": 1672911094,
+    "sha256": "9b486ff167fd2b3a26e3e607ae9e91b15da6d826f9065a958ac39b8bc3902bd8",
+    "local_path": "Datasets/GossipCop/GossipCop_0.05.bin",
+    "method": "verified exact HTTP ranges + ZIP CRC32"
+  }
+]

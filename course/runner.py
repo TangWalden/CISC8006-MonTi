@@ -153,6 +153,9 @@ def main():
             frozen = json.loads((ROOT / 'course/frozen_protocol.json').read_text())
             if sha256(args.config) != frozen['source_config_sha256'] or args.seed not in frozen['seeds']:
                 raise RuntimeError('Configuration or seed differs from frozen protocol.')
+            for item in frozen['inputs'] + frozen['scientific_code'] + frozen['caches']:
+                if sha256(ROOT / item['path']) != item['sha256']:
+                    raise RuntimeError('Frozen file changed: ' + item['path'])
         set_seed(args.seed)
         torch.cuda.set_device(args.gpu)
         torch.cuda.reset_peak_memory_stats(args.gpu)

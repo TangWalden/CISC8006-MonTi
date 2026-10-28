@@ -1,0 +1,4 @@
+FILE_BYTES 10300982
+checkpoints/ flags 0 compression 0 compressed 0 complete True
+checkpoints/GCN-CAREGNN-gossipcop_0.05-best_model.pickle flags 0 compression 8 compressed 7505763 complete True
+checkpoints/GCN-CAREGNN-yelpchi_rtr-best_model.pickle flags 0 compression 8 compressed 6872693 complete False
