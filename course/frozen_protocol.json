@@ -1,0 +1,253 @@
+{
+  "frozen_utc": "2026-10-28T12:25:57.345347+00:00",
+  "claim": "learned candidate selector produces higher size-weighted target MR than the defined random selector",
+  "level": "Component; course approval not yet recorded",
+  "configuration": "course/configs/baseline.json",
+  "source_config_sha256": "1b980a74211e264c81d2fd97a9f53d3017cd1aa79d66297d6f1f78bc8c76d3ab",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "modes": [
+    "learned",
+    "random"
+  ],
+  "gpu_hour_limit": 48,
+  "training": "official maximum epochs, validation cadence and early stopping; no test-set selection",
+  "random_control": "uniform without replacement every forward in training and evaluation, same exploration pool and K",
+  "metric": "size-weighted target-occurrence MR percent",
+  "decision": "paired seed t(2) 95% CI: lower>0 supported; upper<=0 not supported; otherwise inconclusive",
+  "inputs": [
+    {
+      "path": "Datasets/GossipCop/GossipCop_0.05.bin",
+      "bytes": 174733682,
+      "sha256": "9b486ff167fd2b3a26e3e607ae9e91b15da6d826f9065a958ac39b8bc3902bd8",
+      "kind": "official archive member"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_adj2_0.npz",
+      "bytes": 96209143,
+      "sha256": "2b13c6a0bdf7d0dad9cf0700be8ba2629fb1317d1ca2408e57c173b3efa5c3f7",
+      "kind": "derived cache from fixed official inputs"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_degree_0.npy",
+      "bytes": 461792,
+      "sha256": "41e401162c923650eeb825d582f96ac17498a6fed782c829efedbc95ac693ed9",
+      "kind": "derived cache from fixed official inputs"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_feat_sum_0.npy",
+      "bytes": 354558080,
+      "sha256": "4fa52be37a5154019722918a7706d18407a0db5afeb470242ab4557d3d72c2de",
+      "kind": "derived cache from fixed official inputs"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_sequence_0.npy",
+      "bytes": 354558080,
+      "sha256": "caf9f30772e2977f20ef3dcb4cb127d7cdf73e3986f7cc5599f5753cb3aa1b89",
+      "kind": "derived cache from fixed official inputs"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/target_assign_matrix_0.npz",
+      "bytes": 50859,
+      "sha256": "7348373fdbf66a5807628c1214b633785cc31d9084d8d910e76319fc37128de8",
+      "kind": "official archive member"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/test_idx_surro_0.npy",
+      "bytes": 26644,
+      "sha256": "21c249817b52902eb20d8d785700c01d60ef8150cda96f2f7422322367a4e151",
+      "kind": "official archive member"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/test_target_mask_0.npy",
+      "bytes": 3764,
+      "sha256": "0e6ee63fc3a0d9b9e5450eac0029885dc7d9f36a06fc82ffc8c0d199550fdec4",
+      "kind": "official archive member"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/train_idx_surro_0.npy",
+      "bytes": 26508,
+      "sha256": "80c2f401ff51809f7af492d14d5739ce76cc59d594e73102a4e8389a0dd3b1ec",
+      "kind": "official archive member"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/train_target_mask_0.npy",
+      "bytes": 3876,
+      "sha256": "9dcd786d7ef5457e42d81a140b1bc42f7918698256ca784b5e59fec638732853",
+      "kind": "official archive member"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/valid_idx_surro_0.npy",
+      "bytes": 13184,
+      "sha256": "37d27843b1d2726ec66ee01e56c3bdb550bcfd6ef6867efdc929658c570206a2",
+      "kind": "official archive member"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/valid_target_mask_0.npy",
+      "bytes": 2496,
+      "sha256": "bacd467efc1c10b80d8b9728d9cc98b9b2079e675f670a7c6960c9b64300fb9b",
+      "kind": "official archive member"
+    },
+    {
+      "path": "Datasets/GossipCop/h_GCN.npy",
+      "bytes": 4221056,
+      "sha256": "e761da352675bfb8b43e98b974e73b8564e1e9fe9ba4a344eceb4927637ba20b",
+      "kind": "derived cache from fixed official inputs"
+    },
+    {
+      "path": "models/pretrained_models/surrogate_models/GCN-gossipcop_0.05-0.pickle",
+      "bytes": 216679,
+      "sha256": "cbd561057e37d2a90b4797b16b8c0fff1229cf47145c4dfb860fc12b8bd8fe5e",
+      "verified_against": "official Git LFS pointer"
+    },
+    {
+      "path": "models/pretrained_models/victim_models/GAGA-gossipcop_0.05-0.pickle",
+      "bytes": 618699,
+      "sha256": "729b8624baac7429bd60e7bc2d3741a9d9ee7c4c7df921d618b53ceb0435c383",
+      "verified_against": "official Git LFS pointer"
+    },
+    {
+      "path": "models/pretrained_models/configs/GCN-gossipcop_0.05-0.json",
+      "sha256": "d354afe731161acfaaf82f65a30f7add90cfad5cc27b4691fff9385d70461e20"
+    },
+    {
+      "path": "models/pretrained_models/configs/GAGA-gossipcop_0.05-0.json",
+      "sha256": "6e0282a0e03344fea6b77200baf84fb31bd23220f264bd9aeecbf3c072cb37b7"
+    },
+    {
+      "path": "best_models/configs/GCN-GAGA-gossipcop_0.05-best_config.json",
+      "sha256": "e27fd6959f35ab1786f35e4e70c89bec5156da1a6577f4481287310ebf552c2a"
+    }
+  ],
+  "scientific_code": [
+    {
+      "path": "models/victim_model.py",
+      "sha256": "4648133355dfb3b99a7d1b5852dcb4d84c3977d462edff701287f1694718743a"
+    },
+    {
+      "path": "models/attack_model.py",
+      "sha256": "5bf043f87c4cac4d98d28d87b88751ed62592742a33d349034fbbf570b6325d0"
+    },
+    {
+      "path": "modules/result_manager.py",
+      "sha256": "b79ed72b1f9f5edea952f9bd7bf77f735519dc2cd4604f6abe8be40099a3d06c"
+    },
+    {
+      "path": "modules/data_handler.py",
+      "sha256": "f7eabf047244659e5234cadc11c8a3ed8c4b7769116126fd79299f0aa1fa66aa"
+    },
+    {
+      "path": "modules/experiment_handler.py",
+      "sha256": "ca0645620b7e70dc3d44733d6d9580abfea58e12749ec8e5e8e5d814f67846b8"
+    },
+    {
+      "path": "modules/schedulers.py",
+      "sha256": "b58506530fdf5611b627d74599af3357e8f77f021b64abdf0c8da5e17c39bee4"
+    },
+    {
+      "path": "utils/constants.py",
+      "sha256": "d88414e1c4775ceb03c1968639493ca016b5f8ce118ce92f3f50bbc2e2f0a09e"
+    },
+    {
+      "path": "utils/utils.py",
+      "sha256": "c95383d2bbacba69e81b6b65e7f8b53be4085fc317d08fb445a94f702b13a732"
+    },
+    {
+      "path": "course/runner.py",
+      "sha256": "2c73753b0b892d10b398b24b14bd632d65adfb95bbd2843d1c23628f1de7df9e"
+    },
+    {
+      "path": "course/run.sh",
+      "sha256": "aee68668c4aa3d68abcdc868204487cb87e4471941b13066ec7e486f298fe0de"
+    },
+    {
+      "path": "course/analyze.py",
+      "sha256": "b9329f8f23623053621b26a7174ec68734753600fcc9ffb69b705d6f839fdfbb"
+    }
+  ],
+  "caches": [
+    {
+      "path": "Datasets/GossipCop/h_GCN.npy",
+      "sha256": "e761da352675bfb8b43e98b974e73b8564e1e9fe9ba4a344eceb4927637ba20b"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_feat_sum_0.npy",
+      "sha256": "4fa52be37a5154019722918a7706d18407a0db5afeb470242ab4557d3d72c2de"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_degree_0.npy",
+      "sha256": "41e401162c923650eeb825d582f96ac17498a6fed782c829efedbc95ac693ed9"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_sequence_0.npy",
+      "sha256": "caf9f30772e2977f20ef3dcb4cb127d7cdf73e3986f7cc5599f5753cb3aa1b89"
+    },
+    {
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_adj2_0.npz",
+      "sha256": "2b13c6a0bdf7d0dad9cf0700be8ba2629fb1317d1ca2408e57c173b3efa5c3f7"
+    }
+  ],
+  "environment_sha256": "e3ba94869fa74255f09478611c8f874d4d515348668f8685df0aa579bfa6e349",
+  "pilots": [
+    {
+      "mode": "random",
+      "result": {
+        "status": "completed",
+        "phase": "pilot",
+        "result": {
+          "test_skipped": 1.0
+        },
+        "clean": {
+          "accuracy": 0.6826923076923077,
+          "misclf_rate": 0.3173076923076923
+        },
+        "best_epoch": 2,
+        "train_and_validation_seconds": 4.9385552406311035,
+        "completed_epochs": 2,
+        "train_groups": 16,
+        "valid_groups": 8,
+        "peak_reserved_bytes": 2965372928,
+        "checkpoint": "runs/20261028T121834Z_pilot_random_s0_749962/20261028T121834Z_pilot_random_s0_749962/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+        "checkpoint_sha256": "38bc07a194fc4915a00b5708f7181a3811b5bc32c31f79bbe2f42dc6ae3c698c",
+        "elapsed_seconds": 13.703074899996864,
+        "gpu_wall_hours": 0.003806409694443573
+      },
+      "evidence": "evidence/runs/20261028T121834Z_pilot_random_s0_749962/result.json"
+    },
+    {
+      "mode": "learned",
+      "result": {
+        "status": "completed",
+        "phase": "pilot",
+        "result": {
+          "test_skipped": 1.0
+        },
+        "clean": {
+          "accuracy": 0.6826923076923077,
+          "misclf_rate": 0.3173076923076923
+        },
+        "best_epoch": 2,
+        "train_and_validation_seconds": 4.2003607749938965,
+        "completed_epochs": 2,
+        "train_groups": 16,
+        "valid_groups": 8,
+        "peak_reserved_bytes": 3357540352,
+        "checkpoint": "runs/20261028T121403Z_pilot_learned_s0_f3bc6f/20261028T121403Z_pilot_learned_s0_f3bc6f/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+        "checkpoint_sha256": "17be68d43e541d7d4345ec4a2024a4ac050799578f551089ef8c8b043e43cd26",
+        "elapsed_seconds": 189.1823511900002,
+        "gpu_wall_hours": 0.05255065310833339
+      },
+      "evidence": "evidence/runs/20261028T121403Z_pilot_learned_s0_f3bc6f/result.json"
+    }
+  ],
+  "differences": [
+    "candidate flag mapping corrected",
+    "upstream incidence-based budget retained",
+    "historical table5 random-control semantics unconfirmed",
+    "fixed split/checkpoints; three paired seeds",
+    "Table4/Table5 numerical discrepancy unresolved"
+  ]
+}
