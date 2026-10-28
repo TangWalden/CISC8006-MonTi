@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "seed": 0,
+      "learned_mr_percent": 44.28911079410366,
+      "random_mr_percent": 39.08701854493581,
+      "difference_pp": 5.202092249167848
+    },
+    {
+      "seed": 1,
+      "learned_mr_percent": 42.88159771754636,
+      "random_mr_percent": 41.6262482168331,
+      "difference_pp": 1.2553495007132653
+    },
+    {
+      "seed": 2,
+      "learned_mr_percent": 44.01331431288635,
+      "random_mr_percent": 39.85734664764622,
+      "difference_pp": 4.155967665240134
+    }
+  ],
+  "paired_mean_difference_pp": 3.5378031383737487,
+  "paired_sample_std_pp": 2.044698050404182,
+  "failed_attempts": [],
+  "learned_mean_mr_percent": 43.72800760817879,
+  "learned_sample_std_percent": 0.7458707676154496,
+  "random_mean_mr_percent": 40.190204469805046,
+  "random_sample_std_percent": 1.3019284077821405,
+  "paired_95ci_pp": [
+    -1.5415083979686783,
+    8.617114674716175
+  ],
+  "conclusion": "inconclusive",
+  "scope": "fixed split 0 and fixed official surrogate/victim, corrected selector mapping",
+  "paper_table5": {
+    "learned": 43.7,
+    "random": 39.13,
+    "difference_pp": 4.57
+  },
+  "paper_table4_monti": "41.34 +/- 1.90; unresolved difference from table 5"
+}

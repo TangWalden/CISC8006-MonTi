@@ -1,0 +1,12 @@
+{
+  "result": {
+    "accuracy": 0.04432802740278052,
+    "misclf_rate": 0.9556719725972195,
+    "loss": 0.09381876025833441
+  },
+  "groups": 592,
+  "target_occurrences": 4963,
+  "incorrect": 4743,
+  "weighting": "target occurrences, size weighted",
+  "prediction_sha256": "b8d7e466d8e48e95585d1165bacc65c6c116b34a6215e7fc4f380f4ef0cff1f6"
+}

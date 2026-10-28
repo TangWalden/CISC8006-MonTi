@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "phase": "reproduction",
+  "result": {
+    "accuracy": 0.5711840228245364,
+    "misclf_rate": 0.4288159771754636,
+    "loss": 0.08053436916338422
+  },
+  "clean": {
+    "accuracy": 0.7831669044222539,
+    "misclf_rate": 0.21683309557774608
+  },
+  "best_epoch": 3,
+  "train_and_validation_seconds": 1419.0214126110077,
+  "completed_epochs": 13,
+  "train_groups": 937,
+  "valid_groups": 592,
+  "peak_reserved_bytes": 3902799872,
+  "checkpoint": "runs/20261028T125935Z_reproduction_learned_s1_672f97/20261028T125935Z_reproduction_learned_s1_672f97/gossipcop_0.05-1-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+  "checkpoint_sha256": "628b1790e09d01a599d5e9907afe5f271df4108588cafde7b78fadf2af331b11",
+  "elapsed_seconds": 1589.7182466059894,
+  "gpu_wall_hours": 0.44158840183499704
+}

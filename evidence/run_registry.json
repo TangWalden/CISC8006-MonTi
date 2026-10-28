@@ -1,0 +1,482 @@
+[
+  {
+    "registration": {
+      "run_id": "20261028T121403Z_pilot_learned_s0_f3bc6f",
+      "registered_utc": "2026-10-28T12:14:03.666557+00:00",
+      "commit": "d0f43acb922cffbfcda97f4b3c74e19fa8b88161",
+      "tracked_changes": "",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.runner",
+        "--config",
+        "course/configs/baseline.json",
+        "--phase",
+        "pilot",
+        "--mode",
+        "learned",
+        "--seed",
+        "0",
+        "--gpu",
+        "0",
+        "--train-limit",
+        "16",
+        "--valid-limit",
+        "8",
+        "--epochs",
+        "2"
+      ],
+      "config_sha256": "cace58ebb039248c5811ab10ef03eddbb2acd3601416dabf3bf51e6510e02fa6",
+      "mode": "learned",
+      "candidate_sampling": "upstream learned selector",
+      "seed": 0,
+      "phase": "pilot",
+      "gpu": 0,
+      "torch": "1.13.1+cu117",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "cost_unit": "one GPU wall-clock hour; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "phase": "pilot",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "clean": {
+        "accuracy": 0.6826923076923077,
+        "misclf_rate": 0.3173076923076923
+      },
+      "best_epoch": 2,
+      "train_and_validation_seconds": 4.2003607749938965,
+      "completed_epochs": 2,
+      "train_groups": 16,
+      "valid_groups": 8,
+      "peak_reserved_bytes": 3357540352,
+      "checkpoint": "runs/20261028T121403Z_pilot_learned_s0_f3bc6f/20261028T121403Z_pilot_learned_s0_f3bc6f/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "17be68d43e541d7d4345ec4a2024a4ac050799578f551089ef8c8b043e43cd26",
+      "elapsed_seconds": 189.1823511900002,
+      "gpu_wall_hours": 0.05255065310833339
+    },
+    "evidence": "evidence/runs/20261028T121403Z_pilot_learned_s0_f3bc6f"
+  },
+  {
+    "registration": {
+      "run_id": "20261028T121834Z_pilot_random_s0_749962",
+      "registered_utc": "2026-10-28T12:18:34.930628+00:00",
+      "commit": "d0f43acb922cffbfcda97f4b3c74e19fa8b88161",
+      "tracked_changes": "",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.runner",
+        "--config",
+        "course/configs/baseline.json",
+        "--phase",
+        "pilot",
+        "--mode",
+        "random",
+        "--seed",
+        "0",
+        "--gpu",
+        "1",
+        "--train-limit",
+        "16",
+        "--valid-limit",
+        "8",
+        "--epochs",
+        "2"
+      ],
+      "config_sha256": "7de3712331a49f6dddb4e9885a26f9ec2e836fdd2254356b9bebfb62fb9e736c",
+      "mode": "random",
+      "candidate_sampling": "uniform without replacement, resampled every forward in train and evaluation",
+      "seed": 0,
+      "phase": "pilot",
+      "gpu": 1,
+      "torch": "1.13.1+cu117",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "cost_unit": "one GPU wall-clock hour; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "phase": "pilot",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "clean": {
+        "accuracy": 0.6826923076923077,
+        "misclf_rate": 0.3173076923076923
+      },
+      "best_epoch": 2,
+      "train_and_validation_seconds": 4.9385552406311035,
+      "completed_epochs": 2,
+      "train_groups": 16,
+      "valid_groups": 8,
+      "peak_reserved_bytes": 2965372928,
+      "checkpoint": "runs/20261028T121834Z_pilot_random_s0_749962/20261028T121834Z_pilot_random_s0_749962/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "38bc07a194fc4915a00b5708f7181a3811b5bc32c31f79bbe2f42dc6ae3c698c",
+      "elapsed_seconds": 13.703074899996864,
+      "gpu_wall_hours": 0.003806409694443573
+    },
+    "evidence": "evidence/runs/20261028T121834Z_pilot_random_s0_749962"
+  },
+  {
+    "registration": {
+      "run_id": "20261028T122617Z_reproduction_learned_s0_772a5d",
+      "registered_utc": "2026-10-28T12:26:17.578475+00:00",
+      "commit": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "tracked_changes": "",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.runner",
+        "--config",
+        "course/configs/baseline.json",
+        "--phase",
+        "reproduction",
+        "--mode",
+        "learned",
+        "--seed",
+        "0",
+        "--gpu",
+        "0"
+      ],
+      "config_sha256": "e48d6d03470048114e0ceb6aaf598e15cac17d7267deceff69f59f4ea7ac8db5",
+      "mode": "learned",
+      "candidate_sampling": "upstream learned selector",
+      "seed": 0,
+      "phase": "reproduction",
+      "gpu": 0,
+      "torch": "1.13.1+cu117",
+      "dgl": "1.1.2+cu117",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "gpu_snapshot": "0, 24576 MiB, 16776 MiB, 0 %\n1, 24576 MiB, 15752 MiB, 0 %",
+      "cost_unit": "one GPU wall-clock hour; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "phase": "reproduction",
+      "result": {
+        "accuracy": 0.5571088920589634,
+        "misclf_rate": 0.4428911079410366,
+        "loss": 0.06891014185087085
+      },
+      "clean": {
+        "accuracy": 0.7831669044222539,
+        "misclf_rate": 0.21683309557774608
+      },
+      "best_epoch": 4,
+      "train_and_validation_seconds": 1797.012085199356,
+      "completed_epochs": 14,
+      "train_groups": 937,
+      "valid_groups": 592,
+      "peak_reserved_bytes": 3904897024,
+      "checkpoint": "runs/20261028T122617Z_reproduction_learned_s0_772a5d/20261028T122617Z_reproduction_learned_s0_772a5d/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "d1b566626db88b56637fc171c39dee312735a1252608b1c3181bf42cccdcb190",
+      "elapsed_seconds": 1990.355092357,
+      "gpu_wall_hours": 0.5528764145436111
+    },
+    "evidence": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d"
+  },
+  {
+    "registration": {
+      "run_id": "20261028T122617Z_reproduction_random_s0_7c7817",
+      "registered_utc": "2026-10-28T12:26:17.648510+00:00",
+      "commit": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "tracked_changes": "",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.runner",
+        "--config",
+        "course/configs/baseline.json",
+        "--phase",
+        "reproduction",
+        "--mode",
+        "random",
+        "--seed",
+        "0",
+        "--gpu",
+        "1"
+      ],
+      "config_sha256": "725e3f4baf8659813817215f5f14fba5fa625c1f1a57eae9cc4cb72394cb4af6",
+      "mode": "random",
+      "candidate_sampling": "uniform without replacement, resampled every forward in train and evaluation",
+      "seed": 0,
+      "phase": "reproduction",
+      "gpu": 1,
+      "torch": "1.13.1+cu117",
+      "dgl": "1.1.2+cu117",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "gpu_snapshot": "0, 24576 MiB, 16776 MiB, 0 %\n1, 24576 MiB, 15752 MiB, 0 %",
+      "cost_unit": "one GPU wall-clock hour; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "phase": "reproduction",
+      "result": {
+        "accuracy": 0.6091298145506419,
+        "misclf_rate": 0.3908701854493581,
+        "loss": 0.057346495771032686
+      },
+      "clean": {
+        "accuracy": 0.7831669044222539,
+        "misclf_rate": 0.21683309557774608
+      },
+      "best_epoch": 1,
+      "train_and_validation_seconds": 1260.9072134494781,
+      "completed_epochs": 11,
+      "train_groups": 937,
+      "valid_groups": 592,
+      "peak_reserved_bytes": 3839885312,
+      "checkpoint": "runs/20261028T122617Z_reproduction_random_s0_7c7817/20261028T122617Z_reproduction_random_s0_7c7817/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "4f05fd4be99ebefd0114196a3a35d7f393b7a5eeaf0f6ab3cb6c8d5fe9d43058",
+      "elapsed_seconds": 1446.9298701740045,
+      "gpu_wall_hours": 0.4019249639372235
+    },
+    "evidence": "evidence/runs/20261028T122617Z_reproduction_random_s0_7c7817"
+  },
+  {
+    "registration": {
+      "run_id": "20261028T125935Z_reproduction_learned_s1_672f97",
+      "registered_utc": "2026-10-28T12:59:35.060729+00:00",
+      "commit": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "tracked_changes": "",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.runner",
+        "--config",
+        "course/configs/baseline.json",
+        "--phase",
+        "reproduction",
+        "--mode",
+        "learned",
+        "--seed",
+        "1",
+        "--gpu",
+        "1"
+      ],
+      "config_sha256": "8181cf84ecb2f382bf54a64ece0c2d755cdcc36f4bc8eb493b32d31c7d575b9d",
+      "mode": "learned",
+      "candidate_sampling": "upstream learned selector",
+      "seed": 1,
+      "phase": "reproduction",
+      "gpu": 1,
+      "torch": "1.13.1+cu117",
+      "dgl": "1.1.2+cu117",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "gpu_snapshot": "0, 24576 MiB, 14889 MiB, 26 %\n1, 24576 MiB, 15752 MiB, 0 %",
+      "cost_unit": "one GPU wall-clock hour; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "phase": "reproduction",
+      "result": {
+        "accuracy": 0.5711840228245364,
+        "misclf_rate": 0.4288159771754636,
+        "loss": 0.08053436916338422
+      },
+      "clean": {
+        "accuracy": 0.7831669044222539,
+        "misclf_rate": 0.21683309557774608
+      },
+      "best_epoch": 3,
+      "train_and_validation_seconds": 1419.0214126110077,
+      "completed_epochs": 13,
+      "train_groups": 937,
+      "valid_groups": 592,
+      "peak_reserved_bytes": 3902799872,
+      "checkpoint": "runs/20261028T125935Z_reproduction_learned_s1_672f97/20261028T125935Z_reproduction_learned_s1_672f97/gossipcop_0.05-1-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "628b1790e09d01a599d5e9907afe5f271df4108588cafde7b78fadf2af331b11",
+      "elapsed_seconds": 1589.7182466059894,
+      "gpu_wall_hours": 0.44158840183499704
+    },
+    "evidence": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97"
+  },
+  {
+    "registration": {
+      "run_id": "20261028T125935Z_reproduction_random_s1_37b2f9",
+      "registered_utc": "2026-10-28T12:59:35.073553+00:00",
+      "commit": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "tracked_changes": "",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.runner",
+        "--config",
+        "course/configs/baseline.json",
+        "--phase",
+        "reproduction",
+        "--mode",
+        "random",
+        "--seed",
+        "1",
+        "--gpu",
+        "0"
+      ],
+      "config_sha256": "2ad9aea0fc86168120bf72898a0d12f02bf18a065fd7a8812c48e424b2545b20",
+      "mode": "random",
+      "candidate_sampling": "uniform without replacement, resampled every forward in train and evaluation",
+      "seed": 1,
+      "phase": "reproduction",
+      "gpu": 0,
+      "torch": "1.13.1+cu117",
+      "dgl": "1.1.2+cu117",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "gpu_snapshot": "0, 24576 MiB, 14889 MiB, 25 %\n1, 24576 MiB, 15752 MiB, 0 %",
+      "cost_unit": "one GPU wall-clock hour; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "phase": "reproduction",
+      "result": {
+        "accuracy": 0.583737517831669,
+        "misclf_rate": 0.41626248216833095,
+        "loss": 0.071279449851997
+      },
+      "clean": {
+        "accuracy": 0.7831669044222539,
+        "misclf_rate": 0.21683309557774608
+      },
+      "best_epoch": 2,
+      "train_and_validation_seconds": 1332.5486404895782,
+      "completed_epochs": 12,
+      "train_groups": 937,
+      "valid_groups": 592,
+      "peak_reserved_bytes": 3913285632,
+      "checkpoint": "runs/20261028T125935Z_reproduction_random_s1_37b2f9/20261028T125935Z_reproduction_random_s1_37b2f9/gossipcop_0.05-1-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "73585a8371e5ff3c4d309635c67d896c356ae0026b3a4902fb470a4fd59409b7",
+      "elapsed_seconds": 1506.9450016909977,
+      "gpu_wall_hours": 0.41859583380305493
+    },
+    "evidence": "evidence/runs/20261028T125935Z_reproduction_random_s1_37b2f9"
+  },
+  {
+    "registration": {
+      "run_id": "20261028T132611Z_reproduction_learned_s2_8ba576",
+      "registered_utc": "2026-10-28T13:26:11.212863+00:00",
+      "commit": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "tracked_changes": "",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.runner",
+        "--config",
+        "course/configs/baseline.json",
+        "--phase",
+        "reproduction",
+        "--mode",
+        "learned",
+        "--seed",
+        "2",
+        "--gpu",
+        "0"
+      ],
+      "config_sha256": "35b66737c49529283cb571e9137f7877d62f172dd910f0d21de1e6fd91f8958e",
+      "mode": "learned",
+      "candidate_sampling": "upstream learned selector",
+      "seed": 2,
+      "phase": "reproduction",
+      "gpu": 0,
+      "torch": "1.13.1+cu117",
+      "dgl": "1.1.2+cu117",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "gpu_snapshot": "0, 24576 MiB, 14894 MiB, 0 %\n1, 24576 MiB, 15752 MiB, 0 %",
+      "cost_unit": "one GPU wall-clock hour; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "phase": "reproduction",
+      "result": {
+        "accuracy": 0.5598668568711365,
+        "misclf_rate": 0.44013314312886354,
+        "loss": 0.06430936190817091
+      },
+      "clean": {
+        "accuracy": 0.7831669044222539,
+        "misclf_rate": 0.21683309557774608
+      },
+      "best_epoch": 5,
+      "train_and_validation_seconds": 1617.1563720703125,
+      "completed_epochs": 15,
+      "train_groups": 937,
+      "valid_groups": 592,
+      "peak_reserved_bytes": 3917479936,
+      "checkpoint": "runs/20261028T132611Z_reproduction_learned_s2_8ba576/20261028T132611Z_reproduction_learned_s2_8ba576/gossipcop_0.05-2-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "93d3515e9a96132bb05201f4815a0bb67976e47a63aeb11633a1627cf6df1fc0",
+      "elapsed_seconds": 1784.9708103369921,
+      "gpu_wall_hours": 0.49582522509360893
+    },
+    "evidence": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576"
+  },
+  {
+    "registration": {
+      "run_id": "20261028T132611Z_reproduction_random_s2_84a814",
+      "registered_utc": "2026-10-28T13:26:11.229971+00:00",
+      "commit": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "tracked_changes": "",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.runner",
+        "--config",
+        "course/configs/baseline.json",
+        "--phase",
+        "reproduction",
+        "--mode",
+        "random",
+        "--seed",
+        "2",
+        "--gpu",
+        "1"
+      ],
+      "config_sha256": "3f60287db1daac4e47f70652005acd170f6bdacc220655000070e4592f8960ac",
+      "mode": "random",
+      "candidate_sampling": "uniform without replacement, resampled every forward in train and evaluation",
+      "seed": 2,
+      "phase": "reproduction",
+      "gpu": 1,
+      "torch": "1.13.1+cu117",
+      "dgl": "1.1.2+cu117",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "gpu_snapshot": "0, 24576 MiB, 14894 MiB, 0 %\n1, 24576 MiB, 15752 MiB, 0 %",
+      "cost_unit": "one GPU wall-clock hour; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "phase": "reproduction",
+      "result": {
+        "accuracy": 0.6014265335235378,
+        "misclf_rate": 0.3985734664764622,
+        "loss": 0.05953750021764772
+      },
+      "clean": {
+        "accuracy": 0.7831669044222539,
+        "misclf_rate": 0.21683309557774608
+      },
+      "best_epoch": 1,
+      "train_and_validation_seconds": 1204.6020975112915,
+      "completed_epochs": 11,
+      "train_groups": 937,
+      "valid_groups": 592,
+      "peak_reserved_bytes": 3848273920,
+      "checkpoint": "runs/20261028T132611Z_reproduction_random_s2_84a814/20261028T132611Z_reproduction_random_s2_84a814/gossipcop_0.05-2-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "8cb9a02cb34c7fcb4c4b6535c708451d94c988512a48ec3a36fd5c4e6db510d7",
+      "elapsed_seconds": 1375.5980398020038,
+      "gpu_wall_hours": 0.3821105666116677
+    },
+    "evidence": "evidence/runs/20261028T132611Z_reproduction_random_s2_84a814"
+  }
+]
