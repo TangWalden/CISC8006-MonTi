@@ -1,3 +1,9 @@
 __pycache__
 config_files
-experimental_results
+experimental_resultsDatasets/
+best_models/
+downloads/
+runs/
+*.tar.gz
+*.pickle
+evidence/bootstrap/incomplete-transfer-git/

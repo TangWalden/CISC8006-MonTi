@@ -1,0 +1,25 @@
+test_configuration_reaches_actual_selection_branch (__main__.ProtocolTests) ... ok
+test_documented_upstream_neighbor_count_difference (__main__.ProtocolTests) ... ok
+test_selector_dispatch_and_injection_constraints (__main__.ProtocolTests) ... ERROR
+test_weighted_metric_known_answer (__main__.ProtocolTests) ... ok
+
+======================================================================
+ERROR: test_selector_dispatch_and_injection_constraints (__main__.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/tjy/Project/MonTi-course/course/test_protocol.py", line 49, in test_selector_dispatch_and_injection_constraints
+    attributes, adjacency, candidates = model(graph, torch.tensor([0, 1]), 2, 4, learned)
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/tjy/Project/MonTi-course/models/attack_model.py", line 98, in forward
+    subgraph.send_and_recv(subgraph.out_edges(idx_targets),
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/heterograph.py", line 3501, in out_edges
+    u = utils.prepare_tensor(self, u, "u")
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/utils/checks.py", line 41, in prepare_tensor
+    raise DGLError(
+dgl._ffi.base.DGLError: Expect argument "u" to have device cuda:0. But got cpu.
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.900s
+
+FAILED (errors=1)

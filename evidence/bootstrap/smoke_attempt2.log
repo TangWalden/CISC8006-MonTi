@@ -1,0 +1,9 @@
+test_configuration_reaches_actual_selection_branch (__main__.ProtocolTests) ... ok
+test_documented_upstream_neighbor_count_difference (__main__.ProtocolTests) ... ok
+test_selector_dispatch_and_injection_constraints (__main__.ProtocolTests) ... ok
+test_weighted_metric_known_answer (__main__.ProtocolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 3.653s
+
+OK

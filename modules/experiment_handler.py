@@ -374,7 +374,7 @@ class ExperimentHandler():
         # Get output of the model
         x_atk, adj_attack, cand_ids_sub = self.model(subgraph, idx_targets,
                                                      node_budget, edge_budget,
-                                                     self.config['random_candidates'],
+                                                     not self.config['random_candidates'],
                                                      self.config['masking'])
         if (x_atk is None) or (adj_attack is None):
             return None
