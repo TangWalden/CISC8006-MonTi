@@ -1,4 +1,6 @@
 import unittest
+import pathlib
+import tempfile
 from types import SimpleNamespace
 from unittest.mock import Mock
 
@@ -9,6 +11,7 @@ import torch
 
 from models.attack_model import MonTi
 from modules.experiment_handler import ExperimentHandler
+from course.runner import AuditedExperiment
 from utils.utils import get_target_neighbor_size, misclassification_rate, set_seed
 
 
@@ -70,6 +73,34 @@ class ProtocolTests(unittest.TestCase):
         self.assertEqual(int(get_target_neighbor_size(graph, assignments)[0]), 4)
         unique_neighbors = set(graph.successors(0).tolist()) | set(graph.successors(1).tolist())
         self.assertEqual(len(unique_neighbors), 3)
+
+    def test_audited_evaluator_preserves_weighted_denominator(self):
+        graph = dgl.graph(([], []), num_nodes=4)
+        graph.ndata['y'] = torch.ones(4, dtype=torch.long)
+        assignment = sp.csr_matrix([[1, 0, 0, 0], [0, 1, 1, 1]])
+        experiment = AuditedExperiment.__new__(AuditedExperiment)
+        experiment.data = SimpleNamespace(graph=graph, target_assignment=assignment,
+                                          get_validation_set=lambda: np.array([0, 1]))
+        experiment.phase = 'pilot'
+        experiment.evaluation_number = 0
+        experiment.surrogate_type = experiment.victim_type = 'GCN'
+        logits = torch.tensor([[2., 0.], [0., 2.], [0., 2.], [0., 2.]])
+        experiment.get_logits = lambda graph, node_ids, *args, **kwargs: logits[node_ids]
+        with tempfile.TemporaryDirectory() as directory:
+            experiment.evidence = pathlib.Path(directory)
+            result = experiment.check_performance(attack=False)
+            self.assertAlmostEqual(result['misclf_rate'], .25)
+            with self.assertRaisesRegex(RuntimeError, 'Pilot may not inspect'):
+                experiment.check_performance(set_type='test')
+
+    def test_failed_generation_cannot_silently_drop_group(self):
+        graph = dgl.add_self_loop(dgl.graph(([0, 1], [1, 0])))
+        experiment = AuditedExperiment.__new__(AuditedExperiment)
+        experiment.data = SimpleNamespace(graph=graph)
+        experiment.config = dict(k_exp=1, masking=False, random_candidates=False)
+        experiment.model = Mock(return_value=(None, None, None))
+        with self.assertRaisesRegex(RuntimeError, 'silently remove'):
+            experiment.get_perturbed_graph(torch.tensor([0]), 1, 1)
 
 
 if __name__ == '__main__':

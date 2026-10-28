@@ -170,6 +170,9 @@ def main():
         result = experiment.run()
         status = dict(status='completed', phase=args.phase, result=result, clean=clean,
                       best_epoch=experiment.es_scheduler.b_epoch,
+                      train_and_validation_seconds=manager.elapsed_time,
+                      completed_epochs=manager.epoch-1,
+                      train_groups=len(data.target_idx_train), valid_groups=len(data.target_idx_valid),
                       peak_reserved_bytes=torch.cuda.max_memory_reserved(args.gpu),
                       checkpoint=str(pathlib.Path(manager.best_model_path).relative_to(ROOT)),
                       checkpoint_sha256=sha256(manager.best_model_path))

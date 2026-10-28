@@ -1,6 +1,7 @@
 __pycache__
 config_files
-experimental_resultsDatasets/
+experimental_results
+Datasets/
 best_models/
 downloads/
 runs/

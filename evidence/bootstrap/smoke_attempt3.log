@@ -1,0 +1,12 @@
+test_audited_evaluator_preserves_weighted_denominator (__main__.ProtocolTests) ... EVALUATION 001_surrogate_valid_clean {"accuracy": 0.75, "misclf_rate": 0.25}
+ok
+test_configuration_reaches_actual_selection_branch (__main__.ProtocolTests) ... ok
+test_documented_upstream_neighbor_count_difference (__main__.ProtocolTests) ... ok
+test_failed_generation_cannot_silently_drop_group (__main__.ProtocolTests) ... ok
+test_selector_dispatch_and_injection_constraints (__main__.ProtocolTests) ... ok
+test_weighted_metric_known_answer (__main__.ProtocolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.090s
+
+OK
