@@ -20,6 +20,14 @@ def read(path):
     return json.loads(path.read_text())
 
 
+def available_source_commit(execution_commit):
+    probe = subprocess.run(['git', 'cat-file', '-e', execution_commit+'^{commit}'], cwd=ROOT, capture_output=True)
+    if probe.returncode == 0:
+        return execution_commit
+    mapping = read(ROOT/'evidence/publication_history_map.json')
+    return mapping['commit_map'][execution_commit]
+
+
 def main():
     started = time.monotonic()
     try:
@@ -63,7 +71,7 @@ def main():
             assert sha256(ROOT / result['checkpoint']) == result['checkpoint_sha256']
             # Verify the registered commit contains the exact code and protocol used.
             for item in protocol['code']:
-                content = subprocess.check_output(['git', 'show', reg['commit']+':'+item['path']], cwd=ROOT)
+                content = subprocess.check_output(['git', 'show', available_source_commit(reg['commit'])+':'+item['path']], cwd=ROOT)
                 import hashlib
                 assert hashlib.sha256(content).hexdigest() == item['sha256']
             validation = sorted(folder.glob('*_surrogate_valid_attack.json'))

@@ -1,0 +1,479 @@
+[
+  {
+    "registration": {
+      "run_id": "20261029T125746Z_pilot_baseline_s3_a74447",
+      "phase": "improvement_pilot",
+      "variant": "baseline",
+      "seed": 3,
+      "gpu": 0,
+      "registered_utc": "2026-10-29T12:57:46.939805+00:00",
+      "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.improvements.run",
+        "--variant",
+        "baseline",
+        "--seed",
+        "3",
+        "--gpu",
+        "0"
+      ],
+      "config_sha256": "8b2cbc05e9cfb149440671738a9a6f7cf09365472ab1562365e1f5aad720083f",
+      "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+      "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+      "information_boundary": "training and GCN validation only; test evaluation prohibited",
+      "runtime": {
+        "torch": "1.13.1+cu117",
+        "dgl": "1.1.2+cu117",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1"
+      },
+      "gpu_snapshot": "0, 24036 MiB, 0 %\n1, 24112 MiB, 0 %\n",
+      "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "best_validation": {
+        "accuracy": 0.021998166819431675,
+        "misclf_rate": 0.9780018331805683,
+        "loss": 0.040160878852475435
+      },
+      "best_epoch": 6,
+      "completed_epochs": 10,
+      "checkpoint": "runs/20261029T125746Z_pilot_baseline_s3_a74447/20261029T125746Z_pilot_baseline_s3_a74447/gossipcop_0.05-3-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "b8a93718f3702790802de06dd1a6c36649f2d1dd11ea1ff45158575d00eb1427",
+      "peak_reserved_bytes": 3902799872,
+      "elapsed_seconds": 291.3058182540117,
+      "gpu_wall_hours": 0.08091828284833658
+    },
+    "evidence": "evidence/improvements/20261029T125746Z_pilot_baseline_s3_a74447"
+  },
+  {
+    "registration": {
+      "run_id": "20261029T125746Z_pilot_coverage_s3_d3965b",
+      "phase": "improvement_pilot",
+      "variant": "coverage",
+      "seed": 3,
+      "gpu": 1,
+      "registered_utc": "2026-10-29T12:57:46.908960+00:00",
+      "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.improvements.run",
+        "--variant",
+        "coverage",
+        "--seed",
+        "3",
+        "--gpu",
+        "1"
+      ],
+      "config_sha256": "fd9947164bf11bd48055885642433ec6472e293cf85565b087187796250fb8a6",
+      "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+      "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+      "information_boundary": "training and GCN validation only; test evaluation prohibited",
+      "runtime": {
+        "torch": "1.13.1+cu117",
+        "dgl": "1.1.2+cu117",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1"
+      },
+      "gpu_snapshot": "0, 24036 MiB, 0 %\n1, 24112 MiB, 0 %\n",
+      "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "best_validation": {
+        "accuracy": 0.024747937671860676,
+        "misclf_rate": 0.9752520623281393,
+        "loss": 0.04517488162673544
+      },
+      "best_epoch": 5,
+      "completed_epochs": 10,
+      "checkpoint": "runs/20261029T125746Z_pilot_coverage_s3_d3965b/20261029T125746Z_pilot_coverage_s3_d3965b/gossipcop_0.05-3-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "b595d6ddaf253072ea482f4f51307814942c27f677d78652dc86d861022dd34f",
+      "peak_reserved_bytes": 3902799872,
+      "elapsed_seconds": 332.0610271990008,
+      "gpu_wall_hours": 0.09223917422194468
+    },
+    "evidence": "evidence/improvements/20261029T125746Z_pilot_coverage_s3_d3965b"
+  },
+  {
+    "registration": {
+      "run_id": "20261029T130243Z_pilot_size_sampling_s3_610742",
+      "phase": "improvement_pilot",
+      "variant": "size_sampling",
+      "seed": 3,
+      "gpu": 0,
+      "registered_utc": "2026-10-29T13:02:43.297116+00:00",
+      "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.improvements.run",
+        "--variant",
+        "size_sampling",
+        "--seed",
+        "3",
+        "--gpu",
+        "0"
+      ],
+      "config_sha256": "08794eb88bd2c9f2520650a657a6fd16edb3dc8447ff65a635fe6569a014cc5f",
+      "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+      "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+      "information_boundary": "training and GCN validation only; test evaluation prohibited",
+      "runtime": {
+        "torch": "1.13.1+cu117",
+        "dgl": "1.1.2+cu117",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1"
+      },
+      "gpu_snapshot": "0, 23668 MiB, 0 %\n1, 20828 MiB, 25 %\n",
+      "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "best_validation": {
+        "accuracy": 0.028414298808432603,
+        "misclf_rate": 0.9715857011915674,
+        "loss": 0.04687214974546805
+      },
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "checkpoint": "runs/20261029T130243Z_pilot_size_sampling_s3_610742/20261029T130243Z_pilot_size_sampling_s3_610742/gossipcop_0.05-3-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "85ca3f9800fc23ea10ac42c52853df8459b9337a5c220cc87acbab7ffc3ed3d5",
+      "peak_reserved_bytes": 3915382784,
+      "elapsed_seconds": 263.1010388590221,
+      "gpu_wall_hours": 0.07308362190528392
+    },
+    "evidence": "evidence/improvements/20261029T130243Z_pilot_size_sampling_s3_610742"
+  },
+  {
+    "registration": {
+      "run_id": "20261029T130325Z_pilot_baseline_s4_a7b1ad",
+      "phase": "improvement_pilot",
+      "variant": "baseline",
+      "seed": 4,
+      "gpu": 1,
+      "registered_utc": "2026-10-29T13:03:25.330161+00:00",
+      "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.improvements.run",
+        "--variant",
+        "baseline",
+        "--seed",
+        "4",
+        "--gpu",
+        "1"
+      ],
+      "config_sha256": "4d2bb03d74683f4746b457e816e78ac89843ccc22159b4ec119b3c647b499e5b",
+      "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+      "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+      "information_boundary": "training and GCN validation only; test evaluation prohibited",
+      "runtime": {
+        "torch": "1.13.1+cu117",
+        "dgl": "1.1.2+cu117",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1"
+      },
+      "gpu_snapshot": "0, 22416 MiB, 52 %\n1, 24109 MiB, 0 %\n",
+      "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "best_validation": {
+        "accuracy": 0.021998166819431675,
+        "misclf_rate": 0.9780018331805683,
+        "loss": 0.04229199656401761
+      },
+      "best_epoch": 8,
+      "completed_epochs": 10,
+      "checkpoint": "runs/20261029T130325Z_pilot_baseline_s4_a7b1ad/20261029T130325Z_pilot_baseline_s4_a7b1ad/gossipcop_0.05-4-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "082a6157ee72f59e4827d33c0206694e33b9eaa04d66169c837e24225892f26e",
+      "peak_reserved_bytes": 3904897024,
+      "elapsed_seconds": 291.15525477798656,
+      "gpu_wall_hours": 0.08087645966055182
+    },
+    "evidence": "evidence/improvements/20261029T130325Z_pilot_baseline_s4_a7b1ad"
+  },
+  {
+    "registration": {
+      "run_id": "20261029T130711Z_pilot_coverage_s4_1a6892",
+      "phase": "improvement_pilot",
+      "variant": "coverage",
+      "seed": 4,
+      "gpu": 0,
+      "registered_utc": "2026-10-29T13:07:11.618928+00:00",
+      "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.improvements.run",
+        "--variant",
+        "coverage",
+        "--seed",
+        "4",
+        "--gpu",
+        "0"
+      ],
+      "config_sha256": "1b463381c91284d4a04b2a79114cc42e983bfcb9ce7ebc5592a92043c78b1048",
+      "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+      "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+      "information_boundary": "training and GCN validation only; test evaluation prohibited",
+      "runtime": {
+        "torch": "1.13.1+cu117",
+        "dgl": "1.1.2+cu117",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1"
+      },
+      "gpu_snapshot": "0, 23668 MiB, 0 %\n1, 21718 MiB, 23 %\n",
+      "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "best_validation": {
+        "accuracy": 0.02383134738771764,
+        "misclf_rate": 0.9761686526122824,
+        "loss": 0.06322154826193582
+      },
+      "best_epoch": 5,
+      "completed_epochs": 10,
+      "checkpoint": "runs/20261029T130711Z_pilot_coverage_s4_1a6892/20261029T130711Z_pilot_coverage_s4_1a6892/gossipcop_0.05-4-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "e165ef41c44d0c382c2fb4f312a93a3296e236f6309e1ce10a7fe83c537d0122",
+      "peak_reserved_bytes": 3852468224,
+      "elapsed_seconds": 303.27928988600615,
+      "gpu_wall_hours": 0.08424424719055726
+    },
+    "evidence": "evidence/improvements/20261029T130711Z_pilot_coverage_s4_1a6892"
+  },
+  {
+    "registration": {
+      "run_id": "20261029T130821Z_pilot_size_sampling_s4_340d61",
+      "phase": "improvement_pilot",
+      "variant": "size_sampling",
+      "seed": 4,
+      "gpu": 1,
+      "registered_utc": "2026-10-29T13:08:21.780379+00:00",
+      "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.improvements.run",
+        "--variant",
+        "size_sampling",
+        "--seed",
+        "4",
+        "--gpu",
+        "1"
+      ],
+      "config_sha256": "feb2a17010a30d7a301693b3877a0bfdd5b637054cf1d9356c8fb6ac4ef20990",
+      "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+      "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+      "information_boundary": "training and GCN validation only; test evaluation prohibited",
+      "runtime": {
+        "torch": "1.13.1+cu117",
+        "dgl": "1.1.2+cu117",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1"
+      },
+      "gpu_snapshot": "0, 20872 MiB, 28 %\n1, 24109 MiB, 0 %\n",
+      "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "best_validation": {
+        "accuracy": 0.030247479376718567,
+        "misclf_rate": 0.9697525206232814,
+        "loss": 0.05660303520562593
+      },
+      "best_epoch": 6,
+      "completed_epochs": 10,
+      "checkpoint": "runs/20261029T130821Z_pilot_size_sampling_s4_340d61/20261029T130821Z_pilot_size_sampling_s4_340d61/gossipcop_0.05-4-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "35b3b2fc5916bd24059ee93f4137d324826e7d749e94e41760ee4374c16880a4",
+      "peak_reserved_bytes": 3906994176,
+      "elapsed_seconds": 298.9881564739917,
+      "gpu_wall_hours": 0.08305226568721992
+    },
+    "evidence": "evidence/improvements/20261029T130821Z_pilot_size_sampling_s4_340d61"
+  },
+  {
+    "registration": {
+      "run_id": "20261029T131220Z_pilot_baseline_s5_eab5fa",
+      "phase": "improvement_pilot",
+      "variant": "baseline",
+      "seed": 5,
+      "gpu": 0,
+      "registered_utc": "2026-10-29T13:12:20.038577+00:00",
+      "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.improvements.run",
+        "--variant",
+        "baseline",
+        "--seed",
+        "5",
+        "--gpu",
+        "0"
+      ],
+      "config_sha256": "f5ac3a8d781483b78502f6f47402fe195fded29bff0b46e3ffb9f9d26a833407",
+      "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+      "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+      "information_boundary": "training and GCN validation only; test evaluation prohibited",
+      "runtime": {
+        "torch": "1.13.1+cu117",
+        "dgl": "1.1.2+cu117",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1"
+      },
+      "gpu_snapshot": "0, 23668 MiB, 0 %\n1, 20946 MiB, 42 %\n",
+      "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "best_validation": {
+        "accuracy": 0.025664527956003713,
+        "misclf_rate": 0.9743354720439963,
+        "loss": 0.04464391787769273
+      },
+      "best_epoch": 4,
+      "completed_epochs": 9,
+      "checkpoint": "runs/20261029T131220Z_pilot_baseline_s5_eab5fa/20261029T131220Z_pilot_baseline_s5_eab5fa/gossipcop_0.05-5-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "87037fb0e7a3c2d2157a46e3f6231158f0ac5ce9e049d9e528f08a98ee3e0969",
+      "peak_reserved_bytes": 3852468224,
+      "elapsed_seconds": 260.63752818398643,
+      "gpu_wall_hours": 0.07239931338444068
+    },
+    "evidence": "evidence/improvements/20261029T131220Z_pilot_baseline_s5_eab5fa"
+  },
+  {
+    "registration": {
+      "run_id": "20261029T131326Z_pilot_coverage_s5_18ca80",
+      "phase": "improvement_pilot",
+      "variant": "coverage",
+      "seed": 5,
+      "gpu": 1,
+      "registered_utc": "2026-10-29T13:13:26.162945+00:00",
+      "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.improvements.run",
+        "--variant",
+        "coverage",
+        "--seed",
+        "5",
+        "--gpu",
+        "1"
+      ],
+      "config_sha256": "58d37a1f9f3c497d1191c7b96417759fb58dfd70581c48522a4d38ad42613a4c",
+      "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+      "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+      "information_boundary": "training and GCN validation only; test evaluation prohibited",
+      "runtime": {
+        "torch": "1.13.1+cu117",
+        "dgl": "1.1.2+cu117",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1"
+      },
+      "gpu_snapshot": "0, 22184 MiB, 39 %\n1, 24109 MiB, 0 %\n",
+      "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "best_validation": {
+        "accuracy": 0.02658111824014664,
+        "misclf_rate": 0.9734188817598534,
+        "loss": 0.049889865860677673
+      },
+      "best_epoch": 3,
+      "completed_epochs": 8,
+      "checkpoint": "runs/20261029T131326Z_pilot_coverage_s5_18ca80/20261029T131326Z_pilot_coverage_s5_18ca80/gossipcop_0.05-5-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "12987d642dbfd24360f0abf124bfee22b7f6c7d76f91aed0595a37c75c09862d",
+      "peak_reserved_bytes": 3839885312,
+      "elapsed_seconds": 242.17233994801063,
+      "gpu_wall_hours": 0.06727009443000295
+    },
+    "evidence": "evidence/improvements/20261029T131326Z_pilot_coverage_s5_18ca80"
+  },
+  {
+    "registration": {
+      "run_id": "20261029T131646Z_pilot_size_sampling_s5_ee7823",
+      "phase": "improvement_pilot",
+      "variant": "size_sampling",
+      "seed": 5,
+      "gpu": 0,
+      "registered_utc": "2026-10-29T13:16:46.370762+00:00",
+      "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "-m",
+        "course.improvements.run",
+        "--variant",
+        "size_sampling",
+        "--seed",
+        "5",
+        "--gpu",
+        "0"
+      ],
+      "config_sha256": "235dc2e8605f0a0ee720e677c6f20b7aaa8f932dc04e8bd649cf0ec426e68367",
+      "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+      "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+      "information_boundary": "training and GCN validation only; test evaluation prohibited",
+      "runtime": {
+        "torch": "1.13.1+cu117",
+        "dgl": "1.1.2+cu117",
+        "numpy": "1.24.4",
+        "scipy": "1.10.1"
+      },
+      "gpu_snapshot": "0, 23668 MiB, 0 %\n1, 20830 MiB, 23 %\n",
+      "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+    },
+    "status": {
+      "status": "completed",
+      "result": {
+        "test_skipped": 1.0
+      },
+      "best_validation": {
+        "accuracy": 0.027497708524289677,
+        "misclf_rate": 0.9725022914757103,
+        "loss": 0.05382988177018433
+      },
+      "best_epoch": 3,
+      "completed_epochs": 8,
+      "checkpoint": "runs/20261029T131646Z_pilot_size_sampling_s5_ee7823/20261029T131646Z_pilot_size_sampling_s5_ee7823/gossipcop_0.05-5-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "checkpoint_sha256": "10e0aec620b86eac8662480486f0e5ee11313fd8ade04cd0f319eb9649e88030",
+      "peak_reserved_bytes": 3904897024,
+      "elapsed_seconds": 239.27292625998962,
+      "gpu_wall_hours": 0.06646470173888601
+    },
+    "evidence": "evidence/improvements/20261029T131646Z_pilot_size_sampling_s5_ee7823"
+  }
+]

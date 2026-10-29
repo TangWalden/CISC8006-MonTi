@@ -1,0 +1,25 @@
+{
+  "unit": "GPU wall-clock hours, summed across concurrent devices; price unavailable",
+  "limit": 12,
+  "pilot_queue_limit": 2,
+  "pilots_charged": 0.7091783689869449,
+  "diagnosis": 0.0024601178266715983,
+  "checks": [
+    {
+      "path": "evidence/improvement_smoke_attempt1.log",
+      "wall_seconds": 2.343,
+      "conservative_gpu_hours": 0.0006508333333333333
+    },
+    {
+      "path": "evidence/improvement_smoke_attempt2.log",
+      "wall_seconds": 2.238,
+      "conservative_gpu_hours": 0.0006216666666666666
+    }
+  ],
+  "measured_or_conservatively_charged": 0.7129109868136164,
+  "unmetered_setup_reserve": 0.02,
+  "remaining_after_reserve": 11.267089013186384,
+  "failed_or_interrupted_incidents": [],
+  "reconciliation": "All nine queue starts have successful exits and one complete registration/result; no missing attempt.",
+  "methodology": "Charge max registered elapsed and queue elapsed per pilot; charge full smoke wall time as one GPU; reserve is not measured usage."
+}

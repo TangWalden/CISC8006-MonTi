@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "result": {
+    "test_skipped": 1.0
+  },
+  "best_validation": {
+    "accuracy": 0.027497708524289677,
+    "misclf_rate": 0.9725022914757103,
+    "loss": 0.05382988177018433
+  },
+  "best_epoch": 3,
+  "completed_epochs": 8,
+  "checkpoint": "runs/20261029T131646Z_pilot_size_sampling_s5_ee7823/20261029T131646Z_pilot_size_sampling_s5_ee7823/gossipcop_0.05-5-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+  "checkpoint_sha256": "10e0aec620b86eac8662480486f0e5ee11313fd8ade04cd0f319eb9649e88030",
+  "peak_reserved_bytes": 3904897024,
+  "elapsed_seconds": 239.27292625998962,
+  "gpu_wall_hours": 0.06646470173888601
+}

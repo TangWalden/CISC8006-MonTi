@@ -1,0 +1,95 @@
+{
+  "selected": "coverage",
+  "effects": {
+    "coverage": {
+      "differences_pp": [
+        -0.2749770852429094,
+        -0.1833180568285968,
+        -0.0916590284142984
+      ],
+      "mean_gain_pp": -0.18331805682860156,
+      "sample_sd_pp": 0.09165902841430551,
+      "exploratory_paired_95ci_pp": [
+        -0.411011705943536,
+        0.04437559228633284
+      ]
+    },
+    "size_sampling": {
+      "differences_pp": [
+        -0.641613198900103,
+        -0.8249312557286999,
+        -0.1833180568285968
+      ],
+      "mean_gain_pp": -0.5499541704857999,
+      "sample_sd_pp": 0.3304813268069715,
+      "exploratory_paired_95ci_pp": [
+        -1.3709152974671577,
+        0.27100695649555784
+      ]
+    }
+  },
+  "rows": [
+    {
+      "seed": 3,
+      "baseline": 97.80018331805684,
+      "coverage": 97.52520623281393,
+      "size_sampling": 97.15857011915674
+    },
+    {
+      "seed": 4,
+      "baseline": 97.80018331805684,
+      "coverage": 97.61686526122824,
+      "size_sampling": 96.97525206232814
+    },
+    {
+      "seed": 5,
+      "baseline": 97.43354720439963,
+      "coverage": 97.34188817598533,
+      "size_sampling": 97.25022914757103
+    }
+  ],
+  "units": "GCN validation MR percent; difference in percentage points",
+  "selection_rule": "Mean paired validation MR gain over corresponding pilot baseline. If gains differ by <=0.25pp choose coverage. Evaluate the selected idea even if both gains are negative.",
+  "test_evaluated": false,
+  "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+  "limitation": "Small-subset exploratory pilots choose a direction; these scores are not full test improvements.",
+  "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+  "result_hashes": [
+    {
+      "evidence": "evidence/improvements/20261029T125746Z_pilot_baseline_s3_a74447",
+      "sha256": "b07aa9124c2f3ae895dde1bdb6b93f453888fbcb3b9e995b9fd67b24a98a56e9"
+    },
+    {
+      "evidence": "evidence/improvements/20261029T125746Z_pilot_coverage_s3_d3965b",
+      "sha256": "e11502947e9ce0a475a4b2e9a93e67695d97f8ab873db13eeb349c5830dd6ae2"
+    },
+    {
+      "evidence": "evidence/improvements/20261029T130243Z_pilot_size_sampling_s3_610742",
+      "sha256": "b4d9a47617619b5894f35976e86c000689aa43ef2cc32a2d1538d8bb6173bbf0"
+    },
+    {
+      "evidence": "evidence/improvements/20261029T130325Z_pilot_baseline_s4_a7b1ad",
+      "sha256": "28067446c23273bf72bcd1ff2bdfb14c68b3842d3130bafdd0e7214a73958726"
+    },
+    {
+      "evidence": "evidence/improvements/20261029T130711Z_pilot_coverage_s4_1a6892",
+      "sha256": "6f72bed58faa0c7c537109e5de799de1dca35733a4b090a0d53c884d0d14e2e9"
+    },
+    {
+      "evidence": "evidence/improvements/20261029T130821Z_pilot_size_sampling_s4_340d61",
+      "sha256": "add0892eb8d23c35938373595c5ebd0b5005a6ff65bf94d7f9c00a6d3d5535c3"
+    },
+    {
+      "evidence": "evidence/improvements/20261029T131220Z_pilot_baseline_s5_eab5fa",
+      "sha256": "e850f2a7593dd2a202f84ba2ebdc45097c28634438d7815c490106a6fa0e641c"
+    },
+    {
+      "evidence": "evidence/improvements/20261029T131326Z_pilot_coverage_s5_18ca80",
+      "sha256": "bd2c07fd3619b5c8dec5a3678afc5e05e52320791026c042decd1844efa1001a"
+    },
+    {
+      "evidence": "evidence/improvements/20261029T131646Z_pilot_size_sampling_s5_ee7823",
+      "sha256": "311c3724685f7d40fc567fff4be4a9092947668dc1c8672c16f7f6b474624196"
+    }
+  ]
+}

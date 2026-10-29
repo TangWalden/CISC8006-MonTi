@@ -1,0 +1,32 @@
+{
+  "run_id": "20261029T131326Z_pilot_coverage_s5_18ca80",
+  "phase": "improvement_pilot",
+  "variant": "coverage",
+  "seed": 5,
+  "gpu": 1,
+  "registered_utc": "2026-10-29T13:13:26.162945+00:00",
+  "commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+  "command": [
+    "/home/tjy/miniconda3/envs/monti/bin/python",
+    "-m",
+    "course.improvements.run",
+    "--variant",
+    "coverage",
+    "--seed",
+    "5",
+    "--gpu",
+    "1"
+  ],
+  "config_sha256": "58d37a1f9f3c497d1191c7b96417759fb58dfd70581c48522a4d38ad42613a4c",
+  "protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+  "classroom_approval": "not confirmed; not claimed as course-approved pilots",
+  "information_boundary": "training and GCN validation only; test evaluation prohibited",
+  "runtime": {
+    "torch": "1.13.1+cu117",
+    "dgl": "1.1.2+cu117",
+    "numpy": "1.24.4",
+    "scipy": "1.10.1"
+  },
+  "gpu_snapshot": "0, 22184 MiB, 39 %\n1, 24109 MiB, 0 %\n",
+  "cost_unit": "GPU wall-clock hours; monetary price unavailable"
+}

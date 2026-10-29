@@ -14,6 +14,8 @@ Paper Table 5 reports 43.70% / 39.13%. Our comparison corrects the candidate fla
 
 ## Evidence and project status
 
+This public repository is an English-only publication edition. Original execution histories are retained privately for audit. Historical non-English text artifacts are omitted from this edition; scientific source, configurations, metrics, and failed-run records are preserved. [Commit mapping](evidence/publication_history_map.json) links original execution IDs in the run records to equivalent public source snapshots. The publication cleanup does not change experiment results or imply that translated text existed before its actual translation date.
+
 - [Frozen baseline protocol](course/frozen_protocol.json), [results](evidence/reproduction_summary.json), and [registered baseline runs](evidence/run_registry.json).
 - [Independent prediction recount](evidence/baseline_audit.json), [public per-group error counts](evidence/published_baseline), [training logs](evidence/training_logs), and [failed setup and check attempts](evidence/bootstrap).
 - [Grading audit](course/GRADING_AUDIT.md), [one-week plan](course/WEEK_PLAN.md), [three improvement proposals](course/IMPROVEMENT_PROPOSAL.md), and [work status](course/PROJECT_STATUS.json).
@@ -21,6 +23,8 @@ Paper Table 5 reports 43.70% / 39.13%. Our comparison corrects the candidate fla
 - [Agent-use record](AI_USAGE.md), [planned and actual contributions](CONTRIBUTIONS.md), and [baseline report](docs/baseline_report.html).
 
 The improvement pilots compare the common baseline, structural-coverage candidates, and group-size-proportional sampling using seeds 3/4/5. They use GCN validation only. Full improvement evaluation and mechanism controls require a separate freeze after the registered selection. Course approval remains unconfirmed; technical research pilots are not presented as approved course milestones.
+
+All nine pilots completed and passed independent saved-output audits. Mean paired GCN validation gains were -0.1833pp for coverage and -0.5500pp for size-proportional sampling. The pre-registered rule selected coverage; these negative pilot results are retained. No full improvement test run has started. The owner has requested confirmation of the reproduction conclusion, improvement direction, full evaluation protocol, and final freeze before those milestones advance.
 
 Public documentation and newly generated logs are in English. English translations of earlier agent records identify their original source, hashes, and translation status. Original historical evidence is preserved; translated wording is not presented as verbatim API output.
 
