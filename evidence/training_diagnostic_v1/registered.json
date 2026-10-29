@@ -1,0 +1,14 @@
+{
+  "purpose": "train/validation-only mechanism diagnosis; no test inference",
+  "registered_utc": "2026-10-29T12:39:52.092783+00:00",
+  "commit": "7e295cc42fe44973b46d9fe742e768d3846d20b7",
+  "command": [
+    "bash",
+    "course/run.sh",
+    "-m",
+    "course.diagnose_training"
+  ],
+  "selection_seed": 1729,
+  "groups_per_partition": 64,
+  "attacker": "first registered learned run, seed 0; not chosen by score"
+}

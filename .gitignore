@@ -9,3 +9,4 @@ downloads/
 *.pickle
 evidence/bootstrap/incomplete-transfer-git/
 evidence/runs/*/*.jsonl
+evidence/improvements/*/*.jsonl

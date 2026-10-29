@@ -1,0 +1,18 @@
+{
+  "train": {
+    "groups": 64,
+    "active_selector_groups": 64,
+    "mean_selected_direct_coverage": 0.11112621430572012,
+    "mean_pool_direct_coverage": 0.9712742235961713,
+    "mean_candidate_cosine": 0.9563502809032798,
+    "target_size_weighted_selected_coverage": 0.1212624584717608
+  },
+  "valid": {
+    "groups": 64,
+    "active_selector_groups": 62,
+    "mean_selected_direct_coverage": 0.1847420374764125,
+    "mean_pool_direct_coverage": 0.9878763814310689,
+    "mean_candidate_cosine": 0.9457818698137999,
+    "target_size_weighted_selected_coverage": 0.17850953206239167
+  }
+}

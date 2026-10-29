@@ -23,11 +23,20 @@
     "human_review": "pending"
   },
   "members": ["Junyi Tang", "Yifan Fan"],
+  "improvement_stage": {
+    "train_validation_diagnostic": "completed, post-hoc descriptive only",
+    "implementation_tests": "five tests passed including CPU/GPU gradients and real sampling loader",
+    "pilot_protocol": "course/improvements/pilot_protocol_v1.json",
+    "pilot_protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
+    "pilot_queue": "finite nine-run queue ready; read evidence/improvement_pilot_events.jsonl on server for actual execution",
+    "pilot_scope": "technical research; course approval not confirmed",
+    "full_evaluation": "not started; needs separate freeze after pilot selection"
+  },
   "next_actions": [
-    "Authenticate Git publishing and push complete audited history and public evidence",
-    "Run train/validation-only coverage and weighting diagnostics",
-    "Implement and test coverage candidate selection and size-proportional training sampling",
-    "Freeze an improvement pilot protocol before executing research pilots; label approval status honestly"
+    "Monitor finite pilot queue on server without duplicate launches; preserve any failures",
+    "Collect nine pilot results and review pre-registered validation-only selection",
+    "Freeze selected full improvement and mechanism-control protocol, then run three seeds each",
+    "Prepare report/slides/demo and two-member real human review evidence before final delivery"
   ],
   "automation_id": "monti",
   "scheduled_followup": "every four hours, at most 42 invocations; stop at delivery",

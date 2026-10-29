@@ -1,0 +1,6 @@
+{
+  "registered_base_commit": "7e295cc42fe44973b46d9fe742e768d3846d20b7",
+  "source_published_after_diagnosis_in_commit": "5073425",
+  "executed_script_sha256": "c40f4432b37172e49b4e3f48c2a7c45f0f90c50f85df9645a143d45007afa789",
+  "note": "Diagnostic script was an untracked upload at execution, then published byte-for-byte. This is post-hoc source attribution, not a pre-execution committed diagnostic protocol."
+}
