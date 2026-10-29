@@ -1,0 +1,157 @@
+{
+  "publication_utc": "2026-10-29T13:36:37.577241+00:00",
+  "edition": "English-only public history; original execution evidence retained privately",
+  "operation": "Omit non-English historical text artifacts; preserve scientific files, configurations, results and failure records. Current English editions retain their actual publication dates.",
+  "original_execution_head": "d04e284e1785367423d661408d6635a63bafe5ee",
+  "equivalent_public_head_before_manifest": "ba89ca4f4b61f7486b1b55ba83a6a393e728306b",
+  "original_audit_bundle_sha256": "7fab15e195e777b52491e8f2374794f81e4210b48db8691ef41729325424be00",
+  "original_archive": "Private audit archive and offline full Git bundle, available for instructor verification through the owner",
+  "commit_map": {
+    "37632e9d9aff3af0db845ffa5690250f176b2ab7": "37632e9d9aff3af0db845ffa5690250f176b2ab7",
+    "0e5e4c250a1531a7f7766be3e9745add03c55294": "6dc3b74b91c288fd188cb72cededc7d2533c8618",
+    "2646d78325f7b8d4007235d982e17838dfbd9aae": "537c5574db2eca4e4b650e4861df9f5b5b3a5c62",
+    "d0f43acb922cffbfcda97f4b3c74e19fa8b88161": "3c06c95320def1388bca29bc6f56cf8be8881b8d",
+    "9e32e3d5811aa17a9fbfa2ddb8da6bd37d031ca3": "4f95eacf7188b62093a566f5fa97440119db592a",
+    "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab": "df233fc9345f968af8c83240d9eda54420df19da",
+    "7e295cc42fe44973b46d9fe742e768d3846d20b7": "79ac4cdfd1f71c239aea2de17f05292b42d505cc",
+    "50734250f97e2ac10ebc009f310e78012fc2f14e": "8d480cdcb33926e2c530878fe425fa07e6328e9f",
+    "27c007f2e65744f3a8bef0f37706a09d857cf431": "2ac8e56c2ef32e80dd332cb25b22e6dd5fd8cf08",
+    "23ee3d9679adabeec13c829df3fceaa8e8525daa": "806afad78364a49fc1dd4dd0f347fc5ef051eefe",
+    "2d696ea2a3aa3708ff122c5727121512186fc717": "e41cb96d4fba52f44ee8abe2b27e40175493eeb8",
+    "d04e284e1785367423d661408d6635a63bafe5ee": "ba89ca4f4b61f7486b1b55ba83a6a393e728306b"
+  },
+  "tag_map": {
+    "reproduction-protocol-v1": {
+      "execution_commit": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "public_commit": "df233fc9345f968af8c83240d9eda54420df19da"
+    },
+    "reproduction-results-v1": {
+      "execution_commit": "7e295cc42fe44973b46d9fe742e768d3846d20b7",
+      "public_commit": "79ac4cdfd1f71c239aea2de17f05292b42d505cc"
+    },
+    "improvement-pilot-protocol-v1": {
+      "execution_commit": "27c007f2e65744f3a8bef0f37706a09d857cf431",
+      "public_commit": "2ac8e56c2ef32e80dd332cb25b22e6dd5fd8cf08"
+    }
+  },
+  "omitted_historical_text_paths": {
+    "AI_USAGE.md": 8,
+    "CONTRIBUTIONS.md": 8,
+    "course/PROTOCOL.md": 8,
+    "course/README.md": 8,
+    "evidence/agent_reviews/deepseek_protocol_review.json": 3,
+    "evidence/agent_reviews/deepseek_usage_record.md": 3,
+    "README.md": 2,
+    "course/GRADING_AUDIT.md": 2,
+    "course/IMPROVEMENT_PROPOSAL.md": 2,
+    "course/WEEK_PLAN.md": 2,
+    "docs/baseline_report.html": 2,
+    "course/TRAINING_DIAGNOSIS.md": 1
+  },
+  "frozen_scientific_file_checks": [
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "models/victim_model.py",
+      "sha256": "4648133355dfb3b99a7d1b5852dcb4d84c3977d462edff701287f1694718743a",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "models/attack_model.py",
+      "sha256": "5bf043f87c4cac4d98d28d87b88751ed62592742a33d349034fbbf570b6325d0",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "modules/result_manager.py",
+      "sha256": "b79ed72b1f9f5edea952f9bd7bf77f735519dc2cd4604f6abe8be40099a3d06c",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "modules/data_handler.py",
+      "sha256": "f7eabf047244659e5234cadc11c8a3ed8c4b7769116126fd79299f0aa1fa66aa",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "modules/experiment_handler.py",
+      "sha256": "ca0645620b7e70dc3d44733d6d9580abfea58e12749ec8e5e8e5d814f67846b8",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "modules/schedulers.py",
+      "sha256": "b58506530fdf5611b627d74599af3357e8f77f021b64abdf0c8da5e17c39bee4",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "utils/constants.py",
+      "sha256": "d88414e1c4775ceb03c1968639493ca016b5f8ce118ce92f3f50bbc2e2f0a09e",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "utils/utils.py",
+      "sha256": "c95383d2bbacba69e81b6b65e7f8b53be4085fc317d08fb445a94f702b13a732",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "course/runner.py",
+      "sha256": "2c73753b0b892d10b398b24b14bd632d65adfb95bbd2843d1c23628f1de7df9e",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "course/run.sh",
+      "sha256": "aee68668c4aa3d68abcdc868204487cb87e4471941b13066ec7e486f298fe0de",
+      "matched": true
+    },
+    {
+      "tag": "reproduction-protocol-v1",
+      "path": "course/analyze.py",
+      "sha256": "b9329f8f23623053621b26a7174ec68734753600fcc9ffb69b705d6f839fdfbb",
+      "matched": true
+    },
+    {
+      "tag": "improvement-pilot-protocol-v1",
+      "path": "course/improvements/policies.py",
+      "sha256": "ac8f3b45c5f7fe2594766b018ab5d0c1b7930da94cebeb331c9c51d5e3c05f14",
+      "matched": true
+    },
+    {
+      "tag": "improvement-pilot-protocol-v1",
+      "path": "course/improvements/sampling.py",
+      "sha256": "f04dacd2a07dd7f5361f3cab9686b23aabd6bebd3984449414d6678d692ddedb",
+      "matched": true
+    },
+    {
+      "tag": "improvement-pilot-protocol-v1",
+      "path": "course/improvements/run.py",
+      "sha256": "43cd2f75adee956a9eec550b96a4c8506c99db9bba94efc6fb2f6a51150e959a",
+      "matched": true
+    },
+    {
+      "tag": "improvement-pilot-protocol-v1",
+      "path": "course/improvements/queue_pilots.py",
+      "sha256": "2de2fa7b8d0f07312fd21736d746483b8c4f8890acb5365f3574c048ade80321",
+      "matched": true
+    },
+    {
+      "tag": "improvement-pilot-protocol-v1",
+      "path": "course/improvements/analyze_pilots.py",
+      "sha256": "997949afb1eb54b0aa2d2f753faa2143c3b8c0af5ff260df44c11de0308204f0",
+      "matched": true
+    },
+    {
+      "tag": "improvement-pilot-protocol-v1",
+      "path": "course/improvements/freeze_pilots.py",
+      "sha256": "74da916eac6c4a7e64b39dc8c2b781c86bae0e7de92533e0a4ef71459f910ecb",
+      "matched": true
+    }
+  ],
+  "result_policy": "Original registered commit IDs and numerical results remain unchanged. Use commit_map for the equivalent public scientific snapshot.",
+  "language_check": "Every object reachable from public main and tags scanned; no Chinese text permitted."
+}
