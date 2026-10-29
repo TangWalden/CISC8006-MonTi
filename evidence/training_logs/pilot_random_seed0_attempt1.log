@@ -1,0 +1,17 @@
+REGISTERED 20261028T121834Z_pilot_random_s0_749962
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+[2026/10/28 20:18:41.930] [INFO]: [CONFIG] {'exp_name': '20261028T121834Z_pilot_random_s0_749962', 'model': 'MonTi', 'surrogate_model': 'GCN', 'victim_model': 'GAGA', 'dataset': 'gossipcop_0.05', 'multi_target': True, 'split': 0, 'seed': 0, 'node_budget': 0.05, 'edge_budget': 0.1, 'k_exp': 2, 'masking': False, 'max_candidates': 128, 'num_layers': 6, 'num_heads': 4, 'emb_dim': 64, 'ff_dim': 2048, 'initial_temp': 10, 'min_temp': 0.01, 'temp_decay_rate': 0.63, 'initial_eps': 10, 'min_eps': 0.01, 'eps_decay_rate': 0.63, 'lr': 0.001, 'weight_decay': 0.0001, 'dropout': 0.1, 'epochs': 2, 'valid_epoch': 1, 'patience': 10, 'batch_size': 1, 'batch_size_pre': 1024, 'cuda_id': 1, 'shared_parameters': False, 'without_candidates': False, 'pos_encoding': True, 'ada_budget': True, 'random_candidates': True, 'config_path': 'evidence/runs/20261028T121834Z_pilot_random_s0_749962/config.json'}
+EVALUATION 001_victim_valid_clean {"accuracy": 0.6826923076923077, "misclf_rate": 0.3173076923076923}
+[2026/10/28 20:18:45.777] [INFO]: [START] Epoch: 0001 (1/10) / Best Epoch: 0000 / Loss: 0.34878 / Epoch Time: 2.024s / Mean Epoch Time: 2.024s / Elapsed Time: 2.024s / Max GPU Mem: 2.7617 GiB
+EVALUATION 002_surrogate_valid_attack {"accuracy": 0.05769230769230771, "misclf_rate": 0.9423076923076923, "loss": 0.060547743138158694}
+[2026/10/28 20:18:46.332] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0577 / misclf_rate: 0.9423 / loss: 0.0605
+[2026/10/28 20:18:46.332] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0577 / misclf_rate: 0.9423 / loss: 0.0605
+[2026/10/28 20:18:48.119] [INFO]: [TRAIN] Epoch: 0002 (1/10) / Best Epoch: 0001 / Loss: 0.27574 / Epoch Time: 1.787s / Mean Epoch Time: 1.905s / Elapsed Time: 4.366s / Max GPU Mem: 2.7617 GiB
+EVALUATION 003_surrogate_valid_attack {"accuracy": 0.038461538461538436, "misclf_rate": 0.9615384615384616, "loss": 0.010017491411417723}
+[2026/10/28 20:18:48.691] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0385 / misclf_rate: 0.9615 / loss: 0.0100
+[2026/10/28 20:18:48.691] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0385 / misclf_rate: 0.9615 / loss: 0.0100
+[2026/10/28 20:18:48.691] [INFO]: [TEST] Early stopping at epoch 2
+[2026/10/28 20:18:48.691] [INFO]: [TEST] Total training time: 4.9386s
+PILOT: final test evaluation deliberately skipped.
+FINAL {"status": "completed", "phase": "pilot", "result": {"test_skipped": 1.0}, "clean": {"accuracy": 0.6826923076923077, "misclf_rate": 0.3173076923076923}, "best_epoch": 2, "train_and_validation_seconds": 4.9385552406311035, "completed_epochs": 2, "train_groups": 16, "valid_groups": 8, "peak_reserved_bytes": 2965372928, "checkpoint": "runs/20261028T121834Z_pilot_random_s0_749962/20261028T121834Z_pilot_random_s0_749962/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle", "checkpoint_sha256": "38bc07a194fc4915a00b5708f7181a3811b5bc32c31f79bbe2f42dc6ae3c698c", "elapsed_seconds": 13.703074899996864, "gpu_wall_hours": 0.003806409694443573}

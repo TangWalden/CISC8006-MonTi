@@ -1,0 +1,51 @@
+{"event": "start", "seed": 0, "mode": "learned", "gpu": 0, "pid": 186549, "command": ["/home/tjy/miniconda3/envs/monti/bin/python", "-u", "-m", "course.runner", "--config", "course/configs/baseline.json", "--phase", "reproduction", "--mode", "learned", "--seed", "0", "--gpu", "0"], "log": "runs/formal_learned_seed0_gpu0.log", "utc": "2026-10-28T12:26:15.798819+00:00"}
+{"event": "start", "seed": 0, "mode": "random", "gpu": 1, "pid": 186550, "command": ["/home/tjy/miniconda3/envs/monti/bin/python", "-u", "-m", "course.runner", "--config", "course/configs/baseline.json", "--phase", "reproduction", "--mode", "random", "--seed", "0", "--gpu", "1"], "log": "runs/formal_random_seed0_gpu1.log", "utc": "2026-10-28T12:26:15.826834+00:00"}
+{"event": "round_end", "seed": 0, "exit_codes": [0, 0], "total_gpu_wall_hours": 1.0142474645363877, "utc": "2026-10-28T12:59:32.792966+00:00"}
+{"event": "start", "seed": 1, "mode": "random", "gpu": 0, "pid": 201462, "command": ["/home/tjy/miniconda3/envs/monti/bin/python", "-u", "-m", "course.runner", "--config", "course/configs/baseline.json", "--phase", "reproduction", "--mode", "random", "--seed", "1", "--gpu", "0"], "log": "runs/formal_random_seed1_gpu0.log", "utc": "2026-10-28T12:59:32.833866+00:00"}
+{"event": "start", "seed": 1, "mode": "learned", "gpu": 1, "pid": 201463, "command": ["/home/tjy/miniconda3/envs/monti/bin/python", "-u", "-m", "course.runner", "--config", "course/configs/baseline.json", "--phase", "reproduction", "--mode", "learned", "--seed", "1", "--gpu", "1"], "log": "runs/formal_learned_seed1_gpu1.log", "utc": "2026-10-28T12:59:32.866729+00:00"}
+{"event": "round_end", "seed": 1, "exit_codes": [0, 0], "total_gpu_wall_hours": 1.877610840378608, "utc": "2026-10-28T13:26:09.466038+00:00"}
+{"event": "start", "seed": 2, "mode": "learned", "gpu": 0, "pid": 210230, "command": ["/home/tjy/miniconda3/envs/monti/bin/python", "-u", "-m", "course.runner", "--config", "course/configs/baseline.json", "--phase", "reproduction", "--mode", "learned", "--seed", "2", "--gpu", "0"], "log": "runs/formal_learned_seed2_gpu0.log", "utc": "2026-10-28T13:26:09.498565+00:00"}
+{"event": "start", "seed": 2, "mode": "random", "gpu": 1, "pid": 210231, "command": ["/home/tjy/miniconda3/envs/monti/bin/python", "-u", "-m", "course.runner", "--config", "course/configs/baseline.json", "--phase", "reproduction", "--mode", "random", "--seed", "2", "--gpu", "1"], "log": "runs/formal_random_seed2_gpu1.log", "utc": "2026-10-28T13:26:09.527197+00:00"}
+{"event": "round_end", "seed": 2, "exit_codes": [0, 0], "total_gpu_wall_hours": 2.759075575197494, "utc": "2026-10-28T13:56:01.375425+00:00"}
+{
+  "rows": [
+    {
+      "seed": 0,
+      "learned_mr_percent": 44.28911079410366,
+      "random_mr_percent": 39.08701854493581,
+      "difference_pp": 5.202092249167848
+    },
+    {
+      "seed": 1,
+      "learned_mr_percent": 42.88159771754636,
+      "random_mr_percent": 41.6262482168331,
+      "difference_pp": 1.2553495007132653
+    },
+    {
+      "seed": 2,
+      "learned_mr_percent": 44.01331431288635,
+      "random_mr_percent": 39.85734664764622,
+      "difference_pp": 4.155967665240134
+    }
+  ],
+  "paired_mean_difference_pp": 3.5378031383737487,
+  "paired_sample_std_pp": 2.044698050404182,
+  "failed_attempts": [],
+  "learned_mean_mr_percent": 43.72800760817879,
+  "learned_sample_std_percent": 0.7458707676154496,
+  "random_mean_mr_percent": 40.190204469805046,
+  "random_sample_std_percent": 1.3019284077821405,
+  "paired_95ci_pp": [
+    -1.5415083979686783,
+    8.617114674716175
+  ],
+  "conclusion": "inconclusive",
+  "scope": "fixed split 0 and fixed official surrogate/victim, corrected selector mapping",
+  "paper_table5": {
+    "learned": 43.7,
+    "random": 39.13,
+    "difference_pp": 4.57
+  },
+  "paper_table4_monti": "41.34 +/- 1.90; unresolved difference from table 5"
+}
+{"event": "all_complete", "total_gpu_wall_hours": 2.759075575197494, "utc": "2026-10-28T13:56:03.266990+00:00"}

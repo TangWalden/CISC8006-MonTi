@@ -1,0 +1,164 @@
+REGISTERED 20261028T132611Z_reproduction_learned_s2_8ba576
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+[2026/10/28 21:26:24.320] [INFO]: [CONFIG] {'exp_name': '20261028T132611Z_reproduction_learned_s2_8ba576', 'model': 'MonTi', 'surrogate_model': 'GCN', 'victim_model': 'GAGA', 'dataset': 'gossipcop_0.05', 'multi_target': True, 'split': 0, 'seed': 2, 'node_budget': 0.05, 'edge_budget': 0.1, 'k_exp': 2, 'masking': False, 'max_candidates': 128, 'num_layers': 6, 'num_heads': 4, 'emb_dim': 64, 'ff_dim': 2048, 'initial_temp': 10, 'min_temp': 0.01, 'temp_decay_rate': 0.63, 'initial_eps': 10, 'min_eps': 0.01, 'eps_decay_rate': 0.63, 'lr': 0.001, 'weight_decay': 0.0001, 'dropout': 0.1, 'epochs': 100, 'valid_epoch': 1, 'patience': 10, 'batch_size': 1, 'batch_size_pre': 1024, 'cuda_id': 0, 'shared_parameters': False, 'without_candidates': False, 'pos_encoding': True, 'ada_budget': True, 'random_candidates': False, 'config_path': 'evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/config.json'}
+EVAL 001_victim_test_clean 100 / 909
+EVAL 001_victim_test_clean 200 / 909
+EVAL 001_victim_test_clean 300 / 909
+EVAL 001_victim_test_clean 400 / 909
+EVAL 001_victim_test_clean 500 / 909
+EVAL 001_victim_test_clean 600 / 909
+EVAL 001_victim_test_clean 700 / 909
+EVAL 001_victim_test_clean 800 / 909
+EVAL 001_victim_test_clean 900 / 909
+EVALUATION 001_victim_test_clean {"accuracy": 0.7831669044222539, "misclf_rate": 0.21683309557774608}
+[2026/10/28 21:27:48.032] [INFO]: [START] Epoch: 0001 (1/10) / Best Epoch: 0000 / Loss: 0.18892 / Epoch Time: 79.941s / Mean Epoch Time: 79.941s / Elapsed Time: 79.941s / Max GPU Mem: 3.5273 GiB
+EVAL 002_surrogate_valid_attack 100 / 592
+EVAL 002_surrogate_valid_attack 200 / 592
+EVAL 002_surrogate_valid_attack 300 / 592
+EVAL 002_surrogate_valid_attack 400 / 592
+EVAL 002_surrogate_valid_attack 500 / 592
+EVALUATION 002_surrogate_valid_attack {"accuracy": 0.03203707435019143, "misclf_rate": 0.9679629256498086, "loss": 0.06627770520060801}
+[2026/10/28 21:28:12.401] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0320 / misclf_rate: 0.9680 / loss: 0.0663
+[2026/10/28 21:28:12.401] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0320 / misclf_rate: 0.9680 / loss: 0.0663
+[2026/10/28 21:29:33.315] [INFO]: [TRAIN] Epoch: 0002 (1/10) / Best Epoch: 0001 / Loss: 0.18507 / Epoch Time: 80.914s / Mean Epoch Time: 80.428s / Elapsed Time: 185.225s / Max GPU Mem: 3.5762 GiB
+EVAL 003_surrogate_valid_attack 100 / 592
+EVAL 003_surrogate_valid_attack 200 / 592
+EVAL 003_surrogate_valid_attack 300 / 592
+EVAL 003_surrogate_valid_attack 400 / 592
+EVAL 003_surrogate_valid_attack 500 / 592
+EVALUATION 003_surrogate_valid_attack {"accuracy": 0.033044529518436394, "misclf_rate": 0.9669554704815636, "loss": 0.06111449136625271}
+[2026/10/28 21:29:57.398] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0330 / misclf_rate: 0.9670 / loss: 0.0611
+[2026/10/28 21:29:57.398] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0320 / misclf_rate: 0.9680 / loss: 0.0663
+[2026/10/28 21:31:25.826] [INFO]: [TRAIN] Epoch: 0003 (2/10) / Best Epoch: 0001 / Loss: 0.17067 / Epoch Time: 88.428s / Mean Epoch Time: 83.094s / Elapsed Time: 297.736s / Max GPU Mem: 3.6348 GiB
+EVAL 004_surrogate_valid_attack 100 / 592
+EVAL 004_surrogate_valid_attack 200 / 592
+EVAL 004_surrogate_valid_attack 300 / 592
+EVAL 004_surrogate_valid_attack 400 / 592
+EVAL 004_surrogate_valid_attack 500 / 592
+EVALUATION 004_surrogate_valid_attack {"accuracy": 0.03385049365303239, "misclf_rate": 0.9661495063469676, "loss": 0.06627299408978}
+[2026/10/28 21:31:49.869] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0339 / misclf_rate: 0.9661 / loss: 0.0663
+[2026/10/28 21:31:49.870] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0320 / misclf_rate: 0.9680 / loss: 0.0663
+[2026/10/28 21:33:13.573] [INFO]: [TRAIN] Epoch: 0004 (3/10) / Best Epoch: 0001 / Loss: 0.18157 / Epoch Time: 83.703s / Mean Epoch Time: 83.247s / Elapsed Time: 405.483s / Max GPU Mem: 3.6348 GiB
+EVAL 005_surrogate_valid_attack 100 / 592
+EVAL 005_surrogate_valid_attack 200 / 592
+EVAL 005_surrogate_valid_attack 300 / 592
+EVAL 005_surrogate_valid_attack 400 / 592
+EVAL 005_surrogate_valid_attack 500 / 592
+EVALUATION 005_surrogate_valid_attack {"accuracy": 0.04090267983074758, "misclf_rate": 0.9590973201692524, "loss": 0.08059772577542242}
+[2026/10/28 21:33:37.436] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0409 / misclf_rate: 0.9591 / loss: 0.0806
+[2026/10/28 21:33:37.436] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0320 / misclf_rate: 0.9680 / loss: 0.0663
+[2026/10/28 21:34:54.920] [INFO]: [TRAIN] Epoch: 0005 (4/10) / Best Epoch: 0001 / Loss: 0.17646 / Epoch Time: 77.483s / Mean Epoch Time: 82.094s / Elapsed Time: 506.829s / Max GPU Mem: 3.6348 GiB
+EVAL 006_surrogate_valid_attack 100 / 592
+EVAL 006_surrogate_valid_attack 200 / 592
+EVAL 006_surrogate_valid_attack 300 / 592
+EVAL 006_surrogate_valid_attack 400 / 592
+EVAL 006_surrogate_valid_attack 500 / 592
+EVALUATION 006_surrogate_valid_attack {"accuracy": 0.030425146080999443, "misclf_rate": 0.9695748539190006, "loss": 0.06044660669863948}
+[2026/10/28 21:35:18.751] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:35:18.752] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:36:38.763] [INFO]: [TRAIN] Epoch: 0006 (1/10) / Best Epoch: 0005 / Loss: 0.16329 / Epoch Time: 80.011s / Mean Epoch Time: 81.747s / Elapsed Time: 610.673s / Max GPU Mem: 3.6348 GiB
+EVAL 007_surrogate_valid_attack 100 / 592
+EVAL 007_surrogate_valid_attack 200 / 592
+EVAL 007_surrogate_valid_attack 300 / 592
+EVAL 007_surrogate_valid_attack 400 / 592
+EVAL 007_surrogate_valid_attack 500 / 592
+EVALUATION 007_surrogate_valid_attack {"accuracy": 0.080596413459601, "misclf_rate": 0.919403586540399, "loss": 0.1372992315807858}
+[2026/10/28 21:37:02.437] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0806 / misclf_rate: 0.9194 / loss: 0.1373
+[2026/10/28 21:37:02.437] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:38:21.038] [INFO]: [TRAIN] Epoch: 0007 (2/10) / Best Epoch: 0005 / Loss: 0.17556 / Epoch Time: 78.601s / Mean Epoch Time: 81.297s / Elapsed Time: 712.948s / Max GPU Mem: 3.6348 GiB
+EVAL 008_surrogate_valid_attack 100 / 592
+EVAL 008_surrogate_valid_attack 200 / 592
+EVAL 008_surrogate_valid_attack 300 / 592
+EVAL 008_surrogate_valid_attack 400 / 592
+EVAL 008_surrogate_valid_attack 500 / 592
+EVALUATION 008_surrogate_valid_attack {"accuracy": 0.07616361071932298, "misclf_rate": 0.923836389280677, "loss": 0.10096625961528302}
+[2026/10/28 21:38:44.959] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0762 / misclf_rate: 0.9238 / loss: 0.1010
+[2026/10/28 21:38:44.959] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:39:59.102] [INFO]: [TRAIN] Epoch: 0008 (3/10) / Best Epoch: 0005 / Loss: 0.17010 / Epoch Time: 74.142s / Mean Epoch Time: 80.403s / Elapsed Time: 811.012s / Max GPU Mem: 3.6348 GiB
+EVAL 009_surrogate_valid_attack 100 / 592
+EVAL 009_surrogate_valid_attack 200 / 592
+EVAL 009_surrogate_valid_attack 300 / 592
+EVAL 009_surrogate_valid_attack 400 / 592
+EVAL 009_surrogate_valid_attack 500 / 592
+EVALUATION 009_surrogate_valid_attack {"accuracy": 0.05561152528712476, "misclf_rate": 0.9443884747128752, "loss": 0.07955398064105129}
+[2026/10/28 21:40:23.037] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0556 / misclf_rate: 0.9444 / loss: 0.0796
+[2026/10/28 21:40:23.037] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:41:44.115] [INFO]: [TRAIN] Epoch: 0009 (4/10) / Best Epoch: 0005 / Loss: 0.16530 / Epoch Time: 81.078s / Mean Epoch Time: 80.478s / Elapsed Time: 916.025s / Max GPU Mem: 3.6348 GiB
+EVAL 010_surrogate_valid_attack 100 / 592
+EVAL 010_surrogate_valid_attack 200 / 592
+EVAL 010_surrogate_valid_attack 300 / 592
+EVAL 010_surrogate_valid_attack 400 / 592
+EVAL 010_surrogate_valid_attack 500 / 592
+EVALUATION 010_surrogate_valid_attack {"accuracy": 0.06306669353213779, "misclf_rate": 0.9369333064678622, "loss": 0.09987229622296386}
+[2026/10/28 21:42:08.024] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0631 / misclf_rate: 0.9369 / loss: 0.0999
+[2026/10/28 21:42:08.024] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:43:27.814] [INFO]: [TRAIN] Epoch: 0010 (5/10) / Best Epoch: 0005 / Loss: 0.16703 / Epoch Time: 79.790s / Mean Epoch Time: 80.409s / Elapsed Time: 1019.724s / Max GPU Mem: 3.6348 GiB
+EVAL 011_surrogate_valid_attack 100 / 592
+EVAL 011_surrogate_valid_attack 200 / 592
+EVAL 011_surrogate_valid_attack 300 / 592
+EVAL 011_surrogate_valid_attack 400 / 592
+EVAL 011_surrogate_valid_attack 500 / 592
+EVALUATION 011_surrogate_valid_attack {"accuracy": 0.05964134596010473, "misclf_rate": 0.9403586540398953, "loss": 0.08247823514928412}
+[2026/10/28 21:43:51.968] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0596 / misclf_rate: 0.9404 / loss: 0.0825
+[2026/10/28 21:43:51.969] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:45:12.209] [INFO]: [TRAIN] Epoch: 0011 (6/10) / Best Epoch: 0005 / Loss: 0.16762 / Epoch Time: 80.240s / Mean Epoch Time: 80.394s / Elapsed Time: 1124.119s / Max GPU Mem: 3.6348 GiB
+EVAL 012_surrogate_valid_attack 100 / 592
+EVAL 012_surrogate_valid_attack 200 / 592
+EVAL 012_surrogate_valid_attack 300 / 592
+EVAL 012_surrogate_valid_attack 400 / 592
+EVAL 012_surrogate_valid_attack 500 / 592
+EVALUATION 012_surrogate_valid_attack {"accuracy": 0.073745718315535, "misclf_rate": 0.926254281684465, "loss": 0.11529966541982847}
+[2026/10/28 21:45:36.140] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0737 / misclf_rate: 0.9263 / loss: 0.1153
+[2026/10/28 21:45:36.140] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:46:56.784] [INFO]: [TRAIN] Epoch: 0012 (7/10) / Best Epoch: 0005 / Loss: 0.16445 / Epoch Time: 80.643s / Mean Epoch Time: 80.415s / Elapsed Time: 1228.693s / Max GPU Mem: 3.6348 GiB
+EVAL 013_surrogate_valid_attack 100 / 592
+EVAL 013_surrogate_valid_attack 200 / 592
+EVAL 013_surrogate_valid_attack 300 / 592
+EVAL 013_surrogate_valid_attack 400 / 592
+EVAL 013_surrogate_valid_attack 500 / 592
+EVALUATION 013_surrogate_valid_attack {"accuracy": 0.06508160386862782, "misclf_rate": 0.9349183961313722, "loss": 0.09699940905478355}
+[2026/10/28 21:47:21.069] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0651 / misclf_rate: 0.9349 / loss: 0.0970
+[2026/10/28 21:47:21.069] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:48:47.612] [INFO]: [TRAIN] Epoch: 0013 (8/10) / Best Epoch: 0005 / Loss: 0.16032 / Epoch Time: 86.542s / Mean Epoch Time: 80.886s / Elapsed Time: 1339.522s / Max GPU Mem: 3.6484 GiB
+EVAL 014_surrogate_valid_attack 100 / 592
+EVAL 014_surrogate_valid_attack 200 / 592
+EVAL 014_surrogate_valid_attack 300 / 592
+EVAL 014_surrogate_valid_attack 400 / 592
+EVAL 014_surrogate_valid_attack 500 / 592
+EVALUATION 014_surrogate_valid_attack {"accuracy": 0.07394720934918397, "misclf_rate": 0.926052790650816, "loss": 0.13671187995704887}
+[2026/10/28 21:49:12.010] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0739 / misclf_rate: 0.9261 / loss: 0.1367
+[2026/10/28 21:49:12.010] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:50:52.495] [INFO]: [TRAIN] Epoch: 0014 (9/10) / Best Epoch: 0005 / Loss: 0.16200 / Epoch Time: 100.485s / Mean Epoch Time: 82.286s / Elapsed Time: 1464.405s / Max GPU Mem: 3.6484 GiB
+EVAL 015_surrogate_valid_attack 100 / 592
+EVAL 015_surrogate_valid_attack 200 / 592
+EVAL 015_surrogate_valid_attack 300 / 592
+EVAL 015_surrogate_valid_attack 400 / 592
+EVAL 015_surrogate_valid_attack 500 / 592
+EVALUATION 015_surrogate_valid_attack {"accuracy": 0.08684263550272009, "misclf_rate": 0.9131573644972799, "loss": 0.1388051923532731}
+[2026/10/28 21:51:19.159] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0868 / misclf_rate: 0.9132 / loss: 0.1388
+[2026/10/28 21:51:19.160] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:52:58.570] [INFO]: [TRAIN] Epoch: 0015 (10/10) / Best Epoch: 0005 / Loss: 0.15876 / Epoch Time: 99.410s / Mean Epoch Time: 83.428s / Elapsed Time: 1590.480s / Max GPU Mem: 3.6484 GiB
+EVAL 016_surrogate_valid_attack 100 / 592
+EVAL 016_surrogate_valid_attack 200 / 592
+EVAL 016_surrogate_valid_attack 300 / 592
+EVAL 016_surrogate_valid_attack 400 / 592
+EVAL 016_surrogate_valid_attack 500 / 592
+EVALUATION 016_surrogate_valid_attack {"accuracy": 0.09631271408422326, "misclf_rate": 0.9036872859157767, "loss": 0.15701364986474603}
+[2026/10/28 21:53:25.246] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0963 / misclf_rate: 0.9037 / loss: 0.1570
+[2026/10/28 21:53:25.246] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0304 / misclf_rate: 0.9696 / loss: 0.0604
+[2026/10/28 21:53:25.246] [INFO]: [TEST] Early stopping at epoch 15
+[2026/10/28 21:53:25.247] [INFO]: [TEST] Total training time: 1617.1564s
+[2026/10/28 21:53:25.247] [INFO]: [TEST] Restore model from epoch 5
+EVAL 017_victim_test_attack 100 / 909
+EVAL 017_victim_test_attack 200 / 909
+EVAL 017_victim_test_attack 300 / 909
+EVAL 017_victim_test_attack 400 / 909
+EVAL 017_victim_test_attack 500 / 909
+EVAL 017_victim_test_attack 600 / 909
+EVAL 017_victim_test_attack 700 / 909
+EVAL 017_victim_test_attack 800 / 909
+EVAL 017_victim_test_attack 900 / 909
+EVALUATION 017_victim_test_attack {"accuracy": 0.5598668568711365, "misclf_rate": 0.44013314312886354, "loss": 0.06430936190817091}
+[2026/10/28 21:55:56.411] [INFO]: [END] <PERFORMANCE> accuracy: 0.5599 / misclf_rate: 0.4401 / loss: 0.0643
+FINAL {"status": "completed", "phase": "reproduction", "result": {"accuracy": 0.5598668568711365, "misclf_rate": 0.44013314312886354, "loss": 0.06430936190817091}, "clean": {"accuracy": 0.7831669044222539, "misclf_rate": 0.21683309557774608}, "best_epoch": 5, "train_and_validation_seconds": 1617.1563720703125, "completed_epochs": 15, "train_groups": 937, "valid_groups": 592, "peak_reserved_bytes": 3917479936, "checkpoint": "runs/20261028T132611Z_reproduction_learned_s2_8ba576/20261028T132611Z_reproduction_learned_s2_8ba576/gossipcop_0.05-2-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle", "checkpoint_sha256": "93d3515e9a96132bb05201f4815a0bb67976e47a63aeb11633a1627cf6df1fc0", "elapsed_seconds": 1784.9708103369921, "gpu_wall_hours": 0.49582522509360893}

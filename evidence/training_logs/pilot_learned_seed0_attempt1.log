@@ -1,0 +1,23 @@
+REGISTERED 20261028T121403Z_pilot_learned_s0_f3bc6f
+Start loading gossipcop_0.05-0
+No sequence detected. Generating group aggregation sequences ...
+/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/scipy/sparse/_index.py:146: SparseEfficiencyWarning: Changing the sparsity structure of a csc_matrix is expensive. lil_matrix is more efficient.
+  self._set_arrayXarray(i, j, x)
+Done !
+Finished loading gossipcop_0.05-0
+[2026/10/28 20:17:07.077] [INFO]: [CONFIG] {'exp_name': '20261028T121403Z_pilot_learned_s0_f3bc6f', 'model': 'MonTi', 'surrogate_model': 'GCN', 'victim_model': 'GAGA', 'dataset': 'gossipcop_0.05', 'multi_target': True, 'split': 0, 'seed': 0, 'node_budget': 0.05, 'edge_budget': 0.1, 'k_exp': 2, 'masking': False, 'max_candidates': 128, 'num_layers': 6, 'num_heads': 4, 'emb_dim': 64, 'ff_dim': 2048, 'initial_temp': 10, 'min_temp': 0.01, 'temp_decay_rate': 0.63, 'initial_eps': 10, 'min_eps': 0.01, 'eps_decay_rate': 0.63, 'lr': 0.001, 'weight_decay': 0.0001, 'dropout': 0.1, 'epochs': 2, 'valid_epoch': 1, 'patience': 10, 'batch_size': 1, 'batch_size_pre': 1024, 'cuda_id': 0, 'shared_parameters': False, 'without_candidates': False, 'pos_encoding': True, 'ada_budget': True, 'random_candidates': False, 'config_path': 'evidence/runs/20261028T121403Z_pilot_learned_s0_f3bc6f/config.json'}
+
+Calculating node representations using the pretrained surrogate model ...
+EVALUATION 001_victim_valid_clean {"accuracy": 0.6826923076923077, "misclf_rate": 0.3173076923076923}
+[2026/10/28 20:17:10.497] [INFO]: [START] Epoch: 0001 (1/10) / Best Epoch: 0000 / Loss: 0.36308 / Epoch Time: 1.732s / Mean Epoch Time: 1.732s / Elapsed Time: 1.732s / Max GPU Mem: 3.1270 GiB
+EVALUATION 002_surrogate_valid_attack {"accuracy": 0.11538461538461542, "misclf_rate": 0.8846153846153846, "loss": 0.1672846395522356}
+[2026/10/28 20:17:10.904] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.1154 / misclf_rate: 0.8846 / loss: 0.1673
+[2026/10/28 20:17:10.905] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.1154 / misclf_rate: 0.8846 / loss: 0.1673
+[2026/10/28 20:17:12.522] [INFO]: [TRAIN] Epoch: 0002 (1/10) / Best Epoch: 0001 / Loss: 0.27808 / Epoch Time: 1.617s / Mean Epoch Time: 1.675s / Elapsed Time: 3.757s / Max GPU Mem: 3.1270 GiB
+EVALUATION 003_surrogate_valid_attack {"accuracy": 0.038461538461538436, "misclf_rate": 0.9615384615384616, "loss": 0.02680955408141017}
+[2026/10/28 20:17:12.965] [INFO]: [VALIDATION] <PERFORMANCE> accuracy: 0.0385 / misclf_rate: 0.9615 / loss: 0.0268
+[2026/10/28 20:17:12.965] [INFO]: [VALIDATION_BEST] <PERFORMANCE> accuracy: 0.0385 / misclf_rate: 0.9615 / loss: 0.0268
+[2026/10/28 20:17:12.965] [INFO]: [TEST] Early stopping at epoch 2
+[2026/10/28 20:17:12.965] [INFO]: [TEST] Total training time: 4.2004s
+PILOT: final test evaluation deliberately skipped.
+FINAL {"status": "completed", "phase": "pilot", "result": {"test_skipped": 1.0}, "clean": {"accuracy": 0.6826923076923077, "misclf_rate": 0.3173076923076923}, "best_epoch": 2, "train_and_validation_seconds": 4.2003607749938965, "completed_epochs": 2, "train_groups": 16, "valid_groups": 8, "peak_reserved_bytes": 3357540352, "checkpoint": "runs/20261028T121403Z_pilot_learned_s0_f3bc6f/20261028T121403Z_pilot_learned_s0_f3bc6f/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle", "checkpoint_sha256": "17be68d43e541d7d4345ec4a2024a4ac050799578f551089ef8c8b043e43cd26", "elapsed_seconds": 189.1823511900002, "gpu_wall_hours": 0.05255065310833339}

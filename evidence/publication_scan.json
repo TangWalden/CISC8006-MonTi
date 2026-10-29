@@ -1,0 +1,7 @@
+{
+  "scope": "all reachable Git blobs before public push; no credential values printed",
+  "blobs": 210,
+  "bytes": 455810,
+  "findings": [],
+  "limitations": "Pattern scan is not a guarantee; reviewed source, run metadata and paths separately."
+}

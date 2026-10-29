@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "kind": "post-run evidence recount; no new test inference",
+  "runs": [
+    {
+      "run_id": "20261028T122617Z_reproduction_learned_s0_772a5d",
+      "groups": 909,
+      "target_occurrences": 10515,
+      "incorrect": 4657,
+      "mr_percent": 44.289110794103664,
+      "raw_prediction_sha256": "b5adbaf073adbf9313bba30ab735f200db7dbdec6479e0adfb495e6e3759cfb4",
+      "public_counts": "evidence/published_baseline/20261028T122617Z_reproduction_learned_s0_772a5d_counts.jsonl",
+      "public_counts_sha256": "75174d8ad94528078b07d2c2c3bbed7b6fe4ee26c09dd62fd39390ed7b26c8d6"
+    },
+    {
+      "run_id": "20261028T122617Z_reproduction_random_s0_7c7817",
+      "groups": 909,
+      "target_occurrences": 10515,
+      "incorrect": 4110,
+      "mr_percent": 39.08701854493581,
+      "raw_prediction_sha256": "961ff6a35a0394592d32592f0719a005ce5d1fd5c0ba82343415991955235749",
+      "public_counts": "evidence/published_baseline/20261028T122617Z_reproduction_random_s0_7c7817_counts.jsonl",
+      "public_counts_sha256": "be2dac85c0077e4010abcacf09f862d4bdd317967a58779c7878bad89af8a9f8"
+    },
+    {
+      "run_id": "20261028T125935Z_reproduction_learned_s1_672f97",
+      "groups": 909,
+      "target_occurrences": 10515,
+      "incorrect": 4509,
+      "mr_percent": 42.88159771754636,
+      "raw_prediction_sha256": "b6217b2d597bf2c51c5e579d6791a7ccb8d4041212bd82ccd795078915d53746",
+      "public_counts": "evidence/published_baseline/20261028T125935Z_reproduction_learned_s1_672f97_counts.jsonl",
+      "public_counts_sha256": "4e11c8500099957c61c074b6039fa6103b1a2879f4e3f0571bcfd3f091274e43"
+    },
+    {
+      "run_id": "20261028T125935Z_reproduction_random_s1_37b2f9",
+      "groups": 909,
+      "target_occurrences": 10515,
+      "incorrect": 4377,
+      "mr_percent": 41.6262482168331,
+      "raw_prediction_sha256": "4a3780dcedfc86f23ba614a9d71fdaeaeeb2f03b624261ca75699b207223521f",
+      "public_counts": "evidence/published_baseline/20261028T125935Z_reproduction_random_s1_37b2f9_counts.jsonl",
+      "public_counts_sha256": "d9b30d26a1084d98dbb4769e117d72dc97205a0d766195c2d5e009d882c612df"
+    },
+    {
+      "run_id": "20261028T132611Z_reproduction_learned_s2_8ba576",
+      "groups": 909,
+      "target_occurrences": 10515,
+      "incorrect": 4628,
+      "mr_percent": 44.01331431288635,
+      "raw_prediction_sha256": "5fadf5207e56a04511dbc0f53e997ff107d1f72698fa68ced636926ffc671968",
+      "public_counts": "evidence/published_baseline/20261028T132611Z_reproduction_learned_s2_8ba576_counts.jsonl",
+      "public_counts_sha256": "aa1e5f6b684da875fd99ebcec5494ce0e8e2e18f2b1d9fa9e63ff1cbc72ed512"
+    },
+    {
+      "run_id": "20261028T132611Z_reproduction_random_s2_84a814",
+      "groups": 909,
+      "target_occurrences": 10515,
+      "incorrect": 4191,
+      "mr_percent": 39.85734664764622,
+      "raw_prediction_sha256": "afae08c0caff26b5bb629181cc7446836d1972574c7c24d2959907c3ae7c3579",
+      "public_counts": "evidence/published_baseline/20261028T132611Z_reproduction_random_s2_84a814_counts.jsonl",
+      "public_counts_sha256": "24ee6224afbfb5bbb4aabca25c15ac287941131015b50cc7675df2ec70573ca4"
+    }
+  ],
+  "paired_differences_pp": [
+    5.202092249167855,
+    1.2553495007132653,
+    4.155967665240134
+  ],
+  "paired_mean_pp": 3.5378031383737514,
+  "paired_sample_sd_pp": 2.044698050404185,
+  "paired_95ci_pp": [
+    -1.5415083979686828,
+    8.617114674716186
+  ],
+  "ci_method": "Student paired t interval, df=2; three runs, not individual target occurrences",
+  "frozen_inputs_and_scientific_code": "all SHA-256 values matched",
+  "public_output_policy": "counts omit node IDs, labels, features and model weights; full predictions retained separately"
+}

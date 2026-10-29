@@ -1,0 +1,35 @@
+{
+  "updated_date_asia_shanghai": "2026-10-29",
+  "delivery_deadline_asia_shanghai": "2026-11-05",
+  "repository": "https://github.com/TangWalden/CISC8006-MonTi",
+  "visibility": "public, explicitly requested by user",
+  "github_created": true,
+  "github_code_pushed": true,
+  "baseline": {
+    "source_commit": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+    "runs_complete": 6,
+    "learned_mr_percent": 43.72800760817879,
+    "random_mr_percent": 40.190204469805046,
+    "paired_difference_pp": 3.5378031383737487,
+    "paired_95ci_pp": [-1.5415083979686783, 8.617114674716175],
+    "conclusion": "inconclusive",
+    "independent_prediction_recount": "passed on server"
+  },
+  "approval": {
+    "user_authorizes_technical_work_and_public_github": true,
+    "instructor_component_level": "not confirmed",
+    "course_approved_pilot_ideas": "not confirmed",
+    "actual_course_freeze_date": "not provided; technical deadline is separate",
+    "human_review": "pending"
+  },
+  "members": ["Junyi Tang", "Yifan Fan"],
+  "next_actions": [
+    "Authenticate Git publishing and push complete audited history and public evidence",
+    "Run train/validation-only coverage and weighting diagnostics",
+    "Implement and test coverage candidate selection and size-proportional training sampling",
+    "Freeze an improvement pilot protocol before executing research pilots; label approval status honestly"
+  ],
+  "automation_id": "monti",
+  "scheduled_followup": "every four hours, at most 42 invocations; stop at delivery",
+  "research_gpu_hour_limit_additional": 12
+}
