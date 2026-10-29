@@ -1,0 +1,10 @@
+# Supplemental AI Interaction Record: DeepSeek API
+
+- User authorization: On 2026-10-28, the user explicitly requested parallel use of the DeepSeek API in this chat and personally entered the key into a local password-entry window.
+- Tool and model: The official DeepSeek API, deepseek-flash. Actual usage was 1,035 tokens: 560 input and 475 output tokens.
+- Task: Independently critique the frozen MonTi component-reproduction protocol. The request contained only public paper/code information and a project-protocol summary.
+- Key handling: Windows DPAPI CurrentUser encryption on the local machine. The request used the key as an authentication header; the key was not written into chat, experiment configurations, or the remote repository.
+- Main-agent decision: Retain and record reminders about the scope of the conclusion, uncertainty with three seeds, and unconfirmed historical ablation semantics. Correct the inference in item 2: different injected attributes or connections do not imply different budget quantities; both arms use the same budget computation for the same target group. Candidate-pool stratification suggested in item 1 may inform later descriptive analysis; it does not change the frozen experiment.
+- Human verification: Pending team review. The checks above were performed by the main agent and cannot count as human verification.
+- Evidence: deepseek_protocol_review.en.json is an explicitly labeled English translation of the request summary, review response, model/usage/timestamp record, and agent decision. It is not a verbatim English API response. The original Chinese record is retained through the original Git commit and SHA-256 identified in that English record. Configuration-freeze and source-commit evidence is in course/frozen_protocol.json.
+- Archive note: This supplemental record was originally kept separately under evidence/agent_reviews/ while frozen training was active. Its interaction is now also recorded in the root AI_USAGE.md. Original evidence is preserved; English publication copies are identified as translations.

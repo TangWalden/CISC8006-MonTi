@@ -3,6 +3,7 @@
   "delivery_deadline_asia_shanghai": "2026-11-05",
   "repository": "https://github.com/TangWalden/CISC8006-MonTi",
   "visibility": "public, explicitly requested by user",
+  "public_artifact_language": "English documentation, reports, and logs; labeled English translations for earlier non-English agent records",
   "github_created": true,
   "github_code_pushed": true,
   "baseline": {
@@ -28,13 +29,14 @@
     "implementation_tests": "five tests passed including CPU/GPU gradients and real sampling loader",
     "pilot_protocol": "course/improvements/pilot_protocol_v1.json",
     "pilot_protocol_sha256": "88cbff289cb1007552b07d9eeec1efbeefc5c02e0231704612bf224818c354b3",
-    "pilot_queue": "finite nine-run queue ready; read evidence/improvement_pilot_events.jsonl on server for actual execution",
+    "pilot_queue": "running on the server, PID294249; read evidence/improvement_pilot_events.jsonl for actual execution",
     "pilot_scope": "technical research; course approval not confirmed",
     "full_evaluation": "not started; needs separate freeze after pilot selection"
   },
   "next_actions": [
     "Monitor finite pilot queue on server without duplicate launches; preserve any failures",
-    "Collect nine pilot results and review pre-registered validation-only selection",
+    "Collect nine pilot results, independently recount selected-epoch predictions, and verify configuration/subset/checkpoint hashes",
+    "Reconcile queue events with failed/interrupted attempts and maintain an aggregate GPU-hour ledger before full freeze",
     "Freeze selected full improvement and mechanism-control protocol, then run three seeds each",
     "Prepare report/slides/demo and two-member real human review evidence before final delivery"
   ],
