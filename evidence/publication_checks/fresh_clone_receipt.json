@@ -1,0 +1,14 @@
+{
+  "public_head": "5f14a2f982daf7c40ef41ae2fab45b1ea6a0e16c",
+  "original_execution_commit_absent": true,
+  "mapped_public_source_fallback": "passed",
+  "baseline_checks": "six passed",
+  "improvement_checks": "five passed",
+  "pilot_audit": "passed",
+  "logs": {
+    "baseline_smoke.log": "0bbe1054230719bbf68b159e3020cb9de37c07947d78b4ce3545976ae5d3f999",
+    "improvement_smoke.log": "dcd12c0dcf47de0d405c0bfdadccc72ec9127359543c61852479e517527135ba",
+    "mapped_history_pilot_audit.log": "8cb5882406db9c024afc43760e2e00f883d708668797ab565b065b43c67f403c"
+  },
+  "setup": "Fresh clone of the verified public bundle; existing data/checkpoints linked locally for audit only"
+}

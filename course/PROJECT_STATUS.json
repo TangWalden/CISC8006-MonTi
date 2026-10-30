@@ -1,11 +1,28 @@
 {
-  "updated_date_asia_shanghai": "2026-10-29",
+  "updated_date_asia_shanghai": "2026-10-30",
   "delivery_deadline_asia_shanghai": "2026-11-05",
   "repository": "https://github.com/TangWalden/CISC8006-MonTi",
   "visibility": "public, explicitly requested by user",
   "public_artifact_language": "English documentation, reports, and logs; labeled English translations for earlier non-English agent records",
   "github_created": true,
   "github_code_pushed": true,
+  "publication_cleanup": {
+    "status": "completed; original history retained privately and English-only public history published",
+    "public_repository_id": 1438471031,
+    "verified_public_head": "5f14a2f982daf7c40ef41ae2fab45b1ea6a0e16c",
+    "chinese_objects_in_reachable_public_history": 0,
+    "frozen_scientific_hash_checks_passed": 17,
+    "anonymous_original_chinese_readme_status": 404,
+    "public_execution_mapping": "evidence/publication_history_map.json",
+    "fresh_clone_checks": "six baseline, five improvement, and mapped-source nine-pilot audit passed"
+  },
+  "workspaces": {
+    "canonical_public_local_folder": "MonTi-public",
+    "private_original_local_folder": "MonTi-course; do not push its original history to the public repository",
+    "server_path": "/home/tjy/Project/MonTi-course",
+    "server_public_branch": "public-course",
+    "publication_policy": "Publish only English source/history from MonTi-public. Preserve private execution refs and original run records. Never push private original refs to the public repository."
+  },
   "baseline": {
     "source_commit": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
     "runs_complete": 6,
@@ -32,18 +49,17 @@
     "pilot_queue": "all nine completed; independent saved-prediction, configuration, subset, checkpoint and cost audit passed",
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
-    "full_evaluation": "not started; explicit user confirmation of direction and complete protocol required"
+    "full_evaluation": "not started; concrete design in course/FULL_EVALUATION_PLAN.md requires owner review before execution preparation"
   },
   "user_milestone_confirmations": {
-    "baseline_conclusion": "pending; user requested explanation of the pre-registered rule, which was provided",
+    "baseline_conclusion": "pre-registered inconclusive result retained; user requested continuation after receiving an explanation; independent human technical review remains pending",
     "improvement_direction": "pending",
     "full_evaluation_protocol": "pending; do not launch until explicitly confirmed",
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Complete the English-only public-history edition with private original audit retention and commit mapping",
-    "Obtain user confirmation of the baseline interpretation and proposed improvement direction",
-    "Prepare a concrete full improvement/control protocol for user confirmation before launching any full run",
+    "Obtain owner decision on the concrete full evaluation design and proposed coverage extension",
+    "After direction approval, complete the budget-enforcing full runner, tests and frozen configuration for launch confirmation",
     "Prepare report/slides/demo and two-member real human review evidence before final delivery"
   ],
   "automation_id": "monti",

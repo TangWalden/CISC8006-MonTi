@@ -19,6 +19,7 @@ This public repository is an English-only publication edition. Original executio
 - [Frozen baseline protocol](course/frozen_protocol.json), [results](evidence/reproduction_summary.json), and [registered baseline runs](evidence/run_registry.json).
 - [Independent prediction recount](evidence/baseline_audit.json), [public per-group error counts](evidence/published_baseline), [training logs](evidence/training_logs), and [failed setup and check attempts](evidence/bootstrap).
 - [Grading audit](course/GRADING_AUDIT.md), [one-week plan](course/WEEK_PLAN.md), [three improvement proposals](course/IMPROVEMENT_PROPOSAL.md), and [work status](course/PROJECT_STATUS.json).
+- [Full evaluation design for owner review](course/FULL_EVALUATION_PLAN.md) and [English public-history verification](evidence/publication_verification.json).
 - [Train/validation diagnosis](course/TRAINING_DIAGNOSIS.md), [pre-run pilot protocol](course/improvements/pilot_protocol_v1.json), and [improvement implementation and tests](course/improvements).
 - [Agent-use record](AI_USAGE.md), [planned and actual contributions](CONTRIBUTIONS.md), and [baseline report](docs/baseline_report.html).
 
@@ -27,6 +28,8 @@ The improvement pilots compare the common baseline, structural-coverage candidat
 All nine pilots completed and passed independent saved-output audits. Mean paired GCN validation gains were -0.1833pp for coverage and -0.5500pp for size-proportional sampling. The pre-registered rule selected coverage; these negative pilot results are retained. No full improvement test run has started. The owner has requested confirmation of the reproduction conclusion, improvement direction, full evaluation protocol, and final freeze before those milestones advance.
 
 Public documentation and newly generated logs are in English. English translations of earlier agent records identify their original source, hashes, and translation status. Original historical evidence is preserved; translated wording is not presented as verbatim API output.
+
+Before publishing future changes, run `python -m course.verify_publication` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, and rejects Chinese text or reintroduced private execution history. Publish from the clean public workspace only.
 
 ## Environment and quick check
 

@@ -1,0 +1,31 @@
+{
+  "verification_date_asia_shanghai": "2026-10-30",
+  "public_repository": "https://github.com/TangWalden/CISC8006-MonTi",
+  "public_repository_id": 1438471031,
+  "public_history_head_checked": "5f14a2f982daf7c40ef41ae2fab45b1ea6a0e16c",
+  "reachable_public_objects_checked": 552,
+  "chinese_text_objects_found": 0,
+  "frozen_scientific_hash_checks_passed": 17,
+  "original_execution_history_retention": "Private audit repository plus verified offline full Git bundle",
+  "anonymous_original_archive_http_status": 404,
+  "anonymous_original_commit_api_http_status": 422,
+  "anonymous_original_chinese_readme_raw_http_status": 404,
+  "interpretation": "The original archive is private; the old execution commit cannot be resolved in the fresh public repository, and its old raw Chinese README URL returns404.",
+  "limitation": "These checks establish the checked repository and URLs at verification time, not deletion from external clones or independent caches.",
+  "execution_provenance": "evidence/publication_history_map.json",
+  "scientific_results_changed": false,
+  "fresh_public_clone": {
+    "public_head": "5f14a2f982daf7c40ef41ae2fab45b1ea6a0e16c",
+    "original_execution_commit_absent": true,
+    "mapped_public_source_fallback": "passed",
+    "baseline_checks": "six passed",
+    "improvement_checks": "five passed",
+    "pilot_audit": "passed",
+    "logs": {
+      "baseline_smoke.log": "0bbe1054230719bbf68b159e3020cb9de37c07947d78b4ce3545976ae5d3f999",
+      "improvement_smoke.log": "dcd12c0dcf47de0d405c0bfdadccc72ec9127359543c61852479e517527135ba",
+      "mapped_history_pilot_audit.log": "8cb5882406db9c024afc43760e2e00f883d708668797ab565b065b43c67f403c"
+    },
+    "setup": "Fresh clone of the verified public bundle; existing data/checkpoints linked locally for audit only"
+  }
+}

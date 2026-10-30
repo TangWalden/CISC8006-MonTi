@@ -1,5 +1,13 @@
 # AI Usage Record
 
+## 2026-10-30: Public-history cleanup and independent public-clone verification
+
+- Task and tools: The owner requested that historical Chinese records no longer be publicly retrievable while retaining the grading evidence. Codex prepared a separate English-only publication history, made the original repository a private audit archive, and published the English edition at the original public URL.
+- Decision: Preserve original execution records, registered commit IDs, numerical results, failures, and the full private Git history. Omit non-English text artifacts from historical public snapshots, retain current English translations at their actual publication stage, and record equivalent public source commits. Agent use remains disclosed in English.
+- Checks: The public history scan found zero Chinese text objects;17 frozen scientific file hashes were unchanged. Anonymous checks returned404 for the private archive and old raw Chinese README, while the old execution commit was not resolvable in the fresh public repository. A fresh public-bundle clone without the original execution commit passed six baseline checks, five improvement checks and the nine-pilot saved-output audit using the public commit mapping. No full improvement run was started.
+- Evidence: evidence/publication_history_map.json, evidence/publication_verification.json, and evidence/publication_checks/. Original evidence remains available privately for instructor verification; deleting copies from external clones or independent caches is not guaranteed. These are agent checks, not completed team human review or instructor approval.
+- Owner checkpoints: The owner requested confirmation of the reproduction conclusion, improvement direction, complete experimental protocol and final freeze. The candidate-coverage evaluation design is prepared for review; full training remains gated on the appropriate confirmation.
+
 ## 2026-10-29: English public documentation and log publication
 
 - Task and tools: The user requested English GitHub documentation, README, and uploaded logs. The main agent and two prose-review agents translated public documents and prepared a labeled English edition of the earlier Chinese DeepSeek interaction.

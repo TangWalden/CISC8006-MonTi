@@ -1,0 +1,10 @@
+test_actual_loader_preserves_update_count_and_records_draws (__main__.PolicyTests) ... ok
+test_coverage_and_global_tie_break (__main__.PolicyTests) ... ok
+test_disabled_policy_and_small_pool_equivalence (__main__.PolicyTests) ... ok
+test_selection_gradient_devices_and_controls (__main__.PolicyTests) ... ok
+test_size_sampling_and_uniform_control (__main__.PolicyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 2.271s
+
+OK

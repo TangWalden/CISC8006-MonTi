@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-30T04:43:16.331715+00:00",
+  "public_head": "5f14a2f982daf7c40ef41ae2fab45b1ea6a0e16c",
+  "public_history_objects": 552,
+  "publication_files": 490,
+  "findings": [],
+  "scope": "Current public HEAD, mapped public freeze snapshots, and tracked/unignored publication files; private execution refs are excluded."
+}
