@@ -20,6 +20,8 @@ def sha(path):
 
 def save(figure, name):
     figure.savefig(OUTPUT/(name+'.svg'), metadata={'Date': None, 'Creator': 'MonTi course evidence figures'})
+    svg = OUTPUT/(name+'.svg')
+    svg.write_bytes(svg.read_bytes().replace(b'\r\n', b'\n'))
     figure.savefig(OUTPUT/(name+'.png'), dpi=200)
     plt.close(figure)
 
@@ -119,7 +121,7 @@ def main():
                       computation='Visualization of existing audited summaries; no model training, prediction, seed addition or parameter selection',
                       figure_units='MR percent; paired effects in percentage points',
                       outputs={path.name: sha(path) for path in sorted(OUTPUT.glob('*')) if path.suffix in ['.png', '.svg', '.csv']})
-    (OUTPUT/'figure_provenance.json').write_text(json.dumps(provenance, indent=2)+'\n')
+    (OUTPUT/'figure_provenance.json').write_bytes((json.dumps(provenance, indent=2)+'\n').encode())
     print(json.dumps(dict(status='completed', figures=2, output_directory=str(OUTPUT), environment=provenance['environment']), indent=2))
 
 

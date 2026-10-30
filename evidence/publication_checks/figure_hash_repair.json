@@ -1,0 +1,18 @@
+{
+  "detected_commit": "871776390e58e9846fa089c045452df3a0037814",
+  "issue": "SVG CRLF bytes normalized to LF by Git after raw-file checksums were recorded",
+  "mismatches": [
+    {
+      "path": "docs/figures/baseline_paired_effect.svg",
+      "recorded_raw_sha256": "9e7d924f746548c10b07c5bd61a9bc4b2932bff392367f38e641f870e24fa466",
+      "git_blob_sha256": "c239c6001f124251edd3b02c9da4007ecd9bd117ab59e28bccc49d9176f4f2de"
+    },
+    {
+      "path": "docs/figures/pilot_validation_effects.svg",
+      "recorded_raw_sha256": "abf6ec08357f0ae7598c19221e5d79b4f23660db8f34d593d0df1e0e471764cd",
+      "git_blob_sha256": "9744a4fe7065ef9c4a3c27fa34325537cbdafe7aea2bba5dce395d80704d8159"
+    }
+  ],
+  "effect_on_plotted_values": "none",
+  "repair": "Normalize SVG text to LF before hashing and regenerate provenance; verify against committed bytes before the repair is pushed."
+}

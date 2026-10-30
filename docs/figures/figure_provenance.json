@@ -10,7 +10,7 @@
     }
   ],
   "script": "course/plot_evidence.py",
-  "script_sha256": "a221b3f85339b5b37776561162d9d60b4e5f60aefdc511924e4b6977cb00dab6",
+  "script_sha256": "2ded10a6850d73b1d0a15a6b52c22a9743621c8e674645025499031d91fcf47b",
   "environment": {
     "python": "3.12.14",
     "matplotlib": "3.11.2",
@@ -20,9 +20,9 @@
   "figure_units": "MR percent; paired effects in percentage points",
   "outputs": {
     "baseline_paired_effect.png": "e59e458723d0fa75ec9c94da0f059dc692768162c8950d36a34f277575df688b",
-    "baseline_paired_effect.svg": "9e7d924f746548c10b07c5bd61a9bc4b2932bff392367f38e641f870e24fa466",
+    "baseline_paired_effect.svg": "c239c6001f124251edd3b02c9da4007ecd9bd117ab59e28bccc49d9176f4f2de",
     "pilot_validation_effects.png": "b82fe837eb6647b73bc8361655f8a49b7bafd154efcff20315ee0ead5f758609",
-    "pilot_validation_effects.svg": "abf6ec08357f0ae7598c19221e5d79b4f23660db8f34d593d0df1e0e471764cd",
+    "pilot_validation_effects.svg": "9744a4fe7065ef9c4a3c27fa34325537cbdafe7aea2bba5dce395d80704d8159",
     "plotted_data.csv": "2c5f15a077d4e77066df91fa132646fbee90d03fd6336f793a7fd766fc7b4d83"
   }
 }
