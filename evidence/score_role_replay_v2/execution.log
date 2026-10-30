@@ -1,0 +1,112 @@
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+CASE 0 972 complete
+CASE 0 987 complete
+CASE 0 1034 complete
+CASE 0 1139 complete
+CASE 0 1185 complete
+CASE 0 1188 complete
+CASE 0 1196 complete
+CASE 0 1267 complete
+CASE 0 1285 complete
+CASE 0 1348 complete
+CASE 0 1357 complete
+CASE 0 1367 complete
+CASE 0 1386 complete
+CASE 0 1408 complete
+CASE 0 1415 complete
+CASE 0 1463 complete
+CASE 1 972 complete
+CASE 1 987 complete
+CASE 1 1034 complete
+CASE 1 1139 complete
+CASE 1 1185 complete
+CASE 1 1188 complete
+CASE 1 1196 complete
+CASE 1 1267 complete
+CASE 1 1285 complete
+CASE 1 1348 complete
+CASE 1 1357 complete
+CASE 1 1367 complete
+CASE 1 1386 complete
+CASE 1 1408 complete
+CASE 1 1415 complete
+CASE 1 1463 complete
+CASE 2 972 complete
+CASE 2 987 complete
+CASE 2 1034 complete
+CASE 2 1139 complete
+CASE 2 1185 complete
+CASE 2 1188 complete
+CASE 2 1196 complete
+CASE 2 1267 complete
+CASE 2 1285 complete
+CASE 2 1348 complete
+CASE 2 1357 complete
+CASE 2 1367 complete
+CASE 2 1386 complete
+CASE 2 1408 complete
+CASE 2 1415 complete
+CASE 2 1463 complete
+{
+  "status": "completed",
+  "gcn_forward_calls": 224,
+  "generator_forward_calls": 96,
+  "group_checkpoint_cases": 48,
+  "matrix": [
+    {
+      "generator": "cpu",
+      "detector": "cpu",
+      "cases": 48,
+      "target_occurrences": 243,
+      "residuals": 148,
+      "source_concordant_cases": 17,
+      "source_prediction_disagreements": 55,
+      "previous_cpu_concordant_cases": 48
+    },
+    {
+      "generator": "cpu",
+      "detector": "gpu",
+      "cases": 48,
+      "target_occurrences": 243,
+      "residuals": 148,
+      "source_concordant_cases": 17,
+      "source_prediction_disagreements": 55,
+      "previous_cpu_concordant_cases": 48
+    },
+    {
+      "generator": "gpu",
+      "detector": "cpu",
+      "cases": 48,
+      "target_occurrences": 243,
+      "residuals": 147,
+      "source_concordant_cases": 48,
+      "source_prediction_disagreements": 0,
+      "previous_cpu_concordant_cases": 17
+    },
+    {
+      "generator": "gpu",
+      "detector": "gpu",
+      "cases": 48,
+      "target_occurrences": 243,
+      "residuals": 147,
+      "source_concordant_cases": 48,
+      "source_prediction_disagreements": 0,
+      "previous_cpu_concordant_cases": 17
+    }
+  ],
+  "source_role_first_target_cases": 96,
+  "actual_soft_multiple_exact_maxima": 63,
+  "same_probability_device_topk_disagreement_cases": 32,
+  "fresh_cpu_previous_feature_exact_cases": 48,
+  "fresh_cpu_previous_endpoint_match_cases": 48,
+  "cross_device_endpoint_match_cases": 13,
+  "raw_sha256": "94ceff5ef1146ff04ae3b34cd3f7d9c24dc3afa1f5f749b1eddf77922a183a3f",
+  "elapsed_seconds": 210.90853147400776,
+  "gpu_wall_hours": 0.05858570318722438,
+  "conservative_gpu_devices": 1,
+  "peak_reserved_bytes": 1730150400,
+  "interpretation": "Observed source-role discrepancy and captured device contrasts; no corrected edges, training, victim/test queries or demonstrated improvement. Prediction concordance is not historical perturbation identity."
+}

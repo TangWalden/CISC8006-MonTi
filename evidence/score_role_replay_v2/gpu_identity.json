@@ -1,0 +1,11 @@
+{
+  "pid": 395019,
+  "visibility": "0",
+  "expected_uuid": "GPU-d7aa6d97-d823-0319-b218-84acc8e26019",
+  "observed_own_process_uuids": [
+    "GPU-d7aa6d97-d823-0319-b218-84acc8e26019"
+  ],
+  "metadata_queries": 1,
+  "pytorch_visible_count": 1,
+  "native_runtime_visible_count": 1
+}

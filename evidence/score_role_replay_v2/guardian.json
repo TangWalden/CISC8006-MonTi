@@ -1,0 +1,9 @@
+{
+  "start_unix_seconds": 1793365441.1224785,
+  "end_unix_seconds": 1793365654.714101,
+  "guarded_elapsed_seconds": 213.59162259101868,
+  "exit_code": 0,
+  "termination_seconds": 330,
+  "hard_kill_grace_seconds": 10,
+  "conservative_gpu_devices": 1
+}

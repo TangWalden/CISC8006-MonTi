@@ -1,0 +1,19 @@
+{
+  "cpu": {
+    "nodes": 16488,
+    "edges": 7746604,
+    "features": "236d18e2b46302033c03ca2b1dec36a29bce7c954d8ae25f9ea9d3aea3a1f0ff",
+    "ordered_sources": "5f68a4b8f847d29e018d2e959362449f27d67a2c5b04192f5282053a49d09582",
+    "ordered_destinations": "ab43b8adf49db84e0290e6720e0d6cef92d1b86cd3633e3c76ddebc57aa6ad10"
+  },
+  "gpu": {
+    "nodes": 16488,
+    "edges": 7746604,
+    "features": "236d18e2b46302033c03ca2b1dec36a29bce7c954d8ae25f9ea9d3aea3a1f0ff",
+    "ordered_sources": "5f68a4b8f847d29e018d2e959362449f27d67a2c5b04192f5282053a49d09582",
+    "ordered_destinations": "ab43b8adf49db84e0290e6720e0d6cef92d1b86cd3633e3c76ddebc57aa6ad10"
+  },
+  "ordered_identity": true,
+  "feature_and_edge_multiset_identity": true,
+  "feature_dtype": "torch.float32"
+}

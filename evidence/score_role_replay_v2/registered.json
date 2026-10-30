@@ -1,0 +1,62 @@
+{
+  "source_commit": "726de64bb8be64ee1c429dfba9af2b24392c0757",
+  "tracked_changes": "",
+  "registered_utc": "2026-10-30T13:04:02.760335+00:00",
+  "pid": 395019,
+  "protocol": "course/score_role_replay_protocol_v2.json",
+  "protocol_sha256": "56f522721bfb202f255a11ba6936b4240dc3062bed3ceeff29515e29bda736b6",
+  "script_sha256": "ec659662782efe85b43fb18ff8b25fc4d429b1fa1c13e2987a35a05b545e8b66",
+  "command": [
+    "env",
+    "CUDA_VISIBLE_DEVICES=0",
+    "bash",
+    "course/run.sh",
+    "-m",
+    "course.score_role_replay_v2"
+  ],
+  "gpu": 0,
+  "torch": "1.13.1+cu117",
+  "dgl": "1.1.2+cu117",
+  "numpy": "1.24.4",
+  "scipy": "1.10.1",
+  "cuda": "11.7",
+  "cudnn": 8500,
+  "threads": 8,
+  "gpu_snapshot": "0, GPU-d7aa6d97-d823-0319-b218-84acc8e26019, NVIDIA GeForce RTX 3090, 595.99.02\n1, GPU-1bb984a3-e0f6-138a-cfb7-dc3365d8f9cf, NVIDIA GeForce RTX 3090, 595.99.02",
+  "historical_devices": [
+    {
+      "attacker_seed": 0,
+      "registered_gpu_index": 0,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "physical_uuid": "not recorded in historical registration"
+    },
+    {
+      "attacker_seed": 1,
+      "registered_gpu_index": 1,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "physical_uuid": "not recorded in historical registration"
+    },
+    {
+      "attacker_seed": 2,
+      "registered_gpu_index": 0,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "physical_uuid": "not recorded in historical registration"
+    }
+  ],
+  "environment": {
+    "OMP_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "8",
+    "PYTHONHASHSEED": "0",
+    "DGLBACKEND": "pytorch",
+    "CUDA_VISIBLE_DEVICES": "0"
+  },
+  "backend_before_upstream_initialization": {
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false,
+    "deterministic_algorithms": false
+  },
+  "cost_policy": "Conservatively charge entire main elapsed time as one GPU wall hour, including CPU preparation and all transfers/math."
+}

@@ -1,0 +1,12 @@
+{
+  "upstream_seed_policy": "The unchanged upstream set_seed called by ExperimentHandler and replay resets sets cudnn.deterministic=True and benchmark=False. No manual backend tuning.",
+  "matmul_tf32": false,
+  "cudnn_tf32": true,
+  "cudnn_deterministic": true,
+  "cudnn_benchmark": false,
+  "deterministic_algorithms": false,
+  "parameter_dtype": "torch.float32",
+  "default_dtype": "torch.float32",
+  "pythonhashseed_environment_after_upstream_reset": "0",
+  "interpreter_hash_seed": "Set to 0 at process start by course/run.sh; later environment assignments do not reset interpreter hashing"
+}
