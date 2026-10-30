@@ -1,0 +1,62 @@
+{
+  "source_commit": "e5cb731a10ec83b0c328faf63a61201ea6c816cd",
+  "tracked_changes": "",
+  "registered_utc": "2026-10-30T12:52:12.471536+00:00",
+  "pid": 393804,
+  "protocol": "course/score_role_replay_protocol_v1.json",
+  "protocol_sha256": "d16a59837f88a8ed8734087db89851f661f2b25dc25c36674559ea72e251fff4",
+  "script_sha256": "51f9cb35c940827060365e7d4da0c61e95e4cae0a14eb53cff4ab0bef1aa201f",
+  "command": [
+    "env",
+    "CUDA_VISIBLE_DEVICES=GPU-d7aa6d97-d823-0319-b218-84acc8e26019",
+    "bash",
+    "course/run.sh",
+    "-m",
+    "course.score_role_replay"
+  ],
+  "gpu": 0,
+  "torch": "1.13.1+cu117",
+  "dgl": "1.1.2+cu117",
+  "numpy": "1.24.4",
+  "scipy": "1.10.1",
+  "cuda": "11.7",
+  "cudnn": 8500,
+  "threads": 8,
+  "gpu_snapshot": "0, GPU-d7aa6d97-d823-0319-b218-84acc8e26019, NVIDIA GeForce RTX 3090, 595.99.02\n1, GPU-1bb984a3-e0f6-138a-cfb7-dc3365d8f9cf, NVIDIA GeForce RTX 3090, 595.99.02",
+  "historical_devices": [
+    {
+      "attacker_seed": 0,
+      "registered_gpu_index": 0,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "physical_uuid": "not recorded in historical registration"
+    },
+    {
+      "attacker_seed": 1,
+      "registered_gpu_index": 1,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "physical_uuid": "not recorded in historical registration"
+    },
+    {
+      "attacker_seed": 2,
+      "registered_gpu_index": 0,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "physical_uuid": "not recorded in historical registration"
+    }
+  ],
+  "environment": {
+    "OMP_NUM_THREADS": "8",
+    "MKL_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "8",
+    "PYTHONHASHSEED": "0",
+    "DGLBACKEND": "pytorch",
+    "CUDA_VISIBLE_DEVICES": "GPU-d7aa6d97-d823-0319-b218-84acc8e26019"
+  },
+  "backend_before_upstream_initialization": {
+    "matmul_tf32": false,
+    "cudnn_tf32": true,
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false,
+    "deterministic_algorithms": false
+  },
+  "cost_policy": "Conservatively charge entire main elapsed time as one GPU wall hour, including CPU preparation and all transfers/math."
+}

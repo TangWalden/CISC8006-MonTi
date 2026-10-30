@@ -16,9 +16,9 @@
       "conservative_gpu_hours": 0.0006216666666666666
     }
   ],
-  "measured_or_conservatively_charged": 0.7142093201469497,
+  "measured_or_conservatively_charged": 0.7156750706260114,
   "unmetered_setup_reserve": 0.02,
-  "remaining_after_reserve": 11.265790679853051,
+  "remaining_after_reserve": 11.26432492937399,
   "failed_or_interrupted_incidents": [
     {
       "path": "evidence/one_edge_diagnosis_v1/failure.json",
@@ -28,6 +28,14 @@
       "cpu_elapsed_seconds": 54.42460726900026,
       "gpu_hours": 0,
       "repair_protocol": "course/ONE_EDGE_DIAGNOSIS_AMENDMENT_1.md"
+    },
+    {
+      "path": "evidence/score_role_replay_v1/failure.json",
+      "status": "failed during visibility preflight before all model forwards",
+      "gcn_forward_calls": 0,
+      "generator_forward_calls": 0,
+      "guardian_seconds": 2.4934945106506348,
+      "repair_protocol": "course/SCORE_ROLE_REPLAY_AMENDMENT_1.md"
     }
   ],
   "reconciliation": "All nine pilot queue starts have successful exits and one complete registration/result. The separate CPU endpoint diagnosis preserves a failed 79-forward attempt and complete 355-forward retry; total 434 recorded forwards, with no GPU charge.",
@@ -84,6 +92,25 @@
       "path": "evidence/publication_checks/improvement_smoke.log",
       "wall_seconds": 2.271,
       "conservative_gpu_hours": 0.0006308333333333333
+    }
+  ],
+  "score_role_replay_attempts": [
+    {
+      "kind": "startup_failure",
+      "path": "evidence/score_role_replay_v1/guardian.json",
+      "elapsed_seconds": 2.4934945106506348,
+      "charged_gpu_wall_hours": 0.0006926373640696208,
+      "gcn_forwards": 0,
+      "generator_forwards": 0
+    },
+    {
+      "kind": "metadata_only_comparison",
+      "path": "evidence/score_role_replay_v1/visibility_diagnostic.json",
+      "elapsed_seconds": 2.783207213971764,
+      "charged_gpu_wall_hours": 0.0007731131149921566,
+      "gcn_forwards": 0,
+      "generator_forwards": 0,
+      "accounting": "Conservative full-process charge despite metadata-only inspection"
     }
   ]
 }

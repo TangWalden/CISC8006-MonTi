@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/tjy/Project/MonTi-course/course/score_role_replay.py\", line 192, in main\n    assert os.environ.get('CUDA_VISIBLE_DEVICES')==protocol['gpu_uuid'] and torch.cuda.device_count()==1\nAssertionError\n",
+  "gcn_forward_calls": 0,
+  "generator_forward_calls": 0,
+  "elapsed_seconds": 0.3720659649698064,
+  "gpu_wall_hours": 0.00010335165693605733,
+  "conservative_gpu_devices": 1
+}

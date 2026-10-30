@@ -1,0 +1,27 @@
+{
+  "stage": "Post-failure metadata diagnosis",
+  "date": "2026-10-30",
+  "source_commit": "e5cb731a10ec83b0c328faf63a61201ea6c816cd",
+  "scope": "Two metadata-only processes; no model loading or inference",
+  "checks": [
+    {
+      "mode": "uuid",
+      "visibility": "GPU-d7aa6d97-d823-0319-b218-84acc8e26019",
+      "pytorch_device_count": 0,
+      "native_runtime_device_count": 1,
+      "cuda_available": true,
+      "elapsed_seconds": 1.387446382024791
+    },
+    {
+      "mode": "ordinal",
+      "visibility": "0",
+      "pytorch_device_count": 1,
+      "native_runtime_device_count": 1,
+      "cuda_available": true,
+      "elapsed_seconds": 1.3957608319469728
+    }
+  ],
+  "total_process_elapsed_seconds": 2.783207213971764,
+  "accounting": "Conservatively charge full process durations as one GPU each despite metadata-only scope; include in aggregate forensic reservation.",
+  "command_description": "Set only CUDA_VISIBLE_DEVICES in each fresh process; query torch.cuda.device_count(), torch._C._cuda_getDeviceCount() and torch.cuda.is_available()."
+}

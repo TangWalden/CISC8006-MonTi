@@ -1,0 +1,210 @@
+{
+  "version": 2,
+  "recorded_before_execution_utc": "2026-10-30T13:03:43.722939+00:00",
+  "scope": "Validation-only observed score roles, actual top-k inputs and generator/detector device localization; no corrected edges, training or victim/test queries",
+  "groups": [
+    972,
+    987,
+    1034,
+    1139,
+    1185,
+    1188,
+    1196,
+    1267,
+    1285,
+    1348,
+    1357,
+    1367,
+    1386,
+    1408,
+    1415,
+    1463
+  ],
+  "runs": [
+    {
+      "seed": 0,
+      "best_epoch": 4,
+      "config": {
+        "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/config.json",
+        "sha256": "e48d6d03470048114e0ceb6aaf598e15cac17d7267deceff69f59f4ea7ac8db5"
+      },
+      "checkpoint": {
+        "path": "runs/20261028T122617Z_reproduction_learned_s0_772a5d/20261028T122617Z_reproduction_learned_s0_772a5d/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+        "sha256": "d1b566626db88b56637fc171c39dee312735a1252608b1c3181bf42cccdcb190"
+      },
+      "source_result": {
+        "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/result.json",
+        "sha256": "abc9bea705fb45781120ada460a4e8313107b785ee0e8c334a378ccdabbfc656"
+      },
+      "source_prediction_summary": {
+        "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/005_surrogate_valid_attack.json",
+        "sha256": "97a2d44afaf11dd5ca32c33aaafda8686fb91ff36ba74e210ad141b1ad2e28ba"
+      },
+      "source_prediction": {
+        "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/005_surrogate_valid_attack.jsonl",
+        "sha256": "6fe0bc3f6ad95e6037cbcaa88dec27f8908e98e3d223c23ef219597adb265d6d"
+      }
+    },
+    {
+      "seed": 1,
+      "best_epoch": 3,
+      "config": {
+        "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/config.json",
+        "sha256": "8181cf84ecb2f382bf54a64ece0c2d755cdcc36f4bc8eb493b32d31c7d575b9d"
+      },
+      "checkpoint": {
+        "path": "runs/20261028T125935Z_reproduction_learned_s1_672f97/20261028T125935Z_reproduction_learned_s1_672f97/gossipcop_0.05-1-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+        "sha256": "628b1790e09d01a599d5e9907afe5f271df4108588cafde7b78fadf2af331b11"
+      },
+      "source_result": {
+        "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/result.json",
+        "sha256": "593e45c7f165a873bef3ecbde7d010d084ff8426ba2d0397ad547d91ef34d921"
+      },
+      "source_prediction_summary": {
+        "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/004_surrogate_valid_attack.json",
+        "sha256": "a2843af5329b2d3749417598fa74ec03b183e9d7e963a9d4b349a3b8491cdf4f"
+      },
+      "source_prediction": {
+        "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/004_surrogate_valid_attack.jsonl",
+        "sha256": "deb3a438a3d33812b40aac31f2c99aa983034e5e18ea062cd959ed57b676402d"
+      }
+    },
+    {
+      "seed": 2,
+      "best_epoch": 5,
+      "config": {
+        "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/config.json",
+        "sha256": "35b66737c49529283cb571e9137f7877d62f172dd910f0d21de1e6fd91f8958e"
+      },
+      "checkpoint": {
+        "path": "runs/20261028T132611Z_reproduction_learned_s2_8ba576/20261028T132611Z_reproduction_learned_s2_8ba576/gossipcop_0.05-2-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+        "sha256": "93d3515e9a96132bb05201f4815a0bb67976e47a63aeb11633a1627cf6df1fc0"
+      },
+      "source_result": {
+        "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/result.json",
+        "sha256": "3c032b4ce596394badea4027f9d05b2834078c10189fe01b28fe876a535b9a0b"
+      },
+      "source_prediction_summary": {
+        "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/006_surrogate_valid_attack.json",
+        "sha256": "6f894edab5068dfc672dbefdaa9f19a9d4e3597b3f2b884c050cbbe362342f79"
+      },
+      "source_prediction": {
+        "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/006_surrogate_valid_attack.jsonl",
+        "sha256": "f3aa8921e12d023cd5ffc2c95e036c77621f7e7f421dea88ace47a161cc0cd81"
+      }
+    }
+  ],
+  "reconstruction_seed": 1729,
+  "gpu": 0,
+  "gpu_uuid": "GPU-d7aa6d97-d823-0319-b218-84acc8e26019",
+  "gpu_hour_limit": 0.095,
+  "aggregate_forensic_gpu_hour_limit": 0.1,
+  "main_wall_seconds_limit": 300,
+  "external_guardian_seconds": 330,
+  "external_kill_grace_seconds": 10,
+  "gcn_forward_limit": 224,
+  "generator_forward_limit": 96,
+  "algebra_topk_reference_calls": 192,
+  "exact_and_near_maximum_bands": [
+    0,
+    1e-06,
+    1e-05
+  ],
+  "traversal": "attacker seeds0/1/2, sortedgroups, generatorCPU/GPU, detectorCPU/GPU; clean once per group/device",
+  "initialization": "Preserve upstream set_seed including cudnn deterministic/benchmark assignment; record before and after. No manual TF32 or deterministic-policy tuning. GPU0 UUID is sole visible GPU.",
+  "paper": "https://ojs.aaai.org/index.php/AAAI/article/view/33760/35915#page=4",
+  "historical_devices": [
+    {
+      "attacker_seed": 0,
+      "registered_gpu_index": 0,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "physical_uuid": "not recorded in historical registration"
+    },
+    {
+      "attacker_seed": 1,
+      "registered_gpu_index": 1,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "physical_uuid": "not recorded in historical registration"
+    },
+    {
+      "attacker_seed": 2,
+      "registered_gpu_index": 0,
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "physical_uuid": "not recorded in historical registration"
+    }
+  ],
+  "previous_raw_prediction_sha256": "e4221ff5a7a822206110cbd1a3e991e87531c1808d135d574ec75b5fe8d56c78",
+  "source_files": [
+    {
+      "path": "course/score_role_replay.py",
+      "sha256": "51f9cb35c940827060365e7d4da0c61e95e4cae0a14eb53cff4ab0bef1aa201f"
+    },
+    {
+      "path": "course/SCORE_ROLE_REPLAY_PLAN.md",
+      "sha256": "3e81239178bbbb2437a0df3c46e1ebcd58a43a062a9f51983a8b08929aa8b9ee"
+    },
+    {
+      "path": "course/PAPER_EDGE_SCORE_CHECK.md",
+      "sha256": "f16d225db56a8faf10f736b31d3ade8a23a317d9361995b20b2919ab8f08e476"
+    },
+    {
+      "path": "course/one_edge_diagnosis_v2.py",
+      "sha256": "1f62426a62aeb8a90ddb5d0c28604a128e3867440376f5f484524879fc03baec"
+    },
+    {
+      "path": "course/one_edge_diagnosis_protocol_v2.json",
+      "sha256": "d11799a1681ac958a5d3eb9ae04d900d26c5f9681ea4a182f9bae3a7ce093180"
+    },
+    {
+      "path": "course/frozen_protocol.json",
+      "sha256": "6bd8d1f3cdc4c1b463b4a190525ba5401db176dbde268c0494b80c057e9b55ff"
+    },
+    {
+      "path": "environment/runtime.json",
+      "sha256": "24b6346ad807e585f5fb026bd6b02d2a65cf6a155cab60a12d71bb722cc08cd0"
+    },
+    {
+      "path": "evidence/research_cost_ledger.json",
+      "sha256": "4a0151f2a8e028af5129c224e99d6cac2d602e9446d242f044cfd7f2947eb920"
+    },
+    {
+      "path": "evidence/one_edge_diagnosis_v2/summary.json",
+      "sha256": "22e23beae1d797af1a0ccb996c6f9cd9aad631adca092313bbcbccd42b1b5918"
+    },
+    {
+      "path": "evidence/one_edge_diagnosis_v2/groups.csv",
+      "sha256": "b1ece3ed7cb30a0eb5fb388ff45634815a62ba5b33b6589f7f0cb655fa5258c0"
+    },
+    {
+      "path": "course/score_role_replay_v2.py",
+      "sha256": "ec659662782efe85b43fb18ff8b25fc4d429b1fa1c13e2987a35a05b545e8b66"
+    },
+    {
+      "path": "course/SCORE_ROLE_REPLAY_AMENDMENT_1.md",
+      "sha256": "0b5a870bcf377a75e50a7de731c35f6f4f976aac17e3ef954d6d78bbcef3c296"
+    },
+    {
+      "path": "course/score_role_replay_protocol_v1.json",
+      "sha256": "d16a59837f88a8ed8734087db89851f661f2b25dc25c36674559ea72e251fff4"
+    },
+    {
+      "path": "evidence/score_role_replay_v1/registered.json",
+      "sha256": "0b8b742232d1a60de0214d57995b47539a730cb3d93f15f6635d4a2e31107f7a"
+    },
+    {
+      "path": "evidence/score_role_replay_v1/failure.json",
+      "sha256": "42c09c14105061f67163e0a5a3e4235070a557e1394a6357d61ff3ff373a96f7"
+    },
+    {
+      "path": "evidence/score_role_replay_v1/guardian.json",
+      "sha256": "c1b6a4de949c922b62e8aec8d6d114470110cf8735bf5f9a91cb0e643f6d7f3b"
+    },
+    {
+      "path": "evidence/score_role_replay_v1/visibility_diagnostic.json",
+      "sha256": "5feb1616fbe59371f68a1937e6df06350643447a37b918e5fa2322707ae2dc8b"
+    }
+  ],
+  "decision": "Descriptive full-matrix localization only; prediction agreement is not perturbation identity; no improvement selected. No automatic retries or limit expansion.",
+  "visibility_policy": "CUDA_VISIBLE_DEVICES=0; require Torch and native count1; verify own-PID actual physical GPU UUID before model work",
+  "amendment": "course/SCORE_ROLE_REPLAY_AMENDMENT_1.md"
+}

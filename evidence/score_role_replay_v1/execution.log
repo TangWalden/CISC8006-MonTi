@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/tjy/Project/MonTi-course/course/score_role_replay.py", line 400, in <module>
+    main()
+  File "/home/tjy/Project/MonTi-course/course/score_role_replay.py", line 192, in main
+    assert os.environ.get('CUDA_VISIBLE_DEVICES')==protocol['gpu_uuid'] and torch.cuda.device_count()==1
+AssertionError
