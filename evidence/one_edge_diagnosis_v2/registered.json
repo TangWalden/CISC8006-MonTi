@@ -1,0 +1,24 @@
+{
+  "source_commit": "cbba66aec475acc47c969401df619f2f64401d37",
+  "tracked_changes": "",
+  "registered_utc": "2026-10-30T08:37:17.617707+00:00",
+  "pid": 384833,
+  "protocol": "course/one_edge_diagnosis_protocol_v2.json",
+  "protocol_sha256": "d11799a1681ac958a5d3eb9ae04d900d26c5f9681ea4a182f9bae3a7ce093180",
+  "script_sha256": "1f62426a62aeb8a90ddb5d0c28604a128e3867440376f5f484524879fc03baec",
+  "command": [
+    "env",
+    "CUDA_VISIBLE_DEVICES=",
+    "bash",
+    "course/run.sh",
+    "-m",
+    "course.one_edge_diagnosis_v2"
+  ],
+  "scope": "Reconstructed one-edge attacks and exhaustive fixed-feature target endpoints; GCN validation only",
+  "torch": "1.13.1+cu117",
+  "dgl": "1.1.2+cu117",
+  "numpy": "1.24.4",
+  "scipy": "1.10.1",
+  "gpu_hours": 0,
+  "device": "CPU only"
+}

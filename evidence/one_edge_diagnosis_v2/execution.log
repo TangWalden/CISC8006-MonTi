@@ -1,0 +1,125 @@
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+GROUP 0 972 residuals 3 oracle_best 3
+GROUP 0 987 residuals 1 oracle_best 1
+GROUP 0 1034 residuals 11 oracle_best 11
+GROUP 0 1139 residuals 11 oracle_best 11
+GROUP 0 1185 residuals 3 oracle_best 3
+GROUP 0 1188 residuals 2 oracle_best 2
+GROUP 0 1196 residuals 2 oracle_best 1
+GROUP 0 1267 residuals 4 oracle_best 4
+GROUP 0 1285 residuals 0 oracle_best 0
+GROUP 0 1348 residuals 0 oracle_best 0
+GROUP 0 1357 residuals 1 oracle_best 1
+GROUP 0 1367 residuals 0 oracle_best 0
+GROUP 0 1386 residuals 2 oracle_best 2
+GROUP 0 1408 residuals 4 oracle_best 4
+GROUP 0 1415 residuals 1 oracle_best 1
+GROUP 0 1463 residuals 3 oracle_best 3
+GROUP 1 972 residuals 3 oracle_best 3
+GROUP 1 987 residuals 1 oracle_best 1
+GROUP 1 1034 residuals 11 oracle_best 11
+GROUP 1 1139 residuals 11 oracle_best 11
+GROUP 1 1185 residuals 3 oracle_best 3
+GROUP 1 1188 residuals 3 oracle_best 2
+GROUP 1 1196 residuals 2 oracle_best 1
+GROUP 1 1267 residuals 4 oracle_best 4
+GROUP 1 1285 residuals 0 oracle_best 0
+GROUP 1 1348 residuals 1 oracle_best 0
+GROUP 1 1357 residuals 1 oracle_best 1
+GROUP 1 1367 residuals 1 oracle_best 0
+GROUP 1 1386 residuals 2 oracle_best 2
+GROUP 1 1408 residuals 4 oracle_best 4
+GROUP 1 1415 residuals 1 oracle_best 1
+GROUP 1 1463 residuals 3 oracle_best 3
+GROUP 2 972 residuals 3 oracle_best 3
+GROUP 2 987 residuals 1 oracle_best 1
+GROUP 2 1034 residuals 11 oracle_best 11
+GROUP 2 1139 residuals 11 oracle_best 11
+GROUP 2 1185 residuals 3 oracle_best 3
+GROUP 2 1188 residuals 2 oracle_best 2
+GROUP 2 1196 residuals 1 oracle_best 1
+GROUP 2 1267 residuals 4 oracle_best 4
+GROUP 2 1285 residuals 0 oracle_best 0
+GROUP 2 1348 residuals 0 oracle_best 0
+GROUP 2 1357 residuals 2 oracle_best 1
+GROUP 2 1367 residuals 1 oracle_best 0
+GROUP 2 1386 residuals 2 oracle_best 2
+GROUP 2 1408 residuals 4 oracle_best 4
+GROUP 2 1415 residuals 1 oracle_best 1
+GROUP 2 1463 residuals 3 oracle_best 3
+{
+  "status": "completed",
+  "scope": "Selected validation cohort; reconstructed attacks, not original perturbation identity",
+  "groups": 16,
+  "attacker_checkpoints": 3,
+  "group_checkpoint_cases": 48,
+  "endpoint_configurations": 243,
+  "target_occurrences": 243,
+  "surrogate_forward_calls": 355,
+  "per_seed": [
+    {
+      "attacker_seed": 0,
+      "groups": 16,
+      "target_occurrences": 81,
+      "clean_residuals": 62,
+      "saved_original_residuals": 50,
+      "reconstructed_residuals": 48,
+      "restricted_oracle_residuals": 47,
+      "worst_endpoint_residuals": 57,
+      "oracle_additional_incorrect": 1,
+      "conditional_oracle_additional_clean_flips": 1,
+      "groups_with_strict_endpoint_opportunity": 1,
+      "source_prediction_concordant_groups": 6,
+      "clean_correct_to_wrong": 14,
+      "clean_wrong_to_correct": 0
+    },
+    {
+      "attacker_seed": 1,
+      "groups": 16,
+      "target_occurrences": 81,
+      "clean_residuals": 62,
+      "saved_original_residuals": 48,
+      "reconstructed_residuals": 51,
+      "restricted_oracle_residuals": 47,
+      "worst_endpoint_residuals": 57,
+      "oracle_additional_incorrect": 4,
+      "conditional_oracle_additional_clean_flips": 4,
+      "groups_with_strict_endpoint_opportunity": 4,
+      "source_prediction_concordant_groups": 4,
+      "clean_correct_to_wrong": 11,
+      "clean_wrong_to_correct": 0
+    },
+    {
+      "attacker_seed": 2,
+      "groups": 16,
+      "target_occurrences": 81,
+      "clean_residuals": 62,
+      "saved_original_residuals": 49,
+      "reconstructed_residuals": 49,
+      "restricted_oracle_residuals": 47,
+      "worst_endpoint_residuals": 57,
+      "oracle_additional_incorrect": 2,
+      "conditional_oracle_additional_clean_flips": 2,
+      "groups_with_strict_endpoint_opportunity": 2,
+      "source_prediction_concordant_groups": 7,
+      "clean_correct_to_wrong": 13,
+      "clean_wrong_to_correct": 0
+    }
+  ],
+  "strict_endpoint_opportunity_cases": 7,
+  "source_prediction_concordant_cases": 17,
+  "repeat_prediction_concordant_cases": 48,
+  "repeat_feature_exact_cases": 48,
+  "repeat_endpoint_concordant_cases": 48,
+  "largest_reattachment_logit_difference": 5.698204040527344e-05,
+  "largest_reattachment_margin_difference": 0.00010204315185546875,
+  "numerical_caution": "Nominal 1e-5 margin-change flags may be sensitive to observed numerical discrepancies. Observed maxima are empirical references, not guaranteed error bounds; primary comparisons require identical-graph prediction equality.",
+  "mean_restricted_oracle_headroom_pp": 2.880658436213992,
+  "raw_prediction_sha256": "e4221ff5a7a822206110cbd1a3e991e87531c1808d135d574ec75b5fe8d56c78",
+  "raw_progress_sha256": "f11ea572ee0149e7fc1d36c8612b428476ff74c79e836bab391186a548a6a58c",
+  "cpu_elapsed_seconds": 230.69480657600798,
+  "gpu_hours": 0,
+  "margin_change_tolerance": 1e-05,
+  "interpretation": "Restricted endpoint oracle is optimistic by construction, not a trained method or held-out gain. Zero headroom does not rule out different features. No victim or test queries."
+}
