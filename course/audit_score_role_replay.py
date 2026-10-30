@@ -1,4 +1,5 @@
 """Recount captured roles, ties and device comparisons without model inference."""
+import argparse
 import collections
 import csv
 import datetime as dt
@@ -39,6 +40,9 @@ def list_sha(value):
 
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--output',default='evidence/score_role_replay_audit_v2.json')
+    args=parser.parse_args()
     started=time.monotonic()
     folder=ROOT/'evidence/score_role_replay_v2'
     registered,summary,guard=read(folder/'registered.json'),read(folder/'summary.json'),read(folder/'guardian.json')
@@ -47,8 +51,14 @@ def main():
     assert sha(ROOT/registered['protocol'])==registered['protocol_sha256']
     for path,wanted in read(folder/'output_checksums.json').items():
         assert sha(folder/path)==wanted,path
+    snapshot_state_checks=[]
     for path,wanted in read(folder/'verified_inputs.json').items():
-        assert sha(ROOT/path)==wanted,path
+        if path=='evidence/research_cost_ledger.json' and sha(ROOT/path)!=wanted:
+            blob=subprocess.check_output(['git','show',registered['source_commit']+':'+path],cwd=ROOT)
+            assert hashlib.sha256(blob).hexdigest()==wanted,path
+            snapshot_state_checks.append(path)
+        else:
+            assert sha(ROOT/path)==wanted,path
     assert guard['guarded_elapsed_seconds']>=summary['elapsed_seconds']
     assert max(guard['guarded_elapsed_seconds'],summary['elapsed_seconds'])/3600<=protocol['gpu_hour_limit']
     raw_path=folder/'raw/measurements.jsonl'
@@ -176,6 +186,7 @@ def main():
         source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),script_sha256=sha(pathlib.Path(__file__)),
         gcn_forwards=224,generator_forwards=96,algebra_reference_topk_calls=192,group_checkpoint_cases=48,
         raw_sha256=summary['raw_sha256'],observed_first_target_score_source_cases=role_cases,actual_probability_multiple_maxima_cases=tie_cases,
+        mutable_state_checked_against_registered_git_snapshot=snapshot_state_checks,
         same_vector_reference_device_choice_disagreements=reference_disagreements,
         generator_pair_identical_actual_probability_vectors=same_vectors,
         generator_pair_endpoint_differences_with_identical_actual_probability_vectors=different_endpoints_with_same_vectors,
@@ -184,7 +195,7 @@ def main():
         charged_gpu_wall_hours=max(guard['guarded_elapsed_seconds'],summary['elapsed_seconds'])/3600,
         additional_model_queries=0,audit_gpu_hours=0,elapsed_seconds=time.monotonic()-started,
         limitations='Recount of retained tensors only. Graph transfer identity, exact loaded-weight equality and hook neutrality are source-reviewed adapter checks, not independently regenerated here. Prediction concordance does not establish historical perturbation identity; no correction performance evaluated.')
-    with (ROOT/'evidence/score_role_replay_audit_v2.json').open('x') as stream:
+    with (ROOT/args.output).open('x') as stream:
         json.dump(result,stream,indent=2,allow_nan=False)
         stream.write('\n')
     print(json.dumps(result,indent=2))

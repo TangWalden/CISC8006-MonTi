@@ -16,9 +16,9 @@
       "conservative_gpu_hours": 0.0006216666666666666
     }
   ],
-  "measured_or_conservatively_charged": 0.7156750706260114,
+  "measured_or_conservatively_charged": 0.7750060769012944,
   "unmetered_setup_reserve": 0.02,
-  "remaining_after_reserve": 11.26432492937399,
+  "remaining_after_reserve": 11.204993923098707,
   "failed_or_interrupted_incidents": [
     {
       "path": "evidence/one_edge_diagnosis_v1/failure.json",
@@ -38,7 +38,7 @@
       "repair_protocol": "course/SCORE_ROLE_REPLAY_AMENDMENT_1.md"
     }
   ],
-  "reconciliation": "All nine pilot queue starts have successful exits and one complete registration/result. The separate CPU endpoint diagnosis preserves a failed 79-forward attempt and complete 355-forward retry; total 434 recorded forwards, with no GPU charge.",
+  "reconciliation": "All nine pilot queue starts have successful exits and one complete registration/result. The separate CPU endpoint diagnosis preserves a failed 79-forward attempt and complete 355-forward retry; total 434 recorded forwards, with no GPU charge. Score-role forensics retain a zero-forward setup failure, two metadata processes, a complete 96-generator/224-GCN matrix and 192 algebra-only references; guarded wall time and recount are recorded.",
   "methodology": "Charge max registered elapsed and queue elapsed per pilot; charge full smoke wall time as one GPU; reserve is not measured usage.",
   "results_first_cpu_only": [
     {
@@ -80,6 +80,13 @@
       "surrogate_forward_calls": 0,
       "gpu_hours": 0,
       "scope": "Post-hoc offline join of endpoint positions and clean correctness"
+    },
+    {
+      "path": "evidence/score_role_replay_audit_v2.json",
+      "cpu_elapsed_seconds": 4.180576900951564,
+      "surrogate_forward_calls": 0,
+      "gpu_hours": 0,
+      "scope": "Independent captured-tensor recount; no model loading/inference"
     }
   ],
   "publication_checks": [
@@ -111,6 +118,28 @@
       "gcn_forwards": 0,
       "generator_forwards": 0,
       "accounting": "Conservative full-process charge despite metadata-only inspection"
+    },
+    {
+      "kind": "complete_crossed_device_probe",
+      "path": "evidence/score_role_replay_v2/guardian.json",
+      "source_commit": "726de64bb8be64ee1c429dfba9af2b24392c0757",
+      "main_seconds": 210.90853147400776,
+      "guarded_seconds": 213.59162259101868,
+      "charged_gpu_wall_hours": 0.05933100627528297,
+      "gcn_forwards": 224,
+      "generator_forwards": 96,
+      "algebra_topk_references": 192,
+      "accounting": "Charge maximum main and guarded-process wall time as one GPU, including setup and CPU work"
     }
-  ]
+  ],
+  "bounded_diagnostics": {
+    "score_role_replay": {
+      "aggregate_gpu_hour_limit": 0.1,
+      "charged_gpu_wall_hours": 0.06079675675434475,
+      "status": "complete; no duplicate replay",
+      "model_attempts_completed": 1,
+      "startup_attempts_failed": 1,
+      "metadata_only_processes": 2
+    }
+  }
 }

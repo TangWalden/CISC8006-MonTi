@@ -6,6 +6,8 @@ Update 2026-10-30: all nine technical pilots already completed, with negative me
 
 Later on 2026-10-30, the [one-edge CPU diagnosis](../docs/ONE_EDGE_DIAGNOSIS.md) and independent recount completed. Preserve the failed v1, pre-execution numerical-check amendment and complete v2. An offline join localizes all seven restricted-oracle opportunities to edges attached to already clean-GCN-incorrect targets. Historical prediction discrepancies and a statically observed score-index role concern require bounded instrumentation and paper/source comparison before selecting an improvement. No full training or GAGA test queries have started.
 
+The subsequent [score-role and crossed-device study](../docs/SCORE_ROLE_REPLAY.md) is complete and independently recounted. It restores 48/48 historical prediction-vector concordance on the GPU generation path and confirms a source/formulation role discrepancy without changing the model. The [v2 proposal](IMPROVEMENT_PROPOSAL_V2.md) recommends preparation of role-alignment and narrow one-edge-priority pilots, bounded by 2 GPU-hours. Owner direction confirmation is pending; while waiting, prepare isolated code/tests and reporting materials without new training or victim/test evaluation. Do not repeat the completed forensic probe.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |
