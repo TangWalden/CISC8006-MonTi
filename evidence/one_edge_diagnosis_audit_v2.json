@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-30T08:43:25.307593+00:00",
+  "audit_source_commit": "b6d9f31572134f3e96f78ea7d73d0d2408a0f01d",
+  "audit_script_sha256": "566b4e9ec1c299658c8805dfc14dd8d99d60463b62b7e4e02df1c21cfbf4158e",
+  "groups": 16,
+  "group_checkpoint_cases": 48,
+  "endpoint_configurations": 243,
+  "completed_attempt_forward_calls": 355,
+  "preserved_failed_attempt_forward_calls": 79,
+  "total_recorded_forward_calls": 434,
+  "phases": {
+    "clean": 16,
+    "reconstruction": 48,
+    "repeat": 48,
+    "endpoint": 243
+  },
+  "reconstructed_residuals": 148,
+  "clean_residuals": 186,
+  "restricted_oracle_additional_incorrect": 7,
+  "source_prediction_concordant_cases": 17,
+  "repeat_prediction_concordant_cases": 48,
+  "oracle_switched_prediction_margin_ranges": [
+    {
+      "seed": 0,
+      "target_group": 972,
+      "minimum_signed_margin_before": 4.276122093200684,
+      "maximum_signed_margin_after": -8.462003707885742
+    },
+    {
+      "seed": 0,
+      "target_group": 987,
+      "minimum_signed_margin_before": 2.5998141765594482,
+      "maximum_signed_margin_after": -7.919857978820801
+    },
+    {
+      "seed": 0,
+      "target_group": 1139,
+      "minimum_signed_margin_before": 0.481589138507843,
+      "maximum_signed_margin_after": -8.686415672302246
+    },
+    {
+      "seed": 0,
+      "target_group": 1185,
+      "minimum_signed_margin_before": 0.49225008487701416,
+      "maximum_signed_margin_after": -8.694022178649902
+    },
+    {
+      "seed": 0,
+      "target_group": 1188,
+      "minimum_signed_margin_before": 1.1591920852661133,
+      "maximum_signed_margin_after": -7.044515609741211
+    },
+    {
+      "seed": 0,
+      "target_group": 1196,
+      "minimum_signed_margin_before": 2.5464375019073486,
+      "maximum_signed_margin_after": -9.032322883605957
+    },
+    {
+      "seed": 0,
+      "target_group": 1408,
+      "minimum_signed_margin_before": 2.778424024581909,
+      "maximum_signed_margin_after": -7.309120178222656
+    },
+    {
+      "seed": 0,
+      "target_group": 1463,
+      "minimum_signed_margin_before": 2.2309508323669434,
+      "maximum_signed_margin_after": -7.82840633392334
+    },
+    {
+      "seed": 1,
+      "target_group": 972,
+      "minimum_signed_margin_before": 4.276124954223633,
+      "maximum_signed_margin_after": -7.794345855712891
+    },
+    {
+      "seed": 1,
+      "target_group": 1034,
+      "minimum_signed_margin_before": 4.245522975921631,
+      "maximum_signed_margin_after": -6.7033915519714355
+    },
+    {
+      "seed": 1,
+      "target_group": 1139,
+      "minimum_signed_margin_before": 0.4815891981124878,
+      "maximum_signed_margin_after": -7.852130889892578
+    },
+    {
+      "seed": 1,
+      "target_group": 1188,
+      "minimum_signed_margin_before": 1.1749622821807861,
+      "maximum_signed_margin_after": -6.425798416137695
+    },
+    {
+      "seed": 1,
+      "target_group": 1196,
+      "minimum_signed_margin_before": 2.5464377403259277,
+      "maximum_signed_margin_after": -8.212295532226562
+    },
+    {
+      "seed": 1,
+      "target_group": 1267,
+      "minimum_signed_margin_before": 1.281653881072998,
+      "maximum_signed_margin_after": -9.82924747467041
+    },
+    {
+      "seed": 1,
+      "target_group": 1348,
+      "minimum_signed_margin_before": 1.6545000076293945,
+      "maximum_signed_margin_after": -6.769306182861328
+    },
+    {
+      "seed": 1,
+      "target_group": 1367,
+      "minimum_signed_margin_before": 0.872097373008728,
+      "maximum_signed_margin_after": -7.18797492980957
+    },
+    {
+      "seed": 1,
+      "target_group": 1386,
+      "minimum_signed_margin_before": 3.3907852172851562,
+      "maximum_signed_margin_after": -6.8049116134643555
+    },
+    {
+      "seed": 1,
+      "target_group": 1408,
+      "minimum_signed_margin_before": 2.80010724067688,
+      "maximum_signed_margin_after": -6.629515647888184
+    },
+    {
+      "seed": 1,
+      "target_group": 1463,
+      "minimum_signed_margin_before": 2.2309505939483643,
+      "maximum_signed_margin_after": -7.058169364929199
+    },
+    {
+      "seed": 2,
+      "target_group": 972,
+      "minimum_signed_margin_before": 4.276126384735107,
+      "maximum_signed_margin_after": -8.221855163574219
+    },
+    {
+      "seed": 2,
+      "target_group": 1034,
+      "minimum_signed_margin_before": 4.245523452758789,
+      "maximum_signed_margin_after": -7.107182025909424
+    },
+    {
+      "seed": 2,
+      "target_group": 1139,
+      "minimum_signed_margin_before": 0.481589138507843,
+      "maximum_signed_margin_after": -8.281848907470703
+    },
+    {
+      "seed": 2,
+      "target_group": 1185,
+      "minimum_signed_margin_before": 0.49225008487701416,
+      "maximum_signed_margin_after": -8.336520195007324
+    },
+    {
+      "seed": 2,
+      "target_group": 1188,
+      "minimum_signed_margin_before": 1.1749622821807861,
+      "maximum_signed_margin_after": -6.802413463592529
+    },
+    {
+      "seed": 2,
+      "target_group": 1267,
+      "minimum_signed_margin_before": 1.2816476821899414,
+      "maximum_signed_margin_after": -10.38744831085205
+    },
+    {
+      "seed": 2,
+      "target_group": 1357,
+      "minimum_signed_margin_before": 2.6193859577178955,
+      "maximum_signed_margin_after": -7.716753005981445
+    },
+    {
+      "seed": 2,
+      "target_group": 1367,
+      "minimum_signed_margin_before": 0.8720972537994385,
+      "maximum_signed_margin_after": -7.571206092834473
+    },
+    {
+      "seed": 2,
+      "target_group": 1408,
+      "minimum_signed_margin_before": 2.79213547706604,
+      "maximum_signed_margin_after": -7.027856349945068
+    },
+    {
+      "seed": 2,
+      "target_group": 1463,
+      "minimum_signed_margin_before": 2.2309505939483643,
+      "maximum_signed_margin_after": -7.48730993270874
+    }
+  ],
+  "failed_attempt_progress_sha256": "9382868a660e63c2c5dd887dfa22046d0a8a719046e96c9fa67d43a2bac38bc9",
+  "gpu_hours": 0,
+  "elapsed_seconds": 3.0414085049997084,
+  "scope": "Independent recount from retained logits and source validation predictions; no model loading/inference",
+  "limitations": "Adapter-only graph/feature equality and repeat endpoint/feature comparisons are source-reviewed and hashed, not independently regenerated. Numerical discrepancies are empirical references, not error bounds. Restricted oracle is not a learned improvement."
+}
