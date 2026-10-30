@@ -1,0 +1,20 @@
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+GROUP 0 972 residuals 3 oracle_best 3
+GROUP 0 987 residuals 1 oracle_best 1
+GROUP 0 1034 residuals 11 oracle_best 11
+GROUP 0 1139 residuals 11 oracle_best 11
+GROUP 0 1185 residuals 3 oracle_best 3
+GROUP 0 1188 residuals 2 oracle_best 2
+GROUP 0 1196 residuals 2 oracle_best 1
+GROUP 0 1267 residuals 4 oracle_best 4
+Traceback (most recent call last):
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/tjy/miniconda3/envs/monti/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/tjy/Project/MonTi-course/course/one_edge_diagnosis.py", line 345, in <module>
+    main()
+  File "/home/tjy/Project/MonTi-course/course/one_edge_diagnosis.py", line 262, in main
+    assert torch.allclose(value, baseline_logits, atol=tolerance, rtol=0)
+AssertionError

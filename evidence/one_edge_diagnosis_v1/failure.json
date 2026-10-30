@@ -1,0 +1,7 @@
+{
+  "status": "failed",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/tjy/Project/MonTi-course/course/one_edge_diagnosis.py\", line 262, in main\n    assert torch.allclose(value, baseline_logits, atol=tolerance, rtol=0)\nAssertionError\n",
+  "surrogate_forward_calls": 79,
+  "cpu_elapsed_seconds": 54.42460726900026,
+  "gpu_hours": 0
+}
