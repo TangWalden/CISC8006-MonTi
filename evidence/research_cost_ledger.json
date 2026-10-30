@@ -19,8 +19,18 @@
   "measured_or_conservatively_charged": 0.7142093201469497,
   "unmetered_setup_reserve": 0.02,
   "remaining_after_reserve": 11.265790679853051,
-  "failed_or_interrupted_incidents": [],
-  "reconciliation": "All nine queue starts have successful exits and one complete registration/result; no missing attempt.",
+  "failed_or_interrupted_incidents": [
+    {
+      "path": "evidence/one_edge_diagnosis_v1/failure.json",
+      "status": "failed and incomplete; retained, not a complete oracle matrix",
+      "cause": "Identical-endpoint reconstruction exceeded the strict absolute logit guard while predicted classes agreed",
+      "surrogate_forward_calls": 79,
+      "cpu_elapsed_seconds": 54.42460726900026,
+      "gpu_hours": 0,
+      "repair_protocol": "course/ONE_EDGE_DIAGNOSIS_AMENDMENT_1.md"
+    }
+  ],
+  "reconciliation": "All nine pilot queue starts have successful exits and one complete registration/result. The separate CPU endpoint diagnosis preserves a failed 79-forward attempt and complete 355-forward retry; total 434 recorded forwards, with no GPU charge.",
   "methodology": "Charge max registered elapsed and queue elapsed per pilot; charge full smoke wall time as one GPU; reserve is not measured usage.",
   "results_first_cpu_only": [
     {
@@ -34,6 +44,34 @@
       "cpu_elapsed_seconds": 3.1570422970107757,
       "gpu_hours": 0,
       "scope": "Separate post-extraction file-integrity and derived-table reconciliation"
+    },
+    {
+      "path": "evidence/one_edge_diagnosis_v1/failure.json",
+      "cpu_elapsed_seconds": 54.42460726900026,
+      "surrogate_forward_calls": 79,
+      "gpu_hours": 0,
+      "scope": "Failed incomplete endpoint probe; retained with partial raw progress"
+    },
+    {
+      "path": "evidence/one_edge_diagnosis_v2/summary.json",
+      "cpu_elapsed_seconds": 230.69480657600798,
+      "surrogate_forward_calls": 355,
+      "gpu_hours": 0,
+      "scope": "Complete separately registered reconstructed fixed-feature endpoint matrix"
+    },
+    {
+      "path": "evidence/one_edge_diagnosis_audit_v2.json",
+      "cpu_elapsed_seconds": 3.0414085049997084,
+      "surrogate_forward_calls": 0,
+      "gpu_hours": 0,
+      "scope": "Independent retained-logit recount; no detector load or inference"
+    },
+    {
+      "path": "evidence/one_edge_endpoint_attribution_v1.json",
+      "cpu_elapsed_seconds": 0.03143263698439114,
+      "surrogate_forward_calls": 0,
+      "gpu_hours": 0,
+      "scope": "Post-hoc offline join of endpoint positions and clean correctness"
     }
   ],
   "publication_checks": [

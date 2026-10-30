@@ -55,7 +55,7 @@
     "pilot_queue": "all nine completed; independent saved-prediction, configuration, subset, checkpoint and cost audit passed",
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
-    "full_evaluation": "on hold; do not launch the earlier coverage matrix; first analyze saved train/validation outcomes",
+    "full_evaluation": "on hold; endpoint diagnosis is complete, but score-role and reconstruction-concordance checks precede improvement selection",
     "active_direction": "not selected; owner requires results-first diagnosis before choosing an improvement",
     "historical_pilot_choice_only": true
   },
@@ -66,12 +66,13 @@
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Register a validation-only measurement of actual injected-edge allocation, clean surrogate outcomes and legal endpoint counterfactuals in the observed low-resource stratum",
-    "Distinguish budget/degree/geometry associations and allocation opportunity before choosing an improvement; do not increase frozen attack budgets",
+    "Check the paper's intended edge-score source role and register bounded instrumentation of actual score indices, ties, graph/target ordering and CPU/GPU reconstruction concordance",
+    "Use fixed structural metadata to distinguish the measured endpoint opportunity from broader feature/budget explanations; retain all source-prediction discrepancies",
     "Propose new or revised improvement options only after controlled diagnostic evidence and request owner direction confirmation",
     "Prepare English report/slides/demo and genuine two-member review evidence without inventing unmeasured results"
   ],
   "results_first_diagnosis": {
+    "phase": "saved-validation phase 1; later new inference is separately registered below",
     "status": "completed; saved validation extraction and separate integrity/aggregation audit passed",
     "extraction_source_commit": "4003eceac26ba9a83607cc4c65b7fcad0334d792",
     "audit_source_commit": "0117616bc0e2dd3a4589c93e915bd300dbaf32ca",
@@ -88,6 +89,33 @@
     "new_improvement_selected": false,
     "new_model_inference": false,
     "full_evaluation_gate": "still pending owner confirmation"
+  },
+  "one_edge_diagnosis": {
+    "status": "v2 complete and independently recounted; v1 remains a preserved failed attempt",
+    "v1_source_commit": "8ecf14d6131bc90a191be1dfe076f1d3fdaac0b8",
+    "v2_source_commit": "cbba66aec475acc47c969401df619f2f64401d37",
+    "audit_source_commit": "b6d9f31572134f3e96f78ea7d73d0d2408a0f01d",
+    "offline_attribution_source_commit": "4125adb1248cb9f0a836b1997de8d124550023f8",
+    "group_checkpoint_cases": 48,
+    "endpoint_configurations": 243,
+    "failed_attempt_forward_calls": 79,
+    "completed_attempt_forward_calls": 355,
+    "total_recorded_forward_calls": 434,
+    "gpu_hours": 0,
+    "reconstructed_residuals": 148,
+    "restricted_oracle_residuals": 141,
+    "strict_endpoint_opportunity_cases": 7,
+    "positive_cases_selected_endpoint_already_clean_wrong": 7,
+    "historical_complete_prediction_concordant_cases": 17,
+    "historical_residual_count_concordant_cases": 41,
+    "historical_occurrence_prediction_disagreements": 55,
+    "diagnostic_repeat_prediction_concordant_cases": 48,
+    "source_role_finding": "For one injected node, edge-score row src=0 indexes the contextualized first target slot; intended semantics and measured effect still need a separate check",
+    "report": "docs/ONE_EDGE_DIAGNOSIS.md",
+    "audit": "evidence/one_edge_diagnosis_audit_v2.json",
+    "offline_attribution": "evidence/one_edge_endpoint_attribution_v1.json",
+    "interpretation": "Reconstructed validation-only fixed-feature oracle; no trained method, original-perturbation attribution or victim-transfer benefit established",
+    "new_improvement_selected": false
   },
   "automation_id": "monti",
   "scheduled_followup": "every four hours, at most 42 invocations; stop at delivery",

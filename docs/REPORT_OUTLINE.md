@@ -87,6 +87,8 @@ Evidence: [complete baseline summary](../evidence/reproduction_summary.json), [r
 
 ## 5. Improvements, controls, and ablations — 20 points
 
+Current selection update: the owner required actual-outcome analysis before choosing a new intervention. The historical coverage follow-up is on hold. Report the negative pilots and original selection rule truthfully, then explain the subsequent research decision separately. [Saved-outcome diagnosis](RESULTS_FIRST_DIAGNOSIS.md) and [reconstructed one-edge diagnosis](ONE_EDGE_DIAGNOSIS.md) are exploratory evidence, not final improvement results. The latter preserves the 79-call failure, reviewed numerical-check amendment, complete 355-call retry, independent raw-logit recount, historical prediction disagreement and zero-query clean-endpoint attribution. All seven restricted endpoint opportunities used a clean-GCN-incorrect target, but this establishes neither an improved trained method nor victim transfer. A static score-index/embedding-role finding and replay concordance require further measurement before a direction is selected and confirmed. Do not present the restricted oracle's 2.8807pp selected-subset headroom as a full-validation or test gain.
+
 ### Motivation and three proposals
 
 Explain structural-coverage candidates, sampling by group size, and budget-aware candidate count. Use the train/validation diagnosis as descriptive motivation. Low direct-neighbor coverage does not prove a defect; high cosine similarity does not by itself establish redundancy. Explain possible negative effects as well as hoped-for benefits.

@@ -4,6 +4,8 @@ User request: complete one week of technical work by 2026-11-05 (Beijing time). 
 
 Update 2026-10-30: all nine technical pilots already completed, with negative mean effects for both ideas. The owner required actual-outcome analysis before improvement selection. The earlier coverage follow-up is on hold. A saved-validation diagnosis of 15 runs and 160 epochs is complete, with a separate integrity and aggregation audit; see [the factual report](../docs/RESULTS_FIRST_DIAGNOSIS.md). The active next item is a separately registered validation-only check of actual edge allocation in the observed low-resource stratum. Full experiments remain conditional on evidence-backed direction and protocol confirmation; the calendar below does not authorize launching them.
 
+Later on 2026-10-30, the [one-edge CPU diagnosis](../docs/ONE_EDGE_DIAGNOSIS.md) and independent recount completed. Preserve the failed v1, pre-execution numerical-check amendment and complete v2. An offline join localizes all seven restricted-oracle opportunities to edges attached to already clean-GCN-incorrect targets. Historical prediction discrepancies and a statically observed score-index role concern require bounded instrumentation and paper/source comparison before selecting an improvement. No full training or GAGA test queries have started.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |
