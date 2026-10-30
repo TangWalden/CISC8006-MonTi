@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-30T07:43:38.932272+00:00",
+  "source_commit": "0117616bc0e2dd3a4589c93e915bd300dbaf32ca",
+  "audit_script_sha256": "2d37bdbeb541420451bbb492195a50035d67871feda84d19d210db8bc60a6a62",
+  "scope": "Independent derived-table reconciliation; optional post-extraction raw and frozen input hash check",
+  "raw_input_hashes_checked": 398,
+  "frozen_input_and_scientific_hashes_checked": 29,
+  "run_count": 15,
+  "epoch_count": 160,
+  "condition_count": 5,
+  "group_condition_rows": 1568,
+  "complete_feature_bin_rows": 165,
+  "audited_derived_file_sha256": {
+    "evidence/results_first_diagnosis_v1/summary.json": "8d1b10f4d7ba789cc0f308373d8aa73830bc160565503387129d909f57d5e820",
+    "evidence/results_first_diagnosis_v1/registered.json": "52cac632c2be7eda2e7d2f862b36dce849f7de44967f4354ff311bfec1731e45",
+    "evidence/results_first_diagnosis_v1/bin_boundaries.json": "6d76d35dd2ff99a32e71f530a2637b7ad3ae9e487d02f666d981d46b6f3614ca",
+    "evidence/results_first_diagnosis_v1/input_checksums.json": "578d7a25a4bc5f8e8339927b2af342fb056333ce6db6fcfd932c191f3d50ade1",
+    "evidence/results_first_diagnosis_v1/runs.csv": "49579c9b1b276dfa82d26e8dd778e5a0b3ae04493d3e074c80728424801d8035",
+    "evidence/results_first_diagnosis_v1/validation_curves.csv": "302031277efef66add3b9984e836a7012d4107d07cff0998d89f5d36c98ef149",
+    "evidence/results_first_diagnosis_v1/group_outcomes.csv": "c8baf37863c315c9edab2e567af7788d282c0b4d7ccfdc87dc8c19d7775d71cb",
+    "evidence/results_first_diagnosis_v1/training_derived_bins.csv": "fbc46229b5a206d1cecd78f9419352593b0ed2f01401211e6dc5666a95bda961",
+    "evidence/results_first_diagnosis_v1/persistence.csv": "6674106d0934838f1b8af2cccb5339a2a47fe140cfbe1b47cb1384906aefd011",
+    "evidence/results_first_diagnosis_v1/paired_changes.csv": "df9c3b1373d1bbdc91163aa99e49ff0618c902dd4c9c74a4a2c7a517e1d0cf83",
+    "evidence/results_first_diagnosis_v1/node_concentration.csv": "0a8eabc976475c2d5c1522160426fb6787cd13ad4f7ee2e83ea163bfe7883b69"
+  },
+  "gpu_hours": 0,
+  "elapsed_seconds": 3.1570422970107757,
+  "limitations": "No causal confirmation; selected validation snapshots; no new inference or test prediction reads"
+}

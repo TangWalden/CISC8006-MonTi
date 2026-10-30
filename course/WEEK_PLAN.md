@@ -2,6 +2,8 @@
 
 User request: complete one week of technical work by 2026-11-05 (Beijing time). The public repository is https://github.com/TangWalden/CISC8006-MonTi . This plan is not evidence of course approval or of the actual UMMoodle deadline.
 
+Update 2026-10-30: all nine technical pilots already completed, with negative mean effects for both ideas. The owner required actual-outcome analysis before improvement selection. The earlier coverage follow-up is on hold. A saved-validation diagnosis of 15 runs and 160 epochs is complete, with a separate integrity and aggregation audit; see [the factual report](../docs/RESULTS_FIRST_DIAGNOSIS.md). The active next item is a separately registered validation-only check of actual edge allocation in the observed low-resource stratum. Full experiments remain conditional on evidence-backed direction and protocol confirmation; the calendar below does not authorize launching them.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |

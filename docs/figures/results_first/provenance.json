@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-10-30T07:52:44.057730+00:00",
+  "purpose": "Static descriptive scientific figure; no inference, training, test data, or significance testing.",
+  "source": {
+    "path": "evidence/results_first_diagnosis_v1/training_derived_bins.csv",
+    "sha256": "fbc46229b5a206d1cecd78f9419352593b0ed2f01401211e6dc5666a95bda961"
+  },
+  "script": {
+    "path": "course/plot_results_first.py",
+    "sha256": "3ecb81c97af575e54708d1df6065391b654abd8a8ae3eb3fc3e370054acb4c5f"
+  },
+  "selection": {
+    "cohort": "full_baseline",
+    "conditions": [
+      "learned",
+      "random"
+    ],
+    "features": [
+      "nodes_per_target",
+      "group_size"
+    ],
+    "selected_rows": 16
+  },
+  "metric": "100 * gcn_correct_after_attack / target_occurrences",
+  "denominator": "Group-node occurrence exposures pooled across three seed passes; not independent sample sizes.",
+  "limitations": [
+    "Exploratory validation association, not causal evidence.",
+    "Best checkpoints were selected using the same validation groups.",
+    "Degree, budget, and group structure are confounded.",
+    "Panel axes use different scales; exact cutoffs are retained in plotted_data.csv.",
+    "No fabricated uncertainty intervals, p-values, or causal claims."
+  ],
+  "software": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "environment": "Isolated plotting dependencies supplied by the launcher; ML environment unchanged."
+  },
+  "files": [
+    {
+      "path": "docs/figures/results_first/validation_residual_associations.png",
+      "bytes": 326903,
+      "sha256": "8391fb43dc53b4c298b909bda5010387ae7be0424dfda06d62df2571b141c92a"
+    },
+    {
+      "path": "docs/figures/results_first/validation_residual_associations.svg",
+      "bytes": 23944,
+      "sha256": "3ccee6b88f8aa0cf27bd0d0c6b4ba7cefd1da070bf67e511c367865e2dc09a91"
+    },
+    {
+      "path": "docs/figures/results_first/plotted_data.csv",
+      "bytes": 2690,
+      "sha256": "a82a0d3f59215f1ad44c58c9442e89714383846b60c71663c94555d15200a198"
+    }
+  ],
+  "text_line_endings": "LF; SVG line endings and trailing whitespace normalized before hashing."
+}

@@ -22,6 +22,20 @@
   "failed_or_interrupted_incidents": [],
   "reconciliation": "All nine queue starts have successful exits and one complete registration/result; no missing attempt.",
   "methodology": "Charge max registered elapsed and queue elapsed per pilot; charge full smoke wall time as one GPU; reserve is not measured usage.",
+  "results_first_cpu_only": [
+    {
+      "path": "evidence/results_first_diagnosis_v1/summary.json",
+      "cpu_elapsed_seconds": 8.246734873013338,
+      "gpu_hours": 0,
+      "scope": "Saved validation outcome extraction; no new inference"
+    },
+    {
+      "path": "evidence/results_first_diagnosis_audit_v1.json",
+      "cpu_elapsed_seconds": 3.1570422970107757,
+      "gpu_hours": 0,
+      "scope": "Separate post-extraction file-integrity and derived-table reconciliation"
+    }
+  ],
   "publication_checks": [
     {
       "path": "evidence/publication_checks/baseline_smoke.log",

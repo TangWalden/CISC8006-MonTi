@@ -67,6 +67,14 @@ def main():
         expected=dict(manifest['outputs'])
         expected={str(pathlib.PurePosixPath('docs/figures')/name):value for name,value in expected.items()}
         expected[manifest['script']]=manifest['script_sha256']
+        figure_files=git('ls-tree','-r','--name-only','HEAD','docs/figures').decode().splitlines()
+        for relative in figure_files:
+            if relative.endswith('/provenance.json'):
+                extra=json.loads(git('show','HEAD:'+relative))
+                for item in [extra['source'],extra['script']]+extra['files']:
+                    previous=expected.get(item['path'])
+                    assert previous is None or previous==item['sha256'], 'Conflicting figure checksums.'
+                    expected[item['path']]=item['sha256']
         for relative,wanted in expected.items():
             actual=hashlib.sha256(git('show','HEAD:'+relative)).hexdigest()
             checksum_count+=1
