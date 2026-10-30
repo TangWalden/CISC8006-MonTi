@@ -1,6 +1,7 @@
 """Check public history and publication files without ML dependencies."""
 import argparse
 import datetime as dt
+import hashlib
 import json
 import os
 import pathlib
@@ -32,6 +33,7 @@ def contains_chinese(data):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output')
+    parser.add_argument('--committed-checksums', action='store_true')
     args = parser.parse_args()
     mapping = json.loads((ROOT/'evidence/publication_history_map.json').read_text())
     refs = ['HEAD']+[row['public_commit'] for row in mapping['tag_map'].values()]
@@ -58,10 +60,22 @@ def main():
         checked+=1
         if contains_chinese(path.read_bytes()):
             findings.append(dict(scope='working_publication_files',path=relative))
+    checksum_count=0
+    if args.committed_checksums:
+        assert not git('status','--porcelain','--untracked-files=no').strip(), 'Commit intended publication changes before checking committed checksums.'
+        manifest=json.loads(git('show','HEAD:docs/figures/figure_provenance.json'))
+        expected=dict(manifest['outputs'])
+        expected={str(pathlib.PurePosixPath('docs/figures')/name):value for name,value in expected.items()}
+        expected[manifest['script']]=manifest['script_sha256']
+        for relative,wanted in expected.items():
+            actual=hashlib.sha256(git('show','HEAD:'+relative)).hexdigest()
+            checksum_count+=1
+            if actual != wanted:
+                findings.append(dict(scope='committed_checksum',path=relative,expected=wanted,actual=actual))
     result=dict(status='passed' if not findings else 'failed',
                 checked_utc=dt.datetime.now(dt.timezone.utc).isoformat(),
                 public_head=git('rev-parse','HEAD').decode().strip(),
-                public_history_objects=len(objects),publication_files=checked,findings=findings,
+                public_history_objects=len(objects),publication_files=checked,committed_checksums=checksum_count,findings=findings,
                 scope='Current public HEAD, mapped public freeze snapshots, and tracked/unignored publication files; private execution refs are excluded.')
     if args.output:
         destination=ROOT/args.output

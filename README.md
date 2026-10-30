@@ -30,7 +30,7 @@ All nine pilots completed and passed independent saved-output audits. Mean paire
 
 Public documentation and newly generated logs are in English. English translations of earlier agent records identify their original source, hashes, and translation status. Original historical evidence is preserved; translated wording is not presented as verbatim API output.
 
-Before publishing future changes, run `python -m course.verify_publication` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, and rejects Chinese text or reintroduced private execution history. Publish from the clean public workspace only.
+Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script bytes against their recorded checksums. Publish from the clean public workspace only.
 
 ## Environment and quick check
 
