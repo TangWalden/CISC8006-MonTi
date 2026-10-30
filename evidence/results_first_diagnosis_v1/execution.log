@@ -1,0 +1,184 @@
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+{
+  "status": "completed",
+  "output": "/home/tjy/Project/MonTi-course/evidence/results_first_diagnosis_v1",
+  "conditions": [
+    {
+      "cohort": "full_baseline",
+      "condition": "learned",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_best_gcn_validation_mr_percent": 97.05823090872457,
+      "mean_final_minus_best_pp": -4.291759016723755,
+      "residual_occurrences_across_seeds": 438,
+      "persistent_residual_occurrence_keys": 81,
+      "top10_nodes_share_of_residuals": 0.2328767123287671,
+      "top10_nodes_share_of_all_evaluated_occurrences": 0.04191013499899254
+    },
+    {
+      "cohort": "full_baseline",
+      "condition": "random",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "mean_best_gcn_validation_mr_percent": 97.21270736785546,
+      "mean_final_minus_best_pp": -2.4514742427295317,
+      "residual_occurrences_across_seeds": 415,
+      "persistent_residual_occurrence_keys": 87,
+      "top10_nodes_share_of_residuals": 0.27228915662650605,
+      "top10_nodes_share_of_all_evaluated_occurrences": 0.03969373362885351
+    },
+    {
+      "cohort": "pilot",
+      "condition": "baseline",
+      "seeds": [
+        3,
+        4,
+        5
+      ],
+      "mean_best_gcn_validation_mr_percent": 97.67797128017109,
+      "mean_final_minus_best_pp": -0.611060189428656,
+      "residual_occurrences_across_seeds": 76,
+      "persistent_residual_occurrence_keys": 18,
+      "top10_nodes_share_of_residuals": 0.4473684210526316,
+      "top10_nodes_share_of_all_evaluated_occurrences": 0.03024747937671861
+    },
+    {
+      "cohort": "pilot",
+      "condition": "coverage",
+      "seeds": [
+        3,
+        4,
+        5
+      ],
+      "mean_best_gcn_validation_mr_percent": 97.4946532233425,
+      "mean_final_minus_best_pp": -0.4888481515429248,
+      "residual_occurrences_across_seeds": 82,
+      "persistent_residual_occurrence_keys": 14,
+      "top10_nodes_share_of_residuals": 0.43902439024390244,
+      "top10_nodes_share_of_all_evaluated_occurrences": 0.05041246562786435
+    },
+    {
+      "cohort": "pilot",
+      "condition": "size_sampling",
+      "seeds": [
+        3,
+        4,
+        5
+      ],
+      "mean_best_gcn_validation_mr_percent": 97.1280171096853,
+      "mean_final_minus_best_pp": -0.4277421326000592,
+      "residual_occurrences_across_seeds": 94,
+      "persistent_residual_occurrence_keys": 15,
+      "top10_nodes_share_of_residuals": 0.3829787234042553,
+      "top10_nodes_share_of_all_evaluated_occurrences": 0.032080659945004586
+    }
+  ],
+  "paired_changes": [
+    {
+      "cohort": "full_baseline",
+      "variant": "learned",
+      "reference": "random",
+      "seed": 0,
+      "target_occurrences": 4963,
+      "additional_misclassified_occurrences": 38,
+      "fewer_misclassified_occurrences": 42,
+      "net_misclassified_occurrences": -4,
+      "difference_pp": -0.08059641345960104
+    },
+    {
+      "cohort": "full_baseline",
+      "variant": "learned",
+      "reference": "random",
+      "seed": 1,
+      "target_occurrences": 4963,
+      "additional_misclassified_occurrences": 41,
+      "fewer_misclassified_occurrences": 54,
+      "net_misclassified_occurrences": -13,
+      "difference_pp": -0.2619383437437034
+    },
+    {
+      "cohort": "full_baseline",
+      "variant": "learned",
+      "reference": "random",
+      "seed": 2,
+      "target_occurrences": 4963,
+      "additional_misclassified_occurrences": 55,
+      "fewer_misclassified_occurrences": 61,
+      "net_misclassified_occurrences": -6,
+      "difference_pp": -0.12089462018940157
+    },
+    {
+      "cohort": "pilot",
+      "variant": "coverage",
+      "reference": "baseline",
+      "seed": 3,
+      "target_occurrences": 1091,
+      "additional_misclassified_occurrences": 6,
+      "fewer_misclassified_occurrences": 9,
+      "net_misclassified_occurrences": -3,
+      "difference_pp": -0.27497708524289644
+    },
+    {
+      "cohort": "pilot",
+      "variant": "coverage",
+      "reference": "baseline",
+      "seed": 4,
+      "target_occurrences": 1091,
+      "additional_misclassified_occurrences": 4,
+      "fewer_misclassified_occurrences": 6,
+      "net_misclassified_occurrences": -2,
+      "difference_pp": -0.18331805682859761
+    },
+    {
+      "cohort": "pilot",
+      "variant": "coverage",
+      "reference": "baseline",
+      "seed": 5,
+      "target_occurrences": 1091,
+      "additional_misclassified_occurrences": 11,
+      "fewer_misclassified_occurrences": 12,
+      "net_misclassified_occurrences": -1,
+      "difference_pp": -0.09165902841429881
+    },
+    {
+      "cohort": "pilot",
+      "variant": "size_sampling",
+      "reference": "baseline",
+      "seed": 3,
+      "target_occurrences": 1091,
+      "additional_misclassified_occurrences": 8,
+      "fewer_misclassified_occurrences": 15,
+      "net_misclassified_occurrences": -7,
+      "difference_pp": -0.6416131989000916
+    },
+    {
+      "cohort": "pilot",
+      "variant": "size_sampling",
+      "reference": "baseline",
+      "seed": 4,
+      "target_occurrences": 1091,
+      "additional_misclassified_occurrences": 5,
+      "fewer_misclassified_occurrences": 14,
+      "net_misclassified_occurrences": -9,
+      "difference_pp": -0.8249312557286893
+    },
+    {
+      "cohort": "pilot",
+      "variant": "size_sampling",
+      "reference": "baseline",
+      "seed": 5,
+      "target_occurrences": 1091,
+      "additional_misclassified_occurrences": 9,
+      "fewer_misclassified_occurrences": 11,
+      "net_misclassified_occurrences": -2,
+      "difference_pp": -0.18331805682859761
+    }
+  ]
+}

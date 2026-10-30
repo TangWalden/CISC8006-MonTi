@@ -1,0 +1,28 @@
+{
+  "registered_utc": "2026-10-30T07:34:38.949585+00:00",
+  "source_commit": "4003eceac26ba9a83607cc4c65b7fcad0334d792",
+  "script_sha256": "48a5664743679d73f73bc32f41f5e281b51fdfd507d417259557af9e0237f25d",
+  "command": [
+    "env",
+    "CUDA_VISIBLE_DEVICES=",
+    "bash",
+    "course/run.sh",
+    "-m",
+    "course.results_first_diagnosis"
+  ],
+  "scope": "Post-hoc saved GCN validation outcomes and fixed metadata only; no test predictions or model inference",
+  "plan": "course/RESULTS_FIRST_DIAGNOSIS_PLAN.md",
+  "plan_sha256": "c9156355281730492f83276d02ce4ff63148d150aa55e05648fcf30fd3b192ca",
+  "features": [
+    "group_size",
+    "node_budget",
+    "edge_budget",
+    "nodes_per_target",
+    "edges_per_target",
+    "edges_per_injected",
+    "mean_target_degree",
+    "min_target_degree",
+    "max_target_degree"
+  ],
+  "gpu_hours": 0
+}

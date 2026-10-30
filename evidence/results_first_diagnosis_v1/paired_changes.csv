@@ -1,0 +1,10 @@
+cohort,variant,reference,seed,target_occurrences,additional_misclassified_occurrences,fewer_misclassified_occurrences,net_misclassified_occurrences,difference_pp
+full_baseline,learned,random,0,4963,38,42,-4,-0.08059641345960104
+full_baseline,learned,random,1,4963,41,54,-13,-0.2619383437437034
+full_baseline,learned,random,2,4963,55,61,-6,-0.12089462018940157
+pilot,coverage,baseline,3,1091,6,9,-3,-0.27497708524289644
+pilot,coverage,baseline,4,1091,4,6,-2,-0.18331805682859761
+pilot,coverage,baseline,5,1091,11,12,-1,-0.09165902841429881
+pilot,size_sampling,baseline,3,1091,8,15,-7,-0.6416131989000916
+pilot,size_sampling,baseline,4,1091,5,14,-9,-0.8249312557286893
+pilot,size_sampling,baseline,5,1091,9,11,-2,-0.18331805682859761
