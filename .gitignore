@@ -11,3 +11,4 @@ evidence/bootstrap/incomplete-transfer-git/
 evidence/runs/*/*.jsonl
 evidence/improvements/*/*.jsonl
 evidence/one_edge_diagnosis*/raw/
+evidence/score_role_replay*/raw/

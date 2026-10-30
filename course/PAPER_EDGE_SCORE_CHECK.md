@@ -1,0 +1,9 @@
+# Paper and source: the edge-score source role
+
+Checked 2026-10-30 against the [official AAAI PDF, PDF page 4 / printed page 16031](https://ojs.aaai.org/index.php/AAAI/article/view/33760/35915#page=4), Eq. (6) and the immediately following unnumbered edge-score formula.
+
+The paper separates projected target, candidate and injected representations. Its score matrix uses the normalized **injected block** as its row/source, comparing each injected node with eligible nodes. In row-vector notation this is `score(i,j) = cosine(projected_injected[i], projected_all[j])`. The same section allocates one target connection per injected node before spending the remaining edge budget. With one node and one edge, the mandatory target connection consumes that budget. This is a constraint of the proposed construction, rather than proof of a universal graph-attack restriction.
+
+In the frozen [source sequence](../models/attack_model.py#L143), target and candidate slots precede injected slots. [Edge scoring](../models/attack_model.py#L195) uses injection-relative adjacency row indices directly in the full projected sequence. With one injection, row index zero therefore reads the first target slot; the paper's injected slot would be at `num_targets + num_candidates`. The later graph-building offset maps the physical edge to the injected node but does not change the earlier score representation.
+
+This establishes a discrepancy between this source snapshot and the published formulation. It does not establish the authors' historical execution, a performance effect, the cause of CPU/GPU reconstruction differences, or the absence of injected context after Transformer mixing. No frozen scientific code is changed. The separately registered observational probe will measure actual source roles, score ties and device contrasts before any method proposal or correction.
