@@ -1,0 +1,16 @@
+phase,seed,condition,mr_percent,paired_gain_pp
+baseline_test,0,learned,44.28911079410366,5.202092249167848
+baseline_test,0,random,39.08701854493581,
+baseline_test,1,learned,42.88159771754636,1.2553495007132653
+baseline_test,1,random,41.6262482168331,
+baseline_test,2,learned,44.01331431288635,4.155967665240134
+baseline_test,2,random,39.85734664764622,
+pilot_GCN_validation,3,baseline,97.80018331805684,
+pilot_GCN_validation,3,coverage,97.52520623281393,-0.2749770852429094
+pilot_GCN_validation,3,size_sampling,97.15857011915674,-0.641613198900103
+pilot_GCN_validation,4,baseline,97.80018331805684,
+pilot_GCN_validation,4,coverage,97.61686526122824,-0.1833180568285968
+pilot_GCN_validation,4,size_sampling,96.97525206232814,-0.8249312557286999
+pilot_GCN_validation,5,baseline,97.43354720439963,
+pilot_GCN_validation,5,coverage,97.34188817598533,-0.0916590284142984
+pilot_GCN_validation,5,size_sampling,97.25022914757103,-0.1833180568285968

@@ -12,11 +12,27 @@ Nine training/GCN-validation-only pilots completed and passed independent predic
 
 Test whether adding a small amount of structural neighborhood coverage to the candidate context improves transfer to the fixed GAGA victim.
 
+The original selector already includes beta, the number of connected targets, as a per-candidate feature. The proposed extension adds an explicit selected-set coverage preference. For example, three candidates may each have beta=2, but two neighbor the same targetsA/B while another neighborsC/D. Counts alone do not identify that overlap. This illustrative example motivates the objective; it is not a claim that the learned selector always makes that choice or cannot encode useful structural information implicitly.
+
 - **Coverage:** keep K=128. For an exploration pool larger than K, greedily reserve at most32 candidates adjacent to previously uncovered target nodes; stop when coverage gain is zero and break ties by global node ID. Fill the remaining slots using the original learned straight-through selector.
 - **Matched random-anchor control:** compute the same group's greedy anchor count, then reserve that number of uniformly sampled candidates instead. Fill the remaining slots using the same learned selector. Resample random anchors at each training/evaluation forward, using the registered run seed.
 - **Frozen learned baseline:** reuse the already completed seeds0/1/2. It removes the anchor mechanism entirely, with the original learned selection and no new baseline tuning or reruns.
 
 All three retain the same candidate cap, model parameter structure, full graph, fixed detectors, node/edge budget function, feature bounds, loss, optimizer, and checkpoint rule. Small exploration pools are kept in full. The anchors provide constant gates while learned complement gates retain gradients. The random control separates reserving slots from selecting structurally informative anchors.
+
+The anchors are existing candidate nodes, not additional injected nodes. Candidate coverage does not force the final attack edges to cover every target.
+
+```mermaid
+flowchart LR
+    P[Non-target exploration pool] --> G[Greedy coverage anchors: up to 32]
+    P --> L[Learned selection from the remaining pool]
+    G --> M[Combined candidate context: K equals 128]
+    L --> M
+    M --> T[Original MonTi transformer]
+    T --> A[Attack attributes and edges within original budgets]
+```
+
+This diagram shows the candidate-selection path for a pool larger than K. The original target-encoding and injected-node-noise paths remain part of MonTi. In the mechanism control, only greedy anchor selection is replaced by random selection with the same anchor count.
 
 This is a course-level extension of the inspected MonTi implementation. First-in-literature novelty has not been established. Low direct-neighbor coverage and high embedding similarity are descriptive observations, not proof that the original method is defective. Anchors could displace useful candidates and reduce attack strength; negative or inconclusive outcomes will be retained.
 
@@ -38,6 +54,8 @@ Primary comparison: coverage minus the corresponding frozen learned baseline, in
 
 Secondary mechanism comparison: coverage minus matched random anchors. Report the same paired descriptive statistics, clearly identifying this as a secondary comparison. Do not claim family-wise error control across multiple comparisons from separate unadjusted95% intervals. A positive secondary result cannot override an unsupported or inconclusive primary comparison against the learned baseline.
 
+Interpret both contrasts together. If coverage beats the random-anchor control but not the learned baseline, there is no demonstrated overall improvement. If both anchor variants beat the baseline but their difference is unclear, the evidence does not isolate a coverage-specific benefit; reserving slots or changing the trainable fraction may matter. Confidence intervals and the primary/secondary distinction govern the claims, not favorable point estimates alone.
+
 Retain every failed, interrupted, negative and inconclusive result. Permit a documented infrastructure retry only with the same frozen setting and a new run ID. A low score, wide interval or negative result is not a retry reason. Require exactly one valid completed attempt per cell. Multiple valid completed attempts halt the scientific comparison and are disclosed as a protocol deviation; do not select an attempt by score or make an unregistered choice after observing outcomes. A failure to generate an attack fails the run rather than dropping a target group.
 
 ## Budget, freeze, and owner checkpoint
@@ -47,3 +65,5 @@ The additional-research cap is12 GPU wall-clock hours. The pilot audit recorded0
 After owner confirmation of the direction, prepare the complete executable configuration, source tests and a separate full-evaluation freeze for final review before launching. The freeze must identify all new scientific code, inputs, baseline identity, six cells, budgets, decision rules and failure policy. Final report and submission tagging require another owner checkpoint. Instructor/course approval remains a separate pending requirement.
 
 Relevant evidence: [pilot summary](../evidence/improvement_pilot_summary.json), [independent audit](../evidence/improvement_pilot_audit.json), [cost ledger](../evidence/research_cost_ledger.json), [public/execution commit mapping](../evidence/publication_history_map.json), and [human review template](../docs/HUMAN_REVIEW.md).
+
+[Audited baseline and pilot figures](../docs/figures/README.md) visualize the existing results and their uncertainty.

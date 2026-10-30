@@ -1,5 +1,12 @@
 # AI Usage Record
 
+## 2026-10-30: Explaining the proposed extension and plotting saved evidence
+
+- Task and tools: The owner requested an explanation before confirming the improvement direction. Codex explained the distinction between MonTi's existing per-candidate beta feature and explicit selected-set coverage, and the three-arm baseline/coverage/matched-random-anchor comparison. Matplotlib rendered existing audited summaries in a separate local Python3.12 plotting setup, using dependencies from the Tsinghua domestic PyPI mirror.
+- Decision: Describe the idea as an incremental, testable course extension with unproven transfer benefit. A favorable secondary control comparison cannot override the primary comparison against the learned baseline. Preserve both negative pilot effects and the inconclusive reproduction result. Full training remains unstarted while owner confirmation is pending.
+- Checks: The main agent visually inspected both PNG figures. A separate prose/evidence agent checked English wording, percent versus percentage-point units, three-seed/df=2 uncertainty, GCN-validation versus GAGA-test scope, and source/script/output hashes. CSV line endings are fixed to LF for Git checksum consistency. These remain agent checks; human review is pending.
+- Evidence: course/FULL_EVALUATION_PLAN.md, course/plot_evidence.py, docs/figures/figure_provenance.json, docs/figures/plotted_data.csv, and environment/figures-requirements.txt. The frozen ML environment was not modified; plotting introduced no new model training or inference.
+
 ## 2026-10-30: Public-history cleanup and independent public-clone verification
 
 - Task and tools: The owner requested that historical Chinese records no longer be publicly retrievable while retaining the grading evidence. Codex prepared a separate English-only publication history, made the original repository a private audit archive, and published the English edition at the original public URL.

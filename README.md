@@ -20,6 +20,7 @@ This public repository is an English-only publication edition. Original executio
 - [Independent prediction recount](evidence/baseline_audit.json), [public per-group error counts](evidence/published_baseline), [training logs](evidence/training_logs), and [failed setup and check attempts](evidence/bootstrap).
 - [Grading audit](course/GRADING_AUDIT.md), [one-week plan](course/WEEK_PLAN.md), [three improvement proposals](course/IMPROVEMENT_PROPOSAL.md), and [work status](course/PROJECT_STATUS.json).
 - [Full evaluation design for owner review](course/FULL_EVALUATION_PLAN.md) and [English public-history verification](evidence/publication_verification.json).
+- [Audited result figures](docs/figures/README.md), including seed-level baseline results, paired confidence intervals, pilot effects, plotted data and provenance.
 - [Train/validation diagnosis](course/TRAINING_DIAGNOSIS.md), [pre-run pilot protocol](course/improvements/pilot_protocol_v1.json), and [improvement implementation and tests](course/improvements).
 - [Agent-use record](AI_USAGE.md), [planned and actual contributions](CONTRIBUTIONS.md), and [baseline report](docs/baseline_report.html).
 

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="741.6pt" height="334.8pt" viewBox="0 0 741.6 334.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>MonTi course evidence figures</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 334.8 
+L 741.6 334.8 
+L 741.6 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 185.4 254.448 
+L 704.52 254.448 
+L 704.52 103.788 
+L 185.4 103.788 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 209.545116 254.448 
+L 209.545116 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #e2e8f0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="209.545116" y="265.545656" transform="rotate(-0 209.545116 265.545656)">−1.50</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 269.907907 254.448 
+L 269.907907 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #e2e8f0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="269.907907" y="265.545656" transform="rotate(-0 269.907907 265.545656)">−1.25</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 330.270698 254.448 
+L 330.270698 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #e2e8f0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="330.270698" y="265.545656" transform="rotate(-0 330.270698 265.545656)">−1.00</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 390.633488 254.448 
+L 390.633488 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #e2e8f0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="390.633488" y="265.545656" transform="rotate(-0 390.633488 265.545656)">−0.75</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 450.996279 254.448 
+L 450.996279 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #e2e8f0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="450.996279" y="265.545656" transform="rotate(-0 450.996279 265.545656)">−0.50</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 511.35907 254.448 
+L 511.35907 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #e2e8f0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="511.35907" y="265.545656" transform="rotate(-0 511.35907 265.545656)">−0.25</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 571.72186 254.448 
+L 571.72186 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #e2e8f0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14"/>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="571.72186" y="265.545656" transform="rotate(-0 571.72186 265.545656)">0.00</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 632.084651 254.448 
+L 632.084651 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #e2e8f0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16"/>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="632.084651" y="265.545656" transform="rotate(-0 632.084651 265.545656)">0.25</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <path d="M 692.447442 254.448 
+L 692.447442 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #e2e8f0; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18"/>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="692.447442" y="265.545656" transform="rotate(-0 692.447442 265.545656)">0.50</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #334155" x="444.96" y="279.546438" transform="rotate(-0 444.96 279.546438)">Change relative to the paired pilot baseline (percentage points)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_19"/>
+     <g id="text_11">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #334155" x="181.9" y="150.165045" transform="rotate(-0 181.9 150.165045)">Coverage anchors</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_20"/>
+     <g id="text_12">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #334155" x="181.9" y="215.669393" transform="rotate(-0 181.9 215.669393)">Size-proportional sampling</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_21">
+    <path d="M 571.72186 254.448 
+L 571.72186 103.788 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke-dasharray: 4.44,1.92; stroke-dashoffset: 0; stroke: #64748b; stroke-width: 1.2"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 185.4 254.448 
+L 704.52 254.448 
+" style="fill: none; stroke: #94a3b8; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #2166ac" x="527.459502" y="131.365826" transform="rotate(-0 527.459502 131.365826)">-0.183 pp</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #b45f06" x="438.934787" y="196.870174" transform="rotate(-0 438.934787 196.870174)">-0.550 pp</text>
+   </g>
+   <g id="LineCollection_1">
+    <path d="M 472.482606 146.365826 
+L 582.436399 146.365826 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #2166ac; stroke-width: 2.5"/>
+   </g>
+   <g id="line2d_22">
+    <defs>
+     <path id="m80cefabf30" d="M 0 6 
+L 0 -6 
+" style="stroke: #2166ac"/>
+    </defs>
+    <g clip-path="url(#p459eb4e7eb)">
+     <use xlink:href="#m80cefabf30" x="472.482606" y="146.365826" style="fill: #2166ac; stroke: #2166ac"/>
+    </g>
+   </g>
+   <g id="line2d_23">
+    <g clip-path="url(#p459eb4e7eb)">
+     <use xlink:href="#m80cefabf30" x="582.436399" y="146.365826" style="fill: #2166ac; stroke: #2166ac"/>
+    </g>
+   </g>
+   <g id="LineCollection_2">
+    <path d="M 240.712768 211.870174 
+L 637.156805 211.870174 
+" clip-path="url(#p459eb4e7eb)" style="fill: none; stroke: #b45f06; stroke-width: 2.5"/>
+   </g>
+   <g id="line2d_24">
+    <defs>
+     <path id="m3f3c02ec27" d="M 0 6 
+L 0 -6 
+" style="stroke: #b45f06"/>
+    </defs>
+    <g clip-path="url(#p459eb4e7eb)">
+     <use xlink:href="#m3f3c02ec27" x="240.712768" y="211.870174" style="fill: #b45f06; stroke: #b45f06"/>
+    </g>
+   </g>
+   <g id="line2d_25">
+    <g clip-path="url(#p459eb4e7eb)">
+     <use xlink:href="#m3f3c02ec27" x="637.156805" y="211.870174" style="fill: #b45f06; stroke: #b45f06"/>
+    </g>
+   </g>
+   <g id="line2d_26">
+    <defs>
+     <path id="mb457920f9f" d="M 0 4.949747 
+L 4.949747 0 
+L 0 -4.949747 
+L -4.949747 0 
+z
+" style="stroke: #2166ac; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#p459eb4e7eb)">
+     <use xlink:href="#mb457920f9f" x="527.459502" y="146.365826" style="fill: #2166ac; stroke: #2166ac; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="line2d_27">
+    <defs>
+     <path id="mf5324c5282" d="M 0 4.949747 
+L 4.949747 0 
+L 0 -4.949747 
+L -4.949747 0 
+z
+" style="stroke: #b45f06; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#p459eb4e7eb)">
+     <use xlink:href="#mf5324c5282" x="438.934787" y="211.870174" style="fill: #b45f06; stroke: #b45f06; stroke-linejoin: miter"/>
+    </g>
+   </g>
+  </g>
+  <g id="text_15">
+   <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b3a" x="48.204" y="26.784" transform="rotate(-0 48.204 26.784)">Pilot selection: both observed validation gains were negative</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #475569" x="48.204" y="50.22" transform="rotate(-0 48.204 50.22)">GCN validation only / common fixed subsets / paired seeds 3, 4, 5 / no GAGA test inference</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 9.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b3a" x="48.204" y="296.298" transform="rotate(-0 48.204 296.298)">The pre-registered rule selects coverage for proposed full evaluation, including when both pilot means are negative.</text>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #475569" x="48.204" y="316.386" transform="rotate(-0 48.204 316.386)">Bars: exploratory 95% paired t intervals (df=2). These are surrogate-validation results, not demonstrated GAGA test improvements.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p459eb4e7eb">
+   <rect x="185.4" y="103.788" width="519.12" height="150.66"/>
+  </clipPath>
+ </defs>
+</svg>

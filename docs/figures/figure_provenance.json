@@ -1,0 +1,28 @@
+{
+  "input_sources": [
+    {
+      "path": "evidence\\reproduction_summary.json",
+      "sha256": "29d513ad5d572bd4cfc879c6e4d37182eb23b73e2184001a65122bdbbfdcdb99"
+    },
+    {
+      "path": "evidence\\improvement_pilot_summary.json",
+      "sha256": "0742646cbf7b44641fb3a7ef789902571a28c887a95dcb4fb108904a05f151a1"
+    }
+  ],
+  "script": "course/plot_evidence.py",
+  "script_sha256": "a221b3f85339b5b37776561162d9d60b4e5f60aefdc511924e4b6977cb00dab6",
+  "environment": {
+    "python": "3.12.14",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4"
+  },
+  "computation": "Visualization of existing audited summaries; no model training, prediction, seed addition or parameter selection",
+  "figure_units": "MR percent; paired effects in percentage points",
+  "outputs": {
+    "baseline_paired_effect.png": "e59e458723d0fa75ec9c94da0f059dc692768162c8950d36a34f277575df688b",
+    "baseline_paired_effect.svg": "9e7d924f746548c10b07c5bd61a9bc4b2932bff392367f38e641f870e24fa466",
+    "pilot_validation_effects.png": "b82fe837eb6647b73bc8361655f8a49b7bafd154efcff20315ee0ead5f758609",
+    "pilot_validation_effects.svg": "abf6ec08357f0ae7598c19221e5d79b4f23660db8f34d593d0df1e0e471764cd",
+    "plotted_data.csv": "2c5f15a077d4e77066df91fa132646fbee90d03fd6336f793a7fd766fc7b4d83"
+  }
+}

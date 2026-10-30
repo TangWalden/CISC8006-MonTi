@@ -53,7 +53,7 @@
   },
   "user_milestone_confirmations": {
     "baseline_conclusion": "pre-registered inconclusive result retained; user requested continuation after receiving an explanation; independent human technical review remains pending",
-    "improvement_direction": "pending",
+    "improvement_direction": "pending; owner requested explanation of innovation value and ablation logic; explanation provided, including the existing beta feature and set-level coverage distinction",
     "full_evaluation_protocol": "pending; do not launch until explicitly confirmed",
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
