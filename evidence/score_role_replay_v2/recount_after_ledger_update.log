@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-30T13:33:38.262625+00:00",
+  "source_commit": "52bccecf5bbd25c6eda1f48b841ebe8d3018d0ee",
+  "script_sha256": "aeca519d75cd8423ab8686be2ffd31955877a61e016c74f720ef07e26b4d9bad",
+  "gcn_forwards": 224,
+  "generator_forwards": 96,
+  "algebra_reference_topk_calls": 192,
+  "group_checkpoint_cases": 48,
+  "raw_sha256": "94ceff5ef1146ff04ae3b34cd3f7d9c24dc3afa1f5f749b1eddf77922a183a3f",
+  "observed_first_target_score_source_cases": 96,
+  "actual_probability_multiple_maxima_cases": 63,
+  "mutable_state_checked_against_registered_git_snapshot": [
+    "evidence/research_cost_ledger.json"
+  ],
+  "same_vector_reference_device_choice_disagreements": 32,
+  "generator_pair_identical_actual_probability_vectors": 0,
+  "generator_pair_endpoint_differences_with_identical_actual_probability_vectors": 0,
+  "detector_device_contrasts": {
+    "cpu": {
+      "cases": 48,
+      "prediction_disagreements": 0,
+      "maximum_logit_difference": 5.53131103515625e-05
+    },
+    "gpu": {
+      "cases": 48,
+      "prediction_disagreements": 0,
+      "maximum_logit_difference": 4.076957702636719e-05
+    }
+  },
+  "endpoint_attribution": [
+    {
+      "generator": "cpu",
+      "detector": "cpu",
+      "cases": 48,
+      "selected_endpoint_clean_wrong": 10,
+      "selected_clean_wrong_with_clean_correct_alternative": 7,
+      "new_flips": 38,
+      "new_flips_away_from_selected_endpoint": 0
+    },
+    {
+      "generator": "cpu",
+      "detector": "gpu",
+      "cases": 48,
+      "selected_endpoint_clean_wrong": 10,
+      "selected_clean_wrong_with_clean_correct_alternative": 7,
+      "new_flips": 38,
+      "new_flips_away_from_selected_endpoint": 0
+    },
+    {
+      "generator": "gpu",
+      "detector": "cpu",
+      "cases": 48,
+      "selected_endpoint_clean_wrong": 9,
+      "selected_clean_wrong_with_clean_correct_alternative": 6,
+      "new_flips": 39,
+      "new_flips_away_from_selected_endpoint": 0
+    },
+    {
+      "generator": "gpu",
+      "detector": "gpu",
+      "cases": 48,
+      "selected_endpoint_clean_wrong": 9,
+      "selected_clean_wrong_with_clean_correct_alternative": 6,
+      "new_flips": 39,
+      "new_flips_away_from_selected_endpoint": 0
+    }
+  ],
+  "charged_gpu_wall_hours": 0.05933100627528297,
+  "additional_model_queries": 0,
+  "audit_gpu_hours": 0,
+  "elapsed_seconds": 4.206662289972883,
+  "limitations": "Recount of retained tensors only. Graph transfer identity, exact loaded-weight equality and hook neutrality are source-reviewed adapter checks, not independently regenerated here. Prediction concordance does not establish historical perturbation identity; no correction performance evaluated."
+}
