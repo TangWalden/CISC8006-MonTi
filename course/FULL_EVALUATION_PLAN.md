@@ -10,7 +10,7 @@ Nine training/GCN-validation-only pilots completed and passed independent predic
 
 ## Proposed extension and mechanism control
 
-Test whether adding a small amount of structural neighborhood coverage to the candidate context improves transfer to the fixed GAGA victim.
+Test whether selecting a few candidates adjacent to different targets provides complementary generation context and potential non-target connection options, improving transfer to the fixed GAGA victim.
 
 The original selector already includes beta, the number of connected targets, as a per-candidate feature. The proposed extension adds an explicit selected-set coverage preference. For example, three candidates may each have beta=2, but two neighbor the same targetsA/B while another neighborsC/D. Counts alone do not identify that overlap. This illustrative example motivates the objective; it is not a claim that the learned selector always makes that choice or cannot encode useful structural information implicitly.
 
@@ -20,7 +20,7 @@ The original selector already includes beta, the number of connected targets, as
 
 All three retain the same candidate cap, model parameter structure, full graph, fixed detectors, node/edge budget function, feature bounds, loss, optimizer, and checkpoint rule. Small exploration pools are kept in full. The anchors provide constant gates while learned complement gates retain gradients. The random control separates reserving slots from selecting structurally informative anchors.
 
-The anchors are existing candidate nodes, not additional injected nodes. Candidate coverage does not force the final attack edges to cover every target.
+The anchors are existing candidate nodes, not additional injected nodes. Selected candidates have two coupled roles: their representations enter the Transformer, and they define eligible original-graph non-target endpoints for injected edges. All target nodes remain in the context and eligible endpoint list independently of candidate selection. Low candidate adjacency coverage therefore does not mean any target is inaccessible, and candidate coverage does not force final injected edges to cover every target.
 
 ```mermaid
 flowchart LR
@@ -29,10 +29,13 @@ flowchart LR
     G --> M[Combined candidate context: K equals 128]
     L --> M
     M --> T[Original MonTi transformer]
-    T --> A[Attack attributes and edges within original budgets]
+    M --> E[Eligible non-target connection endpoints]
+    T --> A[Attack attributes and edge scores]
+    E --> B[Budget-constrained injected edges]
+    A --> B
 ```
 
-This diagram shows the candidate-selection path for a pool larger than K. The original target-encoding and injected-node-noise paths remain part of MonTi. In the mechanism control, only greedy anchor selection is replaced by random selection with the same anchor count.
+This diagram shows the candidate-selection path for a pool larger than K. All target nodes also enter the original context and eligible endpoint list; the injected-node-noise path remains part of MonTi. In the mechanism control, only greedy anchor selection is replaced by random selection with the same anchor count. This control tests the coverage-based candidate-selection criterion jointly across its two roles; it does not separately identify context effects versus endpoint effects.
 
 This is a course-level extension of the inspected MonTi implementation. First-in-literature novelty has not been established. Low direct-neighbor coverage and high embedding similarity are descriptive observations, not proof that the original method is defective. Anchors could displace useful candidates and reduce attack strength; negative or inconclusive outcomes will be retained.
 

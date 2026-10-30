@@ -1,5 +1,12 @@
 # AI Usage Record
 
+## 2026-10-30: Clarifying why coverage was proposed
+
+- Task and tools: The owner asked why this improvement was proposed. The main agent and a read-only cross-module reviewer checked candidate encoding, edge-score generation and endpoint mapping in the unchanged model/execution code.
+- Decision: Explain that selected candidates both supply Transformer context and define eligible non-target endpoints for injected edges. All targets remain present independently; the earlier reference-object analogy was incomplete. State the hypothesis as complementary context and connection options, and avoid claiming that uncovered targets are inaccessible or that low direct adjacency proves a defect.
+- Checks and limitations: The full-pool and selected-set coverage measurements use different set sizes and do not by themselves establish poor selection. The diagnostic reconstruction loads parameter state but does not restore serialized scheduler state; its scope remains descriptive. The current three-arm design tests candidate selection jointly across context and endpoints, not separate causal contributions of each role. No scientific code, original diagnostic record, frozen rule or experiment result changed.
+- Evidence: models/attack_model.py, modules/experiment_handler.py, course/TRAINING_DIAGNOSIS.md and course/FULL_EVALUATION_PLAN.md. Owner direction confirmation and human technical review remain pending.
+
 ## 2026-10-30: Explaining the proposed extension and plotting saved evidence
 
 - Task and tools: The owner requested an explanation before confirming the improvement direction. Codex explained the distinction between MonTi's existing per-candidate beta feature and explicit selected-set coverage, and the three-arm baseline/coverage/matched-random-anchor comparison. Matplotlib rendered existing audited summaries in a separate local Python3.12 plotting setup, using dependencies from the Tsinghua domestic PyPI mirror.
