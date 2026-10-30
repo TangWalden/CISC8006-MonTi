@@ -1,5 +1,7 @@
 # Three improvement proposals and technical pilots
 
+Owner steering on2026-10-30 places the coverage-first follow-up on hold. The existing pilots and their negative results remain unchanged. Analyze actual training/validation outcomes before selecting or revising an improvement; see RESULTS_FIRST_DIAGNOSIS_PLAN.md. The historical pilot selection rule does not constitute approval to launch the earlier full-evaluation proposal.
+
 The motivation comes from source review and the planned training/validation diagnosis, not from choosing parameters using test results. The baseline's three-seed CI crossing zero is not direct evidence of an algorithmic defect. Course approval has not been confirmed.
 
 ## A: Structural-coverage candidates

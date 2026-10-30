@@ -1,5 +1,7 @@
 # Full improvement evaluation: draft for owner confirmation
 
+**On hold, 2026-10-30:** the owner requires improvement ideas to follow analysis of actual experimental outcomes. This earlier coverage proposal is retained as an exploration record. Its six-run matrix is not authorized to launch; the next active step is results-first diagnosis of saved training/validation evidence.
+
 Status: no full improvement run has started. The owner requested confirmation of the reproduction conclusion, improvement direction, complete experimental protocol, and final freeze. This document makes the proposed next phase reviewable; it does not record course approval or completed human checks.
 
 ## Evidence motivating the proposal

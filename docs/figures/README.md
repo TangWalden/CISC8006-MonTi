@@ -14,6 +14,8 @@ Learned and random selector MR for every registered seed, followed by the seed d
 
 Paired changes relative to the common small-subset pilot baseline, with exploratory95% t intervals from seeds3/4/5. Both observed means are negative. The rule registered before the pilots selects coverage for the proposed next phase. These GCN validation measurements are not attacked GAGA test results, and no full improvement has been established.
 
+The owner later placed that follow-up proposal on hold and requested results-first diagnosis before choosing an improvement. The figure preserves the historical pilot outcome and rule; it does not indicate owner approval or an active full-evaluation queue.
+
 SVG versions retain editable text and vector elements. [Plotted values](plotted_data.csv) and [source/output hashes](figure_provenance.json) support checking the figures against the run summaries.
 
 ## Regeneration

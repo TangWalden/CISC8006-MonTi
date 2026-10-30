@@ -28,6 +28,8 @@ The improvement pilots compare the common baseline, structural-coverage candidat
 
 All nine pilots completed and passed independent saved-output audits. Mean paired GCN validation gains were -0.1833pp for coverage and -0.5500pp for size-proportional sampling. The pre-registered rule selected coverage; these negative pilot results are retained. No full improvement test run has started. The owner has requested confirmation of the reproduction conclusion, improvement direction, full evaluation protocol, and final freeze before those milestones advance.
 
+The owner subsequently required improvement ideas to follow analysis of actual outcomes. The earlier coverage follow-up is on hold. The active next step is the [results-first diagnosis plan](course/RESULTS_FIRST_DIAGNOSIS_PLAN.md); the historical pilot choice is not permission to launch that proposal.
+
 Public documentation and newly generated logs are in English. English translations of earlier agent records identify their original source, hashes, and translation status. Original historical evidence is preserved; translated wording is not presented as verbatim API output.
 
 Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script bytes against their recorded checksums. Publish from the clean public workspace only.

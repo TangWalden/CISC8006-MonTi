@@ -29,7 +29,10 @@
     "learned_mr_percent": 43.72800760817879,
     "random_mr_percent": 40.190204469805046,
     "paired_difference_pp": 3.5378031383737487,
-    "paired_95ci_pp": [-1.5415083979686783, 8.617114674716175],
+    "paired_95ci_pp": [
+      -1.5415083979686783,
+      8.617114674716175
+    ],
     "conclusion": "inconclusive",
     "independent_prediction_recount": "passed on server"
   },
@@ -40,7 +43,10 @@
     "actual_course_freeze_date": "not provided; technical deadline is separate",
     "human_review": "pending"
   },
-  "members": ["Junyi Tang", "Yifan Fan"],
+  "members": [
+    "Junyi Tang",
+    "Yifan Fan"
+  ],
   "improvement_stage": {
     "train_validation_diagnostic": "completed, post-hoc descriptive only",
     "implementation_tests": "five tests passed including CPU/GPU gradients and real sampling loader",
@@ -49,18 +55,21 @@
     "pilot_queue": "all nine completed; independent saved-prediction, configuration, subset, checkpoint and cost audit passed",
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
-    "full_evaluation": "not started; concrete design in course/FULL_EVALUATION_PLAN.md requires owner review before execution preparation"
+    "full_evaluation": "on hold; do not launch the earlier coverage matrix; first analyze saved train/validation outcomes",
+    "active_direction": "not selected; owner requires results-first diagnosis before choosing an improvement",
+    "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
     "baseline_conclusion": "pre-registered inconclusive result retained; user requested continuation after receiving an explanation; independent human technical review remains pending",
-    "improvement_direction": "pending; owner requested explanation of innovation value and ablation logic; explanation provided, including the existing beta feature and set-level coverage distinction",
+    "improvement_direction": "not approved; owner changed the decision procedure to actual-results-first analysis on2026-10-30",
     "full_evaluation_protocol": "pending; do not launch until explicitly confirmed",
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Obtain owner decision on the concrete full evaluation design and proposed coverage extension",
-    "After direction approval, complete the budget-enforcing full runner, tests and frozen configuration for launch confirmation",
-    "Prepare report/slides/demo and two-member real human review evidence before final delivery"
+    "Extract and audit all saved GCN validation curves and residual occurrence patterns from full baselines and pilots",
+    "Report observed associations with fixed budget/group metadata using training-derived bins, separately from causal explanations",
+    "Propose new or revised improvement options only after the outcome report and request owner direction confirmation",
+    "Prepare English report/slides/demo and genuine two-member review evidence without inventing unmeasured results"
   ],
   "automation_id": "monti",
   "scheduled_followup": "every four hours, at most 42 invocations; stop at delivery",

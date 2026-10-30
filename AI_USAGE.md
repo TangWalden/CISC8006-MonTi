@@ -1,5 +1,12 @@
 # AI Usage Record
 
+## 2026-10-30: Human correction to results-first improvement selection
+
+- Human steering: The owner required improvement hypotheses to follow analysis of actual experimental results, rather than proposing a coverage idea first and then looking for supporting observations. This is an English summary of the owner's feedback in this chat, not a claim of completed human code/data verification.
+- Decision: Accept the change in planning procedure. Put the coverage full-evaluation proposal on hold, retain all historical pilots and negative results, and diagnose saved training/validation outcomes before selecting an improvement. The original frozen baseline and pilot rules/results are unchanged.
+- Task and checks: Prepare a diagnostic extraction of complete GCN validation curves, residual detector-correct target occurrences, seed consistency and associations with fixed group/budget metadata. Exclude test predictions and new model inference in phase1. Report observations separately from candidate causes and required controlled checks.
+- Evidence: course/RESULTS_FIRST_DIAGNOSIS_PLAN.md, course/PROJECT_STATUS.json, the on-hold notice in course/FULL_EVALUATION_PLAN.md, and the owner's2026-10-30 feedback. Instructor approval, genuine team technical review and individual contributions remain separately pending.
+
 ## 2026-10-30: Clarifying why coverage was proposed
 
 - Task and tools: The owner asked why this improvement was proposed. The main agent and a read-only cross-module reviewer checked candidate encoding, edge-score generation and endpoint mapping in the unchanged model/execution code.
