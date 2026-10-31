@@ -70,7 +70,7 @@
     "Obtain owner direction confirmation for the concrete outcome-based v2 proposal; do not rerun completed diagnostics",
     "Adapters, 12 synthetic CPU checks, draft pilot protocol and English offline demo are prepared; keep new training and real-data method evaluation on hold while the owner decides after the beginner explanation",
     "Freeze the approved pilot comparison before execution; retain negative results; confirm a separate complete full-evaluation protocol before any new GAGA test run",
-    "Prepare English report/slides/demo and genuine two-member review evidence without inventing unmeasured results"
+    "English report draft and offline demo are prepared; prepare factual slide materials and genuine two-member review evidence without inventing unmeasured improvement results. Keep new training/evaluation on hold pending owner direction."
   ],
   "results_first_diagnosis": {
     "phase": "saved-validation phase 1; later new inference is separately registered below",
@@ -174,5 +174,23 @@
     "human_demo_rehearsal": "not recorded",
     "owner_direction_confirmation": "still pending after beginner explanation; do not repeat unchanged question",
     "human_technical_review": "pending; agent reviews are not human verification"
+  },
+  "reporting_preparation": {
+    "report_draft_status": "English factual draft complete and checked; final course report incomplete",
+    "pdf": "docs/MonTi_Report_Draft.pdf",
+    "editable_source": "docs/REPORT_DRAFT.md",
+    "pages": 10,
+    "pdf_sha256": "066cb930744a767b631d608ee1a13f07201f19e71ddc550accc28c9b9f8ac082",
+    "numerical_evidence_snapshot": "21caa7531058f9149b814ae1c276ab7b654412a9",
+    "build_manifest": "evidence/report_draft_build.json",
+    "qa": "evidence/report_draft_qa.json",
+    "visual_review": "all 10 pages inspected by main agent; not human verification",
+    "demo_script": "docs/DEMO_SCRIPT.md; preparation only, no human rehearsal recorded",
+    "slides": "not prepared",
+    "final_improvement_control_results": "not executed; no result invented",
+    "owner_direction": "pending; no new real-data method evaluation or training authorized",
+    "human_review_contributions_and_course_approval": "pending",
+    "new_model_calls": 0,
+    "gpu_hours": 0
   }
 }

@@ -1,10 +1,10 @@
 # Final Report Outline and Evidence Map
 
-This is a report structure and completion checklist, not a completed final report. Full improvement/control results, human review, course approval, presentation materials, and the final delivery freeze remain to be completed or confirmed. The latest UMMoodle instructions govern the actual course submission format and deadline.
+This is a report structure and completion checklist. A factual [ten-page PDF draft](MonTi_Report_Draft.pdf) and [editable source](REPORT_DRAFT.md) are prepared and visually checked; the final report and course submission remain incomplete. Full improvement/control results, human review, course approval, presentation materials, and the final delivery freeze remain to be completed or confirmed. The latest UMMoodle instructions govern the actual course submission format and deadline.
 
 ## Front matter and abstract
 
-- Working title: **MonTi Candidate Selection: An Audited Component Reproduction and Controlled Improvement Study**.
+- Current draft title: **MonTi Component Reproduction and Validation Diagnostics**. A final title must reflect the actually completed scope.
 - Team: Junyi Tang and Yifan Fan. Distinguish planned responsibilities from verified completed contributions.
 - Reproduction level: Component; instructor approval has not been confirmed.
 - Technical delivery target: 2026-11-05, as requested by the user. This is separate from the unprovided common Week 12 course deadline.
@@ -87,11 +87,11 @@ Evidence: [complete baseline summary](../evidence/reproduction_summary.json), [r
 
 ## 5. Improvements, controls, and ablations — 20 points
 
-Current selection update: the owner required actual-outcome analysis before choosing a new intervention. The historical coverage follow-up is on hold. Report the negative pilots and original selection rule truthfully, then explain the subsequent research decision separately. [Saved-outcome diagnosis](RESULTS_FIRST_DIAGNOSIS.md) and [reconstructed one-edge diagnosis](ONE_EDGE_DIAGNOSIS.md) are exploratory evidence, not final improvement results. The latter preserves the 79-call failure, reviewed numerical-check amendment, complete 355-call retry, independent raw-logit recount, historical prediction disagreement and zero-query clean-endpoint attribution. All seven restricted endpoint opportunities used a clean-GCN-incorrect target, but this establishes neither an improved trained method nor victim transfer. A static score-index/embedding-role finding and replay concordance require further measurement before a direction is selected and confirmed. Do not present the restricted oracle's 2.8807pp selected-subset headroom as a full-validation or test gain.
+Current selection update: the owner required actual-outcome analysis before choosing a new intervention. The historical coverage follow-up is ON HOLD. Report the negative pilots and original selection rule truthfully, then explain the subsequent research decision separately. [Saved-outcome diagnosis](RESULTS_FIRST_DIAGNOSIS.md) and [reconstructed one-edge diagnosis](ONE_EDGE_DIAGNOSIS.md) are exploratory evidence, not final improvement results. The latter preserves the 79-call failure, reviewed numerical-check amendment, complete 355-call retry, independent raw-logit recount, historical prediction disagreement and zero-query clean-endpoint attribution. All seven restricted endpoint opportunities used a clean-GCN-incorrect target, but this establishes neither an improved trained method nor victim transfer. The role finding and replay concordance are addressed in the completed crossed-device study below; no new improvement direction has been confirmed. Do not present the restricted oracle's 2.8807pp selected-subset headroom as a full-validation or test gain.
 
-Further evidence is now available in the [crossed-device study](SCORE_ROLE_REPLAY.md): actual runtime score roles differ from the published injected-source role in all 96 captures; GPU generation restores 48/48 historical prediction concordance, whereas fixed-graph detector-device changes produce no class differences. Preserve the distinction between observed tied probabilities, identical-vector top-k controls and naturally different generator probability vectors. Candidate sets also differ, and the old-weight paper-role reference remains often tied, so no correction performance is established. The [v2 method proposal](../course/IMPROVEMENT_PROPOSAL_V2.md) is pending owner confirmation; original source and frozen baseline results remain intact.
+Further evidence is now available in the [crossed-device study](SCORE_ROLE_REPLAY.md): actual runtime score roles differ from the published injected-source role in all 96 captures; GPU generation restores 48/48 historical prediction concordance, whereas fixed-graph detector-device changes produce no class differences. Preserve the distinction between observed tied probabilities, identical-vector top-k controls and naturally different generator probability vectors. Candidate sets also differ, and the old-weight paper-role reference remains often tied, so no correction performance is established. The [v2 method proposal](../course/IMPROVEMENT_PROPOSAL_V2.md) and [pilot draft](../course/outcome_v2/PILOT_PROTOCOL_DRAFT.md) await owner confirmation. The pilot remains DRAFT / NOT APPROVED / NOT FROZEN / NOT EXECUTED; no A/B direction has been selected. Original source and frozen baseline results remain intact.
 
-### Motivation and three proposals
+### Historical motivation and three proposals
 
 Explain structural-coverage candidates, sampling by group size, and budget-aware candidate count. Use the train/validation diagnosis as descriptive motivation. Low direct-neighbor coverage does not prove a defect; high cosine similarity does not by itself establish redundancy. Explain possible negative effects as well as hoped-for benefits.
 
@@ -103,18 +103,20 @@ Describe the nine registered runs: common pilot baseline, coverage, and size sam
 
 Use only GCN validation MR for the registered selection rule. **GCN pilot-validation MR is not GAGA test performance and is not evidence of a final improvement.** These small-subset pilots must not be placed in a final GAGA-test result column.
 
-- Pilot result table and selected direction: **[pending completed runs and independent selected-epoch audit]**.
+- All nine technical pilot runs and the independent selected-epoch audit are complete. Mean paired GCN validation gains were **-0.1833 pp for coverage** and **-0.5500 pp for size sampling**. The frozen rule selected coverage; its full follow-up is **ON HOLD**, rather than an active approved direction.
 - Course approval of the two ideas: **[not confirmed; attach genuine evidence if obtained]**.
 - Do not describe technical research pilots as approved course pilots without confirmation.
 
-Evidence: [frozen pilot protocol](../course/improvements/pilot_protocol_v1.json), [pilot runner](../course/improvements/run.py), [selection analyzer](../course/improvements/analyze_pilots.py), and [additional evidence checks](../course/AUDIT_NOTES.md).
+Evidence: [frozen pilot protocol](../course/improvements/pilot_protocol_v1.json), [completed pilot summary](../evidence/improvement_pilot_summary.json), [independent pilot audit](../evidence/improvement_pilot_audit.json), [pilot runner](../course/improvements/run.py), [selection analyzer](../course/improvements/analyze_pilots.py), and [additional evidence checks](../course/AUDIT_NOTES.md).
 
-### Full evaluation and mechanism control
+### Historical full-evaluation branches — ON HOLD
 
-Freeze a separate full-evaluation protocol after the pilot audit and before new final test evaluation. Reuse the frozen learned baseline. Evaluate the selected idea and its mechanism control with seeds 0/1/2 under the baseline's full splits, detectors, injection budgets, training maximum, and early-stopping rules.
+The branches below retain the earlier plan for historical context; neither full evaluation was executed. The active v2 direction and pilot draft remain pending owner confirmation. Any future full evaluation needs a separately confirmed and frozen protocol before new final test evaluation, with a fair comparison to the frozen baseline.
 
-- If coverage is selected: compare against random anchors matching each group's actual greedy-anchor count, plus the learned complement. The frozen learned baseline represents removal of the added mechanism.
-- If size sampling is selected: compare against uniform sampling with replacement, separating size weighting from replacement. Record actual group updates, processed target occurrences, epochs, and cost; equal group updates do not imply identical computation.
+- Historical coverage branch, ON HOLD: compare against random anchors matching each group's actual greedy-anchor count, plus the learned complement. The frozen learned baseline represents removal of the added mechanism.
+- Historical size-sampling branch, ON HOLD: compare against uniform sampling with replacement, separating size weighting from replacement. Record actual group updates, processed target occurrences, epochs, and cost; equal group updates do not imply identical computation.
+
+The following full-evaluation table remains an unexecuted placeholder; no new improvement or mechanism control has been selected.
 
 | Full GAGA-test condition | Seed 0 MR | Seed 1 MR | Seed 2 MR | Mean +/- sample SD | Paired gain vs frozen learned baseline and 95% CI | Evidence |
 |---|---|---|---|---|---|---|

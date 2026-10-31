@@ -44,6 +44,14 @@ unfrozen. An [English six-minute offline demonstration script](docs/DEMO_SCRIPT.
 shows how to present the recorded evidence; human rehearsal and review remain
 unrecorded.
 
+The [ten-page English report draft](docs/MonTi_Report_Draft.pdf) and
+[editable report source](docs/REPORT_DRAFT.md) consolidate the completed
+reproduction, negative pilots and validation diagnostics. Its
+[build provenance](evidence/report_draft_build.json) and
+[factual and visual review](evidence/report_draft_qa.json) accompany it. This is
+an incomplete report draft: it contains no new improvement/control results and
+does not establish completed human review or final course submission.
+
 Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script/source bytes against the baseline/pilot and results-first figure manifests. Publish from the clean public workspace only.
 
 ## Environment and quick check

@@ -1,0 +1,78 @@
+{
+  "schema": "monti_report_draft_qa_v1",
+  "checked_utc": "2026-10-31T05:04:34.556467+00:00",
+  "status": "passed factual agent review, source checks and visual document QA; not human course verification",
+  "pdf_path": "docs/MonTi_Report_Draft.pdf",
+  "pdf_sha256": "066cb930744a767b631d608ee1a13f07201f19e71ddc550accc28c9b9f8ac082",
+  "editable_source": "docs/REPORT_DRAFT.md",
+  "build_manifest": "evidence/report_draft_build.json",
+  "pages": 10,
+  "reference_links": 49,
+  "local_reference_links_resolved": 47,
+  "numerical_inputs_matched_to_cited_snapshot": 24,
+  "current_input_output_hashes_matched": 30,
+  "visual_review": {
+    "reviewer": "main Codex agent; not either student or another human",
+    "pages_inspected_at_full_image_resolution": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "renderer": "bundled Poppler pdftoppm, 120 DPI",
+    "command": "bundled-pdftoppm -r 120 -png docs/MonTi_Report_Draft.pdf workspace-QA/page",
+    "result": "No clipping, overlapping text, broken tables or missing visible glyphs; figure labels/captions and page numbers remain legible",
+    "refinement": "Reworded abstract interpretation and an overly compressed paragraph on page 8; rerendered all pages. Pages 1 and 8 were re-inspected; the other eight PNGs were byte-identical to already inspected pages.",
+    "renderer_warnings": [
+      "No display font for Symbol",
+      "No display font for ArialUnicode"
+    ],
+    "warning_disposition": "The report prose is ASCII and all rendered pages were visually checked; no missing visible glyphs observed. Warnings are retained here rather than suppressed.",
+    "private_page_image_sha256": {
+      "page-01.png": "04f0671507fe40502c2e01a962bc900b803b71587d6d23fab26c07b9474c2dfc",
+      "page-02.png": "02586be4a264b35ba50a0718fe362304a76362bc099fddccd47e1123f1a04788",
+      "page-03.png": "88f214cdd5fa5af9d11023731b2a1a15b6e686f2a3984a11b3ebcb84db91c4e3",
+      "page-04.png": "1905224decac43a3a3dae2b7c9e5dd894d700dd4d0c94fdbe62cd14b7c5e25cb",
+      "page-05.png": "eb6e4190f9e6d3d1b115b70665ee9b01bae7eb140de987f9dc68dc9c81962f9c",
+      "page-06.png": "4e4036f46ab8e95f699d64062c96fbcd2300a32d8e5ed5d77292dd47363ea790",
+      "page-07.png": "2f246dabf45082ab1355f5a0fbd303b92237c735ac64535ddc51647f23cab346",
+      "page-08.png": "d08d4636d1725b4c3b4a057b9a98ae9cac8ceda5b23282e3c2392d9bf0b5d9d2",
+      "page-09.png": "7ee42075abf731f2d02e3ca569451b9b3bdc106cb7de0fd6cf902d3b7d43a0be",
+      "page-10.png": "2f61271e04f25cd34c37b67e5572182469831206730d622ce5d3d10ff32d6b84"
+    }
+  },
+  "factual_reviews": [
+    {
+      "scope": "baseline methods, results, costs and provenance",
+      "reviewer": "separate English-records agent",
+      "result": "No remaining blocker; cost rows are separately scoped and source/metric limitations retained"
+    },
+    {
+      "scope": "diagnostic and proposed-method interpretation",
+      "reviewer": "separate method agent",
+      "result": "Historical147/CPU148/oracle141, CPU7/GPU6, exposures/configurations and tie limits are distinguished"
+    },
+    {
+      "scope": "course and human-work status",
+      "reviewer": "separate course-review agent",
+      "result": "Approvals, final improvement/control evaluation, actual contributions, human review and freeze remain pending"
+    }
+  ],
+  "corrections_before_rendering": [
+    "Relabeled 6595/3264/6629 as all split nodes including benign nodes, not unique targets",
+    "Repaired two figure-provenance reference paths"
+  ],
+  "real_data_model_calls": 0,
+  "training_runs": 0,
+  "gpu_hours": 0,
+  "new_scientific_observations": false,
+  "owner_direction_approved": false,
+  "course_submission_complete": false,
+  "human_technical_review_completed": false
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "monti_report_draft_build_v1",
+  "created_utc": "2026-10-31T05:01:40.445963+00:00",
+  "status": "rendered PDF draft; separate visual and factual QA required before publication",
+  "source_tree_head_before_build": "21caa7531058f9149b814ae1c276ab7b654412a9",
+  "numerical_evidence_snapshot": "21caa7531058f9149b814ae1c276ab7b654412a9",
+  "command": "bundled-python -m course.build_report_draft",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "reportlab": "4.4.9",
+    "pypdf": "6.10.0"
+  },
+  "numerical_input_files_matched_to_snapshot": 24,
+  "inputs": {
+    "course/build_report_draft.py": "5aae6764305ad50bb0fe687216cb530d444179cf6e22b86e34ccd9bc34a1b6c4",
+    "course/configs/baseline.json": "1b980a74211e264c81d2fd97a9f53d3017cd1aa79d66297d6f1f78bc8c76d3ab",
+    "course/frozen_protocol.json": "6bd8d1f3cdc4c1b463b4a190525ba5401db176dbde268c0494b80c057e9b55ff",
+    "docs/figures/baseline_paired_effect.png": "e59e458723d0fa75ec9c94da0f059dc692768162c8950d36a34f277575df688b",
+    "docs/figures/figure_provenance.json": "77f9243c14c51c82a5b2abf96b3cf5b7879a056d6f609ffc8604271ade80db2b",
+    "docs/figures/pilot_validation_effects.png": "b82fe837eb6647b73bc8361655f8a49b7bafd154efcff20315ee0ead5f758609",
+    "docs/figures/results_first/provenance.json": "fdadc6336194abf631b45837156d8e5bc528e72a07a90a07770932b9eee8af15",
+    "docs/figures/results_first/validation_residual_associations.png": "8391fb43dc53b4c298b909bda5010387ae7be0424dfda06d62df2571b141c92a",
+    "docs/REPORT_DRAFT.md": "e391a0353cecbd47ecb043823ebc7a45bc86363d0c9bf075838640379bed49ff",
+    "environment/runtime.json": "24b6346ad807e585f5fb026bd6b02d2a65cf6a155cab60a12d71bb722cc08cd0",
+    "evidence/baseline_audit.json": "46f649c53953c3da421d7cc66b9635d22852558b8efca037c9626723b54f1304",
+    "evidence/course-guide.txt": "cdca400affcf2144b79f3651fccb61259eac9fd0537404abfd9d792d32ea8101",
+    "evidence/data/partition_audit.json": "7cf2364f41e01a0ea70d877430869a82d1bbc16685215829fc62da45855d7687",
+    "evidence/improvement_pilot_audit.json": "7d43f9ce7c2406d5ef7ba36d7c609ce7efba00f2722e2c600bf8de965a04b15c",
+    "evidence/improvement_pilot_summary.json": "0742646cbf7b44641fb3a7ef789902571a28c887a95dcb4fb108904a05f151a1",
+    "evidence/one_edge_diagnosis_audit_v2.json": "8cff90af1e725d0fa21e02c4f60427fbd5b105bde5b9f3163db614c819e75a06",
+    "evidence/one_edge_diagnosis_v2/summary.json": "22e23beae1d797af1a0ccb996c6f9cd9aad631adca092313bbcbccd42b1b5918",
+    "evidence/one_edge_endpoint_attribution_v1.json": "a57d97e2b6eb048a01c707d1ac6b2d526720a7587338aa60fd4ed65e2cd144df",
+    "evidence/outcome_v2_synthetic_checks/attempt1.json": "749fbaf7772766d24de4fdf43d9906ee48571daba6c8ffdf17983016a89f516a",
+    "evidence/outcome_v2_synthetic_checks/review_and_receipt.json": "74303a952ecd4a41d4a594e3cd42def1c7d838695cd2e8a8b01730fbe60b83e9",
+    "evidence/publication_history_map.json": "fca36ef73b005f377b082dd7b4e9f0184fd4186d96b8fc574049eb23a5600366",
+    "evidence/reproduction_summary.json": "29d513ad5d572bd4cfc879c6e4d37182eb23b73e2184001a65122bdbbfdcdb99",
+    "evidence/research_cost_ledger.json": "ef3f26da744abb7b95c3d5d49487292c1bbbc6e3ef2407f66bd20aab3a2c027f",
+    "evidence/results_first_diagnosis_audit_v1.json": "d9b13e877895b231dbf2bcbbf8b78502a3b0090cbcfe9474b6a6fcc4ae7f53bb",
+    "evidence/results_first_diagnosis_v1/summary.json": "8d1b10f4d7ba789cc0f308373d8aa73830bc160565503387129d909f57d5e820",
+    "evidence/run_registry.json": "5c43fdb892a0657ac6923bb2617484a0db30ed989d48669f5109a5e8c944ca57",
+    "evidence/score_role_replay_audit_v2.json": "6424aca833005d321fd7b72a639874fec3c39d3bf0016af85f14d743efc3b4b7",
+    "evidence/score_role_replay_recount_after_ledger_update.json": "866ff1673e20019a78dce1323cc947c297e43b303c9498208452b2a38f3430fa",
+    "evidence/score_role_replay_v2/summary.json": "a83e39278ff2ecf2b4d38e485bb316148562741370962aa5bf1bccec520ebf2a"
+  },
+  "output": {
+    "docs/MonTi_Report_Draft.pdf": "066cb930744a767b631d608ee1a13f07201f19e71ddc550accc28c9b9f8ac082"
+  },
+  "pages": 10,
+  "checked_reference_links": 49,
+  "pdf_timestamp_policy": "ReportLab invariant timestamps for repeatable bytes; actual build UTC is recorded here",
+  "scope": "Document preparation from saved evidence only; no ML imports, training, inference or GPU work",
+  "course_submission_status": "draft incomplete; owner direction, full improvement/control evaluation, genuine human review and final freeze remain pending"
+}

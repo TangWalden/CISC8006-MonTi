@@ -1,5 +1,30 @@
 # AI Usage Record
 
+## 2026-10-31: Factual report draft and source review
+
+- Task and tools: Codex prepared an editable Markdown report and ten-page PDF
+  using the isolated document runtime, ReportLab and Poppler. It reused saved
+  numerical evidence and three existing figures; no ML runtime, model weights,
+  real-data inference, training or GPU work was involved.
+- Critical review: Separate agents checked baseline/cost provenance, diagnostic
+  interpretation and course-status claims. They identified that 6,595/3,264/6,629
+  are all partition nodes including benign nodes, rather than unique target
+  members. The main agent corrected this table label before rendering. Earlier
+  pilot completion and the public repository were also corrected in stale
+  outline/audit text. None of these document fixes changes frozen results.
+- Checks: All ten rendered pages were visually inspected. Wording/spacing
+  refinements changed only pages 1 and 8; after rerendering, the other eight PNGs
+  were byte-identical and the changed pages were inspected again. All 49 report
+  reference links resolve; 24 numerical/input files match the cited public
+  snapshot. Build and QA manifests record source/output hashes and review scope.
+- Limits: This is an incomplete report draft, with full improvement/control
+  results, owner direction, course approval, genuine human review/contributions
+  and final freeze still pending. Agent factual/visual reviews are not human
+  technical verification. No claim is made that either member authored or
+  rehearsed this draft personally.
+- Evidence: [Report source](docs/REPORT_DRAFT.md), [PDF draft](docs/MonTi_Report_Draft.pdf),
+  [build manifest](evidence/report_draft_build.json), and [QA scope](evidence/report_draft_qa.json).
+
 ## 2026-10-31: Unselected adapter preparation and synthetic checks
 
 - Task and tools: While the owner considered the beginner explanation, Codex

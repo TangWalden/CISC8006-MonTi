@@ -17,6 +17,12 @@ or GPU work occurred. The [pilot protocol](outcome_v2/PILOT_PROTOCOL_DRAFT.md)
 is explicitly unapproved and unfrozen. An [English offline demonstration
 script](../docs/DEMO_SCRIPT.md) is prepared; it is not a record of human rehearsal.
 
+The [ten-page English report draft](../docs/MonTi_Report_Draft.pdf) now consolidates
+the saved evidence, with [editable source](../docs/REPORT_DRAFT.md), linked
+references and separate factual/visual QA. It adds no inference or experiments.
+All final improvement/control results, genuine human checks and course freeze
+requirements retain their actual incomplete or unconfirmed status.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |
