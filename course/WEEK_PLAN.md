@@ -8,6 +8,15 @@ Later on 2026-10-30, the [one-edge CPU diagnosis](../docs/ONE_EDGE_DIAGNOSIS.md)
 
 The subsequent [score-role and crossed-device study](../docs/SCORE_ROLE_REPLAY.md) is complete and independently recounted. It restores 48/48 historical prediction-vector concordance on the GPU generation path and confirms a source/formulation role discrepancy without changing the model. The [v2 proposal](IMPROVEMENT_PROPOSAL_V2.md) recommends preparation of role-alignment and narrow one-edge-priority pilots, bounded by 2 GPU-hours. Owner direction confirmation is pending; while waiting, prepare isolated code/tests and reporting materials without new training or victim/test evaluation. Do not repeat the completed forensic probe.
 
+On 2026-10-31 the owner requested a beginner explanation before deciding, so
+neither A nor B is approved. Isolated [draft adapters](outcome_v2/README.md) now
+have 12 passing CPU-only synthetic checks from source `cc24bbc`, including a
+nonzero-candidate/multiple-injection source-role known answer and 48 default
+regression combinations. No dataset/checkpoint loading, detector calls, training
+or GPU work occurred. The [pilot protocol](outcome_v2/PILOT_PROTOCOL_DRAFT.md)
+is explicitly unapproved and unfrozen. An [English offline demonstration
+script](../docs/DEMO_SCRIPT.md) is prepared; it is not a record of human rehearsal.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |

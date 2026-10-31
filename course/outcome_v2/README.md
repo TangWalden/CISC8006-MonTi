@@ -2,9 +2,11 @@
 
 **Preparation only. No direction has been selected or approved.** This folder
 does not load datasets/checkpoints, launch experiments, or modify frozen source
-files. The code has not been executed or validated by its author. Separate
-synthetic tests, review, an owner decision, and a frozen protocol are required
-before any real experiment. No improvement or novelty is claimed.
+files. Twelve synthetic CPU checks passed from preparation source `cc24bbc`;
+see the [record](../../evidence/outcome_v2_synthetic_checks/attempt1.json).
+Agent source review, an owner decision, and a frozen protocol are distinct from
+real-data effectiveness. No improvement or novelty is claimed. Real-data method
+evaluation and training remain on hold.
 
 The baseline operations are copied from the frozen `MonTi.edge_generation` in
 `models/attack_model.py`, using the same `gumbel_softmax` and `st_top_k` primitives
@@ -55,7 +57,10 @@ arguments and preserves their dtype/device choices. In particular, it does not
 silently switch adjacency tensors to `z.dtype`, change temperature behavior in
 evaluation, alter native tie rules, or remove the original in-place mutation
 when a tensor `edge_budget` reaches the adaptive remaining-budget operation.
-These are intended compatibility properties, pending regression tests.
+The synthetic default-path regression checks cover output, input-gradient, RNG
+state, and integer/tensor-budget mutation parity with the unbound frozen method
+in 48 combinations of valid settings. This is CPU fixture evidence, not a
+whole-generator or GPU equivalence guarantee.
 
 The caller must supply valid original-method budgets and dimensions. This is
 not a general input or budget validator: for example, the inherited adaptive
@@ -83,14 +88,30 @@ last-in/first-out restoration for nested bindings. Masks and IDs are bound by
 reference, so group-specific inputs require a fresh binding or careful caller
 management. The helper does not patch module-global primitives.
 
-## Review and test handoff
+## Recorded checks and remaining handoff
 
-The root agent owns tests and protocol/status records. The required synthetic
-checks should establish default output/gradient/RNG parity with the frozen
+The root agent owns tests and protocol/status records. The recorded synthetic
+checks establish default output/gradient/RNG parity with the frozen
 method; injected-source row gradients; legal masks and node/edge budgets with
 remaining-edge allocation; non-adaptive and random-branch parity; all/empty and
 nonapplicable eligibility identity; rejection of active B during training;
 eligibility without NaNs; exact global-ID tie selection and unchanged unique
 maxima; private-RNG mask counts/repeatability without global-state consumption;
-and restoration after exceptions/nested bindings. Real data, checkpoints,
-training, and inference are outside this preparation task.
+and restoration after exceptions/nested bindings. A nonzero-candidate,
+multiple-injection known answer checks every scoring-source offset; a separate
+test checks a finite nonzero projection-parameter gradient without updating it.
+The [execution receipt and review scope](../../evidence/outcome_v2_synthetic_checks/review_and_receipt.json)
+distinguish adapter-author self-review from another agent's static review and
+the executed checks. None is human technical verification.
+
+Reproduce only these CPU fixture checks in the locked environment with a new
+output path; an existing record is never overwritten:
+
+```bash
+CUDA_VISIBLE_DEVICES= bash course/run.sh -m course.outcome_v2.synthetic_checks --output evidence/outcome_v2_synthetic_checks/new_attempt.json
+```
+
+Real data, saved checkpoints, detector queries, training, optimizer steps and
+GPU work were absent. The [pilot document](PILOT_PROTOCOL_DRAFT.md) remains an
+unapproved draft with blocking choices. These checks neither select A/B/C nor
+authorize real-data experiments.

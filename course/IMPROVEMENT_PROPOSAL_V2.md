@@ -44,3 +44,10 @@ Prepare validation-only pilots for **A and B**, with C as a functional/reproduci
 Freeze the concrete pilot protocol before any approved pilot runs. Keep all null/negative results; do not force a winner merely because one negative score is less negative. Any later decision to fully investigate a null result needs a stated scientific question. Final method selection, the complete full-evaluation protocol and final submission freeze retain their owner checkpoints. GAGA test evaluation remains prohibited until its separately frozen protocol is confirmed.
 
 Course approval, the actual UMMoodle freeze and genuine team technical checks remain unconfirmed. Planned responsibilities and agent-generated work are not completed human contributions. The value of this study is its auditable diagnosis and controlled evaluation; novelty and positive results must not be invented.
+
+Preparation update, 2026-10-31: the owner requested a beginner explanation before
+deciding. [Isolated adapters](outcome_v2/README.md) now have 12 passing synthetic
+CPU checks; this uses no datasets, saved checkpoints, detector calls, training or
+GPU work and establishes no efficacy. The [pilot draft](outcome_v2/PILOT_PROTOCOL_DRAFT.md)
+lists unresolved choices and is not approved or frozen. The existing full-run
+and final-freeze checkpoints remain in force.

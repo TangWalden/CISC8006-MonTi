@@ -1,0 +1,44 @@
+{
+  "schema": "monti_outcome_v2_preparation_receipt_v1",
+  "status": "completed synthetic preparation only; owner direction remains pending",
+  "source_commit": "cc24bbcfdf47062b5fdcbd8bce797b25d8abba14",
+  "record_path": "evidence/outcome_v2_synthetic_checks/attempt1.json",
+  "record_sha256": "749fbaf7772766d24de4fdf43d9906ee48571daba6c8ffdf17983016a89f516a",
+  "source_files_matched_to_committed_bytes_after_transfer": 5,
+  "exact_remote_shell_invocation": "cd /home/tjy/Project/MonTi-course && CUDA_VISIBLE_DEVICES= timeout 120s bash course/run.sh -m course.outcome_v2.synthetic_checks --output evidence/outcome_v2_synthetic_checks/attempt1.json",
+  "shell_exit_code": 0,
+  "outer_tool_wall_seconds_including_ssh": 4.7541477,
+  "test_loop_elapsed_seconds": 0.17947934794938192,
+  "timing_scope": "Elapsed wall time; not CPU consumption, inference latency or a dedicated benchmark. Outer time also includes SSH and interpreter/import startup.",
+  "test_methods": 12,
+  "default_parity_subcases": 48,
+  "known_answer_coverage": "One injected node with zero candidates, plus two injected nodes and one candidate; independent source indices, scores, hard endpoints and latent gradients; separate projection-parameter gradient without updates",
+  "review": [
+    {
+      "role": "adapter author",
+      "kind": "static self-review",
+      "finding": "No blocker; requested a nonzero-candidate, multi-injection known answer and documentation of inherited valid-budget preconditions. Both were added before execution."
+    },
+    {
+      "role": "separate course-method agent",
+      "kind": "independent static agent review",
+      "finding": "No blocking semantic defect found; checked offset indices/scores/endpoints, default ST/RNG sequence, inference-only mask guard, private mask RNG, exact ties and restoration. This agent did not execute tests."
+    },
+    {
+      "role": "main agent",
+      "kind": "integration review and executed synthetic checks",
+      "finding": "Committed before execution, used CPU-only fixtures and the frozen unbound method as the regression reference, retained the exclusive raw check record and verified transferred source hashes."
+    }
+  ],
+  "failure_attempts_for_this_suite": 0,
+  "dataset_or_saved_checkpoint_loading": false,
+  "real_data_method_evaluation": false,
+  "detector_queries": 0,
+  "training_runs": 0,
+  "optimizer_steps": 0,
+  "gpu_hours": 0,
+  "human_technical_review_completed": false,
+  "owner_direction_approved": false,
+  "pilot_protocol_frozen": false,
+  "limitations": "CPU synthetic functional evidence only; no trained-method effectiveness, full-generator/GPU parity, novelty, course approval or human contribution is established."
+}

@@ -36,6 +36,14 @@ The subsequent [CPU-only one-edge diagnosis](docs/ONE_EDGE_DIAGNOSIS.md) complet
 
 The later [crossed-device score-role study](docs/SCORE_ROLE_REPLAY.md) completed 96 generator and 224 GCN forwards. GPU-generated attacks reproduce all 48 historical prediction vectors; detector CPU/GPU predictions agree for each captured attack. Runtime captures confirm that the one-node score source is the first target slot, while the [published formulation](course/PAPER_EDGE_SCORE_CHECK.md) uses the injected slot. Actual target probabilities have multiple exact maxima in 63/96 captures; identical-vector device top-k choices differ in 32/96. Candidate sets and features also differ, so no sole cause or successful correction is claimed. The [new outcome-based proposal](course/IMPROVEMENT_PROPOSAL_V2.md) awaits owner direction confirmation; neither proposed v2 variant has been trained and frozen scientific files remain unchanged.
 
+While that decision is pending, [isolated draft adapters](course/outcome_v2/README.md)
+passed 12 synthetic CPU checks, with no data/checkpoint loading, detector calls,
+training or GPU work. They are preparation, not effectiveness evidence. The
+[pilot protocol draft](course/outcome_v2/PILOT_PROTOCOL_DRAFT.md) is unapproved and
+unfrozen. An [English six-minute offline demonstration script](docs/DEMO_SCRIPT.md)
+shows how to present the recorded evidence; human rehearsal and review remain
+unrecorded.
+
 Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script/source bytes against the baseline/pilot and results-first figure manifests. Publish from the clean public workspace only.
 
 ## Environment and quick check

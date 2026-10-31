@@ -68,7 +68,7 @@
   },
   "next_actions": [
     "Obtain owner direction confirmation for the concrete outcome-based v2 proposal; do not rerun completed diagnostics",
-    "Prepare isolated role-alignment and one-edge eligibility adapters, meaningful source-role/budget/gradient/mask tests and a bounded validation-pilot protocol while direction is pending; do not start new training before confirmation",
+    "Adapters, 12 synthetic CPU checks, draft pilot protocol and English offline demo are prepared; keep new training and real-data method evaluation on hold while the owner decides after the beginner explanation",
     "Freeze the approved pilot comparison before execution; retain negative results; confirm a separate complete full-evaluation protocol before any new GAGA test run",
     "Prepare English report/slides/demo and genuine two-member review evidence without inventing unmeasured results"
   ],
@@ -155,5 +155,24 @@
   },
   "automation_id": "monti",
   "scheduled_followup": "every four hours, at most 42 invocations; stop at delivery",
-  "research_gpu_hour_limit_additional": 12
+  "research_gpu_hour_limit_additional": 12,
+  "outcome_v2_preparation": {
+    "status": "isolated adapters and CPU synthetic checks complete; real-data evaluation and training on hold",
+    "source_commit": "cc24bbcfdf47062b5fdcbd8bce797b25d8abba14",
+    "adapter_documentation": "course/outcome_v2/README.md",
+    "synthetic_check_record": "evidence/outcome_v2_synthetic_checks/attempt1.json",
+    "execution_and_review_scope": "evidence/outcome_v2_synthetic_checks/review_and_receipt.json",
+    "tests_passed": 12,
+    "default_parity_subcases": 48,
+    "source_hashes_matched_to_committed_bytes": 5,
+    "real_data_method_evaluation_calls": 0,
+    "training_runs": 0,
+    "gpu_hours": 0,
+    "pilot_protocol": "course/outcome_v2/PILOT_PROTOCOL_DRAFT.md",
+    "pilot_protocol_status": "DRAFT / NOT APPROVED / NOT FROZEN / NOT EXECUTED",
+    "demo_script": "docs/DEMO_SCRIPT.md",
+    "human_demo_rehearsal": "not recorded",
+    "owner_direction_confirmation": "still pending after beginner explanation; do not repeat unchanged question",
+    "human_technical_review": "pending; agent reviews are not human verification"
+  }
 }

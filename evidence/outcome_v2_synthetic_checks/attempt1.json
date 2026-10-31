@@ -1,0 +1,34 @@
+{
+  "schema": "monti_outcome_v2_synthetic_checks_v1",
+  "status": "passed",
+  "scope": "Unselected adapter preparation; synthetic CPU tensors only, no efficacy evidence or owner approval",
+  "start_utc": "2026-10-31T00:55:27Z",
+  "elapsed_seconds": 0.17947934794938192,
+  "source_commit": "cc24bbcfdf47062b5fdcbd8bce797b25d8abba14",
+  "tracked_changes_before_checks": "",
+  "source_sha256": {
+    "course/outcome_v2/__init__.py": "fd8485c9ae30796590965f7cda7fd13333ec92d6901e02575119bbe76bcc6cc8",
+    "course/outcome_v2/scoring.py": "921d6044b677ae0385d4ebc9f1e1338f4657794b3887aff659ec7a76ea92ffbe",
+    "course/outcome_v2/synthetic_checks.py": "0a6d4cdc697bf91e97dbbf27b599545cae92f21a6f7014c079dc9d14c3fd0746",
+    "models/attack_model.py": "5bf043f87c4cac4d98d28d87b88751ed62592742a33d349034fbbf570b6325d0",
+    "utils/utils.py": "c95383d2bbacba69e81b6b65e7f8b53be4085fc317d08fb445a94f702b13a732"
+  },
+  "command": "CUDA_VISIBLE_DEVICES= bash course/run.sh -m course.outcome_v2.synthetic_checks --output evidence/outcome_v2_synthetic_checks/attempt1.json",
+  "runtime": {
+    "python": "3.8.20 (default, Oct  3 2024, 15:24:27) \n[GCC 11.2.0]",
+    "torch": "1.13.1+cu117",
+    "numpy": "1.24.4",
+    "torch_threads": 1
+  },
+  "tests_run": 12,
+  "failures": [],
+  "errors": [],
+  "test_log": "test_aligned_adaptive_budget_legal_edges_and_capacity (__main__.SyntheticChecks) ... ok\ntest_aligned_projection_parameter_receives_gradient_without_update (__main__.SyntheticChecks) ... ok\ntest_binding_nested_restore_exception_and_state_identity (__main__.SyntheticChecks) ... ok\ntest_candidate_offset_and_distinct_injected_rows_known_answer (__main__.SyntheticChecks) ... ok\ntest_default_output_gradient_rng_and_budget_mutation_parity (__main__.SyntheticChecks) ... ok\ntest_global_id_exact_tie_and_permutation_consistency (__main__.SyntheticChecks) ... ok\ntest_invalid_active_options_fail_explicitly (__main__.SyntheticChecks) ... ok\ntest_known_answer_source_role_and_direct_latent_gradient (__main__.SyntheticChecks) ... ok\ntest_mask_identity_fallback_and_nonapplicable_budget (__main__.SyntheticChecks) ... ok\ntest_partial_mask_choice_finite_derivative_and_training_guard (__main__.SyntheticChecks) ... ok\ntest_random_branch_ignores_options_and_preserves_rng (__main__.SyntheticChecks) ... ok\ntest_random_mask_cardinality_repeatability_and_rng_isolation (__main__.SyntheticChecks) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.179s\n\nOK\n",
+  "dataset_and_checkpoint_loading": "none; synthetic fixtures only",
+  "training_runs": 0,
+  "optimizer_steps": 0,
+  "real_data_generator_calls": 0,
+  "detector_calls": 0,
+  "victim_test_queries": 0,
+  "gpu_hours": 0
+}

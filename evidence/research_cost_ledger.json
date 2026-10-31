@@ -141,5 +141,14 @@
       "startup_attempts_failed": 1,
       "metadata_only_processes": 2
     }
-  }
+  },
+  "synthetic_preparation_cpu_only": [
+    {
+      "path": "evidence/outcome_v2_synthetic_checks/attempt1.json",
+      "test_loop_elapsed_seconds": 0.17947934794938192,
+      "outer_tool_wall_seconds_including_ssh": 4.7541477,
+      "gpu_hours": 0,
+      "scope": "Twelve CPU synthetic functional checks, 48 default parity subcases; no datasets/checkpoints, detector calls, optimizer updates or real-data method evaluation"
+    }
+  ]
 }

@@ -1,5 +1,31 @@
 # AI Usage Record
 
+## 2026-10-31: Unselected adapter preparation and synthetic checks
+
+- Task and tools: While the owner considered the beginner explanation, Codex
+  prepared isolated A/B/C scoring adapters, CPU-only synthetic checks, an
+  explicitly unfrozen pilot draft and an English offline demonstration script.
+  Source `cc24bbc` was committed before the checks ran in the locked ML runtime.
+- Critical decisions: The adapter author's self-review identified that a
+  one-injection/no-candidate known answer would not detect a missing candidate
+  offset. The main agent added a separate two-injection, one-candidate example
+  with independently specified indices, scores, endpoints and gradients before
+  execution. Another agent statically reviewed these values and the control
+  semantics. The main agent also retained inherited budget preconditions rather
+  than claiming universal budget validation.
+- Checks and limits: All 12 synthetic tests passed, including 48 default-path
+  output/gradient/RNG/budget-mutation combinations against the frozen unbound
+  method. No datasets, saved checkpoints, detector queries, optimizer steps,
+  training or GPU work were used. These checks do not establish real-data
+  effectiveness, whole-generator device parity, novelty or human verification.
+- Evidence: [Adapter documentation](course/outcome_v2/README.md),
+  [raw check record](evidence/outcome_v2_synthetic_checks/attempt1.json),
+  [execution and review scope](evidence/outcome_v2_synthetic_checks/review_and_receipt.json),
+  [pilot draft](course/outcome_v2/PILOT_PROTOCOL_DRAFT.md), and
+  [offline demo script](docs/DEMO_SCRIPT.md). The pilot is not approved or frozen;
+  the demo is not completed human work. Owner direction, later full protocol,
+  course approval, genuine team review and final freeze remain pending.
+
 ## 2026-10-30: Human correction to results-first improvement selection
 
 - Human steering: The owner required improvement hypotheses to follow analysis of actual experimental results, rather than proposing a coverage idea first and then looking for supporting observations. This is an English summary of the owner's feedback in this chat, not a claim of completed human code/data verification.
