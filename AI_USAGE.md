@@ -7,6 +7,12 @@
 - Task and checks: Prepare a diagnostic extraction of complete GCN validation curves, residual detector-correct target occurrences, seed consistency and associations with fixed group/budget metadata. Exclude test predictions and new model inference in phase1. Report observations separately from candidate causes and required controlled checks.
 - Evidence: course/RESULTS_FIRST_DIAGNOSIS_PLAN.md, course/PROJECT_STATUS.json, the on-hold notice in course/FULL_EVALUATION_PLAN.md, and the owner's2026-10-30 feedback. Instructor approval, genuine team technical review and individual contributions remain separately pending.
 
+## 2026-10-31: Owner requests a beginner explanation before deciding
+
+- Human feedback: The owner selected the explanation-first option rather than approving either v2 direction.
+- Decision: Keep direction and validation-pilot authorization pending. Explain A through the score-reference role and B through the use of a single connection opportunity; retain uncertainty about efficacy, transfer and novelty.
+- Scope: Only reversible draft code, controls and reporting preparation may continue. No new training or real-data evaluation is authorized by this feedback. This is not instructor approval or a completed human technical check.
+
 ## 2026-10-30: Paper/source role check and crossed-device instrumentation
 
 - Task and tools: Following actual residual and reconstruction outcomes, Codex checked the official paper's edge-score role and committed a finite generator-by-detector CPU/GPU diagnostic before model work. Independent agents reviewed source semantics, observational capture, sampler output-node alignment, backend setup and the interpretation of ties. Original outputs were returned unchanged by the observers; frozen scientific files were not edited.

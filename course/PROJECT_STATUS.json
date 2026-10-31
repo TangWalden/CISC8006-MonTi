@@ -1,5 +1,5 @@
 {
-  "updated_date_asia_shanghai": "2026-10-30",
+  "updated_date_asia_shanghai": "2026-10-31",
   "delivery_deadline_asia_shanghai": "2026-11-05",
   "repository": "https://github.com/TangWalden/CISC8006-MonTi",
   "visibility": "public, explicitly requested by user",
@@ -61,8 +61,8 @@
   },
   "user_milestone_confirmations": {
     "baseline_conclusion": "pre-registered inconclusive result retained; user requested continuation after receiving an explanation; independent human technical review remains pending",
-    "improvement_direction": "pending review of course/IMPROVEMENT_PROPOSAL_V2.md after actual-outcome and score-role diagnosis; earlier coverage follow-up remains on hold",
-    "new_validation_pilots": "pending owner direction confirmation; proposed maximum 2 aggregate GPU-hours; no GAGA/test evaluation",
+    "improvement_direction": "Owner requested a beginner explanation before deciding on2026-10-31; no A/B direction approved",
+    "new_validation_pilots": "Not authorized; owner requested explanation before deciding. No new training or real-data method evaluation.",
     "full_evaluation_protocol": "pending; do not launch until explicitly confirmed",
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
@@ -151,7 +151,7 @@
     "corrected_edge_evaluations": 0,
     "new_training_runs": 0,
     "victim_test_queries": 0,
-    "owner_direction_confirmation": "pending"
+    "owner_direction_confirmation": "Explanation requested before decision; still pending"
   },
   "automation_id": "monti",
   "scheduled_followup": "every four hours, at most 42 invocations; stop at delivery",
