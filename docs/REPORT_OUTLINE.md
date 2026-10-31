@@ -1,6 +1,10 @@
 # Final Report Outline and Evidence Map
 
-This is a report structure and completion checklist. A factual [ten-page PDF draft](MonTi_Report_Draft.pdf) and [editable source](REPORT_DRAFT.md) are prepared and visually checked; the final report and course submission remain incomplete. Full improvement/control results, human review, course approval, presentation materials, and the final delivery freeze remain to be completed or confirmed. The latest UMMoodle instructions govern the actual course submission format and deadline.
+This is a report structure and completion checklist. A factual [ten-page PDF draft](MonTi_Report_Draft.pdf) and [editable source](REPORT_DRAFT.md) are prepared and visually checked; the final report and course submission remain incomplete. Full improvement/control results, human review, course approval, actual presentation/rehearsal, and the final delivery freeze remain to be completed or confirmed. The latest UMMoodle instructions govern the actual course submission format and deadline.
+
+The [English slide draft](MonTi_Slides_Draft.pptx), [speaking plan](SLIDES_GUIDE.md)
+and offline demo script are prepared. Actual application testing, rehearsal,
+presentation and individual defense have not been recorded.
 
 ## Front matter and abstract
 
@@ -154,7 +158,8 @@ Demonstration preparation:
 5. Add the selected full improvement/control evidence only after completion and audit.
 6. Prepare an offline evidence copy and an honest failure fallback.
 
-Slides, rehearsal, demonstration materials, and actual presentation: **[pending]**.
+Slide and offline-demo drafts: **prepared**. Actual application testing, rehearsal,
+demonstration and presentation: **[pending]**.
 
 ## 8. Individual defense and contribution — 10 + 5 individual points
 

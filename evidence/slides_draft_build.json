@@ -1,0 +1,233 @@
+{
+  "schema": "monti_slides_draft_build_v1",
+  "built_utc": "2026-10-31T09:06:39.693Z",
+  "evidence_snapshot": "9d5b62173249829063219beac8c3aaf4cf3aa45b",
+  "revision": "v6",
+  "slides": 12,
+  "main_slides": 7,
+  "appendix_slides": 5,
+  "proposed_main_duration_seconds": 360,
+  "planned_speaker_seconds": {
+    "Junyi Tang": 180,
+    "Yifan Fan": 180
+  },
+  "inputs": {
+    "docs/REPORT_DRAFT.md": "e391a0353cecbd47ecb043823ebc7a45bc86363d0c9bf075838640379bed49ff",
+    "docs/MonTi_Report_Draft.pdf": "066cb930744a767b631d608ee1a13f07201f19e71ddc550accc28c9b9f8ac082",
+    "evidence/report_draft_build.json": "b114a70f3d0f7c5cb07abd1cfdf4480459173cacb487a61fd0b6adf92585915f",
+    "evidence/report_draft_qa.json": "75019cd3b721fe4b236aeb81ca7ef46a6e3a05bc09a7d4dab52e869086d0b9eb",
+    "evidence/reproduction_summary.json": "29d513ad5d572bd4cfc879c6e4d37182eb23b73e2184001a65122bdbbfdcdb99",
+    "course/frozen_protocol.json": "6bd8d1f3cdc4c1b463b4a190525ba5401db176dbde268c0494b80c057e9b55ff",
+    "evidence/improvement_pilot_summary.json": "0742646cbf7b44641fb3a7ef789902571a28c887a95dcb4fb108904a05f151a1",
+    "evidence/results_first_diagnosis_v1/training_derived_bins.csv": "fbc46229b5a206d1cecd78f9419352593b0ed2f01401211e6dc5666a95bda961",
+    "evidence/one_edge_diagnosis_v2/summary.json": "22e23beae1d797af1a0ccb996c6f9cd9aad631adca092313bbcbccd42b1b5918",
+    "evidence/one_edge_endpoint_attribution_v1.json": "a57d97e2b6eb048a01c707d1ac6b2d526720a7587338aa60fd4ed65e2cd144df",
+    "evidence/score_role_replay_v2/summary.json": "a83e39278ff2ecf2b4d38e485bb316148562741370962aa5bf1bccec520ebf2a",
+    "evidence/score_role_replay_audit_v2.json": "6424aca833005d321fd7b72a639874fec3c39d3bf0016af85f14d743efc3b4b7",
+    "evidence/research_cost_ledger.json": "ef3f26da744abb7b95c3d5d49487292c1bbbc6e3ef2407f66bd20aab3a2c027f",
+    "evidence/outcome_v2_synthetic_checks/attempt1.json": "749fbaf7772766d24de4fdf43d9906ee48571daba6c8ffdf17983016a89f516a",
+    "course/IMPROVEMENT_PROPOSAL_V2.md": "c800a672b231078a54d508af4248f0c8ec915fcd3d5a2864277dc864a0163cbb",
+    "course/build_slides_draft.mjs": "2a63400ca1198dffb47960372ed9b55e976fdc25c8a6afa213786a1712f5cc7c"
+  },
+  "output_sha256": "e0c42466988c38aad344594a96c709350af9bc434ab91d166de4170c934449db",
+  "slide_metadata": [
+    {
+      "number": 1,
+      "title": "MonTi component reproduction",
+      "appendix": false,
+      "planned_speaker": "Junyi Tang",
+      "planned_seconds": 20,
+      "sources": [
+        "docs/REPORT_DRAFT.md",
+        "course/PROJECT_STATUS.json"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Frozen comparison and metric",
+      "appendix": false,
+      "planned_speaker": "Junyi Tang",
+      "planned_seconds": 55,
+      "sources": [
+        "course/frozen_protocol.json",
+        "course/configs/baseline.json",
+        "course/test_protocol.py",
+        "evidence/data/partition_audit.json"
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Baseline conclusion is inconclusive",
+      "appendix": false,
+      "planned_speaker": "Junyi Tang",
+      "planned_seconds": 75,
+      "sources": [
+        "evidence/reproduction_summary.json",
+        "evidence/baseline_audit.json",
+        "course/frozen_protocol.json"
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Earlier pilots had negative mean gains",
+      "appendix": false,
+      "planned_speaker": "Junyi Tang",
+      "planned_seconds": 30,
+      "sources": [
+        "evidence/improvement_pilot_summary.json",
+        "evidence/improvement_pilot_audit.json",
+        "course/improvements/pilot_protocol_v1.json"
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Scoring roles and crossed device replay",
+      "appendix": false,
+      "planned_speaker": "Yifan Fan",
+      "planned_seconds": 65,
+      "sources": [
+        "docs/SCORE_ROLE_REPLAY.md",
+        "evidence/score_role_replay_v2/summary.json",
+        "evidence/score_role_replay_audit_v2.json",
+        "course/PAPER_EDGE_SCORE_CHECK.md",
+        "https://ojs.aaai.org/index.php/AAAI/article/view/33760/35915"
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Follow-up options await a decision",
+      "appendix": false,
+      "planned_speaker": "Yifan Fan",
+      "planned_seconds": 65,
+      "sources": [
+        "course/IMPROVEMENT_PROPOSAL_V2.md",
+        "course/outcome_v2/PILOT_PROTOCOL_DRAFT.md",
+        "evidence/outcome_v2_synthetic_checks/attempt1.json",
+        "evidence/outcome_v2_synthetic_checks/review_and_receipt.json"
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Completed evidence and remaining work",
+      "appendix": false,
+      "planned_speaker": "Yifan Fan",
+      "planned_seconds": 50,
+      "sources": [
+        "course/PROJECT_STATUS.json",
+        "course/GRADING_AUDIT.md",
+        "evidence/course-guide.txt",
+        "docs/HUMAN_REVIEW.md",
+        "CONTRIBUTIONS.md",
+        "AI_USAGE.md",
+        "docs/DEMO_SCRIPT.md"
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Appendix  Complete seed results",
+      "appendix": true,
+      "planned_speaker": null,
+      "planned_seconds": null,
+      "sources": [
+        "evidence/reproduction_summary.json",
+        "evidence/improvement_pilot_summary.json",
+        "course/frozen_protocol.json"
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Appendix  Residual concentration",
+      "appendix": true,
+      "planned_speaker": null,
+      "planned_seconds": null,
+      "sources": [
+        "evidence/results_first_diagnosis_v1/training_derived_bins.csv",
+        "evidence/results_first_diagnosis_v1/summary.json",
+        "docs/RESULTS_FIRST_DIAGNOSIS.md"
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Appendix  Fixed-feature endpoint oracle",
+      "appendix": true,
+      "planned_speaker": null,
+      "planned_seconds": null,
+      "sources": [
+        "evidence/one_edge_diagnosis_v2/summary.json",
+        "evidence/one_edge_endpoint_attribution_v1.json",
+        "docs/ONE_EDGE_DIAGNOSIS.md"
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Appendix  Ties and generation differences",
+      "appendix": true,
+      "planned_speaker": null,
+      "planned_seconds": null,
+      "sources": [
+        "evidence/score_role_replay_v2/summary.json",
+        "evidence/score_role_replay_v2/generators.csv",
+        "evidence/score_role_replay_v2/pairs.csv",
+        "evidence/score_role_replay_audit_v2.json"
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Appendix  Evidence and cost navigation",
+      "appendix": true,
+      "planned_speaker": null,
+      "planned_seconds": null,
+      "sources": [
+        "evidence/run_registry.json",
+        "evidence/publication_history_map.json",
+        "evidence/research_cost_ledger.json",
+        "docs/DEMO_SCRIPT.md",
+        "AI_USAGE.md"
+      ]
+    }
+  ],
+  "native_table_owner_slides": [
+    2,
+    5,
+    7,
+    8,
+    10,
+    11,
+    12
+  ],
+  "native_chart_owner_slides": [
+    3,
+    4,
+    9
+  ],
+  "native_chart_workbooks": "New literal-data snapshots, intentionally materialized and checked by finalizer",
+  "presentation_chart_decimal_places": 8,
+  "scientific_source_numbers": "Unchanged; full precision remains in the cited JSON/CSV files",
+  "font_policy": {
+    "basis": "design",
+    "families": [
+      "Arial"
+    ]
+  },
+  "source_tree_head": "9d5b62173249829063219beac8c3aaf4cf3aa45b",
+  "scope": "Artifact preparation from saved evidence only; no ML queries, training, dependency download or research GPU hours",
+  "human_rehearsal_and_technical_review": "not recorded",
+  "owner_direction": "pending",
+  "finalizer_receipt_sha256": "3817e2e213b4def40d579f66799cf8d60c50bae950a580d0a5b0164fc7013385",
+  "output": {
+    "docs/MonTi_Slides_Draft.pptx": "e0c42466988c38aad344594a96c709350af9bc434ab91d166de4170c934449db"
+  },
+  "status": "validated editable draft; human/application rehearsal and final improvement remain pending",
+  "file_export_process_exit_code": 0,
+  "first_party_validation_summary": {
+    "slides": 12,
+    "charts": 3,
+    "native_tables": 8,
+    "embedded_chart_workbooks": 3,
+    "package_and_geometry": "passed",
+    "font_policy": "passed",
+    "chart_workbook_consistency": "passed",
+    "first_party_import": "passed",
+    "PowerPoint_application_verified": false
+  }
+}

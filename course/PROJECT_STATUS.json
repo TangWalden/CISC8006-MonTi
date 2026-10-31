@@ -70,7 +70,7 @@
     "Obtain owner direction confirmation for the concrete outcome-based v2 proposal; do not rerun completed diagnostics",
     "Adapters, 12 synthetic CPU checks, draft pilot protocol and English offline demo are prepared; keep new training and real-data method evaluation on hold while the owner decides after the beginner explanation",
     "Freeze the approved pilot comparison before execution; retain negative results; confirm a separate complete full-evaluation protocol before any new GAGA test run",
-    "English report draft and offline demo are prepared; prepare factual slide materials and genuine two-member review evidence without inventing unmeasured improvement results. Keep new training/evaluation on hold pending owner direction."
+    "English report, editable slides and offline demo drafts are prepared. Genuine human/application review, contributions, course approval and final freeze remain pending. Keep new method evaluation/training on hold until owner direction; do not rerun completed artifact builds/probes without new changes."
   ],
   "results_first_diagnosis": {
     "phase": "saved-validation phase 1; later new inference is separately registered below",
@@ -186,11 +186,38 @@
     "qa": "evidence/report_draft_qa.json",
     "visual_review": "all 10 pages inspected by main agent; not human verification",
     "demo_script": "docs/DEMO_SCRIPT.md; preparation only, no human rehearsal recorded",
-    "slides": "not prepared",
+    "slides": "English editable 12-slide draft prepared; native PowerPoint test, human rehearsal and final presentation pending",
     "final_improvement_control_results": "not executed; no result invented",
     "owner_direction": "pending; no new real-data method evaluation or training authorized",
     "human_review_contributions_and_course_approval": "pending",
     "new_model_calls": 0,
     "gpu_hours": 0
+  },
+  "slides_preparation": {
+    "pptx": "docs/MonTi_Slides_Draft.pptx",
+    "guide": "docs/SLIDES_GUIDE.md",
+    "build_manifest": "evidence/slides_draft_build.json",
+    "qa": "evidence/slides_draft_qa.json",
+    "pptx_sha256": "e0c42466988c38aad344594a96c709350af9bc434ab91d166de4170c934449db",
+    "evidence_snapshot": "9d5b62173249829063219beac8c3aaf4cf3aa45b",
+    "slides": 12,
+    "main_slides": 7,
+    "appendix_slides": 5,
+    "native_charts": 3,
+    "native_tables": 8,
+    "planned_speaking_seconds": {
+      "Junyi Tang": 180,
+      "Yifan Fan": 180
+    },
+    "file_export_exit_code": 0,
+    "strict_package_chart_font_geometry_import_checks": "passed",
+    "visual_review": "all 12 exact-file previews inspected; not human verification",
+    "preview_worker_native_shutdown_incident": "0xC0000409 after complete writes; retained separately, not relabeled success",
+    "PowerPoint_application_test": "unavailable and not performed",
+    "owner_direction_and_full_experiment": "still pending; no new ML work",
+    "human_review_contribution_rehearsal_and_course_freeze": "pending",
+    "new_model_queries": 0,
+    "training_runs": 0,
+    "research_gpu_hours": 0
   }
 }

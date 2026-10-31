@@ -1,5 +1,34 @@
 # AI Usage Record
 
+## 2026-10-31: Editable evidence presentation draft
+
+- Task and tools: Codex used the bundled Node artifact-tool to prepare twelve
+  editable English slides from saved evidence: seven main slides and five
+  appendices, with source references in notes. The proposed speaking schedule
+  allocates 180 seconds to each member; it is not actual contribution or rehearsal.
+- Decisions and failures: Strict workbook checks rejected excessive literal
+  numeric precision. Derived chart snapshots now use eight decimal places;
+  scientific JSON/CSV values remain unchanged. A missing validator runtime path
+  was supplied without disabling checks. Visual review found a wrapped appendix
+  page marker, which was repaired. The Windows chart-preview worker completed
+  all PNG writes but failed during native shutdown with 0xC0000409; that exit is
+  retained, not changed to success. Export and strict validation were separated
+  from this worker, and the validated file-export process exited zero.
+- Checks: The final twelve-slide file passed package, geometry, font, native
+  table/chart, chart/workbook and first-party import checks. It contains three
+  editable charts with workbook snapshots and eight native tables. The main
+  agent inspected every exact-file slide preview. Separate agents reviewed
+  numerical text, diagnostic limits, course status and the proposed schedule.
+  These are artifact/agent checks, not human verification. PowerPoint is not
+  installed here, so no application test or human rehearsal is claimed.
+- Scope and evidence: No models, datasets, ML inference/training, GPU research
+  or dependency downloads were used. See [the deck](docs/MonTi_Slides_Draft.pptx),
+  [guide](docs/SLIDES_GUIDE.md), [build provenance](evidence/slides_draft_build.json)
+  and [review summary](evidence/slides_draft_qa.json). The new research direction,
+  full experiments, course approvals, human reviews/contributions and final
+  submission freeze remain pending. Detailed artifact receipts/previews stay
+  private and failed preparation attempts remain traceable.
+
 ## 2026-10-31: Factual report draft and source review
 
 - Task and tools: Codex prepared an editable Markdown report and ten-page PDF

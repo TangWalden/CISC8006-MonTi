@@ -52,6 +52,14 @@ reproduction, negative pilots and validation diagnostics. Its
 an incomplete report draft: it contains no new improvement/control results and
 does not establish completed human review or final course submission.
 
+The [editable English slide draft](docs/MonTi_Slides_Draft.pptx) has seven main
+slides and five evidence appendices, with versioned references in speaker notes.
+The [presentation guide](docs/SLIDES_GUIDE.md) proposes balanced six-minute
+speaking roles and records remaining rehearsal/application checks. Native
+charts/tables, source hashes and artifact-check limits are documented in the
+[build](evidence/slides_draft_build.json) and [review summary](evidence/slides_draft_qa.json).
+The deck is preparation, not a completed presentation or improvement study.
+
 Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script/source bytes against the baseline/pilot and results-first figure manifests. Publish from the clean public workspace only.
 
 ## Environment and quick check

@@ -2,7 +2,7 @@
 
 Based on the user-provided CISC8006 Student Guide dated 2026-09-02. The latest UMMoodle rules take precedence and have not yet been provided. This table does not predict a grade or claim course approval.
 
-A factual [PDF report draft](../docs/MonTi_Report_Draft.pdf), editable source and offline demo script are prepared. The final report and course submission remain incomplete.
+A factual [PDF report draft](../docs/MonTi_Report_Draft.pdf), editable source, [slide draft](../docs/MonTi_Slides_Draft.pptx) and offline demo script are prepared. The final report and course submission remain incomplete.
 
 | Grading component | Points | Existing evidence | Remaining work |
 |---|---:|---|---|
@@ -12,7 +12,7 @@ A factual [PDF report draft](../docs/MonTi_Report_Draft.pdf), editable source an
 | Final reproduction and difference analysis | 20 | Six completed runs; successful recomputation from raw predictions; CI crosses zero, so the conclusion is inconclusive. The report draft includes direct paper comparison and limitations. | Team verification and final integration of the report and interpretation. |
 | Improvement experiments and ablations | 20 | Three historical proposals; nine technical pilots and independent audit completed, with negative mean gains for coverage and size sampling. Historical full-evaluation branches are ON HOLD; the v2 direction and pilot draft await owner confirmation. | Pilots of two approved ideas; one full three-seed improvement evaluation; controls/ablations, uncertainty, and negative results. |
 | Repository, report, and agent-use record | 15 | Public GitHub repository, meaningful history, configurations/commands/sources/hashes, failure records, and agent reviews across three phases. | Final report, genuine critical human checks, contribution records, and final technical tag. |
-| Team presentation and demonstration | 5 | Reusable one-command check/logs and an offline demo script with planned balanced speaking roles. | Slides, rehearsal of demonstration/fallback, genuine role confirmation and actual presentation. |
+| Team presentation and demonstration | 5 | Reusable one-command check/logs, an offline demo script and an editable English slide draft with planned balanced roles. | Application check, rehearsal of demonstration/fallback, genuine role confirmation and actual presentation. |
 | Individual technical defense | 10 | Question bank and explanation materials can be prepared. | Each member must complete the actual defense; an agent cannot answer on their behalf. |
 | Individual contribution | 5 | A balanced work plan has been assigned to both members. | Actual completed work, evidence, and signed confirmation from both members. Planned work cannot be presented as completed contribution. |
 

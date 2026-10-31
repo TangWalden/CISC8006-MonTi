@@ -1,0 +1,108 @@
+{
+  "schema": "monti_slides_draft_qa_v1",
+  "checked_utc": "2026-10-31T09:12:49.788706+00:00",
+  "status": "artifact checks and visual review passed with a retained preview-worker shutdown incident; not human or PowerPoint verification",
+  "pptx": "docs/MonTi_Slides_Draft.pptx",
+  "pptx_sha256": "e0c42466988c38aad344594a96c709350af9bc434ab91d166de4170c934449db",
+  "source_inputs_verified": 16,
+  "slides": 12,
+  "main_slides": 7,
+  "appendix_slides": 5,
+  "native_tables": 8,
+  "native_charts": 3,
+  "embedded_workbooks": 3,
+  "file_export_exit_code": 0,
+  "package_font_geometry_chart_import_checks": "passed without disabling any validator",
+  "preview_worker": {
+    "input_sha256": "e0c42466988c38aad344594a96c709350af9bc434ab91d166de4170c934449db",
+    "completed_awaited_writes": true,
+    "png_count": 12,
+    "png_dimensions": [
+      1280,
+      720
+    ],
+    "sha256_verified": true,
+    "javascript_completion_exit_state": 0,
+    "native_exit_code": -1073740791,
+    "windows_exit_hex": "0xC0000409",
+    "disposition": "Known Windows chart-render shutdown fault. Kept separate from file-export success; no failed exit code was cleared. All completed exact-file PNGs were independently hash/image-checked and visually inspected.",
+    "image_sha256": {
+      "slide-01.png": "bf1888129a73b96138b7df0b40e9b639c0926fa8e7ad39bf8fc1a74444db0b89",
+      "slide-02.png": "012d4dd1ba67eb0bbc759765fb61f779471871e07cc8cf1c9c9820247f93b755",
+      "slide-03.png": "71ab18811780689614a94955ffc55fc97b68cfeb76c0b00f4c2f7b3bec2551e1",
+      "slide-04.png": "614e3ee1b17f035215acdf85917ab4bd8389fdb93ff4a9adcff49dc6522eed4f",
+      "slide-05.png": "5ee2cd237eef6f85b18d43d7ef7c7c25c286fbf3681a20d023f7fbc401214bd5",
+      "slide-06.png": "670c2cd38b4f3e06a08d4333f188ee936d0cb12b05c1fc66401845492f08d386",
+      "slide-07.png": "b688d3e4d09c67a40ac0e4ef477f5584604a5541d2448a721c52b2532d10f81a",
+      "slide-08.png": "5ec0464ef310c3e34548e12d217b3361c9a5a8e0e2ff84b1d7671a1781bfe5a7",
+      "slide-09.png": "a8f820921794a8c7c90266e79981d2449f09f4fc9e14683b01bf5f51864382eb",
+      "slide-10.png": "bc6c1d917bcacafca517e578cc493e5872ce89b2c9fc87826fdf4f356babc980",
+      "slide-11.png": "059443bb7636d98093beb8efb5094e43c99fcecd5e410a38a22a958d8780ee17",
+      "slide-12.png": "fd11ea4d8c14cc1c4b57236bd4f468ecd65c13dbd4cb333ec636c258766ce56a"
+    }
+  },
+  "visual_review": {
+    "reviewer": "main Codex agent, not a human student",
+    "slides_inspected_at_full_resolution": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "result": "No remaining clipping, overlap or missing visible text. Appendix page-marker wrapping repaired before final export. CI units, physical-source role and same-count random-mask control clarified."
+  },
+  "independent_agent_reviews": [
+    {
+      "scope": "baseline/pilot values and uncertainty, English text, notes references",
+      "result": "No blocker; 36 valid snapshot citations and pending states checked"
+    },
+    {
+      "scope": "diagnostic and proposed-method interpretation, slides5/6/10/11 PNGs",
+      "result": "No blocker; CPU 7 / GPU 6 and 147 / 148 distinctions, physical source and causal limits preserved"
+    },
+    {
+      "scope": "course status and speaking schedule",
+      "result": "No blocker; seven main plus five appendices, planned 180 seconds per member, no human/approval claims"
+    }
+  ],
+  "retained_preparation_incidents": [
+    {
+      "attempt": "v1",
+      "reason": "Literal numeric precision exceeded Excel preservation",
+      "repair": "Derived chart snapshots use declared 8 decimal places; source scientific JSON unchanged"
+    },
+    {
+      "attempt": "v2",
+      "reason": "Import validator child runtime path missing",
+      "repair": "Provide bundled module path; retain every validator"
+    },
+    {
+      "attempts": [
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "reason": "Completed preview renders followed by nonzero/native shutdown exit; appendix footer wrapping detected visually",
+      "repair": "Separate successful file export from preview worker, repair page numbers, retain all failures and exact-file previews"
+    }
+  ],
+  "presentation_chart_decimal_places": 8,
+  "original_scientific_data_modified": false,
+  "raw_tool_receipts": "retained privately with checksums; artifact validation does not verify scientific conclusions",
+  "PowerPoint_application_available": false,
+  "PowerPoint_application_tested": false,
+  "actual_human_rehearsal_or_technical_review": false,
+  "owner_direction_approved": false,
+  "final_course_submission": false,
+  "new_model_queries": 0,
+  "training_runs": 0,
+  "research_gpu_hours": 0
+}

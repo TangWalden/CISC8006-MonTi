@@ -23,6 +23,12 @@ references and separate factual/visual QA. It adds no inference or experiments.
 All final improvement/control results, genuine human checks and course freeze
 requirements retain their actual incomplete or unconfirmed status.
 
+An [editable English presentation draft](../docs/MonTi_Slides_Draft.pptx) and
+[guide](../docs/SLIDES_GUIDE.md) are also prepared, with seven main slides and
+five evidence appendices. Its proposed six-minute schedule assigns three
+minutes to each member. Actual rehearsal, application testing, contributions,
+course approval and the full improvement/control evaluation remain pending.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |
