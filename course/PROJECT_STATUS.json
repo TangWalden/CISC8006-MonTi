@@ -70,7 +70,7 @@
     "Obtain owner direction confirmation for the concrete outcome-based v2 proposal; do not rerun completed diagnostics",
     "Adapters, 12 synthetic CPU checks, draft pilot protocol and English offline demo are prepared; keep new training and real-data method evaluation on hold while the owner decides after the beginner explanation",
     "Freeze the approved pilot comparison before execution; retain negative results; confirm a separate complete full-evaluation protocol before any new GAGA test run",
-    "English report, editable slides and offline demo drafts are prepared. Genuine human/application review, contributions, course approval and final freeze remain pending. Keep new method evaluation/training on hold until owner direction; do not rerun completed artifact builds/probes without new changes."
+    "English report, editable slides, offline demo and bounded related-work memo are prepared. Genuine human/application review, actual contributions, course approval and final freeze remain pending. Await owner direction without repeating the unchanged question or rerunning completed artifacts/probes."
   ],
   "results_first_diagnosis": {
     "phase": "saved-validation phase 1; later new inference is separately registered below",
@@ -219,5 +219,20 @@
     "new_model_queries": 0,
     "training_runs": 0,
     "research_gpu_hours": 0
+  },
+  "related_work_review": {
+    "status": "bounded primary-source review complete; not exhaustive novelty determination or method selection",
+    "review_date_asia_shanghai": "2026-10-31",
+    "pre_review_source_snapshot": "2d38d4194dd7b205226c861b8741463d186a1f6b",
+    "memo": "docs/RELATED_WORK_CHECK.md",
+    "source_log": "evidence/related_work_review_v1.json",
+    "scope": "four papers, three official attack repositories and versioned PyTorch documentation",
+    "conclusion": "A is a conformance question; B is an unselected conditional extension with broad prior art; C is an engineering control. Exact originality and efficacy remain unestablished.",
+    "existing_human_review_pointers": "Updated J5/Y5 without completing any response/signature/contribution fields",
+    "owner_direction": "still pending after requested explanation; no repeated approval question",
+    "new_model_calls": 0,
+    "training_runs": 0,
+    "new_research_gpu_hours": 0,
+    "frozen_results_protocols_report_and_slides": "unchanged"
   }
 }

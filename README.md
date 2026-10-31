@@ -60,6 +60,12 @@ charts/tables, source hashes and artifact-check limits are documented in the
 [build](evidence/slides_draft_build.json) and [review summary](evidence/slides_draft_qa.json).
 The deck is preparation, not a completed presentation or improvement study.
 
+A [bounded primary-source related-work check](docs/RELATED_WORK_CHECK.md)
+documents existing prediction/margin-informed injection and edge allocation.
+A remains a paper-conformance question; B is a proposed conditional extension,
+with neither efficacy nor first-in-literature novelty established. It changes
+no frozen protocol, result, selected method or execution authorization.
+
 Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script/source bytes against the baseline/pilot and results-first figure manifests. Publish from the clean public workspace only.
 
 ## Environment and quick check

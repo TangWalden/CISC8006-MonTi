@@ -8,6 +8,12 @@ Review date and environment: ____________________
 
 Any course approval or instruction consulted, with date and evidence: ____________________
 
+Preparation update, 31 October 2026: the historical negative pilots are complete;
+their coverage follow-up is on hold. The [outcome-based v2 proposal](../course/IMPROVEMENT_PROPOSAL_V2.md)
+and [bounded related-work check](RELATED_WORK_CHECK.md) remain review material,
+not an approved direction. Report, slide and demo drafts do not fill any human
+response/signature field below.
+
 ## Junyi Tang's review pack
 
 | Item | Required independent check | Response / finding | Evidence / permalink |
@@ -16,7 +22,7 @@ Any course approval or instruction consulted, with date and evidence: __________
 | J2: Data and environment | Check source/model versions, input checksums, split separation, edge units, environment lock, and cache scope. Identify which artifacts are inherited and which are derived. | | |
 | J3: Metric known answer | Independently calculate MR for two groups of sizes 1 and 3, with one wrong occurrence in the first and none in the second. Compare with the known-answer and audited-evaluator tests. Explain why overlaps are counted as target occurrences and why averaging group rates changes the metric. | | |
 | J4: Baseline result trace | Pick a baseline run and trace its registration to commit, configuration, command, seed, saved result, group counts, and prediction checksum. Recompute its score from published counts, then check the six-run summary and independent audit. | | |
-| J5: Improvement peer review | Inspect the coverage and sampling implementations and the selected full protocol when available. Check the mechanism control, unchanged injection budgets, negative-result policy, and the difference between equal group updates and equal computation. | | |
+| J5: Improvement peer review | Inspect the completed negative coverage/size pilots, the unselected v2 proposal and limited related-work check. Check A's source-role meaning, B's fixed features/budgets and informative versus random-mask controls. Review a full protocol only when available; keep unexecuted results and direction approval pending. | | |
 | J6: Baseline/demo rehearsal | Rehearse the one-command baseline check and evidence navigation. On the authoritative environment, inspect raw-output recount requirements. Record what actually ran, what failed, and the fallback that was tested. | | |
 
 References: [paper](https://ojs.aaai.org/index.php/AAAI/article/view/33760), [protocol](../course/PROTOCOL.md), [data audit](../evidence/data/partition_audit.json), [input manifest](../evidence/data/input_manifest.json), [runtime lock](../environment/runtime.json), [evaluation tests](../course/test_protocol.py), [run registry](../evidence/run_registry.json), [public counts](../evidence/published_baseline/), [baseline recount](../course/audit_baseline.py), and [improvement proposal](../course/IMPROVEMENT_PROPOSAL.md).
@@ -35,7 +41,7 @@ Junyi's confirmation/date: ____________________
 | Y2: Independent metric cross-check | Repeat the known-answer MR calculation independently of Junyi. Inspect AuditedExperiment.check_performance and the failed-generation test. Check that no failed group can be silently omitted from the denominator. | | |
 | Y3: Genuine AI accept/change/reject decision | Inspect DeepSeek item 2 and the main-agent correction. Independently compare generated content with budget quantities using the source and run evidence. Complete the dedicated decision record below; do not copy the agent's decision as your own. | | |
 | Y4: Paired interval cross-check | Recompute learned-minus-random differences for seeds 0/1/2 and the paired t interval with df=2. Explain the registered inconclusive result when the interval crosses zero, despite a positive mean. Explain why 909 groups or 10,515 occurrences are not the number of independent seed replications. | | |
-| Y5: Pilot and final-evaluation boundary | Check the pilot protocol, subsets, seeds, test prohibition, and validation-only selection rule. Distinguish GCN pilot MR from GAGA final-test MR. Verify selected-epoch predictions and full-result evidence when available; leave unavailable results pending. | | |
+| Y5: Pilot and final-evaluation boundary | Check the nine completed pilot runs/audit, subsets, seeds, negative effects and historical selection rule. Distinguish GCN validation from GAGA final-test MR, CPU seven from GPU six opportunities, and endpoint eligibility from the MR denominator. Check draft v2 checkpoint/RNG/query fairness; leave new full results and approvals pending. | | |
 | Y6: Improvement/demo rehearsal | Rehearse the improvement tests and explanation of the mechanism control. Review actual sampling traces, target occurrences, epochs, costs, and failures. Record demonstrated behavior and unresolved issues without claiming an unrun final experiment. | | |
 
 References: [candidate caller](../modules/experiment_handler.py), [MonTi implementation](../models/attack_model.py), [protocol tests](../course/test_protocol.py), [audited evaluator](../course/runner.py), [budget calculation](../modules/data_handler.py), [neighbor-count helper](../utils/utils.py), [English DeepSeek record](../evidence/agent_reviews/deepseek_protocol_review.en.json), [paired analysis](../course/analyze.py), [baseline summary](../evidence/reproduction_summary.json), [pilot protocol](../course/improvements/pilot_protocol_v1.json), [pilot runner](../course/improvements/run.py), and [additional audit requirements](../course/AUDIT_NOTES.md).

@@ -29,6 +29,12 @@ five evidence appendices. Its proposed six-minute schedule assigns three
 minutes to each member. Actual rehearsal, application testing, contributions,
 course approval and the full improvement/control evaluation remain pending.
 
+A targeted [related-work check](../docs/RELATED_WORK_CHECK.md) now distinguishes
+the proposed A/B/C scope from existing margin-, confidence- and gradient-informed
+injection. It is not an exhaustive novelty determination or a method selection.
+The existing human-review pointers were updated, with response fields still
+empty. No new experiments or artifact rebuilds were performed.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |

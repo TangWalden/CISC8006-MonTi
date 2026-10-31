@@ -1,0 +1,287 @@
+{
+  "schema": "monti_bounded_related_work_review_v1",
+  "prepared_utc": "2026-10-31T13:01:37.534887+00:00",
+  "review_date_asia_shanghai": "2026-10-31",
+  "source_tree_head_before_review": "2d38d4194dd7b205226c861b8741463d186a1f6b",
+  "record_type": "Agent-authored source inventory and decision summary; not a raw API transcript or exhaustive search history",
+  "scope": {
+    "papers": 4,
+    "official_attack_repositories": 3,
+    "framework_documentation_repository": "pytorch/pytorch",
+    "exhaustive_review": false,
+    "exact_policy_prior_absence_established": false
+  },
+  "papers": [
+    {
+      "name": "MonTi",
+      "title": "Unveiling the Threat of Fraud Gangs to Graph Neural Networks: Multi-Target Graph Injection Attacks against GNN-Based Fraud Detectors",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/33760/35915",
+      "version": "Official AAAI 2025 paper",
+      "doi": "10.1609/aaai.v39i15.33760",
+      "inspected_locations": [
+        "Printed pages 16030-16031, Eqs. 2-3",
+        "Printed page 16031, Eq. 6 and following edge score"
+      ],
+      "finding": "Surrogate representations already inform candidate/target encoding; injected representations are the published edge-score source",
+      "access_limit": "Indexed primary text was available; later direct PDF requests returned access denial. No challenge bypass."
+    },
+    {
+      "name": "G-NIA",
+      "title": "Single Node Injection Attack against Graph Neural Networks",
+      "url": "https://arxiv.org/pdf/2108.13049v2",
+      "version": "Author paper v2; CIKM 2021",
+      "doi": "10.1145/3459637.3482393",
+      "inspected_locations": [
+        "Section 5.5, Eq. 8, PDF page 6",
+        "Section 6.1.3 and Table 2"
+      ],
+      "finding": "Classification-margin guidance is prior work; inspected test code does not establish universal clean-correct-only evaluation"
+    },
+    {
+      "name": "TDGIA",
+      "title": "TDGIA: Effective Injection Attacks on Graph Neural Networks",
+      "url": "https://arxiv.org/pdf/2106.06663v2",
+      "additional_primary_url": "https://keg.cs.tsinghua.edu.cn/jietang/publications/KDD21-Zou-et-al-TDGIA.pdf",
+      "version": "Author paper v2; KDD 2021",
+      "doi": "10.1145/3447548.3467314",
+      "inspected_locations": [
+        "Section 5.1, Eq. 15",
+        "Section 5.3, Algorithm 1, PDF page 6"
+      ],
+      "finding": "Surrogate confidence combined with topological vulnerability guides finite-budget attachment; not identical to the proposed hard eligibility rule"
+    },
+    {
+      "name": "AGIA/HAO",
+      "title": "Understanding and Improving Graph Injection Attack by Promoting Unnoticeability",
+      "url": "https://arxiv.org/abs/2202.08057v2",
+      "venue_url": "https://openreview.net/forum?id=wkMG8cdvh7-",
+      "version": "Author paper v2; ICLR 2022",
+      "inspected_locations": [
+        "Paper homophily/unnoticeability objective and method description",
+        "Official attacks/agia.py routines listed below"
+      ],
+      "finding": "Relevant model-informed adjacency optimization; do not equate every AGIA implementation detail with the paper HAO objective"
+    }
+  ],
+  "official_attack_source_files": [
+    {
+      "repository": "TaoShuchang/G-NIA",
+      "resolved_branch": "master",
+      "commit": "19340eb5b8e21911a58b31189ec57e74714dd2cd",
+      "path": "run_gnia.py",
+      "git_blob_sha1": "7217918c23f1cdd3945f32c37baf138dbf4f5125",
+      "root_fetched_line_spans": [
+        [
+          187,
+          310
+        ],
+        [
+          307,
+          360
+        ]
+      ],
+      "cited_line_spans": [
+        [
+          232,
+          240
+        ],
+        [
+          307,
+          355
+        ]
+      ],
+      "purpose": "ReLU classification-margin losses and loaded-mask test iteration"
+    },
+    {
+      "repository": "TaoShuchang/G-NIA",
+      "resolved_branch": "master",
+      "commit": "19340eb5b8e21911a58b31189ec57e74714dd2cd",
+      "path": "run_multar_gnia.py",
+      "git_blob_sha1": "c6ad0a6f931405133a2bd137d4ec80970824f53a",
+      "root_fetched_line_spans": [
+        [
+          194,
+          320
+        ],
+        [
+          320,
+          378
+        ]
+      ],
+      "cited_line_spans": [
+        [
+          236,
+          250
+        ],
+        [
+          320,
+          378
+        ]
+      ],
+      "purpose": "Multiple-target margin losses and group test loop"
+    },
+    {
+      "repository": "THUDM/tdgia",
+      "resolved_branch": "main",
+      "commit": "29462748ae020b43015338de0f00df5b7b9748ca",
+      "path": "tdgia.py",
+      "git_blob_sha1": "7fad97e463719a5f1fff2261fa0da05f6cb077ca",
+      "root_fetched_line_spans": [
+        [
+          140,
+          178
+        ],
+        [
+          465,
+          486
+        ]
+      ],
+      "cited_line_spans": [
+        [
+          158,
+          176
+        ],
+        [
+          480,
+          486
+        ]
+      ],
+      "purpose": "Prediction/degree attachment score and prediction refresh; paper/code coefficients are not silently equated"
+    },
+    {
+      "repository": "LFhase/GIA-HAO",
+      "resolved_branch": "master",
+      "commit": "780852c78e138070d0a2c2b581109d43bd4e752e",
+      "path": "attacks/agia.py",
+      "git_blob_sha1": "172c3285c8036434559af459d4ca15f1f76c607d",
+      "root_fetched_line_spans": [
+        [
+          64,
+          183
+        ]
+      ],
+      "cited_line_spans": [
+        [
+          68,
+          92
+        ],
+        [
+          155,
+          169
+        ]
+      ],
+      "purpose": "Clean-model pseudo-label option, alternating routines and prediction-loss/sparsity edge objective"
+    }
+  ],
+  "versioned_framework_sources": [
+    {
+      "repository": "pytorch/pytorch",
+      "release_tag": "v1.13.1",
+      "path": "torch/_torch_docs.py",
+      "git_blob_sha1": "86d826dd3a525f59cc8602799723fb371b66a1fa",
+      "root_fetch_scope": "Full tagged file searched for topk after preliminary locator mismatch",
+      "cited_line_spans": [
+        [
+          11464,
+          11506
+        ]
+      ],
+      "finding": "Describes sorted returned values; no stable tied-index promise or the later explicit warning in this block"
+    },
+    {
+      "repository": "pytorch/pytorch",
+      "release_tag": "v1.13.1",
+      "path": "docs/source/notes/randomness.rst",
+      "git_blob_sha1": "3d193c785b5ef3de0e42814226dbf163b9802104",
+      "cited_line_spans": [
+        [
+          1,
+          24
+        ]
+      ],
+      "finding": "Identical seeds do not provide a general CPU/GPU reproducibility guarantee"
+    },
+    {
+      "repository": "pytorch/pytorch",
+      "release_tag": "v2.15.0",
+      "path": "torch/_torch_docs.py",
+      "git_blob_sha1": "6544c53ec385e6d0843e01e2a32390d40e87ed64",
+      "root_fetch_scope": "Full tagged file searched for topk after preliminary locator mismatch",
+      "cited_line_spans": [
+        [
+          11879,
+          11923
+        ]
+      ],
+      "finding": "Explicit tied-index instability warning; wording is not retroactively attributed to the locked runtime"
+    }
+  ],
+  "search_log_scope": {
+    "root_queries_recorded": [
+      "\"MonTi\" graph injection attack target prediction margin candidate Table 5",
+      "\"graph injection\" \"correctly classified\" target nodes margin",
+      "\"multi-target\" \"node injection\" \"target selection\""
+    ],
+    "agent_queries": "Not a complete raw query transcript; agents separately inspected their assigned primary papers, official repositories and documentation",
+    "evidence_policy": "Only primary papers/official code/documentation support the memo; third-party search snippets are not used as findings"
+  },
+  "access_and_correction_notes": [
+    "Follow-up AAAI PDF access was denied after indexed primary text was read. No challenge or access control was bypassed.",
+    "Archived 1.13 documentation and the newer documentation HTML were not consistently accessible through the web reader; official tagged source files were inspected instead.",
+    "Preliminary agent G-NIA loss locators did not match actual pinned files. Root checked the fetched code and corrected citations to lines 232/238 and 236/247.",
+    "Preliminary agent PyTorch topk locators pointed to unrelated functions. Root searched full version-tagged files and corrected the final cited blocks.",
+    "Git blob SHA-1 values identify fetched repository files; they are not paper SHA-256 hashes or independent reproductions.",
+    "The preliminary source-inventory MonTi title was corrected against the existing paper bibliography before publication; it is not a reinforcement-learning paper."
+  ],
+  "decisions": {
+    "A": "Unselected paper-conformance question; retraining and controlled efficacy evaluation still absent",
+    "B": "Unselected conditional one-node/one-edge eligibility extension; prediction-aware allocation is broad prior work; exact originality and benefit unestablished",
+    "C": "Engineering tie convention, not demonstrated novelty or whole-generator device identity",
+    "metric_boundary": "Endpoint eligibility never removes evaluation occurrences from the registered MR denominator",
+    "no_new_arm_or_winner_selected": true,
+    "owner_direction_approved": false,
+    "pilot_frozen_or_executed": false,
+    "full_test_authorized_by_this_review": false
+  },
+  "local_unchanged_input_sha256_from_pre_review_git": {
+    "course/IMPROVEMENT_PROPOSAL_V2.md": "c800a672b231078a54d508af4248f0c8ec915fcd3d5a2864277dc864a0163cbb",
+    "course/PAPER_EDGE_SCORE_CHECK.md": "f16d225db56a8faf10f736b31d3ade8a23a317d9361995b20b2919ab8f08e476",
+    "docs/SCORE_ROLE_REPLAY.md": "675bb06cf37439d90bb9e87ed3bceb7b996fa5defa4f760724fb094f2ab123bf",
+    "evidence/score_role_replay_v2/summary.json": "a83e39278ff2ecf2b4d38e485bb316148562741370962aa5bf1bccec520ebf2a",
+    "evidence/research_cost_ledger.json": "ef3f26da744abb7b95c3d5d49487292c1bbbc6e3ef2407f66bd20aab3a2c027f",
+    "CONTRIBUTIONS.md": "f00c9791d8dd14c1d80c574283211c5a6162b7072ba1714ca55cfe85dd3d4ae4"
+  },
+  "memo": {
+    "path": "docs/RELATED_WORK_CHECK.md",
+    "sha256": "2dc96a60478dfba9d519bc81d2c035a7daeab4d9b046e06c280286a9c302f343"
+  },
+  "review": {
+    "main_agent": "Checked pinned code locators, distinctions and publication scope; not human verification",
+    "separate_agent": "G-NIA/denominator memo review found no material overstatement and flagged the initially missing source log. A separate TDGIA/AGIA final review found no material blocker and recomputed the memo SHA-256; that review did not independently re-resolve repository commits. These are agent checks, not human verification.",
+    "human_response_fields": "Remain pending; only J5/Y5 reference text and preparation context were refreshed",
+    "genuine_human_technical_review": false
+  },
+  "resource_scope": {
+    "new_dataset_or_checkpoint_loads": 0,
+    "new_model_calls": 0,
+    "new_training_runs": 0,
+    "new_victim_or_test_queries": 0,
+    "new_research_gpu_hours": 0,
+    "new_dependency_or_tool_downloads": 0,
+    "artifact_rebuilds": 0,
+    "cost_ledger_changed": false
+  },
+  "remaining_limits": [
+    "Four-paper bounded scope cannot establish exact prior absence or novelty",
+    "External dataset preprocessing of other attacks was not audited",
+    "No correction performance, transfer, course approval, owner direction or human contribution is inferred"
+  ],
+  "prepublication_checks": {
+    "existing_report_and_slide_manifest_hashes_checked_against_git": 47,
+    "unchanged_local_scientific_and_contribution_inputs": 6,
+    "relative_links_checked_in_five_updated_documents": 143,
+    "memo_sha256_matches": true,
+    "scope": "Pre-commit preparation check; final committed checksum and English history guards must separately pass before public push",
+    "artifact_rebuilds": 0
+  }
+}

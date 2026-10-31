@@ -1,5 +1,28 @@
 # AI Usage Record
 
+## 2026-10-31: Bounded primary-source related-work check
+
+- Task and tools: Codex and three agents inspected MonTi, G-NIA, TDGIA, the
+  AGIA/HAO paper/repository and versioned official PyTorch documentation using
+  web research and the read-only GitHub connector. Three external repository
+  heads were resolved to exact commits, and cited code locations were checked.
+  The bounded check is not an exhaustive review or a claim of exact prior absence.
+- Critical review: Existing attacks already use prediction/margin information
+  and confidence-aware finite-budget attachment. The main agent retained A as
+  a conformance question and B as an unselected conditional extension. It
+  distinguished endpoint eligibility from filtering the evaluation denominator.
+  Preliminary agent line locators for G-NIA/PyTorch did not match the pinned
+  files; actual source lines were found and corrected before publication.
+- Version and interpretation limits: Current top-k warnings are not attributed
+  verbatim to PyTorch1.13.1. Official release-tag sources and the local empirical
+  replay remain distinct. A later AAAI PDF request encountered access denial;
+  no access challenge was bypassed. No novelty, efficacy or approval is inferred.
+- Evidence and scope: [English memo](docs/RELATED_WORK_CHECK.md) and
+  [source/version log](evidence/related_work_review_v1.json). The existing human
+  review pointers were refreshed while every response/contribution field remains
+  pending. No models, inference, training, victim/test queries, GPU research,
+  downloads of tools/dependencies or report/slide rebuilds occurred.
+
 ## 2026-10-31: Editable evidence presentation draft
 
 - Task and tools: Codex used the bundled Node artifact-tool to prepare twelve
