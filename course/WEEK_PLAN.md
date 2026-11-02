@@ -61,6 +61,11 @@ separates prompt adaptation, trainable text fusion and fine-tuning. Raw-text
 mapping, branch readiness, same-information controls and a bounded validation/API
 protocol remain open. No real-data run or LLM call is approved or started.
 
+An additional owner idea is [attack-side conditional relationship alignment](CONDITIONAL_ATTACK_ALIGNMENT_DRAFT.md),
+with a gate controlling camouflage regularization. It does not cancel the LLM
+defense. CANA/HAO are existing precedents; actual mismatch, feasibility under the
+one-edge budget and benefit over always-on/random gates remain unmeasured.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |

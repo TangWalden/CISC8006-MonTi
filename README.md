@@ -84,6 +84,11 @@ grounded textual descriptions, possible learning modes and same-information
 controls. LLM superiority, raw-text availability, exact learning design and a
 new inference protocol remain unestablished; no new model/API calls have begun.
 
+The owner also proposed [conditional attack-side relationship alignment](course/CONDITIONAL_ATTACK_ALIGNMENT_DRAFT.md).
+This additional camouflage candidate preserves the LLM defense direction and is
+compared conceptually with CANA/HAO. No alignment gap, gate benefit or novelty is
+established, and no new experiment is launched.
+
 Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script/source bytes against the baseline/pilot and results-first figure manifests. Publish from the clean public workspace only.
 
 ## Environment and quick check

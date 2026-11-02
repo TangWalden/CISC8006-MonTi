@@ -1,5 +1,20 @@
 # AI Usage Record
 
+## 2026-11-02: Additional conditional camouflage candidate
+
+The owner proposed distribution alignment of injected relationship features and
+clarified an attack-side gate, not defense correction. Codex and two agents
+checked the hypothesis and closest primary work. The [discussion draft](course/CONDITIONAL_ATTACK_ALIGNMENT_DRAFT.md)
+identifies CANA as a direct ego-network distribution precedent and HAO as a
+homophily regularizer. It distinguishes original nodes from genuinely benign
+training nodes, attacker's legitimate knowledge of its own injections from
+forbidden defender hints, and a gate's measured contribution from a switch.
+Gate collapse, fixed one-edge quantities, independent camouflage evaluation and
+equal-resource controls remain unresolved design requirements. No actual MonTi
+distribution gap or benefit is claimed. The LLM evidence-fusion defense remains
+selected; this additional candidate does not silently replace it. No model/data
+load, inference, training, GPU use, dependency download or LLM API call occurred.
+
 ## 2026-11-02: Owner selects LLM-mediated evidence fusion
 
 The owner selected detector-side defense, explicitly clarified an external LLM

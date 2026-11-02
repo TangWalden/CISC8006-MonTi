@@ -69,6 +69,7 @@
   "next_actions": [
     "Audit node-to-article text mapping and self-only branch readiness; prepare grounded evidence cards for the owner-selected external LLM fusion agent",
     "Resolve prompt-based learning versus a trained text gate/fine-tuning, same-information controls, calibration and leakage boundaries; freeze a bounded validation/API protocol before model calls",
+    "For the additional attack-alignment idea, first define mutable descriptors, train-only reference population, fixed-budget feasibility and a saved-record diagnostic; do not infer a measured distribution gap or launch training",
     "Confirm actual course acceptance and resource feasibility of LLM-mediated detector fusion; preserve frozen reproduction branches/results and do not infer efficacy from descriptions",
     "Preserve every original metric, negative pilot and frozen conclusion. Final GAGA testing and submission tag retain separate owner checkpoints; genuine human/application reviews and actual contributions remain pending",
     "Prepared reports/slides retain dated evidence snapshots. Do not rebuild them or repeat completed diagnostics merely because a scheduled run fires"
@@ -277,5 +278,19 @@
     "new_llm_api_calls": 0,
     "gpu_hours": 0,
     "novelty_and_efficacy": "Unestablished; ARG is relevant rationale-learning prior art; compare same-information neural and template-text gates"
+  },
+  "conditional_attack_alignment": {
+    "date_asia_shanghai": "2026-11-02",
+    "owner_proposed": true,
+    "owner_clarified_side": "Attack-side camouflage of injected relationship distributions; gate enables alignment",
+    "status": "Additional unimplemented candidate; does not cancel selected LLM evidence-fusion defense",
+    "draft": "course/CONDITIONAL_ATTACK_ALIGNMENT_DRAFT.md",
+    "distribution_gap_measured": false,
+    "gate_type_and_protocol": "unfrozen; distinct from defense LLM fusion gate",
+    "prior_art": "CANA ego-network distribution camouflage and HAO homophily regularization; no novelty claim",
+    "new_model_calls": 0,
+    "new_training_runs": 0,
+    "new_llm_calls": 0,
+    "gpu_hours": 0
   }
 }
