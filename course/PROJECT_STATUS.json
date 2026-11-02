@@ -1,5 +1,5 @@
 {
-  "updated_date_asia_shanghai": "2026-10-31",
+  "updated_date_asia_shanghai": "2026-11-02",
   "delivery_deadline_asia_shanghai": "2026-11-05",
   "repository": "https://github.com/TangWalden/CISC8006-MonTi",
   "visibility": "public, explicitly requested by user",
@@ -56,21 +56,22 @@
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
     "full_evaluation": "on hold; crossed-device score-role diagnosis is complete; a new evidence-backed direction and subsequent full protocol need owner confirmation",
-    "active_direction": "proposal v2 recommends paper-role alignment and a narrow surrogate-guided one-edge policy; no direction confirmed or variant trained",
+    "active_direction": "V3 recommends evaluation/grouping robustness with an input-order control for owner discussion. B is not recommended as main contribution; A remains conformance control. No direction selected or new method evaluated.",
     "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
     "baseline_conclusion": "pre-registered inconclusive result retained; user requested continuation after receiving an explanation; independent human technical review remains pending",
-    "improvement_direction": "Owner requested a beginner explanation before deciding on2026-10-31; no A/B direction approved",
-    "new_validation_pilots": "Not authorized; owner requested explanation before deciding. No new training or real-data method evaluation.",
+    "improvement_direction": "On 2026-11-02 the owner questioned attack-cost value and list fairness and requested evidence-based new ideas. V3 is prepared for review; no direction is approved.",
+    "new_validation_pilots": "Not authorized. Saved-aggregate post-hoc arithmetic is complete; no new model inference, modified-group evaluation or training.",
     "full_evaluation_protocol": "pending; do not launch until explicitly confirmed",
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Obtain owner direction confirmation for the concrete outcome-based v2 proposal; do not rerun completed diagnostics",
-    "Adapters, 12 synthetic CPU checks, draft pilot protocol and English offline demo are prepared; keep new training and real-data method evaluation on hold while the owner decides after the beginner explanation",
-    "Freeze the approved pilot comparison before execution; retain negative results; confirm a separate complete full-evaluation protocol before any new GAGA test run",
-    "English report, editable slides, offline demo and bounded related-work memo are prepared. Genuine human/application review, actual contributions, course approval and final freeze remain pending. Await owner direction without repeating the unchanged question or rerunning completed artifacts/probes."
+    "Review the concrete v3 grouping/evaluation robustness proposal with the owner; keep B as an untested historical hypothesis rather than the main recommendation",
+    "If a direction is accepted, resolve exact matched-group/order controls, estimands, fixed checkpoints, RNG, validation scope, invariant checks and bounded cost before a separate inference freeze",
+    "Obtain actual instructor acceptance of an evaluation-method extension if required; do not count analysis alone as approved pilots or completed full experiments",
+    "Preserve every original metric, negative pilot and frozen conclusion. Final GAGA testing and submission tag retain separate owner checkpoints; genuine human/application reviews and actual contributions remain pending",
+    "Prepared reports/slides retain dated evidence snapshots. Do not rebuild them or repeat completed diagnostics merely because a scheduled run fires"
   ],
   "results_first_diagnosis": {
     "phase": "saved-validation phase 1; later new inference is separately registered below",
@@ -234,5 +235,22 @@
     "training_runs": 0,
     "new_research_gpu_hours": 0,
     "frozen_results_protocols_report_and_slides": "unchanged"
+  },
+  "saved_evidence_reassessment": {
+    "date_asia_shanghai": "2026-11-02",
+    "status": "post-hoc saved-validation arithmetic complete; independent agent recount passed, not human verification",
+    "analysis_source_commit": "6d89fb6021c333ac983e33297079bd35c379ceff",
+    "scientific_input_snapshot": "9ae6df5fe64cedded5a53f144629a1072d4f1ea1",
+    "record": "evidence/reassessment_20261102_v1.json",
+    "review": "evidence/reassessment_20261102_review_v1.json",
+    "proposal": "course/REASSESSMENT_PROPOSAL_V3.md",
+    "learned_minus_random_occurrence_mr_pp": -0.15447645913090202,
+    "learned_minus_random_group_equal_mr_pp": 0.17535186455799787,
+    "interpretation": "Small descriptive order reversal at selected GCN validation snapshots; not significance, author bias, a new winner or changed primary metric",
+    "new_model_calls": 0,
+    "training_runs": 0,
+    "gpu_hours": 0,
+    "modified_groups_or_permutations_evaluated": false,
+    "direction_and_new_inference_protocol": "pending owner review; no GAGA/test authorization"
   }
 }

@@ -1,0 +1,163 @@
+{
+  "schema": "monti_saved_evidence_reassessment_v1",
+  "created_utc": "2026-11-02T09:06:51.592048+00:00",
+  "analysis_kind": "Post-hoc descriptive reassessment; preliminary arithmetic was inspected before this script. Not preregistration.",
+  "analysis_source_commit": "6d89fb6021c333ac983e33297079bd35c379ceff",
+  "scientific_input_snapshot": "9ae6df5fe64cedded5a53f144629a1072d4f1ea1",
+  "command": [
+    "bundled-python",
+    "-m",
+    "course.reassess_saved_evidence",
+    "--output",
+    "evidence/reassessment_20261102_v1.json"
+  ],
+  "input_sha256": {
+    "evidence/results_first_diagnosis_v1/group_outcomes.csv": "c8baf37863c315c9edab2e567af7788d282c0b4d7ccfdc87dc8c19d7775d71cb",
+    "evidence/results_first_diagnosis_v1/training_derived_bins.csv": "fbc46229b5a206d1cecd78f9419352593b0ed2f01401211e6dc5666a95bda961",
+    "evidence/results_first_diagnosis_v1/summary.json": "8d1b10f4d7ba789cc0f308373d8aa73830bc160565503387129d909f57d5e820",
+    "evidence/score_role_replay_v2/pairs.csv": "bf93daf1cbd418bfd6099e419e28ce2922abf47c05331ede60c1f83830ef10ab",
+    "evidence/score_role_replay_v2/generators.csv": "2f40f536c9b2c9648294502a77c6ff2d0cdf502fb2b7a5b8049b479a9d27ba0e",
+    "evidence/score_role_replay_v2/detectors.csv": "37205e0254a31d2075e0258f89f9c686e130cbe3461eb5420252aa8309ddaad4",
+    "evidence/improvement_pilot_summary.json": "0742646cbf7b44641fb3a7ef789902571a28c887a95dcb4fb108904a05f151a1",
+    "course/configs/baseline.json": "1b980a74211e264c81d2fd97a9f53d3017cd1aa79d66297d6f1f78bc8c76d3ab",
+    "modules/experiment_handler.py": "ca0645620b7e70dc3d44733d6d9580abfea58e12749ec8e5e8e5d814f67846b8",
+    "modules/data_handler.py": "f7eabf047244659e5234cadc11c8a3ed8c4b7769116126fd79299f0aa1fa66aa",
+    "utils/utils.py": "c95383d2bbacba69e81b6b65e7f8b53be4085fc317d08fb445a94f702b13a732",
+    "course/improvements/policies.py": "ac8f3b45c5f7fe2594766b018ab5d0c1b7930da94cebeb331c9c51d5e3c05f14",
+    "course/improvements/sampling.py": "f04dacd2a07dd7f5361f3cab9686b23aabd6bebd3984449414d6678d692ddedb"
+  },
+  "analysis_script_sha256": "d38693834f72033ea1cd7aa5bf37d67217e686aafc923ccb7e010d96324a9d1b",
+  "selected_validation_snapshot_aggregates": [
+    {
+      "cohort": "full_baseline",
+      "condition": "learned",
+      "groups": 592,
+      "seeds": 3,
+      "target_occurrences": 14889,
+      "incorrect_occurrences": 14451,
+      "occurrence_mr_percent": 97.05823090872457,
+      "group_equal_mr_percent": 97.14085253477123,
+      "exact_occurrence_mr_fraction": "481700/4963",
+      "exact_group_equal_mr_fraction": "2707914348385913/27876164123808"
+    },
+    {
+      "cohort": "full_baseline",
+      "condition": "random",
+      "groups": 592,
+      "seeds": 3,
+      "target_occurrences": 14889,
+      "incorrect_occurrences": 14474,
+      "occurrence_mr_percent": 97.21270736785546,
+      "group_equal_mr_percent": 96.96550067021323,
+      "exact_occurrence_mr_fraction": "1447400/14889",
+      "exact_group_equal_mr_fraction": "772293203151451/7964618321088"
+    },
+    {
+      "cohort": "pilot",
+      "condition": "baseline",
+      "groups": 128,
+      "seeds": 3,
+      "target_occurrences": 3273,
+      "incorrect_occurrences": 3197,
+      "occurrence_mr_percent": 97.67797128017109,
+      "group_equal_mr_percent": 96.89272008145363,
+      "exact_occurrence_mr_fraction": "319700/3273",
+      "exact_group_equal_mr_fraction": "4948505/51072"
+    },
+    {
+      "cohort": "pilot",
+      "condition": "coverage",
+      "groups": 128,
+      "seeds": 3,
+      "target_occurrences": 3273,
+      "incorrect_occurrences": 3191,
+      "occurrence_mr_percent": 97.4946532233425,
+      "group_equal_mr_percent": 96.86701999214092,
+      "exact_occurrence_mr_fraction": "319100/3273",
+      "exact_group_equal_mr_fraction": "8326124885/85954176"
+    },
+    {
+      "cohort": "pilot",
+      "condition": "size_sampling",
+      "groups": 128,
+      "seeds": 3,
+      "target_occurrences": 3273,
+      "incorrect_occurrences": 3179,
+      "occurrence_mr_percent": 97.1280171096853,
+      "group_equal_mr_percent": 96.67893039891395,
+      "exact_occurrence_mr_fraction": "317900/3273",
+      "exact_group_equal_mr_fraction": "14812759/153216"
+    }
+  ],
+  "paired_summary_comparisons": [
+    {
+      "cohort": "full_baseline",
+      "variant": "learned",
+      "reference": "random",
+      "occurrence_difference_pp": -0.15447645913090202,
+      "group_equal_difference_pp": 0.17535186455799787,
+      "direction_reversal": true
+    },
+    {
+      "cohort": "pilot",
+      "variant": "coverage",
+      "reference": "baseline",
+      "occurrence_difference_pp": -0.18331805682859761,
+      "group_equal_difference_pp": -0.025700089312705413,
+      "direction_reversal": false
+    },
+    {
+      "cohort": "pilot",
+      "variant": "size_sampling",
+      "reference": "baseline",
+      "occurrence_difference_pp": -0.5499541704857929,
+      "group_equal_difference_pp": -0.21378968253968253,
+      "direction_reversal": false
+    }
+  ],
+  "overlap_metadata": {
+    "validation_groups": 592,
+    "occurrences_per_checkpoint": 4963,
+    "unique_validation_target_nodes": 598,
+    "occurrences_per_unique_target": 8.299331103678929,
+    "source": "One saved bin spans all groups; no summation of overlapping bin-unique counts."
+  },
+  "saved_generator_device_pairs": [
+    {
+      "same_candidate_set": true,
+      "cases": 12,
+      "same_candidate_order": 12,
+      "selected_endpoint_changes": 9
+    },
+    {
+      "same_candidate_set": false,
+      "cases": 36,
+      "same_candidate_order": 0,
+      "selected_endpoint_changes": 26
+    }
+  ],
+  "target_orders_equal_across_device_pairs": 48,
+  "observed_first_target_score_source_calls": 96,
+  "selected_gpu_transition_recount": {
+    "cases": 48,
+    "target_occurrences": 243,
+    "clean_wrong": 57,
+    "attacked_wrong": 96,
+    "newly_wrong": 39,
+    "recovered": 0
+  },
+  "configured_training_batch_size": 1,
+  "scope_limits": [
+    "Only saved GCN validation aggregates; no test predictions, data tensors, checkpoints or new model calls.",
+    "Group means average the same three preselected checkpoints, not newly macro-selected checkpoints.",
+    "The small ranking reversal is descriptive, not statistical significance, author bias or a replacement primary metric.",
+    "Repeated targets/groups and evaluation draws are not independent seed replications.",
+    "Same-candidate device pairs still differ numerically; the split does not establish a sole cause.",
+    "No changed-group membership or target-order experiment has been performed.",
+    "No defense, correction efficacy, method direction, pilot or full test is approved by this analysis."
+  ],
+  "additional_model_calls": 0,
+  "additional_training_runs": 0,
+  "additional_gpu_hours": 0,
+  "elapsed_cpu_wall_seconds": 1.838540299970191
+}

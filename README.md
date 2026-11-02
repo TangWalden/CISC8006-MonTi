@@ -66,6 +66,14 @@ A remains a paper-conformance question; B is a proposed conditional extension,
 with neither efficacy nor first-in-literature novelty established. It changes
 no frozen protocol, result, selected method or execution authorization.
 
+The owner's 2 November questions prompted an [evidence-based reassessment](course/REASSESSMENT_PROPOSAL_V3.md).
+Saved GCN validation predictions give slightly opposite learned/random orderings
+under occurrence weighting and equal group weighting. The new recommendation for
+discussion is evaluation/grouping robustness with an input-order control; B is
+not recommended as the main contribution. The [post-hoc arithmetic](evidence/reassessment_20261102_v1.json)
+and its [review](evidence/reassessment_20261102_review_v1.json) add no model calls,
+training or GPU use. No research direction or new experiment is approved.
+
 Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script/source bytes against the baseline/pilot and results-first figure manifests. Publish from the clean public workspace only.
 
 ## Environment and quick check

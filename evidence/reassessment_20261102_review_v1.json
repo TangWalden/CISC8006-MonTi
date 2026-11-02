@@ -1,0 +1,154 @@
+{
+  "schema": "monti_reassessment_review_v1",
+  "date_asia_shanghai": "2026-11-02",
+  "record_kind": "Agent-authored provenance and critical-review summary; not a human review or verbatim external API transcript.",
+  "analysis_source_commit": "6d89fb6021c333ac983e33297079bd35c379ceff",
+  "scientific_input_snapshot": "9ae6df5fe64cedded5a53f144629a1072d4f1ea1",
+  "analysis_script_sha256": "d38693834f72033ea1cd7aa5bf37d67217e686aafc923ccb7e010d96324a9d1b",
+  "reviewed_file_sha256": {
+    "course/REASSESSMENT_PROPOSAL_V3.md": "2ff32a66a7985a89a136c2177e436407ed67081390eed9be38c11249d855eafe",
+    "evidence/reassessment_20261102_v1.json": "bd293dbf2ba5cc7dabeaae12b5173de50e0e98fa0998565247fc5e7bb837b4d0"
+  },
+  "independent_arithmetic_review": {
+    "reviewer": "Separate Codex agent, english_records; not human verification.",
+    "procedure": "Recomputed saved CSV/JSON aggregates independently without invoking the reassessment script or editing files.",
+    "passed": [
+      "Five condition means under occurrence and group-equal weighting",
+      "Three variant/reference contrasts",
+      "Twelve same-candidate device pairs with nine endpoint changes; thirty-six different-candidate pairs with twenty-six changes",
+      "Forty-eight device pairs with equal target order",
+      "Selected GPU clean/attacked transition identity: 96 - 57 = 39 - 0 in 243 occurrences",
+      "598 unique targets is existing full-coverage bin metadata, not a new raw-ID deduplication",
+      "Thirteen input SHA256 values match pinned Git blobs and local bytes",
+      "Analysis-script SHA256 matches the committed source and normalized local bytes"
+    ],
+    "limitations": [
+      "The analysis is post hoc; preliminary numbers were inspected before script preparation.",
+      "Selected validation snapshots are not independent confirmations or a new significance test.",
+      "No new seed-level macro confidence interval is claimed from pooled records."
+    ]
+  },
+  "static_code_and_design_review": {
+    "reviewers": [
+      "Separate Codex agent english_records: loss and sampler semantics",
+      "Separate Codex agent improvement_design: metric, membership and order controls",
+      "Separate Codex agent rubric_review: interpretation, cost and course boundaries"
+    ],
+    "findings": [
+      "All six formal and nine pilot configurations use batch size one; naive within-batch node-count normalization would equal the present loss.",
+      "The hinge zeros a currently wrong target's own loss contribution, not a permanent mask based on its clean prediction.",
+      "Size-proportional replacement sampling has a size-weighted hinge expectation at fixed parameters, not an identical zero-one MR objective.",
+      "Both historical pilots remain negative under both descriptive summaries; no trained uniform-replacement control was run in those nine pilots.",
+      "Target and candidate identities are disjoint within a current group; cross-group reuse is not proof of leakage.",
+      "Holding the first target identity fixed does not hold its contextualized Transformer representation fixed.",
+      "Equal budget caps do not prove equal realized injected-node/edge counts.",
+      "Degree matching does not automatically preserve the paper's unique-neighbor budget or its global average.",
+      "Constrained membership swaps are neither implemented nor proven uniform/well mixed.",
+      "An evaluation-method extension still requires owner direction and confirmation that it satisfies course requirements."
+    ],
+    "changes_before_publication": [
+      "Added the contextualized-representation limit to the proposed first-target control.",
+      "Required actual injected-node/non-self undirected-edge accounting, preserved mismatches and unchanged denominators.",
+      "Required an explicit paper-budget average population and source-order preservation checks before protocol freeze."
+    ],
+    "scope": "Static review and saved-record arithmetic only; no changed-group, target-order or corrected-model evaluation."
+  },
+  "official_upstream_inspection": {
+    "repository": "https://github.com/bdi-lab/MonTi",
+    "pinned_branch": "main",
+    "commit": "10f233e953679ec3715125dc058ef6d28bee4691",
+    "git_tree": "4009bf88d19812ac6837be5f81df6ad87b755a78",
+    "inspected_tree_entries": 64,
+    "inspected_python_files": [
+      {
+        "path": "models/attack_model.py",
+        "git_blob_sha": "78bbe6ac2255cd1791cd08c39174a9178ca33d0b",
+        "blob_matches_pinned_tree_entry": true,
+        "lines": 363
+      },
+      {
+        "path": "models/victim_model.py",
+        "git_blob_sha": "35490258bdc370266c3b7279bcd67a20bb99cad5",
+        "blob_matches_pinned_tree_entry": true,
+        "lines": 667
+      },
+      {
+        "path": "modules/data_handler.py",
+        "git_blob_sha": "dd0f8490d7daa4f0ea21ba0cb57de377e925f857",
+        "blob_matches_pinned_tree_entry": true,
+        "lines": 394
+      },
+      {
+        "path": "modules/experiment_handler.py",
+        "git_blob_sha": "41691b794dc87662fef107e7c1daf318b6e32de6",
+        "blob_matches_pinned_tree_entry": true,
+        "lines": 531
+      },
+      {
+        "path": "modules/result_manager.py",
+        "git_blob_sha": "39ebe14c3b9cd86e8edfd54e0af9380df12d6a59",
+        "blob_matches_pinned_tree_entry": true,
+        "lines": 104
+      },
+      {
+        "path": "modules/schedulers.py",
+        "git_blob_sha": "5af732b37e5c0adbb39745ed6d97fdedf4b4ae73",
+        "blob_matches_pinned_tree_entry": true,
+        "lines": 72
+      },
+      {
+        "path": "run.py",
+        "git_blob_sha": "8d20e7a130270b57c50bef1e56dfa8e48b0b182d",
+        "blob_matches_pinned_tree_entry": true,
+        "lines": 62
+      },
+      {
+        "path": "utils/constants.py",
+        "git_blob_sha": "c10f4bc181489acdc5ff69b2636a4537dd8caf4b",
+        "blob_matches_pinned_tree_entry": true,
+        "lines": 51
+      },
+      {
+        "path": "utils/utils.py",
+        "git_blob_sha": "710d1dc256b14f869cb01e169b1a1a1f3694d348",
+        "blob_matches_pinned_tree_entry": true,
+        "lines": 247
+      }
+    ],
+    "method": "Read-only official GitHub connector tree and file retrieval; all nine returned blob IDs match their pinned tree entries.",
+    "public_loading_locations": [
+      "utils/utils.py:83-90 loads target membership and split-mask files",
+      "models/attack_model.py:249-315 implements runtime candidate selection"
+    ],
+    "bounded_absence_statement": "A complete raw-interaction-to-original-target-group construction script was not found in this inspected current tree. This does not establish absence from all historical/external materials or author misconduct.",
+    "distinctions": [
+      "Fixed shared lists aid comparative consistency but do not prove unbiased initial construction.",
+      "Runtime candidate selection is separate from creation of the target-group benchmark."
+    ]
+  },
+  "prior_art_boundary": {
+    "scope": "Bounded primary-source check, not an exhaustive novelty search.",
+    "consulted_primary_article": {
+      "title": "Efficiently sampling the realizations of bounded, irregular degree sequences of bipartite and directed graphs",
+      "authors": "Peter L. Erdos, Tamas Robert Mezei, Istvan Miklos and Daniel Soltesz",
+      "year": 2018,
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0201995",
+      "use": "Degree-preserving swaps and restricted mixing results are existing methods. This source does not validate uniform mixing under the proposed additional constraints."
+    },
+    "access_limits": "Other primary HTML fetches for macro/micro exposition and a related switch-chain paper timed out; no full-text inspection of those timed-out pages is claimed.",
+    "conclusion": "Neither macro/micro summaries nor fixed-marginal swaps are claimed as inventions. Exact originality or effectiveness of the proposed MonTi evaluation framework remains unestablished."
+  },
+  "authorization_and_cost": {
+    "owner_request": "Reconsider innovation from concrete experiments, outcomes, code and data.",
+    "direction_selected": false,
+    "new_inference_protocol_frozen": false,
+    "new_model_calls": 0,
+    "new_training_runs": 0,
+    "new_gaga_or_test_prediction_reads": 0,
+    "new_gpu_hours": 0,
+    "modified_groups_evaluated": false,
+    "new_deepseek_api_calls": 0,
+    "scientific_v1_files_cost_ledger_report_and_slide_inputs": "unchanged",
+    "human_technical_review_and_instructor_approval": "pending"
+  }
+}

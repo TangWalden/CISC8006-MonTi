@@ -35,6 +35,18 @@ injection. It is not an exhaustive novelty determination or a method selection.
 The existing human-review pointers were updated, with response fields still
 empty. No new experiments or artifact rebuilds were performed.
 
+Update 2026-11-02: the owner challenged the public value of attack-cost reduction
+and initial target-list fairness, then requested ideas based on actual code/data
+and experiments. The [v3 reassessment](REASSESSMENT_PROPOSAL_V3.md) recommends
+evaluation/grouping robustness for discussion, with an order-stability control.
+The same saved validation outcomes change their small learned/random ordering
+under two aggregation definitions. This is a post-hoc observation, not a new
+winner or permission to change the frozen primary metric. Size sampling remains
+negative under both summaries, so simple loss reweighting is not revived. B is
+not recommended as the main contribution. Direction selection, a concrete
+inference protocol, teacher acceptance and final testing remain pending. No new
+ML evaluation/training or report/slide rebuild was performed.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |

@@ -1,5 +1,46 @@
 # AI Usage Record
 
+## 2026-11-02: Results-driven innovation reassessment
+
+- Human steering: The owner questioned the public value of reducing fraud-attack
+  costs and whether original target groups might favor MonTi, and requested new
+  ideas grounded in actual code, data and outcomes. This is research steering;
+  it is not approval of any new method or experiment, a human technical audit,
+  or confirmation of either member's implementation contribution.
+- Tools and division: Codex read the public source/data evidence and used three
+  agents to independently inspect loss semantics, actual negative pilots and
+  evaluation validity. A read-only GitHub check covered the current official
+  tree and all nine Python files. Loading published group files and selecting
+  runtime candidates were distinguished from unavailable original group-building
+  scripts; no author misconduct was inferred.
+- Concrete reassessment: A standard-library-only script reprocessed published
+  GCN validation aggregates at snapshot 9ae6df5. Preliminary agent/root arithmetic
+  had already been inspected, so the execution record explicitly labels the
+  analysis post hoc rather than a preregistration. Source 6d89fb6 was committed
+  before the recorded run. An independent agent separately recomputed all five
+  conditions, three contrasts, device-pair strata and transition identity, and
+  checked thirteen input hashes plus the script hash.
+- Critical decisions: A small learned/random ordering reversal under group versus
+  occurrence weighting motivates a sensitivity question; it does not justify
+  changing the registered metric or claiming significance. Both historical pilot
+  variants remain negative under both summaries. Batch size one makes a proposed
+  naive batch/node loss normalization identical to the existing loss, while the
+  older size sampler already targets a size-weighted hinge expectation. Those
+  ideas were downgraded instead of repackaged as untested novelty.
+- Proposed scope: V3 recommends a grouping/measurement robustness study and an
+  input-order control for discussion. Constrained membership swaps are a draft
+  control, not an implemented or uniformly sampled new dataset. First-target
+  identity, budget-definition differences, contextualized representations and
+  lack of benign-node defensive outcomes remain explicit limitations. The
+  proposal does not claim a new randomization theorem, evaluation metric,
+  successful correction, protected system or higher course grade.
+- Evidence: [proposal](course/REASSESSMENT_PROPOSAL_V3.md),
+  [record](evidence/reassessment_20261102_v1.json),
+  [review/source scope](evidence/reassessment_20261102_review_v1.json).
+  No raw dataset/checkpoint loads, new inference, training, GAGA/test prediction
+  reads, GPU work, dependency downloads, artifact rebuilds or DeepSeek API calls
+  occurred. Genuine human technical reviews and course approval remain pending.
+
 ## 2026-10-31: Bounded primary-source related-work check
 
 - Task and tools: Codex and three agents inspected MonTi, G-NIA, TDGIA, the
