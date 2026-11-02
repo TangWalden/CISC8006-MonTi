@@ -1,0 +1,37 @@
+{
+  "status": "frozen_before_any_LLM_or_numeric_gate_outcome",
+  "recorded_utc": "2026-11-02T18:29:13.386090+00:00",
+  "reason": "Implement the owner-requested learning from textual descriptions while preserving primary zero-shot contrasts and their original case denominator. Match numeric gate decision grid before either method is evaluated.",
+  "original_protocols_preserved": [
+    "course/NEW_METHODS_EXECUTION_PROTOCOL_V1.json",
+    "course/FUSION_PROBE_PROTOCOL_V1.json"
+  ],
+  "numeric_gate": {
+    "primary_action_grid": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "grid_rule": "nearest value; lower at exact tie",
+    "continuous_accuracy": "secondary, explicitly labeled",
+    "training_settings_unchanged": true
+  },
+  "text_learning": {
+    "mode": "in_context; external LLM weights not fine-tuned",
+    "train_examples": 4,
+    "train_per_class": 2,
+    "validation_subcohort": 20,
+    "validation_per_class": 10,
+    "selection_rule": "fixed seed20261103 SHA256 caseID stratified by known label, before API outcomes",
+    "additional_logical_requests": 24,
+    "global_physical_request_cap_unchanged": 120,
+    "same_API_protocol_and_append_ledger": true,
+    "primary_zero_shot_32case_results": "unchanged; learning comparison uses the same selected20cases",
+    "invalid_training_description": "deterministic grounded template",
+    "failed_or_budgetblocked_decisions": "registered static fusion; retain all20cases"
+  },
+  "source_update_before_execution": true,
+  "no_model_result_or_LLM_outcome_selected_this_amendment": true
+}
