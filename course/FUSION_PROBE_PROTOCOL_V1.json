@@ -1,0 +1,58 @@
+{
+  "status": "frozen_before_probe_execution",
+  "owner_execution_authorized": true,
+  "frozen_utc": "2026-11-02T18:20:17.238391+00:00",
+  "probe_groups": [
+    1185,
+    1267,
+    1285,
+    1415
+  ],
+  "self_seed": 3,
+  "arms": [
+    "off",
+    "always",
+    "gated"
+  ],
+  "expected_cards": 32,
+  "class_counts": [
+    16,
+    16
+  ],
+  "clean_cards": 8,
+  "attacked_cards": 24,
+  "graph_model": "GAGA official frozen victim checkpoint; validation only",
+  "sequence_method": "Canonical current-graph nonself one-hop, Boolean two-hop; class-group averages plus masked center; clean cache allclose guard before model calls",
+  "max_guardian_seconds": 300,
+  "max_graph_forwards": 100,
+  "numeric_gate": {
+    "features": [
+      "p_self",
+      "p_graph",
+      "log1p_degree",
+      "neighbor_similarity_mean",
+      "neighbor_similarity_std",
+      "similarity_missing"
+    ],
+    "normalization": "mean/std from original-train meta only; std floor .001",
+    "architecture": [
+      6,
+      8,
+      1
+    ],
+    "activation": "Tanh then sigmoid alpha",
+    "seed": 20261103,
+    "epochs": 100,
+    "batch": "full meta",
+    "lr": 0.01,
+    "optimizer": "Adam",
+    "loss": "binary cross entropy of convex probability fusion, clamp1e-6",
+    "validation_used_for_training": false,
+    "meta_graph_checkpoint_provenance": "in-sample graph predictions, NOT OOF"
+  },
+  "api_model": "deepseek-flash",
+  "api_learning": "zero shot; grounded English descriptions followed by structured alpha decisions; no weight fine-tuning or label demonstrations",
+  "caps_from": "course/NEW_METHODS_EXECUTION_PROTOCOL_V1.json",
+  "test_queries_allowed": false,
+  "interpretation": "Technical selected validation pilot only; neither robust-defense nor LLM-superiority conclusion is presupposed."
+}
