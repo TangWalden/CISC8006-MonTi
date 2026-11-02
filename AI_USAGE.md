@@ -1,5 +1,20 @@
 # AI Usage Record
 
+## 2026-11-02: Owner rejects the evaluation route
+
+The owner declined v3 and requested other method improvements. Codex and two
+agents inspected the existing feature-generation/budget dependencies and reused
+the saved residual and direct-endpoint evidence. The [discussion memo](course/METHOD_ALTERNATIVES_20261102.md)
+distinguishes explicit budget conditioning from existing output budget allocation
+and negative size sampling. It includes matched-capacity controls, indirect
+budget information and the same-budget counterexamples. A detector-side option
+is explicitly a larger scope change, with unmeasured clean utility, benign
+false positives and adaptive-attack robustness. A bounded primary-source search
+identified existing neighborhood-defense work; no novelty absence is claimed.
+Neither alternative is selected or approved. No model/data/checkpoint loading,
+training, new inference, GPU use, dependency download or artifact build occurred.
+The historical v3 files and every frozen scientific result remain unchanged.
+
 ## 2026-11-02: Results-driven innovation reassessment
 
 - Human steering: The owner questioned the public value of reducing fraud-attack

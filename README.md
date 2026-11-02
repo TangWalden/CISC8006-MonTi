@@ -72,7 +72,10 @@ under occurrence weighting and equal group weighting. The new recommendation for
 discussion is evaluation/grouping robustness with an input-order control; B is
 not recommended as the main contribution. The [post-hoc arithmetic](evidence/reassessment_20261102_v1.json)
 and its [review](evidence/reassessment_20261102_review_v1.json) add no model calls,
-training or GPU use. No research direction or new experiment is approved.
+training or GPU use. The owner subsequently declined this evaluation/grouping
+route. [Method-level alternatives](course/METHOD_ALTERNATIVES_20261102.md) discuss
+explicit budget conditioning and, as a different project direction, robust
+detection. Neither is selected, tested or approved for new experiments.
 
 Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script/source bytes against the baseline/pilot and results-first figure manifests. Publish from the clean public workspace only.
 

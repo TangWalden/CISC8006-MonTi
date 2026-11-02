@@ -47,6 +47,12 @@ not recommended as the main contribution. Direction selection, a concrete
 inference protocol, teacher acceptance and final testing remain pending. No new
 ML evaluation/training or report/slide rebuild was performed.
 
+Later on 2026-11-02 the owner declined the v3 evaluation/grouping route and asked
+for other methods. [New discussion options](METHOD_ALTERNATIVES_20261102.md) cover
+budget-conditioned generation and a separate neighborhood-robust detector
+direction. They are static proposals, not implemented efficacy results or
+permission to start pilots. Preserve v3 as history and await a concrete direction.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |
