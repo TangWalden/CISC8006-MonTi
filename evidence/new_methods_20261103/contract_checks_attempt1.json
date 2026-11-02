@@ -1,0 +1,16 @@
+{
+  "source_commit": "b7cca24",
+  "command": "bundled-python -m unittest course.llm_fusion.test_contract -v",
+  "tests": 27,
+  "status": "passed",
+  "reported_test_loop_seconds": 0.012,
+  "model_calls": 0,
+  "api_calls": 0,
+  "gpu_hours": 0,
+  "scope": "Synthetic contract tests only, not defense efficacy",
+  "source_sha256": {
+    "course/llm_fusion/contract.py": "c8d7db01304c95de54f51cc223031ab4020d949944b8f9c924afe49242a43e59",
+    "course/llm_fusion/test_contract.py": "53f5d25a88e30db8318f9a812cbde165d1df4ec54cbb00b80f4a84dbc891a0bf"
+  },
+  "recorded_utc": "2026-11-02T18:08:35.052808+00:00"
+}
