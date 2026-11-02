@@ -1,0 +1,64 @@
+{
+  "status": "completed_bounded_validation_pilots",
+  "sources": {
+    "protocol_contract": "b7cca24665890b1478597b36a0f2ba906d147d14",
+    "self_execution": "7538ab3f9e484945e70f8bbe32f77ad034e4f844",
+    "reference_preparation": "bb705c3b2f6a72aebee9c2d6bb991e82e160179d",
+    "alignment_and_bridge_execution": "ab149757c118666a46cb7b0328c10ad29e0b4f63",
+    "api_execution": "8490bb03ec54ccf5c3222eabdeaf43c899d0df57",
+    "text_extension_pre_API_amendment": "91c30461113441300ff6855df9a06704febac5f5",
+    "retained_numeric_grid_scoring": "7aaccdb97d09d814b2e0738a8158d86572e403d7",
+    "posthoc_aggregate_recount": "bd42beddf721544d8953ebe8015674311b9bd5c2"
+  },
+  "execution_modules": [
+    "course.fusion_pilot.self_evidence",
+    "course.conditional_alignment.queue",
+    "course.fusion_pilot.extract_attacked",
+    "course.fusion_pilot.numeric_gate",
+    "course.llm_fusion.api_pilot",
+    "course.llm_fusion.text_learning",
+    "course.fusion_pilot.quantize_saved_gate"
+  ],
+  "saved_record_recount": "course.summarize_owner_methods; no additional inference",
+  "private_output_stage": "runs/owner_methods_20261103_attempt1",
+  "original_records_policy": "Checkpoints, perturbation tensors, labels, raw node identities and complete API replies remain private; aggregate hashes support authorized review.",
+  "runtime": {
+    "ML": {
+      "python": "3.8.20",
+      "torch": "1.13.1+cu117",
+      "device": "cuda:0",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "peak_reserved_bytes": 773849088
+    },
+    "local_API_and_recount_python": "3.12.14; no ML dependency imports in API/recount drivers",
+    "dependencies_downloaded": 0
+  },
+  "scope": {
+    "frozen_baseline_unchanged": true,
+    "final_test_queries": 0,
+    "course_approval": "not confirmed",
+    "human_technical_review": "pending",
+    "full_LLM_adaptive_attack": "not performed",
+    "final_submission_tag": "not created"
+  },
+  "input_sha256": {
+    "api_protocol_v1.json": "4a465ed290c53bdb7b10ff3a2edadcaf98f3c798443e2e06a4c3ad16db7659f0",
+    "alignment-execution-v1.json": "600f613b52cd7d289535e276ffeae5c36681c543edb888c3c62102fb743c772c",
+    "fusion-probes-cpu-receipt-attempt1.json": "189eea13d63994c46ee4f363192420672ebf6bb4ebf9c663d4057694c658fd0d",
+    "numeric-gate-registration-attempt1.json": "ef7e21bf0db2bf423f23ed87fe040f85aaaccb47b6096f1f6faf12d076ba3827"
+  },
+  "attack_reference": {
+    "population": "original TRAIN benign centers with transductive raw features; no neighbor/evaluation labels used",
+    "signature": "degree-bin-conditioned first two raw neighbor cosine moments",
+    "gate": "fixed TRAIN q90 threshold, detached, lambda0.1",
+    "not_full_distribution_matching": true
+  },
+  "limits": {
+    "aggregate_phase_GPU_hours": 2,
+    "API_physical_calls_including_retries": 120,
+    "API_prompt_tokens": 200000,
+    "API_completion_tokens": 64000,
+    "API_registered_peak_price_USD_ceiling": 0.5
+  },
+  "result": "final_saved_recount.json"
+}

@@ -16,9 +16,9 @@
       "conservative_gpu_hours": 0.0006216666666666666
     }
   ],
-  "measured_or_conservatively_charged": 0.9432800897807371,
+  "measured_or_conservatively_charged": 1.5643163642796154,
   "unmetered_setup_reserve": 0.02,
-  "remaining_after_reserve": 11.036719910219263,
+  "remaining_after_reserve": 10.415683635720384,
   "failed_or_interrupted_incidents": [
     {
       "path": "evidence/one_edge_diagnosis_v1/failure.json",
@@ -152,10 +152,12 @@
     }
   ],
   "new_methods_20261103": {
-    "updated_utc": "2026-11-02T18:33:54.576273+00:00",
+    "updated_utc": "2026-11-02T19:09:44.807387+00:00",
+    "status": "completed_validation_pilots",
     "prior_charged_gpu_hours": 0.7750060769012944,
-    "completed_charged_gpu_hours": 0.16827401287944263,
+    "completed_charged_gpu_hours": 0.789310287378321,
     "self_guardian_gpu_hours": 0.005468915558594745,
+    "alignment_gpu_hours": 0.7838413718197261,
     "alignment_completed_jobs": [
       {
         "arm": "off",
@@ -174,11 +176,94 @@
         "elapsed_seconds": 283.80407690803986,
         "charged_gpu_wall_hours": 0.07883446580778886,
         "guardian_sha256": "51d28ec8a0bde02de0ddb399a0c021609f1e9be32e77113640f57d6d10e853c4"
+      },
+      {
+        "arm": "gated",
+        "seed": 3,
+        "exit_code": 0,
+        "pid": 520093,
+        "elapsed_seconds": 318.1439340390498,
+        "charged_gpu_wall_hours": 0.08837331501084716,
+        "guardian_sha256": "7005120cd889d7de3fdc8de61fe6a42d3d5f98b3017ca10e7ea9001dcc31d8a9"
+      },
+      {
+        "arm": "off",
+        "seed": 4,
+        "exit_code": 0,
+        "pid": 520833,
+        "elapsed_seconds": 296.4147853839677,
+        "charged_gpu_wall_hours": 0.08233744038443547,
+        "guardian_sha256": "8890e3da98c804b0b430043124737d213799897ef9729dfb11563ce240241f39"
+      },
+      {
+        "arm": "always",
+        "seed": 4,
+        "exit_code": 0,
+        "pid": 521979,
+        "elapsed_seconds": 330.4427745939465,
+        "charged_gpu_wall_hours": 0.09178965960942959,
+        "guardian_sha256": "fc9dd5316e9a9fd5579bf85838be0156e3f56d709ae86a111d3c96af75ce31b9"
+      },
+      {
+        "arm": "gated",
+        "seed": 4,
+        "exit_code": 0,
+        "pid": 522984,
+        "elapsed_seconds": 331.33230911998544,
+        "charged_gpu_wall_hours": 0.09203675253332928,
+        "guardian_sha256": "2578d0b9c13551f76f4a7c7252c0c8ec77f4db4647a5a85da1bce1bead0479ff"
+      },
+      {
+        "arm": "off",
+        "seed": 5,
+        "exit_code": 0,
+        "pid": 524159,
+        "elapsed_seconds": 333.20927484706044,
+        "charged_gpu_wall_hours": 0.09255813190196123,
+        "guardian_sha256": "772e843e2b9859207a7ac95aca3df13348372aded3083be45be8acd75a340162"
+      },
+      {
+        "arm": "always",
+        "seed": 5,
+        "exit_code": 0,
+        "pid": 524812,
+        "elapsed_seconds": 330.665459590964,
+        "charged_gpu_wall_hours": 0.09185151655304556,
+        "guardian_sha256": "4822f4204f680d924a7b62f6704e424a3a5e970308bccd67604a9d2f65165f6b"
+      },
+      {
+        "arm": "gated",
+        "seed": 5,
+        "exit_code": 0,
+        "pid": 526036,
+        "elapsed_seconds": 295.522050620988,
+        "charged_gpu_wall_hours": 0.08208945850583,
+        "guardian_sha256": "b5f44ac6a6f6f3688c3323ac123d189c6439faf33e0560288af49142b62aec1a"
       }
     ],
-    "alignment_jobs_pending_at_snapshot": 7,
-    "active_queue_pid": 518820,
+    "alignment_jobs_pending": 0,
     "phase_gpu_limit": 2,
-    "accounting": "Completed conservative process/guardian costs only; active jobs bounded by queue and charged at completion. No API dollar costs included in GPU hours."
+    "accounting": "Maximum of each guardian/process lifetime; self charged exactly once; CPU bridge/gate and API costs are separate.",
+    "cpu_bridge": {
+      "gpu_hours": 0,
+      "process_seconds": 22.077693307073787,
+      "graph_forwards": 16,
+      "self_forwards": 16
+    },
+    "cpu_numeric_gate": {
+      "gpu_hours": 0,
+      "optimizer_steps": 100,
+      "reported_stage_seconds_after_torch_initialization": 0.17947006004396826,
+      "outer_process_time": "Not separately metered; excludes Torch initialization/imports."
+    },
+    "api": {
+      "physical_calls": 120,
+      "charged_prompt_tokens": 101473,
+      "charged_completion_tokens": 14198,
+      "usd_upper_bound": 0.047479499999999994,
+      "registered_usd_ceiling": 0.5,
+      "not_a_provider_invoice": true
+    },
+    "result": "evidence/new_methods_20261103/final_saved_recount.json"
   }
 }

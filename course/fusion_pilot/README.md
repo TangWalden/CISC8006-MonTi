@@ -1,5 +1,46 @@
 # Isolated self-model and numeric evidence runner
 
+## Actual validation pilot on 3 November 2026
+
+The owner explicitly requested implementation and execution. Three self-model
+seeds were trained, and the external DeepSeek agent was called on numeric
+self/graph evidence. The primary 32 cases are eight original news nodes under
+four clean/attack conditions, not 32 independent articles. GAGA remains the
+fixed graph branch. No article body/title mapping is available in this pilot.
+
+| Method on the identical 32 cases | Correct | Benign false positive rate | Fraud recall |
+|---|---:|---:|---:|
+| Self-only MLP, seed 3 | 16/32 | 25% | 25% |
+| Fixed GAGA graph branch | 20/32 | 25% | 50% |
+| Fixed half fusion | 20/32 | 25% | 50% |
+| Numeric neural gate, registered action grid | 20/32 | 25% | 50% |
+| External LLM with template evidence | 20/32 | 25% | 50% |
+| External LLM with generated descriptions | 20/32 | 25% | 50% |
+
+The last five methods make exactly the same 32 class predictions. A pre-API
+amendment adds four supervised TRAIN examples in context and assesses 20 fixed
+validation cases: 11/20 correct, again identical to zero-shot LLM, numeric gate,
+graph branch and fixed fusion on those same 20 cases. This is in-context
+adaptation, not LLM fine-tuning or a trained text student. No LLM advantage was
+observed. Both branches are uncalibrated; original graph TRAIN-meta predictions
+are in-sample, not out-of-fold. The numeric gate learns from 662 meta examples,
+whereas the LLM extension receives four demonstrations, so adaptation budgets
+are not matched even though query facts and decision grids are matched.
+
+The API completed 120 physical calls, no retries/errors/fallbacks, with 101473
+prompt tokens and 14198 completion tokens. The registered peak/cache-miss cost
+upper bound is USD 0.0474795, not an invoice. Returned model alias was
+`deepseek-flash`; recorded system fingerprint does not independently certify
+backend weights. Labels and raw node/group/attack identities stayed local.
+Eight joint branch errors cannot be corrected by fixed-threshold convex fusion.
+The GCN-trained attacks provide a transfer probe, not an adaptive attack against
+the complete LLM pipeline. A post-hoc join of retained predictions finds zero
+clean-to-attacked GAGA class changes for each arm's eight probe nodes. This cohort
+therefore does not demonstrate prevention of attack-induced errors, and remains
+a functional/selected-utility pilot rather than positive defense evidence. No
+new cases or calls were added after this finding. See the [saved-output recount](../../evidence/new_methods_20261103/final_saved_recount.json)
+and [frozen protocol](../NEW_METHODS_EXECUTION_PROTOCOL_V1.json).
+
 This module implements preparation/training/evidence extraction for the new
 validation-only pilot. It makes no API calls, initializes no attacker, does not
 predict test nodes, and does not alter the frozen baseline. No execution is
@@ -55,11 +96,14 @@ does not claim bitwise identity with historical target-group inference.
 Root can import `load_self_checkpoint`, `load_graph_branch`,
 `graph_branch_logits` and `extract_current_context` to evaluate retained attack
 graphs. For GAGA, pass current-context sequences **already aligned to the query
-node order**; use the original update helper with the full relevant membership,
-including queried benign nodes. Do not reuse clean sequences for an attacked
-context. A matching context string is an assertion, not proof of correct sequence
-construction. The wrapper checks test exclusion, numerical validity, exactly one
-self-loop and records current degree rather than cached original degree.
+node order**. The executed bridge in `extract_attacked.py` reconstructs canonical
+current-graph one-hop and Boolean two-hop class-group sequences, including queried
+benign centers, and checks the clean result against the frozen cache before model
+calls. It passed combined `atol=1e-5, rtol=1e-5`; the maximum absolute difference
+was 1.8537044525e-5, so this is not an absolute-only 1e-5 bound or bitwise equality.
+Do not reuse clean sequences for an attacked context. A matching context string
+is an assertion, not proof of correct sequence construction. The wrapper checks
+test exclusion, numerical validity, exactly one self-loop and current degree.
 
 The module's `run` stage executes clean/meta extraction only. Attack generation,
 probe extraction, API calls, numeric-gate training, fusion evaluation and their

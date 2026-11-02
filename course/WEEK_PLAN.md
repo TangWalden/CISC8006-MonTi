@@ -1,12 +1,16 @@
 # One-week execution and acceptance plan
 
 Update 2026-11-03: the owner explicitly ordered implementation and execution.
-The validation-only new-method protocol is frozen and running, within a two-GPU-
-hour aggregate phase ceiling and a separate bounded API allowance. Three self
-models completed, and the nine fresh alignment jobs are running. Real LLM
-fusion and the pre-API text-learning extension are implemented; no final test
-or course approval is implied. Do not duplicate the active queue or sync tracked
-server source while its jobs are active. Report actual negative/failed outcomes.
+The first bounded validation phase is complete: three self models, nine fresh
+alignment trainings, a numeric gate and 120 real LLM calls including the frozen
+in-context text-learning extension. [Actual results](../evidence/new_methods_20261103/final_saved_recount.json)
+show no LLM prediction advantage; alignment lowers the optimized signature
+distance but reduces GCN attack MR. The eight-news transfer probe has no induced
+GAGA class changes and cannot demonstrate protection. Do not repeat these jobs,
+expand the case/call ceiling after outcomes, or confuse execution with course
+approval. Final-test protocol confirmation and final submission freeze remain
+separate, as do genuine human review/contributions/rehearsal. Dated PDF/PPTX
+drafts remain unchanged; package READMEs and evidence contain this supplement.
 
 
 User request: complete one week of technical work by 2026-11-05 (Beijing time). The public repository is https://github.com/TangWalden/CISC8006-MonTi . This plan is not evidence of course approval or of the actual UMMoodle deadline.

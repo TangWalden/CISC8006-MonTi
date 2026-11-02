@@ -1,0 +1,6 @@
+{
+  "source_commit": "ab149757c118666a46cb7b0328c10ad29e0b4f63",
+  "source_sha256": "c6cb1a891566c7290bf197316cda5e8de036f442af33074dbada0e6af24c0603",
+  "mode": "CPU continuous gate; predefined offline grid scoring follows without model calls",
+  "gpu_hours": 0
+}

@@ -1,0 +1,29 @@
+{
+  "exit_code": 0,
+  "elapsed_cpu_seconds": 22.651642532087862,
+  "gpu_hours": 0,
+  "command": [
+    "env",
+    "CUDA_VISIBLE_DEVICES=",
+    "bash",
+    "course/run.sh",
+    "-m",
+    "course.fusion_pilot.extract_attacked",
+    "--self-run",
+    "/home/tjy/Project/MonTi-course/runs/owner_methods_20261103_attempt1/fusion-self-attempt1",
+    "--manifest",
+    "/home/tjy/Project/MonTi-course/runs/owner_methods_20261103_attempt1/fusion-manifest-attempt1/cohort_manifest_private.json",
+    "--alignment-root",
+    "/home/tjy/Project/MonTi-course/runs/owner_methods_20261103_attempt1/alignment-attempt1",
+    "--output",
+    "/home/tjy/Project/MonTi-course/runs/owner_methods_20261103_attempt1/fusion-probes-attempt1",
+    "--expected-source-commit",
+    "ab149757c118666a46cb7b0328c10ad29e0b4f63",
+    "--device",
+    "cpu",
+    "--max-wall-seconds",
+    "300",
+    "--max-graph-forwards",
+    "100"
+  ]
+}

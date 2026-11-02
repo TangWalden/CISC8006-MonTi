@@ -1,0 +1,376 @@
+{
+  "status": "completed_agent_checks_not_human_verification",
+  "api_review": {
+    "role": "Implementation author performed a separate saved-record recount from root execution; not independent of implementation authorship.",
+    "original_private_receipt_sha256": "9c014da4215079c245a28b7d81fda45e285145dbdc63db2d83bc5e024dd16a7a",
+    "checks": [
+      {
+        "name": "protocol frozen and owner-authorized",
+        "passed": true
+      },
+      {
+        "name": "identical protocol registered before primary and extension",
+        "passed": true
+      },
+      {
+        "name": "primary registration predates every API attempt",
+        "passed": true
+      },
+      {
+        "name": "case coverage and class balance",
+        "passed": true
+      },
+      {
+        "name": "registered card and label input hashes",
+        "passed": true
+      },
+      {
+        "name": "committed source SHA: course/llm_fusion/contract.py",
+        "passed": true
+      },
+      {
+        "name": "current source SHA: course/llm_fusion/contract.py",
+        "passed": true
+      },
+      {
+        "name": "committed source SHA: course/llm_fusion/api_pilot.py",
+        "passed": true
+      },
+      {
+        "name": "current source SHA: course/llm_fusion/api_pilot.py",
+        "passed": true
+      },
+      {
+        "name": "committed source SHA: course/llm_fusion/invoke_batch.ps1",
+        "passed": true
+      },
+      {
+        "name": "current source SHA: course/llm_fusion/invoke_batch.ps1",
+        "passed": true
+      },
+      {
+        "name": "committed source SHA: course/llm_fusion/text_learning.py",
+        "passed": true
+      },
+      {
+        "name": "current source SHA: course/llm_fusion/text_learning.py",
+        "passed": true
+      },
+      {
+        "name": "registered prompt SHA: template",
+        "passed": true
+      },
+      {
+        "name": "registered prompt SHA: description",
+        "passed": true
+      },
+      {
+        "name": "registered prompt SHA: generated",
+        "passed": true
+      },
+      {
+        "name": "exact physical and logical coverage without retries",
+        "passed": true
+      },
+      {
+        "name": "every attempt succeeds without fallback-triggering truncation",
+        "passed": true
+      },
+      {
+        "name": "response identities unique",
+        "passed": true
+      },
+      {
+        "name": "all requested/returned model aliases match",
+        "passed": true
+      },
+      {
+        "name": "outbound body controls, complete request/response usage and reservations reconcile",
+        "passed": true
+      },
+      {
+        "name": "every call was reserved within all global hard caps",
+        "passed": true
+      },
+      {
+        "name": "all primary facts, grounded descriptions, full-context cache IDs and fixed arithmetic reconcile",
+        "passed": true
+      },
+      {
+        "name": "all primary metrics independently recounted",
+        "passed": true
+      },
+      {
+        "name": "primary fallback count zero",
+        "passed": true
+      },
+      {
+        "name": "train-meta frozen hashes",
+        "passed": true
+      },
+      {
+        "name": "exact predeclared four/twenty hash selections match",
+        "passed": true
+      },
+      {
+        "name": "training descriptions are label-blind and subsequent targets use train supervision only",
+        "passed": true
+      },
+      {
+        "name": "extension full twenty-case balanced coverage",
+        "passed": true
+      },
+      {
+        "name": "few-shot actual bodies, cache identities, local arithmetic and matched zero-shot outputs reconcile",
+        "passed": true
+      },
+      {
+        "name": "no private identities, query labels, attack metadata or credentials occur in outbound payloads",
+        "passed": true
+      },
+      {
+        "name": "extension metrics independently recounted",
+        "passed": true
+      },
+      {
+        "name": "numeric grid same full cohort",
+        "passed": true
+      },
+      {
+        "name": "local provenance full case match",
+        "passed": true
+      },
+      {
+        "name": "primary token/cost totals match saved summary",
+        "passed": true
+      },
+      {
+        "name": "cumulative token/cost totals match extension summary",
+        "passed": true
+      }
+    ],
+    "input_sha256": {
+      "api_protocol_v1.json": "4a465ed290c53bdb7b10ff3a2edadcaf98f3c798443e2e06a4c3ad16db7659f0",
+      "api_attempt1/registered.json": "faa823f1373d167262bfd076fc7101e8c08d4744be994384cd77a231364990a8",
+      "api_attempt1/summary.json": "6c4358d55bc12720bc96e7c293e323986533693acd3ff27bb9d089322bd593df",
+      "api_attempt1/first_requests.jsonl": "59d81d09e267e2a65bfcae1c1a3a74d00557de7d0fb14454a1673882587689a7",
+      "api_attempt1/second_requests.jsonl": "8154fd8d5ba175f15499f065d1d09ffae820d4dc44ddb968a16c8a81631a8eb0",
+      "api_attempt1/case_outcomes.jsonl": "0e2be945a6d1b0df1903fa4703aa8f925d45d58306683227bca613d01f8276b9",
+      "probe32/api_cards.jsonl": "25b00b7dbe74e81bf713ea1188bc582c49088cf18fe5d88c2b6adb64bcc2b7e7",
+      "probe32/labels_private.jsonl": "6ab1e46dfaa5e323a2d7cbc5bf8e1e0bbf6cf55ef4354493868f9a7711adde23",
+      "probe32/provenance_private.jsonl": "d9ffda60998525dc9f514253dc01148e951825329205946a6919bdea145c5bea",
+      "probe32/meta_cards.jsonl": "3e86adf6020759bc50bd47a070f8c5792caa1a10c7e0b6eb948faa89dd45bacc",
+      "probe32/meta_labels_private.jsonl": "b00080fcbccc3008e6ad9bdca12b5e0e59b9ff78ce0ac0eb4cf97d11d09727ed",
+      "text_learning_attempt1/extension_registered.json": "0c033b439c07c692d719f9624b179f4e5b56feb7c3a3e20c56a477591c2d15e0",
+      "text_learning_attempt1/extension_summary.json": "703337d839ca79ee55193cfc674a5003090635252d9324b411bd0aeba739f9eb",
+      "text_learning_attempt1/extension_outcomes.jsonl": "7bc15f1442f670922a8cefe364cbc6fe8994bc4a5ba853db394a9e078c306474",
+      "text_learning_attempt1/train_description_requests.jsonl": "80cd17945f9ed4c9f3cea5582f7a7aa6299b7b4656e8502d8612d9db0a76da30",
+      "text_learning_attempt1/fewshot_decision_requests.jsonl": "82c76719861c80ecb8dfa91bd02e0fa55cd639a80dea95f637e8fe8c39f8e1c2",
+      "text_learning_attempt1/training_examples_private.json": "6b8d87ec5b9288b1399a79898019e83d3b8f025ced902beda8ee433d2bf72e82",
+      "numeric_gate_grid/outcomes.jsonl": "9274e2e8ca3481fb6ce062a8d1bfa8dcbb9030efadcc36a2a2837535f26f959f"
+    }
+  },
+  "attribution_amendment": {
+    "schema": "monti_api_review_attribution_amendment_v1",
+    "created_utc": "2026-11-02T18:53:40.308602+00:00",
+    "purpose": "Correct reviewer-independence attribution before publication; preserve original private receipts unchanged.",
+    "original_receipt_sha256": {
+      "independent_api_audit_v1.json": "9c014da4215079c245a28b7d81fda45e285145dbdc63db2d83bc5e024dd16a7a",
+      "fusion_reporting_function_review_v1.json": "c06f8f2319b2aafa1da1c93f6f758648d679c2ec7f115c86e1498315c168eef5"
+    },
+    "api_saved_record_recount": {
+      "reviewer": "The same agent that authored the original LLM fusion contract, API client harness and text-learning extension.",
+      "relationship_to_execution": "A separate saved-record recount from the root agent execution, using recorded request/response, outcome and provenance artifacts.",
+      "relationship_to_implementation": "Not independent of implementation authorship. The phrase Independent agent in the original receipt must not be interpreted as an independent implementation review.",
+      "human_verification": false
+    },
+    "fusion_reporting_function_review": {
+      "implementation_author": "Root agent authored course/summarize_owner_methods.py.",
+      "reviewer_relationship": "Another agent checked and executed only the saved-record reporting helpers/fusion function. This was a separate-agent source/schema check of that root-authored function, not a human review.",
+      "human_verification": false
+    },
+    "scope_of_amendment": {
+      "numeric_results_recomputed": false,
+      "original_receipts_modified": false,
+      "experimental_records_modified": false,
+      "new_api_calls": 0,
+      "new_model_calls": 0,
+      "numeric_result_change": null,
+      "publication_guidance": "Publish this authorship distinction with any wrapper or summary of the original receipts. Describe agent arithmetic/source checks separately from independent implementation review and genuine human verification."
+    }
+  },
+  "root_reporting_function_review": {
+    "schema": "monti_fusion_reporting_function_review_v1",
+    "status": "passed",
+    "checked_utc": "2026-11-02T18:52:36.294791+00:00",
+    "source_sha256": "d26bb2d98c5ccbaefb5522016186bf87d331c90e74322ceea15593a4764a19d5",
+    "python_version": "3.12.14",
+    "scope": "Executed only stdlib saved-record reporting helpers/fusion; no main, alignment aggregation, model, dataset, credential, API or training execution.",
+    "observed_api_aggregates": {
+      "physical_calls": 120,
+      "status_counts": {
+        "completed": 120
+      },
+      "verified_usage_records": 120,
+      "charged_prompt_tokens": 101473,
+      "charged_completion_tokens": 14198,
+      "usd_upper_bound": 0.047479499999999994,
+      "response_models": [
+        "deepseek-flash"
+      ],
+      "observed_system_fingerprints": [
+        "bc19ba97cbe016479903222bb1578db6"
+      ],
+      "started_utc": "2026-11-02T18:40:00.2853792Z",
+      "completed_utc": "2026-11-02T18:43:56.2327709Z",
+      "summed_physical_request_seconds": 145.39251,
+      "mean_physical_request_seconds": 1.21160425,
+      "max_physical_request_seconds": 2.420429,
+      "price_interpretation": "Registered peak/cache-miss upper bound, not the provider invoice."
+    },
+    "unique_original_nodes": 8,
+    "contexts": 16,
+    "agent_verification_not_human": true,
+    "material_runtime_issues": []
+  },
+  "alignment_author_review": {
+    "original_private_receipt_sha256": "9106d7564ebf79e5364c31cc22c187b88774b85033b3c76d14743864c25427e0",
+    "role": {
+      "author_of_core_adapter": true,
+      "description": "Author final design review, not an independent implementation replication or human review."
+    },
+    "source_checks": [
+      {
+        "path": "course/conditional_alignment/__init__.py",
+        "local_sha256": "f100f881a9dd6f2fb298ce3cfe62e3ba877dee6de1ccc98bc5c3ee53aed040f3",
+        "frozen_implementation_sha256": "f100f881a9dd6f2fb298ce3cfe62e3ba877dee6de1ccc98bc5c3ee53aed040f3",
+        "matches_frozen_implementation": true,
+        "declared_server_execution_sha256": "f100f881a9dd6f2fb298ce3cfe62e3ba877dee6de1ccc98bc5c3ee53aed040f3",
+        "matches_declared_server_execution": true
+      },
+      {
+        "path": "course/conditional_alignment/common.py",
+        "local_sha256": "609eff721f6e2f564251809d099d2432f47873b71bdba027326fcd3609cfeea1",
+        "frozen_implementation_sha256": "609eff721f6e2f564251809d099d2432f47873b71bdba027326fcd3609cfeea1",
+        "matches_frozen_implementation": true,
+        "declared_server_execution_sha256": "609eff721f6e2f564251809d099d2432f47873b71bdba027326fcd3609cfeea1",
+        "matches_declared_server_execution": true
+      },
+      {
+        "path": "course/conditional_alignment/experiment.py",
+        "local_sha256": "b92687b285118943b96180bb01795a1cf6e5a31953c47c517b9cee9561973af9",
+        "frozen_implementation_sha256": "b92687b285118943b96180bb01795a1cf6e5a31953c47c517b9cee9561973af9",
+        "matches_frozen_implementation": true,
+        "declared_server_execution_sha256": "b92687b285118943b96180bb01795a1cf6e5a31953c47c517b9cee9561973af9",
+        "matches_declared_server_execution": true
+      },
+      {
+        "path": "course/conditional_alignment/prepare_execution.py",
+        "local_sha256": "29932f6d79d7f769d96fb30424086808bf7299c0b59416e277c2ad48cb1ca72d",
+        "frozen_implementation_sha256": "29932f6d79d7f769d96fb30424086808bf7299c0b59416e277c2ad48cb1ca72d",
+        "matches_frozen_implementation": true,
+        "declared_server_execution_sha256": "29932f6d79d7f769d96fb30424086808bf7299c0b59416e277c2ad48cb1ca72d",
+        "matches_declared_server_execution": true
+      },
+      {
+        "path": "course/conditional_alignment/prepare_reference.py",
+        "local_sha256": "ca45f9d8cf150607ab3059a50ffdde2ce52708d8b7377e5496d0d0e91fc6bede",
+        "frozen_implementation_sha256": "ca45f9d8cf150607ab3059a50ffdde2ce52708d8b7377e5496d0d0e91fc6bede",
+        "matches_frozen_implementation": true,
+        "declared_server_execution_sha256": "ca45f9d8cf150607ab3059a50ffdde2ce52708d8b7377e5496d0d0e91fc6bede",
+        "matches_declared_server_execution": true
+      },
+      {
+        "path": "course/conditional_alignment/queue.py",
+        "local_sha256": "d1672c8a3832c458bf0d86ef1814111d10005325dc7a068eff5080892652747c",
+        "frozen_implementation_sha256": "d1672c8a3832c458bf0d86ef1814111d10005325dc7a068eff5080892652747c",
+        "matches_frozen_implementation": true,
+        "declared_server_execution_sha256": "d1672c8a3832c458bf0d86ef1814111d10005325dc7a068eff5080892652747c",
+        "matches_declared_server_execution": true
+      },
+      {
+        "path": "course/conditional_alignment/reference.py",
+        "local_sha256": "9462d049606c4d96d16d7d26f0a37538d9da2b6faa9f1ed15725dec83e037ac5",
+        "frozen_implementation_sha256": "9462d049606c4d96d16d7d26f0a37538d9da2b6faa9f1ed15725dec83e037ac5",
+        "matches_frozen_implementation": true,
+        "declared_server_execution_sha256": "9462d049606c4d96d16d7d26f0a37538d9da2b6faa9f1ed15725dec83e037ac5",
+        "matches_declared_server_execution": true
+      },
+      {
+        "path": "course/conditional_alignment/run.py",
+        "local_sha256": "e7ea23d26353518026c1c83439b211729f824acf04f530b61999666b6ccc27a1",
+        "frozen_implementation_sha256": "e7ea23d26353518026c1c83439b211729f824acf04f530b61999666b6ccc27a1",
+        "matches_frozen_implementation": true,
+        "declared_server_execution_sha256": "e7ea23d26353518026c1c83439b211729f824acf04f530b61999666b6ccc27a1",
+        "matches_declared_server_execution": true
+      },
+      {
+        "path": "course/conditional_alignment/synthetic_checks.py",
+        "local_sha256": "979887e7774a44ed2f05135c7b0605a3e682e7e7bc9d9bfea27d378ff0683abf",
+        "frozen_implementation_sha256": "979887e7774a44ed2f05135c7b0605a3e682e7e7bc9d9bfea27d378ff0683abf",
+        "matches_frozen_implementation": true,
+        "declared_server_execution_sha256": "979887e7774a44ed2f05135c7b0605a3e682e7e7bc9d9bfea27d378ff0683abf",
+        "matches_declared_server_execution": true
+      }
+    ],
+    "limitations": [
+      {
+        "id": "directly_optimized_signature",
+        "statement": "The distance is the regularizer's own two-moment objective. Lower distance is a measured approach to that frozen reference, not independent proof of stealth or realism.",
+        "reason": "Only first/second moments of raw-feature neighbor cosine enter D; no external anomaly detector, text semantics, topology distribution or held-out benign calibration is measured."
+      },
+      {
+        "id": "off_can_improve_naturally",
+        "statement": "OFF may reduce D or out-of-band frequency during attack optimization even though its alignment coefficient is zero. Report all arm curves and the matched OFF contrast rather than treat any reduction as the alignment intervention's effect.",
+        "reason": "Original attack loss, shared representation and changed edges/features can alter the same cosine moments."
+      },
+      {
+        "id": "gate_is_training_penalty_policy",
+        "statement": "GATED is a fixed numeric training-loss gate. It is neither a learned policy nor the external LLM fusion gate and performs no inference-time graph repair.",
+        "reason": "g=detach(D > tolerance); no gate parameters. Optimization can legitimately move samples inside the frozen band."
+      },
+      {
+        "id": "different_effective_regularization",
+        "statement": "ALWAYS/GATED differ in both conditional application and total regularization exposure. An advantage cannot by itself isolate a superior anomaly decision.",
+        "reason": "The same lambda is averaged over all injected nodes; GATED suppresses in-band penalties. No activation-count-matched random gate or average-strength-matched constant penalty is in this first pilot."
+      },
+      {
+        "id": "reference_scope",
+        "statement": "Reference center labels come only from 5036 benign original TRAIN nodes, while neighborhoods use original transductive graph features. Do not call all reference information TRAIN-only or a guaranteed 90-percent acceptance rate on new data.",
+        "reason": "The q90 threshold is fitted on the same per-bin reference samples. Degree bins are coarse; the highest supported bucket has only eight centers; coordinate correlation and scale floors remain part of this chosen metric."
+      },
+      {
+        "id": "topology_can_change_conditional_metric",
+        "statement": "Equal node/edge caps do not fix individual injected degrees, selected endpoints or neighborhood composition. D can change through these as well as generated features.",
+        "reason": "Physical nonself degree selects the reference bucket. Source logs bucket matches/fallbacks and degree min/max, but not a proof of equal higher-order geometry."
+      },
+      {
+        "id": "gradient_scope",
+        "statement": "Alignment differentiates through generated features and ST weights on selected existing graph edges, with discrete degree/bin lookup and gate detached.",
+        "reason": "The upstream graph builder omits zero-valued edges; there is no exact differentiable optimizer over all possible topologies and the hard gate has a discontinuity at the tolerance."
+      },
+      {
+        "id": "selected_validation_pilot",
+        "statement": "Each arm selects its own checkpoint by MR on the same 128 validation groups. Three paired seeds and at most ten epochs form a technical pilot, not independent held-out confirmation or convergence proof.",
+        "reason": "Original OFF is freshly trained in the same GCN-only loading path; old pilot metrics must not substitute for the fresh control. Overlapping group-node exposures are not extra independent seeds."
+      },
+      {
+        "id": "transfer_not_full_llm_adaptation",
+        "statement": "This attacker is optimized against fixed GCN plus relation moments. Evaluation on GAGA/LLM fusion is a transfer pressure test unless a separately registered attack actually optimizes or queries the complete fusion system.",
+        "reason": "Current training code prohibits victim/GAGA/test calls; external LLM responses do not enter this attack loss."
+      },
+      {
+        "id": "small_export_scope",
+        "statement": "The four exported one-node/one-edge groups are the fixed intersection with the 128-group cohort. Their seed3 fusion probe is a small selected technical cohort and does not replace full-cohort MR or establish broad protection.",
+        "reason": "Group1285 is retained even though the older diagnostic was all-clean-wrong; no favorable-outcome filtering is justified."
+      },
+      {
+        "id": "prior_art",
+        "statement": "Homophily/camouflage and conditional regularization have prior art. Implementation, synthetic checks, lower D or a positive pilot mean do not establish first novelty or complete course requirements.",
+        "reason": "No exhaustive novelty search or independent human/instructor review is part of this receipt."
+      }
+    ]
+  },
+  "alignment_saved_output_audit": "See alignment_full_audit.json; a separate agent from the alignment implementation author.",
+  "human_review": false
+}

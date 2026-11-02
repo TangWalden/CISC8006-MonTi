@@ -1,13 +1,27 @@
 # CISC8006: MonTi Reproduction and Improvements
 
-**Execution update, 3 November 2026:** the owner explicitly requested implementation
-and execution. The [bounded new-method pilot](course/NEW_METHODS_EXECUTION_PROTOCOL_V1.json)
-is now running: three self-model seeds completed, the fresh OFF/ALWAYS/GATED
-alignment matrix is in progress, and the real DeepSeek fusion client plus a
-predeclared text-learning extension are implemented. [Current execution evidence](evidence/new_methods_20261103/)
-does not yet establish efficacy. Raw article mapping is still missing, so this
-pilot uses numeric evidence. No final test evaluation has started. Existing
-report/slides remain dated drafts; their cost snapshots predate these new runs.
+**Execution results, 3 November 2026:** the owner-requested implementations and
+first bounded validation pilots have run: three self-model seeds, nine fresh
+OFF/ALWAYS/GATED alignment trainings, a numeric neural gate, and 120 real DeepSeek
+API calls including textual descriptions and four-example in-context learning.
+The [saved-output recount](evidence/new_methods_20261103/final_saved_recount.json)
+and [execution trace](evidence/new_methods_20261103/execution_trace.json) retain
+the negative outcomes. There is no demonstrated overall improvement:
+
+- [LLM fusion](course/fusion_pilot/README.md): graph-only, fixed fusion, numeric
+  gate and both LLM variants make identical predictions, 20/32 correct. These
+  are eight news nodes in repeated contexts, not 32 independent articles. The
+  20-case learning extension is also unchanged, 11/20 correct. No graph-branch
+  class flips were induced in this small transfer cohort, so it cannot establish
+  protective benefit. Input is numeric evidence; article mapping remains missing.
+- [Conditional alignment](course/conditional_alignment/README.md): three-seed
+  GCN-validation MR is 97.4947% OFF, 94.6227% ALWAYS and 95.3254% GATED. Alignment
+  lowers the optimized relationship-moment distance while reducing attack MR.
+  GATED exceeds ALWAYS but remains below OFF; it is not selected as a winner.
+
+The whole new GPU phase cost 0.7893103 GPU-hours; API peak-price cost upper bound
+was USD 0.0474795, separately recorded. No final test evaluation has started.
+Existing report/slides remain dated drafts; their snapshots predate these runs.
 
 
 Team: **Junyi Tang** and **Yifan Fan**. This course project studies one component of [MonTi](https://github.com/bdi-lab/MonTi), the AAAI 2025 paper by Jinhyeok Choi, Heehyeon Kim, and Joyce Jiyoung Whang. This is a course reproduction repository. Author credits and the upstream license are preserved.

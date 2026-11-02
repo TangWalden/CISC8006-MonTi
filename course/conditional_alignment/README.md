@@ -1,5 +1,46 @@
 # Conditional relationship alignment: isolated pilot implementation
 
+## Completed validation pilot
+
+The explicitly authorized first matrix completed all nine fresh runs, seeds
+3/4/5, with the frozen 256 TRAIN and 128 validation groups. Every selected
+validation checkpoint covers 1091 target occurrences. Selection uses the
+earliest maximum occurrence MR. The [aggregate recount](../../evidence/new_methods_20261103/final_saved_recount.json)
+and [separate-agent raw-output audit](../../evidence/new_methods_20261103/alignment_full_audit.json)
+preserve every seed and all 89 validation epochs.
+
+| Arm | Seed 3 MR | Seed 4 MR | Seed 5 MR | Mean MR | Mean group distance | Outside tolerance |
+|---|---:|---:|---:|---:|---:|---:|
+| OFF | 97.5252% | 97.4335% | 97.5252% | 97.4947% | 41.19860 | 91.2509% |
+| ALWAYS | 95.1421% | 94.5005% | 94.2255% | 94.6227% | 0.26192 | 5.8342% |
+| GATED | 96.0587% | 94.8671% | 95.0504% | 95.3254% | 0.52096 | 25.4201% |
+
+Higher MR means a stronger attack against the GCN surrogate. Mean paired MR
+differences versus fresh OFF are -2.87198 percentage points for ALWAYS and
+-2.16926 for GATED. GATED is 0.70272 points above ALWAYS but below OFF in all
+three seeds. These are selected-checkpoint validation comparisons, not final
+victim results or a selected positive improvement. Historical negative pilots
+are not substituted as the control.
+
+Distance averages group mean distances, then seeds. Outside tolerance is the
+fraction of injected nodes exceeding the frozen TRAIN threshold, then averaged
+across seeds. These are different denominators. Policy activation counts are
+not outlier counts: OFF activates zero, ALWAYS all, GATED only those outside.
+Each selected arm/seed physically adds 7776 nodes and 358491 non-self undirected
+edges across the same 128 scenarios; these are sums across independently
+perturbed graphs, not one combined graph. Counts match the exact implementation
+budgets. Optimizer updates total 22784; GCN and generator forwards total 34176
+each. Whole alignment GPU charge is recorded separately from self training.
+
+The loss lowers its optimized two-moment distance, with a reduction in attack
+effectiveness. An independent camouflage detector, matched-activation random
+control and matched-penalty-strength control were not evaluated. Consequently
+these measurements do not isolate intelligent gate selection, establish full
+distribution matching, or prove practical stealth. The later selected GAGA/LLM
+probe is a transfer test and induces zero graph-branch class changes in its eight
+queried news nodes. No adaptive attack against the complete API defense or final
+test was performed. No seeds/cases/calls were added to improve the outcome.
+
 This package adds a training-time attack regularizer, not an LLM defense gate.
 It changes no frozen scientific file, candidate selector, edge-score source,
 tie policy, feature range or physical budget. The owner authorized actual method

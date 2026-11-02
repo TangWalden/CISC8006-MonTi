@@ -1,5 +1,45 @@
 # AI Usage Record
 
+## Completed owner method pilot results on 3 November 2026
+
+Codex executed the committed first implementations after the owner's explicit
+implement-and-run instruction. All three self MLP seeds and nine fresh alignment
+jobs completed. Alignment used 22784 optimizer steps, 34176 GCN forwards and
+34176 generator forwards over 89 validation epochs. The CPU bridge added 16 GAGA
+and 16 self forwards; the numeric neural gate completed 100 optimizer updates
+using 662 TRAIN-meta examples. These are actual executions, separate from the
+earlier synthetic checks. The complete new GPU stage was 0.7893102874 hours,
+including self training once and conservative outer/guardian job lifetimes.
+
+The external API completed 96 primary calls and 24 in-context extension calls,
+all 120 successful without retries or fallback. Recorded usage is 101473 prompt
+and 14198 completion tokens; frozen peak-price USD upper bound is 0.0474795,
+not an invoice. The returned alias is deepseek-flash, without independent proof
+of backend weight version. No plaintext credential was output or sent to SSH/Git.
+The extension supplies four supervised TRAIN demonstrations, not LLM weight
+fine-tuning or a trained text student. Validation labels were not sent or used
+to choose decision weights.
+
+Saved-output recounts show identical graph/static/neural/LLM class predictions
+on the 32 primary rows (20 correct) and 20 extension rows (11 correct). They are
+eight repeated news nodes. A post-hoc join also finds zero GAGA clean-to-attack
+class changes, new errors or recoveries in every arm's eight probes. This is an
+execution/selected-utility result, not protection evidence. No cohort expansion
+or additional calls followed that finding. The optimized alignment moment
+distance falls while MR drops by 2.8720pp ALWAYS and 2.1693pp GATED versus OFF;
+neither is declared an overall improvement.
+
+The alignment implementation author performed a design/source self-review; a
+different agent independently recounted its saved raw predictions and 89 epoch
+summaries. The API implementation author performed a separate saved-record
+recount from root execution, which is not independent implementation review.
+An explicit attribution amendment preserves that distinction. Root independently
+integrated the saved aggregates; another agent checked its reporting function.
+These are agent checks, not human technical verification. No new scientific
+test-set prediction, adaptive full-pipeline attack, student contribution,
+course approval, rehearsal or final submission tag is claimed. Original
+scientific files and dated report/slides remain unchanged.
+
 ## 2026-11-03: Owner-authorized implementation and execution
 
 The owner explicitly instructed the agent to implement and run the requested
