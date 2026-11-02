@@ -1,0 +1,9 @@
+{
+  "source_commit": "91c3046",
+  "tests": 7,
+  "reported_loop_seconds": 0.002,
+  "status": "passed",
+  "api_calls": 0,
+  "model_calls": 0,
+  "scope": "Synthetic selection, supervision-boundary and full-case fallback checks only"
+}

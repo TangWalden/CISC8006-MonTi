@@ -1,0 +1,24 @@
+{
+  "jobs": [
+    {
+      "arm": "off",
+      "seed": 3,
+      "exit_code": 0,
+      "pid": 518829,
+      "elapsed_seconds": 302.29427344701253,
+      "charged_gpu_wall_hours": 0.08397063151305903,
+      "guardian_sha256": "c9568d3b72140144848feb0c3f2c2010240fe5608f51311e74eabac300e529f0"
+    },
+    {
+      "arm": "always",
+      "seed": 3,
+      "exit_code": 0,
+      "pid": 519355,
+      "elapsed_seconds": 283.80407690803986,
+      "charged_gpu_wall_hours": 0.07883446580778886,
+      "guardian_sha256": "51d28ec8a0bde02de0ddb399a0c021609f1e9be32e77113640f57d6d10e853c4"
+    }
+  ],
+  "charged_with_self_gpu_hours": 0.16827401287944263,
+  "pending": 7
+}

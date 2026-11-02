@@ -1,5 +1,14 @@
 # One-week execution and acceptance plan
 
+Update 2026-11-03: the owner explicitly ordered implementation and execution.
+The validation-only new-method protocol is frozen and running, within a two-GPU-
+hour aggregate phase ceiling and a separate bounded API allowance. Three self
+models completed, and the nine fresh alignment jobs are running. Real LLM
+fusion and the pre-API text-learning extension are implemented; no final test
+or course approval is implied. Do not duplicate the active queue or sync tracked
+server source while its jobs are active. Report actual negative/failed outcomes.
+
+
 User request: complete one week of technical work by 2026-11-05 (Beijing time). The public repository is https://github.com/TangWalden/CISC8006-MonTi . This plan is not evidence of course approval or of the actual UMMoodle deadline.
 
 Update 2026-10-30: all nine technical pilots already completed, with negative mean effects for both ideas. The owner required actual-outcome analysis before improvement selection. The earlier coverage follow-up is on hold. A saved-validation diagnosis of 15 runs and 160 epochs is complete, with a separate integrity and aggregation audit; see [the factual report](../docs/RESULTS_FIRST_DIAGNOSIS.md). The active next item is a separately registered validation-only check of actual edge allocation in the observed low-resource stratum. Full experiments remain conditional on evidence-backed direction and protocol confirmation; the calendar below does not authorize launching them.

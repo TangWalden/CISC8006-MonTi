@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-11-02T18:09:24.311061+00:00",
+  "pid": 517207,
+  "module": "course.fusion_pilot.self_evidence",
+  "arguments": [
+    "--",
+    "run",
+    "--config",
+    "/home/tjy/Project/MonTi-course/runs/owner_methods_20261103_attempt1/fusion-config.json",
+    "--expected-config-sha256",
+    "507fa8384fc509ec1edcaefe4aa699bdf4c54b5402fa7ce2d709e8b9dc9f413b",
+    "--manifest",
+    "/home/tjy/Project/MonTi-course/runs/owner_methods_20261103_attempt1/fusion-manifest-attempt1/cohort_manifest_private.json",
+    "--expected-manifest-sha256",
+    "7673c83eac2647afae2d1fb1ecad462a58ff6cf3d959489f8fd19a14a57ec38d",
+    "--output",
+    "/home/tjy/Project/MonTi-course/runs/owner_methods_20261103_attempt1/fusion-self-attempt1"
+  ],
+  "limit_seconds": 600,
+  "status": "completed",
+  "gpu_uuid": "GPU-d7aa6d97-d823-0319-b218-84acc8e26019",
+  "own_process_uuids": [
+    "GPU-d7aa6d97-d823-0319-b218-84acc8e26019"
+  ],
+  "torch": "1.13.1+cu117",
+  "cuda": "11.7",
+  "elapsed_seconds": 19.68809601094108,
+  "charged_gpu_wall_hours": 0.005468915558594745,
+  "cost_policy": "Conservatively charge complete guardian lifetime, including imports and metadata."
+}

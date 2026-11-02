@@ -1,5 +1,36 @@
 # AI Usage Record
 
+## 2026-11-03: Owner-authorized implementation and execution
+
+The owner explicitly instructed the agent to implement and run the requested
+methods, revising the earlier pilot-execution hold. Codex implemented a numeric
+LLM evidence contract/client, a self-only MLP/evidence runner, current-graph GAGA
+sequence bridge, same-information numeric gate, and isolated conditional
+relationship-moment alignment. The attack gate is a fixed detached TRAIN-reference
+q90 trigger, not a learned/LLM policy or full distribution matching. Original
+scientific source and formal results were not rewritten.
+
+Committed-source checks passed 27 fusion-contract tests, seven alignment
+functional/gradient checks on the locked server CPU environment, and seven
+text-learning selection/fallback checks. These are functional checks, not
+real-data efficacy. Actual self training completed seeds 3/4/5 with 1,848 optimizer
+steps, 1,848 training forwards and 300 self-evaluation forwards; the frozen GAGA
+branch was queried 12 times on TRAIN-meta/validation cohorts, not test nodes.
+The complete self guardian cost was 19.688096 seconds. The nine-job alignment
+matrix then started; two jobs completed at the first published progress snapshot.
+Raw checkpoints, identities, labels and perturbations remain in ignored storage.
+
+The primary API protocol is numeric-only and zero-shot. A separately frozen
+pre-API amendment adds four TRAIN description examples and a twenty-case
+validation comparison using in-context learning, within the same 120-physical-call
+ceiling; it does not fine-tune LLM weights. Same-grid numeric decisions and a
+continuous secondary metric were fixed before either gate's outputs. API calls
+were still zero at this progress snapshot; actual usage/failures will be recorded.
+No fabricated article text or verified calibration is claimed. Fixed graph TRAIN
+meta scores are explicitly in-sample, not out-of-fold. The earlier report/deck
+remain dated snapshots and are not rebuilt to hide changed cost or outcomes.
+
+
 ## 2026-11-02: Additional conditional camouflage candidate
 
 The owner proposed distribution alignment of injected relationship features and

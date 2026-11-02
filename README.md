@@ -1,5 +1,15 @@
 # CISC8006: MonTi Reproduction and Improvements
 
+**Execution update, 3 November 2026:** the owner explicitly requested implementation
+and execution. The [bounded new-method pilot](course/NEW_METHODS_EXECUTION_PROTOCOL_V1.json)
+is now running: three self-model seeds completed, the fresh OFF/ALWAYS/GATED
+alignment matrix is in progress, and the real DeepSeek fusion client plus a
+predeclared text-learning extension are implemented. [Current execution evidence](evidence/new_methods_20261103/)
+does not yet establish efficacy. Raw article mapping is still missing, so this
+pilot uses numeric evidence. No final test evaluation has started. Existing
+report/slides remain dated drafts; their cost snapshots predate these new runs.
+
+
 Team: **Junyi Tang** and **Yifan Fan**. This course project studies one component of [MonTi](https://github.com/bdi-lab/MonTi), the AAAI 2025 paper by Jinhyeok Choi, Heehyeon Kim, and Joyce Jiyoung Whang. This is a course reproduction repository. Author credits and the upstream license are preserved.
 
 **Current baseline conclusion: inconclusive.** All six pre-registered runs are complete. On GossipCop-S, split 0, with fixed official GCN surrogate and GAGA victim checkpoints, learned candidate selection achieves **43.73 ± 0.75% MR**, versus **40.19 ± 1.30%** for the defined random selector (sample standard deviation, three seeds). The mean paired difference is **+3.54 percentage points**, with a **95% interval of [−1.54, 8.62]**. Higher MR means a stronger attack. A positive mean alone does not establish the claim.
