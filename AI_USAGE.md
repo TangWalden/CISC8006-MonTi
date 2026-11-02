@@ -1,5 +1,26 @@
 # AI Usage Record
 
+## 2026-11-02: Owner selects LLM-mediated evidence fusion
+
+The owner selected detector-side defense, explicitly clarified an external LLM
+agent fusing self/content and relationship evidence rather than selecting
+neighbors, and proposed generating textual descriptions to learn fusion decisions.
+This is genuine owner research steering and direction confirmation, not a frozen
+protocol, instructor approval or human code review. An initial uncommitted edge-
+gate interpretation was superseded before implementation or publication.
+Codex and two agents inspected the numeric loader, branch availability, GAGA
+input overlap and leakage boundaries. A metadata-only server listing found no
+standalone article/mapping text in the 13-file processed GossipCop directory;
+this does not prove absence from all source materials. The [current draft](course/LLM_EVIDENCE_FUSION_DRAFT.md)
+separates evidence generation, in-context adaptation, trained text fusion and
+fine-tuning. It explicitly declines to assume LLM superiority or new information
+from numeric-to-text rewriting. Primary ARG and LLM Enhanced Semantics Mining
+sources establish relevant prior art; no exhaustive novelty claim is made.
+Same-information neural/template-text comparisons, calibration, training-label
+boundaries, full-case fallback, API cost and adaptive attacks remain protocol
+items. No model import, data/checkpoint load, inference, training, GPU work,
+dependency download or LLM API call occurred.
+
 ## 2026-11-02: Owner rejects the evaluation route
 
 The owner declined v3 and requested other method improvements. Codex and two

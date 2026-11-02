@@ -77,6 +77,13 @@ route. [Method-level alternatives](course/METHOD_ALTERNATIVES_20261102.md) discu
 explicit budget conditioning and, as a different project direction, robust
 detection. Neither is selected, tested or approved for new experiments.
 
+The owner then selected detector-side defense and clarified an externally called
+LLM agent that fuses self/content and graph-context evidence, not neighbor or edge
+selection. The [evidence-fusion draft](course/LLM_EVIDENCE_FUSION_DRAFT.md) covers
+grounded textual descriptions, possible learning modes and same-information
+controls. LLM superiority, raw-text availability, exact learning design and a
+new inference protocol remain unestablished; no new model/API calls have begun.
+
 Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script/source bytes against the baseline/pilot and results-first figure manifests. Publish from the clean public workspace only.
 
 ## Environment and quick check

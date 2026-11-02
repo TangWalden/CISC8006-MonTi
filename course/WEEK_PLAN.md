@@ -53,6 +53,14 @@ budget-conditioned generation and a separate neighborhood-robust detector
 direction. They are static proposals, not implemented efficacy results or
 permission to start pilots. Preserve v3 as history and await a concrete direction.
 
+The owner subsequently selected detector-side defense and clarified an external
+LLM agent fusing self/content and graph-context evidence, explicitly not selecting
+neighbors. The owner also proposed text descriptions followed by learning to
+decide from those descriptions. The [current draft](LLM_EVIDENCE_FUSION_DRAFT.md)
+separates prompt adaptation, trainable text fusion and fine-tuning. Raw-text
+mapping, branch readiness, same-information controls and a bounded validation/API
+protocol remain open. No real-data run or LLM call is approved or started.
+
 | Date | Work and acceptance criteria |
 |---|---|
 | 10-29 | Create the public repository and preserve the existing history; independently recompute the six baseline outputs and paired interval; publish training logs, per-group counts, and grading gaps. |
