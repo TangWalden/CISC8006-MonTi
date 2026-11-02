@@ -132,6 +132,20 @@ def fusion(root):
         condition[arm] = {key:metrics(subset,lambda r,k=key:r['predictions'][k])
                           for key in ('self_only','graph_only','static_half','template','generated')}
         condition[arm]['numeric_neural_gate_grid'] = metrics(subset,lambda r:numeric[r['case_id']]['predicted_fraud'])
+    clean = {provenance[r['case_id']]['node_id']:r for r in primary
+             if provenance[r['case_id']]['arm'] == 'clean'}
+    transitions = {}
+    for arm in ('off','always','gated'):
+        pairs = [(clean[provenance[r['case_id']]['node_id']],r) for r in primary
+                 if provenance[r['case_id']]['arm'] == arm]
+        assert len(pairs) == 8
+        transitions[arm] = {method:dict(
+            class_changes=sum(x['predictions'][method] != y['predictions'][method] for x,y in pairs),
+            new_errors=sum(x['predictions'][method] == bool(x['label']) and
+                           y['predictions'][method] != bool(y['label']) for x,y in pairs),
+            recoveries=sum(x['predictions'][method] != bool(x['label']) and
+                           y['predictions'][method] == bool(y['label']) for x,y in pairs))
+            for method in ('graph_only','static_half','template','generated')}
     ledger = lines(root/'api_attempt1/api_attempts.jsonl')
     protocol_sha = sha(root/'api_protocol_v1.json')
     assert len(ledger) <= 120 and all(r['protocol_sha256'] == protocol_sha for r in ledger)
@@ -144,7 +158,9 @@ def fusion(root):
     aggregate = dict(primary_32=methods, selected_twenty_case_learning_comparison=comparison,
         primary_prediction_disagreements_vs_graph=pairwise,
         learning_prediction_disagreements_vs_zero_shot=sum(r['predicted_fraud'] != r['primary_generated_prediction'] for r in extension),
-        descriptive_condition_breakdown=condition, unique_original_nodes=len({r['node_id'] for r in provenance.values()}),
+        descriptive_condition_breakdown=condition,
+        posthoc_clean_attack_class_transitions=transitions,
+        unique_original_nodes=len({r['node_id'] for r in provenance.values()}),
         context_count=len({r['context_sha256'] for r in primary}),
         branch_disagreements=sum(r['predictions']['self_only'] != r['predictions']['graph_only'] for r in primary),
         joint_errors=sum(bool(r['predictions']['self_only']) != bool(r['label']) and
@@ -169,6 +185,7 @@ def fusion(root):
             'Only eight original nodes under repeated clean/attack contexts;32case rows are not32independent news items.',
             'Original GAGA TRAIN-meta scores are in-sample, NOT out-of-fold. Both branches are uncalibrated.',
             'Transfers from GCN-optimized attacks are not adaptive attacks against the entire API pipeline.',
+            'Retained clean/attack class transitions are post-hoc diagnostics; a probe without induced graph-branch errors cannot establish protective benefit.',
             'Joint same-side errors cannot be corrected by fixed-threshold convex fusion.',
             'No superiority, calibrated rationale truth, full-test robustness or course approval follows.'])
     return aggregate
