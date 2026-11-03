@@ -596,6 +596,29 @@
       "diagnostic_wall_seconds": 0.3445328730158508,
       "process_cpu_seconds": null,
       "timing_label_correction": "evidence/dual_surrogate_v1/failure_diagnosis/timing_label_correction.json"
+    },
+    "deep_saved_diagnosis": {
+      "status": "completed; descriptive only, no causal mechanism established",
+      "evidence": "evidence/dual_surrogate_deep_diagnosis_v1/execution_trace.json",
+      "gross_baseline_successes_lost": 355,
+      "new_successes_gained": 34,
+      "additional_clean_wrong_recoveries": 86,
+      "net_wrong_difference": -407,
+      "group_seed_wins_ties_losses": [
+        7,
+        179,
+        198
+      ],
+      "group_macro_reference_joint_percent": [
+        49.67338507161698,
+        37.81555006615475
+      ],
+      "input_cache_unique_nodes": 374,
+      "relation_vectors_changed_any_coordinate": 308,
+      "self_vectors_identical": true,
+      "new_model_queries": 0,
+      "GPU_hours": 0,
+      "fresh_teacher_on_same_VALID_attacks_still_unmeasured": true
     }
   }
 }

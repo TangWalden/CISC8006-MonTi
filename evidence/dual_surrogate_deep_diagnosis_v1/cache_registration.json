@@ -1,0 +1,15 @@
+{
+  "status": "POSTHOC_after_overall_VALID_outcomes_known",
+  "source_sha256": "c0da1a67fb47df3df350b021a9319d473d64c949b6eccc57041dfec0d897a9c2",
+  "cohort": "All374 unique node IDs from all128 saved clean VALID groups; no outcome filtering",
+  "comparisons": "Self token; six relation-token means and group counts under FIT80 versus full original TRAIN masks",
+  "threshold_for_changed_vector": 1e-06,
+  "cache_read_limit": 4,
+  "maximum_selected_nodes": 512,
+  "maximum_wall_seconds": 300,
+  "model_queries": 0,
+  "training_steps": 0,
+  "API_calls": 0,
+  "PyTorch_tensor_loads": 0,
+  "graph_loads": 0
+}

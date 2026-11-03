@@ -102,6 +102,22 @@ metadata mkdir quoting error was corrected before input reads and retained.
 [Source and complete saved diagnosis](evidence/dual_surrogate_v1/failure_diagnosis/summary.json)
 are published; this adds no experiment or human review.
 
+The owner then requested deeper concrete analysis. A separate saved-JSON
+join retained all 384 group-seed cases / 3,273 correlated occurrences and
+reconciled raw outcomes to the completed summaries. Source and definitions
+were frozen before raw parsing, after aggregate outcomes were known. It
+reported 355 gross successes lost, 34 gained and 86 clean-error recoveries;
+micro and group-macro are both negative. A separate NumPy-only comparison
+read four frozen clean input caches for all 374 unique VALID nodes: self
+features match, group totals match, and about 19.7% of known incidences move
+into unknown buckets under the FIT80 convention. No new model/graph/checkpoint/
+PyTorch-tensor loading, training, API or GPU work occurred. Separate agents
+reviewed code and reported statistics without rerunning analyses. Numeric
+cache differences are not causal proof; conditional cosine/empty-group
+denominators and missing fresh-teacher VALID predictions remain explicit.
+The [complete trace](evidence/dual_surrogate_deep_diagnosis_v1/execution_trace.json)
+and original-private/public-LF CSV mapping preserve the new descriptive work.
+
 ## Failure-driven owner follow-up completed on 3 November 2026
 
 - Planning: after the actual owner requested analysis, modifications and execution,

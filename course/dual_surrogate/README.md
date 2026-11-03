@@ -215,6 +215,69 @@ Process CPU time was not measured. The training teacher and validation victim
 also differ in weights and FIT80 versus full-TRAIN group-label conventions;
 these differences are not independently isolated as causes.
 
+## Deeper paired and input-convention diagnosis
+
+The owner requested further explanation from concrete data. Two new analyses
+were defined after the negative arm outcomes were known and frozen before their
+new raw reads. They use saved records/numeric caches, not new model calls.
+The [paired summary](../../evidence/dual_surrogate_deep_diagnosis_v1/paired_summary.json)
+reconciles every raw arm/seed total to the completed evaluation; the
+[complete strata](../../evidence/dual_surrogate_deep_diagnosis_v1/all_strata.csv)
+retain both detector channels and all size/budget/clean-status rows. Public CSV
+line endings have an [explicit original-byte mapping](../../evidence/dual_surrogate_deep_diagnosis_v1/publication_line_endings.json).
+
+Against GCN-only, joint wins in 7 group-seed cases, ties in 179 and loses in 198
+out of 384. Group-macro MR also falls, 49.6734% to 37.8156%, alongside the
+registered occurrence MR, 51.3596% to 38.9245%. Thus the negative result is not
+solely a large-group weighting effect. Among 2,079 clean-correct occurrences,
+GCN-only induces 487 new errors and joint induces 166, with 132 shared. Joint
+loses **355** original attack successes and gains **34** new ones. It additionally
+corrects **86** already-clean-wrong occurrences. The exact deficit is therefore
+`355 - 34 + 86 = 407`, not 321 gross lost successes.
+
+| Disjoint budget regime | Occurrences | Joint minus GCN-only wrong count | Difference (pp) |
+|---|---:|---:|---:|
+| One injected node, one edge | 48 | -2 | -4.1667 |
+| One injected node, multiple edges | 165 | -4 | -2.4242 |
+| Multiple injected nodes | 3,060 | -401 | -13.1046 |
+
+Most occurrences also lie in the multi-node regime; these associations do not
+prove that budget itself causes the failure. All four historical TRAIN-derived
+size bins are negative. The earlier one-edge-only opportunity cannot explain
+this new deficit. One outcome-selected 33-target, seed-3 example drops from
+18 wrong to 12 under identical 122-node/5,734-edge caps, losing seven new-error
+successes and gaining one. A seed-4, 33-target example instead rises 16 to 19.
+Neither the failure example nor the seven positive group-seed cases is a
+representative experiment or a validated gate-selection rule.
+
+The [cache comparison](../../evidence/dual_surrogate_deep_diagnosis_v1/cache_summary.json)
+checks all 374 unique VALID target nodes without correctness filtering. Their
+self vectors are identical. At least one relation coordinate changes by more
+than 1e-6 for 308 nodes. Both hop totals are identical; known-neighbor counts
+redistribute into unknown groups: 2,346/11,906 one-hop incidences (19.7044%) and
+44,955/228,510 two-hop incidences (19.6731%). These are repeated memberships, not
+unique removed neighbors or a fraction of features destroyed.
+
+The surviving nonzero known-group vectors have high median cosine: first-hop
+benign/fraud 0.9999916/1.0 over only 68/152 pairs; second-hop 0.9999825/0.9998163
+over 246/329 pairs. Empty known groups increase 295 to 306 and 202 to 222 in the
+first hop, and 97 to 128 and 39 to 45 in the second hop. High surviving-vector
+similarity therefore does not mean every change is negligible; the 308 changed
+inputs likewise do not prove large damage or causation. Counts create group
+means but are not themselves direct GAGA inputs.
+
+Code inspection finds the intended loss sign and frozen teacher eval state.
+Both GAGA models share architecture, but the fresh teacher uses FIT80 group
+labels and the victim uses full-TRAIN group labels, with different fitted
+weights. Raw equal loss weights also do not imply equal gradient influence;
+no gradient conflict was measured here. Generator conditioning remains h_GCN.
+These are possible explanatory differences, not isolated causes. Crucially,
+there is no saved fresh-teacher prediction on the same VALID attack graphs.
+Current records cannot separate held-out teacher failure from teacher/victim
+disagreement, overfitting, objective interaction or approximate-gradient bias.
+The next useful step is a separately registered same-graph decision diagnostic,
+not a claim that adding layers or an agent will repair this result.
+
 No further tuning, seeds, API or GPU work is planned for this phase. These
 development results do not replace the earlier 43.728% formal test reproduction
 or its inconclusive learned-versus-random paired interval. No final test or final

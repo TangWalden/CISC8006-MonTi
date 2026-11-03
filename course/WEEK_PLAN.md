@@ -16,6 +16,14 @@ outcomes. Preserve the frozen baseline and prior negative methods, and await
 actual owner feedback before a newly registered study. Full-test protocol and
 final tag retain separate checkpoints; human/course checks are incomplete.
 
+The owner then requested deeper data-specific analysis. A saved-record join
+reconciled gross losses/gains and all size/budget strata; four clean numeric
+caches quantified the FIT80/full-TRAIN group-input difference. See the
+[complete diagnosis](dual_surrogate/README.md#deeper-paired-and-input-convention-diagnosis).
+No model queries, training, tensors or GPU use were added. Input differences
+and negative strata are not causal proof or a validated gate. The next
+inference diagnostic still requires a concrete separate protocol.
+
 Update 2026-11-03, subsequent owner instruction: the
 [failure-driven six-arm study](alignment_agent/README.md) has completed all 18
 trainings, its saved prediction/hash audit and the actual API/fallback recount.

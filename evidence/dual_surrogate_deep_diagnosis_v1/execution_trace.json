@@ -1,0 +1,43 @@
+{
+  "status": "completed_posthoc_saved_data_diagnosis",
+  "overall_negative_outcomes_known_before_analysis": true,
+  "base_public_head": "ba76e5f1edbfedda998c1c4f48e8d07f35ad808c",
+  "source_hashes_frozen_before_new_raw_reads": true,
+  "source_files": [
+    {
+      "path": "course/dual_surrogate/audits/paired_outcomes.py",
+      "sha256": "76357bc1338e7da27f15e5176b59a6289dfde00dd20092e91550ec1a81f1ab34",
+      "private_original_sha256": "76357bc1338e7da27f15e5176b59a6289dfde00dd20092e91550ec1a81f1ab34"
+    },
+    {
+      "path": "course/dual_surrogate/audits/cache_mismatch.py",
+      "sha256": "c0da1a67fb47df3df350b021a9319d473d64c949b6eccc57041dfec0d897a9c2",
+      "private_original_sha256": "c0da1a67fb47df3df350b021a9319d473d64c949b6eccc57041dfec0d897a9c2"
+    }
+  ],
+  "model_queries": 0,
+  "new_attack_generations": 0,
+  "optimizer_steps": 0,
+  "LLM_API_calls": 0,
+  "GPU_hours": 0,
+  "PyTorch_tensor_loads": 0,
+  "graph_or_checkpoint_loads": 0,
+  "numeric_NPY_caches_read": 4,
+  "paired_scope": "13 saved prediction JSONLs; all384 group-seed cases/3273 correlated occurrences, no primary denominator changes",
+  "cache_scope": "All374 unique selected VALID target IDs, four immutable clean numeric caches, no outcome filtering",
+  "private_root": "parent/work/dual_surrogate_deep_diagnosis_20261103",
+  "saved_record_review": "Separate-agent source/report review without rerunning models or cache reads; not human verification",
+  "numeric_input_divergence_is_causal_proof": false,
+  "no_fresh_teacher_VALID_predictions_available": true,
+  "future_diagnostic_recommendation": "Before another method, separately register same-saved-graph teacher/victim decision checks. Crossed weight/mask views would be off-training-convention ablations, not established corrected methods. No such calls occurred.",
+  "limits": [
+    "Repeated374 targets and matched group/seed cases are not3273 independent observations.",
+    "Group/budget stratification and selected cases are post-hoc descriptive; all strata are retained.",
+    "The seven group-seed wins do not define a deployable gate or a new selected improvement.",
+    "About19.7% known-neighbor incidence redistribution is not19.7% feature destruction.",
+    "308of374 means any relation coordinate difference above1e-6, not large or causal damage.",
+    "Cosines are conditional on both vectors nonzero and exclude disappearing groups.",
+    "No exact mechanism such as overfitting or gradient conflict was established."
+  ],
+  "line_ending_map": "evidence/dual_surrogate_deep_diagnosis_v1/publication_line_endings.json"
+}

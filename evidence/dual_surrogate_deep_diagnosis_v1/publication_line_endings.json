@@ -1,0 +1,10 @@
+{
+  "status": "explicit_publication_line_ending_mapping",
+  "scientific_values_changed": false,
+  "private_original_retained": true,
+  "path": "evidence/dual_surrogate_deep_diagnosis_v1/all_strata.csv",
+  "original_private_sha256": "4b731468c4f7ead580e0b2fb175df876a7410c3f12350321dfb45167ff75f763",
+  "public_LF_sha256": "566e94194db8a4e376095d51b078faa30fd6676fdca60ffcf31ff6f33331a729",
+  "scope": "Paired receipt output hashes refer to original private bytes; the public CSV has identical records with LF line endings.",
+  "CRLF_line_endings_normalized": 577
+}

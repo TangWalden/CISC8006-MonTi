@@ -328,5 +328,20 @@
     "final_test_queries": 0,
     "LLM_API_calls": 0,
     "individual_timer_amendment": "480to900seconds for one incomplete TRAIN-only run; total2GPUh unchanged"
+  },
+  "dual_surrogate_deep_saved_diagnosis": {
+    "status": "completed; post-hoc saved JSON and numeric cache analysis only",
+    "evidence": "evidence/dual_surrogate_deep_diagnosis_v1/execution_trace.json",
+    "GPU_hours": 0,
+    "model_queries": 0,
+    "API_calls": 0,
+    "PyTorch_tensor_loads": 0,
+    "NPY_caches_read": 4,
+    "paired_process_cpu_seconds": 0.765625,
+    "paired_wall_seconds": 2.9219999999622814,
+    "cache_process_cpu_seconds": 2.164981022,
+    "cache_wall_seconds": 2.1715146149508655,
+    "cache_outer_wall_seconds": 2.2763464680174366,
+    "research_GPU_charge_unchanged": true
   }
 }

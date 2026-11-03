@@ -1,0 +1,33 @@
+{
+  "status": "passed_precommit_checks",
+  "checked_utc": "2026-11-03T09:39:46.743812+00:00",
+  "base_public_head": "ba76e5f1edbfedda998c1c4f48e8d07f35ad808c",
+  "prior_phase_26_input_output_hashes_unchanged": true,
+  "dated_binaries_unchanged": {
+    "docs/MonTi_Report_Draft.pdf": "066cb930744a767b631d608ee1a13f07201f19e71ddc550accc28c9b9f8ac082",
+    "docs/MonTi_Slides_Draft.pptx": "e0c42466988c38aad344594a96c709350af9bc434ab91d166de4170c934449db"
+  },
+  "relative_links_checked": 103,
+  "source_AST_only": true,
+  "gross_loss_gain_identity_reconciled": true,
+  "paired_and_cache_clean_cohort_hash_matches": true,
+  "research_GPU_charge_unchanged": true,
+  "CSV_original_and_public_LF_bytes_explicitly_mapped": true,
+  "new_committed_hashes_required": {
+    "evidence/dual_surrogate_deep_diagnosis_v1/all_strata.csv": "566e94194db8a4e376095d51b078faa30fd6676fdca60ffcf31ff6f33331a729",
+    "evidence/dual_surrogate_deep_diagnosis_v1/cache_input_hashes.json": "5e9cc0226295977d3c09edc3e32b7af0471394064426fc90bc54e4fcb29a2671",
+    "evidence/dual_surrogate_deep_diagnosis_v1/cache_receipt.json": "7ba43f6bcb69468ed8547f2c033084a59552b368e6fe8e625a54181e654eab5a",
+    "evidence/dual_surrogate_deep_diagnosis_v1/cache_registration.json": "805ccaaaee26aa0727c5fc126171103fba4c5de174a31d90590313cc63cea454",
+    "evidence/dual_surrogate_deep_diagnosis_v1/cache_source_freeze.json": "afbc3ba26cce7c994bff61f54a6b65561a175bac816e36981cc54993f8f3048d",
+    "evidence/dual_surrogate_deep_diagnosis_v1/cache_summary.json": "638c613a7872cf94820e5e3b455d491e4266be9f06cf43c87973ee43ad3b4029",
+    "evidence/dual_surrogate_deep_diagnosis_v1/execution_trace.json": "23597de996d116f2d5675039d60680f90033788a643a9ecdef20a643ce195cb3",
+    "evidence/dual_surrogate_deep_diagnosis_v1/paired_receipt.json": "326af2a4ecf6b50a4191f494e93c1f0602367535d1f71eb4ae824244a5f31112",
+    "evidence/dual_surrogate_deep_diagnosis_v1/paired_registration.json": "2cadd4f532cdec64047fd97cb1a307f7b0781816811026c9b7f128d73188c750",
+    "evidence/dual_surrogate_deep_diagnosis_v1/paired_summary.json": "20b789f6d3d7d06b7d825dd56634e4c7f02c059267720e3913cd2be55071f035",
+    "evidence/dual_surrogate_deep_diagnosis_v1/publication_line_endings.json": "134a90190aae0f5230df788934f32932f4e61220cb0cac3f76ec38f94359e699",
+    "course/dual_surrogate/audits/paired_outcomes.py": "76357bc1338e7da27f15e5176b59a6289dfde00dd20092e91550ec1a81f1ab34",
+    "course/dual_surrogate/audits/cache_mismatch.py": "c0da1a67fb47df3df350b021a9319d473d64c949b6eccc57041dfec0d897a9c2"
+  },
+  "additional_models_or_training": 0,
+  "independent_review_scope": "Separate-agent source/report review; not rerun, causal confirmation or human verification"
+}

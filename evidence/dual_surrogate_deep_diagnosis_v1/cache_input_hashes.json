@@ -1,0 +1,30 @@
+{
+  "full_sequence": {
+    "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_sequence_0.npy",
+    "sha256": "caf9f30772e2977f20ef3dcb4cb127d7cdf73e3986f7cc5599f5753cb3aa1b89"
+  },
+  "full_degree": {
+    "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_degree_0.npy",
+    "sha256": "41e401162c923650eeb825d582f96ac17498a6fed782c829efedbc95ac693ed9"
+  },
+  "fit_sequence": {
+    "path": "runs/dual_surrogate_20261103_attempt1/teachers_attempt1/fit_sequences.npy",
+    "sha256": "35b2ce31b24c3105499070ed1c08b96e07e99db9876fddcb0d2d56e3cce77638"
+  },
+  "fit_degree": {
+    "path": "runs/dual_surrogate_20261103_attempt1/teachers_attempt1/fit_degrees.npy",
+    "sha256": "b62dc21345671d6e9c6ef78784d87b616c9c08cc4641c7d6861cdceff5938a96"
+  },
+  "runs/dual_surrogate_20261103_attempt1/experiment_protocol_v4.json": {
+    "sha256": "d816e1e1aaf409b414afe4a26beafba71d3c07e4f4eccc58e6258daf6cd52406"
+  },
+  "runs/dual_surrogate_20261103_attempt1/teachers_attempt1/fit_cache_manifest.json": {
+    "sha256": "644aa7872c581e8b6df87f8c05b67e7ffc8c8082a60444a5e0a72f71e9fb5fbe"
+  },
+  "runs/dual_surrogate_20261103_attempt1/evaluation_attempt1/clean_predictions.jsonl": {
+    "sha256": "b0ae0e1f2d305856578906dbc211bab40b291f248485df6c0fdd3b2733aa5330"
+  },
+  "runs/dual_surrogate_20261103_attempt1/teachers_attempt1/train_split_private.json": {
+    "sha256": "ca4f614ac1e956cc50509e5216984f5e4ec3e93f12122a19e80c5242261d8ba2"
+  }
+}
