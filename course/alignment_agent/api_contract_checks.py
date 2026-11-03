@@ -126,6 +126,14 @@ class ControllerContractChecks(unittest.TestCase):
         with self.assertRaises(ContractError):
             resolve_decision(e, None, "a" * 64)
 
+    def test_invalid_unicode_response_preserves_fallback(self):
+        raw = '{"align":true,"reason":"' + chr(0xd800) + '"}'
+        with self.assertRaises(ContractError):
+            strict_json(raw)
+        result = resolve_decision(envelope(), raw, "a" * 64)
+        self.assertTrue(result["fallback"])
+        self.assertEqual(len(result["response_sha256"]), 64)
+
 
 if __name__ == "__main__":
     unittest.main()
