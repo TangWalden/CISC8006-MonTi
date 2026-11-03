@@ -19,6 +19,31 @@ Before any teacher fitting, root strengthened the real-TRAIN preflight to check
 that GAGA feedback reaches both actual MonTi output heads as well as generated
 features/edge values. This is a pre-execution validity gate, not an efficacy result.
 
+Actual teacher preparation subsequently completed from source
+`5025ebc4a3a088dfce76485e06c0a592bd933d79`, under preparation protocol SHA256
+`fea1a6c279f4d573d7ed6645b5c00c9f5d3d7b360e1f8f9f0ada2b72340dc190`.
+The fresh GAGA teacher selected epoch 38 of 48 completed epochs, with internal
+TRAIN-holdout macro-F1 0.884669 and AUC 0.953011. The independent GCN teacher
+selected epoch 22 of 32, with macro-F1 0.691885 and AUC 0.753863. Both passed
+the frozen FIT/TUNE quality gates. Preparation recorded 736 teacher forwards
+and 560 optimizer updates; these are actual executions, not synthetic checks.
+Only FIT80 labels enter GAGA group inputs; internal TUNE labels select the
+checkpoint. No original-validation/test labels selected either teacher, and
+the official GAGA victim was not loaded or queried.
+
+The first real-TRAIN preflight then failed while integral floating-point TRAIN
+indices were used for PyTorch indexing. The failed attempt is preserved: it
+made zero attack generations, attack-model inference calls or optimizer
+updates, and zero official-victim queries. Root is preparing a checked index-
+dtype correction and a fresh preflight, retaining both trained teachers and
+the scientific settings. No teacher retraining, successful gradient gate,
+attacker training or efficacy is claimed at this checkpoint. The conservative
+stage charge through teacher preparation and this failure is
+0.032764715937212 GPU-hours; the phase ceiling remains two aggregate GPU-hours.
+The earlier 20 CPU checks remain the completed test record; continuation checks
+have not run yet. Agent implementation/review remains distinct from human
+technical verification and course approval.
+
 ## Failure-driven owner follow-up completed on 3 November 2026
 
 - Planning: after the actual owner requested analysis, modifications and execution,

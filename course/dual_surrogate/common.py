@@ -48,6 +48,10 @@ def validate_protocol(path):
         relative = pathlib.Path(row['path'])
         if relative.is_absolute() or '..' in relative.parts or sha256(ROOT/relative) != row['sha256']:
             raise RuntimeError('Frozen input mismatch: '+row['path'])
+    for row in protocol.get('reused_teacher_receipts',[]):
+        relative=pathlib.Path(row['path'])
+        if relative.is_absolute() or '..' in relative.parts or sha256(ROOT/relative)!=row['sha256']:
+            raise RuntimeError('Retained teacher receipt changed: '+row['path'])
     if tuple(protocol['arms']) != ARMS or protocol['seeds'] != [3,4,5]:
         raise RuntimeError('Arms/seeds changed.')
     if protocol['phase_gpu_hours'] != 2 or protocol['epochs'] != 8 or len(protocol['train_groups']) != 256 or len(protocol['valid_groups']) != 128:

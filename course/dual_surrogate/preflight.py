@@ -33,6 +33,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--protocol',required=True);parser.add_argument('--output',required=True)
     args=parser.parse_args();out=private_output(args.output,create=True);start=time.monotonic()
     result=dict(status='failed',optimizer_steps=0,sealed_victim_loaded=False,sealed_victim_forwards=0,test_queries=0)
+    engine=None;counts=dict(gcn_base=0,gcn_new=0,gaga_new=0,gaga_victim=0);autograd_calls=0
     try:
         p,provenance=validate_protocol(args.protocol);teacher=ROOT/p['teacher_directory'];verify_teacher_directory(teacher)
         split=json.loads((teacher/'train_split_private.json').read_text())
@@ -58,18 +59,19 @@ def main():
             other=updated_sequences(full,graph,ids,candidates,injected,training=True)
             other_ref=original_update(full,graph,ids,candidates,injected)
             if not torch.allclose(other,other_ref,atol=2e-5,rtol=1e-5):raise RuntimeError('Original-TRAIN hard-forward differs.')
-            a=checked_logits(engine.teachers['gaga_new'](seq),len(ids));b=checked_logits(engine.teachers['gaga_new'](ref),len(ids))
+            counts['gaga_new']+=1;a=checked_logits(engine.teachers['gaga_new'](seq),len(ids))
+            counts['gaga_new']+=1;b=checked_logits(engine.teachers['gaga_new'](ref),len(ids))
             if not torch.allclose(a,b,atol=2e-5,rtol=1e-5):raise RuntimeError('New GAGA hard-forward logits differ.')
             loss=torch.nn.functional.softplus(a[:,1]-a[:,0]).mean()
-            gradients=torch.autograd.grad(loss,engine.live_capture,retain_graph=True,allow_unused=True)
+            autograd_calls+=1;gradients=torch.autograd.grad(loss,engine.live_capture,retain_graph=True,allow_unused=True)
             norms=[0.0 if g is None else float(g.detach().double().norm()) for g in gradients]
             if not all(__import__('math').isfinite(v) for v in norms):raise RuntimeError('Nonfinite feature/edge gradient.')
-            head_gradients=torch.autograd.grad(loss,(engine.model.linear_feat.weight,engine.model.linear_edge.weight),
+            autograd_calls+=1;head_gradients=torch.autograd.grad(loss,(engine.model.linear_feat.weight,engine.model.linear_edge.weight),
                 retain_graph=True,allow_unused=True)
             head_norms=[0.0 if g is None else float(g.detach().double().norm()) for g in head_gradients]
             if not all(__import__('math').isfinite(v) for v in head_norms):raise RuntimeError('Nonfinite feature/edge head gradient.')
-            g1=engine.teacher_logits('gcn_base',graph,ids,True)
-            g2=gcn_logits(gcn2,graph,ids,training=True,full_graph=True)
+            counts['gcn_base']+=1;g1=engine.teacher_logits('gcn_base',graph,ids,True)
+            counts['gcn_new']+=1;g2=gcn_logits(gcn2,graph,ids,training=True,full_graph=True)
             rows.append(dict(group=group,targets=len(ids),sequence_max_error=float((seq-ref).abs().max()),
                 original_mask_sequence_max_error=float((other-other_ref).abs().max()),
                 logits_max_error=float((a-b).abs().max()),feature_gradient_norm=norms[0],edge_gradient_norm=norms[1],trace=trace,
@@ -92,6 +94,8 @@ def main():
     except BaseException as error:
         traceback.print_exc();result.update(error=repr(error),traceback=traceback.format_exc())
     finally:
+        result['classifier_forwards']=counts;result['autograd_calls']=autograd_calls
+        result['generator_forwards']=0 if engine is None else engine.generator_forwards
         result['elapsed_seconds']=time.monotonic()-start;write_json(out/'result.json',result,exclusive=True)
         print('DUAL_PREFLIGHT_END',json.dumps(result,allow_nan=False),flush=True)
     if result['status']!='passed':raise SystemExit(1)

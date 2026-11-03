@@ -17,7 +17,11 @@ def main():
     args=parser.parse_args();p,provenance=validate_protocol(args.protocol)
     stage=pathlib.Path(p['stage_root']);out=private_output(args.output,create=True)
     lock=(stage/'queue.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    charged=0.0;jobs=[]
+    charged=0.0;jobs=[];attempt=int(p.get('execution_attempt',1))
+    if 'prior_progress_ref' in p:
+        row=p['prior_progress_ref'];path=ROOT/row['path']
+        if sha256(path)!=row['sha256']:raise RuntimeError('Prior accounting bytes changed.')
+        previous=json.loads(path.read_text());charged=float(previous['charged_gpu_hours']);jobs=list(previous['jobs'])
     def run(name,module,arguments,limit):
         nonlocal charged
         if charged+limit/3600+.02>p['phase_gpu_hours']:raise RuntimeError('Aggregate ceiling prevents another process.')
@@ -40,21 +44,22 @@ def main():
         if code:raise RuntimeError('A process failed; partial records retained, no automatic retry: '+name)
         return row
     try:
-        teacher=stage/'teachers_attempt1'
-        run('teacher_preparation','course.dual_surrogate.prepare_teachers',
-            ['--protocol',str(pathlib.Path(args.protocol).resolve()),'--output',str(teacher),'--gpu','0'],p['teacher_wall_seconds'])
+        teacher=ROOT/p['reuse_teacher_directory'] if 'reuse_teacher_directory' in p else stage/'teachers_attempt1'
+        if 'reuse_teacher_directory' not in p:
+            run('teacher_preparation','course.dual_surrogate.prepare_teachers',
+                ['--protocol',str(pathlib.Path(args.protocol).resolve()),'--output',str(teacher),'--gpu','0'],p['teacher_wall_seconds'])
         teacher_result=json.loads((teacher/'result.json').read_text())
         if teacher_result['status']!='completed':raise RuntimeError('Teacher quality/readiness failed.')
         q=dict(p,teacher_directory=str(teacher.relative_to(ROOT)),
             teacher_artifacts_ref=dict(path=str((teacher/'teacher_artifacts.json').relative_to(ROOT)),sha256=sha256(teacher/'teacher_artifacts.json')))
         q.pop('_protocol_path',None);q.pop('_protocol_sha256',None)
-        preprotocol=stage/'preflight_protocol_v1.json';write_json(preprotocol,q,exclusive=True)
-        preflight=stage/'preflight_attempt1'
+        preprotocol=stage/('preflight_protocol_v%d.json'%attempt);write_json(preprotocol,q,exclusive=True)
+        preflight=stage/('preflight_attempt%d'%attempt)
         run('real_train_preflight','course.dual_surrogate.preflight',
             ['--protocol',str(preprotocol),'--output',str(preflight)],p['preflight_wall_seconds'])
         if json.loads((preflight/'result.json').read_text())['status']!='passed':raise RuntimeError('Preflight did not pass.')
         q['preflight_ref']=dict(path=str((preflight/'result.json').relative_to(ROOT)),sha256=sha256(preflight/'result.json'))
-        protocol=stage/'experiment_protocol_v1.json';write_json(protocol,q,exclusive=True)
+        protocol=stage/('experiment_protocol_v%d.json'%attempt);write_json(protocol,q,exclusive=True)
         for seed in p['seeds']:
             for arm in ARMS:
                 name='%s_seed%d'%(arm,seed)
@@ -72,8 +77,9 @@ def main():
             completed_utc=dt.datetime.now(dt.timezone.utc).isoformat(),test_queries=0,LLM_API_calls=0)
         write_json(out/'queue_complete.json',complete,exclusive=True);write_json(stage/'queue_complete.json',complete,exclusive=True)
     except BaseException as error:
-        write_json(stage/'queue_failed.json',dict(status='failed',jobs=jobs,charged_gpu_hours=charged,
-            error_type=type(error).__name__,error=str(error)),exclusive=True)
+        failure=dict(status='failed',jobs=jobs,charged_gpu_hours=charged,error_type=type(error).__name__,error=str(error))
+        write_json(out/'queue_failed.json',failure,exclusive=True)
+        write_json(stage/(out.name+'_queue_failed.json'),failure,exclusive=True)
         raise
 
 

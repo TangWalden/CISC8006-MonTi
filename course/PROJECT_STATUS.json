@@ -383,7 +383,7 @@
   "dual_surrogate_stage": {
     "owner_implementation_and_bounded_validation_authorized": true,
     "owner_instruction": "Implement the recommendation and adjust according to build results",
-    "status": "20 CPU known-answer checks passed; strengthened real-TRAIN output-head gradient gate prepared; teacher and attacker runs not started",
+    "status": "Both independent teachers passed internal TRAIN quality gates; first real-TRAIN preflight failed on index dtype before attack generations/inference/updates; engineering continuation planned with teachers retained",
     "protocol": "course/DUAL_SURROGATE_PROTOCOL_V1.json",
     "phase_gpu_ceiling": 2,
     "arms": [
@@ -404,6 +404,53 @@
     "final_test_authorized": false,
     "final_tag_authorized": false,
     "LLM_API_calls": 0,
+    "preparation_source_commit": "5025ebc4a3a088dfce76485e06c0a592bd933d79",
+    "preparation_protocol_sha256": "fea1a6c279f4d573d7ed6645b5c00c9f5d3d7b360e1f8f9f0ada2b72340dc190",
+    "teacher_artifacts_sha256": "fe5eb9bae57d09c1582847880704397e19c9b83671462ef4d77c9efe32c35e44",
+    "teacher_preparation": {
+      "status": "completed; both frozen quality gates passed",
+      "gaga": {
+        "selected_epoch": 38,
+        "completed_epochs": 48,
+        "internal_tune_macro_f1": 0.8846690611296482,
+        "internal_tune_auc": 0.9530105311355311,
+        "quality_passed": true
+      },
+      "independent_gcn": {
+        "selected_epoch": 22,
+        "completed_epochs": 32,
+        "internal_tune_macro_f1": 0.6918846418674829,
+        "internal_tune_auc": 0.7538633241758241,
+        "quality_passed": true
+      },
+      "internal_tune_nodes": 1320,
+      "teacher_model_forwards": 736,
+      "teacher_optimizer_steps": 560,
+      "gaga_fit_forwards": 528,
+      "gaga_internal_tune_forwards": 144,
+      "independent_gcn_fit_forwards": 32,
+      "independent_gcn_internal_tune_forwards": 32,
+      "official_gaga_victim_loaded": false,
+      "official_gaga_victim_forwards": 0,
+      "test_used": false
+    },
+    "preflight_attempt1": {
+      "status": "failed; preserved",
+      "failure": "Integral floating-point original TRAIN indices require checked conversion to a supported PyTorch index dtype",
+      "attack_generations": 0,
+      "attack_inference_calls": 0,
+      "optimizer_steps": 0,
+      "official_gaga_victim_loaded": false,
+      "official_gaga_victim_forwards": 0,
+      "test_queries": 0
+    },
+    "attack_training_jobs_started": 0,
+    "attack_training_jobs_completed": 0,
+    "stage_gpu_hours_charged_to_date": 0.032764715937212,
+    "stage_gpu_hours_scope": "Conservative process/guardian charge through teacher preparation and failed preflight; not the complete planned phase",
+    "continuation": "Planned checked index-dtype correction and fresh preflight using the completed teachers; no teacher retraining or scientific-setting change",
+    "continuation_cpu_checks_run": false,
+    "efficacy": "Not evaluated; teacher internal quality is not attack or victim-transfer improvement",
     "cpu_checks": {
       "source_commit": "668044fae8f5fa745d4de9abb77ab7ce067f889d",
       "tests": 20,

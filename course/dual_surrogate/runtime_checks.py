@@ -3,10 +3,17 @@ import random
 import unittest
 import numpy as np
 import torch
-from course.dual_surrogate.runtime import checked_logits,fork_rng
+from course.dual_surrogate.runtime import checked_logits,fork_rng,original_train_masks
 
 
 class RuntimeChecks(unittest.TestCase):
+    def test_integral_float_training_indices_are_normalized_without_label_leakage(self):
+        masks=original_train_masks(torch.tensor([0,1,1,0]),np.array([0.,2.]))
+        self.assertEqual(masks['train_neg'].tolist(),[1,0,0,0])
+        self.assertEqual(masks['train_pos'].tolist(),[0,0,1,0])
+        self.assertEqual(masks['train_masked'].tolist(),[0,1,0,1])
+        with self.assertRaises(ValueError):original_train_masks(torch.tensor([0,1]),[.5])
+
     def test_singleton_gaga_logits_keep_target_axis(self):
         x=torch.tensor([.2,.8]);self.assertEqual(tuple(checked_logits(x,1).shape),(1,2))
         with self.assertRaises(RuntimeError):checked_logits(x,2)

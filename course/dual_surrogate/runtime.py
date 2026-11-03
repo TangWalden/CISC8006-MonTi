@@ -115,14 +115,25 @@ def load_original_view(data, adj=None, adj2=None):
         adj.setdiag(0); adj.eliminate_zeros()
     if adj2 is None:
         adj2 = sp.load_npz(directory/'gossipcop_0.05_gaga_adj2_0.npz')
-    train = torch.zeros(data.graph.num_nodes(),dtype=torch.float32,device=data.graph.device)
-    train[torch.as_tensor(data.idx_train,device=data.graph.device)] = 1
-    masks = dict(train_neg=(1-data.labels.float())*train,
-        train_pos=data.labels.float()*train,train_masked=1-train)
+    masks = original_train_masks(data.labels,data.idx_train)
     return SimpleNamespace(graph=data.graph,features=data.features,device=data.device,feat_dim=data.feat_dim,
         adj=adj,adj2=adj2,group_masks=masks,
         feat_sum=torch.from_numpy(np.load(directory/'gossipcop_0.05_gaga_feat_sum_0.npy')),
         d=torch.from_numpy(np.load(directory/'gossipcop_0.05_gaga_degree_0.npy')))
+
+
+def original_train_masks(labels,indices):
+    raw=torch.as_tensor(indices,device=labels.device).reshape(-1)
+    ids=raw.to(torch.long)
+    if not torch.equal(raw.to(torch.float64),ids.to(torch.float64)) or not bool(((ids>=0)&(ids<len(labels))).all()):
+        raise ValueError('Original TRAIN indices must be exact integral node IDs.')
+    masks={name:torch.zeros(len(labels),dtype=torch.float32,device=labels.device)
+           for name in ('train_neg','train_pos','train_masked')}
+    masks['train_masked'].fill_(1)
+    # Only original TRAIN label values enter these group inputs.
+    values=labels[ids].float()
+    masks['train_neg'][ids]=1-values;masks['train_pos'][ids]=values;masks['train_masked'][ids]=0
+    return masks
 
 
 def load_classifier(role, data, teacher_directory=None):
