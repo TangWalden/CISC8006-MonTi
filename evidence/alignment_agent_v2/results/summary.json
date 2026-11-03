@@ -1,0 +1,3112 @@
+{
+  "arm_summaries": [
+    {
+      "arm": "legacy_hinge_off",
+      "metrics": {
+        "clean_filter_new_wrong": {
+          "maximum": 31,
+          "mean": 31,
+          "minimum": 31,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            31,
+            31,
+            31
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 68,
+          "mean": 68,
+          "minimum": 68,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            68,
+            68,
+            68
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 42.25481209899175,
+          "mean": 42.25481209899175,
+          "minimum": 42.25481209899175,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            42.25481209899175,
+            42.25481209899175,
+            42.25481209899175
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 45.646196150320804,
+          "mean": 45.646196150320804,
+          "minimum": 45.646196150320804,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            45.646196150320804,
+            45.646196150320804,
+            45.646196150320804
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 94.40879926672777,
+          "mean": 93.27833791628476,
+          "minimum": 92.11732355637031,
+          "n_seeds": 3,
+          "sample_sd": 1.146043344546958,
+          "values": [
+            93.30889092575619,
+            94.40879926672777,
+            92.11732355637031
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 569,
+          "mean": 556.6666666666666,
+          "minimum": 544,
+          "n_seeds": 3,
+          "sample_sd": 12.503332889007368,
+          "values": [
+            557,
+            569,
+            544
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 128,
+          "mean": 128,
+          "minimum": 128,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            128,
+            128,
+            128
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 50.89209222048521,
+          "mean": 42.8172657986482,
+          "minimum": 35.31864892691374,
+          "n_seeds": 3,
+          "sample_sd": 7.802694860671126,
+          "values": [
+            50.89209222048521,
+            35.31864892691374,
+            42.24105624854565
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 0.9925411522633745,
+          "mean": 0.9534036351165981,
+          "minimum": 0.9143518518518519,
+          "n_seeds": 3,
+          "sample_sd": 0.03909472071053493,
+          "values": [
+            0.9925411522633745,
+            0.9533179012345679,
+            0.9143518518518519
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.06319278113498715,
+          "mean": 0.062010343713509095,
+          "minimum": 0.06111879058081993,
+          "n_seeds": 3,
+          "sample_sd": 0.0010671548419942981,
+          "values": [
+            0.06111879058081993,
+            0.06319278113498715,
+            0.0617194594247202
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 97.61686526122823,
+          "mean": 96.66972196761381,
+          "minimum": 95.60036663611366,
+          "n_seeds": 3,
+          "sample_sd": 1.0137891856423455,
+          "values": [
+            96.79193400549954,
+            97.61686526122823,
+            95.60036663611366
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 567,
+          "mean": 556.6666666666666,
+          "minimum": 545,
+          "n_seeds": 3,
+          "sample_sd": 11.060440015358038,
+          "values": [
+            558,
+            567,
+            545
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 29.6875,
+          "mean": 29.6875,
+          "minimum": 29.6875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            29.6875,
+            29.6875,
+            29.6875
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 73.4375,
+          "mean": 73.4375,
+          "minimum": 73.4375,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            73.4375,
+            73.4375,
+            73.4375
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 28.125,
+          "mean": 28.125,
+          "minimum": 28.125,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            28.125,
+            28.125,
+            28.125
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        }
+      }
+    },
+    {
+      "arm": "smooth_off",
+      "metrics": {
+        "clean_filter_new_wrong": {
+          "maximum": 31,
+          "mean": 31,
+          "minimum": 31,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            31,
+            31,
+            31
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 68,
+          "mean": 68,
+          "minimum": 68,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            68,
+            68,
+            68
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 42.25481209899175,
+          "mean": 42.25481209899175,
+          "minimum": 42.25481209899175,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            42.25481209899175,
+            42.25481209899175,
+            42.25481209899175
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 45.646196150320804,
+          "mean": 45.646196150320804,
+          "minimum": 45.646196150320804,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            45.646196150320804,
+            45.646196150320804,
+            45.646196150320804
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 94.13382218148487,
+          "mean": 93.61442102047052,
+          "minimum": 92.8505957836847,
+          "n_seeds": 3,
+          "sample_sd": 0.6756292205162201,
+          "values": [
+            94.13382218148487,
+            92.8505957836847,
+            93.85884509624198
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 567,
+          "mean": 561.6666666666666,
+          "minimum": 552,
+          "n_seeds": 3,
+          "sample_sd": 8.386497083606082,
+          "values": [
+            566,
+            552,
+            567
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 4,
+          "mean": 1.3333333333333333,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 2.309401076758503,
+          "values": [
+            0,
+            0,
+            4
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 128,
+          "mean": 128,
+          "minimum": 128,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            128,
+            128,
+            128
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 44.933676175773144,
+          "mean": 39.58112561951081,
+          "minimum": 36.70063865929842,
+          "n_seeds": 3,
+          "sample_sd": 4.6399407867026286,
+          "values": [
+            36.70063865929842,
+            44.933676175773144,
+            37.109062023460865
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 1.0,
+          "mean": 0.9142661179698217,
+          "minimum": 0.8405349794238683,
+          "n_seeds": 3,
+          "sample_sd": 0.08040722968239611,
+          "values": [
+            0.9022633744855967,
+            1.0,
+            0.8405349794238683
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.06320565294167156,
+          "mean": 0.05964539700435664,
+          "minimum": 0.05644884072583712,
+          "n_seeds": 3,
+          "sample_sd": 0.0033930570156377126,
+          "values": [
+            0.05644884072583712,
+            0.05928169734556125,
+            0.06320565294167156
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 97.15857011915674,
+          "mean": 96.79193400549954,
+          "minimum": 96.15032080659945,
+          "n_seeds": 3,
+          "sample_sd": 0.5575401036020342,
+          "values": [
+            97.15857011915674,
+            96.15032080659945,
+            97.06691109074244
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 562,
+          "mean": 558,
+          "minimum": 551,
+          "n_seeds": 3,
+          "sample_sd": 6.082762530298219,
+          "values": [
+            562,
+            551,
+            561
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 29.6875,
+          "mean": 29.6875,
+          "minimum": 29.6875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            29.6875,
+            29.6875,
+            29.6875
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 73.4375,
+          "mean": 73.4375,
+          "minimum": 73.4375,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            73.4375,
+            73.4375,
+            73.4375
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 28.125,
+          "mean": 28.125,
+          "minimum": 28.125,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            28.125,
+            28.125,
+            28.125
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        }
+      }
+    },
+    {
+      "arm": "smooth_threshold",
+      "metrics": {
+        "clean_filter_new_wrong": {
+          "maximum": 31,
+          "mean": 31,
+          "minimum": 31,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            31,
+            31,
+            31
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 68,
+          "mean": 68,
+          "minimum": 68,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            68,
+            68,
+            68
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 42.25481209899175,
+          "mean": 42.25481209899175,
+          "minimum": 42.25481209899175,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            42.25481209899175,
+            42.25481209899175,
+            42.25481209899175
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 45.646196150320804,
+          "mean": 45.646196150320804,
+          "minimum": 45.646196150320804,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            45.646196150320804,
+            45.646196150320804,
+            45.646196150320804
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 92.20898258478461,
+          "mean": 91.04796822487015,
+          "minimum": 89.09257561869845,
+          "n_seeds": 3,
+          "sample_sd": 1.7033131518199,
+          "values": [
+            91.8423464711274,
+            92.20898258478461,
+            89.09257561869845
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 545,
+          "mean": 532.3333333333334,
+          "minimum": 511,
+          "n_seeds": 3,
+          "sample_sd": 18.58314648635514,
+          "values": [
+            541,
+            545,
+            511
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 128,
+          "mean": 128,
+          "minimum": 128,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            128,
+            128,
+            128
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 0.5584287868987303,
+          "mean": 0.4570644629590485,
+          "minimum": 0.37393140259518987,
+          "n_seeds": 3,
+          "sample_sd": 0.09359009259740278,
+          "values": [
+            0.37393140259518987,
+            0.5584287868987303,
+            0.4388331993832253
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 7,
+          "mean": 7,
+          "minimum": 7,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            7,
+            7,
+            7
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 0.1427469135802469,
+          "mean": 0.11758401920438957,
+          "minimum": 0.09143518518518519,
+          "n_seeds": 3,
+          "sample_sd": 0.025670068668731456,
+          "values": [
+            0.09143518518518519,
+            0.1427469135802469,
+            0.11856995884773662
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.06505839256029705,
+          "mean": 0.061338575909548027,
+          "minimum": 0.0585729968955598,
+          "n_seeds": 3,
+          "sample_sd": 0.0033463437260099734,
+          "values": [
+            0.0585729968955598,
+            0.06505839256029705,
+            0.06038433827278722
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 95.87534372135656,
+          "mean": 94.74488237091354,
+          "minimum": 92.6672777268561,
+          "n_seeds": 3,
+          "sample_sd": 1.8015915658790798,
+          "values": [
+            95.69202566452796,
+            95.87534372135656,
+            92.6672777268561
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 548,
+          "mean": 535.6666666666666,
+          "minimum": 513,
+          "n_seeds": 3,
+          "sample_sd": 19.655363983740756,
+          "values": [
+            546,
+            548,
+            513
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 29.6875,
+          "mean": 29.6875,
+          "minimum": 29.6875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            29.6875,
+            29.6875,
+            29.6875
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 73.4375,
+          "mean": 73.4375,
+          "minimum": 73.4375,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            73.4375,
+            73.4375,
+            73.4375
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 28.125,
+          "mean": 28.125,
+          "minimum": 28.125,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            28.125,
+            28.125,
+            28.125
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        }
+      }
+    },
+    {
+      "arm": "smooth_rule",
+      "metrics": {
+        "clean_filter_new_wrong": {
+          "maximum": 31,
+          "mean": 31,
+          "minimum": 31,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            31,
+            31,
+            31
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 68,
+          "mean": 68,
+          "minimum": 68,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            68,
+            68,
+            68
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 42.25481209899175,
+          "mean": 42.25481209899175,
+          "minimum": 42.25481209899175,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            42.25481209899175,
+            42.25481209899175,
+            42.25481209899175
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 45.646196150320804,
+          "mean": 45.646196150320804,
+          "minimum": 45.646196150320804,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            45.646196150320804,
+            45.646196150320804,
+            45.646196150320804
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 94.04216315307058,
+          "mean": 93.24778490681332,
+          "minimum": 91.6590284142988,
+          "n_seeds": 3,
+          "sample_sd": 1.3759034829450314,
+          "values": [
+            94.04216315307058,
+            94.04216315307058,
+            91.6590284142988
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 566,
+          "mean": 557.3333333333334,
+          "minimum": 541,
+          "n_seeds": 3,
+          "sample_sd": 14.153915830374764,
+          "values": [
+            566,
+            565,
+            541
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 2,
+          "mean": 1,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 1.0,
+          "values": [
+            1,
+            0,
+            2
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 3600,
+          "mean": 3600,
+          "minimum": 3600,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            3600,
+            3600,
+            3600
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 44.22238589450717,
+          "mean": 34.149912144988775,
+          "minimum": 27.15354273840785,
+          "n_seeds": 3,
+          "sample_sd": 8.940534945872015,
+          "values": [
+            44.22238589450717,
+            31.073807802051306,
+            27.15354273840785
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 7,
+          "mean": 7,
+          "minimum": 7,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            7,
+            7,
+            7
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 0.9989711934156379,
+          "mean": 0.931241426611797,
+          "minimum": 0.8668981481481481,
+          "n_seeds": 3,
+          "sample_sd": 0.06610161532833969,
+          "values": [
+            0.9989711934156379,
+            0.8668981481481481,
+            0.9278549382716049
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.08372663272111418,
+          "mean": 0.0821059084177789,
+          "minimum": 0.08077989294361841,
+          "n_seeds": 3,
+          "sample_sd": 0.0014953122749326077,
+          "values": [
+            0.08077989294361841,
+            0.08372663272111418,
+            0.08181119958860411
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 97.34188817598533,
+          "mean": 96.51695692025665,
+          "minimum": 95.05041246562786,
+          "n_seeds": 3,
+          "sample_sd": 1.2733679183730369,
+          "values": [
+            97.15857011915674,
+            97.34188817598533,
+            95.05041246562786
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 564,
+          "mean": 555,
+          "minimum": 539,
+          "n_seeds": 3,
+          "sample_sd": 13.892443989449804,
+          "values": [
+            562,
+            564,
+            539
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 29.6875,
+          "mean": 29.6875,
+          "minimum": 29.6875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            29.6875,
+            29.6875,
+            29.6875
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 73.4375,
+          "mean": 73.4375,
+          "minimum": 73.4375,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            73.4375,
+            73.4375,
+            73.4375
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 28.125,
+          "mean": 28.125,
+          "minimum": 28.125,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            28.125,
+            28.125,
+            28.125
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        }
+      }
+    },
+    {
+      "arm": "smooth_agent",
+      "metrics": {
+        "clean_filter_new_wrong": {
+          "maximum": 31,
+          "mean": 31,
+          "minimum": 31,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            31,
+            31,
+            31
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 68,
+          "mean": 68,
+          "minimum": 68,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            68,
+            68,
+            68
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 42.25481209899175,
+          "mean": 42.25481209899175,
+          "minimum": 42.25481209899175,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            42.25481209899175,
+            42.25481209899175,
+            42.25481209899175
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 45.646196150320804,
+          "mean": 45.646196150320804,
+          "minimum": 45.646196150320804,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            45.646196150320804,
+            45.646196150320804,
+            45.646196150320804
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 94.31714023831347,
+          "mean": 93.64497402994195,
+          "minimum": 93.21723189734189,
+          "n_seeds": 3,
+          "sample_sd": 0.5892851060796158,
+          "values": [
+            94.31714023831347,
+            93.21723189734189,
+            93.40054995417049
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 568,
+          "mean": 561,
+          "minimum": 556,
+          "n_seeds": 3,
+          "sample_sd": 6.244997998398398,
+          "values": [
+            568,
+            556,
+            559
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 1,
+          "mean": 0.3333333333333333,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.5773502691896257,
+          "values": [
+            0,
+            0,
+            1
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 3600,
+          "mean": 3434.6666666666665,
+          "minimum": 3104,
+          "n_seeds": 3,
+          "sample_sd": 286.36573351805436,
+          "values": [
+            3600,
+            3600,
+            3104
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 43.961221650242805,
+          "mean": 32.28625539690256,
+          "minimum": 23.197201021015644,
+          "n_seeds": 3,
+          "sample_sd": 10.620797679609966,
+          "values": [
+            29.700343519449234,
+            43.961221650242805,
+            23.197201021015644
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 7,
+          "mean": 6.666666666666667,
+          "minimum": 6,
+          "n_seeds": 3,
+          "sample_sd": 0.5773502691896257,
+          "values": [
+            7,
+            7,
+            6
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 0.9949845679012346,
+          "mean": 0.9344135802469136,
+          "minimum": 0.8436213991769548,
+          "n_seeds": 3,
+          "sample_sd": 0.08007928952084142,
+          "values": [
+            0.9646347736625515,
+            0.9949845679012346,
+            0.8436213991769548
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.10898486393500612,
+          "mean": 0.10850824782592504,
+          "minimum": 0.10799866368803325,
+          "n_seeds": 3,
+          "sample_sd": 0.0004939260065790044,
+          "values": [
+            0.10898486393500612,
+            0.10799866368803325,
+            0.10854121585473574
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 97.25022914757103,
+          "mean": 96.82248701497097,
+          "minimum": 96.51695692025665,
+          "n_seeds": 3,
+          "sample_sd": 0.3816069659882903,
+          "values": [
+            97.25022914757103,
+            96.51695692025665,
+            96.70027497708524
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 563,
+          "mean": 558.3333333333334,
+          "minimum": 555,
+          "n_seeds": 3,
+          "sample_sd": 4.163331998932265,
+          "values": [
+            563,
+            555,
+            557
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 29.6875,
+          "mean": 29.6875,
+          "minimum": 29.6875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            29.6875,
+            29.6875,
+            29.6875
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 73.4375,
+          "mean": 73.4375,
+          "minimum": 73.4375,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            73.4375,
+            73.4375,
+            73.4375
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 28.125,
+          "mean": 28.125,
+          "minimum": 28.125,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            28.125,
+            28.125,
+            28.125
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        }
+      }
+    },
+    {
+      "arm": "smooth_random",
+      "metrics": {
+        "clean_filter_new_wrong": {
+          "maximum": 31,
+          "mean": 31,
+          "minimum": 31,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            31,
+            31,
+            31
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 68,
+          "mean": 68,
+          "minimum": 68,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            68,
+            68,
+            68
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 42.25481209899175,
+          "mean": 42.25481209899175,
+          "minimum": 42.25481209899175,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            42.25481209899175,
+            42.25481209899175,
+            42.25481209899175
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 45.646196150320804,
+          "mean": 45.646196150320804,
+          "minimum": 45.646196150320804,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            45.646196150320804,
+            45.646196150320804,
+            45.646196150320804
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 93.12557286892759,
+          "mean": 93.03391384051329,
+          "minimum": 92.942254812099,
+          "n_seeds": 3,
+          "sample_sd": 0.0916590284142984,
+          "values": [
+            92.942254812099,
+            93.12557286892759,
+            93.03391384051329
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 555,
+          "mean": 554.3333333333334,
+          "minimum": 554,
+          "n_seeds": 3,
+          "sample_sd": 0.5773502691896257,
+          "values": [
+            554,
+            555,
+            554
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 1,
+          "mean": 0.3333333333333333,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.5773502691896257,
+          "values": [
+            1,
+            0,
+            0
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 3600,
+          "mean": 3434.6666666666665,
+          "minimum": 3104,
+          "n_seeds": 3,
+          "sample_sd": 286.36573351805436,
+          "values": [
+            3600,
+            3600,
+            3104
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 31.96156346797943,
+          "mean": 26.5927136366566,
+          "minimum": 22.989741764962673,
+          "n_seeds": 3,
+          "sample_sd": 4.7394240044448415,
+          "values": [
+            22.989741764962673,
+            31.96156346797943,
+            24.826835677027702
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 7,
+          "mean": 6.666666666666667,
+          "minimum": 6,
+          "n_seeds": 3,
+          "sample_sd": 0.5773502691896257,
+          "values": [
+            7,
+            7,
+            6
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 0.9686213991769548,
+          "mean": 0.932227366255144,
+          "minimum": 0.9041923868312757,
+          "n_seeds": 3,
+          "sample_sd": 0.03301787000240953,
+          "values": [
+            0.9238683127572016,
+            0.9686213991769548,
+            0.9041923868312757
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.08004274235388342,
+          "mean": 0.07880848209192563,
+          "minimum": 0.07787627156914419,
+          "n_seeds": 3,
+          "sample_sd": 0.0011143717732357264,
+          "values": [
+            0.07787627156914419,
+            0.08004274235388342,
+            0.07850643235274928
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 96.70027497708524,
+          "mean": 96.42529789184235,
+          "minimum": 96.15032080659945,
+          "n_seeds": 3,
+          "sample_sd": 0.2749770852428952,
+          "values": [
+            96.42529789184235,
+            96.70027497708524,
+            96.15032080659945
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 557,
+          "mean": 554,
+          "minimum": 551,
+          "n_seeds": 3,
+          "sample_sd": 3.0,
+          "values": [
+            554,
+            557,
+            551
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 29.6875,
+          "mean": 29.6875,
+          "minimum": 29.6875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            29.6875,
+            29.6875,
+            29.6875
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 73.4375,
+          "mean": 73.4375,
+          "minimum": 73.4375,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            73.4375,
+            73.4375,
+            73.4375
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 28.125,
+          "mean": 28.125,
+          "minimum": 28.125,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            28.125,
+            28.125,
+            28.125
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 71.875,
+          "mean": 71.875,
+          "minimum": 71.875,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            71.875,
+            71.875,
+            71.875
+          ]
+        }
+      }
+    }
+  ],
+  "arms": [
+    "legacy_hinge_off",
+    "smooth_off",
+    "smooth_threshold",
+    "smooth_rule",
+    "smooth_agent",
+    "smooth_random"
+  ],
+  "cost": {
+    "accounting": "Queue uses conservative whole-process GPU wall time including waits; API usage is separate.",
+    "api": {
+      "accounting": "Physical usage is recounted once from the original shared ledger. Late/fallback responses remain charged; bridge completion is not proof of application; no credentials or response text copied.",
+      "applied_policy": {
+        "authority": "Actual server applied_controller receipts for epochs2..8; API completion/publication does not prove application.",
+        "enabled_epochs": 20,
+        "external_agent_epochs": 11,
+        "fallback_epochs": 10,
+        "slots": 21,
+        "source_counts": {
+          "external_agent": 11,
+          "registered_fallback": 10
+        }
+      },
+      "bridge_attempt_chronology": [
+        {
+          "attempt": 0,
+          "completed_utc": "2026-11-03T04:11:57.362357+00:00",
+          "processed_requests": 1,
+          "receipt_usage_snapshot_not_additive": {
+            "charged_completion_tokens": 99,
+            "charged_prompt_tokens": 1220,
+            "charged_usd_upper_bound": 0.00048479999999999997,
+            "physical_attempts_recorded": 2,
+            "unrecorded_attempt_upper_bound": 0
+          },
+          "role": "api_bridge_original",
+          "started_utc": "2026-11-03T03:54:45.309706+00:00",
+          "status": "bridge_failed",
+          "unique_epoch_slots": 2
+        },
+        {
+          "attempt": 1,
+          "completed_utc": "2026-11-03T04:22:21.100877+00:00",
+          "processed_requests": 7,
+          "receipt_usage_snapshot_not_additive": {
+            "charged_completion_tokens_combined": 99,
+            "charged_prompt_tokens_combined": 1220,
+            "charged_usd_upper_bound_combined": 0.00048479999999999997,
+            "physical_attempts_combined": 2,
+            "unrecorded_attempt_upper_bound": 0
+          },
+          "role": "api_bridge_recovery_1",
+          "started_utc": "2026-11-03T04:21:48.097116+00:00",
+          "status": "resume_failed",
+          "unique_epoch_slots": 7
+        },
+        {
+          "attempt": 2,
+          "completed_utc": "2026-11-03T05:16:29.962837+00:00",
+          "processed_requests": 21,
+          "receipt_usage_snapshot_not_additive": {
+            "charged_completion_tokens_combined": 704,
+            "charged_prompt_tokens_combined": 9255,
+            "charged_usd_upper_bound_combined": 0.0036213,
+            "physical_attempts_combined": 15,
+            "unrecorded_attempt_upper_bound": 0
+          },
+          "role": "api_bridge_recovery_2",
+          "started_utc": "2026-11-03T04:32:15.121846+00:00",
+          "status": "queue_complete",
+          "unique_epoch_slots": 21
+        }
+      ],
+      "charged_completion_tokens": 704,
+      "charged_prompt_tokens": 9255,
+      "charged_usd_upper_bound": 0.0036213,
+      "chronology_accounting": "Historical failed receipts remain separate. Attempt snapshots refer to the same evolving ledger and are never summed as physical usage.",
+      "final_bridge_attempt_status": "queue_complete",
+      "physical_attempts_recorded": 15,
+      "prompt_sha256": "e62accce6a607e0f7f7b7568f1c56849f69ea2bf58a5f717af73c28659ee373a",
+      "recovery_attempts": 2,
+      "status": "saved_shared_ledger_recount_with_recovery_history",
+      "unrecorded_attempt_upper_bound_summed_from_attempt_receipts": 0
+    },
+    "queue_gpu_hours_including_diagnostic": 1.3617947545285762,
+    "recorded_job_gpu_hours": 1.35725086488913,
+    "registered_diagnostic_gpu_hours": 0.004543889639446409,
+    "registered_phase_gpu_ceiling": 2
+  },
+  "created_utc": "2026-11-03T05:19:02.071441+00:00",
+  "distance_weighting": "Equal validation-group means; outside/flagged fractions use injected-node exposures.",
+  "groups_per_job": 128,
+  "jobs": 18,
+  "limitations": [
+    "Exploratory GCN-surrogate VALID pilot: 128 fixed groups, 1091 target occurrences and 374 unique targets per job; overlapping groups are not independent samples.",
+    "Three paired training seeds provide descriptive differences, not a significance test, causal proof or a selected winner.",
+    "All arms use final epoch8 without validation checkpoint selection. No GAGA/victim or test efficacy is established.",
+    "The directly optimized relationship moments are not an independent camouflage measure or full distribution equality.",
+    "The unoptimized anomaly filter is one diagnostic defense; its clean harm and clean-to-attacked transitions must accompany filtered MR.",
+    "No learned neural-policy control is included, so the matrix cannot establish LLM superiority over an ordinary learned controller.",
+    "Equal optimizer updates do not imply equal compute, wall time or API cost. Matched random preserves enabled epochs, not activated nodes or gradient magnitude.",
+    "The executed agent arm may mix remote decisions and registered fallbacks. Infrastructure recovery does not retroactively replace applied actions; a hybrid policy is not pure LLM scheduling.",
+    "Every preselected exported group is reported; individual cases were fixed before this matrix and are illustrative, not representative effect estimates.",
+    "This saved-record recount does not independently establish the provenance or correctness of all upstream model execution."
+  ],
+  "paired_descriptive_differences": [
+    {
+      "comparison": "smooth_minus_legacy",
+      "control": "legacy_hinge_off",
+      "differences": {
+        "clean_filter_new_wrong": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 1.7415215398716697,
+          "mean": 0.3360831041857608,
+          "minimum": -1.5582034830430729,
+          "n_seeds": 3,
+          "sample_sd": 1.7033131518198952,
+          "values": [
+            0.8249312557286856,
+            -1.5582034830430729,
+            1.7415215398716697
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 23,
+          "mean": 5,
+          "minimum": -17,
+          "n_seeds": 3,
+          "sample_sd": 20.29778313018444,
+          "values": [
+            9,
+            -17,
+            23
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 4,
+          "mean": 1.3333333333333333,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 2.309401076758503,
+          "values": [
+            0,
+            0,
+            4
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 9.615027248859406,
+          "mean": -3.2361401791373887,
+          "minimum": -14.19145356118679,
+          "n_seeds": 3,
+          "sample_sd": 12.015940623289788,
+          "values": [
+            -14.19145356118679,
+            9.615027248859406,
+            -5.131994225084782
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 0.046682098765432056,
+          "mean": -0.039137517146776414,
+          "minimum": -0.09027777777777779,
+          "n_seeds": 3,
+          "sample_sd": 0.07477630111019774,
+          "values": [
+            -0.09027777777777779,
+            0.046682098765432056,
+            -0.07381687242798352
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.0014861935169513604,
+          "mean": -0.0023649467091524518,
+          "minimum": -0.004669949854982813,
+          "n_seeds": 3,
+          "sample_sd": 0.0033566993024695627,
+          "values": [
+            -0.004669949854982813,
+            -0.003911083789425902,
+            0.0014861935169513604
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 1.4665444546287745,
+          "mean": 0.1222120378857312,
+          "minimum": -1.4665444546287745,
+          "n_seeds": 3,
+          "sample_sd": 1.4817422124023327,
+          "values": [
+            0.3666361136571936,
+            -1.4665444546287745,
+            1.4665444546287745
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 16,
+          "mean": 1.3333333333333333,
+          "minimum": -16,
+          "n_seeds": 3,
+          "sample_sd": 16.165807537309522,
+          "values": [
+            4,
+            -16,
+            16
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "interpretation": "Attack-loss change within the fresh fixed-eight-epoch harness.",
+      "treatment": "smooth_off"
+    },
+    {
+      "comparison": "threshold_minus_smooth",
+      "control": "smooth_off",
+      "differences": {
+        "clean_filter_new_wrong": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": -0.6416131989000888,
+          "mean": -2.5664527956003647,
+          "minimum": -4.766269477543531,
+          "n_seeds": 3,
+          "sample_sd": 2.0760314670771973,
+          "values": [
+            -2.2914757103574743,
+            -0.6416131989000888,
+            -4.766269477543531
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": -7,
+          "mean": -29.333333333333332,
+          "minimum": -56,
+          "n_seeds": 3,
+          "sample_sd": 24.78574859336174,
+          "values": [
+            -25,
+            -7,
+            -56
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 0,
+          "mean": -1.3333333333333333,
+          "minimum": -4,
+          "n_seeds": 3,
+          "sample_sd": 2.309401076758503,
+          "values": [
+            0,
+            0,
+            -4
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": -36.32670725670323,
+          "mean": -39.12406115655176,
+          "minimum": -44.37524738887441,
+          "n_seeds": 3,
+          "sample_sd": 4.550903141324156,
+          "values": [
+            -36.32670725670323,
+            -44.37524738887441,
+            -36.67022882407764
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 7,
+          "mean": 7,
+          "minimum": 7,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            7,
+            7,
+            7
+          ]
+        },
+        "outside_fraction": {
+          "maximum": -0.7219650205761318,
+          "mean": -0.7966820987654321,
+          "minimum": -0.8572530864197531,
+          "n_seeds": 3,
+          "sample_sd": 0.06874444776121834,
+          "values": [
+            -0.8108281893004115,
+            -0.8572530864197531,
+            -0.7219650205761318
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.005776695214735804,
+          "mean": 0.0016931789051913813,
+          "minimum": -0.002821314668884342,
+          "n_seeds": 3,
+          "sample_sd": 0.004315176652422771,
+          "values": [
+            0.0021241561697226824,
+            0.005776695214735804,
+            -0.002821314668884342
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": -0.2749770852428952,
+          "mean": -2.0470516345860026,
+          "minimum": -4.399633363886338,
+          "n_seeds": 3,
+          "sample_sd": 2.122719669133118,
+          "values": [
+            -1.4665444546287745,
+            -0.2749770852428952,
+            -4.399633363886338
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": -3,
+          "mean": -22.333333333333332,
+          "minimum": -48,
+          "n_seeds": 3,
+          "sample_sd": 23.15887159024233,
+          "values": [
+            -16,
+            -3,
+            -48
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "interpretation": "Unprotected nodewise-q90 alignment after the common warm-up.",
+      "treatment": "smooth_threshold"
+    },
+    {
+      "comparison": "protection_minus_threshold",
+      "control": "smooth_threshold",
+      "differences": {
+        "clean_filter_new_wrong": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 2.5664527956003553,
+          "mean": 2.1998166819431666,
+          "minimum": 1.833180568285968,
+          "n_seeds": 3,
+          "sample_sd": 0.3666361136571936,
+          "values": [
+            2.199816681943176,
+            1.833180568285968,
+            2.5664527956003553
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 30,
+          "mean": 25,
+          "minimum": 20,
+          "n_seeds": 3,
+          "sample_sd": 5.0,
+          "values": [
+            25,
+            20,
+            30
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 2,
+          "mean": 1,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 1.0,
+          "values": [
+            1,
+            0,
+            2
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 3472,
+          "mean": 3472,
+          "minimum": 3472,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            3472,
+            3472,
+            3472
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 43.84845449191198,
+          "mean": 33.69284768202973,
+          "minimum": 26.714709539024625,
+          "n_seeds": 3,
+          "sample_sd": 8.997973903851232,
+          "values": [
+            43.84845449191198,
+            30.515379015152575,
+            26.714709539024625
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 0.9075360082304527,
+          "mean": 0.8136574074074074,
+          "minimum": 0.7241512345679012,
+          "n_seeds": 3,
+          "sample_sd": 0.09177054210186258,
+          "values": [
+            0.9075360082304527,
+            0.7241512345679012,
+            0.8092849794238683
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.02220689604805861,
+          "mean": 0.020767332508230877,
+          "minimum": 0.018668240160817126,
+          "n_seeds": 3,
+          "sample_sd": 0.0018592350733847714,
+          "values": [
+            0.02220689604805861,
+            0.018668240160817126,
+            0.021426861315816892
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 2.3831347387717585,
+          "mean": 1.7720745493431025,
+          "minimum": 1.4665444546287745,
+          "n_seeds": 3,
+          "sample_sd": 0.5291936472865474,
+          "values": [
+            1.4665444546287745,
+            1.4665444546287745,
+            2.3831347387717585
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 26,
+          "mean": 19.333333333333332,
+          "minimum": 16,
+          "n_seeds": 3,
+          "sample_sd": 5.773502691896257,
+          "values": [
+            16,
+            16,
+            26
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "interpretation": "Combined blockwise projection and norm cap, not their separate effects.",
+      "treatment": "smooth_rule"
+    },
+    {
+      "comparison": "agent_minus_protected_rule",
+      "control": "smooth_rule",
+      "differences": {
+        "clean_filter_new_wrong": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 1.741521539871684,
+          "mean": 0.39718912312863114,
+          "minimum": -0.8249312557286856,
+          "n_seeds": 3,
+          "sample_sd": 1.2875837155945924,
+          "values": [
+            0.2749770852428952,
+            -0.8249312557286856,
+            1.741521539871684
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 18,
+          "mean": 3.6666666666666665,
+          "minimum": -9,
+          "n_seeds": 3,
+          "sample_sd": 13.576941236277534,
+          "values": [
+            2,
+            -9,
+            18
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 0,
+          "mean": -0.6666666666666666,
+          "minimum": -1,
+          "n_seeds": 3,
+          "sample_sd": 0.5773502691896257,
+          "values": [
+            -1,
+            0,
+            -1
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 0,
+          "mean": -165.33333333333334,
+          "minimum": -496,
+          "n_seeds": 3,
+          "sample_sd": 286.36573351805436,
+          "values": [
+            0,
+            0,
+            -496
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 12.8874138481915,
+          "mean": -1.863656748086214,
+          "minimum": -14.522042375057936,
+          "n_seeds": 3,
+          "sample_sd": 13.824039583245058,
+          "values": [
+            -14.522042375057936,
+            12.8874138481915,
+            -3.956341717392206
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 0,
+          "mean": -0.3333333333333333,
+          "minimum": -1,
+          "n_seeds": 3,
+          "sample_sd": 0.5773502691896257,
+          "values": [
+            0,
+            0,
+            -1
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 0.12808641975308643,
+          "mean": 0.003172153635116618,
+          "minimum": -0.08423353909465014,
+          "n_seeds": 3,
+          "sample_sd": 0.11101851665145684,
+          "values": [
+            -0.03433641975308643,
+            0.12808641975308643,
+            -0.08423353909465014
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.028204970991387704,
+          "mean": 0.026402339408146135,
+          "minimum": 0.024272030966919073,
+          "n_seeds": 3,
+          "sample_sd": 0.0019868400543227587,
+          "values": [
+            0.028204970991387704,
+            0.024272030966919073,
+            0.026730016266131626
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 1.6498625114573855,
+          "mean": 0.30553009471433273,
+          "minimum": -0.8249312557286856,
+          "n_seeds": 3,
+          "sample_sd": 1.2511821099568168,
+          "values": [
+            0.0916590284142984,
+            -0.8249312557286856,
+            1.6498625114573855
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 18,
+          "mean": 3.3333333333333335,
+          "minimum": -9,
+          "n_seeds": 3,
+          "sample_sd": 13.650396819628847,
+          "values": [
+            1,
+            -9,
+            18
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "interpretation": "Agent scheduling versus protected ON every epoch2..8; ON counts may differ.",
+      "treatment": "smooth_agent"
+    },
+    {
+      "comparison": "agent_minus_matched_random",
+      "control": "smooth_random",
+      "differences": {
+        "clean_filter_new_wrong": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filter_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "clean_filtered_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "clean_raw_mr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "filtered_mr_percent": {
+          "maximum": 1.374885426214476,
+          "mean": 0.611060189428656,
+          "minimum": 0.0916590284142984,
+          "n_seeds": 3,
+          "sample_sd": 0.6756292205162201,
+          "values": [
+            1.374885426214476,
+            0.0916590284142984,
+            0.3666361136571936
+          ]
+        },
+        "filtered_new_wrong": {
+          "maximum": 14,
+          "mean": 6.666666666666667,
+          "minimum": 1,
+          "n_seeds": 3,
+          "sample_sd": 6.6583281184793925,
+          "values": [
+            14,
+            1,
+            5
+          ]
+        },
+        "filtered_recoveries": {
+          "maximum": 1,
+          "mean": 0,
+          "minimum": -1,
+          "n_seeds": 3,
+          "sample_sd": 1.0,
+          "values": [
+            -1,
+            0,
+            1
+          ]
+        },
+        "flagged_injected_fraction": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "gradient_calls": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "group_equal_mean_distance": {
+          "maximum": 11.999658182263374,
+          "mean": 5.693541760245959,
+          "minimum": -1.6296346560120583,
+          "n_seeds": 3,
+          "sample_sd": 6.871332774053373,
+          "values": [
+            6.710601754486561,
+            11.999658182263374,
+            -1.6296346560120583
+          ]
+        },
+        "outer_on_epochs": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "outside_fraction": {
+          "maximum": 0.040766460905349855,
+          "mean": 0.0021862139917695846,
+          "minimum": -0.060570987654320896,
+          "n_seeds": 3,
+          "sample_sd": 0.05482438759575309,
+          "values": [
+            0.040766460905349855,
+            0.026363168724279795,
+            -0.060570987654320896
+          ]
+        },
+        "queue_charged_gpu_wall_hours": {
+          "maximum": 0.03110859236586193,
+          "mean": 0.029699765733999406,
+          "minimum": 0.027955921334149827,
+          "n_seeds": 3,
+          "sample_sd": 0.0016028135690714102,
+          "values": [
+            0.03110859236586193,
+            0.027955921334149827,
+            0.030034783501986462
+          ]
+        },
+        "raw_mr_percent": {
+          "maximum": 0.8249312557286856,
+          "mean": 0.3971891231286264,
+          "minimum": -0.1833180568285968,
+          "n_seeds": 3,
+          "sample_sd": 0.5211952981739049,
+          "values": [
+            0.8249312557286856,
+            -0.1833180568285968,
+            0.5499541704857904
+          ]
+        },
+        "raw_new_wrong": {
+          "maximum": 9,
+          "mean": 4.333333333333333,
+          "minimum": -2,
+          "n_seeds": 3,
+          "sample_sd": 5.686240703077327,
+          "values": [
+            9,
+            -2,
+            6
+          ]
+        },
+        "raw_recoveries": {
+          "maximum": 0,
+          "mean": 0,
+          "minimum": 0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0,
+            0,
+            0
+          ]
+        },
+        "utility_filtered_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_filtered_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_accuracy_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_benign_fpr_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "utility_raw_fraud_recall_percent": {
+          "maximum": 0.0,
+          "mean": 0.0,
+          "minimum": 0.0,
+          "n_seeds": 3,
+          "sample_sd": 0.0,
+          "values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "interpretation": "Agent timing versus a permutation preserving enabled-epoch count, not node activation or cost.",
+      "treatment": "smooth_agent"
+    }
+  ],
+  "paired_difference_direction": "Treatment minus control; MR and utility percentages are percentage-point differences.",
+  "prediction_identity": "Class vectors are compared at identical private (target_group,node_id) coordinates, never inferred from equal aggregate counts.",
+  "preselected_export_groups": [
+    957,
+    1185,
+    1198,
+    1249,
+    1267,
+    1285,
+    1328,
+    1415
+  ],
+  "protocol_sha256": "1f7098358dd6f625642100de0242ccc25ae62389f75cef94ec9e0d777efa5ee3",
+  "public_safe": true,
+  "repeated_occurrences_per_job": 717,
+  "scope": "Exploratory GCN-surrogate VALID only; no new inference, training, API call, GAGA/victim or test evaluation.",
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "source_commit": "5a1d9e57a99541006c6d749adda9602217575421",
+  "status": "complete_saved_record_summary",
+  "summary_script_sha256": "2b65274417bf84e25559a1cae71ca9476cb165480cd71c9b0d9f551466dfd918",
+  "target_occurrences_per_job": 1091,
+  "transition_interpretation": "Each raw attack is compared with the original clean graph; each filtered attack with the once-filtered original graph. Attacked_wrong-clean_wrong=new_wrong-recoveries.",
+  "unique_targets_per_job": 374
+}

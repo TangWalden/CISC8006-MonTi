@@ -359,14 +359,25 @@
   },
   "failure_driven_followup_v2": {
     "owner_execution_authorized": true,
-    "status": "TRAIN gradient diagnostic complete; new six-arm matrix frozen before training/API",
+    "status": "completed; no established overall improvement or LLM scheduling superiority",
     "protocol": "course/ALIGNMENT_AGENT_V2_PROTOCOL.json",
     "failure_cases": "evidence/alignment_agent_v2/failure_analysis.json",
     "gradient_summary": "evidence/alignment_agent_v2/gradient_summary.json",
     "training_jobs_planned": 18,
-    "new_training_jobs_started": 0,
-    "new_api_calls": 0,
+    "new_training_jobs_started": 18,
+    "new_api_calls": 15,
     "full_test_authorized": false,
-    "final_tag_authorized": false
+    "final_tag_authorized": false,
+    "source_commit": "5a1d9e57a99541006c6d749adda9602217575421",
+    "execution_protocol_sha256": "1f7098358dd6f625642100de0242ccc25ae62389f75cef94ec9e0d777efa5ee3",
+    "new_training_jobs_completed": 18,
+    "actual_agent_decisions": 11,
+    "actual_fallback_decisions": 10,
+    "results": "evidence/alignment_agent_v2/results/summary.json",
+    "independent_audit": "evidence/alignment_agent_v2/independent_audit_attempt2.json",
+    "api_saved_record_audit": "evidence/alignment_agent_v2/api_audit_attempt2.json",
+    "gpu_hours_including_diagnostic": 1.3617947545285762,
+    "remaining_gpu_hours_after_reserve": 9.053888881191808,
+    "human_review_completed": false
   }
 }

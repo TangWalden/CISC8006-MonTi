@@ -1,5 +1,11 @@
 # Team Human Review and Rehearsal Template
 
+Preparation update, 3 November 2026: the owner-authorized
+[failure-driven agent follow-up](../course/alignment_agent/README.md) has executed
+all 18 trainings. Its actual API/fallback, failed-case, filter-validity and
+tradeoff records are additional material for the existing checks below. Agent
+recounts do not complete any human response, contribution or rehearsal field.
+
 This document assigns balanced review work to Junyi Tang and Yifan Fan. It records no completed human checks. Fill the response and evidence fields only after the named member independently performs the check. Agent-generated text, an assigned task, or a successful automated test is not evidence that a team member reviewed it.
 
 Repository commit reviewed: ____________________

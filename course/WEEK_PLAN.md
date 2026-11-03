@@ -1,5 +1,16 @@
 # One-week execution and acceptance plan
 
+Update 2026-11-03, subsequent owner instruction: the
+[failure-driven six-arm study](alignment_agent/README.md) has completed all 18
+trainings, its saved prediction/hash audit and the actual API/fallback recount.
+No overall winner is selected. Primary mean hybrid-agent MR exceeds smooth-OFF
+by only 0.030553 percentage points; the heuristic flags no injected nodes. Agent/rule/random
+schedules are identical for two seeds, and the agent arm mixes 11 LLM / 10 fallback
+choices. Preserve these negative/limited results and all raw failures. No more
+jobs, API calls or artifact builds follow automatically. A later full GAGA/test
+protocol and final freeze remain separate checkpoints; human requirements are
+still unconfirmed. Earlier dated PDF/PPTX artifacts are unchanged.
+
 Update 2026-11-03: the owner explicitly ordered implementation and execution.
 The first bounded validation phase is complete: three self models, nine fresh
 alignment trainings, a numeric gate and 120 real LLM calls including the frozen

@@ -1,5 +1,43 @@
 # AI Usage Record
 
+## Failure-driven owner follow-up completed on 3 November 2026
+
+- Planning: after the actual owner requested analysis, modifications and execution,
+  Codex analyzed saved failed groups and froze a 32-case TRAIN gradient diagnostic.
+  It found hinge saturation and local alignment conflicts; this is bounded
+  gradient evidence, not historical causal reconstruction. Root froze six arms,
+  three seeds, fixed eight epochs, complete validation denominators and caps
+  before new training/API. The owner instruction is research authorization, not
+  instructor approval or human technical verification.
+- Implementation and execution: root coordinated separate design, bridge and
+  audit agents. All 18 fresh jobs completed 144 epochs / 36,864 real-data optimizer updates,
+  39,168 generations / 46,116 GCN forwards. A separate diagnostic adds 32 / 32 forwards and
+  zero updates. Forty CPU synthetic tests passed; a scalar flow harness actually
+  performs 256 toy SGD updates, separate from real-data steps. The real DeepSeek
+  controller made 15 physical calls, not mock calls: 9,255 prompt / 704 completion tokens,
+  upper bound USD 0.0036213. Its 21 slots actually applied 11 LLM and 10 fallback decisions.
+  Original bridge and first metadata recovery failures, all cached/late answers,
+  a 314-character rationale rejection, and second recovery completion are retained.
+  No old attempt/action was replaced, no job retrained, no dependencies installed,
+  no final GAGA/test queries, no new artifact build. Secrets remained local.
+- Critical review: an agent separate from alignment implementation recounted all 18
+  jobs, raw-logit argmax, cohorts/budgets/counters and 232 artifact hashes. Its first
+  overly strict near-zero dot-product check and explicit numerical amendment are
+  preserved; ten float64 cancellation warnings remain. The bridge implementation
+  author separately recounted API records (861 checks), preserving a first temporal
+  audit-predicate failure and amendment. These are agents, not human verification;
+  the API recount is not independent of bridge authorship. Root's separate saved
+  summary retains every seed and all eight preselected cases. No overall winner,
+  LLM superiority, full-distribution matching or camouflage benefit is claimed.
+- Evidence: [method and interpretation](course/alignment_agent/README.md),
+  [exact execution trace](evidence/alignment_agent_v2/execution_trace.json),
+  [full results](evidence/alignment_agent_v2/results/summary.json), and the
+  [updated cost ledger](evidence/research_cost_ledger.json). Total research charge
+  is 2.9261111188 GPU-hours plus 0.02 reserve; this phase used 1.3617947545
+  GPU-hours, below its 2-hour ceiling.
+  Existing report/slides are dated drafts. Genuine human review/contributions,
+  instructor rules, rehearsal/defense and final submission freeze remain pending.
+
 ## Completed owner method pilot results on 3 November 2026
 
 Codex executed the committed first implementations after the owner's explicit

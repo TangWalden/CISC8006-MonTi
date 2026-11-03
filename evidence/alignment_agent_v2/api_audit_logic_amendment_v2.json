@@ -1,0 +1,36 @@
+{
+  "schema": "alignment_api_saved_record_audit_logic_amendment_v2",
+  "registered_utc": "2026-11-03T05:21:48.582481+00:00",
+  "scientific_source_commit": "5a1d9e57a99541006c6d749adda9602217575421",
+  "previous_audit_status": "failed",
+  "previous_source_sha256": "28ce8a12ab907c2d3eb5cf1753a39660f051da960d16aa4669b1d11f1155e9d9",
+  "preserved_previous_source_sha256": "28ce8a12ab907c2d3eb5cf1753a39660f051da960d16aa4669b1d11f1155e9d9",
+  "previous_failed_report_sha256": "c84fd347a46b588a8539649197ae66a4f2aea63d3f83b39af8095e4549c7f3d7",
+  "corrected_source_sha256": "4529c238938981520d715e098c2f06efbb1124623299156ce61cb3f33d83d9df",
+  "old_predicate": "Incorrectly prohibited any API start after recovery registration for a slot that later became past.",
+  "corrected_predicate": "No new physical API attempt may start after a local past_slot_skipped observation for that same slot; already-recorded logical request IDs must not be duplicated.",
+  "disclosed_cases": [
+    {
+      "seed": 4,
+      "epoch": 5,
+      "api_start_utc": "2026-11-03T04:41:17.3754826Z",
+      "later_record_only_skip_utc": "2026-11-03T04:41:37.588919+00:00"
+    },
+    {
+      "seed": 4,
+      "epoch": 6,
+      "api_start_utc": "2026-11-03T04:42:08.9917440Z",
+      "later_record_only_skip_utc": "2026-11-03T04:42:37.336584+00:00"
+    },
+    {
+      "seed": 5,
+      "epoch": 4,
+      "api_start_utc": "2026-11-03T05:07:23.4225438Z",
+      "later_record_only_skip_utc": "2026-11-03T05:07:49.596206+00:00"
+    }
+  ],
+  "interpretation": "These existing pending calls preceded later record-only reconciliation. This repairs an overly strict audit predicate, not an experimental method, acceptance rule, output, action or API call.",
+  "new_api_calls": 0,
+  "new_model_calls": 0,
+  "new_training_steps": 0
+}

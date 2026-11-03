@@ -1,6 +1,17 @@
 # CISC8006: MonTi Reproduction and Improvements
 
-**Execution results, 3 November 2026:** the owner-requested implementations and
+**Failure-driven follow-up, 3 November 2026:** [Concrete failure analysis and the
+completed six-arm agent experiment](course/alignment_agent/README.md) are now
+available. All 18 GCN validation trainings completed, evaluated only at epoch eight. Direct
+alignment again reduces attack performance; block protection recovers part of
+that loss while losing most distance reduction. Hybrid-agent filtered MR is
+93.6450% versus 93.6144% smooth-OFF, only a net one wrong prediction over 3,273
+occurrences. Eleven decisions were actually LLM-controlled and ten were
+fallbacks; no overall improvement, LLM superiority or camouflage benefit is
+established. Fifteen real calls and all failures are retained. This phase used
+1.3617948 GPU-hours including diagnosis/waits; no final test/GAGA evaluation.
+
+**First implementation phase, 3 November 2026:** the owner-requested implementations and
 first bounded validation pilots have run: three self-model seeds, nine fresh
 OFF/ALWAYS/GATED alignment trainings, a numeric neural gate, and 120 real DeepSeek
 API calls including textual descriptions and four-example in-context learning.

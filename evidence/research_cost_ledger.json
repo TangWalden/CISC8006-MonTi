@@ -16,9 +16,9 @@
       "conservative_gpu_hours": 0.0006216666666666666
     }
   ],
-  "measured_or_conservatively_charged": 1.568860253919062,
+  "measured_or_conservatively_charged": 2.926111118808192,
   "unmetered_setup_reserve": 0.02,
-  "remaining_after_reserve": 10.411139746080938,
+  "remaining_after_reserve": 9.053888881191808,
   "failed_or_interrupted_incidents": [
     {
       "path": "evidence/one_edge_diagnosis_v1/failure.json",
@@ -267,11 +267,11 @@
     "result": "evidence/new_methods_20261103/final_saved_recount.json"
   },
   "alignment_agent_v2": {
-    "status": "diagnostic complete; follow-up training and new API not started",
+    "status": "completed; all18 terminal-epoch jobs, actual hybrid agent and independent saved-output audit retained",
     "phase_gpu_limit": 2,
     "diagnostic_gpu_hours": 0.004543889639446409,
-    "training_gpu_hours": 0,
-    "api_physical_calls": 0,
+    "training_gpu_hours": 1.35725086488913,
+    "api_physical_calls": 15,
     "diagnostic_summary": "evidence/alignment_agent_v2/gradient_summary.json",
     "cpu_failures_preserved": [
       "direct Python DGL import missing libcusparse (1.42337847 seconds)",
@@ -287,6 +287,29 @@
       "outer_seconds": 5.08749776,
       "model_calls": 0
     },
-    "accounting": "Charge complete diagnostic guardian; future jobs use maximum guardian/outer process and include API wait."
+    "accounting": "Charge complete diagnostic guardian; future jobs use maximum guardian/outer process and include API wait.",
+    "phase_gpu_hours": 1.3617947545285762,
+    "training_jobs": 18,
+    "training_epochs": 144,
+    "real_data_optimizer_steps": 36864,
+    "generator_forwards_including_diagnostic": 39200,
+    "gcn_forwards_including_diagnostic": 46148,
+    "gradient_calls_including_diagnostic": 32688,
+    "test_queries": 0,
+    "gaga_forwards": 0,
+    "api_prompt_tokens": 9255,
+    "api_completion_tokens": 704,
+    "api_usd_upper_bound": 0.0036213,
+    "api_applied_external_agent_decisions": 11,
+    "api_applied_fallback_decisions": 10,
+    "api_failures": "Two metadata bridge exits preserved; second recovery completed; no HTTP errors/retries",
+    "cpu_flow_tests": {
+      "tests": 40,
+      "test_loop_seconds": 0.297,
+      "real_dataset_model_calls": 0,
+      "toy_scalar_sgd_updates": 256,
+      "gpu_hours": 0
+    },
+    "results": "evidence/alignment_agent_v2/results/summary.json"
   }
 }

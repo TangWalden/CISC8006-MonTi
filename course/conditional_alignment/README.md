@@ -134,3 +134,13 @@ No GAGA context is constructed by this package.
 known-answer/gradient/source-boundary checks. These are preparation until an
 execution receipt confirms a committed-source run; they load no real data or
 model weights and measure no method efficacy.
+
+## Subsequent failure-driven study, 3 November 2026
+
+The owner requested specific failed-case analysis, changes and actual execution.
+The separate [six-arm follow-up](../alignment_agent/README.md) completed 18 fresh
+terminal-epoch trainings with Softplus/protection/real external-agent/matched
+random controls. It preserves this first phase and its selected checkpoints.
+The new hybrid-agent result does not establish superiority or camouflage; the
+old q90 gate must not be relabeled as an agent. New and old scores use different
+harness/checkpoint/RNG rules and are not paired across phases.
