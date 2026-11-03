@@ -1,14 +1,20 @@
 # One-week execution and acceptance plan
 
-Update 2026-11-03, newest actual owner instruction: implement the recommended
-GCN plus independently TRAIN-fitted relationship Transformer surrogate, adjusting
-for build failures. The [isolated four-arm plan](DUAL_SURROGATE_PROTOCOL_V1.json)
-keeps the generator, original GCN representation cache, physical budgets and
-score role fixed. Fresh GAGA and GCN teachers use internal FIT80/TUNE20 only;
-held-out teacher labels remain masked in group inputs. All 12 terminal-epoch
-attacker trainings must finish before official GAGA development evaluation.
-This authorizes bounded preparation/validation, not final testing or a final tag.
-Prior negative attempts stay immutable. No new efficacy is established.
+Update 2026-11-03, latest completed owner-authorized work: the
+[independent relationship-surrogate implementation](dual_surrogate/README.md)
+completed all twelve terminal models and gated official-GAGA development
+evaluation, with saved-output audits passed. GCN-only/GAGA-only/two-GCN/joint
+mean GAGA MR is 51.3596 / 46.1045 / 47.8766 / 38.9245%. Joint is lower than GCN-only
+in all three seeds; it is a negative result, not a selected improvement.
+The original generator, representation cache, physical budgets and score role
+were retained; the added feedback changes the original adversary knowledge.
+Index/resource/timer failures and their full costs are preserved; eleven
+completed models were reused and only one incomplete TRAIN job retried.
+The phase cost 1.333470031947719 GPUh includes all attempts, with no API or
+final-test queries. Do not rerun or tune this phase automatically after its
+outcomes. Preserve the frozen baseline and prior negative methods, and await
+actual owner feedback before a newly registered study. Full-test protocol and
+final tag retain separate checkpoints; human/course checks are incomplete.
 
 Update 2026-11-03, subsequent owner instruction: the
 [failure-driven six-arm study](alignment_agent/README.md) has completed all 18

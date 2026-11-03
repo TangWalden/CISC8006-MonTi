@@ -1,0 +1,127 @@
+{
+  "schema": "monti_independent_saved_teacher_audit_v1",
+  "status": "SAVED_TEACHER_CHECKS_PASS",
+  "preparation_source_commit": "5025ebc4a3a088dfce76485e06c0a592bd933d79",
+  "preparation_protocol_sha256": "fea1a6c279f4d573d7ed6645b5c00c9f5d3d7b360e1f8f9f0ada2b72340dc190",
+  "partition": {
+    "original_train": 6595,
+    "fit": 5275,
+    "stop": 1320,
+    "fit_ids_sha256": "86703fc1aaf649774ad9730e2b2a70b8d4321683f91c4b43a1c5c65f8fa3d86c",
+    "tune_ids_sha256": "4950a50b858d295ca884f9e056dcedaf8e4c6532524deda01da9f6275d927c50"
+  },
+  "teachers": [
+    {
+      "role": "gaga",
+      "epochs": 48,
+      "selected_epoch": 38,
+      "optimizer_steps": 528,
+      "forwards": 672,
+      "internal_stop": {
+        "cases": 1320,
+        "accuracy": 0.9159090909090909,
+        "macro_f1": 0.8846690611296482,
+        "benign_recall": 0.9404761904761905,
+        "fraud_recall": 0.8365384615384616,
+        "tp": 261,
+        "tn": 948,
+        "fp": 60,
+        "fn": 51,
+        "class_counts": [
+          1008,
+          312
+        ],
+        "auc": 0.9530105311355311
+      },
+      "checkpoint_sha256": "cffa02b553a51ad560123923dbc41ffb7f13781163112bf50353a24ba80115cf"
+    },
+    {
+      "role": "gcn2",
+      "epochs": 32,
+      "selected_epoch": 22,
+      "optimizer_steps": 32,
+      "forwards": 64,
+      "internal_stop": {
+        "cases": 1320,
+        "accuracy": 0.7583333333333333,
+        "macro_f1": 0.6918846418674829,
+        "benign_recall": 0.8005952380952381,
+        "fraud_recall": 0.6217948717948718,
+        "tp": 194,
+        "tn": 807,
+        "fp": 201,
+        "fn": 118,
+        "class_counts": [
+          1008,
+          312
+        ],
+        "auc": 0.7538633241758241
+      },
+      "checkpoint_sha256": "bffb92ced20ac93bbc93eced563ae3d82264476e08dfe8b2b0face6b7e2c73ff"
+    }
+  ],
+  "optimizer_steps": 560,
+  "forwards": 736,
+  "verified_artifacts": [
+    {
+      "artifact": "fit_sequences.npy",
+      "sha256": "35b2ce31b24c3105499070ed1c08b96e07e99db9876fddcb0d2d56e3cce77638"
+    },
+    {
+      "artifact": "fit_feat_sum.npy",
+      "sha256": "91fa9d3febf7ea9d36cd0177305d23b1e4b0396b64090b0346911a26c3a40010"
+    },
+    {
+      "artifact": "fit_degrees.npy",
+      "sha256": "b62dc21345671d6e9c6ef78784d87b616c9c08cc4641c7d6861cdceff5938a96"
+    },
+    {
+      "artifact": "fit_group_masks.pt",
+      "sha256": "888239a6d6bc71fe869b4f3967c8a63aa98388457582fc38298dd21dbcf922de"
+    },
+    {
+      "artifact": "original_adjacency.npz",
+      "sha256": "9ece3a609c0d2b60d83e8e11269a9812f03694585b31342b8999d9f2f683c35e"
+    },
+    {
+      "artifact": "gaga_teacher.pt",
+      "sha256": "cffa02b553a51ad560123923dbc41ffb7f13781163112bf50353a24ba80115cf"
+    },
+    {
+      "artifact": "gcn2_teacher.pt",
+      "sha256": "bffb92ced20ac93bbc93eced563ae3d82264476e08dfe8b2b0face6b7e2c73ff"
+    }
+  ],
+  "teacher_artifact_manifest_sha256": "fe5eb9bae57d09c1582847880704397e19c9b83671462ef4d77c9efe32c35e44",
+  "no_new_model_calls": true,
+  "no_tensor_deserialization": true,
+  "limitations": [
+    "Mask tensor bytes and FIT-only cache provenance are checked; raw tensor mask values are not independently decoded by this stdlib audit.",
+    "Recorded initial/selected content hashes are reconciled, not independently reconstructed from checkpoint tensors.",
+    "Only original TRAIN identity metadata and saved internal STOP labels/predictions are read; no victim/test predictions."
+  ],
+  "created_utc": "2026-11-03T07:21:03.548113+00:00",
+  "auditor": "Codex rubric_review agent; not human verification or instructor approval",
+  "audit_script_sha256": "d364f831a6d8fff5815072160253e9fb7707d5060e437b2b660d418d1d4a9516",
+  "execution": {
+    "command": [
+      "/usr/bin/python3",
+      "/home/tjy/Project/MonTi-course/runs/dual_surrogate_20261103_attempt1/audit_private/audit_teacher_saved.py",
+      "--teacher-directory",
+      "/home/tjy/Project/MonTi-course/runs/dual_surrogate_20261103_attempt1/teachers_attempt1",
+      "--preparation-protocol",
+      "/home/tjy/Project/MonTi-course/runs/dual_surrogate_20261103_attempt1/preparation_protocol_v1.json",
+      "--repo-root",
+      "/home/tjy/Project/MonTi-course",
+      "--output",
+      "/home/tjy/Project/MonTi-course/runs/dual_surrogate_20261103_attempt1/audit_private/independent_teacher_audit_attempt1.json"
+    ],
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "cpu_seconds": 2.8260391119999997,
+    "wall_seconds": 2.8262213019188493,
+    "timing_scope": "Audit process work through receipt serialization start",
+    "model_calls": 0,
+    "API_calls": 0,
+    "tensor_deserialization": 0
+  }
+}

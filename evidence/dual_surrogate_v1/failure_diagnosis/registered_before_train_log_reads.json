@@ -1,0 +1,14 @@
+{
+  "API_calls": 0,
+  "GPU_hours": 0,
+  "cpu_wall_limit_seconds": 300,
+  "example_rule": "Seed3; smallest groupID with joint GAGA attacked-wrong below GCN-only, after matching all128 group/node coordinates.",
+  "known_outcomes": "Joint GAGA VALID MR38.9245%, GCN-only51.3596%; negative in all3 seeds.",
+  "ml_imports": false,
+  "model_queries": 0,
+  "optimizer_steps": 0,
+  "script_sha256": "35eb26b0d25bd1436ec442f11cf908e15921ee1e70793db62659fe4023524abd",
+  "status": "POSTHOC_after_final_outcomes_known",
+  "tensor_deserialization": false,
+  "train_scope": "All12 primary completed trainings; all8 saved epochs; one pass; fixed256 TRAIN groups."
+}

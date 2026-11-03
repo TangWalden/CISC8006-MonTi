@@ -1,0 +1,18 @@
+{
+  "status": "POSTHOC_source_frozen_BEFORE_TRAIN_JSONL_reads",
+  "frozen_utc": "2026-11-03T08:52:01.017003+00:00",
+  "script_sha256": "35eb26b0d25bd1436ec442f11cf908e15921ee1e70793db62659fe4023524abd",
+  "known_owner_reported_validation_means": {
+    "gcn_gaga": 38.9245,
+    "gcn_only": 51.3596,
+    "gaga_only": 46.1045,
+    "two_gcn": 47.8766
+  },
+  "allowed_inputs": "Saved TRAIN JSONL for12 primary runs; frozen protocol JSON; development evaluation JSON/JSONL only",
+  "cpu_limit_seconds": 300,
+  "model_queries": 0,
+  "API_calls": 0,
+  "tensor_deserialization": false,
+  "training": false,
+  "GPU_hours": 0
+}

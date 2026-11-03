@@ -1,0 +1,8 @@
+{
+  "status": "corrected_metadata_setup_quoting_error_before_TRAIN_reads",
+  "failed_operation": "First remote directory-creation command had shell quoting SyntaxError; no directory or scientific input was read",
+  "recovery": "Explicit stdin-only Python mkdir, then successful source-hash-verified one-pass diagnosis",
+  "new_model_queries": 0,
+  "tensor_deserialization": false,
+  "GPU_hours": 0
+}

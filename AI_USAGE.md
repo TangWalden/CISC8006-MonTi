@@ -1,54 +1,106 @@
 # AI Usage Record
 
-## Independent relationship-surrogate construction, 3 November 2026
+## Independent relationship-surrogate study completed, 3 November 2026
 
-The owner explicitly requested implementation of the recommended method and
-adjustment based on build results. Root coordinated isolated new modules for
-FIT-only teacher training, a hard-forward/ST-backward sequence adapter, and a
-four-arm fixed-epoch validation runner. Existing model/data/scientific source is
-unchanged. Independent static review identified singleton-logit shape, constructor
-RNG, cache-byte verification and oracle-view attributes; these were corrected
-before execution. At this preparation checkpoint no new functional tests,
-teacher fitting, model queries, training, API calls or GPU work have occurred.
-The new plan caps the complete phase at two aggregate GPU-hours; final test and
-final freeze remain separate. Agent coding/review is not human verification.
+The owner explicitly requested implementation and adjustments based on build
+results. Root coordinated new FIT-only teacher preparation, a hard-forward /
+straight-through-backward sequence adapter and a four-arm fixed-epoch runner.
+Static agent reviews identified shape, constructor-RNG, cache-byte and data-view
+issues before execution. The generator architecture and original model files
+remain unchanged; additional surrogate knowledge changes the original GCN-only
+adversary setting. Agent coding, source review and saved-record audits are not
+human verification or instructor approval.
 
-Subsequently, 20 CPU known-answer checks passed from committed source `668044f`
-in 0.187 seconds test-loop time, with zero real-data model queries/GPU use.
-Before any teacher fitting, root strengthened the real-TRAIN preflight to check
-that GAGA feedback reaches both actual MonTi output heads as well as generated
-features/edge values. This is a pre-execution validity gate, not an efficacy result.
-
-Actual teacher preparation subsequently completed from source
-`5025ebc4a3a088dfce76485e06c0a592bd933d79`, under preparation protocol SHA256
+Twenty CPU synthetic checks passed from committed source `668044f` in 0.187
+seconds; the continuation passed 21 checks from `b35c18f` in 0.183 seconds. Its
+shell wrapper failed exit quoting after unittest printed OK; the retained log
+was not replaced by a duplicate test run. These checks used no real-data model
+queries or GPU. Fresh teacher preparation used source
+`5025ebc4a3a088dfce76485e06c0a592bd933d79`, preparation protocol SHA256
 `fea1a6c279f4d573d7ed6645b5c00c9f5d3d7b360e1f8f9f0ada2b72340dc190`.
-The fresh GAGA teacher selected epoch 38 of 48 completed epochs, with internal
-TRAIN-holdout macro-F1 0.884669 and AUC 0.953011. The independent GCN teacher
-selected epoch 22 of 32, with macro-F1 0.691885 and AUC 0.753863. Both passed
-the frozen FIT/TUNE quality gates. Preparation recorded 736 teacher forwards
-and 560 optimizer updates; these are actual executions, not synthetic checks.
-Only FIT80 labels enter GAGA group inputs; internal TUNE labels select the
-checkpoint. No original-validation/test labels selected either teacher, and
-the official GAGA victim was not loaded or queried.
+GAGA selected epoch 38 of 48, with internal TUNE macro-F1 0.884669 and AUC
+0.953011; GCN2 selected epoch 22 of 32, with 0.691885 / 0.753863. Both frozen
+quality gates passed. Actual preparation used 736 teacher forwards and 560
+updates. Only FIT80 labels enter GAGA group inputs, including during subsequent
+attacker training; internal TUNE selects the teacher checkpoint. No original
+VALID/test labels selected either teacher. Readiness is not attack efficacy.
 
-The first real-TRAIN preflight then failed while integral floating-point TRAIN
-indices were used for PyTorch indexing. The failed attempt is preserved: it
-made zero attack generations, attack-model inference calls or optimizer
-updates, and zero official-victim queries. Root is preparing a checked index-
-dtype correction and a fresh preflight, retaining both trained teachers and
-the scientific settings. No teacher retraining, successful gradient gate,
-attacker training or efficacy is claimed at this checkpoint. The conservative
-stage charge through teacher preparation and this failure is
-0.032764715937212 GPU-hours; the phase ceiling remains two aggregate GPU-hours.
-The earlier 20 CPU checks remain the completed test record; continuation checks
-have not run yet. Agent implementation/review remains distinct from human
-technical verification and course approval.
+The first real-TRAIN preflight failed on integral floating-point indices before
+attack generation, inference or updates. A checked index-dtype correction
+retained the trained teachers. The second preflight aborted natively in DGL
+CUDA allocation while another user's workload occupied approximately 22 GiB of
+GPU0. Its Python result/guardian and exact partial counters are unavailable;
+23.151359 seconds of measured outer lifetime remain charged. A registered
+operational continuation used another RTX 3090 on GPU1, numeric visibility,
+own-process UUID checks and an 8 GiB free-memory gate. No other user's workload
+was changed, teachers were not retrained and bitwise equivalence is not claimed.
 
-Continuation CPU checks from `b35c18f` passed21tests in0.183seconds; the SSH shell wrapper then failed its exit quoting after unittest printed OK. The retained log and hash are preserved without repeating tests. The second real preflight aborted natively in DGL CUDA sampling under shared GPU0 memory exhaustion (exit-6); no Python result or guardian receipt survived. Its complete23.151359-second outer process is charged, bringing the stage to0.039195649029991016GPUh. Missing partial model-call counters are not invented. Both original teachers and all failed attempts remain unchanged. An operational continuation will register the available same-model GPU1 using numeric visibility1, logical cuda:0, both runtime counts and own physical UUID, with a prelaunch memory check. No other user process is modified; scientific settings, cohorts and resource ceilings remain fixed. No attacker training, official-victim query or test query has started.
+Preflight attempt 3 passed from
+`14e2471a6791b90afcd3a395bab1ce72b9a27f19`: four generations, sixteen teacher
+forwards, eight autograd calls, zero updates and zero official-victim calls.
+Maximum sequence/logit discrepancies were 6.5565e-7 / 4.7684e-7; both MonTi
+output-head gradients were nonzero for all four registered TRAIN cases. Eleven
+terminal attacker jobs then completed. Joint seed 5 hit its 480-second timer
+after 2,012 updates and 2,013 completed generations, before victim evaluation.
+The GAGA dispatch counter includes interrupted sequence preparation and is not
+a completed-forward count. The preserved timer-only continuation from
+`255b897714b3526eb56205dcdeac1101c7f1ce00` retained the eleven models and passed
+preflight, and retried only that job with a 900-second ceiling. Eight epochs,
+seeds, cohorts and the two-GPU-hour aggregate cap were unchanged. Dtype,
+resource and timer repairs were build adjustments, not outcome-based tuning.
 
-Real preflight attempt3 passed from `14e2471` with4generations,16teacher forwards,8autograd calls,0updates and0official-victim calls; sequence/logit differences were below6.56e-7/4.77e-7 and both actual generator output heads received nonzero gradients in all4registered TRAIN cases. Eleven terminal attacker jobs then completed. The last gcn_gaga seed5 attempt reached2012updates/2013generations before the480-second individual guardian interrupted sequence preparation. Its gaga_new dispatch counter includes the interrupted preparation and is not a completed-model-forward count. No all12gate or victim evaluation occurred. Root is preparing an operational900-second individual timer with all11completed outputs hash-bound and reused, the passed preflight retained, and only incomplete seed5 rerun. Aggregate phase ceiling2GPUh/science/8epochs/cohorts/seeds are unchanged. The complete stage charge through failure is1.1385221454663488GPUh, including all successful/failed work; no outcome-based tuning or victim-validation result was observed.
+All twelve terminal trainings subsequently completed before official-victim
+development evaluation. Eleven primary models use `14e2471`, and the completed
+retry uses `255b897`; the final execution protocol SHA256 is
+`d816e1e1aaf409b414afe4a26beafba71d3c07e4f4eccc58e6258daf6cd52406`.
+The successful primary matrix used 24,576 optimizer updates and 36,864 teacher
+forwards. Evaluation used 1,536 generations and 1,664 forwards each for original
+GCN and official GAGA, including clean evaluation. Each arm/seed retains 128
+VALID groups / 1,091 occurrences / 374 unique targets. Across independent group
+scenarios, the summed budgets are 7,776 injected nodes / 358,491 edges per
+arm/seed; this is not one persistent global perturbation.
 
-Real preflight attempt3 passed from `14e2471` with4generations,16teacher forwards,8autograd calls,0updates and0official-victim calls; sequence/logit differences were below6.56e-7/4.77e-7 and both actual generator output heads received nonzero gradients in all4registered TRAIN cases. Eleven terminal attacker jobs then completed. The last gcn_gaga seed5 attempt reached2012updates/2013generations before the480-second individual guardian interrupted sequence preparation. Its gaga_new dispatch counter includes the interrupted preparation and is not a completed-model-forward count. No all12gate or victim evaluation occurred. Root is preparing an operational900-second individual timer with all11completed outputs hash-bound and reused, the passed preflight retained, and only incomplete seed5 rerun. Aggregate phase ceiling2GPUh/science/8epochs/cohorts/seeds are unchanged. The complete stage charge through failure is1.1385221454663488GPUh, including all successful/failed work; no outcome-based tuning or victim-validation result was observed.
+The result is negative. GAGA attack MR means (sample SD, percentage points)
+are GCN-only 51.359609% (2.750280), GAGA-only 46.104491% (1.057063), two GCNs
+47.876566% (3.758393), and joint GCN/GAGA 38.924534% (2.916332). Higher MR means
+a stronger attack. Joint minus GCN-only is -12.435075 pp, negative in all three
+seeds; its paired 95% t interval is [-22.173693, -2.696457] pp (`n=3`, `df=2`),
+conditional on the fixed teachers and development cohort, not independent-news
+uncertainty. Clean GAGA is 398/1,091 wrong (36.480293%). Joint seed 3 creates
+25 new errors and recovers 35 pre-existing errors, leaving 388 wrong. No
+novelty, effective improvement or further method selection is claimed. The
+historical 43.728% test reproduction and its inconclusive paired interval remain
+separate.
+
+The complete conservative phase charge is 1.333470031947719 GPU-hours, including
+teachers, preflights, all failed/interrupted attempts, successful training and
+evaluation. The extra 2,012 timeout updates are outside the 24,576 successful-
+matrix updates; native-abort forward gaps remain unknown. No exact all-attempt
+forward total is invented. This phase made zero LLM API calls and zero test
+queries. The [results](evidence/dual_surrogate_v1/results.json),
+[saved aggregate](evidence/dual_surrogate_v1/saved_aggregate.json) and
+[execution trace](evidence/dual_surrogate_v1/execution_trace.json) retain the
+negative findings and accounting. The [teacher audit](evidence/dual_surrogate_v1/independent_teacher_audit.json)
+and [phase audit](evidence/dual_surrogate_v1/independent_phase_audit.json) both
+passed saved-record checks without new inference. These are agent audits, not
+human checks. No further tuning, seeds, API or GPU work is planned for this
+phase; final TEST/tag authorization, actual human contributions, review,
+rehearsal and course approval remain separate. Dated PDF/PPTX drafts are retained.
+
+A further bounded POSTHOC diagnosis by the adapter author froze source before
+opening TRAIN logs, after overall VALID outcomes were known. One saved-JSON pass
+checked 96 epochs / 256 groups and 3,141 TRAIN occurrences each. Joint own-GAGA
+wrong rate increased 46.4077% to 77.5974%, with decreasing Softplus; this is
+online training progress, not a paired TRAIN/VALID gap or a causal explanation.
+An explicitly outcome-selected nine-target case, group 938, has four clean
+errors, five under GCN-only and three under joint. The diagnosis used 0.3445
+diagnostic wall seconds (0.4662 seconds outer), no models/tensors/API/GPU.
+A separate static review found that the executed `CPU_seconds` field used
+`time.monotonic`; original outputs are preserved with a timing-label sidecar,
+and measured process CPU usage is not claimed. Its initial
+metadata mkdir quoting error was corrected before input reads and retained.
+[Source and complete saved diagnosis](evidence/dual_surrogate_v1/failure_diagnosis/summary.json)
+are published; this adds no experiment or human review.
 
 ## Failure-driven owner follow-up completed on 3 November 2026
 

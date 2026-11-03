@@ -56,7 +56,7 @@
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
     "full_evaluation": "Pending concrete complete final-test protocol confirmation; completed new-method validation pilots do not authorize it.",
-    "active_direction": "Owner-authorized implementation of an independent GAGA-style surrogate plus GCN training; preparation only, no new efficacy established.",
+    "active_direction": "Owner-authorized dual-surrogate development phase completed with negative results and passed saved-record agent audits; no improvement selected and no further tuning, seeds, API or GPU work planned for this phase. Final TEST/tag and human/course requirements remain separate.",
     "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
@@ -67,11 +67,11 @@
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Review completed pilot evidence, including negative outcomes and numeric-only/in-context scope",
-    "Resolve authoritative node-to-article mapping and honest held-out base-evidence design before any semantic-content or trained-text followup",
-    "Freeze any complete final-test/adaptive-control protocol for owner confirmation before further final testing",
-    "Complete genuine human/course/application checks, actual contributions and rehearsal; dated report/deck are drafts",
-    "By2026-11-05 deliver achieved artifacts and honest remaining items, then stop automation; do not fabricate final course completion"
+    "Report all four dual-surrogate arms and the negative joint-minus-GCN paired result, preserving sources, failed attempts, cost scope and fixed-teacher/development-cohort limitations",
+    "Retain the earlier formal test reproduction and inconclusive learned-versus-random interval separately from later development results; preserve dated PDF/PPTX drafts",
+    "Complete genuine human technical review, actual Junyi Tang/Yifan Fan contribution records, course approval checks and rehearsal without claiming these agent audits satisfy them",
+    "Keep final TEST and final submission tag separate until their concrete protocol and authorization are confirmed; do not launch further tuning, seeds, API calls or GPU work for this completed phase",
+    "By 2026-11-05 deliver achieved artifacts and honest remaining items, then stop automation; do not fabricate full course completion"
   ],
   "results_first_diagnosis": {
     "phase": "saved-validation phase 1; later new inference is separately registered below",
@@ -383,7 +383,7 @@
   "dual_surrogate_stage": {
     "owner_implementation_and_bounded_validation_authorized": true,
     "owner_instruction": "Implement the recommendation and adjust according to build results",
-    "status": "eleven_terminal_jobs_completed_last_job_timed_out_before_validation",
+    "status": "completed_development_negative_result",
     "protocol": "course/DUAL_SURROGATE_PROTOCOL_V1.json",
     "phase_gpu_ceiling": 2,
     "arms": [
@@ -445,12 +445,12 @@
       "test_queries": 0
     },
     "attack_training_jobs_started": 12,
-    "attack_training_jobs_completed": 11,
-    "stage_gpu_hours_charged_to_date": 1.1385221454663488,
-    "stage_gpu_hours_scope": "Conservative process/guardian charge through teacher preparation and failed preflight; not the complete planned phase",
-    "continuation": "Retain11completed models and passed preflight; change only individual timer480to900seconds, same8epochs/seed/cohort/science and phase2hceiling",
+    "attack_training_jobs_completed": 12,
+    "stage_gpu_hours_charged_to_date": 1.333470031947719,
+    "stage_gpu_hours_scope": "Complete conservative process/guardian charge: teacher preparation, preflights, all failures/interrupted attempts, twelve successful trainings and gated evaluation; includes extra 2012 timeout updates",
+    "continuation": "Completed dtype/resource/timer-only build continuations; original teachers reused, eleven terminal models retained and only incomplete joint seed-5 job retried with a 900-second individual timer; scientific comparison and aggregate 2-GPU-hour cap unchanged",
     "continuation_cpu_checks_run": true,
-    "efficacy": "Not evaluated; teacher internal quality is not attack or victim-transfer improvement",
+    "efficacy": "Negative: joint GCN/GAGA had lower official-GAGA attack MR than GCN-only in all three attack seeds; no effective improvement selected",
     "cpu_checks": {
       "source_commit": "668044fae8f5fa745d4de9abb77ab7ce067f889d",
       "tests": 20,
@@ -465,14 +465,16 @@
       "status": "passed by retained unittest OK log",
       "log_sha256": "a6458f19307bce5c33d1757481a559af80dbb988d131ccffaf83d305703f70ff",
       "outer_wrapper_exit": "After unittest printed21/OK, shell exit quoting failed; no duplicate test run.",
-      "gpu_hours": 0
+      "gpu_hours": 0,
+      "source_commit": "b35c18f081732758be43b715fd9c5b795172eb21"
     },
     "preflight_attempt2": {
       "status": "native abort; no result/guardian, exact log preserved",
       "evidence": "evidence/dual_surrogate_v1/build_attempt2.json",
-      "optimizer_steps": 0,
       "attacker_training_jobs_started": 0,
-      "test_queries": 0
+      "test_queries": 0,
+      "partial_model_and_generation_counters": null,
+      "counter_scope": "No Python result/guardian survived the native abort; exact partial counters remain unknown, and the complete 23.151359-second outer lifetime is charged"
     },
     "preflight_attempt3": {
       "status": "passed",
@@ -490,7 +492,110 @@
       "evidence": "evidence/dual_surrogate_v1/build_attempt3_timeout.json",
       "optimizer_steps": 2012,
       "completed_generations": 2013,
-      "official_victim_forwards": 0
+      "official_victim_forwards": 0,
+      "gaga_dispatch_count": 2013,
+      "gaga_dispatch_scope": "Includes interrupted sequence preparation; not a count of completed GAGA model forwards",
+      "extra_updates_excluded_from_successful_primary_counts": true,
+      "retry_completed": true
+    },
+    "training_attempts_started": 13,
+    "training_attempt_scope": "Twelve distinct arm/seed jobs; thirteen attempts include the preserved incomplete joint seed-5 timeout and its successful retry",
+    "scientific_core_source_commit": "14e2471a6791b90afcd3a395bab1ce72b9a27f19",
+    "completion_source_commit": "255b897714b3526eb56205dcdeac1101c7f1ce00",
+    "primary_model_sources": {
+      "14e2471a6791b90afcd3a395bab1ce72b9a27f19": 11,
+      "255b897714b3526eb56205dcdeac1101c7f1ce00": 1
+    },
+    "execution_protocol": "evidence/dual_surrogate_v1/execution_protocol_v4.json",
+    "execution_protocol_sha256": "d816e1e1aaf409b414afe4a26beafba71d3c07e4f4eccc58e6258daf6cd52406",
+    "test_queries": 0,
+    "human_verification_completed": false,
+    "further_tuning_or_seeds_or_API_or_GPU_planned": false,
+    "dated_PDF_PPTX_unchanged": true,
+    "successful_primary_training": {
+      "jobs": 12,
+      "epochs_per_job": 8,
+      "optimizer_steps": 24576,
+      "teacher_forwards": 36864,
+      "counts_exclude_failed_attempts": true
+    },
+    "development_evaluation": {
+      "status": "completed only after all twelve terminal trainings",
+      "groups_per_arm_seed": 128,
+      "target_occurrences_per_arm_seed": 1091,
+      "unique_target_nodes": 374,
+      "generator_forwards": 1536,
+      "original_gcn_forwards": 1664,
+      "official_gaga_forwards": 1664,
+      "test_queries": 0,
+      "summed_injected_nodes_per_arm_seed": 7776,
+      "summed_injected_edges_per_arm_seed": 358491,
+      "budget_sum_scope": "Sums across independent group-attack scenarios, not one persistent global graph",
+      "clean_gaga_wrong_occurrences": 398,
+      "clean_gaga_mr_percent": 36.48029330889093
+    },
+    "results": {
+      "primary_metric": "Occurrence-weighted official-GAGA attack MR; higher means stronger attack",
+      "gaga_mr_percent_mean_and_sample_sd": {
+        "gcn_only": {
+          "mean": 51.35960892147877,
+          "sd_pp": 2.7502800221125137
+        },
+        "gaga_only": {
+          "mean": 46.104491292392304,
+          "sd_pp": 1.057063482554609
+        },
+        "two_gcn": {
+          "mean": 47.87656584173541,
+          "sd_pp": 3.75839274419353
+        },
+        "gcn_gaga": {
+          "mean": 38.92453406660556,
+          "sd_pp": 2.916332367700012
+        }
+      },
+      "joint_minus_gcn_only_pp": -12.435074854873207,
+      "joint_minus_gcn_only_paired_t95_pp": [
+        -22.173693089951584,
+        -2.696456619794832
+      ],
+      "paired_attack_seeds": 3,
+      "paired_t_degrees_of_freedom": 2,
+      "all_three_joint_minus_gcn_differences_negative": true,
+      "uncertainty_scope": "Conditional on fixed teachers and development cohort; not uncertainty across teacher fits or independent news samples",
+      "joint_seed3_transitions": {
+        "new_wrong": 25,
+        "recoveries": 35,
+        "attacked_wrong": 388
+      },
+      "historical_formal_test_reproduction_replaced": false,
+      "novelty_or_effective_improvement_claimed": false
+    },
+    "saved_record_agent_audits": {
+      "teacher": "SAVED_TEACHER_CHECKS_PASS",
+      "phase": "ALL_SAVED_PHASE_CHECKS_PASS",
+      "new_inference": false,
+      "human_verification": false
+    },
+    "evidence": {
+      "results": "evidence/dual_surrogate_v1/results.json",
+      "saved_aggregate": "evidence/dual_surrogate_v1/saved_aggregate.json",
+      "execution_trace": "evidence/dual_surrogate_v1/execution_trace.json",
+      "teacher_audit": "evidence/dual_surrogate_v1/independent_teacher_audit.json",
+      "phase_audit": "evidence/dual_surrogate_v1/independent_phase_audit.json"
+    },
+    "posthoc_saved_diagnosis": {
+      "summary": "evidence/dual_surrogate_v1/failure_diagnosis/summary.json",
+      "scope": "Known VALID outcomes, source frozen before TRAIN JSON reads; online TRAIN metrics, not causal or paired generalization evidence",
+      "epochs": 96,
+      "train_groups_each_epoch": 256,
+      "train_occurrences_each_epoch": 3141,
+      "model_queries": 0,
+      "GPU_hours": 0,
+      "adapter_author_is_diagnosis_author": true,
+      "diagnostic_wall_seconds": 0.3445328730158508,
+      "process_cpu_seconds": null,
+      "timing_label_correction": "evidence/dual_surrogate_v1/failure_diagnosis/timing_label_correction.json"
     }
   }
 }

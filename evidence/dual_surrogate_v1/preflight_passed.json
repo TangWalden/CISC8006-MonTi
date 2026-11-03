@@ -1,0 +1,188 @@
+{
+  "status": "passed",
+  "optimizer_steps": 0,
+  "sealed_victim_loaded": false,
+  "sealed_victim_forwards": 0,
+  "test_queries": 0,
+  "source_commit": "14e2471a6791b90afcd3a395bab1ce72b9a27f19",
+  "protocol_sha256": "34867f065fad86c84112803c3d9b734fd0accc85057f06e0a7fc91566e9c5ee0",
+  "partition_check": {
+    "original_train_nodes": 6595,
+    "fit_nodes": 5275,
+    "tune_nodes": 1320,
+    "observed_fit_fraction": 0.7998483699772555,
+    "original_train_ids_sha256": "2347f48fac59f389b3871fe8e4b10eab3cec9cb4a2ab7a61c68e05dced6e5afe",
+    "fit_ids_sha256": "86703fc1aaf649774ad9730e2b2a70b8d4321683f91c4b43a1c5c65f8fa3d86c",
+    "tune_ids_sha256": "4950a50b858d295ca884f9e056dcedaf8e4c6532524deda01da9f6275d927c50",
+    "disjoint_exact_cover": true,
+    "labels_read": false
+  },
+  "mask_check": {
+    "fit_nodes": 5275,
+    "masked_internal_tune_nodes": 1320,
+    "fit_ids_sha256": "86703fc1aaf649774ad9730e2b2a70b8d4321683f91c4b43a1c5c65f8fa3d86c",
+    "tune_ids_sha256": "4950a50b858d295ca884f9e056dcedaf8e4c6532524deda01da9f6275d927c50",
+    "label_scope": "internal_fit_only",
+    "label_truth_independently_checked": false
+  },
+  "cases": [
+    {
+      "group": 263,
+      "targets": 3,
+      "sequence_max_error": 0.0,
+      "original_mask_sequence_max_error": 0.0,
+      "logits_max_error": 0.0,
+      "feature_gradient_norm": 0.11104285063441294,
+      "edge_gradient_norm": 0.04457922279834747,
+      "trace": {
+        "schema": "gaga_sequence_hard_forward_st_rational_twohop_v1",
+        "targets": 3,
+        "candidates": 5,
+        "injected_nodes": 1,
+        "selected_nodes": 9,
+        "feature_dim": 768,
+        "reserved_workspace_bytes": 6816192,
+        "max_working_bytes": 134217728,
+        "message_chunk": 1024,
+        "authoritative_masks": "data_view.group_masks",
+        "labels_read": false,
+        "hard_forward": "Original binary newly-reachable union with cached group means; no self/two-hop multiplicity.",
+        "gradient": "Weighted selected-support one-hop; ST rho(P)=P/(1+P) two-hop approximation.",
+        "full_graph_dense_matrix": false
+      },
+      "feature_head_gradient_norm": 0.2842949001734454,
+      "edge_head_gradient_norm": 0.0006520756718005127,
+      "gcn_new_inference": "full graph, matches teacher fit convention",
+      "gcn_base_shape": [
+        3,
+        2
+      ],
+      "gcn_new_shape": [
+        3,
+        2
+      ]
+    },
+    {
+      "group": 238,
+      "targets": 4,
+      "sequence_max_error": 0.0,
+      "original_mask_sequence_max_error": 0.0,
+      "logits_max_error": 0.0,
+      "feature_gradient_norm": 0.010338413119507828,
+      "edge_gradient_norm": 0.0023467029238300264,
+      "trace": {
+        "schema": "gaga_sequence_hard_forward_st_rational_twohop_v1",
+        "targets": 4,
+        "candidates": 128,
+        "injected_nodes": 1,
+        "selected_nodes": 133,
+        "feature_dim": 768,
+        "reserved_workspace_bytes": 11153472,
+        "max_working_bytes": 134217728,
+        "message_chunk": 1024,
+        "authoritative_masks": "data_view.group_masks",
+        "labels_read": false,
+        "hard_forward": "Original binary newly-reachable union with cached group means; no self/two-hop multiplicity.",
+        "gradient": "Weighted selected-support one-hop; ST rho(P)=P/(1+P) two-hop approximation.",
+        "full_graph_dense_matrix": false
+      },
+      "feature_head_gradient_norm": 0.02452391413441591,
+      "edge_head_gradient_norm": 3.525648606650273e-06,
+      "gcn_new_inference": "full graph, matches teacher fit convention",
+      "gcn_base_shape": [
+        4,
+        2
+      ],
+      "gcn_new_shape": [
+        4,
+        2
+      ]
+    },
+    {
+      "group": 84,
+      "targets": 16,
+      "sequence_max_error": 5.364418029785156e-07,
+      "original_mask_sequence_max_error": 6.556510925292969e-07,
+      "logits_max_error": 4.76837158203125e-07,
+      "feature_gradient_norm": 0.026132587888214227,
+      "edge_gradient_norm": 0.005744267724623012,
+      "trace": {
+        "schema": "gaga_sequence_hard_forward_st_rational_twohop_v1",
+        "targets": 16,
+        "candidates": 128,
+        "injected_nodes": 122,
+        "selected_nodes": 266,
+        "feature_dim": 768,
+        "reserved_workspace_bytes": 19474688,
+        "max_working_bytes": 134217728,
+        "message_chunk": 1024,
+        "authoritative_masks": "data_view.group_masks",
+        "labels_read": false,
+        "hard_forward": "Original binary newly-reachable union with cached group means; no self/two-hop multiplicity.",
+        "gradient": "Weighted selected-support one-hop; ST rho(P)=P/(1+P) two-hop approximation.",
+        "full_graph_dense_matrix": false
+      },
+      "feature_head_gradient_norm": 0.5624453440635849,
+      "edge_head_gradient_norm": 7.713189013238903e-07,
+      "gcn_new_inference": "full graph, matches teacher fit convention",
+      "gcn_base_shape": [
+        16,
+        2
+      ],
+      "gcn_new_shape": [
+        16,
+        2
+      ]
+    },
+    {
+      "group": 125,
+      "targets": 6,
+      "sequence_max_error": 1.7881393432617188e-07,
+      "original_mask_sequence_max_error": 3.5762786865234375e-07,
+      "logits_max_error": 3.2782554626464844e-07,
+      "feature_gradient_norm": 0.03904892172884104,
+      "edge_gradient_norm": 0.01204488869215694,
+      "trace": {
+        "schema": "gaga_sequence_hard_forward_st_rational_twohop_v1",
+        "targets": 6,
+        "candidates": 128,
+        "injected_nodes": 40,
+        "selected_nodes": 174,
+        "feature_dim": 768,
+        "reserved_workspace_bytes": 13228800,
+        "max_working_bytes": 134217728,
+        "message_chunk": 1024,
+        "authoritative_masks": "data_view.group_masks",
+        "labels_read": false,
+        "hard_forward": "Original binary newly-reachable union with cached group means; no self/two-hop multiplicity.",
+        "gradient": "Weighted selected-support one-hop; ST rho(P)=P/(1+P) two-hop approximation.",
+        "full_graph_dense_matrix": false
+      },
+      "feature_head_gradient_norm": 0.3525998707929946,
+      "edge_head_gradient_norm": 7.593709943824333e-07,
+      "gcn_new_inference": "full graph, matches teacher fit convention",
+      "gcn_base_shape": [
+        6,
+        2
+      ],
+      "gcn_new_shape": [
+        6,
+        2
+      ]
+    }
+  ],
+  "generator_forwards": 4,
+  "classifier_forwards": {
+    "gcn_base": 4,
+    "gcn_new": 4,
+    "gaga_new": 8,
+    "gaga_victim": 0
+  },
+  "autograd_calls": 8,
+  "hard_forward_tolerance": {
+    "atol": 2e-05,
+    "rtol": 1e-05
+  },
+  "backward_is_st_approximation": true,
+  "elapsed_seconds": 17.300353139988147
+}

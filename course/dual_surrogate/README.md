@@ -1,9 +1,10 @@
 # Independent relationship-surrogate development study
 
-**Status: teacher preparation and real-TRAIN preflight passed; the twelve-job
-training matrix is running. Attack efficacy, sealed-victim evaluation and all
-method comparisons remain pending.** This records an owner-authorized development
-study, not a completed improvement, final test or course approval.
+**Status: all twelve terminal trainings, gated development evaluation and saved-
+record agent audits completed. The proposed joint GCN/GAGA method produced a
+negative result: its GAGA attack MR was lower than GCN-only in all three seeds.**
+No improvement is selected. This is an owner-authorized development study;
+final testing, human review and course completion remain separate.
 
 The question is whether feedback from a fresh GAGA-style relationship classifier
 helps the same MonTi generator transfer to the sealed official GAGA victim.
@@ -125,26 +126,98 @@ No other user's job was changed. The existing teachers were retained; GPU
 migration is not a claim of bitwise equivalence. These are infrastructure/build
 continuations, not outcome-driven changes to the scientific comparison.
 
-## Evaluation and results — pending
+`matrix_attempt3` completed eleven terminal trainings. Its final `gcn_gaga`
+seed-5 attempt hit the 480-second individual timer after 2,012 optimizer updates
+and 2,013 completed generations. Its GAGA dispatch count includes interrupted
+sequence preparation and is not a completed-model-forward count. The preserved
+timeout occurred before any official-victim evaluation. A registered timer-only
+continuation raised that job's individual ceiling to 900 seconds, retained the
+eleven completed models and passed preflight, and reran only the incomplete job.
+Scientific settings and the aggregate two-GPU-hour ceiling were unchanged.
 
-`matrix_attempt3` completed eleven terminal trainings; its last gcn_gaga seed5 hit the individual480-second timer after2012updates. A timer-only continuation will retain all eleven completed models and the passed preflight, then rerun only the incomplete job with a900-second individual ceiling. The aggregate two-GPU-hour ceiling, eight epochs, seeds, cohorts and all scientific source remain fixed. No original-victim validation was performed before this amendment. All twelve terminal trainings must
-complete before the separate evaluation gate can deserialize the official GAGA
-victim. Training cannot query that victim. The planned primary result is its
-occurrence-weighted misclassification rate on the full registered 128-group
-original-VALID cohort, with all 1,091 target occurrences retained. Matched clean
-and attacked transitions will distinguish new errors from pre-existing errors
-and recoveries. Overlapping occurrences are not independent news samples.
+The primary twelve models comprise eleven trainings from
+`14e2471a6791b90afcd3a395bab1ce72b9a27f19` and the completed retry from
+`255b897714b3526eb56205dcdeac1101c7f1ce00`. All twelve completed before the
+separate evaluation gate loaded the official GAGA victim. The final execution
+protocol SHA256 is
+`d816e1e1aaf409b414afe4a26beafba71d3c07e4f4eccc58e6258daf6cd52406`.
 
-No attack MR, improvement, method ranking or superiority claim is available at
-this checkpoint. The eventual record must include every arm/seed, paired
-contrasts against GCN-only, GAGA-only and two-GCN, and the uncertainty from only
-three attack seeds. A three-seed paired interval has two degrees of freedom.
-Negative, mixed, incomplete or inconclusive outcomes will remain visible.
+## Completed development results — negative
 
-The complete phase is capped at two aggregate GPU-hours, including teacher
-preparation, preflights, failures, all training and gated evaluation. Conservative
-process/guardian charges and actual counters determine the final total, which
-is still pending. No final test or final submission tag is authorized by this
-development protocol. Existing report/slides remain dated drafts. Agent checks
-and receipt consistency checks are not human verification, and genuine human
-contributions, review, rehearsal and instructor approval remain separate.
+The primary outcome is occurrence-weighted GAGA misclassification rate (MR),
+where higher means a stronger attack on these fraud targets. Each arm/seed
+retains the same 128 original-VALID groups, 1,091 target occurrences and 374
+unique target nodes. Overlapping occurrences are not independent news samples.
+
+| Arm | Seed 3 MR (%) | Seed 4 MR (%) | Seed 5 MR (%) | Mean MR (%) | Sample SD (pp) |
+|---|---:|---:|---:|---:|---:|
+| GCN-only | 51.4207 | 48.5793 | 54.0788 | 51.3596 | 2.7503 |
+| GAGA-only | 47.1127 | 45.0046 | 46.1962 | 46.1045 | 1.0571 |
+| Two GCNs | 49.9542 | 50.1375 | 43.5380 | 47.8766 | 3.7584 |
+| Joint GCN/GAGA | 35.5637 | 40.4216 | 40.7883 | 38.9245 | 2.9163 |
+
+Joint minus GCN-only is **−12.4351 percentage points**, with all three paired
+differences negative. Its paired 95% t interval is **[−22.1737, −2.6965] pp**
+(`n=3`, `df=2`), conditional on the fixed teachers and development cohort. It
+does not quantify uncertainty across new teacher fits, datasets or independent
+news samples. The other comparisons and their intervals remain in the full
+[saved aggregate](../../evidence/dual_surrogate_v1/saved_aggregate.json).
+No architecture benefit, novelty or effective improvement is established.
+
+Clean GAGA MR on this cohort is 398/1,091 = **36.4803%**. Attacked MR includes
+pre-existing errors and recoveries: joint seed 3 creates 25 new errors but
+recovers 35 previously wrong occurrences, leaving 388 wrong. MR is therefore
+not a count of new attack-induced flips. Every scenario set retains summed
+budgets of 7,776 injected nodes and 358,491 edges across the 128 independent
+group attacks; these are not one jointly modified global graph.
+
+The twelve successful trainings performed **24,576 optimizer updates and
+36,864 teacher forwards**. Gated evaluation performed **1,536 generations,
+1,664 original-GCN forwards and 1,664 official-GAGA forwards**, including clean
+evaluation. These successful-matrix counts exclude the extra 2,012 updates in
+the preserved timeout attempt. Teacher preparation remains 736 forwards / 560
+updates. Unknown partial counters from the native abort remain unknown; an
+exact all-attempt forward total is not claimed.
+
+The complete conservative process/guardian charge is **1.333470031947719
+GPU-hours**, within the unchanged two-hour ceiling. It includes teacher
+preparation, preflights, failed/native-aborted and interrupted attempts, the
+successful trainings and evaluation. No new API calls or test queries occurred.
+The [execution trace](../../evidence/dual_surrogate_v1/execution_trace.json),
+[results](../../evidence/dual_surrogate_v1/results.json),
+[teacher audit](../../evidence/dual_surrogate_v1/independent_teacher_audit.json)
+and [phase audit](../../evidence/dual_surrogate_v1/independent_phase_audit.json)
+preserve sources, counters and limitations. Both audits passed saved-record
+checks without new inference; they are agent checks, not human verification.
+
+The [post-hoc saved-log diagnosis](../../evidence/dual_surrogate_v1/failure_diagnosis/summary.json)
+reads no models and makes no new queries. In the joint arm, occurrence-weighted
+online TRAIN GAGA wrong rate rises from 46.4077% in epoch one to 77.5974% in
+epoch eight, while mean Softplus falls from 1.517893 to 0.758922. All three
+seeds improve these own-teacher metrics. This argues against complete failure
+to optimize that training teacher, but does not identify overfitting, model
+mismatch, objective interaction or gradient-approximation bias as the cause.
+These are changing-model online TRAIN observations over 3,141 occurrences per
+epoch, not frozen-checkpoint predictions or a paired gap to VALID.
+
+An outcome-selected illustration is seed-3 group 938: nine matched targets,
+122 injected nodes and 5,734 edges under either method. Clean GAGA has four
+wrong occurrences; GCN-only leaves five (one new error), whereas joint leaves
+three (one recovery and no new errors). The rule chose the smallest group ID
+with fewer joint errors after matching all 128 cases; it is not a representative
+population estimate. The complete diagnosis preserves all 96 epoch cohorts and
+its source-before-TRAIN-read receipt, explicitly after overall results were known.
+It used 0.3445 seconds of diagnostic wall time, zero tensor loads/model calls/
+API calls/GPU work. The executed summary mislabeled its monotonic elapsed timer
+as `CPU_seconds`; the original source/output are preserved with a
+[timing-label correction](../../evidence/dual_surrogate_v1/failure_diagnosis/timing_label_correction.json).
+Process CPU time was not measured. The training teacher and validation victim
+also differ in weights and FIT80 versus full-TRAIN group-label conventions;
+these differences are not independently isolated as causes.
+
+No further tuning, seeds, API or GPU work is planned for this phase. These
+development results do not replace the earlier 43.728% formal test reproduction
+or its inconclusive learned-versus-random paired interval. No final test or final
+submission tag is authorized by this protocol. Existing report/slides remain
+dated drafts; actual contributions, human review, rehearsal and instructor
+approval remain separate.

@@ -1,0 +1,127 @@
+{
+  "status": "completed_development_negative_result",
+  "owner_authorized_implementation_and_build_adjustments": true,
+  "teacher_source_commit": "5025ebc4a3a088dfce76485e06c0a592bd933d79",
+  "scientific_core_source_commit": "14e2471a6791b90afcd3a395bab1ce72b9a27f19",
+  "resume_orchestration_source_commit": "255b897714b3526eb56205dcdeac1101c7f1ce00",
+  "primary_models": {
+    "retained_terminal_models": 11,
+    "fresh_terminal_retry": 1,
+    "successful_training_jobs": 12,
+    "epochs_each": 8,
+    "optimizer_steps_successful_matrix": 24576,
+    "training_classifier_forwards_successful_matrix": 36864,
+    "training_generator_forwards_successful_matrix": 24576,
+    "interim_validation": false
+  },
+  "extra_failed_training": {
+    "optimizer_steps": 2012,
+    "completed_generations": 2013,
+    "gcn_dispatches": 2013,
+    "gaga_dispatches": 2013,
+    "gaga_dispatch_limitation": "Last dispatch was interrupted during sequence preparation before the model forward; it is not2013completed GAGA forwards."
+  },
+  "teacher_preparation": {
+    "forwards": 736,
+    "optimizer_steps": 560,
+    "internal_fit_tune_only": true
+  },
+  "real_passed_preflight": {
+    "generations": 4,
+    "classifier_forwards": 16,
+    "autograd_calls": 8,
+    "optimizer_steps": 0,
+    "official_victim_forwards": 0
+  },
+  "native_abort_counter_gap": "Attempt2 native CUDA allocation failure has no Python result/guardian; partial calls unknown. Complete outer runtime remains charged.",
+  "evaluation": {
+    "classifier_forwards": 3328,
+    "gcn_forwards": 1664,
+    "official_gaga_forwards": 1664,
+    "generator_forwards": 1536,
+    "groups_each": 128,
+    "fraud_target_occurrences_each": 1091,
+    "unique_fraud_targets": 374,
+    "all12_complete_before_original_victim_load": true,
+    "test_queries": 0
+  },
+  "extra_optimizer_steps_scope": {
+    "known_total_successful_matrix_plus_teachers_plus_timeout": 27148,
+    "preflights_optimizer_steps": 0
+  },
+  "gpu_hours": 1.333470031947719,
+  "gpu_phase_limit": 2,
+  "per_job_deadline_amendment": {
+    "original": 480,
+    "retry": 900,
+    "basis": "TRAIN-only timeout before any victim validation, all scientific source unchanged except orchestration files",
+    "failed_attempt_retained": true
+  },
+  "devices": {
+    "teacher_preparation_ordinal": 0,
+    "teacher_uuid": "GPU-d7aa6d97-d823-0319-b218-84acc8e26019",
+    "successful_preflight_training_evaluation_ordinal": 1,
+    "execution_uuid": "GPU-1bb984a3-e0f6-138a-cfb7-dc3365d8f9cf",
+    "numeric_visibility_only": true,
+    "both_runtime_counts": 1,
+    "own_physical_UUID_verified": true,
+    "other_jobs_modified": false,
+    "bitwise_identity_claimed": false
+  },
+  "final_test_authorized": false,
+  "final_tag_authorized": false,
+  "LLM_API_calls": 0,
+  "new_dependencies": 0,
+  "human_verification_completed": false,
+  "dated_report_slides_unchanged": true,
+  "audit_source_files": [
+    {
+      "path": "course/dual_surrogate/audits/audit_teacher_saved.py",
+      "sha256": "d364f831a6d8fff5815072160253e9fb7707d5060e437b2b660d418d1d4a9516",
+      "private_original_sha256": "d364f831a6d8fff5815072160253e9fb7707d5060e437b2b660d418d1d4a9516"
+    },
+    {
+      "path": "course/dual_surrogate/audits/audit_phase_saved_v2.py",
+      "sha256": "5b774e20f5bdfbf7167adf27312f1a7a9dc619f07795dc2cd0678ad34dc83ba6",
+      "private_original_sha256": "5b774e20f5bdfbf7167adf27312f1a7a9dc619f07795dc2cd0678ad34dc83ba6"
+    },
+    {
+      "path": "course/dual_surrogate/audits/aggregate_saved_results.py",
+      "sha256": "0597a3d053239f7ef50f89933a13d3fbed94489e2a9ce774d26a5feac5ac1d25",
+      "scope": "Root post-hoc aggregate arithmetic; preliminary values were inspected before writing this reproducibility script."
+    }
+  ],
+  "input_protocol_sha256": "d816e1e1aaf409b414afe4a26beafba71d3c07e4f4eccc58e6258daf6cd52406",
+  "result_sha256": "c1b2ab7c4a3b35b2e04f244c752271edff1063e828c1d7bbc9d279433a03d2df",
+  "original_private_output_root": "runs/dual_surrogate_20261103_attempt1",
+  "local_private_audit_root": "parent/work/dual_surrogate_20261103",
+  "limitations": [
+    "This changes the original GCN-only adversary knowledge and adds computation.",
+    "Only the registered development cohort was evaluated; old full-test baseline remains separate and inconclusive.",
+    "STRAIGHT-THROUGH two-hop gradients are approximations; four real TRAIN hard-forward checks do not prove equivalence on every graph.",
+    "Three attack seeds share the two newly fitted teachers; overlapping target occurrences are not independent news.",
+    "Agent audits are not human reviews; raw mask tensors/model content hashes are not independently decoded by the stdlib auditor."
+  ],
+  "root_saved_aggregate_execution": {
+    "script_sha256": "0597a3d053239f7ef50f89933a13d3fbed94489e2a9ce774d26a5feac5ac1d25",
+    "cpu_seconds_through_serialization_start": 0.0,
+    "model_calls": 0,
+    "API_calls": 0,
+    "tensor_deserialization": 0
+  },
+  "saved_aggregate_sha256": "fe855c631e4865a961b0b8b62907d57c8b155933600cb652e647b27b120c2c28",
+  "completed_utc": "2026-11-03T08:43:51.897865+00:00",
+  "posthoc_saved_diagnosis": {
+    "source": "course/dual_surrogate/audits/diagnose_saved.py",
+    "source_sha256": "35eb26b0d25bd1436ec442f11cf908e15921ee1e70793db62659fe4023524abd",
+    "summary": "evidence/dual_surrogate_v1/failure_diagnosis/summary.json",
+    "model_calls": 0,
+    "GPU_hours": 0,
+    "post_hoc_after_outcomes_known": true,
+    "author": "Same agent who authored the sequence adapter, not an independent model experiment",
+    "timing_label_correction": "evidence/dual_surrogate_v1/failure_diagnosis/timing_label_correction.json",
+    "diagnostic_wall_seconds": 0.3445328730158508,
+    "measured_process_cpu_seconds": null,
+    "separate_static_review_completed": true
+  }
+}

@@ -1,5 +1,17 @@
 # CISC8006: MonTi Reproduction and Improvements
 
+**Latest structural-feedback study, 3 November 2026:** the owner-authorized
+[independent GAGA-style surrogate implementation](course/dual_surrogate/README.md)
+and four-arm development comparison completed twelve terminal models. Mean GAGA
+MR is 51.3596% GCN-only, 46.1045% GAGA-only, 47.8766% two-GCN and 38.9245% joint.
+Higher MR is a stronger attack; the proposed joint method is worse by 12.4351 pp
+and is not recommended as an improvement. All 128 groups / 1,091 occurrences were
+retained; both saved-output audits passed. Build failures, the single incomplete
+job retry and their costs remain recorded. Total phase charge is 1.3334700 GPUh;
+no LLM API calls or final-test queries were made. These development figures do
+not replace the frozen 43.728% full-test baseline. Dated PDF/PPTX drafts remain
+unchanged; final testing, course approval and human requirements remain pending.
+
 **Failure-driven follow-up, 3 November 2026:** [Concrete failure analysis and the
 completed six-arm agent experiment](course/alignment_agent/README.md) are now
 available. All 18 GCN validation trainings completed, evaluated only at epoch eight. Direct

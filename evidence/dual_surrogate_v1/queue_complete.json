@@ -1,0 +1,175 @@
+{
+  "status": "completed",
+  "jobs": [
+    {
+      "name": "teacher_preparation",
+      "module": "course.dual_surrogate.prepare_teachers",
+      "exit_code": 0,
+      "pid": 718932,
+      "outer_seconds": 98.75796343304683,
+      "charged_gpu_wall_hours": 0.027432767620290784,
+      "guardian_sha256": "0ecdcc4a53e1e80acb56e287a0e3e8a72781e2c658d14ba5cbc53b80d912caf7"
+    },
+    {
+      "name": "real_train_preflight",
+      "module": "course.dual_surrogate.preflight",
+      "exit_code": 1,
+      "pid": 720038,
+      "outer_seconds": 19.195013940916397,
+      "charged_gpu_wall_hours": 0.0053319483169212215,
+      "guardian_sha256": "3a6f9f5035527fcb61dc413955098270c6f5d344f38d3c995747c813e2a2b00f"
+    },
+    {
+      "name": "real_train_preflight",
+      "module": "course.dual_surrogate.preflight",
+      "exit_code": -6,
+      "pid": 723135,
+      "outer_seconds": 23.15135913400445,
+      "charged_gpu_wall_hours": 0.006430933092779014,
+      "guardian_sha256": null
+    },
+    {
+      "name": "real_train_preflight",
+      "module": "course.dual_surrogate.preflight",
+      "exit_code": 0,
+      "pid": 726666,
+      "outer_seconds": 24.30901366705075,
+      "charged_gpu_wall_hours": 0.006752503796402986,
+      "guardian_sha256": "c66e6925d283112c98219781d57b340eddbcd453c64665eac42a6c7d9f29a9d5"
+    },
+    {
+      "name": "gcn_only_seed3",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 726895,
+      "outer_seconds": 188.2166949789971,
+      "charged_gpu_wall_hours": 0.05228241527194364,
+      "guardian_sha256": "c6f3e8cb34ca5514bfb13115cf7665bcc83b1ae2b2252f1a1f5227398f0f98c3"
+    },
+    {
+      "name": "gaga_only_seed3",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 727520,
+      "outer_seconds": 459.9068961009616,
+      "charged_gpu_wall_hours": 0.12775191558360044,
+      "guardian_sha256": "104712c74975bab5bbe6c9a05a5a7d1fc18c91cf48223c3c8b99dedf64828ce2"
+    },
+    {
+      "name": "two_gcn_seed3",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 728037,
+      "outer_seconds": 211.45251689001452,
+      "charged_gpu_wall_hours": 0.058736810247226254,
+      "guardian_sha256": "1dec0a591e757f553ff42374184a6cd81d758f1f26c1fd60019afd6f5b3bcc1d"
+    },
+    {
+      "name": "gcn_gaga_seed3",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 728391,
+      "outer_seconds": 446.8681108499877,
+      "charged_gpu_wall_hours": 0.12413003079166325,
+      "guardian_sha256": "71d60800efa242b095f961da6d0273b5cbe72f539b18702bf33b271950e1daa2"
+    },
+    {
+      "name": "gcn_only_seed4",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 728863,
+      "outer_seconds": 190.65327818796504,
+      "charged_gpu_wall_hours": 0.0529592439411014,
+      "guardian_sha256": "ce474b6f29ee0838a7e1287ee19a9719b36f54a8bde641794c9c14ea67141c8d"
+    },
+    {
+      "name": "gaga_only_seed4",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 729316,
+      "outer_seconds": 428.3181647800375,
+      "charged_gpu_wall_hours": 0.11897726799445485,
+      "guardian_sha256": "16dcc65993588319d4de3f703858d247dc509518db5a599a29a9661cf41ac723"
+    },
+    {
+      "name": "two_gcn_seed4",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 730559,
+      "outer_seconds": 228.4083661820041,
+      "charged_gpu_wall_hours": 0.06344676838389003,
+      "guardian_sha256": "7aef1edf1ccbc8b7617a7a7ea0534f7b05325b961d7541e6f9001f67b34b979a"
+    },
+    {
+      "name": "gcn_gaga_seed4",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 731616,
+      "outer_seconds": 445.4317394689424,
+      "charged_gpu_wall_hours": 0.12373103874137288,
+      "guardian_sha256": "c407f511f0d378e5e33322191f64c4d42563be2995c10531eb2941b9d48bd65e"
+    },
+    {
+      "name": "gcn_only_seed5",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 734528,
+      "outer_seconds": 187.51073334401008,
+      "charged_gpu_wall_hours": 0.052086314817780574,
+      "guardian_sha256": "22b948f47cb0b40e27f2d59984cbd7b43bc18002d519b41873b29a537553114e"
+    },
+    {
+      "name": "gaga_only_seed5",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 735371,
+      "outer_seconds": 426.130907519022,
+      "charged_gpu_wall_hours": 0.11836969653306166,
+      "guardian_sha256": "1f236d7d47edf0919f1a37709a4ffd9965d6ccd6361d73f039b2e16f9eeebf19"
+    },
+    {
+      "name": "two_gcn_seed5",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 736231,
+      "outer_seconds": 239.42363183794077,
+      "charged_gpu_wall_hours": 0.066506564399428,
+      "guardian_sha256": "fecbdfc3a0dadfeacadac1b9c901766b449d727889c6fba2afbbdcf0f494def0"
+    },
+    {
+      "name": "gcn_gaga_seed5",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 1,
+      "pid": 736692,
+      "outer_seconds": 480.945333363954,
+      "charged_gpu_wall_hours": 0.13359592593443165,
+      "guardian_sha256": "3407dc35ff395381248df8d36ba72e210707174b2657c374b4eac203d074ae5a"
+    },
+    {
+      "name": "gcn_gaga_seed5",
+      "module": "course.dual_surrogate.run",
+      "exit_code": 0,
+      "pid": 738964,
+      "outer_seconds": 446.80868957797065,
+      "charged_gpu_wall_hours": 0.12411352488276962,
+      "guardian_sha256": "733a91d689867ada400ab33d73724c7cac16c0b766d29baea40de0851d076db8"
+    },
+    {
+      "name": "development_evaluation",
+      "module": "course.dual_surrogate.evaluate",
+      "exit_code": 0,
+      "pid": 740099,
+      "outer_seconds": 255.0037017549621,
+      "charged_gpu_wall_hours": 0.07083436159860058,
+      "guardian_sha256": "84eda8991c9a0aa5617ada35e83291a591d572096ddca2e22bf0578677fff02c"
+    }
+  ],
+  "charged_gpu_hours": 1.333470031947719,
+  "scientific_source": "255b897714b3526eb56205dcdeac1101c7f1ce00",
+  "preparation_protocol_sha256": "d816e1e1aaf409b414afe4a26beafba71d3c07e4f4eccc58e6258daf6cd52406",
+  "experiment_protocol_sha256": "d816e1e1aaf409b414afe4a26beafba71d3c07e4f4eccc58e6258daf6cd52406",
+  "evaluation_result_sha256": "c1b2ab7c4a3b35b2e04f244c752271edff1063e828c1d7bbc9d279433a03d2df",
+  "completed_utc": "2026-11-03T08:43:51.897865+00:00",
+  "test_queries": 0,
+  "LLM_API_calls": 0
+}

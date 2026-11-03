@@ -1,0 +1,259 @@
+{
+  "API_calls": 0,
+  "CPU_seconds": 0.3445328730158508,
+  "GPU_hours": 0,
+  "epochs_per_run": 8,
+  "illustrative_failure": {
+    "baseline": {
+      "attacked_wrong": 5,
+      "clean_wrong": 4,
+      "new_wrong": 1,
+      "occurrences": 9,
+      "recoveries": 0,
+      "retained_correct": 4,
+      "retained_wrong": 4
+    },
+    "edge_budget": 5734,
+    "group": 938,
+    "joint": {
+      "attacked_wrong": 3,
+      "clean_wrong": 4,
+      "new_wrong": 0,
+      "occurrences": 9,
+      "recoveries": 1,
+      "retained_correct": 5,
+      "retained_wrong": 3
+    },
+    "matched_node_coordinates": true,
+    "node_budget": 122,
+    "seed": 3,
+    "target_occurrences": 9
+  },
+  "limits": [
+    "Final VALID outcomes were known before this diagnostic was frozen; exploratory post-hoc analysis.",
+    "TRAIN metrics are online pre-update observations along changing weights and generation noise, not frozen-checkpoint re-evaluations.",
+    "Occurrence weighting pools saved group means; no per-target TRAIN logits, margins or clean predictions were opened.",
+    "Saved wrong counts mean predicted benign for targets treated as fraud by the executed source; this analysis does not reload dataset labels.",
+    "TRAIN256 and VALID128 have different targets/contexts. No rate subtraction is a paired generalization gap.",
+    "Success against an independent training teacher does not prove useful transfer to the sealed GAGA victim or explain a causal mechanism.",
+    "The smallest seed3 negative group is an outcome-selected illustration, not a representative population or independent experiment.",
+    "No model, tensor file, test prediction, API or new training was used."
+  ],
+  "matching_validation_groups_checked": 128,
+  "model_queries": 0,
+  "optimizer_steps": 0,
+  "primary_runs": 12,
+  "script_sha256": "35eb26b0d25bd1436ec442f11cf908e15921ee1e70793db62659fe4023524abd",
+  "status": "completed_POSTHOC_saved_JSON_diagnosis",
+  "train_first_last_by_arm_teacher": [
+    {
+      "arm": "gcn_only",
+      "epoch1_attack_margin": 9.033015522642126,
+      "epoch1_softplus": 0.17709959386949944,
+      "epoch1_wrong_percent": 92.81545155470657,
+      "epoch8_attack_margin": 13.319791821665468,
+      "epoch8_softplus": 0.12499504023898987,
+      "epoch8_wrong_percent": 94.73628356149847,
+      "seeds": 3,
+      "seeds_with_softplus_decrease": 3,
+      "seeds_with_wrong_rate_increase": 3,
+      "teacher": "gcn_base",
+      "wrong_change_pp": 1.920832006791893
+    },
+    {
+      "arm": "gaga_only",
+      "epoch1_attack_margin": 0.569304053736988,
+      "epoch1_softplus": 1.07500229323676,
+      "epoch1_wrong_percent": 65.31890056245356,
+      "epoch8_attack_margin": 1.7701144770505726,
+      "epoch8_softplus": 0.6605151814790993,
+      "epoch8_wrong_percent": 79.25289186034172,
+      "seeds": 3,
+      "seeds_with_softplus_decrease": 3,
+      "seeds_with_wrong_rate_increase": 3,
+      "teacher": "gaga_new",
+      "wrong_change_pp": 13.93399129788815
+    },
+    {
+      "arm": "two_gcn",
+      "epoch1_attack_margin": 8.301258103211731,
+      "epoch1_softplus": 0.18161085610685598,
+      "epoch1_wrong_percent": 92.5925925925926,
+      "epoch8_attack_margin": 8.819385379311882,
+      "epoch8_softplus": 0.13648357390779664,
+      "epoch8_wrong_percent": 94.4603629417383,
+      "seeds": 3,
+      "seeds_with_softplus_decrease": 3,
+      "seeds_with_wrong_rate_increase": 3,
+      "teacher": "gcn_base",
+      "wrong_change_pp": 1.8677703491457056
+    },
+    {
+      "arm": "two_gcn",
+      "epoch1_attack_margin": 0.49024996303780866,
+      "epoch1_softplus": 0.5000916489317047,
+      "epoch1_wrong_percent": 86.45866496869363,
+      "epoch8_attack_margin": 0.8566494995683561,
+      "epoch8_softplus": 0.3992324508177074,
+      "epoch8_wrong_percent": 90.19420566698504,
+      "seeds": 3,
+      "seeds_with_softplus_decrease": 3,
+      "seeds_with_wrong_rate_increase": 3,
+      "teacher": "gcn_new",
+      "wrong_change_pp": 3.735540698291416
+    },
+    {
+      "arm": "gcn_gaga",
+      "epoch1_attack_margin": 6.420356072935344,
+      "epoch1_softplus": 0.21004979672107615,
+      "epoch1_wrong_percent": 91.62687042343202,
+      "epoch8_attack_margin": 6.073973340909502,
+      "epoch8_softplus": 0.19064652243028854,
+      "epoch8_wrong_percent": 92.48646927730023,
+      "seeds": 3,
+      "seeds_with_softplus_decrease": 2,
+      "seeds_with_wrong_rate_increase": 3,
+      "teacher": "gcn_base",
+      "wrong_change_pp": 0.859598853868197
+    },
+    {
+      "arm": "gcn_gaga",
+      "epoch1_attack_margin": -0.6008778961519247,
+      "epoch1_softplus": 1.5178932923703807,
+      "epoch1_wrong_percent": 46.407725777353285,
+      "epoch8_attack_margin": 1.3559688734760202,
+      "epoch8_softplus": 0.7589219857462302,
+      "epoch8_wrong_percent": 77.59736814178075,
+      "seeds": 3,
+      "seeds_with_softplus_decrease": 3,
+      "seeds_with_wrong_rate_increase": 3,
+      "teacher": "gaga_new",
+      "wrong_change_pp": 31.189642364427467
+    }
+  ],
+  "train_groups_per_epoch": 256,
+  "train_target_occurrences_per_epoch": 3141,
+  "train_teacher_epoch_rows": 144,
+  "validation_runs": [
+    {
+      "arm": "gcn_only",
+      "gcn_mr_percent": 97.06691109074244,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 51.42071494042163,
+      "sealed_gaga_new_wrong": 163,
+      "sealed_gaga_recoveries": 0,
+      "seed": 3
+    },
+    {
+      "arm": "gaga_only",
+      "gcn_mr_percent": 32.72227314390467,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 47.112740604949586,
+      "sealed_gaga_new_wrong": 121,
+      "sealed_gaga_recoveries": 5,
+      "seed": 3
+    },
+    {
+      "arm": "two_gcn",
+      "gcn_mr_percent": 96.88359303391384,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 49.95417048579285,
+      "sealed_gaga_new_wrong": 147,
+      "sealed_gaga_recoveries": 0,
+      "seed": 3
+    },
+    {
+      "arm": "gcn_gaga",
+      "gcn_mr_percent": 93.49220898258478,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 35.56370302474794,
+      "sealed_gaga_new_wrong": 25,
+      "sealed_gaga_recoveries": 35,
+      "seed": 3
+    },
+    {
+      "arm": "gcn_only",
+      "gcn_mr_percent": 95.23373052245647,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 48.57928505957837,
+      "sealed_gaga_new_wrong": 132,
+      "sealed_gaga_recoveries": 0,
+      "seed": 4
+    },
+    {
+      "arm": "gaga_only",
+      "gcn_mr_percent": 37.03024747937672,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 45.004582951420716,
+      "sealed_gaga_new_wrong": 101,
+      "sealed_gaga_recoveries": 8,
+      "seed": 4
+    },
+    {
+      "arm": "two_gcn",
+      "gcn_mr_percent": 96.33363886342805,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 50.13748854262145,
+      "sealed_gaga_new_wrong": 149,
+      "sealed_gaga_recoveries": 0,
+      "seed": 4
+    },
+    {
+      "arm": "gcn_gaga",
+      "gcn_mr_percent": 93.76718606782768,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 40.421631530705774,
+      "sealed_gaga_new_wrong": 75,
+      "sealed_gaga_recoveries": 32,
+      "seed": 4
+    },
+    {
+      "arm": "gcn_only",
+      "gcn_mr_percent": 94.40879926672777,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 54.0788267644363,
+      "sealed_gaga_new_wrong": 192,
+      "sealed_gaga_recoveries": 0,
+      "seed": 5
+    },
+    {
+      "arm": "gaga_only",
+      "gcn_mr_percent": 32.99725022914757,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 46.1961503208066,
+      "sealed_gaga_new_wrong": 117,
+      "sealed_gaga_recoveries": 11,
+      "seed": 5
+    },
+    {
+      "arm": "two_gcn",
+      "gcn_mr_percent": 96.60861594867094,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 43.538038496791934,
+      "sealed_gaga_new_wrong": 77,
+      "sealed_gaga_recoveries": 0,
+      "seed": 5
+    },
+    {
+      "arm": "gcn_gaga",
+      "gcn_mr_percent": 92.5756186984418,
+      "groups": 128,
+      "occurrences": 1091,
+      "sealed_gaga_mr_percent": 40.78826764436297,
+      "sealed_gaga_new_wrong": 66,
+      "sealed_gaga_recoveries": 19,
+      "seed": 5
+    }
+  ]
+}
