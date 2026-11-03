@@ -14,6 +14,7 @@ import math
 import pathlib
 import statistics
 import subprocess
+import time
 
 
 ARMS = ("off", "always", "gated")
@@ -62,6 +63,22 @@ def group_facts(row):
     return result
 
 
+def public_case(case):
+    """Aggregate changed margins without publishing raw target/node identities."""
+    safe = {key: value for key, value in case.items() if key != "per_seed"}
+    safe["per_seed"] = []
+    for seed in case["per_seed"]:
+        entry = {key: value for key, value in seed.items() if key != "changed_occurrences"}
+        entry["changed_margin_summaries"] = {}
+        for transition in ("wrong_to_correct", "correct_to_wrong"):
+            changed = [item for item in seed["changed_occurrences"] if item["transition"] == transition]
+            entry["changed_margin_summaries"][transition] = dict(
+                off=distribution(item["off_margin"] for item in changed),
+                candidate=distribution(item["candidate_margin"] for item in changed))
+        safe["per_seed"].append(entry)
+    return safe
+
+
 def transitions(left, right, include_private_nodes=False):
     assert left["target_group"] == right["target_group"]
     assert left["node_ids"] == right["node_ids"] and left["labels"] == right["labels"]
@@ -85,6 +102,7 @@ def transitions(left, right, include_private_nodes=False):
 
 
 def main():
+    started, cpu_started = time.perf_counter(), time.process_time()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--snapshot", type=pathlib.Path, required=True)
     parser.add_argument("--raw-root", type=pathlib.Path, required=True)
@@ -132,7 +150,7 @@ def main():
         analysis_source_commit=head, analysis_source_sha256=digest(source),
         inputs=manifest, jobs=metadata,
         ranking="Sum wrong-to-correct under attack across seeds, descending; numeric group ID ascending on ties",
-        success_ranking="Sum correct-to-wrong under attack across seeds, descending; numeric group ID ascending on ties",
+        success_ranking="Net extra residual correct ascending; then correct-to-wrong descending; numeric group ID ascending",
         scope="All retained validation groups/occurrences, selected-best and every common epoch; no clean/test/model calls",
         independence="Same group/node identity does not imply identical weights, generated features, endpoints, or RNG across arms"))
     records, epoch_checks = {}, []
@@ -170,6 +188,18 @@ def main():
             records[arm, seed, epoch] = groups
             epoch_checks.append(dict(arm=arm, seed=seed, epoch=epoch, groups=len(raw), occurrences=occurrences,
                                      incorrect=wrong, residual_correct=occurrences-wrong))
+    identity = None
+    for groups in records.values():
+        current = tuple((group, tuple(row["node_ids"]), tuple(row["labels"]))
+                        for group, row in sorted(groups.items()))
+        if identity is None:
+            identity = current
+        assert current == identity
+    for (arm, seed), result in results.items():
+        best = records[arm, seed, result["best_epoch"]]
+        best_wrong = sum(row["incorrect"] for row in best.values())
+        assert best_wrong == result["best_validation_counts"]["incorrect"]
+        assert math.isclose(result["best_validation_counts"]["mr_percent"], 100 * best_wrong / 1091, abs_tol=1e-12)
     selected, same_epoch, details = [], [], {}
     for arm in ("always", "gated"):
         for seed in SEEDS:
@@ -202,10 +232,11 @@ def main():
                 accum[row["private_group_id"]].update({key: row[key] for key in (
                     "wrong_to_correct", "correct_to_wrong", "net_extra_residual_correct")})
         failure_order = sorted(accum, key=lambda group: (-accum[group]["wrong_to_correct"], group))
-        success_order = sorted(accum, key=lambda group: (-accum[group]["correct_to_wrong"], group))
+        success_order = sorted(accum, key=lambda group: (accum[group]["net_extra_residual_correct"],
+                                                       -accum[group]["correct_to_wrong"], group))
         ranked[arm] = [dict(private_group_id=group, **accum[group]) for group in failure_order]
         wanted = [("failure_rank_%d" % (i+1), group) for i, group in enumerate(failure_order[:3])]
-        wanted += [("success_counterexample", success_order[0])]
+        wanted += [("lowest_net_residual_counterexample", success_order[0])]
         case_studies[arm] = []
         for role, group in wanted:
             per_seed = []
@@ -217,7 +248,7 @@ def main():
             case_studies[arm].append(dict(role=role, private_group_id=group, aggregate=dict(accum[group]), per_seed=per_seed))
     first = records["off", SEEDS[0], 1]
     all_ids = [node for row in first.values() for node in row["node_ids"]]
-    write(output / "failure_analysis_private.json", dict(
+    report = dict(
         status="passed", scientific_status="Exploratory post-hoc validation analysis; no new efficacy experiment",
         epoch_checks=epoch_checks, selected_best=selected, same_epoch=same_epoch,
         group_rankings=ranked, case_studies=case_studies,
@@ -229,10 +260,21 @@ def main():
                      "Group-overlapping target IDs are separate attack scenarios and not independent news samples.",
                      "Selected-best checkpoints and equal epoch comparisons still differ in trained weights, features and RNG trajectories.",
                      "D, tolerance, activation and margin associations do not identify a causal mechanism.",
-                     "Retained group alignment summaries do not expose per-injected-node D/tolerance pairing or gradients."]))
+                     "Retained group alignment summaries do not expose per-injected-node D/tolerance pairing or gradients."])
+    write(output / "failure_analysis_private.json", report)
+    public = {key: value for key, value in report.items() if key != "case_studies"}
+    public["case_studies"] = {arm: [public_case(case) for case in cases]
+                              for arm, cases in case_studies.items()}
+    public["provenance"] = dict(analysis_source_commit=head, analysis_source_sha256=digest(source),
+        registration_sha256=digest(output / "registered.json"), input_files=len(manifest),
+        privacy="No raw node IDs or per-occurrence predictions; group IDs and aggregate margins retained.",
+        review="Agent saved-record recount; not human review or new model evaluation.")
+    write(output / "failure_analysis_public_safe.json", public)
     write(output / "completion.json", dict(status="passed", epoch_records=len(epoch_checks),
           input_files=len(manifest), output_sha256=digest(output / "failure_analysis_private.json"),
-          new_model_calls=0, api_calls=0, new_training_steps=0, test_predictions_read=False))
+          public_safe_output_sha256=digest(output / "failure_analysis_public_safe.json"),
+          elapsed_seconds=time.perf_counter()-started, cpu_process_seconds=time.process_time()-cpu_started,
+          gpu_hours=0, new_model_calls=0, api_calls=0, new_training_steps=0, test_predictions_read=False))
     print(json.dumps(dict(status="passed", output=str(output), epoch_records=len(epoch_checks),
                           groups=128, occurrences=1091, new_model_calls=0, api_calls=0)))
 
