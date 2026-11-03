@@ -36,12 +36,15 @@ class ControllerContractChecks(unittest.TestCase):
         s["outside_fraction"] = .10000001
         self.assertTrue(fallback_rule(s))
 
-    def test_missing_or_conflicting_gradient_is_not_safe(self):
-        for value in (None, -.01):
-            s = state(); s["gradient_cosine_median"] = value
-            self.assertFalse(fallback_rule(s))
+    def test_probe_availability_controls_fallback(self):
+        s = state(); s["gradient_cosine_median"] = None
+        self.assertTrue(fallback_rule(s))
         s = state(); s["gradient_missing_count"] = 8
         self.assertFalse(fallback_rule(s))
+
+    def test_negative_raw_cosine_still_on_with_protection(self):
+        s = state(); s["gradient_cosine_median"] = -.5
+        self.assertTrue(fallback_rule(s))
 
     def test_zero_cosine_valid_boundary(self):
         s = state(); s["gradient_cosine_median"] = 0

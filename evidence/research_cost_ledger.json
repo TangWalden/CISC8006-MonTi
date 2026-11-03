@@ -16,9 +16,9 @@
       "conservative_gpu_hours": 0.0006216666666666666
     }
   ],
-  "measured_or_conservatively_charged": 1.5643163642796154,
+  "measured_or_conservatively_charged": 1.568860253919062,
   "unmetered_setup_reserve": 0.02,
-  "remaining_after_reserve": 10.415683635720384,
+  "remaining_after_reserve": 10.411139746080938,
   "failed_or_interrupted_incidents": [
     {
       "path": "evidence/one_edge_diagnosis_v1/failure.json",
@@ -265,5 +265,28 @@
       "not_a_provider_invoice": true
     },
     "result": "evidence/new_methods_20261103/final_saved_recount.json"
+  },
+  "alignment_agent_v2": {
+    "status": "diagnostic complete; follow-up training and new API not started",
+    "phase_gpu_limit": 2,
+    "diagnostic_gpu_hours": 0.004543889639446409,
+    "training_gpu_hours": 0,
+    "api_physical_calls": 0,
+    "diagnostic_summary": "evidence/alignment_agent_v2/gradient_summary.json",
+    "cpu_failures_preserved": [
+      "direct Python DGL import missing libcusparse (1.42337847 seconds)",
+      "DGL Column API assumption, five synthetic errors (1.6715678 seconds)"
+    ],
+    "cpu_filter_checks": {
+      "tests": 6,
+      "status": "passed",
+      "outer_seconds": 1.6719388
+    },
+    "cpu_filter_fit": {
+      "status": "completed",
+      "outer_seconds": 5.08749776,
+      "model_calls": 0
+    },
+    "accounting": "Charge complete diagnostic guardian; future jobs use maximum guardian/outer process and include API wait."
   }
 }

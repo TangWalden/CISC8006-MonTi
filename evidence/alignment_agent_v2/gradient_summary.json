@@ -1,0 +1,56 @@
+{
+  "status": "posthoc_saved_gradient_summary",
+  "by_checkpoint": {
+    "off_seed3": {
+      "cases": 16,
+      "hinge_zero": 16,
+      "hinge_zero_alignment_nonzero": 16,
+      "smooth_zero": 0,
+      "valid_q90_comparisons": 16,
+      "negative_full_cos": 11,
+      "full_nonnegative_feature_conflict": 5,
+      "ratio_median": 9141.355082095592
+    },
+    "gated_seed3": {
+      "cases": 16,
+      "hinge_zero": 16,
+      "hinge_zero_alignment_nonzero": 4,
+      "smooth_zero": 0,
+      "valid_q90_comparisons": 4,
+      "negative_full_cos": 4,
+      "full_nonnegative_feature_conflict": 0,
+      "ratio_median": 15.884836333740996
+    }
+  },
+  "new_model_calls": 0,
+  "source_commit": "5f43af26054e4f7f9d46720c8eb178deb32762ef",
+  "registered_protocol": "course/ALIGNMENT_AGENT_DIAGNOSTIC_V1.json",
+  "generator_forwards": 32,
+  "gcn_forwards": 32,
+  "gradient_calls": 128,
+  "optimizer_steps": 0,
+  "test_queries": 0,
+  "gaga_forwards": 0,
+  "new_api_calls": 0,
+  "scope": "Sixteen predetermined TRAIN groups, two old seed3 selected checkpoints; current-temperature gradient evidence, not historical training causality",
+  "guardian": {
+    "started_utc": "2026-11-03T03:21:04.663903+00:00",
+    "module": "course.alignment_agent.diagnostics",
+    "pid": 604186,
+    "arguments": [
+      "--",
+      "--protocol",
+      "course/ALIGNMENT_AGENT_DIAGNOSTIC_V1.json",
+      "--output",
+      "/home/tjy/Project/MonTi-course/runs/alignment_agent_20261103_v2_attempt1/gradient_diagnostic_attempt1"
+    ],
+    "limit_seconds": 180,
+    "status": "completed",
+    "physical_gpu_uuid": "GPU-d7aa6d97-d823-0319-b218-84acc8e26019",
+    "torch": "1.13.1+cu117",
+    "cuda": "11.7",
+    "elapsed_seconds": 16.35800270200707,
+    "charged_gpu_wall_hours": 0.004543889639446409,
+    "accounting": "Complete one-GPU guardian lifetime including setup, failures and API wait; outer queue may charge more."
+  }
+}

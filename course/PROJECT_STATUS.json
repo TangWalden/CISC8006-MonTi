@@ -356,5 +356,17 @@
     "api_usd_upper_bound_actual": 0.047479499999999994,
     "numeric_gate_steps": 100,
     "evidence": "evidence/new_methods_20261103/final_saved_recount.json"
+  },
+  "failure_driven_followup_v2": {
+    "owner_execution_authorized": true,
+    "status": "TRAIN gradient diagnostic complete; new six-arm matrix frozen before training/API",
+    "protocol": "course/ALIGNMENT_AGENT_V2_PROTOCOL.json",
+    "failure_cases": "evidence/alignment_agent_v2/failure_analysis.json",
+    "gradient_summary": "evidence/alignment_agent_v2/gradient_summary.json",
+    "training_jobs_planned": 18,
+    "new_training_jobs_started": 0,
+    "new_api_calls": 0,
+    "full_test_authorized": false,
+    "final_tag_authorized": false
   }
 }
