@@ -56,7 +56,7 @@
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
     "full_evaluation": "Pending concrete complete final-test protocol confirmation; completed new-method validation pilots do not authorize it.",
-    "active_direction": "Owner-requested numeric LLM evidence fusion and conditional relationship-moment alignment have completed first validation pilots; no LLM advantage and no overall gated attack improvement established.",
+    "active_direction": "Owner-authorized implementation of an independent GAGA-style surrogate plus GCN training; preparation only, no new efficacy established.",
     "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
@@ -379,5 +379,30 @@
     "gpu_hours_including_diagnostic": 1.3617947545285762,
     "remaining_gpu_hours_after_reserve": 9.053888881191808,
     "human_review_completed": false
+  },
+  "dual_surrogate_stage": {
+    "owner_implementation_and_bounded_validation_authorized": true,
+    "owner_instruction": "Implement the recommendation and adjust according to build results",
+    "status": "isolated implementation prepared; no new tests, teacher fits or model calls yet",
+    "protocol": "course/DUAL_SURROGATE_PROTOCOL_V1.json",
+    "phase_gpu_ceiling": 2,
+    "arms": [
+      "gcn_only",
+      "gaga_only",
+      "two_gcn",
+      "gcn_gaga"
+    ],
+    "seeds": [
+      3,
+      4,
+      5
+    ],
+    "training_jobs_planned": 12,
+    "teacher_internal_label_scope": "original TRAIN split into FIT80/TUNE20; only FIT80 labels enter group inputs",
+    "held_out_victim_deserialization": "only after all12 fixed-epoch trainings complete",
+    "original_GCN_only_setting_changed": true,
+    "final_test_authorized": false,
+    "final_tag_authorized": false,
+    "LLM_API_calls": 0
   }
 }

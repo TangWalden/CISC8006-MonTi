@@ -1,5 +1,15 @@
 # One-week execution and acceptance plan
 
+Update 2026-11-03, newest actual owner instruction: implement the recommended
+GCN plus independently TRAIN-fitted relationship Transformer surrogate, adjusting
+for build failures. The [isolated four-arm plan](DUAL_SURROGATE_PROTOCOL_V1.json)
+keeps the generator, original GCN representation cache, physical budgets and
+score role fixed. Fresh GAGA and GCN teachers use internal FIT80/TUNE20 only;
+held-out teacher labels remain masked in group inputs. All 12 terminal-epoch
+attacker trainings must finish before official GAGA development evaluation.
+This authorizes bounded preparation/validation, not final testing or a final tag.
+Prior negative attempts stay immutable. No new efficacy is established.
+
 Update 2026-11-03, subsequent owner instruction: the
 [failure-driven six-arm study](alignment_agent/README.md) has completed all 18
 trainings, its saved prediction/hash audit and the actual API/fallback recount.

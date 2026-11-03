@@ -1,5 +1,18 @@
 # AI Usage Record
 
+## Independent relationship-surrogate construction, 3 November 2026
+
+The owner explicitly requested implementation of the recommended method and
+adjustment based on build results. Root coordinated isolated new modules for
+FIT-only teacher training, a hard-forward/ST-backward sequence adapter, and a
+four-arm fixed-epoch validation runner. Existing model/data/scientific source is
+unchanged. Independent static review identified singleton-logit shape, constructor
+RNG, cache-byte verification and oracle-view attributes; these were corrected
+before execution. At this preparation checkpoint no new functional tests,
+teacher fitting, model queries, training, API calls or GPU work have occurred.
+The new plan caps the complete phase at two aggregate GPU-hours; final test and
+final freeze remain separate. Agent coding/review is not human verification.
+
 ## Failure-driven owner follow-up completed on 3 November 2026
 
 - Planning: after the actual owner requested analysis, modifications and execution,
