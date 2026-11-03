@@ -175,6 +175,10 @@ classifies ten scalar float64 cancellation residuals; worst negative dot is
 7.52e-18, not material opposition, and no cap violation was found. Science and
 raw outputs did not change. The API auditor separately preserved its own first
 temporal-predicate failure and [audit-only amendment](../../evidence/alignment_agent_v2/api_audit_logic_amendment_v2.json).
+The amendment's preserved private CRLF bytes and equivalent public LF bytes
+have an explicit [publication hash map](../../evidence/alignment_agent_v2/publication_line_ending_receipt_v1.json).
+One extra manifest mismatch was caught before push and retained; scientific
+outputs did not change. API audit references still identify the private original.
 The alignment auditor is separate from the experiment author; the API auditor
 also authored the bridge. Neither is human verification.
 

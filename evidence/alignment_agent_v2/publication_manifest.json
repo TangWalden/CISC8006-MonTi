@@ -1,6 +1,6 @@
 {
   "scope": "Reviewed publication bytes; scientific source5a1d9e5 and all private raw attempts retained separately",
-  "relative_links_checked": 183,
+  "relative_links_checked": 184,
   "new_python38_syntax_files": 7,
   "dated_artifacts_unchanged": {
     "docs/MonTi_Report_Draft.pdf": "066cb930744a767b631d608ee1a13f07201f19e71ddc550accc28c9b9f8ac082",
@@ -8,7 +8,10 @@
   },
   "files": {
     "AI_USAGE.md": "e1f80deb2dc4743057beb63f46fbd30fcaa199a5e729324e4657f9b2f47e75fc",
-    "course/alignment_agent/README.md": "60c0b1972f5480f38fe8a33487d7d0c7d54961cba63ef1fa79b8f36456867a72",
+    "README.md": "b7223ed069ad62c51e880783f1de02a3e6c472aec40bfbe34411aa6d20c71ec5",
+    "course/PROJECT_STATUS.json": "aafbda074cd1db477fda949f8ccc76665b89f08f2b464dd5efbf03228752f187",
+    "course/WEEK_PLAN.md": "0e50740be4da3a3d823cbeccfbe4dfbe2b627cd719aeae61fd760a2ffcab228b",
+    "course/alignment_agent/README.md": "9194d749f646ea0b128b5b0d5ce0aeeafbaea72fb52a31bb12de1366308a34c4",
     "course/alignment_bridge_recovery/resume_bridge.py": "97b39ef86eb632a9af01d1e73ef7a6721bcc225e4e54092b5a8b72c4ea4cd4f9",
     "course/alignment_bridge_recovery/resume_bridge_v2.py": "978fadca15b4dad7edbd4098904c7c548e4dd3d7f0a5c16224d14905522619b8",
     "course/analysis_v2/alignment_agent_api_audit_v1.py": "28ce8a12ab907c2d3eb5cf1753a39660f051da960d16aa4669b1d11f1155e9d9",
@@ -17,12 +20,10 @@
     "course/analysis_v2/alignment_agent_audit_v2.py": "ac4f54e28dd45e67f73d3651e18730946322622a33eb27bcdf65d52197999f93",
     "course/analysis_v2/alignment_agent_summary.py": "2b65274417bf84e25559a1cae71ca9476cb165480cd71c9b0d9f551466dfd918",
     "course/conditional_alignment/README.md": "e35b624e1e3e0594bf0ce30c2ed71452e12302dd7d5dd2043cc65477b5bf4d4b",
-    "course/PROJECT_STATUS.json": "aafbda074cd1db477fda949f8ccc76665b89f08f2b464dd5efbf03228752f187",
-    "course/WEEK_PLAN.md": "0e50740be4da3a3d823cbeccfbe4dfbe2b627cd719aeae61fd760a2ffcab228b",
     "docs/HUMAN_REVIEW.md": "3ac7d449b7907352a159bed47edd13ff43407ccf720179b33d1d465843578de0",
     "evidence/alignment_agent_v2/api_audit_attempt1.json": "c84fd347a46b588a8539649197ae66a4f2aea63d3f83b39af8095e4549c7f3d7",
     "evidence/alignment_agent_v2/api_audit_attempt2.json": "6bb5e325aa7545d8f6f5bc566d5c011468f21daef4856d0eede1b2706ed0359a",
-    "evidence/alignment_agent_v2/api_audit_logic_amendment_v2.json": "b55ce3acb8a8395fcef00a8f2ccb0d4aab3e589127ec9cfe3558697db5a4d8b4",
+    "evidence/alignment_agent_v2/api_audit_logic_amendment_v2.json": "f704d9d68948fb43cda855d846da5b1dd58a8170e36d58d919ef798fdbd52254",
     "evidence/alignment_agent_v2/execution_protocol_v2.json": "1f7098358dd6f625642100de0242ccc25ae62389f75cef94ec9e0d777efa5ee3",
     "evidence/alignment_agent_v2/execution_trace.json": "52d337c4aaa0df25015cb9467885e45b948f858ce450877c48c8c356c093d58b",
     "evidence/alignment_agent_v2/failure_analysis.json": "4b68251ff87e6ed162e4ad91b591c20a254ca3a9644e0f26b448563eaf379368",
@@ -35,6 +36,7 @@
     "evidence/alignment_agent_v2/independent_audit_attempt2.json": "1637e88da03e976860df35b63e6a5456981570e1af72750abdfcc71e717c6da7",
     "evidence/alignment_agent_v2/numerical_materiality_amendment_v2.json": "b8e0f3a60b161d71749b5f0a72478bbc50f9cb0fd79c840aa9d53197b60dda4e",
     "evidence/alignment_agent_v2/original_bridge_failure.json": "ae1174b0952150c7d8172829da574fb23b8bd98138760e3018d7d6495c93b5c7",
+    "evidence/alignment_agent_v2/publication_line_ending_receipt_v1.json": "2ff509022a089b17b2db1cfb9c113aff1b8708167ab8693150b7f4a6a67a40d0",
     "evidence/alignment_agent_v2/results/applied_epoch_actions.csv": "cd36a01d3d866270e1eeeaa7d7cd844677bd7679a70ff48e8c863fc703713554",
     "evidence/alignment_agent_v2/results/jobs.csv": "d799cd10b8fb685043f984b3a5336a5f2e34210681a2ce32715735ac87d36e1a",
     "evidence/alignment_agent_v2/results/paired_seed_differences.csv": "2f4b3bf09054ee18831de263c32479dd31ea36437aee5859be8d98da3a8fe1cb",
@@ -47,7 +49,7 @@
     "evidence/alignment_agent_v2/resume_attempt2_bridge_complete.json": "43e90341bd92c5046ba8da2d344a8b531197a63d8c2122d9933071a3789b7d2e",
     "evidence/alignment_agent_v2/resume_attempt2_infrastructure_amendment.json": "3fdc3921559420e7786ae62d4ece336fc6bd82e3974351ce6a1f54a72e501469",
     "evidence/alignment_agent_v2/resume_attempt2_registered.json": "f05c37588627e977cbaec9e865143c601153f266f2205824ed15cbdf4feee031",
-    "evidence/research_cost_ledger.json": "b056d90e690f20e9266ba620252465d386c193635166fece0433570e5238cb6b",
-    "README.md": "b7223ed069ad62c51e880783f1de02a3e6c472aec40bfbe34411aa6d20c71ec5"
-  }
+    "evidence/research_cost_ledger.json": "b056d90e690f20e9266ba620252465d386c193635166fece0433570e5238cb6b"
+  },
+  "hash_basis": "Git index blob bytes; CRLF/private-original mapping retained separately"
 }
