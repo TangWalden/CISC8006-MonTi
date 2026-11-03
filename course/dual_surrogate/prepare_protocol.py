@@ -3,7 +3,7 @@ import argparse
 import json
 import pathlib
 import subprocess
-from course.dual_surrogate.common import ROOT,private_output,sha256,write_json
+from course.dual_surrogate.common import ARMS,ROOT,private_output,sha256,write_json
 from course.dual_surrogate.verify import SEALED_GAGA_SHA256
 
 
@@ -11,6 +11,8 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--stage',required=True)
     parser.add_argument('--continue-protocol');parser.add_argument('--prior-progress');parser.add_argument('--reuse-teachers')
     parser.add_argument('--gpu-index',choices=['0','1']);parser.add_argument('--physical-gpu-uuid')
+    parser.add_argument('--reuse-matrix');parser.add_argument('--reuse-passed-preflight',action='store_true')
+    parser.add_argument('--train-job-wall-seconds',type=int,choices=[480,900])
     parser.add_argument('--attempt',type=int,default=1);args=parser.parse_args()
     continuation=args.continue_protocol is not None
     stage=private_output(args.stage,create=not continuation)
@@ -23,8 +25,38 @@ def main():
         p=json.loads(previous.read_text(encoding='utf-8'))
         progress=pathlib.Path(args.prior_progress).resolve()
         prior=json.loads(progress.read_text(encoding='utf-8'))
-        if any(j['name'].endswith('_seed3') or j['name'].endswith('_seed4') or j['name'].endswith('_seed5') for j in prior['jobs']):
-            raise RuntimeError('This continuation supports build/preflight failures only, not replaying attacker trainings.')
+        training_jobs=[j for j in prior['jobs'] if any(j['name']==a+'_seed'+str(s) for a in ARMS for s in p['seeds'])]
+        if training_jobs and not args.reuse_matrix:
+            raise RuntimeError('Retain successful attacker jobs explicitly instead of replaying them.')
+        if args.reuse_matrix:
+            # Only orchestration/timers may change after TRAIN-only construction
+            # failure; every scientific source byte remains the original one.
+            allowed={'course/dual_surrogate/prepare_protocol.py','course/dual_surrogate/queue.py'}
+            for name,wanted in p['source_files'].items():
+                if name not in allowed and sha256(ROOT/name)!=wanted:
+                    raise RuntimeError('Scientific source changed during timer-only continuation: '+name)
+            matrix=private_output(args.reuse_matrix);retained={}
+            successful=[j['name'] for j in training_jobs if j['exit_code']==0]
+            if len(successful)!=len(set(successful)):raise RuntimeError('Duplicate successful training jobs in prior ledger.')
+            for name in successful:
+                directory=matrix/name;r=json.loads((directory/'result.json').read_text())
+                registered_run=json.loads((directory/'registered.json').read_text())
+                if (r.get('status')!='completed' or r['epochs']!=8 or r['optimizer_steps']!=2048 or
+                        name!=r['arm']+'_seed'+str(r['seed']) or
+                        r['victim_loaded'] or r['validation_performed'] or registered_run['provenance']['source_commit']!=p['source_commit'] or
+                        registered_run['provenance']['protocol_sha256']!=sha256(previous) or
+                        sha256(directory/'final_model.pt')!=r['final_model_sha256'] or sha256(directory/'final_optimizer.pt')!=r['final_optimizer_sha256']):
+                    raise RuntimeError('A retained terminal TRAIN job failed its original receipt: '+name)
+                retained[name]=dict(directory=str(directory.relative_to(ROOT)),provenance=registered_run['provenance'],
+                    files={f.relative_to(directory).as_posix():sha256(f) for f in directory.rglob('*') if f.is_file()})
+            if not retained or (stage/'all12_trainings_complete.json').exists() or (stage/'evaluation_attempt1').exists():
+                raise RuntimeError('Timer continuation requires retained TRAIN jobs and no prior victim evaluation.')
+            p.update(reused_training_runs=retained,scientific_core_source=p['source_commit'])
+        if args.reuse_passed_preflight:
+            ref=p['preflight_ref'];r=json.loads((ROOT/ref['path']).read_text())
+            if sha256(ROOT/ref['path'])!=ref['sha256'] or r['status']!='passed' or r['optimizer_steps'] or r['sealed_victim_forwards']:
+                raise RuntimeError('The retained preflight must be an unchanged passed zero-update TRAIN check.')
+            p['reuse_passed_preflight']=True
         teachers=private_output(args.reuse_teachers)
         result=json.loads((teachers/'result.json').read_text(encoding='utf-8'))
         registered=json.loads((teachers/'registered.json').read_text(encoding='utf-8'))
@@ -41,8 +73,14 @@ def main():
             reused_teacher_receipts=[dict(path=str((teachers/name).relative_to(ROOT)),sha256=sha256(teachers/name))
                 for name in ('result.json','registered.json','teacher_artifacts.json')],
             construction_amendment=dict(previous_protocol_sha256=sha256(previous),previous_source=p['source_commit'],
-                reason='Explicit long indices for original TRAIN masks; preserve completed teachers and failed preflight without changing scientific settings.'))
+                reason=('Retain completed terminal TRAIN jobs and passed preflight; rerun only incomplete timer failure with unchanged science.' if args.reuse_matrix else
+                    'Explicit long indices for original TRAIN masks; preserve completed teachers and failed preflight without changing scientific settings.')))
     else:p=json.loads(master.read_text(encoding='utf-8'))
+    if args.train_job_wall_seconds is not None:
+        if not continuation or not args.reuse_matrix:raise RuntimeError('A job-timer amendment requires explicit retained TRAIN continuation.')
+        p['timing_amendment']=dict(previous_seconds=p['train_job_wall_seconds'],new_seconds=args.train_job_wall_seconds,
+            basis='TRAIN-only runtime timeout after2012of2048updates; no VALID/victim outcome observed; aggregate ceiling unchanged.')
+        p['train_job_wall_seconds']=args.train_job_wall_seconds
     if args.gpu_index is not None:
         if not continuation or not args.physical_gpu_uuid:raise RuntimeError('Device change requires explicit continuation and UUID.')
         p['resource_amendment']=dict(previous_visibility=p.get('cuda_visible_devices','0'),previous_uuid=p['physical_gpu_uuid'],

@@ -383,7 +383,7 @@
   "dual_surrogate_stage": {
     "owner_implementation_and_bounded_validation_authorized": true,
     "owner_instruction": "Implement the recommendation and adjust according to build results",
-    "status": "Teachers retained;21CPUchecks passed; native second preflight aborted with shared GPU0 allocation failure; explicit same-model GPU1 continuation prepared",
+    "status": "eleven_terminal_jobs_completed_last_job_timed_out_before_validation",
     "protocol": "course/DUAL_SURROGATE_PROTOCOL_V1.json",
     "phase_gpu_ceiling": 2,
     "arms": [
@@ -444,11 +444,11 @@
       "official_gaga_victim_forwards": 0,
       "test_queries": 0
     },
-    "attack_training_jobs_started": 0,
-    "attack_training_jobs_completed": 0,
-    "stage_gpu_hours_charged_to_date": 0.039195649029991016,
+    "attack_training_jobs_started": 12,
+    "attack_training_jobs_completed": 11,
+    "stage_gpu_hours_charged_to_date": 1.1385221454663488,
     "stage_gpu_hours_scope": "Conservative process/guardian charge through teacher preparation and failed preflight; not the complete planned phase",
-    "continuation": "Reuse both original trained teachers; register numeric GPU1 visibility/UUID and free-memory check, unchanged science",
+    "continuation": "Retain11completed models and passed preflight; change only individual timer480to900seconds, same8epochs/seed/cohort/science and phase2hceiling",
     "continuation_cpu_checks_run": true,
     "efficacy": "Not evaluated; teacher internal quality is not attack or victim-transfer improvement",
     "cpu_checks": {
@@ -473,6 +473,24 @@
       "optimizer_steps": 0,
       "attacker_training_jobs_started": 0,
       "test_queries": 0
+    },
+    "preflight_attempt3": {
+      "status": "passed",
+      "source_commit": "14e2471a6791b90afcd3a395bab1ce72b9a27f19",
+      "generator_forwards": 4,
+      "classifier_forwards": 16,
+      "autograd_calls": 8,
+      "optimizer_steps": 0,
+      "official_victim_forwards": 0,
+      "largest_sequence_error": 6.556510925292969e-07,
+      "largest_logit_error": 4.76837158203125e-07,
+      "nonzero_feature_and_edge_head_gradients": "all four predetermined TRAIN groups"
+    },
+    "timer_failure": {
+      "evidence": "evidence/dual_surrogate_v1/build_attempt3_timeout.json",
+      "optimizer_steps": 2012,
+      "completed_generations": 2013,
+      "official_victim_forwards": 0
     }
   }
 }

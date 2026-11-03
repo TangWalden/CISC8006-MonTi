@@ -16,9 +16,9 @@
       "conservative_gpu_hours": 0.0006216666666666666
     }
   ],
-  "measured_or_conservatively_charged": 2.965306767838183,
+  "measured_or_conservatively_charged": 4.064633264274541,
   "unmetered_setup_reserve": 0.02,
-  "remaining_after_reserve": 9.014693232161818,
+  "remaining_after_reserve": 7.91536673572546,
   "failed_or_interrupted_incidents": [
     {
       "path": "evidence/one_edge_diagnosis_v1/failure.json",
@@ -313,12 +313,12 @@
     "results": "evidence/alignment_agent_v2/results/summary.json"
   },
   "dual_surrogate_phase": {
-    "status": "partial; native preflight abort retained, operational device continuation prepared",
+    "status": "eleven completed terminal jobs retained; last TRAIN timer failure preserved; no victim evaluation",
     "source_commit": "5025ebc4a3a088dfce76485e06c0a592bd933d79",
     "evidence": "evidence/dual_surrogate_v1/build_attempt1.json",
     "phase_limit_gpu_hours": 2,
-    "charged_gpu_hours": 0.039195649029991016,
+    "charged_gpu_hours": 1.1385221454663488,
     "accounting": "Maximum outer/guardian per process, including failed preflight; continuation must inherit this charge exactly once.",
-    "latest_evidence": "evidence/dual_surrogate_v1/build_attempt2.json"
+    "latest_evidence": "evidence/dual_surrogate_v1/build_attempt3_timeout.json"
   }
 }

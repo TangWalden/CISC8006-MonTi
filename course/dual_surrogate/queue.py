@@ -22,6 +22,7 @@ def main():
         row=p['prior_progress_ref'];path=ROOT/row['path']
         if sha256(path)!=row['sha256']:raise RuntimeError('Prior accounting bytes changed.')
         previous=json.loads(path.read_text());charged=float(previous['charged_gpu_hours']);jobs=list(previous['jobs'])
+    write_json(out/'queue_progress.json',dict(jobs=jobs,charged_gpu_hours=charged),exclusive=True)
     def run(name,module,arguments,limit):
         nonlocal charged
         if charged+limit/3600+.02>p['phase_gpu_hours']:raise RuntimeError('Aggregate ceiling prevents another process.')
@@ -56,16 +57,28 @@ def main():
         q=dict(p,teacher_directory=str(teacher.relative_to(ROOT)),
             teacher_artifacts_ref=dict(path=str((teacher/'teacher_artifacts.json').relative_to(ROOT)),sha256=sha256(teacher/'teacher_artifacts.json')))
         q.pop('_protocol_path',None);q.pop('_protocol_sha256',None)
-        preprotocol=stage/('preflight_protocol_v%d.json'%attempt);write_json(preprotocol,q,exclusive=True)
-        preflight=stage/('preflight_attempt%d'%attempt)
-        run('real_train_preflight','course.dual_surrogate.preflight',
-            ['--protocol',str(preprotocol),'--output',str(preflight)],p['preflight_wall_seconds'])
-        if json.loads((preflight/'result.json').read_text())['status']!='passed':raise RuntimeError('Preflight did not pass.')
-        q['preflight_ref']=dict(path=str((preflight/'result.json').relative_to(ROOT)),sha256=sha256(preflight/'result.json'))
+        if p.get('reuse_passed_preflight'):
+            ref=p['preflight_ref'];gate=json.loads((ROOT/ref['path']).read_text())
+            if sha256(ROOT/ref['path'])!=ref['sha256'] or gate['status']!='passed':raise RuntimeError('Retained preflight changed.')
+        else:
+            preprotocol=stage/('preflight_protocol_v%d.json'%attempt);write_json(preprotocol,q,exclusive=True)
+            preflight=stage/('preflight_attempt%d'%attempt)
+            run('real_train_preflight','course.dual_surrogate.preflight',
+                ['--protocol',str(preprotocol),'--output',str(preflight)],p['preflight_wall_seconds'])
+            if json.loads((preflight/'result.json').read_text())['status']!='passed':raise RuntimeError('Preflight did not pass.')
+            q['preflight_ref']=dict(path=str((preflight/'result.json').relative_to(ROOT)),sha256=sha256(preflight/'result.json'))
         protocol=stage/('experiment_protocol_v%d.json'%attempt);write_json(protocol,q,exclusive=True)
         for seed in p['seeds']:
             for arm in ARMS:
                 name='%s_seed%d'%(arm,seed)
+                if name in p.get('reused_training_runs',{}):
+                    retained=p['reused_training_runs'][name];directory=private_output(ROOT/retained['directory'])
+                    actual={f.relative_to(directory).as_posix() for f in directory.rglob('*') if f.is_file()}
+                    if actual!=set(retained['files']) or any(sha256(directory/f)!=wanted for f,wanted in retained['files'].items()):
+                        raise RuntimeError('A retained TRAIN output changed: '+name)
+                    (out/name).symlink_to(directory,target_is_directory=True)
+                    print('DUAL_TRAIN_REUSED',name,flush=True)
+                    continue
                 run(name,'course.dual_surrogate.run',['--protocol',str(protocol),'--output',str(out/name),
                     '--arm',arm,'--seed',str(seed)],p['train_job_wall_seconds'])
                 result=json.loads((out/name/'result.json').read_text())
