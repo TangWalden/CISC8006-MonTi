@@ -13,6 +13,12 @@ teacher fitting, model queries, training, API calls or GPU work have occurred.
 The new plan caps the complete phase at two aggregate GPU-hours; final test and
 final freeze remain separate. Agent coding/review is not human verification.
 
+Subsequently, 20 CPU known-answer checks passed from committed source `668044f`
+in 0.187 seconds test-loop time, with zero real-data model queries/GPU use.
+Before any teacher fitting, root strengthened the real-TRAIN preflight to check
+that GAGA feedback reaches both actual MonTi output heads as well as generated
+features/edge values. This is a pre-execution validity gate, not an efficacy result.
+
 ## Failure-driven owner follow-up completed on 3 November 2026
 
 - Planning: after the actual owner requested analysis, modifications and execution,

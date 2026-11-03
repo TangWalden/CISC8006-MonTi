@@ -383,7 +383,7 @@
   "dual_surrogate_stage": {
     "owner_implementation_and_bounded_validation_authorized": true,
     "owner_instruction": "Implement the recommendation and adjust according to build results",
-    "status": "isolated implementation prepared; no new tests, teacher fits or model calls yet",
+    "status": "20 CPU known-answer checks passed; strengthened real-TRAIN output-head gradient gate prepared; teacher and attacker runs not started",
     "protocol": "course/DUAL_SURROGATE_PROTOCOL_V1.json",
     "phase_gpu_ceiling": 2,
     "arms": [
@@ -403,6 +403,14 @@
     "original_GCN_only_setting_changed": true,
     "final_test_authorized": false,
     "final_tag_authorized": false,
-    "LLM_API_calls": 0
+    "LLM_API_calls": 0,
+    "cpu_checks": {
+      "source_commit": "668044fae8f5fa745d4de9abb77ab7ce067f889d",
+      "tests": 20,
+      "test_loop_seconds": 0.187,
+      "status": "passed",
+      "real_data_queries": 0,
+      "gpu_hours": 0
+    }
   }
 }

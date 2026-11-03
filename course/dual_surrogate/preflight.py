@@ -64,15 +64,22 @@ def main():
             gradients=torch.autograd.grad(loss,engine.live_capture,retain_graph=True,allow_unused=True)
             norms=[0.0 if g is None else float(g.detach().double().norm()) for g in gradients]
             if not all(__import__('math').isfinite(v) for v in norms):raise RuntimeError('Nonfinite feature/edge gradient.')
+            head_gradients=torch.autograd.grad(loss,(engine.model.linear_feat.weight,engine.model.linear_edge.weight),
+                retain_graph=True,allow_unused=True)
+            head_norms=[0.0 if g is None else float(g.detach().double().norm()) for g in head_gradients]
+            if not all(__import__('math').isfinite(v) for v in head_norms):raise RuntimeError('Nonfinite feature/edge head gradient.')
             g1=engine.teacher_logits('gcn_base',graph,ids,True)
             g2=gcn_logits(gcn2,graph,ids,training=True,full_graph=True)
             rows.append(dict(group=group,targets=len(ids),sequence_max_error=float((seq-ref).abs().max()),
                 original_mask_sequence_max_error=float((other-other_ref).abs().max()),
                 logits_max_error=float((a-b).abs().max()),feature_gradient_norm=norms[0],edge_gradient_norm=norms[1],trace=trace,
+                feature_head_gradient_norm=head_norms[0],edge_head_gradient_norm=head_norms[1],
                 gcn_new_inference='full graph, matches teacher fit convention',gcn_base_shape=list(g1.shape),gcn_new_shape=list(g2.shape)))
             engine.capture=engine.live_capture=None
         if not any(r['feature_gradient_norm']>0 for r in rows) or not any(r['edge_gradient_norm']>0 for r in rows):
             raise RuntimeError('All real-TRAIN feature or edge gradients vanish.')
+        if not any(r['feature_head_gradient_norm']>0 for r in rows) or not any(r['edge_head_gradient_norm']>0 for r in rows):
+            raise RuntimeError('GAGA feedback does not reach a generator output head.')
         if engine.optimizer_steps or model_hash(engine.model)!=model_before or model_hash(gcn2)!=gcn2_initial:
             raise RuntimeError('Preflight mutated parameters or performed updates.')
         for role,model in engine.teachers.items():
@@ -80,7 +87,7 @@ def main():
                 raise RuntimeError('Frozen teacher changed in preflight.')
         result.update(status='passed',source_commit=provenance['source_commit'],protocol_sha256=provenance['protocol_sha256'],
             partition_check=partition,mask_check=maskcheck,cases=rows,generator_forwards=4,
-            classifier_forwards=dict(gcn_base=4,gcn_new=4,gaga_new=8,gaga_victim=0),autograd_calls=4,
+            classifier_forwards=dict(gcn_base=4,gcn_new=4,gaga_new=8,gaga_victim=0),autograd_calls=8,
             hard_forward_tolerance=dict(atol=2e-5,rtol=1e-5),backward_is_st_approximation=True)
     except BaseException as error:
         traceback.print_exc();result.update(error=repr(error),traceback=traceback.format_exc())

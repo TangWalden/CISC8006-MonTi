@@ -491,8 +491,9 @@
     ],
     "optimizer_steps": 0,
     "sequence_equivalence": "hard binary forward for FIT80 and original TRAIN mask conventions; compare canonical updater",
-    "gradient": "finite feature/edge gradients; at least one nonzero feature and edge path; teacher weights unchanged",
-    "gradient_approximation": "one-hop weighted mean; two-hop hard-forward straight-through soft reachability, not exact discrete topology derivative"
+    "gradient": "Finite feature/edge-output and feature/edge-head gradients; at least one nonzero path for each over four fixed TRAIN groups; teacher weights unchanged",
+    "gradient_approximation": "one-hop weighted mean; two-hop hard-forward straight-through soft reachability, not exact discrete topology derivative",
+    "autograd_calls": 8
   },
   "evaluation": {
     "only_after_all12_trainings_complete": true,
