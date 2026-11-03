@@ -44,6 +44,8 @@ The earlier 20 CPU checks remain the completed test record; continuation checks
 have not run yet. Agent implementation/review remains distinct from human
 technical verification and course approval.
 
+Continuation CPU checks from `b35c18f` passed21tests in0.183seconds; the SSH shell wrapper then failed its exit quoting after unittest printed OK. The retained log and hash are preserved without repeating tests. The second real preflight aborted natively in DGL CUDA sampling under shared GPU0 memory exhaustion (exit-6); no Python result or guardian receipt survived. Its complete23.151359-second outer process is charged, bringing the stage to0.039195649029991016GPUh. Missing partial model-call counters are not invented. Both original teachers and all failed attempts remain unchanged. An operational continuation will register the available same-model GPU1 using numeric visibility1, logical cuda:0, both runtime counts and own physical UUID, with a prelaunch memory check. No other user process is modified; scientific settings, cohorts and resource ceilings remain fixed. No attacker training, official-victim query or test query has started.
+
 ## Failure-driven owner follow-up completed on 3 November 2026
 
 - Planning: after the actual owner requested analysis, modifications and execution,

@@ -25,7 +25,10 @@ def main():
     def run(name,module,arguments,limit):
         nonlocal charged
         if charged+limit/3600+.02>p['phase_gpu_hours']:raise RuntimeError('Aggregate ceiling prevents another process.')
-        receipt=out/(name+'_guardian.json');command=['env','CUDA_VISIBLE_DEVICES=0','bash','course/run.sh','-m',
+        memory=subprocess.check_output(['nvidia-smi','--id='+p['physical_gpu_uuid'],'--query-gpu=memory.free','--format=csv,noheader,nounits'],universal_newlines=True)
+        if int(memory.strip())<int(p.get('minimum_free_gpu_mib',8192)):
+            raise RuntimeError('Registered GPU has insufficient free memory; no model process launched.')
+        receipt=out/(name+'_guardian.json');command=['env','CUDA_VISIBLE_DEVICES='+p.get('cuda_visible_devices','0'),'bash','course/run.sh','-m',
             'course.dual_surrogate.guard','--receipt',str(receipt),'--limit-seconds',str(limit),'--module',module,'--']+arguments
         start=time.monotonic()
         with (out/(name+'.log')).open('x') as log:

@@ -16,9 +16,9 @@
       "conservative_gpu_hours": 0.0006216666666666666
     }
   ],
-  "measured_or_conservatively_charged": 2.958875834745404,
+  "measured_or_conservatively_charged": 2.965306767838183,
   "unmetered_setup_reserve": 0.02,
-  "remaining_after_reserve": 9.021124165254596,
+  "remaining_after_reserve": 9.014693232161818,
   "failed_or_interrupted_incidents": [
     {
       "path": "evidence/one_edge_diagnosis_v1/failure.json",
@@ -313,11 +313,12 @@
     "results": "evidence/alignment_agent_v2/results/summary.json"
   },
   "dual_surrogate_phase": {
-    "status": "partial; teacher preparation complete and first preflight failed before model forwards",
+    "status": "partial; native preflight abort retained, operational device continuation prepared",
     "source_commit": "5025ebc4a3a088dfce76485e06c0a592bd933d79",
     "evidence": "evidence/dual_surrogate_v1/build_attempt1.json",
     "phase_limit_gpu_hours": 2,
-    "charged_gpu_hours": 0.032764715937212,
-    "accounting": "Maximum outer/guardian per process, including failed preflight; continuation must inherit this charge exactly once."
+    "charged_gpu_hours": 0.039195649029991016,
+    "accounting": "Maximum outer/guardian per process, including failed preflight; continuation must inherit this charge exactly once.",
+    "latest_evidence": "evidence/dual_surrogate_v1/build_attempt2.json"
   }
 }

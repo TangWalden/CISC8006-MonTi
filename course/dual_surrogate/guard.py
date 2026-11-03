@@ -7,9 +7,10 @@ import pathlib
 import runpy
 import signal
 import sys
+import subprocess
 import time
 
-from course.dual_surrogate.common import EXPECTED_GPU, write_json
+from course.dual_surrogate.common import write_json,validate_protocol
 
 
 def main():
@@ -30,12 +31,24 @@ def main():
     def stop(signum,frame):raise TimeoutError('Registered GPU guardian deadline reached.')
     signal.signal(signal.SIGALRM,stop);signal.signal(signal.SIGTERM,stop);signal.alarm(args.limit_seconds)
     try:
-        from course.alignment_agent.diagnostics import own_gpu_uuid
-        import torch
-        if os.environ.get('CUDA_VISIBLE_DEVICES')!='0':raise RuntimeError('Numeric CUDA visibility0 required.')
-        receipt['own_physical_uuids']=own_gpu_uuid(EXPECTED_GPU)
-        receipt['torch']=torch.__version__
         argv=args.arguments[1:] if args.arguments[:1]==['--'] else args.arguments
+        protocol,_=validate_protocol(argv[argv.index('--protocol')+1])
+        visible=protocol.get('cuda_visible_devices','0')
+        if visible not in ('0','1') or os.environ.get('CUDA_VISIBLE_DEVICES')!=visible:
+            raise RuntimeError('Registered numeric single-GPU visibility required.')
+        import torch
+        if not torch.cuda.is_available() or torch.cuda.device_count()!=1 or torch._C._cuda_getDeviceCount()!=1:
+            raise RuntimeError('Torch/native visible GPU counts must equal one.')
+        torch.cuda.set_device(0);torch.zeros(1,device='cuda:0').sum().item()
+        own=set()
+        for _ in range(5):
+            rows=subprocess.check_output(['nvidia-smi','--query-compute-apps=pid,gpu_uuid','--format=csv,noheader'],universal_newlines=True)
+            own={row.split(',')[1].strip() for row in rows.splitlines() if row.split(',')[0].strip()==str(os.getpid())}
+            if own:break
+            time.sleep(.1)
+        if own!={protocol['physical_gpu_uuid']}:raise RuntimeError('Own physical GPU UUID differs from registered device.')
+        receipt.update(own_physical_uuids=sorted(own),numeric_visibility=visible,torch_visible_count=1,native_visible_count=1)
+        receipt['torch']=torch.__version__
         sys.argv=[args.module]+argv
         runpy.run_module(args.module,run_name='__main__');receipt['status']='completed'
     except SystemExit as error:

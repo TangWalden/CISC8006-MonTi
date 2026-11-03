@@ -383,7 +383,7 @@
   "dual_surrogate_stage": {
     "owner_implementation_and_bounded_validation_authorized": true,
     "owner_instruction": "Implement the recommendation and adjust according to build results",
-    "status": "Both independent teachers passed internal TRAIN quality gates; first real-TRAIN preflight failed on index dtype before attack generations/inference/updates; engineering continuation planned with teachers retained",
+    "status": "Teachers retained;21CPUchecks passed; native second preflight aborted with shared GPU0 allocation failure; explicit same-model GPU1 continuation prepared",
     "protocol": "course/DUAL_SURROGATE_PROTOCOL_V1.json",
     "phase_gpu_ceiling": 2,
     "arms": [
@@ -446,10 +446,10 @@
     },
     "attack_training_jobs_started": 0,
     "attack_training_jobs_completed": 0,
-    "stage_gpu_hours_charged_to_date": 0.032764715937212,
+    "stage_gpu_hours_charged_to_date": 0.039195649029991016,
     "stage_gpu_hours_scope": "Conservative process/guardian charge through teacher preparation and failed preflight; not the complete planned phase",
-    "continuation": "Planned checked index-dtype correction and fresh preflight using the completed teachers; no teacher retraining or scientific-setting change",
-    "continuation_cpu_checks_run": false,
+    "continuation": "Reuse both original trained teachers; register numeric GPU1 visibility/UUID and free-memory check, unchanged science",
+    "continuation_cpu_checks_run": true,
     "efficacy": "Not evaluated; teacher internal quality is not attack or victim-transfer improvement",
     "cpu_checks": {
       "source_commit": "668044fae8f5fa745d4de9abb77ab7ce067f889d",
@@ -458,6 +458,21 @@
       "status": "passed",
       "real_data_queries": 0,
       "gpu_hours": 0
+    },
+    "cpu_checks_continuation": {
+      "tests": 21,
+      "test_loop_seconds": 0.183,
+      "status": "passed by retained unittest OK log",
+      "log_sha256": "a6458f19307bce5c33d1757481a559af80dbb988d131ccffaf83d305703f70ff",
+      "outer_wrapper_exit": "After unittest printed21/OK, shell exit quoting failed; no duplicate test run.",
+      "gpu_hours": 0
+    },
+    "preflight_attempt2": {
+      "status": "native abort; no result/guardian, exact log preserved",
+      "evidence": "evidence/dual_surrogate_v1/build_attempt2.json",
+      "optimizer_steps": 0,
+      "attacker_training_jobs_started": 0,
+      "test_queries": 0
     }
   }
 }
