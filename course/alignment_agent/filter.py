@@ -217,8 +217,12 @@ def isolate_flagged(graph, flagged, *, max_working_bytes=MAX_WORKING_BYTES):
     import torch
     _check_graph(graph)
     nodes, edges = graph.num_nodes(), graph.num_edges()
-    node_bytes = sum(value.numel() * value.element_size() for value in graph.ndata.values())
-    edge_bytes = sum(value.numel() * value.element_size() for value in graph.edata.values())
+    # DGL1.1 data-view values/items may expose internal Column objects. Keyed
+    # access materializes the public tensor interface in the locked runtime.
+    node_bytes = sum(graph.ndata[key].numel() * graph.ndata[key].element_size()
+                     for key in graph.ndata.keys())
+    edge_bytes = sum(graph.edata[key].numel() * graph.edata[key].element_size()
+                     for key in graph.edata.keys())
     _memory_guard(edges * 80 + nodes * 32 + node_bytes + edge_bytes, max_working_bytes)
     mask = torch.as_tensor(flagged, device=graph.device)
     if mask.dtype != torch.bool or mask.ndim != 1 or len(mask) != nodes:
@@ -232,9 +236,11 @@ def isolate_flagged(graph, flagged, *, max_working_bytes=MAX_WORKING_BYTES):
         keep = loops | ~(mask[src.long()] | mask[dst.long()])
         ids = keep.nonzero(as_tuple=True)[0]
         post = dgl.graph((src[ids], dst[ids]), num_nodes=nodes, idtype=graph.idtype, device=graph.device)
-        for key, value in graph.ndata.items():
+        for key in graph.ndata.keys():
+            value = graph.ndata[key]
             post.ndata[key] = value.detach().clone()
-        for key, value in graph.edata.items():
+        for key in graph.edata.keys():
+            value = graph.edata[key]
             post.edata[key] = value[ids].detach().clone()
         removed = int((~keep).sum())
         counters = dict(input_nodes=nodes, output_nodes=post.num_nodes(),
