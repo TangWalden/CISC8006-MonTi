@@ -105,11 +105,31 @@ def main():
                 resource_selection=dict(available_metadata=resources,selection_before_baseline_generation=True,
                     rule='First allowed GPU with >=8192MiB free, otherwise CPU uniformly'))
         preprotocol=stage/'refinement_protocol_v1.json';write_json(preprotocol,q,exclusive=True)
-        preflight=stage/'preflight_attempt1';cpu=q['execution_device']=='cpu'
-        run('real_train_preflight','course.feature_polish.preflight',['--protocol',str(preprotocol),'--output',str(preflight)],p['preflight_wall_seconds'],q,is_cpu=cpu)
-        if json.loads((preflight/'result.json').read_text(encoding='utf-8'))['status']!='passed':
-            raise RuntimeError('Exact hard-forward/feature-gradient preflight failed.')
-        q['preflight_ref']=dict(path=(preflight/'result.json').relative_to(ROOT).as_posix(),sha256=sha256(preflight/'result.json'))
+        cpu=q['execution_device']=='cpu'
+        if 'reuse_passed_preflight_ref' in p:
+            ref=p['reuse_passed_preflight_ref'];old_protocol_ref=p['preflight_refinement_protocol_ref']
+            gate_path=ROOT/ref['path'];old_protocol_path=ROOT/old_protocol_ref['path']
+            if sha256(gate_path)!=ref['sha256'] or sha256(old_protocol_path)!=old_protocol_ref['sha256']:
+                raise RuntimeError('Retained passed preflight or its original protocol changed.')
+            gate=json.loads(gate_path.read_text(encoding='utf-8'))
+            original=json.loads(old_protocol_path.read_text(encoding='utf-8'))
+            if (gate['status']!='passed' or gate['counts']['optimizer_steps']!=0 or
+                    gate['counts']['official_victim_forwards']!=0 or
+                    gate['provenance']['source_commit']!=p['preflight_execution_source'] or
+                    gate['provenance']['protocol_sha256']!=old_protocol_ref['sha256'] or
+                    original['source_commit']!=p['preflight_execution_source'] or
+                    sha256(ROOT/'course/feature_polish/preflight.py')!=original['source_files']['course/feature_polish/preflight.py']):
+                raise RuntimeError('Retained zero-update/no-victim preflight source/protocol binding differs.')
+            q['preflight_ref']=dict(ref)
+            write_json(out/'preflight_reused.json',dict(reference=ref,
+                original_refinement_protocol=old_protocol_ref,execution_source=p['preflight_execution_source'],
+                new_execution=False,optimizer_steps=0,official_victim_forwards=0),exclusive=True)
+        else:
+            preflight=stage/'preflight_attempt1'
+            run('real_train_preflight','course.feature_polish.preflight',['--protocol',str(preprotocol),'--output',str(preflight)],p['preflight_wall_seconds'],q,is_cpu=cpu)
+            if json.loads((preflight/'result.json').read_text(encoding='utf-8'))['status']!='passed':
+                raise RuntimeError('Exact hard-forward/feature-gradient preflight failed.')
+            q['preflight_ref']=dict(path=(preflight/'result.json').relative_to(ROOT).as_posix(),sha256=sha256(preflight/'result.json'))
         protocol=stage/'experiment_protocol_v1.json';write_json(protocol,q,exclusive=True)
         matrix=out/'refinements';matrix.mkdir()
         for seed in p['seeds']:

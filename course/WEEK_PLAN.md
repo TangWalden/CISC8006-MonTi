@@ -1,5 +1,7 @@
 # One-week execution and acceptance plan
 
+Update 2026-11-04, latest operational checkpoint: all four fixed TRAIN functional checks passed. The first CPU feature-refinement process then reached its original1800-second limit after118whole-case records;119generations and all recorded partial dispatches/feature steps remain extra failed work. No official-GAGA evaluation started. The [timer-only continuation](feature_polish/README.md) reuses teacher, synthetic checks and passed preflight, retries only the incomplete seed job, retains CPU/eightthreads and original phase origin, and changes only refinement/evaluation wall maxima and total elapsed ceiling. No scientific setting, denominator or effect criterion changes; final TEST/tag gates remain separate.
+
 Update 2026-11-04, current owner-authorized implementation: the [fixed-graph injected-feature study](feature_polish/README.md) retains its completed CPU teacher and twelve passed synthetic checks. Two real TRAIN preflights are preserved: a zero-forward CPU checkpoint-loading failure and a partial finite-difference failure with2generations/30fresh-GAGA/20GCN forwards/8autograd calls. A bounded fixed-block float64 derivative-check amendment is being prepared; actual float32 PGD, arms/cohorts/budgets/closure rule stay fixed. No VALID refinement or official-victim outcome exists in this study yet. The CPU route and original cumulative phase ceilings are retained. Final TEST and final freeze/tag remain separate.
 
 Update 2026-11-03, latest completed owner-authorized work: the

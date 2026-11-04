@@ -168,7 +168,7 @@ def main():
         gate=json.loads(gate_path.read_text(encoding='utf-8'))
         if (gate['status']!='passed' or gate['counts']['optimizer_steps']!=0 or
                 gate['counts']['official_victim_forwards']!=0 or
-                gate['provenance']['source_commit']!=provenance['source_commit']):
+                gate['provenance']['source_commit']!=protocol.get('preflight_execution_source',provenance['source_commit'])):
             raise RuntimeError('A same-source passed zero-update/no-victim preflight is required.')
         if protocol['polish_settings']!={'steps':20,'alpha':.02}:
             raise RuntimeError('Fixed terminal20/alpha.02 polishing settings changed.')

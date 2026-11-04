@@ -1,0 +1,44 @@
+{
+  "status": "v3_source_frozen_before_new_timer_retry_calls",
+  "created_utc": "2026-11-04T08:13:05.026458+00:00",
+  "audit_script": {
+    "path": "work/closure_20261104/polish_audit_source_v3.py",
+    "sha256": "f3aa36f0f373bdb331b5d96b862c0f2cbabf3bb50e73193e143d59a09948bc99",
+    "bytes": 70118
+  },
+  "immutable_previous_audit_sources": {
+    "polish_audit_source.py": "67cb85b2b39804a06cdc5c8c88da8b65499edc31227fd1db539516226fecacd0",
+    "polish_audit_source_v2.py": "bd4a2360aca7a6b25baee6b081b89798a0112e49fad24fd195f280b81f54a265",
+    "polish_tensor_audit_source.py": "494bc8170811cd3c5a3c3dde5183ef3d7842a8cafa64c73e7ac4f3e27d0a86db"
+  },
+  "known_prior_execution_source": "9a42793ccbff5d3783e001619c60449a56c00bdf",
+  "known_prior_experiment_sha256": "86377a95a6acfecd46b1e71440a1d749a1b619f9cd1ecf1815c9e748ed38be9a",
+  "known_failed_partial_tree_sha256_canonical_rows": "0f6866256fb1146e0c30334fa6ffe11b23be08f2b84cd18d1a68d5e672286ec2",
+  "prior_construction_metadata_read": {
+    "path": "work/closure_20261104/build_attempt3_metadata.json",
+    "sha256": "c666f8d92097146835e4694d6ce99d90ff43c8e46a7207d186a4ffb944bf8864",
+    "scope": "Only status, counters, timing, file inventory hashes and passed-preflight receipt metadata; no failed own predictions/losses or victim metrics accessed"
+  },
+  "new_execution_source_and_preparation": "Mandatory explicit CLI inputs once root commits/freezes; not guessed",
+  "expected_cumulative_job_rows": 9,
+  "expected_failed_partial": {
+    "complete_captures": 118,
+    "histories": 118,
+    "tree_files": 239,
+    "returned_generations": 119,
+    "GCN_dispatches": 2837,
+    "GAGA_dispatches": 2833,
+    "autograd_dispatches": 4724,
+    "completed_PGD_steps": 4723,
+    "interrupted_final_operation_completion": "unknown, never asserted complete",
+    "model_parameter_updates": 0,
+    "victim_API_TEST_queries": 0,
+    "primary_cases_reused": 0
+  },
+  "amendment": "Only wall timers1800->5400 and phase3->6hours; original origin retained, uniformCPU and GPU2hour cap unchanged. Exact source-binding/guard-limit text replacements; no math change. Passed teacher/unit/preflight reused with original sources and all old failures/costs retained.",
+  "code_review": "prepare and queue integration inspected; AST syntax only, no scripts imported/executed",
+  "new_timer_retry_output_reads": 0,
+  "model_calls_training_API_dependency_or_network_work": 0,
+  "execution_authorization": "Wait for explicit root completion signal; frozen source is not authorization to run",
+  "independence": "Auditor did not author scientific method; agent not human verification"
+}

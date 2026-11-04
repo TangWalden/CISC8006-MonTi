@@ -659,7 +659,7 @@
     "independent_saved_phase_audit": "passed405actual-byte hashes/117125checks; agent audit, not human verification"
   },
   "feature_polish_phase": {
-    "status": "Completed CPU teacher retained; second TRAIN-only finite-difference preflight failure preserved; fixed-block float64 diagnostic amendment in preparation",
+    "status": "CPU functional preflight passed; first refinement process timed out at118/128whole cases; timer-only retry in preparation, no official-victim outcome",
     "owner_instruction": "Further concrete case-based diagnosis, improvement and execution until a measured development loop closes; no positive effect guaranteed",
     "protocol": "course/FEATURE_POLISH_PROTOCOL_V1.json",
     "package": "course/feature_polish/README.md",
@@ -669,7 +669,7 @@
     "device_rule": "One available >=8GiB GPU selected before generation, else uniformCPU; no cross-device comparison to priorGPUbaseline",
     "phase_limits": {
       "GPU_hours": 2,
-      "total_wall_hours": 3
+      "total_wall_hours": 6
     },
     "model_calls_started": true,
     "final_TEST_allowed": false,
@@ -682,11 +682,30 @@
       "fresh_GAGA": 30
     },
     "charged_GPU_hours": 0,
-    "build_amendment": "evidence/feature_polish_v1/build_amendment_v2.json",
+    "build_amendment": "evidence/feature_polish_v1/build_amendment_v3.json",
     "failed_preflight_generations": 2,
     "failed_preflight_autograd_calls": 8,
     "selected_execution_device": "cpu",
     "VALID_refinement_generations": 0,
-    "official_victim_forwards": 0
+    "official_victim_forwards": 0,
+    "successful_preflight_forwards": {
+      "GAGA_float32": 60,
+      "GCN_actual_float32": 20,
+      "GCN_functional_float64": 164
+    },
+    "failed_refinement_complete_groups": 118,
+    "failed_refinement_recorded_dispatch_counters": {
+      "baseline_generations": 119,
+      "gcn_forwards": 2837,
+      "gaga_teacher_forwards": 2833,
+      "feature_autograd_calls": 4724,
+      "feature_pgd_steps": 4723,
+      "generator_optimizer_steps": 0,
+      "teacher_optimizer_steps": 0,
+      "official_victim_forwards": 0,
+      "API_calls": 0,
+      "TEST_queries": 0
+    },
+    "primary_completed_seeds": 0
   }
 }

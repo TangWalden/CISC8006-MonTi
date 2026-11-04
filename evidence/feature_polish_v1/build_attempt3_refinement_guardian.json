@@ -1,0 +1,27 @@
+{
+  "module": "course.feature_polish.refine",
+  "started_utc": "2026-11-04T07:34:04.974545+00:00",
+  "limit_seconds": 1800,
+  "pid": 897428,
+  "arguments": [
+    "--",
+    "--protocol",
+    "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt3/experiment_protocol_v1.json",
+    "--output",
+    "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt3/queue_attempt1/refinements/seed3",
+    "--seed",
+    "3"
+  ],
+  "status": "failed",
+  "execution_device": "cpu",
+  "numeric_visibility": "",
+  "torch_visible_count": 0,
+  "native_visible_count": 0,
+  "own_physical_uuids": [],
+  "torch": "1.13.1+cu117",
+  "exit_code": 1,
+  "elapsed_seconds": 1800.2332255089423,
+  "process_cpu_seconds": 8142.093230584001,
+  "charged_gpu_wall_hours": 0.0,
+  "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+}

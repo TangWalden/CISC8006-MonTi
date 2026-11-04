@@ -23,7 +23,7 @@ def main():
     parser.add_argument('arguments',nargs=argparse.REMAINDER)
     args=parser.parse_args()
     path=pathlib.Path(args.receipt)
-    if path.exists() or not 1<=args.limit_seconds<=1800:raise RuntimeError('New receipt and bounded limit required.')
+    if path.exists() or not 1<=args.limit_seconds<=5400:raise RuntimeError('New receipt and bounded limit required.')
     path.parent.mkdir(parents=True,exist_ok=True)
     start=time.monotonic();cpu_start=time.process_time()
     receipt=dict(module=args.module,started_utc=dt.datetime.now(dt.timezone.utc).isoformat(),

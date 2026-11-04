@@ -465,7 +465,7 @@
     "source_sha256": "900902136ed440dfef2420f078d3c406334ae75f45ae86302ce4b4f6103bf4e2"
   },
   "feature_polish_phase": {
-    "status": "partial; CPUteacher succeeded and zero-forward CPU-loader preflight failure preserved, no refinement/victim evaluation yet",
+    "status": "CPU teacher and functional preflight passed; two failed construction preflights and timed-out partial refinement preserved; no official-victim evaluation yet",
     "phase_gpu_limit": 2,
     "charged_GPU_hours": 0,
     "teacher": {
@@ -489,7 +489,26 @@
       "outer_wall_seconds": 22.01778230094351,
       "GPU_hours": 0
     },
-    "evidence": "evidence/feature_polish_v1/build_amendment_v1.json",
-    "no_successful_teacher_replay": true
+    "evidence": "evidence/feature_polish_v1/build_amendment_v3.json",
+    "no_successful_teacher_replay": true,
+    "failed_partial_refinement": {
+      "recorded_counters": {
+        "baseline_generations": 119,
+        "gcn_forwards": 2837,
+        "gaga_teacher_forwards": 2833,
+        "feature_autograd_calls": 4724,
+        "feature_pgd_steps": 4723,
+        "generator_optimizer_steps": 0,
+        "teacher_optimizer_steps": 0,
+        "official_victim_forwards": 0,
+        "API_calls": 0,
+        "TEST_queries": 0
+      },
+      "completed_whole_group_rows": 118,
+      "guardian_wall_seconds": 1800.2332255089423,
+      "process_cpu_seconds": 8142.093230584001,
+      "GPU_hours": 0,
+      "counter_status": "Recorded dispatch/autograd counters may include the interrupted final operation; not all asserted completed."
+    }
   }
 }

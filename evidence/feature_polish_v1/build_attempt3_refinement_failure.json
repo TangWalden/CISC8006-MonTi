@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "seed": 3,
+  "official_victim_loaded": false,
+  "counters": {
+    "baseline_generations": 119,
+    "gcn_forwards": 2837,
+    "gaga_teacher_forwards": 2833,
+    "feature_autograd_calls": 4724,
+    "feature_pgd_steps": 4723,
+    "generator_optimizer_steps": 0,
+    "teacher_optimizer_steps": 0,
+    "official_victim_forwards": 0,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "error": "TimeoutError('Registered GPU guardian deadline reached.')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/tjy/Project/MonTi-course/course/feature_polish/refine.py\", line 221, in main\n    features['gcn_pgd'],gcn_history=projected_features(x0,minimum,maximum,gcn_forward,20,.02,check,counters)\n  File \"/home/tjy/Project/MonTi-course/course/feature_polish/refine.py\", line 102, in projected_features\n    gradient,=torch.autograd.grad(loss,unit)\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/autograd/__init__.py\", line 300, in grad\n    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/autograd/function.py\", line 267, in apply\n    return user_fn(self, *args)\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/backend/pytorch/sparse.py\", line 215, in backward\n    dX = gspmm(g_rev, \"copy_lhs\", \"sum\", dZ, None)\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/backend/pytorch/sparse.py\", line 1032, in gspmm\n    return GSpMM.apply(*args)\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/backend/pytorch/sparse.py\", line 165, in forward\n    out, (argX, argY) = _gspmm(gidx, op, reduce_op, X, Y)\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/_sparse_ops.py\", line 239, in _gspmm\n    _CAPI_DGLKernelSpMM(\n  File \"/home/tjy/Project/MonTi-course/course/feature_polish/guard.py\", line 31, in stop\n    def stop(signum,frame):raise TimeoutError('Registered GPU guardian deadline reached.')\nTimeoutError: Registered GPU guardian deadline reached.\n",
+  "recorded_engine_generator_forwards": 119,
+  "elapsed_seconds": 1793.8406729489798,
+  "process_cpu_seconds": 8135.375289214
+}
