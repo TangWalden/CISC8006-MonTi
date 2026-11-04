@@ -56,7 +56,7 @@
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
     "full_evaluation": "Pending concrete complete final-test protocol confirmation; completed new-method validation pilots do not authorize it.",
-    "active_direction": "Owner-authorized source-role conformance control in preparation; retain original GCN feedback and test consistent retraining. Earlier negative phases remain closed; no claimed effect before measurement.",
+    "active_direction": "Owner-authorized six-job source-role development control and saved-graph teacher measurement completed. No consistent performance gain selected; preserve all attempts. Await actual feedback, no new models/API/tuning automatically. Final TEST/tag and human/course gates remain separate.",
     "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
@@ -67,7 +67,7 @@
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Complete the freshly authorized narrow legacy-versus-injected-source development comparison and saved-graph teacher diagnostic under their frozen protocol; retain all outcomes and costs, no final TEST.",
+    "Report the completed source-role control and null/unstable development comparison with all three seeds, raw prediction audits, cases and costs; do not select the positive seed or launch more work merely because a heartbeat fires.",
     "Report all four dual-surrogate arms and the negative joint-minus-GCN paired result, preserving sources, failed attempts, cost scope and fixed-teacher/development-cohort limitations",
     "Retain the earlier formal test reproduction and inconclusive learned-versus-random interval separately from later development results; preserve dated PDF/PPTX drafts",
     "Complete genuine human technical review, actual Junyi Tang/Yifan Fan contribution records, course approval checks and rehearsal without claiming these agent audits satisfy them",
@@ -189,7 +189,7 @@
     "visual_review": "all 10 pages inspected by main agent; not human verification",
     "demo_script": "docs/DEMO_SCRIPT.md; preparation only, no human rehearsal recorded",
     "slides": "English editable 12-slide draft prepared; native PowerPoint test, human rehearsal and final presentation pending",
-    "final_improvement_control_results": "not executed; no result invented",
+    "final_improvement_control_results": "Development controls completed and published in package addenda; complete final TEST improvement/control study remains unperformed.",
     "owner_direction": "LLM evidence-fusion defense direction selected; report remains a dated draft and new experiment protocol is pending",
     "human_review_contributions_and_course_approval": "pending",
     "new_model_calls": 0,
@@ -623,14 +623,39 @@
     }
   },
   "source_role_fix_phase": {
-    "status": "implementation/source freeze in preparation; no new outcome claimed",
-    "owner_authorization": "Actual human on2026-11-04 requested a concrete improvement based on diagnosis/cases and execution with measured effects",
+    "status": "completed; no consistent development gain, no method selected",
+    "owner_authorization": "Actual human on2026-11-04 requested a concrete improvement based on diagnosis/cases and execution",
     "protocol": "course/SOURCE_ROLE_FIX_PROTOCOL_V1.json",
     "package": "course/source_role_fix/README.md",
-    "design": "fresh legacy versus injected-representation scoring, original GCN only,3seeds8terminalepochs, fixed256TRAIN/128VALID groups",
+    "evidence": "evidence/source_role_fix_v1/execution_trace.json",
+    "scientific_source": "dad856c9d2697d887bc6eeea5dd26fab432fe682",
+    "preparation_protocol_sha256": "b8246361e67cc20cc5d889988271bd03c3ad6e5408d84d45b7d2be1e08a8f8ff",
+    "experiment_protocol_sha256": "e9028d0370714089e6139c932b0fc84f5aa6b72ca6d45a15b4f7495cae9b1d4e",
+    "successful_fresh_trainings": 6,
+    "training_epochs": 48,
+    "primary_mean_mr_percent": {
+      "legacy": {
+        "mean_mr_percent": 52.70394133822182,
+        "sample_sd_pp": 2.2693709263317943
+      },
+      "source_fixed": {
+        "mean_mr_percent": 52.673388328750384,
+        "sample_sd_pp": 3.5750937919486896
+      }
+    },
+    "mean_paired_delta_mr_pp": -0.0305530094714328,
+    "paired_t95_pp": [
+      -9.600009005724457,
+      9.538902986781592
+    ],
+    "consistent_development_gain": false,
     "phase_gpu_limit": 2,
-    "model_calls_started": false,
+    "charged_gpu_hours": 0.8056387150377526,
+    "model_calls_started": true,
     "final_test_allowed": false,
-    "novelty_or_efficacy_claimed": false
+    "final_test_queries": 0,
+    "LLM_API_calls": 0,
+    "novelty_or_effective_improvement_claimed": false,
+    "independent_saved_phase_audit": "passed405actual-byte hashes/117125checks; agent audit, not human verification"
   }
 }

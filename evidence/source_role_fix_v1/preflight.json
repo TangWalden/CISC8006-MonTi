@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "optimizer_steps": 0,
+  "sealed_victim_loaded": false,
+  "sealed_victim_forwards": 0,
+  "test_queries": 0,
+  "source_commit": "dad856c9d2697d887bc6eeea5dd26fab432fe682",
+  "protocol_sha256": "b8246361e67cc20cc5d889988271bd03c3ad6e5408d84d45b7d2be1e08a8f8ff",
+  "cases": [
+    {
+      "arm": "legacy",
+      "group": 263,
+      "targets": 3,
+      "node_budget": 1,
+      "edge_budget": 1,
+      "actual_injected_nodes": 1,
+      "actual_injected_edges": 1,
+      "feature_gradient_norm": 0.23487533266680125,
+      "edge_gradient_norm": 0.0015389788895845413,
+      "feature_head_gradient_norm": 0.5711107027535892,
+      "edge_head_gradient_norm": 2.305114613736618e-05
+    },
+    {
+      "arm": "legacy",
+      "group": 238,
+      "targets": 4,
+      "node_budget": 1,
+      "edge_budget": 2,
+      "actual_injected_nodes": 1,
+      "actual_injected_edges": 2,
+      "feature_gradient_norm": 0.0004872281391741496,
+      "edge_gradient_norm": 0.00040612732897636806,
+      "feature_head_gradient_norm": 0.001322240047106537,
+      "edge_head_gradient_norm": 1.7897334328371211e-06
+    },
+    {
+      "arm": "source_fixed",
+      "group": 263,
+      "targets": 3,
+      "node_budget": 1,
+      "edge_budget": 1,
+      "actual_injected_nodes": 1,
+      "actual_injected_edges": 1,
+      "feature_gradient_norm": 0.23487533266680125,
+      "edge_gradient_norm": 0.0015389788895845413,
+      "feature_head_gradient_norm": 0.5711107027535892,
+      "edge_head_gradient_norm": 3.4394249951241226e-05
+    },
+    {
+      "arm": "source_fixed",
+      "group": 238,
+      "targets": 4,
+      "node_budget": 1,
+      "edge_budget": 2,
+      "actual_injected_nodes": 1,
+      "actual_injected_edges": 2,
+      "feature_gradient_norm": 0.00048722981534203466,
+      "edge_gradient_norm": 0.0004061287903950808,
+      "feature_head_gradient_norm": 0.0013222445728013235,
+      "edge_head_gradient_norm": 1.3801650779029574e-06
+    }
+  ],
+  "paired_initial_state_sha256": "2280c96ecc6e1142b362606045ffe3295b527fcca6c55d31862fa7b5f03ff105",
+  "generator_forwards": 4,
+  "classifier_forwards": {
+    "gcn_base": 4,
+    "gcn_new": 0,
+    "gaga_new": 0,
+    "gaga_victim": 0
+  },
+  "autograd_calls": 4,
+  "elapsed_seconds": 33.13281669700518
+}

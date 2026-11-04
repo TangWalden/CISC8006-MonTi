@@ -1,0 +1,94 @@
+{
+  "status": "completed",
+  "jobs": [
+    {
+      "name": "real_train_preflight",
+      "module": "course.source_role_fix.preflight",
+      "exit_code": 0,
+      "pid": 858341,
+      "outer_seconds": 50.701453865971416,
+      "charged_gpu_wall_hours": 0.01408373718499206,
+      "guardian_sha256": "69fb96c7dc019f61b89d58871a9945bd64e1800757b9599ec4f4ed92173f0dad"
+    },
+    {
+      "name": "saved_teacher_diagnostic",
+      "module": "course.source_role_fix.saved_teacher_diagnostic",
+      "exit_code": 0,
+      "pid": 858715,
+      "outer_seconds": 129.9210662059486,
+      "charged_gpu_wall_hours": 0.03608918505720794,
+      "guardian_sha256": "635ec31b4bb6260984bd52e017b76a173a12f465af2fc3645e908c426b59f6ed"
+    },
+    {
+      "name": "legacy_seed3",
+      "module": "course.source_role_fix.run",
+      "exit_code": 0,
+      "pid": 859331,
+      "outer_seconds": 416.28238288895227,
+      "charged_gpu_wall_hours": 0.11563399524693119,
+      "guardian_sha256": "c3db2e51cee2411a3722f12ac4b41ad8f877fe54ced17880a6f28f65191562ac"
+    },
+    {
+      "name": "source_fixed_seed3",
+      "module": "course.source_role_fix.run",
+      "exit_code": 0,
+      "pid": 861011,
+      "outer_seconds": 463.52621983294375,
+      "charged_gpu_wall_hours": 0.12875728328692881,
+      "guardian_sha256": "66c63ec9df9e0d97bf5cb3539706e459c4de117f7ae8de783958bab692a7112e"
+    },
+    {
+      "name": "legacy_seed4",
+      "module": "course.source_role_fix.run",
+      "exit_code": 0,
+      "pid": 862399,
+      "outer_seconds": 389.38410800800193,
+      "charged_gpu_wall_hours": 0.10816225222444498,
+      "guardian_sha256": "d5c5d9fcced07eedf77895b18a0bd491eb2afb564a69f106301048aaacd3954a"
+    },
+    {
+      "name": "source_fixed_seed4",
+      "module": "course.source_role_fix.run",
+      "exit_code": 0,
+      "pid": 863703,
+      "outer_seconds": 340.8164155719569,
+      "charged_gpu_wall_hours": 0.0946712265477658,
+      "guardian_sha256": "3381529e28de5a7ff5f50bd946f800fc64b5d2da75f606379eff110bfde61c9b"
+    },
+    {
+      "name": "legacy_seed5",
+      "module": "course.source_role_fix.run",
+      "exit_code": 0,
+      "pid": 865238,
+      "outer_seconds": 346.31939047703054,
+      "charged_gpu_wall_hours": 0.09619983068806404,
+      "guardian_sha256": "f30d4fb418964a25b553db8a4add00548e4ba820832b3f52ff54b7617dd54590"
+    },
+    {
+      "name": "source_fixed_seed5",
+      "module": "course.source_role_fix.run",
+      "exit_code": 0,
+      "pid": 866037,
+      "outer_seconds": 330.5691114590736,
+      "charged_gpu_wall_hours": 0.09182475318307601,
+      "guardian_sha256": "9edcb6f137bd1ff16714143f84d813547b1c0b603ec043214ec78f95d32f8e57"
+    },
+    {
+      "name": "development_evaluation",
+      "module": "course.source_role_fix.evaluate",
+      "exit_code": 0,
+      "pid": 866940,
+      "outer_seconds": 432.7792258260306,
+      "charged_gpu_wall_hours": 0.12021645161834184,
+      "guardian_sha256": "ad65d045bd0182092a8f661bd5029fd351e78e592238bd9f4c8136fc903e0121"
+    }
+  ],
+  "charged_gpu_hours": 0.8056387150377526,
+  "scientific_source": "dad856c9d2697d887bc6eeea5dd26fab432fe682",
+  "preparation_protocol_sha256": "b8246361e67cc20cc5d889988271bd03c3ad6e5408d84d45b7d2be1e08a8f8ff",
+  "experiment_protocol_sha256": "e9028d0370714089e6139c932b0fc84f5aa6b72ca6d45a15b4f7495cae9b1d4e",
+  "evaluation_result_sha256": "2e7b7dbfe7ada1704a8eaae2fd061f13a4ae87341fc9283abf877db986506dc9",
+  "completed_utc": "2026-11-04T05:38:58.981548+00:00",
+  "test_queries": 0,
+  "LLM_API_calls": 0
+}

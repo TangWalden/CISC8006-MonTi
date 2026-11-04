@@ -146,3 +146,7 @@ Both members must approve and understand the final text, explain their own respo
 ## 4 November: owner-authorized source-role control
 
 The owner requested an improvement grounded in concrete failures and actual execution. A narrow legacy-versus-injected-source scoring comparison is being frozen before new calls: original GCN feedback, identical cohorts/budgets/three attack seeds/eight terminal epochs. A bounded companion will join fresh-teacher decisions on96existing attack snapshots to their saved victim decisions. No outcome or improvement is yet claimed. This changes the score representation only, not physical endpoint eligibility; prior negative studies remain intact. Final TEST and submission freeze retain separate checkpoints. See [the protocol](SOURCE_ROLE_FIX_PROTOCOL_V1.json) and [implementation](source_role_fix/README.md).
+
+### Source-role control completed
+
+All six fresh trainings and complete development evaluation finished without retries. Legacy/corrected mean GAGA MR 52.7039/52.6734%,paired-0.0306 pp,seed differences-3.2997/+4.2163/-1.0082 pp; no consistent gain selected. The separate 96-saved-graph teacher measurement and agent saved-record audits completed. Phase charge 0.8056387150 GPUh,cumulative 5.0652198658+.02 reserve,remaining 6.9147801342 h. [Full results and case limits](source_role_fix/README.md). Preserve the positive and negative seeds; do not add resources or run more models automatically. Final TEST/tag and genuine human/course requirements remain separate.

@@ -1,5 +1,7 @@
 # CISC8006: MonTi Reproduction and Improvements
 
+**4 November development update:** the source-role correction and matched original-GCN control completed six fresh trainings. Mean GAGA MR 52.7039% to 52.6734% (-0.0306 pp), with mixed seed directions; no consistent gain selected. [Results, concrete cases and limits](course/source_role_fix/README.md). This does not replace the frozen formal reproduction or authorize final TEST/tag.
+
 **Latest structural-feedback study, 3 November 2026:** the owner-authorized
 [independent GAGA-style surrogate implementation](course/dual_surrogate/README.md)
 and four-arm development comparison completed twelve terminal models. Mean GAGA

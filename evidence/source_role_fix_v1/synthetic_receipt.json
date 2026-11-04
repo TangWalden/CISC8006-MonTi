@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "outer_seconds": 9.808275423012674,
+  "GPU_hours": 0,
+  "source_commit": "dad856c9d2697d887bc6eeea5dd26fab432fe682",
+  "stdout_log": "synthetic_checks.log",
+  "stdout_sha256": "2a825e987ed1e7351ad12c73bf3bd425f975c58c33f9ac80ac32b6cff38133b0"
+}

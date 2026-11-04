@@ -1,0 +1,337 @@
+{
+  "status": "completed",
+  "official_victim_loaded": false,
+  "counters": {
+    "gaga_teacher_dispatches": 104,
+    "gaga_teacher_completed_forwards": 104,
+    "attack_graphs_reconstructed": 96,
+    "generator_forwards": 0,
+    "victim_forwards": 0,
+    "optimizer_steps": 0,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "provenance": {
+    "source_commit": "dad856c9d2697d887bc6eeea5dd26fab432fe682",
+    "protocol_sha256": "e9028d0370714089e6139c932b0fc84f5aa6b72ca6d45a15b4f7495cae9b1d4e"
+  },
+  "original_exported_groups": 8,
+  "saved_attack_graphs": 96,
+  "fresh_teacher_mask_scope": "Original FIT80 only; unchanged training convention",
+  "official_victim_channel": "Immutable saved VALID logits; zero victim loads/forwards",
+  "teacher_state_sha256": "7a3db1f46d2ba6cd192258d75c85ef484d963ed4a65c273975242a0397834776",
+  "summaries": [
+    {
+      "arm": "gcn_only",
+      "seed": 3,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 8,
+        "new_wrong": 1,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 9.195402298850574
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 16,
+        "new_wrong": 4,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 18.39080459770115
+      },
+      "prediction_agreements": 77,
+      "teacher_and_victim_wrong": 7
+    },
+    {
+      "arm": "gcn_only",
+      "seed": 4,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 8,
+        "new_wrong": 1,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 9.195402298850574
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 15,
+        "new_wrong": 3,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 17.24137931034483
+      },
+      "prediction_agreements": 78,
+      "teacher_and_victim_wrong": 7
+    },
+    {
+      "arm": "gcn_only",
+      "seed": 5,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 13,
+        "new_wrong": 6,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 14.942528735632184
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 18,
+        "new_wrong": 6,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 20.689655172413794
+      },
+      "prediction_agreements": 76,
+      "teacher_and_victim_wrong": 10
+    },
+    {
+      "arm": "gaga_only",
+      "seed": 3,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 23,
+        "new_wrong": 16,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 26.436781609195403
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 14,
+        "new_wrong": 2,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 16.091954022988507
+      },
+      "prediction_agreements": 70,
+      "teacher_and_victim_wrong": 10
+    },
+    {
+      "arm": "gaga_only",
+      "seed": 4,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 26,
+        "new_wrong": 19,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 29.885057471264368
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 15,
+        "new_wrong": 3,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 17.24137931034483
+      },
+      "prediction_agreements": 70,
+      "teacher_and_victim_wrong": 12
+    },
+    {
+      "arm": "gaga_only",
+      "seed": 5,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 25,
+        "new_wrong": 18,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 28.735632183908045
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 14,
+        "new_wrong": 2,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 16.091954022988507
+      },
+      "prediction_agreements": 66,
+      "teacher_and_victim_wrong": 9
+    },
+    {
+      "arm": "two_gcn",
+      "seed": 3,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 8,
+        "new_wrong": 1,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 9.195402298850574
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 13,
+        "new_wrong": 1,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 14.942528735632184
+      },
+      "prediction_agreements": 80,
+      "teacher_and_victim_wrong": 7
+    },
+    {
+      "arm": "two_gcn",
+      "seed": 4,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 8,
+        "new_wrong": 1,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 9.195402298850574
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 12,
+        "new_wrong": 0,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 13.793103448275861
+      },
+      "prediction_agreements": 81,
+      "teacher_and_victim_wrong": 7
+    },
+    {
+      "arm": "two_gcn",
+      "seed": 5,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 8,
+        "new_wrong": 1,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 9.195402298850574
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 13,
+        "new_wrong": 1,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 14.942528735632184
+      },
+      "prediction_agreements": 80,
+      "teacher_and_victim_wrong": 7
+    },
+    {
+      "arm": "gcn_gaga",
+      "seed": 3,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 15,
+        "new_wrong": 8,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 17.24137931034483
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 12,
+        "new_wrong": 0,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 13.793103448275861
+      },
+      "prediction_agreements": 78,
+      "teacher_and_victim_wrong": 9
+    },
+    {
+      "arm": "gcn_gaga",
+      "seed": 4,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 20,
+        "new_wrong": 13,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 22.988505747126435
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 12,
+        "new_wrong": 0,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 13.793103448275861
+      },
+      "prediction_agreements": 73,
+      "teacher_and_victim_wrong": 9
+    },
+    {
+      "arm": "gcn_gaga",
+      "seed": 5,
+      "graphs": 8,
+      "teacher": {
+        "occurrences": 87,
+        "clean_wrong": 7,
+        "attacked_wrong": 33,
+        "new_wrong": 26,
+        "recoveries": 0,
+        "clean_mr_percent": 8.045977011494253,
+        "attacked_mr_percent": 37.93103448275862
+      },
+      "saved_victim": {
+        "occurrences": 87,
+        "clean_wrong": 12,
+        "attacked_wrong": 14,
+        "new_wrong": 2,
+        "recoveries": 0,
+        "clean_mr_percent": 13.793103448275861,
+        "attacked_mr_percent": 16.091954022988507
+      },
+      "prediction_agreements": 62,
+      "teacher_and_victim_wrong": 11
+    }
+  ],
+  "output_hashes": {
+    "clean_predictions.jsonl": "b9b96f415d393913f33b5ace88d69fb207874c13aa59512cac3d95ff9fd154a4",
+    "attacked_predictions.jsonl": "31c3bc98a7de32386293c76f074d9607c7474cb1637358a380f68b0b2bc2eb6e"
+  },
+  "limitations": [
+    "Eight predetermined exported groups, not the full 128-group development cohort.",
+    "Repeated targets, seeds and graph contexts are correlated; no IID confidence claim.",
+    "Teacher/victim weights and group-mask conventions both differ; this does not isolate their causal effects.",
+    "No crossed-mask inference, training adaptation, generator search, API or TEST evaluation."
+  ],
+  "wall_seconds": 116.67570275207981,
+  "process_cpu_seconds": 114.381781413
+}

@@ -1,0 +1,39 @@
+{
+  "selection": "Post-hoc largest positive and largest negative wrong-count change; tie-break by seed then group ID, after all outcomes were known",
+  "not_representative_or_gate_selection": true,
+  "examples": [
+    {
+      "seed": 4,
+      "group": 1071,
+      "targets": 14,
+      "node_budget": 122,
+      "edge_budget": 5734,
+      "delta_wrong": 4,
+      "occurrences": 14,
+      "legacy_wrong": 7,
+      "fixed_wrong": 11,
+      "shared_new_wrong": 3,
+      "legacy_new_success_lost": 0,
+      "new_success_gained": 4,
+      "additional_recovery": 0,
+      "previous_recovery_lost": 0
+    },
+    {
+      "seed": 3,
+      "group": 1001,
+      "targets": 25,
+      "node_budget": 14,
+      "edge_budget": 140,
+      "delta_wrong": -4,
+      "occurrences": 25,
+      "legacy_wrong": 6,
+      "fixed_wrong": 2,
+      "shared_new_wrong": 0,
+      "legacy_new_success_lost": 4,
+      "new_success_gained": 0,
+      "additional_recovery": 0,
+      "previous_recovery_lost": 0
+    }
+  ],
+  "all_384_group_seed_cases_retained_privately": true
+}
