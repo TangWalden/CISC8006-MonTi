@@ -28,7 +28,16 @@ def make_baseline_engine(protocol,seed,output,deadline):
     """Reuse only the explicitly frozen legacy terminal8 generator, without fit."""
     import torch
     from course.dual_surrogate.experiment import DualExperiment
-    from course.dual_surrogate.runtime import config_for,load_data,model_hash
+    from course.dual_surrogate.runtime import config_for,load_data,load_classifier,model_hash
+    class CpuSafeBaselineExperiment(DualExperiment):
+        def load_pretrained_model(self,name,flag='surrogate'):
+            if name!='GCN' or flag!='surrogate':
+                raise RuntimeError('Feature-only baseline loading permits the original GCN surrogate only.')
+            # The runtime helper creates the same single GCN(feat_dim,[64,64],2)
+            # and verifies its frozen bytes, but deserializes with map_location
+            # CPU before moving to the registered execution device. No victim
+            # load, second initialization or historical module edit is needed.
+            return load_classifier('gcn_base',self.data)
     reference=protocol['baseline_runs'][str(seed)]
     directory=pathlib.Path(reference['directory'])
     if directory.is_absolute() or '..' in directory.parts:
@@ -44,7 +53,7 @@ def make_baseline_engine(protocol,seed,output,deadline):
         raise RuntimeError('Baseline must be the specified completed legacy terminal8 model.')
     data=load_data(protocol,seed)
     # The inherited gcn_only branch never reads or loads a fresh GAGA teacher.
-    engine=DualExperiment(config_for(seed),data,protocol,'gcn_only',ROOT/protocol['teacher_directory'],output,deadline)
+    engine=CpuSafeBaselineExperiment(config_for(seed),data,protocol,'gcn_only',ROOT/protocol['teacher_directory'],output,deadline)
     engine.model.load_state_dict(torch.load(directory/'final_model.pt',map_location=data.device))
     if model_hash(engine.model)!=receipt['final_model_state_sha256']:
         raise RuntimeError('Restored baseline generator content differs from its terminal receipt.')

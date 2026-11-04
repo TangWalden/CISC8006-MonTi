@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "official_victim_loaded": false,
+  "original_VALID_used": false,
+  "TEST_used": false,
+  "API_calls": 0,
+  "teacher_artifacts_sha256": "de1bb484c201a2e60c7e2b63047587e8e1123ee465ba5eb72ddfe226ab60f111",
+  "checkpoint_sha256": "1952387acec4473bef7246aa0db5ef44f9971b727d89a44086af701989e4c3fd",
+  "initial_state_sha256": "99a6aaec50775a52130b40cec9a0af76f3da60863d2211c5b286c3b8e9144f38",
+  "final_state_sha256": "728a22f3db5e86fa6c4edf449a3c0ba6ba1fa3e09c904dc4dc3d812843dc2c8f",
+  "in_sample_train": {
+    "accuracy": 0.910538286580743,
+    "unweighted_cross_entropy": 0.2446507729392236,
+    "confusion_true_by_prediction": [
+      [
+        4649,
+        387
+      ],
+      [
+        203,
+        1356
+      ]
+    ],
+    "held_out": false,
+    "calibrated": false
+  },
+  "counters": {
+    "optimizer_steps": 494,
+    "training_forwards": 494,
+    "final_train_forwards": 13
+  },
+  "elapsed_seconds": 59.53163404692896,
+  "process_cpu_seconds": 369.328074553
+}

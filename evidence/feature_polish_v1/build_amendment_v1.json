@@ -1,0 +1,50 @@
+{
+  "status": "registered_construction_continuation_before_any_baseline_generation",
+  "previous_source": "f3892f06335e4d91813cc537089694df3ec54ce5",
+  "previous_preparation_protocol_sha256": "c3794d4f8ee11458f6c405b574911059b4113feb6898509613c1727cd2fd4967",
+  "previous_refinement_protocol": {
+    "sha256": "b696cbf0e361eb8a2262512cab924a24c93e09f7de4ddab0a0e7a37ebffb19db",
+    "source": "f3892f06335e4d91813cc537089694df3ec54ce5",
+    "teacher_ref": {
+      "path": "runs/feature_polish_20261104_attempt1/teacher_attempt1/teacher_artifacts.json",
+      "sha256": "de1bb484c201a2e60c7e2b63047587e8e1123ee465ba5eb72ddfe226ab60f111"
+    },
+    "execution_device": "cpu",
+    "resource_selection": {
+      "available_metadata": [
+        {
+          "index": "0",
+          "uuid": "GPU-d7aa6d97-d823-0319-b218-84acc8e26019",
+          "free_mib": 347
+        },
+        {
+          "index": "1",
+          "uuid": "GPU-1bb984a3-e0f6-138a-cfb7-dc3365d8f9cf",
+          "free_mib": 6386
+        }
+      ],
+      "selection_before_baseline_generation": true,
+      "rule": "First allowed GPU with >=8192MiB free, otherwise CPU uniformly"
+    }
+  },
+  "failure": "Old inherited original-GCN loader deserialized CUDA storages without map_location while CPU execution hid CUDA. Failed preflight stopped before attack generation/classifier forwards/autograd/updates/victim calls.",
+  "repair": "Isolated subclass loads the same original GCN via frozen runtime.load_classifier with map_location=cpu, original byte/state hash and architecture; no old scientific module edited.",
+  "unchanged": [
+    "five arms and20steps/alpha.02",
+    "full teacher horizon/settings/cache convention and saved completed weights",
+    "all target lists and budgets",
+    "features-only hardgraph objective",
+    "native original generator weights/h_GCN/scorer/RNG",
+    "primary/secondary rules and2GPUh/3wallh limits"
+  ],
+  "retained_teacher_manifest_sha256": "de1bb484c201a2e60c7e2b63047587e8e1123ee465ba5eb72ddfe226ab60f111",
+  "retained_teacher_checkpoint_sha256": "1952387acec4473bef7246aa0db5ef44f9971b727d89a44086af701989e4c3fd",
+  "retained_unit_tests": "12passed,0.299sloop; unchanged affine/test code is reused, no duplicate testing",
+  "retained_failed_preflight": "0generations/0classifierforwards/0autograd/0updates;22.0177823outerseconds",
+  "CPU_GPU_scope": "All recorded processes were CPU with zero visible CUDA devices; GPUcharge0, actual CPU/wall time retained.",
+  "no_new_validation_or_TEST_outcome_existed": true,
+  "teacher_retrained": false,
+  "raw_attempts_overwritten": false,
+  "manual_continuation_not_automatic_retry": true,
+  "initial_transport_incidents": "SSH receiving-ref/launch connections closed intermittently before model start; one old-head module resolution failed. Private transport receipt retained, no credential changes."
+}

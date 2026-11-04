@@ -659,7 +659,7 @@
     "independent_saved_phase_audit": "passed405actual-byte hashes/117125checks; agent audit, not human verification"
   },
   "feature_polish_phase": {
-    "status": "owner-authorized implementation/protocol preparation; no new model calls yet",
+    "status": "CPUteacher completed; isolated CPU checkpoint-loader repair registered after zero-forward preflight failure; continuation in preparation",
     "owner_instruction": "Further concrete case-based diagnosis, improvement and execution until a measured development loop closes; no positive effect guaranteed",
     "protocol": "course/FEATURE_POLISH_PROTOCOL_V1.json",
     "package": "course/feature_polish/README.md",
@@ -671,8 +671,14 @@
       "GPU_hours": 2,
       "total_wall_hours": 3
     },
-    "model_calls_started": false,
+    "model_calls_started": true,
     "final_TEST_allowed": false,
-    "effective_improvement_claimed": false
+    "effective_improvement_claimed": false,
+    "successful_teacher_updates": 494,
+    "successful_teacher_forwards": 507,
+    "teacher_weights_reused": true,
+    "failed_preflight_forwards": 0,
+    "charged_GPU_hours": 0,
+    "build_amendment": "evidence/feature_polish_v1/build_amendment_v1.json"
   }
 }

@@ -463,5 +463,33 @@
     "input_hashes": 103,
     "raw_rows": 12288,
     "source_sha256": "900902136ed440dfef2420f078d3c406334ae75f45ae86302ce4b4f6103bf4e2"
+  },
+  "feature_polish_phase": {
+    "status": "partial; CPUteacher succeeded and zero-forward CPU-loader preflight failure preserved, no refinement/victim evaluation yet",
+    "phase_gpu_limit": 2,
+    "charged_GPU_hours": 0,
+    "teacher": {
+      "updates": 494,
+      "training_forwards": 494,
+      "in_sample_forwards": 13,
+      "process_cpu_seconds": 376.498217882,
+      "guardian_wall_seconds": 66.44239594205283,
+      "outer_wall_seconds": 67.88637775101233,
+      "GPU_hours": 0,
+      "source": "f3892f06335e4d91813cc537089694df3ec54ce5"
+    },
+    "failed_CPU_preflight": {
+      "generator_forwards": 0,
+      "classifier_forwards": 0,
+      "autograd_calls": 0,
+      "updates": 0,
+      "official_victim_forwards": 0,
+      "process_cpu_seconds": 22.073137337,
+      "guardian_wall_seconds": 20.495027853990905,
+      "outer_wall_seconds": 22.01778230094351,
+      "GPU_hours": 0
+    },
+    "evidence": "evidence/feature_polish_v1/build_amendment_v1.json",
+    "no_successful_teacher_replay": true
   }
 }

@@ -1,0 +1,26 @@
+{
+  "status": "failed",
+  "official_victim_loaded": false,
+  "optimizer_steps": 0,
+  "counts": {
+    "generator_forwards": 0,
+    "gaga_forward_dispatches": 0,
+    "gaga_completed_forwards": 0,
+    "gcn_forward_dispatches": 0,
+    "gcn_completed_forwards": 0,
+    "canonical_sequence_updates": 0,
+    "autograd_calls": 0,
+    "finite_difference_gaga_forwards": 0,
+    "finite_difference_gcn_forwards": 0,
+    "optimizer_steps": 0,
+    "official_victim_forwards": 0,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "cases": [],
+  "error_type": "RuntimeError",
+  "error": "RuntimeError(\"Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/tjy/Project/MonTi-course/course/feature_polish/preflight.py\", line 83, in main\n    engine, data, baseline_receipt = make_baseline_engine(protocol, 3, output, deadline)\n  File \"/home/tjy/Project/MonTi-course/course/feature_polish/refine.py\", line 47, in make_baseline_engine\n    engine=DualExperiment(config_for(seed),data,protocol,'gcn_only',ROOT/protocol['teacher_directory'],output,deadline)\n  File \"/home/tjy/Project/MonTi-course/course/dual_surrogate/experiment.py\", line 29, in __init__\n    super().__init__(config,data,None,False)\n  File \"/home/tjy/Project/MonTi-course/modules/experiment_handler.py\", line 49, in __init__\n    self.load_pretrained_models()\n  File \"/home/tjy/Project/MonTi-course/course/dual_surrogate/experiment.py\", line 51, in load_pretrained_models\n    self.surrogate_model=self.load_pretrained_model('GCN',flag='surrogate').to(self.device)\n  File \"/home/tjy/Project/MonTi-course/course/dual_surrogate/experiment.py\", line 57, in load_pretrained_model\n    return super().load_pretrained_model(name,flag)\n  File \"/home/tjy/Project/MonTi-course/modules/experiment_handler.py\", line 124, in load_pretrained_model\n    model.load_state_dict(torch.load(model_path))\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/serialization.py\", line 789, in load\n    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/serialization.py\", line 1131, in _load\n    result = unpickler.load()\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/serialization.py\", line 1101, in persistent_load\n    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/serialization.py\", line 1083, in load_tensor\n    wrap_storage=restore_location(storage, location),\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/serialization.py\", line 215, in default_restore_location\n    result = fn(storage, location)\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/serialization.py\", line 182, in _cuda_deserialize\n    device = validate_cuda_device(location)\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/torch/serialization.py\", line 166, in validate_cuda_device\n    raise RuntimeError('Attempting to deserialize object on a CUDA '\nRuntimeError: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.\n",
+  "elapsed_seconds": 13.89471650600899,
+  "process_cpu_seconds": 15.164813083
+}

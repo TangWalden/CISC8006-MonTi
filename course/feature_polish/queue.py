@@ -22,11 +22,18 @@ def main():
     active=subprocess.run(['pgrep','-u',getpass.getuser(),'-f',pattern],stdout=subprocess.PIPE,universal_newlines=True)
     if active.returncode not in (0,1) or {int(v) for v in active.stdout.split()}-{os.getpid()}:
         raise RuntimeError('Another relevant own method process exists; no duplicate queue.')
-    start=time.monotonic();charged=0.;jobs=[]
+    start=time.monotonic();charged=0.;jobs=[];prior_wall=0.
+    if 'prior_progress_ref' in p:
+        ref=p['prior_progress_ref'];previous=ROOT/ref['path']
+        if sha256(previous)!=ref['sha256']:raise RuntimeError('Prior phase accounting changed.')
+        prior=json.loads(previous.read_text(encoding='utf-8'));charged=prior['charged_gpu_hours'];jobs=list(prior['jobs'])
+        jobs=[dict(row,guardian_path=(previous.parent/(row['name']+'_guardian.json')).relative_to(ROOT).as_posix())
+              if 'guardian_path' not in row else row for row in jobs]
+        prior_wall=max(float(prior.get('elapsed_wall_seconds',0)),time.time()-dt.datetime.fromisoformat(p['phase_origin_started_utc']).timestamp())
     write_json(out/'queue_progress.json',dict(jobs=jobs,charged_gpu_hours=charged),exclusive=True)
     def run(name,module,arguments,limit,protocol,is_cpu=False):
         nonlocal charged
-        if time.monotonic()-start+limit+15>p['phase_total_wall_hours']*3600:
+        if prior_wall+time.monotonic()-start+limit+15>p['phase_total_wall_hours']*3600:
             raise RuntimeError('Whole-phase wall limit prevents another process.')
         if not is_cpu:
             if charged+limit/3600+.02>p['phase_gpu_hours']:
@@ -51,41 +58,52 @@ def main():
         cost=0. if is_cpu else max(elapsed/3600,float(guardian.get('charged_gpu_wall_hours',0)))
         charged+=cost
         row=dict(name=name,module=module,pid=child.pid,exit_code=code,execution_device='cpu' if is_cpu else 'cuda:0',
-            outer_seconds=elapsed,charged_gpu_wall_hours=cost,guardian_sha256=sha256(receipt) if receipt.exists() else None)
-        jobs.append(row);write_json(out/'queue_progress.json',dict(jobs=jobs,charged_gpu_hours=charged,elapsed_wall_seconds=time.monotonic()-start))
+            outer_seconds=elapsed,charged_gpu_wall_hours=cost,guardian_sha256=sha256(receipt) if receipt.exists() else None,
+            guardian_path=receipt.relative_to(ROOT).as_posix() if receipt.exists() else None)
+        jobs.append(row);write_json(out/'queue_progress.json',dict(jobs=jobs,charged_gpu_hours=charged,elapsed_wall_seconds=prior_wall+time.monotonic()-start))
         print('FEATURE_POLISH_JOB_END',json.dumps(row),flush=True)
         if code:raise RuntimeError('A process failed; preserve partial records without automatic retry: '+name)
     try:
-        opened=time.monotonic()
-        with (out/'synthetic_checks.log').open('x',encoding='utf-8') as log:
-            test=subprocess.run(['env','CUDA_VISIBLE_DEVICES=','bash','course/run.sh','-m','unittest','course.feature_polish.test_affine'],
-                cwd=ROOT,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,timeout=120)
-        write_json(out/'synthetic_receipt.json',dict(status='passed' if test.returncode==0 else 'failed',exit_code=test.returncode,
-            outer_seconds=time.monotonic()-opened,GPU_hours=0,source_commit=p['source_commit'],
-            stdout_sha256=sha256(out/'synthetic_checks.log')),exclusive=True)
-        if test.returncode:raise RuntimeError('Synthetic affine/feature-gradient checks failed.')
-        teacher=stage/'teacher_attempt1'
+        if 'reuse_synthetic_ref' in p:
+            ref=p['reuse_synthetic_ref']
+            if sha256(ROOT/ref['path'])!=ref['sha256'] or json.loads((ROOT/ref['path']).read_text())['status']!='passed':
+                raise RuntimeError('Retained unchanged synthetic check changed.')
+            write_json(out/'synthetic_reused.json',dict(reference=ref,new_execution=False),exclusive=True)
+        else:
+            opened=time.monotonic()
+            with (out/'synthetic_checks.log').open('x',encoding='utf-8') as log:
+                test=subprocess.run(['env','CUDA_VISIBLE_DEVICES=','bash','course/run.sh','-m','unittest','course.feature_polish.test_affine'],
+                    cwd=ROOT,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,timeout=120)
+            write_json(out/'synthetic_receipt.json',dict(status='passed' if test.returncode==0 else 'failed',exit_code=test.returncode,
+                outer_seconds=time.monotonic()-opened,GPU_hours=0,source_commit=p['source_commit'],
+                stdout_sha256=sha256(out/'synthetic_checks.log')),exclusive=True)
+            if test.returncode:raise RuntimeError('Synthetic affine/feature-gradient checks failed.')
+        teacher=ROOT/p['reuse_teacher_directory'] if 'reuse_teacher_directory' in p else stage/'teacher_attempt1'
         base_protocol=pathlib.Path(args.protocol).resolve()
-        run('full_train_teacher','course.feature_polish.teacher',['--protocol',str(base_protocol),'--output',str(teacher)],p['teacher_wall_seconds'],p,is_cpu=True)
+        if 'reuse_teacher_directory' not in p:
+            run('full_train_teacher','course.feature_polish.teacher',['--protocol',str(base_protocol),'--output',str(teacher)],p['teacher_wall_seconds'],p,is_cpu=True)
         teacher_result=json.loads((teacher/'result.json').read_text(encoding='utf-8'))
         manifest=teacher/'teacher_artifacts.json'
         if teacher_result['status']!='completed' or sha256(manifest)!=teacher_result['teacher_artifacts_sha256']:
             raise RuntimeError('Fresh full-TRAIN teacher did not finish its frozen fit.')
         # Resource choice uses only free-memory metadata, not predictions. Once
         # selected, one device is retained for all new graphs and conditions.
-        q=dict(p,teacher_directory=teacher.relative_to(ROOT).as_posix(),teacher_training_source=p['source_commit'],teacher_preparation_protocol_sha256=provenance['protocol_sha256'],
+        q=dict(p,teacher_directory=teacher.relative_to(ROOT).as_posix(),teacher_training_source=p.get('teacher_training_source',p['source_commit']),teacher_preparation_protocol_sha256=p.get('teacher_preparation_protocol_sha256',provenance['protocol_sha256']),
             teacher_ref=dict(path=manifest.relative_to(ROOT).as_posix(),sha256=sha256(manifest)))
         q['retained_inputs']=list(p['retained_inputs'])+[dict(path=(teacher/f).relative_to(ROOT).as_posix(),sha256=sha256(teacher/f))
             for f in ('result.json','registered.json','teacher_artifacts.json','gaga_full_train_teacher.pt')]
-        resources=[];chosen=None
-        for candidate in p['allowed_gpus']:
-            raw=subprocess.check_output(['nvidia-smi','--id='+candidate['uuid'],'--query-gpu=memory.free','--format=csv,noheader,nounits'],universal_newlines=True)
-            free=int(raw.strip());resources.append(dict(candidate,free_mib=free))
-            if chosen is None and free>=p['minimum_free_gpu_mib']:chosen=candidate
-        q.update(execution_device='cuda:0' if chosen else 'cpu',cuda_visible_devices=chosen['index'] if chosen else '',
-            physical_gpu_uuid=chosen['uuid'] if chosen else None,
-            resource_selection=dict(available_metadata=resources,selection_before_baseline_generation=True,
-                rule='First allowed GPU with >=8192MiB free, otherwise CPU uniformly'))
+        if 'reuse_execution_resource' in p:
+            q.update(p['reuse_execution_resource'])
+        else:
+            resources=[];chosen=None
+            for candidate in p['allowed_gpus']:
+                raw=subprocess.check_output(['nvidia-smi','--id='+candidate['uuid'],'--query-gpu=memory.free','--format=csv,noheader,nounits'],universal_newlines=True)
+                free=int(raw.strip());resources.append(dict(candidate,free_mib=free))
+                if chosen is None and free>=p['minimum_free_gpu_mib']:chosen=candidate
+            q.update(execution_device='cuda:0' if chosen else 'cpu',cuda_visible_devices=chosen['index'] if chosen else '',
+                physical_gpu_uuid=chosen['uuid'] if chosen else None,
+                resource_selection=dict(available_metadata=resources,selection_before_baseline_generation=True,
+                    rule='First allowed GPU with >=8192MiB free, otherwise CPU uniformly'))
         preprotocol=stage/'refinement_protocol_v1.json';write_json(preprotocol,q,exclusive=True)
         preflight=stage/'preflight_attempt1';cpu=q['execution_device']=='cpu'
         run('real_train_preflight','course.feature_polish.preflight',['--protocol',str(preprotocol),'--output',str(preflight)],p['preflight_wall_seconds'],q,is_cpu=cpu)
@@ -104,7 +122,7 @@ def main():
         write_json(stage/'all3_refinements_complete.json',marker,exclusive=True)
         evaluation=stage/'evaluation_attempt1'
         run('development_evaluation','course.feature_polish.evaluate',['--protocol',str(protocol),'--matrix',str(matrix),'--output',str(evaluation)],p['evaluation_wall_seconds'],q,is_cpu=cpu)
-        complete=dict(status='completed',jobs=jobs,charged_gpu_hours=charged,elapsed_wall_seconds=time.monotonic()-start,
+        complete=dict(status='completed',jobs=jobs,charged_gpu_hours=charged,elapsed_wall_seconds=prior_wall+time.monotonic()-start,
             scientific_source=p['source_commit'],preparation_protocol_sha256=provenance['protocol_sha256'],
             experiment_protocol_sha256=sha256(protocol),evaluation_result_sha256=sha256(evaluation/'result.json'),
             execution_device=q['execution_device'],resource_selection=q['resource_selection'],
@@ -112,7 +130,7 @@ def main():
         write_json(out/'queue_complete.json',complete,exclusive=True);write_json(stage/'queue_complete.json',complete,exclusive=True)
     except BaseException as error:
         result=dict(status='failed',error_type=type(error).__name__,error=str(error),jobs=jobs,
-            charged_gpu_hours=charged,elapsed_wall_seconds=time.monotonic()-start)
+            charged_gpu_hours=charged,elapsed_wall_seconds=prior_wall+time.monotonic()-start)
         write_json(out/'queue_failed.json',result,exclusive=True);raise
 
 

@@ -1,0 +1,76 @@
+{
+  "status": "completed",
+  "schema": "monti_full_train_gaga_teacher_v1",
+  "settings": {
+    "seed": 20261103,
+    "epochs": 38,
+    "batch_size": 512,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "train_nodes": 6595
+  },
+  "execution_device": "cpu",
+  "reference_initial_state_sha256": "99a6aaec50775a52130b40cec9a0af76f3da60863d2211c5b286c3b8e9144f38",
+  "initial_state_matches_reference": true,
+  "checkpoint": "gaga_full_train_teacher.pt",
+  "checkpoint_sha256": "1952387acec4473bef7246aa0db5ef44f9971b727d89a44086af701989e4c3fd",
+  "initial_state_sha256": "99a6aaec50775a52130b40cec9a0af76f3da60863d2211c5b286c3b8e9144f38",
+  "final_state_sha256": "728a22f3db5e86fa6c4edf449a3c0ba6ba1fa3e09c904dc4dc3d812843dc2c8f",
+  "constructor": {
+    "feat_dim": 768,
+    "emb_dim": 64,
+    "num_classes": 2,
+    "num_relations": 1,
+    "n_hops": 2,
+    "n_heads": 4,
+    "ff_dim": 128,
+    "n_layers": 3,
+    "dropout": 0.1
+  },
+  "full_train_nodes": 6595,
+  "train_ids_sha256": "2347f48fac59f389b3871fe8e4b10eab3cec9cb4a2ab7a61c68e05dced6e5afe",
+  "train_class_counts": [
+    5036,
+    1559
+  ],
+  "class_weights": [
+    0.6547855734825134,
+    2.115137815475464
+  ],
+  "labels_scope": "original TRAIN only; full-TRAIN group caches",
+  "checkpoint_selection": "Terminal38 only; fixed before new calls from previously selected internal horizon",
+  "official_victim_loaded": false,
+  "original_VALID_used": false,
+  "TEST_used": false,
+  "cache": {
+    "sequence": {
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_sequence_0.npy",
+      "sha256": "caf9f30772e2977f20ef3dcb4cb127d7cdf73e3986f7cc5599f5753cb3aa1b89"
+    }
+  },
+  "final_in_sample_train": {
+    "accuracy": 0.910538286580743,
+    "unweighted_cross_entropy": 0.2446507729392236,
+    "confusion_true_by_prediction": [
+      [
+        4649,
+        387
+      ],
+      [
+        203,
+        1356
+      ]
+    ],
+    "held_out": false,
+    "calibrated": false
+  },
+  "counters": {
+    "optimizer_steps": 494,
+    "training_forwards": 494,
+    "final_train_forwards": 13
+  },
+  "provenance": {
+    "source_commit": "f3892f06335e4d91813cc537089694df3ec54ce5",
+    "protocol_sha256": "c3794d4f8ee11458f6c405b574911059b4113feb6898509613c1727cd2fd4967"
+  }
+}
