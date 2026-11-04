@@ -56,7 +56,7 @@
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
     "full_evaluation": "Pending concrete complete final-test protocol confirmation; completed new-method validation pilots do not authorize it.",
-    "active_direction": "Actual owner authorized further closed-loop development on2026-11-04. Fixed-graph feature refinement is in preparation; prior negative source/teacher/alignment phases stay intact. No further final TEST/tag authorization inferred.",
+    "active_direction": "Canonical own-teacher endpoint parity completed with zero class differences; target-attachment balancing implementation is ready at core/synthetic scope only, with real geometry and detector effects unmeasured. Owner-authorized bounded development continues; no final TEST/tag authorization inferred.",
     "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
@@ -67,11 +67,12 @@
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Complete the newly authorized fixed-graph feature-refinement protocol/checks and bounded paired development comparison, retaining mechanism/compute/negative evidence; continue only within actual authorization and global12GPUh budget.",
-    "Report all four dual-surrogate arms and the negative joint-minus-GCN paired result, preserving sources, failed attempts, cost scope and fixed-teacher/development-cohort limitations",
-    "Retain the earlier formal test reproduction and inconclusive learned-versus-random interval separately from later development results; preserve dated PDF/PPTX drafts",
-    "Complete genuine human technical review, actual Junyi Tang/Yifan Fan contribution records, course approval checks and rehearsal without claiming these agent audits satisfy them",
-    "Keep final TEST and final submission tag separate until their concrete protocol and authorization are confirmed; do not launch further tuning, seeds, API calls or GPU work for this completed phase",
+    "Freeze source, input hashes and bounded target-attachment geometry/evaluation protocol for baseline, balanced_target and matched_random; implementation currently has synthetic checks only, not real headroom or efficacy",
+    "Before detector loading, measure all384 saved baseline captures and canonical token invariants under fixed x0, role counts, physical injected-node degrees and per-row edge cost; retain identity cases and complete denominators",
+    "Run only the predeclared bounded detector stage if its geometry gate passes; report all controls, negative cases, actual counters, costs and correlated three-seed uncertainty without tuning for a winner",
+    "Retain all completed negative methods and the canonical parity diagnostic; measured teacher/victim mismatch is not proof of a sole failure cause",
+    "Keep the frozen formal reproduction, inconclusive paired test interval and dated PDF/PPTX drafts separate from repeatedly inspected development results",
+    "Complete actual human technical review, Junyi Tang/Yifan Fan contribution records, course approval and rehearsal; final TEST and final submission tag remain separate checkpoints",
     "By 2026-11-05 deliver achieved artifacts and honest remaining items, then stop automation; do not fabricate full course completion"
   ],
   "results_first_diagnosis": {
@@ -659,7 +660,7 @@
     "independent_saved_phase_audit": "passed405actual-byte hashes/117125checks; agent audit, not human verification"
   },
   "feature_polish_phase": {
-    "status": "completed negative; primary and predeclared secondary failed, full TEST gate closed; new canonical parity diagnostic being registered",
+    "status": "completed negative; primary and predeclared secondary failed, full TEST gate closed; subsequent canonical own-teacher parity diagnostic completed",
     "owner_instruction": "Further concrete case-based diagnosis, improvement and execution until a measured development loop closes; no positive effect guaranteed",
     "protocol": "course/FEATURE_POLISH_PROTOCOL_V1.json",
     "package": "course/feature_polish/README.md",
@@ -722,10 +723,10 @@
       -3.043635125517375
     ],
     "full_TEST_candidate_gate": "closed",
-    "next_item": "course/feature_parity_check/README.md"
+    "next_item": "course/target_degree_balance/README.md"
   },
   "feature_parity_diagnostic": {
-    "status": "implementation/source freeze prepared; not yet executed",
+    "status": "completed_all768_canonical_comparisons_passed",
     "package": "course/feature_parity_check/README.md",
     "post_hoc": true,
     "reason": "All feature-refinement efficacy arms were negative despite own-teacher loss improvement; rule out full-VALID affine shortcut discrepancies before another method.",
@@ -737,6 +738,95 @@
     "CPU_threads": 8,
     "deadline_seconds": 1800,
     "GPU_hours": 0,
-    "final_TEST_allowed": false
+    "final_TEST_allowed": false,
+    "source_commit": "784b246f5c43fc4f12c3da81fb2a13cc40e1e027",
+    "protocol_sha256": "c0b168a88f54543570f2de9cfa69d2bcd5db89dea592441b900403858a88e9d9",
+    "canonical_own_teacher_forwards_completed": 768,
+    "class_differences": 0,
+    "maximum_sequence_error": 2.9802322387695312e-06,
+    "maximum_teacher_logit_error": 1.5497207641601562e-06,
+    "cache_topology_checks": "all reported producer checks passed; saved audit did not independently rebuild sequences/cache properties",
+    "guard_alias_checks_passed": 384,
+    "all_comparison_rows_retained": true,
+    "official_victim_queries": 0,
+    "generator_forwards": 0,
+    "GCN_forwards": 0,
+    "optimizer_steps": 0,
+    "API_calls": 0,
+    "TEST_queries": 0,
+    "process_CPU_seconds": 1707.287493063,
+    "wall_seconds": 671.4419598969398,
+    "outer_seconds": 671.9515510279452,
+    "independent_saved_audit": {
+      "status": "passed",
+      "checks": 53967,
+      "wall_seconds": 8.986756472964771,
+      "process_CPU_seconds": 8.535665459,
+      "model_calls": 0,
+      "human_verification": false
+    },
+    "wrong_counts_baseline_to_GAGA_PGD": {
+      "seed3": {
+        "own_teacher": [
+          336,
+          553
+        ],
+        "saved_official_victim": [
+          561,
+          500
+        ]
+      },
+      "seed4": {
+        "own_teacher": [
+          328,
+          526
+        ],
+        "saved_official_victim": [
+          550,
+          492
+        ]
+      },
+      "seed5": {
+        "own_teacher": [
+          364,
+          694
+        ],
+        "saved_official_victim": [
+          612,
+          537
+        ]
+      }
+    },
+    "interpretation": "Canonical/affine agreement observed at all checked endpoints; own-teacher versus saved-victim response mismatch observed, not proved to be the sole cause of transfer failure",
+    "result": "evidence/feature_parity_check_v1/result.json",
+    "execution_trace": "evidence/feature_parity_check_v1/execution_trace.json",
+    "audit": "evidence/feature_parity_check_v1/independent_saved_audit_v1.json"
+  },
+  "target_degree_balance_stage": {
+    "status": "implementation_ready_synthetic_only_before_real_run",
+    "package": "course/target_degree_balance/README.md",
+    "conditions": [
+      "baseline",
+      "balanced_target",
+      "matched_random"
+    ],
+    "public_synthetic_test_methods_passed": 10,
+    "real_capture_headroom_measured": false,
+    "detector_effect_measured": false,
+    "fixed": [
+      "injected_features_x0",
+      "complete_target_lists_and_candidate_selection",
+      "original_original_edges",
+      "endpoint_role_counts",
+      "physical_injected_node_degrees",
+      "per_row_edge_cost"
+    ],
+    "target_physical_degrees_may_change": true,
+    "all_node_degrees_preserved": false,
+    "next_gate": "Source/input freeze and capture-only geometry/canonical-token checks before any bounded detector stage",
+    "effective_improvement_claimed": false,
+    "final_TEST_allowed": false,
+    "human_verification": false,
+    "dated_artifacts_rebuilt": false
   }
 }

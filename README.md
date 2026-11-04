@@ -1,5 +1,21 @@
 # CISC8006: MonTi Reproduction and Improvements
 
+**Latest diagnostic, 4 November:** canonical own-teacher parity completed on all
+768 endpoints from 384 saved graphs: zero class differences, maximum logit error
+1.5497e-6 and sequence error 2.9802e-6; reported cache/alias checks pass. The fresh
+own teacher responds differently from the saved official victim, while the
+measured affine shortcut agrees with its canonical updater. This does not prove
+a sole cause of failed transfer. The independent saved-record agent audit passed
+53,967 checks. [Results, CPU cost and limits](course/feature_parity_check/README.md).
+No new generator/GCN/official-victim/API/TEST call occurred; GPU charge is zero.
+
+**Next structural implementation:** [target-attachment balancing](course/target_degree_balance/README.md)
+is ready at core/synthetic scope only. Baseline, balanced-target and matched-random
+conditions keep injected features, role counts, physical injected-node degrees
+and per-row edge costs fixed; target physical degrees can change. Real headroom
+and effects are unmeasured. Final TEST/tag and human/course requirements remain
+separate; dated artifacts are unchanged.
+
 **Latest completed development study, 4 November:** all five fixed-graph feature-refinement conditions and three seeds completed. Mean GAGA MR is 52.6428% baseline, 51.9096% GCN-PGD, 46.7156% GAGA-PGD, 47.3877% guarded GAGA-PGD and 49.3431% random. The primary guarded method is lower in every seed, paired -5.2551 pp, and is not selected as an improvement. [Full results, cases, failed attempts and audit limits](course/feature_polish/README.md). The study ran on CPU with zero GPU charge; final TEST/tag and genuine human/course requirements remain separate. Dated report/slides remain unchanged.
 
 **Earlier 4 November source-role control:** the correction and matched original-GCN control completed six fresh trainings. Mean GAGA MR 52.7039% to 52.6734% (-0.0306 pp), with mixed seed directions; no consistent gain selected. [Results, concrete cases and limits](course/source_role_fix/README.md). This does not replace the frozen formal reproduction or authorize final TEST/tag.

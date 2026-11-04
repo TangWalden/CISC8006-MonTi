@@ -1,0 +1,25 @@
+{
+  "original_adjacency_binary": true,
+  "original_adjacency_symmetric": true,
+  "original_adjacency_asymmetric_matrix_entries": 0,
+  "original_adjacency_zero_diagonal": true,
+  "original_adj2_binary": true,
+  "original_adj2_zero_diagonal": true,
+  "original_adj2_selected_support_matches": true,
+  "unique_VALID_targets": 374,
+  "masked_self_count_each_hop": 1,
+  "unknown_degree_checks": [
+    {
+      "token": 3,
+      "exact_match": true,
+      "mismatched_targets": 0,
+      "maximum_absolute_count_error": 0.0
+    },
+    {
+      "token": 6,
+      "exact_match": true,
+      "mismatched_targets": 0,
+      "maximum_absolute_count_error": 0.0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+test_already_balanced_or_single_target_is_identity (test_balance_target.BalanceTests.test_already_balanced_or_single_target_is_identity) ... ok
+test_exhaustive2744_binary_target_interinjection_patterns (test_balance_target.BalanceTests.test_exhaustive2744_binary_target_interinjection_patterns) ... ok
+test_full_candidate_block_does_not_block_target_balancing (test_balance_target.BalanceTests.test_full_candidate_block_does_not_block_target_balancing) ... ok
+test_high_low_global_target_and_source_id_tie_known_answer (test_balance_target.BalanceTests.test_high_low_global_target_and_source_id_tie_known_answer) ... ok
+test_invalid_triangle_or_missing_target_rejected (test_balance_target.BalanceTests.test_invalid_triangle_or_missing_target_rejected) ... ok
+test_mixed_row_target_counts_and_hamming_match (test_balance_target.BalanceTests.test_mixed_row_target_counts_and_hamming_match) ... ok
+test_no_inputs_mutated_and_random_control_stateless (test_balance_target.BalanceTests.test_no_inputs_mutated_and_random_control_stateless) ... ok
+test_single_injection_is_identity_even_with_multiple_targets (test_balance_target.BalanceTests.test_single_injection_is_identity_even_with_multiple_targets) ... ok
+test_target_column_permutation_equivariance (test_balance_target.BalanceTests.test_target_column_permutation_equivariance) ... ok
+test_zero_candidate_has_nontrivial_balancing_headroom (test_balance_target.BalanceTests.test_zero_candidate_has_nontrivial_balancing_headroom) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.639s
+
+OK

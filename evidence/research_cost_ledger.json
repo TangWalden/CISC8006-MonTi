@@ -891,5 +891,35 @@
       }
     ],
     "full_TEST_candidate_gate": "closed"
+  },
+  "feature_parity_check_cpu_only": {
+    "status": "completed_all768_endpoints_agree",
+    "source_commit": "784b246f5c43fc4f12c3da81fb2a13cc40e1e027",
+    "protocol_sha256": "c0b168a88f54543570f2de9cfa69d2bcd5db89dea592441b900403858a88e9d9",
+    "evidence": "evidence/feature_parity_check_v1/execution_trace.json",
+    "GPU_hours": 0,
+    "process_CPU_seconds": 1707.287493063,
+    "wall_seconds": 671.4419598969398,
+    "outer_seconds": 671.9515510279452,
+    "canonical_own_teacher_forwards": 768,
+    "hard_graph_reconstructions": 384,
+    "affine_sequence_builders": 384,
+    "new_affine_model_forwards": 0,
+    "generator_forwards": 0,
+    "GCN_forwards": 0,
+    "official_victim_forwards": 0,
+    "optimizer_updates": 0,
+    "API_calls": 0,
+    "TEST_queries": 0,
+    "independent_saved_audit": {
+      "checks": 53967,
+      "process_CPU_seconds": 8.535665459,
+      "wall_seconds": 8.986756472964771,
+      "model_calls": 0,
+      "GPU_hours": 0,
+      "human_verification": false
+    },
+    "accounting": "CPU-only execution; process CPU time is measured separately from wall and outer time; no addition to GPU-hour total",
+    "research_GPU_charge_unchanged": true
   }
 }

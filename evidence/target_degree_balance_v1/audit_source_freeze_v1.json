@@ -1,0 +1,29 @@
+{
+  "status": "source_frozen_before_real_balancing_capture_reads_or_queries",
+  "created_utc": "2026-11-04T12:42:44.989030+00:00",
+  "audit_source": {
+    "path": "work/closure_20261104/target_balance_audit_source.py",
+    "sha256": "8d92e41bd055aed5f0ded707d024e3f895c84e722ae5d4e32f8db33509580dba",
+    "bytes": 38042
+  },
+  "reviewed_method_sources": {
+    "balance_target.py": "e84a4b5291cff37ba42d2356064eb2c0dae5b7f25da965b80b9ab37e987a9e6b",
+    "prepare.py": "b0c657cad34ff2f3e170c573c9ae588b08b3b5495d33de21a9875fe2f458ca5b",
+    "run.py": "89d51617ef805e3c5a0158ee434ac4751cf1cce776d19621eb3b6eff7bd05ca5",
+    "__init__.py": "4d4267cfd52c2b6564c774ce5ad9eb95dfed7dc9af877642b82b3aab8c046194",
+    "test_balance_target.py": "7a110bd8b734508963735043d47edc9468e86f9b03387df0d032975d6b6d39c0"
+  },
+  "execution_source_and_protocol_sha256": "Mandatory CLI inputs when root commits/registers; never guessed from outcomes",
+  "known_base_source": "8222dfa7bea7ba8115f31420e2a2420a93e5b5b1",
+  "known_base_protocol_sha256": "eedad10194edbe96c0496aa04f514b9b2ec8ecd49e11979aa523f01d29caadc6",
+  "allowed_tensor_reads": "384BASEcapture payloads plus384NEWsealedgeometry artifacts, only after all byte hashes verified; CPU torch1.13.1/Python3.8.20 for exact Random.sample replay",
+  "forbidden": "Original dataset/graph/label arrays or classifier weight deserialization; model construction/forwards; gradients/updates; CUDA; API/network/dependency work",
+  "independent_checks": "All degree-potential optimality/tie/swap history, original role blocks/rowtarget/rowtotal/physicaldegrees, finalperrowHammingmatchedrandom exactreplay, x0/ID/capture bytes and actual tokens0/1/2 equality, 384caseheadroomgate, all128clean and9x128freshprediction vectors, transitions/mean/macro/pairedt95/primarycriterion and allcounter/hash receipts",
+  "producer_only": "Original-original arc invariance and whole canonical input construction require the frozen source/producer; temporal seal-before-classifier order follows source/marker/counter receipts, not independent graph/model replay",
+  "no_guarantee": "Target-degree Phi optimum does not imply improved MR, novelty, human review or course completion. No control selected as winner.",
+  "no_new_real_capture_or_output_reads": 0,
+  "preparation_execution": "AST parsing only; no auditor imports/execution, tensors, datasets, classifiers, API or network",
+  "post_hoc": true,
+  "execution_authorization": "Wait for root explicit completion signal; source freeze alone does not authorize audit/model execution",
+  "independence": "Auditor did not author the method; agent not human verification"
+}

@@ -1,8 +1,32 @@
 # One-week execution and acceptance plan
 
-Update 2026-11-04, latest completed owner-authorized phase: all five [fixed-graph feature-refinement conditions](feature_polish/README.md) and three seeds completed, followed by full development evaluation and independent agent saved-record/tensor audits. Mean GAGA MR is 52.6428% baseline, 51.9096% GCN-PGD, 46.7156% GAGA-PGD, 47.3877% guarded GAGA-PGD and 49.3431% random. The primary guarded arm falls in every seed, paired -5.2551 pp with nominal three-seed t95 [-7.4666, -3.0436] pp. Its own-teacher loss improves but official-victim attack performance does not. Neither primary nor secondary meets the frozen rule; no improvement is selected. All 128 groups / 1,091 occurrences / 374 unique targets remain per arm/seed. This repeatedly inspected development cohort is separate from the original formal test reproduction.
+Update 2026-11-04: the post-hoc [canonical own-teacher check](feature_parity_check/README.md)
+completed all 768 comparisons / 384 saved graphs, with zero class differences,
+maximum logit error 1.5497207641601562e-6 and sequence error
+2.9802322387695312e-6. Reported topology/cache and guard-alias checks pass. The
+768 fresh canonical own-teacher forwards used CPU only; no new generator, GCN,
+official-victim, API or TEST call occurred. Wall/process-CPU/outer time was
+671.4419598969398 / 1,707.287493063 / 671.9515510279452 seconds. The separate
+saved-record agent audit passed 53,967 checks (8.986756472964771 wall /
+8.535665459 CPU seconds); it did not rebuild the sequence/cache checks or provide
+human verification. Own-teacher wrong counts rise 336 to 553 / 328 to 526 /
+364 to 694 while saved official-victim wrong counts fall 561 to 500 / 550 to 492 /
+612 to 537. Model-response mismatch is observed, not established as a sole cause.
 
-Preserved construction: the full-TRAIN teacher completed once, both failed preflights remain, and the passed functional check was reused after a CPU timeout with 118 complete partial-attempt cases. Only the incomplete seed-3 job was retried as a whole; those partial cases are excluded from the primary matrix and remain extra failed time/counters. The amended CPU phase elapsed 9,645.5745 seconds, below its six-hour ceiling, with zero GPU charge; cumulative additional research remains 5.065219865793663 GPUh plus 0.02 reserve. No final TEST, external experimental API call, dependency installation or dated-artifact rebuild occurred. The next proposed diagnostic is own-teacher affine-versus-canonical parity on all 384 saved graphs, separately frozen before calls; it is not another selected method. Human/course review, owner-confirmed full TEST and final submission freeze/tag remain separate.
+The next [target-attachment balancing core](target_degree_balance/README.md) is
+implemented and synthetic-only: ten test methods passed; real capture headroom
+and detector effects remain unmeasured. Prepare/freeze the bounded baseline,
+balanced-target and matched-random study, then check capture geometry and
+canonical token invariants before its detector gate. Keep injected features,
+role counts, physical injected-node degrees and row costs fixed; target node
+degrees intentionally change. Retain identity/no-action cases and all target
+occurrences. Cumulative GPU charge stays 5.065219865793663 hours plus 0.02 reserve.
+Final TEST/tag, actual human/course requirements and dated artifacts remain
+separate.
+
+Earlier completed method study, 2026-11-04:  all five [fixed-graph feature-refinement conditions](feature_polish/README.md) and three seeds completed, followed by full development evaluation and independent agent saved-record/tensor audits. Mean GAGA MR is 52.6428% baseline, 51.9096% GCN-PGD, 46.7156% GAGA-PGD, 47.3877% guarded GAGA-PGD and 49.3431% random. The primary guarded arm falls in every seed, paired -5.2551 pp with nominal three-seed t95 [-7.4666, -3.0436] pp. Its own-teacher loss improves but official-victim attack performance does not. Neither primary nor secondary meets the frozen rule; no improvement is selected. All 128 groups / 1,091 occurrences / 374 unique targets remain per arm/seed. This repeatedly inspected development cohort is separate from the original formal test reproduction.
+
+Preserved construction: the full-TRAIN teacher completed once, both failed preflights remain, and the passed functional check was reused after a CPU timeout with 118 complete partial-attempt cases. Only the incomplete seed-3 job was retried as a whole; those partial cases are excluded from the primary matrix and remain extra failed time/counters. The amended CPU phase elapsed 9,645.5745 seconds, below its six-hour ceiling, with zero GPU charge; cumulative additional research remains 5.065219865793663 GPUh plus 0.02 reserve. No final TEST, external experimental API call, dependency installation or dated-artifact rebuild occurred. The subsequent own-teacher affine-versus-canonical check completed; the newer record above preserves its actual endpoint comparisons and limits. No improvement has been selected. Human/course review, owner-confirmed full TEST and final submission freeze/tag remain separate.
 
 Update 2026-11-03, latest completed owner-authorized work: the
 [independent relationship-surrogate implementation](dual_surrogate/README.md)

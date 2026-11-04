@@ -1,0 +1,196 @@
+{
+  "status": "completed",
+  "scope": "POST_HOC_after_completed_negative_development_results",
+  "official_victim_loaded": false,
+  "counters": {
+    "hard_graph_reconstructions": 384,
+    "affine_builders": 384,
+    "canonical_sequence_updates": 768,
+    "fresh_teacher_forward_dispatches": 768,
+    "fresh_teacher_completed_forwards": 768,
+    "stored_affine_comparisons": 768,
+    "guard_alias_checks": 384,
+    "capture_tensor_loads": 384,
+    "data_load_dispatches": 1,
+    "data_loads_completed": 1,
+    "teacher_load_dispatches": 1,
+    "teacher_loads_completed": 1,
+    "new_affine_model_forwards": 0,
+    "generator_model_constructions": 0,
+    "generator_forwards": 0,
+    "GCN_model_constructions": 0,
+    "GCN_forwards": 0,
+    "official_victim_model_constructions": 0,
+    "official_victim_forwards": 0,
+    "optimizer_steps": 0,
+    "autograd_calls": 0,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "immutable_content_hashes": {
+    "before": {
+      "teacher": "728a22f3db5e86fa6c4edf449a3c0ba6ba1fa3e09c904dc4dc3d812843dc2c8f",
+      "features": "b8ea0997064107a96b8f5a55bc5e3c6a8d503b3daa96edfb94aad20257d48c87",
+      "feat_sum": "3487b3cb8372435f285eab99ee808787f741d619ba4afa670d64034670d9afcc",
+      "degrees": "b7f4a5403823197d93ac22a2835ff456f2c32575799f364d7375ffc17833858e"
+    },
+    "after": {
+      "teacher": "728a22f3db5e86fa6c4edf449a3c0ba6ba1fa3e09c904dc4dc3d812843dc2c8f",
+      "features": "b8ea0997064107a96b8f5a55bc5e3c6a8d503b3daa96edfb94aad20257d48c87",
+      "feat_sum": "3487b3cb8372435f285eab99ee808787f741d619ba4afa670d64034670d9afcc",
+      "degrees": "b7f4a5403823197d93ac22a2835ff456f2c32575799f364d7375ffc17833858e"
+    }
+  },
+  "original_topology_and_cache_checks": {
+    "original_adjacency_binary": true,
+    "original_adjacency_symmetric": true,
+    "original_adjacency_asymmetric_matrix_entries": 0,
+    "original_adjacency_zero_diagonal": true,
+    "original_adj2_binary": true,
+    "original_adj2_zero_diagonal": true,
+    "original_adj2_selected_support_matches": true,
+    "unique_VALID_targets": 374,
+    "masked_self_count_each_hop": 1,
+    "unknown_degree_checks": [
+      {
+        "token": 3,
+        "exact_match": true,
+        "mismatched_targets": 0,
+        "maximum_absolute_count_error": 0.0
+      },
+      {
+        "token": 6,
+        "exact_match": true,
+        "mismatched_targets": 0,
+        "maximum_absolute_count_error": 0.0
+      }
+    ]
+  },
+  "provenance": {
+    "source_commit": "784b246f5c43fc4f12c3da81fb2a13cc40e1e027",
+    "protocol_sha256": "c0b168a88f54543570f2de9cfa69d2bcd5db89dea592441b900403858a88e9d9"
+  },
+  "parity_passed": true,
+  "sequence_numeric_parity_passed": true,
+  "teacher_numeric_logit_parity_passed": true,
+  "teacher_argmax_identity": true,
+  "guard_alias_integrity": true,
+  "composite_parity_interpretation": "Numeric tolerance, argmax identity, guard alias and cache assumptions are separate checks; a within-tolerance near-zero class flip alone is not a large adapter-error claim.",
+  "violation_count": 0,
+  "summaries": [
+    {
+      "seed": 3,
+      "arm": "baseline",
+      "graphs": 128,
+      "occurrences": 1091,
+      "sequence_parity_failures": 0,
+      "logit_parity_failures": 0,
+      "class_differences": 0,
+      "maximum_sequence_absolute_error": 0.0,
+      "maximum_teacher_logit_absolute_error": 0.0,
+      "canonical_teacher_wrong": 336,
+      "saved_affine_teacher_wrong": 336,
+      "saved_victim_wrong": 561
+    },
+    {
+      "seed": 3,
+      "arm": "gaga_pgd",
+      "graphs": 128,
+      "occurrences": 1091,
+      "sequence_parity_failures": 0,
+      "logit_parity_failures": 0,
+      "class_differences": 0,
+      "maximum_sequence_absolute_error": 2.0265579223632812e-06,
+      "maximum_teacher_logit_absolute_error": 1.5497207641601562e-06,
+      "canonical_teacher_wrong": 553,
+      "saved_affine_teacher_wrong": 553,
+      "saved_victim_wrong": 500
+    },
+    {
+      "seed": 4,
+      "arm": "baseline",
+      "graphs": 128,
+      "occurrences": 1091,
+      "sequence_parity_failures": 0,
+      "logit_parity_failures": 0,
+      "class_differences": 0,
+      "maximum_sequence_absolute_error": 0.0,
+      "maximum_teacher_logit_absolute_error": 0.0,
+      "canonical_teacher_wrong": 328,
+      "saved_affine_teacher_wrong": 328,
+      "saved_victim_wrong": 550
+    },
+    {
+      "seed": 4,
+      "arm": "gaga_pgd",
+      "graphs": 128,
+      "occurrences": 1091,
+      "sequence_parity_failures": 0,
+      "logit_parity_failures": 0,
+      "class_differences": 0,
+      "maximum_sequence_absolute_error": 2.086162567138672e-06,
+      "maximum_teacher_logit_absolute_error": 1.430511474609375e-06,
+      "canonical_teacher_wrong": 526,
+      "saved_affine_teacher_wrong": 526,
+      "saved_victim_wrong": 492
+    },
+    {
+      "seed": 5,
+      "arm": "baseline",
+      "graphs": 128,
+      "occurrences": 1091,
+      "sequence_parity_failures": 0,
+      "logit_parity_failures": 0,
+      "class_differences": 0,
+      "maximum_sequence_absolute_error": 0.0,
+      "maximum_teacher_logit_absolute_error": 0.0,
+      "canonical_teacher_wrong": 364,
+      "saved_affine_teacher_wrong": 364,
+      "saved_victim_wrong": 612
+    },
+    {
+      "seed": 5,
+      "arm": "gaga_pgd",
+      "graphs": 128,
+      "occurrences": 1091,
+      "sequence_parity_failures": 0,
+      "logit_parity_failures": 0,
+      "class_differences": 0,
+      "maximum_sequence_absolute_error": 2.9802322387695312e-06,
+      "maximum_teacher_logit_absolute_error": 1.1920928955078125e-06,
+      "canonical_teacher_wrong": 694,
+      "saved_affine_teacher_wrong": 694,
+      "saved_victim_wrong": 537
+    }
+  ],
+  "teacher_state_sha256": "728a22f3db5e86fa6c4edf449a3c0ba6ba1fa3e09c904dc4dc3d812843dc2c8f",
+  "teacher_manifest_schema": "monti_full_train_gaga_teacher_v1",
+  "immutable_teacher_original_features_caches": true,
+  "unique_VALID_targets_checked": 374,
+  "registered_comparison_rows": 768,
+  "limitations": [
+    "All previous negative outcomes known; this is a post-hoc implementation diagnostic.",
+    "Canonical/affine agreement cannot prove efficacy, novelty, transfer or human verification.",
+    "Repeated memberships/seeds/contexts are correlated; no IID occurrence uncertainty.",
+    "Official-victim endpoint values are saved only; logit scales are separate and uncalibrated.",
+    "No affine-path model replay; canonical fresh own-teacher logits are compared to immutable stored affine logits."
+  ],
+  "completed_comparison_rows": 768,
+  "completed_endpoint_joins": 384,
+  "input_files_hashed": 783,
+  "process_cpu_seconds": 1707.287493063,
+  "wall_seconds": 671.4419598969398,
+  "GPU_hours": 0,
+  "cuda_visibility": "",
+  "torch_cuda_available": false,
+  "torch_visible_gpu_count": 0,
+  "native_visible_gpu_count": 0,
+  "output_hashes": {
+    "registered.json": "f3394a6f583abf5bdb60f492ec37a62ed8d01aa77d71c84a5d0b04d5fcfa46d5",
+    "original_topology_and_cache_checks.json": "2def6f87adf5c94e9865df8af4870be8efc9a8fea7d25b6c91854db8db3a128b",
+    "comparisons.jsonl": "1a039fcaca2064f259f4adbf2061b5672e424cbee096aa0084b09fd69ec77595",
+    "endpoint_joins.jsonl": "b786902e334da391e79d472190a44b13102f4109c526e723a6f4003205599a44",
+    "violations.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "input_hashes.json": "6d912888adf5cbb9fe0a908bed45511c19449bbf42b333ce055b041934e335ec"
+  }
+}
