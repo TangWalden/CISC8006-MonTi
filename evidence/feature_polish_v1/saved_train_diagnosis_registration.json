@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-11-04T06:10:55.953868+00:00",
+  "scope": "POST HOC standard-library saved-online-TRAIN analysis; overall VALID results already known, no new preregistered discovery",
+  "source_sha256": "900902136ed440dfef2420f078d3c406334ae75f45ae86302ce4b4f6103bf4e2",
+  "input_manifest_path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\train_diagnosis_inputs_v1.json",
+  "input_manifest_sha256": "d70a843a2476d375f5703161c360b3f73d0535874cf4d284419eccd83655e56d",
+  "input_root": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\source_role_fix_20261104\\remote_metadata",
+  "output_directory": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\train_diagnosis_attempt1",
+  "all_raw_outcome_parsing_occurs_after_registration": true,
+  "ML_imports_allowed": false,
+  "model_queries_allowed": false,
+  "GPU_hours_allowed": 0
+}
