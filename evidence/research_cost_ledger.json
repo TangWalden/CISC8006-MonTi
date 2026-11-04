@@ -465,7 +465,7 @@
     "source_sha256": "900902136ed440dfef2420f078d3c406334ae75f45ae86302ce4b4f6103bf4e2"
   },
   "feature_polish_phase": {
-    "status": "CPU teacher and functional preflight passed; two failed construction preflights and timed-out partial refinement preserved; no official-victim evaluation yet",
+    "status": "completed negative five-arm development comparison; all primary/secondary gain criteria failed",
     "phase_gpu_limit": 2,
     "charged_GPU_hours": 0,
     "teacher": {
@@ -489,7 +489,7 @@
       "outer_wall_seconds": 22.01778230094351,
       "GPU_hours": 0
     },
-    "evidence": "evidence/feature_polish_v1/build_amendment_v3.json",
+    "evidence": "evidence/feature_polish_v1/execution_trace.json",
     "no_successful_teacher_replay": true,
     "failed_partial_refinement": {
       "recorded_counters": {
@@ -509,6 +509,387 @@
       "process_cpu_seconds": 8142.093230584001,
       "GPU_hours": 0,
       "counter_status": "Recorded dispatch/autograd counters may include the interrupted final operation; not all asserted completed."
-    }
+    },
+    "execution_source": "8222dfa7bea7ba8115f31420e2a2420a93e5b5b1",
+    "successful_primary_counters": {
+      "baseline_generations": 384,
+      "gcn_forwards": 9216,
+      "gaga_teacher_forwards": 9216,
+      "feature_autograd_calls": 15360,
+      "feature_pgd_steps": 15360,
+      "generator_optimizer_steps": 0,
+      "teacher_optimizer_steps": 0,
+      "official_victim_forwards": 0,
+      "API_calls": 0,
+      "TEST_queries": 0
+    },
+    "evaluation_counts": {
+      "official_gaga_forwards": 2048,
+      "original_gcn_clean_forwards": 128,
+      "attacked_gcn_rows_reused": 1920,
+      "hard_graph_reconstructions": 384,
+      "canonical_sequence_updates": 1920,
+      "generator_forwards": 0
+    },
+    "all_prior_and_primary_model_processes": [
+      {
+        "name": "full_train_teacher",
+        "module": "course.feature_polish.teacher",
+        "pid": 885072,
+        "exit_code": 0,
+        "execution_device": "cpu",
+        "outer_seconds": 67.88637775101233,
+        "charged_gpu_wall_hours": 0.0,
+        "guardian_sha256": "9ce1b8f73e4da59cafb187b103a92cb3c608f59be5565690f4417a38c2688a71",
+        "guardian_path": "runs/feature_polish_20261104_attempt1/queue_attempt1/full_train_teacher_guardian.json",
+        "guardian": {
+          "module": "course.feature_polish.teacher",
+          "started_utc": "2026-11-04T06:49:58.444033+00:00",
+          "limit_seconds": 1200,
+          "pid": 885072,
+          "arguments": [
+            "--",
+            "--protocol",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt1/preparation_protocol_v1.json",
+            "--output",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt1/teacher_attempt1"
+          ],
+          "status": "completed",
+          "execution_device": "cpu",
+          "numeric_visibility": "",
+          "torch_visible_count": 0,
+          "native_visible_count": 0,
+          "own_physical_uuids": [],
+          "torch": "1.13.1+cu117",
+          "elapsed_seconds": 66.44239594205283,
+          "process_cpu_seconds": 376.498217882,
+          "charged_gpu_wall_hours": 0.0,
+          "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+        }
+      },
+      {
+        "name": "real_train_preflight",
+        "module": "course.feature_polish.preflight",
+        "pid": 885632,
+        "exit_code": 1,
+        "execution_device": "cpu",
+        "outer_seconds": 22.01778230094351,
+        "charged_gpu_wall_hours": 0.0,
+        "guardian_sha256": "05f49a2e801f08b7068eae6562305c6958689ab198765862a02f23a77eeaf832",
+        "guardian_path": "runs/feature_polish_20261104_attempt1/queue_attempt1/real_train_preflight_guardian.json",
+        "guardian": {
+          "module": "course.feature_polish.preflight",
+          "started_utc": "2026-11-04T06:51:06.479781+00:00",
+          "limit_seconds": 300,
+          "pid": 885632,
+          "arguments": [
+            "--",
+            "--protocol",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt1/refinement_protocol_v1.json",
+            "--output",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt1/preflight_attempt1"
+          ],
+          "status": "failed",
+          "execution_device": "cpu",
+          "numeric_visibility": "",
+          "torch_visible_count": 0,
+          "native_visible_count": 0,
+          "own_physical_uuids": [],
+          "torch": "1.13.1+cu117",
+          "exit_code": 1,
+          "elapsed_seconds": 20.495027853990905,
+          "process_cpu_seconds": 22.073137337,
+          "charged_gpu_wall_hours": 0.0,
+          "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+        }
+      },
+      {
+        "name": "real_train_preflight",
+        "module": "course.feature_polish.preflight",
+        "pid": 893575,
+        "exit_code": 1,
+        "execution_device": "cpu",
+        "outer_seconds": 33.609963090973906,
+        "charged_gpu_wall_hours": 0.0,
+        "guardian_sha256": "4b3c48451de5b5b568273b1fc6be8379f9c05d771e8c59e7138ffd9af9a0e491",
+        "guardian_path": "runs/feature_polish_20261104_attempt2/queue_attempt1/real_train_preflight_guardian.json",
+        "guardian": {
+          "module": "course.feature_polish.preflight",
+          "started_utc": "2026-11-04T07:19:22.681402+00:00",
+          "limit_seconds": 300,
+          "pid": 893575,
+          "arguments": [
+            "--",
+            "--protocol",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt2/refinement_protocol_v1.json",
+            "--output",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt2/preflight_attempt1"
+          ],
+          "status": "failed",
+          "execution_device": "cpu",
+          "numeric_visibility": "",
+          "torch_visible_count": 0,
+          "native_visible_count": 0,
+          "own_physical_uuids": [],
+          "torch": "1.13.1+cu117",
+          "exit_code": 1,
+          "elapsed_seconds": 32.21510169398971,
+          "process_cpu_seconds": 48.564889561,
+          "charged_gpu_wall_hours": 0.0,
+          "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+        }
+      },
+      {
+        "name": "real_train_preflight",
+        "module": "course.feature_polish.preflight",
+        "pid": 896343,
+        "exit_code": 0,
+        "execution_device": "cpu",
+        "outer_seconds": 68.0624538550619,
+        "charged_gpu_wall_hours": 0.0,
+        "guardian_sha256": "95511364ba6ee6f389378cae87b897a7e0b0e7f31ec564c0bb495d1cfbced3bc",
+        "guardian_path": "runs/feature_polish_20261104_attempt3/queue_attempt1/real_train_preflight_guardian.json",
+        "guardian": {
+          "module": "course.feature_polish.preflight",
+          "started_utc": "2026-11-04T07:32:56.892232+00:00",
+          "limit_seconds": 300,
+          "pid": 896343,
+          "arguments": [
+            "--",
+            "--protocol",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt3/refinement_protocol_v1.json",
+            "--output",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt3/preflight_attempt1"
+          ],
+          "status": "completed",
+          "execution_device": "cpu",
+          "numeric_visibility": "",
+          "torch_visible_count": 0,
+          "native_visible_count": 0,
+          "own_physical_uuids": [],
+          "torch": "1.13.1+cu117",
+          "elapsed_seconds": 67.04379532497842,
+          "process_cpu_seconds": 218.540134606,
+          "charged_gpu_wall_hours": 0.0,
+          "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+        }
+      },
+      {
+        "name": "refine_seed3",
+        "module": "course.feature_polish.refine",
+        "pid": 897428,
+        "exit_code": 1,
+        "execution_device": "cpu",
+        "outer_seconds": 1803.1311723699328,
+        "charged_gpu_wall_hours": 0.0,
+        "guardian_sha256": "8e78786574203f286723af7025c4829ad644edd7c0123cd15f3693b775c605a6",
+        "guardian_path": "runs/feature_polish_20261104_attempt3/queue_attempt1/refine_seed3_guardian.json",
+        "guardian": {
+          "module": "course.feature_polish.refine",
+          "started_utc": "2026-11-04T07:34:04.974545+00:00",
+          "limit_seconds": 1800,
+          "pid": 897428,
+          "arguments": [
+            "--",
+            "--protocol",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt3/experiment_protocol_v1.json",
+            "--output",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt3/queue_attempt1/refinements/seed3",
+            "--seed",
+            "3"
+          ],
+          "status": "failed",
+          "execution_device": "cpu",
+          "numeric_visibility": "",
+          "torch_visible_count": 0,
+          "native_visible_count": 0,
+          "own_physical_uuids": [],
+          "torch": "1.13.1+cu117",
+          "exit_code": 1,
+          "elapsed_seconds": 1800.2332255089423,
+          "process_cpu_seconds": 8142.093230584001,
+          "charged_gpu_wall_hours": 0.0,
+          "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+        }
+      },
+      {
+        "name": "refine_seed3",
+        "module": "course.feature_polish.refine",
+        "pid": 911002,
+        "exit_code": 0,
+        "execution_device": "cpu",
+        "outer_seconds": 1220.9714824029943,
+        "charged_gpu_wall_hours": 0.0,
+        "guardian_sha256": "5144d00904c9723cfa3a82785cdfa4ca119159ccab7f182ba9c81cbc38200c5a",
+        "guardian_path": "runs/feature_polish_20261104_attempt4/queue_attempt1/refine_seed3_guardian.json",
+        "guardian": {
+          "module": "course.feature_polish.refine",
+          "started_utc": "2026-11-04T08:15:18.200060+00:00",
+          "limit_seconds": 5400,
+          "pid": 911002,
+          "arguments": [
+            "--",
+            "--protocol",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt4/experiment_protocol_v1.json",
+            "--output",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt4/queue_attempt1/refinements/seed3",
+            "--seed",
+            "3"
+          ],
+          "status": "completed",
+          "execution_device": "cpu",
+          "numeric_visibility": "",
+          "torch_visible_count": 0,
+          "native_visible_count": 0,
+          "own_physical_uuids": [],
+          "torch": "1.13.1+cu117",
+          "elapsed_seconds": 1220.2195077700308,
+          "process_cpu_seconds": 5632.396628497,
+          "charged_gpu_wall_hours": 0.0,
+          "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+        }
+      },
+      {
+        "name": "refine_seed4",
+        "module": "course.feature_polish.refine",
+        "pid": 926312,
+        "exit_code": 0,
+        "execution_device": "cpu",
+        "outer_seconds": 1224.2875178679824,
+        "charged_gpu_wall_hours": 0.0,
+        "guardian_sha256": "618ad719af6f07b797382f73ecb530a33d3996e96caf18859c47330248d4a8f6",
+        "guardian_path": "runs/feature_polish_20261104_attempt4/queue_attempt1/refine_seed4_guardian.json",
+        "guardian": {
+          "module": "course.feature_polish.refine",
+          "started_utc": "2026-11-04T08:35:39.187304+00:00",
+          "limit_seconds": 5400,
+          "pid": 926312,
+          "arguments": [
+            "--",
+            "--protocol",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt4/experiment_protocol_v1.json",
+            "--output",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt4/queue_attempt1/refinements/seed4",
+            "--seed",
+            "4"
+          ],
+          "status": "completed",
+          "execution_device": "cpu",
+          "numeric_visibility": "",
+          "torch_visible_count": 0,
+          "native_visible_count": 0,
+          "own_physical_uuids": [],
+          "torch": "1.13.1+cu117",
+          "elapsed_seconds": 1223.5458897890057,
+          "process_cpu_seconds": 5421.601535045,
+          "charged_gpu_wall_hours": 0.0,
+          "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+        }
+      },
+      {
+        "name": "refine_seed5",
+        "module": "course.feature_polish.refine",
+        "pid": 939508,
+        "exit_code": 0,
+        "execution_device": "cpu",
+        "outer_seconds": 1233.7202502429718,
+        "charged_gpu_wall_hours": 0.0,
+        "guardian_sha256": "b5e35876492722df595d522aa5a90d00a82cc7ae6b7189bd8749c39281016dc8",
+        "guardian_path": "runs/feature_polish_20261104_attempt4/queue_attempt1/refine_seed5_guardian.json",
+        "guardian": {
+          "module": "course.feature_polish.refine",
+          "started_utc": "2026-11-04T08:56:03.475573+00:00",
+          "limit_seconds": 5400,
+          "pid": 939508,
+          "arguments": [
+            "--",
+            "--protocol",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt4/experiment_protocol_v1.json",
+            "--output",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt4/queue_attempt1/refinements/seed5",
+            "--seed",
+            "5"
+          ],
+          "status": "completed",
+          "execution_device": "cpu",
+          "numeric_visibility": "",
+          "torch_visible_count": 0,
+          "native_visible_count": 0,
+          "own_physical_uuids": [],
+          "torch": "1.13.1+cu117",
+          "elapsed_seconds": 1232.9916565510212,
+          "process_cpu_seconds": 5269.6433428420005,
+          "charged_gpu_wall_hours": 0.0,
+          "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+        }
+      },
+      {
+        "name": "development_evaluation",
+        "module": "course.feature_polish.evaluate",
+        "pid": 953148,
+        "exit_code": 0,
+        "execution_device": "cpu",
+        "outer_seconds": 837.7432928389171,
+        "charged_gpu_wall_hours": 0.0,
+        "guardian_sha256": "23a4cc5b7ef65e8d91108193a9d674d71e0683c99a265367629084dd38039456",
+        "guardian_path": "runs/feature_polish_20261104_attempt4/queue_attempt1/development_evaluation_guardian.json",
+        "guardian": {
+          "module": "course.feature_polish.evaluate",
+          "started_utc": "2026-11-04T09:16:37.201302+00:00",
+          "limit_seconds": 5400,
+          "pid": 953148,
+          "arguments": [
+            "--",
+            "--protocol",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt4/experiment_protocol_v1.json",
+            "--matrix",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt4/queue_attempt1/refinements",
+            "--output",
+            "/home/tjy/Project/MonTi-course/runs/feature_polish_20261104_attempt4/evaluation_attempt1"
+          ],
+          "status": "completed",
+          "execution_device": "cpu",
+          "numeric_visibility": "",
+          "torch_visible_count": 0,
+          "native_visible_count": 0,
+          "own_physical_uuids": [],
+          "torch": "1.13.1+cu117",
+          "elapsed_seconds": 836.5077587380074,
+          "process_cpu_seconds": 2352.6493054670004,
+          "charged_gpu_wall_hours": 0.0,
+          "accounting": "CPU device: zero GPU charge and actual CPU/wall clocks; GPU device: maximum outer/guardian lifetime includes failures and idle."
+        }
+      }
+    ],
+    "phase_elapsed_wall_seconds": 9645.57446842594,
+    "sum_guardian_CPU_seconds": 27484.060421821003,
+    "sum_outer_seconds": 6511.43029272079,
+    "independent_audit_and_summary_outer_seconds": [
+      {
+        "name": "saved_summary_attempt1",
+        "exit_code": 0,
+        "outer_seconds": 3.7436174099566415,
+        "stdout_sha256": "caadf9990fd344b25b406d42886626bc2eaf046d2953826386ed7a8b1e8ffa68",
+        "experimental_model_calls": 0,
+        "GPU_hours": 0
+      },
+      {
+        "name": "independent_json_audit_attempt1",
+        "exit_code": 0,
+        "outer_seconds": 14.901579410070553,
+        "stdout_sha256": "9934a174b2fc5d29bf7b9b42ca89ff03fc3f1053697f5bf705b13b79c02eaaf1",
+        "experimental_model_calls": 0,
+        "GPU_hours": 0
+      },
+      {
+        "name": "independent_tensor_audit_attempt1",
+        "exit_code": 0,
+        "outer_seconds": 21.70055876299739,
+        "stdout_sha256": "0f208c18858b87dea45e8f448a2516870a84fbdc0cab150cf9086f75074bf236",
+        "experimental_model_calls": 0,
+        "GPU_hours": 0
+      }
+    ],
+    "full_TEST_candidate_gate": "closed"
   }
 }

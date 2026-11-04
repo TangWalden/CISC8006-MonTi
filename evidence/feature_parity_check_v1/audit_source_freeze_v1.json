@@ -1,0 +1,28 @@
+{
+  "status": "source_frozen_before_new_parity_diagnostic_calls_or_output_reads",
+  "created_utc": "2026-11-04T11:43:01.666360+00:00",
+  "audit_source": {
+    "path": "work/closure_20261104/parity_audit_source.py",
+    "sha256": "096188f4a96ff71a9d9189e68f2b8af637f154a523bcd058345203fba56f0184",
+    "bytes": 28681
+  },
+  "reviewed_diagnostic_sources": {
+    "run.py": "e72a064cae62ff9d8b203e2714fc6d1d420d1e3a8f8bc825e96537d1156402f0",
+    "prepare.py": "98dedd01e608cfba882b95f05bcae174e8ee3b03f88878fef7232b881991ba53",
+    "__init__.py": "48d903308e3a82d27b5775350721b811830492a3a8d9f214163fee9893171d2b"
+  },
+  "required_execution_source_and_protocol_sha256": "Explicit CLI inputs when root commits/registers; never inferred from results",
+  "known_completed_base_source": "8222dfa7bea7ba8115f31420e2a2420a93e5b5b1",
+  "known_completed_base_protocol_sha256": "eedad10194edbe96c0496aa04f514b9b2ec8ecd49e11979aa523f01d29caadc6",
+  "scope": "Saved JSON/raw logits and opaque input/capture/source hashes only. No ML imports, tensor/weight/dataset loads, model calls, gradients, optimizer updates, API/network or dependencies.",
+  "independently_recounted": "768 raw own canonical-vs-stored-affine and saved-victim vectors, argmax/Softplus/margins, original elementwise tolerance, separate within-tolerance class flips, all384 signed finite two-endpoint joins, all violations and six cohort summaries",
+  "producer_only_measurements": "Sequence/cache/topology arithmetic and tensor hashes are producer receipts, not independently replayed. Physical guard alias false reports remain retained without tensor inspection.",
+  "post_hoc": true,
+  "not_preregistered_efficacy": true,
+  "new_diagnostic_output_reads": 0,
+  "model_or_scientific_operations_during_preparation": 0,
+  "checks_performed": "AST syntax only; source not imported/executed",
+  "numeric_reduction_tolerance": "2e-6+8*(n+2)*2^-24*max(1,mean(abs(values))). No relaxation to elementwise numeric parity, argmax or endpoint margin-sign checks. Sequence fraction metadata permits2e-7 ratio rounding at threshold; sequence tensors are not audited.",
+  "execution_authorization": "Wait for explicit root completion signal; no diagnostic/audit execution authorized by this source freeze",
+  "independence": "Auditor did not author diagnostic implementation. Agent not human verification."
+}

@@ -1,6 +1,8 @@
 # CISC8006: MonTi Reproduction and Improvements
 
-**4 November development update:** the source-role correction and matched original-GCN control completed six fresh trainings. Mean GAGA MR 52.7039% to 52.6734% (-0.0306 pp), with mixed seed directions; no consistent gain selected. [Results, concrete cases and limits](course/source_role_fix/README.md). This does not replace the frozen formal reproduction or authorize final TEST/tag.
+**Latest completed development study, 4 November:** all five fixed-graph feature-refinement conditions and three seeds completed. Mean GAGA MR is 52.6428% baseline, 51.9096% GCN-PGD, 46.7156% GAGA-PGD, 47.3877% guarded GAGA-PGD and 49.3431% random. The primary guarded method is lower in every seed, paired -5.2551 pp, and is not selected as an improvement. [Full results, cases, failed attempts and audit limits](course/feature_polish/README.md). The study ran on CPU with zero GPU charge; final TEST/tag and genuine human/course requirements remain separate. Dated report/slides remain unchanged.
+
+**Earlier 4 November source-role control:** the correction and matched original-GCN control completed six fresh trainings. Mean GAGA MR 52.7039% to 52.6734% (-0.0306 pp), with mixed seed directions; no consistent gain selected. [Results, concrete cases and limits](course/source_role_fix/README.md). This does not replace the frozen formal reproduction or authorize final TEST/tag.
 
 **Latest structural-feedback study, 3 November 2026:** the owner-authorized
 [independent GAGA-style surrogate implementation](course/dual_surrogate/README.md)

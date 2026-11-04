@@ -659,7 +659,7 @@
     "independent_saved_phase_audit": "passed405actual-byte hashes/117125checks; agent audit, not human verification"
   },
   "feature_polish_phase": {
-    "status": "CPU functional preflight passed; first refinement process timed out at118/128whole cases; timer-only retry in preparation, no official-victim outcome",
+    "status": "completed negative; primary and predeclared secondary failed, full TEST gate closed; new canonical parity diagnostic being registered",
     "owner_instruction": "Further concrete case-based diagnosis, improvement and execution until a measured development loop closes; no positive effect guaranteed",
     "protocol": "course/FEATURE_POLISH_PROTOCOL_V1.json",
     "package": "course/feature_polish/README.md",
@@ -686,8 +686,8 @@
     "failed_preflight_generations": 2,
     "failed_preflight_autograd_calls": 8,
     "selected_execution_device": "cpu",
-    "VALID_refinement_generations": 0,
-    "official_victim_forwards": 0,
+    "VALID_refinement_generations": 384,
+    "official_victim_forwards": 2048,
     "successful_preflight_forwards": {
       "GAGA_float32": 60,
       "GCN_actual_float32": 20,
@@ -706,6 +706,37 @@
       "API_calls": 0,
       "TEST_queries": 0
     },
-    "primary_completed_seeds": 0
+    "primary_completed_seeds": 3,
+    "results": "evidence/feature_polish_v1/results_summary.json",
+    "execution_trace": "evidence/feature_polish_v1/execution_trace.json",
+    "means_GAGA_MR_percent": {
+      "baseline": 52.64283531927895,
+      "gcn_pgd": 51.90956309196456,
+      "gaga_pgd": 46.71555148182096,
+      "gaga_guarded": 47.38771769019248,
+      "random": 49.343110296364195
+    },
+    "primary_delta_pp": -5.255117629086466,
+    "primary_paired_t95_pp": [
+      -7.466600132655557,
+      -3.043635125517375
+    ],
+    "full_TEST_candidate_gate": "closed",
+    "next_item": "course/feature_parity_check/README.md"
+  },
+  "feature_parity_diagnostic": {
+    "status": "implementation/source freeze prepared; not yet executed",
+    "package": "course/feature_parity_check/README.md",
+    "post_hoc": true,
+    "reason": "All feature-refinement efficacy arms were negative despite own-teacher loss improvement; rule out full-VALID affine shortcut discrepancies before another method.",
+    "fixed_saved_graphs": 384,
+    "canonical_own_teacher_forwards_planned": 768,
+    "official_victim_queries_planned": 0,
+    "generator_or_GCN_calls_planned": 0,
+    "weight_updates_planned": 0,
+    "CPU_threads": 8,
+    "deadline_seconds": 1800,
+    "GPU_hours": 0,
+    "final_TEST_allowed": false
   }
 }

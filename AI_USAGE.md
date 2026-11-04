@@ -1,5 +1,15 @@
 # AI Usage Record
 
+## Fixed-graph feature refinement completed, 4 November 2026
+
+Following the owner's request to continue a concrete diagnosis/change/execution loop, agents implemented a five-condition fixed-graph feature study and root executed all three refinement seeds before complete official-GAGA development evaluation. A fresh full-TRAIN GAGA fit completed once at the fixed 38-epoch horizon: 494 updates and 507 forwards. All primary cases shared their baseline graph across conditions. The external LLM API was not called; the class-0 preservation gate uses the original GCN's predictions only.
+
+The measured primary result was negative: baseline 52.6428% versus guarded GAGA-PGD 47.3877% mean MR, paired -5.2551 pp and negative in all three seeds. The guarded method lost 175 existing new-error successes, gained five and additionally recovered two clean errors. Its own-GAGA loss decreased, but this was not relabeled as transfer benefit. The prespecified unguarded secondary candidate also failed and did not replace the primary result. Full [results and case limits](course/feature_polish/README.md) preserve every arm and denominator; no seed, step or new resource was selected from official-victim outcomes.
+
+Agents retained two failed preflights and a CPU timeout with 118 complete partial-attempt cases. A timer-only whole-job retry reused the teacher, passed tests and passed preflight, with original phase origin and unchanged feature mathematics. Those partial cases are excluded from the successful primary matrix and remain extra failed work. Refinement/evaluation source `8222dfa7bea7ba8115f31420e2a2420a93e5b5b1` differs from the retained teacher/preflight sources and later publication HEAD. Total phase elapsed time was 9,645.5745 seconds within the amended six-hour ceiling; GPU charge was zero. All final TEST/API/dependency counts were zero, and dated PDF/PPTX drafts were not rebuilt.
+
+The method-independent saved-record V3 audit passed 218,298 checks / 1,280 file hashes; a separate method-independent tensor audit checked 384 captures / 1,920 feature branches, with no classifier forward or checkpoint load. These are agent checks, not human review, student contributions, novelty or course acceptance. The next proposed measurement is own-teacher affine/canonical parity on all 384 saved graphs before another method change; this does not claim that diagnostic has already run or authorize final TEST/freeze.
+
 ## Independent relationship-surrogate study completed, 3 November 2026
 
 The owner explicitly requested implementation and adjustments based on build
