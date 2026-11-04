@@ -1,0 +1,415 @@
+{
+  "status": "failed",
+  "official_victim_loaded": false,
+  "optimizer_steps": 0,
+  "counts": {
+    "generator_forwards": 2,
+    "gaga_forward_dispatches": 30,
+    "gaga_completed_forwards": 30,
+    "gcn_forward_dispatches": 20,
+    "gcn_completed_forwards": 20,
+    "canonical_sequence_updates": 6,
+    "autograd_calls": 8,
+    "finite_difference_gaga_forwards": 16,
+    "finite_difference_gcn_forwards": 14,
+    "optimizer_steps": 0,
+    "official_victim_forwards": 0,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "cases": [
+    {
+      "group": 263,
+      "targets": 3,
+      "node_budget": 1,
+      "edge_budget": 1,
+      "actual_injected_nodes": 1,
+      "actual_nonself_undirected_edges": 1,
+      "feature_dimension": 768,
+      "frozen_zero_width_dimensions": 0,
+      "canonical_affine_comparisons": [
+        {
+          "probe": "baseline_x0",
+          "sequence": {
+            "max_absolute_error": 0.0,
+            "max_tolerance_fraction": 0.0,
+            "passed": true
+          },
+          "logits": {
+            "max_absolute_error": 0.0,
+            "max_tolerance_fraction": 0.0,
+            "passed": true
+          }
+        },
+        {
+          "probe": "interior_u25",
+          "sequence": {
+            "max_absolute_error": 1.1920928955078125e-07,
+            "max_tolerance_fraction": 0.0035503366962075233,
+            "passed": true
+          },
+          "logits": {
+            "max_absolute_error": 4.76837158203125e-07,
+            "max_tolerance_fraction": 0.00077960139606148,
+            "passed": true
+          }
+        },
+        {
+          "probe": "interior_u75",
+          "sequence": {
+            "max_absolute_error": 1.1920928955078125e-07,
+            "max_tolerance_fraction": 0.0035007784608751535,
+            "passed": true
+          },
+          "logits": {
+            "max_absolute_error": 2.384185791015625e-07,
+            "max_tolerance_fraction": 0.00038654840318486094,
+            "passed": true
+          }
+        }
+      ],
+      "hard_gcn_x0_replacement": {
+        "max_absolute_error": 2.384185791015625e-07,
+        "max_tolerance_fraction": 0.00031549803679808974,
+        "passed": true
+      },
+      "gaga_feature_gradient": {
+        "actual_objective": "float32 mean Softplus(fraud-benign), exactly as the PGD implementation",
+        "functional_objective": "mean fraud-minus-benign raw margin; four highest absolute nonzero gradients",
+        "normalized_input": "u=.5; central perturbations remain inside [.499,.501]",
+        "loss": 3.500232458114624,
+        "raw_margin": 3.4515068531036377,
+        "raw_margin_gradient_l2": 0.13078405212382177,
+        "raw_margin_gradient_max_abs": 0.025595184415578842,
+        "actual_softplus_gradient_l2": 0.1286230210013708,
+        "actual_softplus_gradient_all_zero": false,
+        "ce_finite_difference_checked_on_same_four_coordinates": true,
+        "zero_width_gradients_exact_zero": true,
+        "finite_difference_h": 0.001,
+        "coordinates": [
+          {
+            "flat_coordinate": 664,
+            "checks": {
+              "raw_margin": {
+                "autograd": -0.025595184415578842,
+                "central_difference": -0.02562999725341797,
+                "absolute_error": 3.481283783912659e-05,
+                "tolerance": 0.001768899917602539,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": -0.02520698681473732,
+                "central_difference": -0.025153160095214844,
+                "absolute_error": 5.3826719522476196e-05,
+                "tolerance": 0.0017562096044421195,
+                "passed": true
+              }
+            }
+          },
+          {
+            "flat_coordinate": 128,
+            "checks": {
+              "raw_margin": {
+                "autograd": 0.0159409511834383,
+                "central_difference": 0.01621246337890625,
+                "absolute_error": 0.0002715121954679489,
+                "tolerance": 0.0014863739013671875,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": 0.015681063756346703,
+                "central_difference": 0.015854835510253906,
+                "absolute_error": 0.00017377175390720367,
+                "tolerance": 0.0014756450653076172,
+                "passed": true
+              }
+            }
+          },
+          {
+            "flat_coordinate": 3,
+            "checks": {
+              "raw_margin": {
+                "autograd": -0.014928174205124378,
+                "central_difference": -0.014901161193847656,
+                "absolute_error": 2.7013011276721954e-05,
+                "tolerance": 0.0014478452261537313,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": -0.014670714735984802,
+                "central_difference": -0.014662742614746094,
+                "absolute_error": 7.972121238708496e-06,
+                "tolerance": 0.0014401214420795441,
+                "passed": true
+              }
+            }
+          },
+          {
+            "flat_coordinate": 598,
+            "checks": {
+              "raw_margin": {
+                "autograd": -0.014907119795680046,
+                "central_difference": -0.014901161193847656,
+                "absolute_error": 5.9586018323898315e-06,
+                "tolerance": 0.0014472135938704014,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": -0.01465568970888853,
+                "central_difference": -0.014662742614746094,
+                "absolute_error": 7.052905857563019e-06,
+                "tolerance": 0.0014398822784423828,
+                "passed": true
+              }
+            }
+          }
+        ]
+      },
+      "gcn_feature_gradient": {
+        "actual_objective": "float32 mean Softplus(fraud-benign), exactly as the PGD implementation",
+        "functional_objective": "mean fraud-minus-benign raw margin; four highest absolute nonzero gradients",
+        "normalized_input": "u=.5; central perturbations remain inside [.499,.501]",
+        "loss": 0.5745196342468262,
+        "raw_margin": -0.2886904776096344,
+        "raw_margin_gradient_l2": 0.49741459186293197,
+        "raw_margin_gradient_max_abs": 0.1503276824951172,
+        "actual_softplus_gradient_l2": 0.17803307916152486,
+        "actual_softplus_gradient_all_zero": false,
+        "ce_finite_difference_checked_on_same_four_coordinates": true,
+        "zero_width_gradients_exact_zero": true,
+        "finite_difference_h": 0.001,
+        "coordinates": [
+          {
+            "flat_coordinate": 477,
+            "checks": {
+              "raw_margin": {
+                "autograd": -0.1503276824951172,
+                "central_difference": -0.15024840831756592,
+                "absolute_error": 7.927417755126953e-05,
+                "tolerance": 0.005509830474853515,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": -0.054162878543138504,
+                "central_difference": -0.05415081977844238,
+                "absolute_error": 1.2058764696121216e-05,
+                "tolerance": 0.002624886356294155,
+                "passed": true
+              }
+            }
+          },
+          {
+            "flat_coordinate": 476,
+            "checks": {
+              "raw_margin": {
+                "autograd": -0.11430759727954865,
+                "central_difference": -0.11435151100158691,
+                "absolute_error": 4.391372203826904e-05,
+                "tolerance": 0.0044305453300476074,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": -0.0410848930478096,
+                "central_difference": -0.041097402572631836,
+                "absolute_error": 1.2509524822235107e-05,
+                "tolerance": 0.002232922077178955,
+                "passed": true
+              }
+            }
+          },
+          {
+            "flat_coordinate": 69,
+            "checks": {
+              "raw_margin": {
+                "autograd": -0.10706871002912521,
+                "central_difference": -0.10699033737182617,
+                "absolute_error": 7.837265729904175e-05,
+                "tolerance": 0.004212061300873756,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": -0.038342978805303574,
+                "central_difference": -0.03832578659057617,
+                "absolute_error": 1.7192214727401733e-05,
+                "tolerance": 0.002150289364159107,
+                "passed": true
+              }
+            }
+          },
+          {
+            "flat_coordinate": 38,
+            "checks": {
+              "raw_margin": {
+                "autograd": 0.09429679065942764,
+                "central_difference": 0.09432435035705566,
+                "absolute_error": 2.755969762802124e-05,
+                "tolerance": 0.00382973051071167,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": 0.03377712517976761,
+                "central_difference": 0.033795833587646484,
+                "absolute_error": 1.8708407878875732e-05,
+                "tolerance": 0.0020138750076293946,
+                "passed": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "group": 238,
+      "targets": 4,
+      "node_budget": 1,
+      "edge_budget": 2,
+      "actual_injected_nodes": 1,
+      "actual_nonself_undirected_edges": 2,
+      "feature_dimension": 768,
+      "frozen_zero_width_dimensions": 0,
+      "canonical_affine_comparisons": [
+        {
+          "probe": "baseline_x0",
+          "sequence": {
+            "max_absolute_error": 0.0,
+            "max_tolerance_fraction": 0.0,
+            "passed": true
+          },
+          "logits": {
+            "max_absolute_error": 0.0,
+            "max_tolerance_fraction": 0.0,
+            "passed": true
+          }
+        },
+        {
+          "probe": "interior_u25",
+          "sequence": {
+            "max_absolute_error": 5.960464477539063e-08,
+            "max_tolerance_fraction": 0.0029619461856782436,
+            "passed": true
+          },
+          "logits": {
+            "max_absolute_error": 7.152557373046875e-07,
+            "max_tolerance_fraction": 0.001240521902218461,
+            "passed": true
+          }
+        },
+        {
+          "probe": "interior_u75",
+          "sequence": {
+            "max_absolute_error": 5.960464477539063e-08,
+            "max_tolerance_fraction": 0.0029794496949762106,
+            "passed": true
+          },
+          "logits": {
+            "max_absolute_error": 4.76837158203125e-07,
+            "max_tolerance_fraction": 0.0008052900666370988,
+            "passed": true
+          }
+        }
+      ],
+      "hard_gcn_x0_replacement": {
+        "max_absolute_error": 1.430511474609375e-05,
+        "max_tolerance_fraction": 0.022189147770404816,
+        "passed": true
+      },
+      "gaga_feature_gradient": {
+        "actual_objective": "float32 mean Softplus(fraud-benign), exactly as the PGD implementation",
+        "functional_objective": "mean fraud-minus-benign raw margin; four highest absolute nonzero gradients",
+        "normalized_input": "u=.5; central perturbations remain inside [.499,.501]",
+        "loss": 3.538328170776367,
+        "raw_margin": 3.2503082752227783,
+        "raw_margin_gradient_l2": 0.13387366011801757,
+        "raw_margin_gradient_max_abs": 0.020566008985042572,
+        "actual_softplus_gradient_l2": 0.1312466293781895,
+        "actual_softplus_gradient_all_zero": false,
+        "ce_finite_difference_checked_on_same_four_coordinates": true,
+        "zero_width_gradients_exact_zero": true,
+        "finite_difference_h": 0.001,
+        "coordinates": [
+          {
+            "flat_coordinate": 469,
+            "checks": {
+              "raw_margin": {
+                "autograd": -0.020566008985042572,
+                "central_difference": -0.020384788513183594,
+                "absolute_error": 0.00018122047185897827,
+                "tolerance": 0.0016169802695512772,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": -0.020166711881756783,
+                "central_difference": -0.02002716064453125,
+                "absolute_error": 0.00013955123722553253,
+                "tolerance": 0.0016050013564527035,
+                "passed": true
+              }
+            }
+          },
+          {
+            "flat_coordinate": 703,
+            "checks": {
+              "raw_margin": {
+                "autograd": 0.01922731287777424,
+                "central_difference": 0.01919269561767578,
+                "absolute_error": 3.4617260098457336e-05,
+                "tolerance": 0.0015768193863332273,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": 0.018857374787330627,
+                "central_difference": 0.018835067749023438,
+                "absolute_error": 2.230703830718994e-05,
+                "tolerance": 0.001565721243619919,
+                "passed": true
+              }
+            }
+          },
+          {
+            "flat_coordinate": 222,
+            "checks": {
+              "raw_margin": {
+                "autograd": -0.017702631652355194,
+                "central_difference": -0.017523765563964844,
+                "absolute_error": 0.00017886608839035034,
+                "tolerance": 0.0015310789495706558,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": -0.01736806519329548,
+                "central_difference": -0.0171661376953125,
+                "absolute_error": 0.00020192749798297882,
+                "tolerance": 0.0015210419557988644,
+                "passed": true
+              }
+            }
+          },
+          {
+            "flat_coordinate": 477,
+            "checks": {
+              "raw_margin": {
+                "autograd": -0.016987008973956108,
+                "central_difference": -0.01704692840576172,
+                "absolute_error": 5.991943180561066e-05,
+                "tolerance": 0.0015114078521728516,
+                "passed": true
+              },
+              "actual_softplus": {
+                "autograd": -0.016670404002070427,
+                "central_difference": -0.016689300537109375,
+                "absolute_error": 1.889653503894806e-05,
+                "tolerance": 0.0015006790161132813,
+                "passed": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "error_type": "RuntimeError",
+  "error": "RuntimeError('Fixed feature finite-difference check failed for gcn: {\"flat_coordinate\": 69, \"objective\": \"raw_margin\", \"autograd\": -0.10971512645483017, \"central_difference\": -0.10526180267333984, \"absolute_error\": 0.004453323781490326, \"tolerance\": 0.004291453793644906, \"passed\": false}')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/tjy/Project/MonTi-course/course/feature_polish/preflight.py\", line 242, in main\n    row[\"gcn_feature_gradient\"] = feature_gradient_check(\"gcn\", graph, ids, affine, x0)\n  File \"/home/tjy/Project/MonTi-course/course/feature_polish/preflight.py\", line 173, in feature_gradient_check\n    raise RuntimeError(\"Fixed feature finite-difference check failed for \" + name + \": \" + json.dumps(dict(flat_coordinate=index, objective=objective, **checks[objective])))\nRuntimeError: Fixed feature finite-difference check failed for gcn: {\"flat_coordinate\": 69, \"objective\": \"raw_margin\", \"autograd\": -0.10971512645483017, \"central_difference\": -0.10526180267333984, \"absolute_error\": 0.004453323781490326, \"tolerance\": 0.004291453793644906, \"passed\": false}\n",
+  "elapsed_seconds": 25.507360153947957,
+  "process_cpu_seconds": 41.595609970999995
+}

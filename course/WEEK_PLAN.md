@@ -1,5 +1,7 @@
 # One-week execution and acceptance plan
 
+Update 2026-11-04, current owner-authorized implementation: the [fixed-graph injected-feature study](feature_polish/README.md) retains its completed CPU teacher and twelve passed synthetic checks. Two real TRAIN preflights are preserved: a zero-forward CPU checkpoint-loading failure and a partial finite-difference failure with2generations/30fresh-GAGA/20GCN forwards/8autograd calls. A bounded fixed-block float64 derivative-check amendment is being prepared; actual float32 PGD, arms/cohorts/budgets/closure rule stay fixed. No VALID refinement or official-victim outcome exists in this study yet. The CPU route and original cumulative phase ceilings are retained. Final TEST and final freeze/tag remain separate.
+
 Update 2026-11-03, latest completed owner-authorized work: the
 [independent relationship-surrogate implementation](dual_surrogate/README.md)
 completed all twelve terminal models and gated official-GAGA development

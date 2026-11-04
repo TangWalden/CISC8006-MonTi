@@ -20,7 +20,10 @@ LOGIT_ATOL = LOGIT_RTOL = 2e-4
 FD_H = 1e-3
 FD_ATOL = 1e-3
 FD_RTOL = .03
-MAX_FORWARDS = {"gaga": 60, "gcn": 44}
+GCN_FD_GRID = (1e-3, 5e-4, 2.5e-4, 1.25e-4, 6.25e-5)
+# Per TRAIN case: two native hard-graph parity calls, three fixed-block float32
+# center calls, one float64 center call and 4*5*2 float64 differences =46.
+MAX_FORWARDS = {"gaga": 60, "gcn": 184}
 
 
 def graph_with_features(graph, original_count, injected_features):
@@ -53,6 +56,10 @@ def main():
     counts = dict(generator_forwards=0, gaga_forward_dispatches=0, gaga_completed_forwards=0,
                   gcn_forward_dispatches=0, gcn_completed_forwards=0, canonical_sequence_updates=0,
                   autograd_calls=0, finite_difference_gaga_forwards=0, finite_difference_gcn_forwards=0,
+                  gcn_native_sample_block_calls=0, gcn_fixed_block_sample_calls=0,
+                  gcn_fixed_float32_center_forwards=0, gcn_float64_center_forwards=0,
+                  gcn_float64_finite_difference_forwards=0, gcn_float64_clones=0,
+                  gcn_fixed_float32_autograd_calls=0, gcn_float64_autograd_calls=0,
                   optimizer_steps=0, official_victim_forwards=0, API_calls=0, TEST_queries=0)
     result = dict(status="failed", official_victim_loaded=False, optimizer_steps=0,
                   counts=counts, cases=[])
@@ -69,7 +76,7 @@ def main():
         from course.dual_surrogate.runtime import load_data, load_original_view, checked_logits, gcn_logits, model_hash
         from course.dual_surrogate.sequence_adapter import updated_sequences
         from course.feature_polish.affine import build_affine, features_from_unit_box
-        from course.feature_polish.refine import make_baseline_engine
+        from course.feature_polish.refine import make_baseline_engine, tensor_sha256
         from course.feature_polish.teacher import load_teacher
 
         def check_deadline():
@@ -107,8 +114,11 @@ def main():
             counts[name + "_forward_dispatches"] += 1
             if finite_difference:
                 counts["finite_difference_" + name + "_forwards"] += 1
-            value = (checked_logits(teacher(sequence), len(targets)) if name == "gaga"
-                     else gcn_logits(gcn, graph, targets, training=False))
+            if name == "gaga":
+                value = checked_logits(teacher(sequence), len(targets))
+            else:
+                counts["gcn_native_sample_block_calls"] += 1
+                value = gcn_logits(gcn, graph, targets, training=False)
             counts[name + "_completed_forwards"] += 1
             return value
 
@@ -184,6 +194,187 @@ def main():
                         zero_width_gradients_exact_zero=True,
                         finite_difference_h=FD_H, coordinates=measurements)
 
+        def fixed_block_gcn_gradient_check(graph, ids, x0, report):
+            """Check one fixed sampled operator without changing float32 PGD.
+
+            The float64 model is a deepcopy of the existing frozen weights, not
+            a new parameter initialization. Each forward gathers a differentiable
+            complete feature stack using the same first-block source NID order.
+            Every declared h is measured; only the finest TWO determine passing.
+            """
+            import copy
+            report.update(status="incomplete", methodology="fixed sampled blocks; float64 functional finite differences",
+                historical_failure="Attempt2 group238 float32/resampled h=.001 failure remains in its original receipt; not rerun or cleared.",
+                actual_refinement_changed=False, finite_difference_grid=list(GCN_FD_GRID),
+                acceptance="All-coordinate float32/float64 gradients meet original tolerances; finest two h pass both objectives and preserve both LeakyReLU sign patterns versus center.",
+                finite_difference_atol=FD_ATOL, finite_difference_rtol=FD_RTOL,
+                coordinates=[], float32_center_repeats=[])
+            counts["gcn_fixed_block_sample_calls"] += 1
+            sampler = dgl.dataloading.MultiLayerFullNeighborSampler(gcn.num_layers)
+            _, ordered_targets, sampled = sampler.sample_blocks(graph, ids.to(graph.device))
+            if not torch.equal(ordered_targets, ids.to(ordered_targets.device)):
+                raise RuntimeError("Fixed-block GCN changed target ordering.")
+            blocks = [block.to(graph.device) for block in sampled]
+            if len(blocks) != 2:
+                raise RuntimeError("The frozen GCN must retain its two sampled layers.")
+            if not torch.equal(blocks[0].dstdata[dgl.NID], blocks[1].srcdata[dgl.NID]):
+                raise RuntimeError("Frozen GCN block boundary NID order differs.")
+
+            def block_identity(block):
+                if dgl.EID not in block.edata:
+                    raise RuntimeError("Fixed sampled GCN blocks lack their original EID order.")
+                source, destination = block.edges(order="eid")
+                return dict(source_nid_sha256=tensor_sha256(block.srcdata[dgl.NID]),
+                    destination_nid_sha256=tensor_sha256(block.dstdata[dgl.NID]),
+                    original_eid_sha256=tensor_sha256(block.edata[dgl.EID]),
+                    local_arc_order_sha256=tensor_sha256(torch.stack((source, destination))),
+                    source_nodes=block.num_src_nodes(), destination_nodes=block.num_dst_nodes(), arcs=block.num_edges())
+
+            identities = [block_identity(block) for block in blocks]
+            report["frozen_sampled_block_identity"] = identities
+            source_ids = blocks[0].srcdata[dgl.NID].long()
+            original32 = graph.ndata["x"][:original_count].detach()
+            original64 = original32.to(torch.float64)
+            double_gcn = copy.deepcopy(gcn).to(dtype=torch.float64).eval()
+            counts["gcn_float64_clones"] += 1
+            if (any(parameter.requires_grad or parameter.grad is not None for parameter in double_gcn.parameters())
+                    or list(double_gcn.state_dict()) != list(gcn.state_dict())
+                    or any(not torch.equal(value, double_gcn.state_dict()[name].to(value.dtype))
+                           for name, value in gcn.state_dict().items())):
+                raise RuntimeError("Float64 functional GCN clone changed its frozen parameter values.")
+            report["float64_clone_state_sha256"] = model_hash(double_gcn)
+            report["float64_clone_scope"] = "Same frozen float32 parameter values cast to float64; derivative diagnostic only."
+
+            def fixed_forward(features, precision, finite_difference=False):
+                check_deadline()
+                if counts["gcn_forward_dispatches"] >= MAX_FORWARDS["gcn"]:
+                    raise RuntimeError("Preflight GCN forward cap reached.")
+                counts["gcn_forward_dispatches"] += 1
+                if precision == "float32":
+                    counts["gcn_fixed_float32_center_forwards"] += 1
+                    classifier, originals = gcn, original32
+                else:
+                    classifier, originals = double_gcn, original64
+                    key = "gcn_float64_finite_difference_forwards" if finite_difference else "gcn_float64_center_forwards"
+                    counts[key] += 1
+                    if finite_difference:
+                        counts["finite_difference_gcn_forwards"] += 1
+                full_features = torch.cat((originals, features), dim=0)
+                local_blocks = [block.local_var() for block in blocks]
+                local_blocks[0].srcdata["x"] = full_features[source_ids]
+                signs = []
+                hook = None
+                if precision == "float64":
+                    def capture_activation(module, values):
+                        signs.append((values[0].detach() > 0).clone())
+                    hook = double_gcn.activation.register_forward_pre_hook(capture_activation)
+                try:
+                    logits = checked_logits(classifier(local_blocks, edge_weight=False), len(ids))
+                finally:
+                    if hook is not None:
+                        hook.remove()
+                counts["gcn_completed_forwards"] += 1
+                if precision == "float64" and len(signs) != 2:
+                    raise RuntimeError("Float64 GCN must capture both LeakyReLU preactivation branches.")
+                return logits, signs
+
+            u32 = torch.full_like(x0, .5, requires_grad=True)
+            value32, _ = fixed_forward(features_from_unit_box(u32, minimum, maximum), "float32")
+            loss32 = loss_from_logits(value32)
+            margin32 = (value32[:, 1]-value32[:, 0]).mean()
+            counts["autograd_calls"] += 1;counts["gcn_fixed_float32_autograd_calls"] += 1
+            gradient_loss32 = torch.autograd.grad(loss32, u32, retain_graph=True)[0]
+            counts["autograd_calls"] += 1;counts["gcn_fixed_float32_autograd_calls"] += 1
+            gradient_margin32 = torch.autograd.grad(margin32, u32)[0]
+            for repeat in range(2):
+                with torch.no_grad():
+                    repeated, _ = fixed_forward(features_from_unit_box(u32.detach(), minimum, maximum), "float32")
+                report["float32_center_repeats"].append(dict(repeat=repeat+1,
+                    logits=discrepancy(repeated, value32.detach(), LOGIT_ATOL, LOGIT_RTOL),
+                    raw_margin_difference=float(((repeated[:, 1]-repeated[:, 0]).mean()-margin32.detach()).abs()),
+                    softplus_difference=float((loss_from_logits(repeated)-loss32.detach()).abs())))
+
+            lower64, upper64 = minimum.to(torch.float64), maximum.to(torch.float64)
+            u64 = torch.full(x0.shape, .5, dtype=torch.float64, device=x0.device, requires_grad=True)
+            value64, center_signs = fixed_forward(features_from_unit_box(u64, lower64, upper64), "float64")
+            loss64 = loss_from_logits(value64)
+            margin64 = (value64[:, 1]-value64[:, 0]).mean()
+            counts["autograd_calls"] += 1;counts["gcn_float64_autograd_calls"] += 1
+            gradient_loss64 = torch.autograd.grad(loss64, u64, retain_graph=True)[0]
+            counts["autograd_calls"] += 1;counts["gcn_float64_autograd_calls"] += 1
+            gradient_margin64 = torch.autograd.grad(margin64, u64)[0]
+            gradients = {"raw_margin": (gradient_margin32, gradient_margin64),
+                         "actual_softplus": (gradient_loss32, gradient_loss64)}
+            comparisons = {}
+            for name, (actual, reference) in gradients.items():
+                if not bool(torch.isfinite(actual).all() and torch.isfinite(reference).all()):
+                    raise RuntimeError("Nonfinite fixed-block GCN feature gradient.")
+                if bool((actual[:, zero_width] != 0).any() or (reference[:, zero_width] != 0).any()):
+                    raise RuntimeError("A fixed-block zero-width feature has a nonzero gradient.")
+                error = (actual.double()-reference).abs()
+                tolerance = FD_ATOL+FD_RTOL*torch.maximum(actual.double().abs(), reference.abs())
+                comparisons[name] = dict(max_absolute_error=float(error.max()),
+                    max_tolerance_fraction=float((error/tolerance).max()),
+                    failing_coordinates=int((error > tolerance).sum()), passed=bool((error <= tolerance).all()),
+                    float32_gradient_l2=float(actual.detach().double().norm()),
+                    float64_gradient_l2=float(reference.detach().norm()))
+            report.update(float32_vs_float64_gradients=comparisons,
+                float32_center_raw_margin=float(margin32.detach()), float64_center_raw_margin=float(margin64.detach()),
+                float32_center_softplus=float(loss32.detach()), float64_center_softplus=float(loss64.detach()),
+                center_logit_max_absolute_difference=float((value32.detach().double()-value64.detach()).abs().max()),
+                center_leaky_relu_sign_patterns=[dict(layer=layer+1,
+                    sha256=tensor_sha256(signs), elements=signs.numel(), positive_count=int(signs.sum()))
+                    for layer, signs in enumerate(center_signs)],
+                zero_width_gradients_exact_zero=True)
+            flat32 = gradient_margin32.detach().reshape(-1).cpu().tolist()
+            indices = sorted((index for index, value in enumerate(flat32) if value != 0),
+                             key=lambda index: (-abs(flat32[index]), index))[:4]
+            if len(indices) != 4:
+                raise RuntimeError("Fewer than four nonzero actual float32 raw-margin coordinates.")
+            reference_gradients = {name:pair[1].detach().reshape(-1).cpu().tolist() for name, pair in gradients.items()}
+            for index in indices:
+                coordinate = dict(flat_coordinate=index, actual_float32_raw_margin_gradient=flat32[index], grid=[])
+                report["coordinates"].append(coordinate)
+                for h in GCN_FD_GRID:
+                    with torch.no_grad():
+                        plus, minus = u64.detach().clone(), u64.detach().clone()
+                        plus.reshape(-1)[index] += h;minus.reshape(-1)[index] -= h
+                        positive, positive_signs = fixed_forward(features_from_unit_box(plus, lower64, upper64), "float64", True)
+                        negative, negative_signs = fixed_forward(features_from_unit_box(minus, lower64, upper64), "float64", True)
+                        values = dict(raw_margin=(float((positive[:, 1]-positive[:, 0]).mean()),
+                                                  float((negative[:, 1]-negative[:, 0]).mean())),
+                                      actual_softplus=(float(loss_from_logits(positive)), float(loss_from_logits(negative))))
+                    branch_changes = [dict(layer=layer+1,
+                        plus_changed=int((positive_signs[layer] != center_signs[layer]).sum()),
+                        minus_changed=int((negative_signs[layer] != center_signs[layer]).sum()),
+                        center_sha256=tensor_sha256(center_signs[layer]),
+                        plus_sha256=tensor_sha256(positive_signs[layer]),
+                        minus_sha256=tensor_sha256(negative_signs[layer])) for layer in range(2)]
+                    stable = all(row["plus_changed"] == row["minus_changed"] == 0 for row in branch_changes)
+                    tests = {}
+                    for name, (positive_value, negative_value) in values.items():
+                        automatic = reference_gradients[name][index]
+                        numerical = (positive_value-negative_value)/(2*h)
+                        error = abs(numerical-automatic)
+                        tolerance = FD_ATOL+FD_RTOL*max(abs(numerical), abs(automatic))
+                        tests[name] = dict(autograd=automatic, plus_value=positive_value,
+                            minus_value=negative_value, central_difference=numerical,
+                            absolute_error=error, tolerance=tolerance,
+                            passed=math.isfinite(numerical) and error <= tolerance)
+                    coordinate["grid"].append(dict(h=h, objectives=tests,
+                        leaky_relu_branch_changes=branch_changes, stable_branches=stable))
+                coordinate["finest_two_passed"] = all(row["stable_branches"] and
+                    all(test["passed"] for test in row["objectives"].values()) for row in coordinate["grid"][-2:])
+            if [block_identity(block) for block in blocks] != identities:
+                raise RuntimeError("Frozen sampled block identities changed during GCN derivative checks.")
+            report["frozen_block_identity_retained"] = True
+            report["finest_two_all_coordinates_passed"] = all(row["finest_two_passed"] for row in report["coordinates"])
+            if (not all(row["passed"] for row in comparisons.values())
+                    or not report["finest_two_all_coordinates_passed"]
+                    or not all(row["logits"]["passed"] for row in report["float32_center_repeats"])):
+                raise RuntimeError("Fixed-block float64 GCN functional check did not satisfy the unchanged gradient tolerances and finest-two branch-stability rule.")
+            report["status"] = "passed"
+
         for group in GROUPS:
             check_deadline()
             engine.current_group = group
@@ -239,14 +430,19 @@ def main():
             # useful progress if a strict finite-difference contract fails.
             result["cases"].append(row)
             row["gaga_feature_gradient"] = feature_gradient_check("gaga", graph, ids, affine, x0)
-            row["gcn_feature_gradient"] = feature_gradient_check("gcn", graph, ids, affine, x0)
+            row["gcn_feature_gradient"] = {}
+            fixed_block_gcn_gradient_check(graph, ids, x0, row["gcn_feature_gradient"])
             engine.capture = engine.live_capture = None
             del graph, affine, base_sequence, x0, candidates, injected
         if (counts["generator_forwards"] != 4 or counts["gaga_completed_forwards"] != 60
-                or counts["gcn_completed_forwards"] != 44 or counts["autograd_calls"] != 16
+                or counts["gcn_completed_forwards"] != 184 or counts["autograd_calls"] != 24
                 or counts["canonical_sequence_updates"] != 12
                 or counts["finite_difference_gaga_forwards"] != 32
-                or counts["finite_difference_gcn_forwards"] != 32):
+                or counts["finite_difference_gcn_forwards"] != 160
+                or counts["gcn_native_sample_block_calls"] != 8 or counts["gcn_fixed_block_sample_calls"] != 4
+                or counts["gcn_fixed_float32_center_forwards"] != 12 or counts["gcn_float64_center_forwards"] != 4
+                or counts["gcn_float64_finite_difference_forwards"] != 160 or counts["gcn_float64_clones"] != 4
+                or counts["gcn_fixed_float32_autograd_calls"] != 8 or counts["gcn_float64_autograd_calls"] != 8):
             raise RuntimeError("Preflight fixed case/forward/derivative counters differ.")
         for name, model in classifiers.items():
             if model_hash(model) != before[name] or model.training or any(parameter.grad is not None or parameter.requires_grad for parameter in model.parameters()):
@@ -260,7 +456,8 @@ def main():
                       tolerances=dict(sequence_atol=SEQUENCE_ATOL, sequence_rtol=SEQUENCE_RTOL,
                                       logit_atol=LOGIT_ATOL, logit_rtol=LOGIT_RTOL,
                                       finite_difference_h=FD_H, finite_difference_atol=FD_ATOL,
-                                      finite_difference_rtol=FD_RTOL),
+                                      finite_difference_rtol=FD_RTOL,
+                                      gcn_functional_float64_grid=list(GCN_FD_GRID)),
                       gradient_scope="Exact injected-feature path on fixed hard graph; no edge-selection/topology derivative",
                       teacher_manifest_schema=manifest.get("schema"))
     except BaseException as error:

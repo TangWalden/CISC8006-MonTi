@@ -493,13 +493,24 @@
     "finite_difference_h": 0.001,
     "finite_difference_atol": 0.001,
     "finite_difference_rtol": 0.03,
-    "finite_difference_registration": "Interior normalizedu=.5; four max-absolute nonzero raw-margin gradient coordinates. Test margin and actualSoftplus on samecoords whennonzero. Actual PGD objective unchanged if saturated; log zeros.",
+    "finite_difference_registration": "GAGA retains original float32 h=.001 check on interior u=.5 top4nonzero raw-margin coordinates and actual Softplus when nonzero. GCN uses the separately registered fixed-block float64 five-level convergence and activation-branch check on coordinates chosen by actual float32 raw-margin gradient. All four fixed TRAIN cases retained; no victim or optimizer work.",
     "optimizer_steps": 0,
     "official_victim_forwards": 0,
     "expected_generations": 4,
     "max_gaga_forwards": 60,
-    "max_gcn_forwards": 44,
-    "autograd_calls": 16
+    "max_gcn_forwards": 184,
+    "autograd_calls": 24,
+    "gcn_float32_forwards": 20,
+    "gcn_float64_functional_forwards": 164,
+    "gcn_finite_difference_forwards": 160,
+    "gcn_functional_float64_grid": [
+      0.001,
+      0.0005,
+      0.00025,
+      0.000125,
+      6.25e-05
+    ],
+    "gcn_derivative_amendment": "Freeze one sampled block/NID/EID/local-arc order. Same frozen float32 weights copied to float64 only for functional differentiation. Original gradient tolerances apply to actual float32 versus float64 autograd and float64 finite differences. All five h measured; finest two must pass both objectives and preserve both LeakyReLU sign patterns. No first-passing-step choice; actual float32 feature PGD unchanged."
   },
   "evaluation": {
     "only_after_all3_refinement_jobs_complete": true,

@@ -55,10 +55,20 @@ def main():
             raise RuntimeError('A continuation must explicitly retain teacher and all prior accounting.')
         previous=private_output(args.continue_protocol)
         previous_protocol=json.loads(previous.read_text(encoding='utf-8'))
-        allowed={'course/feature_polish/refine.py','course/feature_polish/prepare_protocol.py','course/feature_polish/queue.py'}
+        allowed={'course/feature_polish/refine.py','course/feature_polish/prepare_protocol.py','course/feature_polish/queue.py',
+                 'course/feature_polish/preflight.py',MASTER}
         for name,wanted in previous_protocol['source_files'].items():
             if name not in allowed and sha256(ROOT/name)!=wanted:
-                raise RuntimeError('Scientific settings/source changed during CPU-loader continuation: '+name)
+                raise RuntimeError('Scientific source changed during construction-only continuation: '+name)
+        for key in ('arms','seeds','train_groups','valid_groups','polish_settings','teacher_settings','method','evaluation',
+                    'phase_gpu_hours','phase_total_wall_hours','final_test_allowed','teacher_device','teacher_wall_seconds',
+                    'preflight_wall_seconds','refine_job_wall_seconds','evaluation_wall_seconds','allowed_gpus',
+                    'minimum_free_gpu_mib','cpu_threads'):
+            if previous_protocol[key]!=p[key]:
+                raise RuntimeError('Construction amendment changed scientific/resource settings: '+key)
+        if previous_protocol['preflight']['train_groups']!=p['preflight']['train_groups']:
+            raise RuntimeError('Construction amendment changed TRAIN preflight cases.')
+        retained.extend(previous_protocol.get('retained_inputs',[]))
         teacher=private_output(args.reuse_teacher)
         result=json.loads((teacher/'result.json').read_text(encoding='utf-8'))
         manifest=json.loads((teacher/'teacher_artifacts.json').read_text(encoding='utf-8'))
@@ -81,18 +91,32 @@ def main():
             raise RuntimeError('Prior accounting belongs to another phase stage.')
         failed_preflight=old_stage/'preflight_attempt1/result.json'
         failure=json.loads(failed_preflight.read_text(encoding='utf-8'))
+        counts=failure['counts']
         if (failure['status']!='failed' or failure['official_victim_loaded'] or
-                any(value!=0 for value in failure['counts'].values())):
-            raise RuntimeError('This CPU-loader-only continuation requires the preserved zero-forward failure.')
+                any(counts.get(key,0)!=0 for key in ('optimizer_steps','official_victim_forwards','API_calls','TEST_queries'))):
+            raise RuntimeError('Construction continuation requires a preserved no-update/no-victim TRAIN failure.')
+        nonzero=any(value!=0 for value in counts.values())
+        if nonzero and not (failure['error_type']=='RuntimeError' and
+                'Fixed feature finite-difference check failed for gcn:' in failure['error'] and
+                [row['group'] for row in failure['cases']]==[263,238] and
+                counts['generator_forwards']==2 and counts['gaga_completed_forwards']==30 and
+                counts['gcn_completed_forwards']==20 and counts['autograd_calls']==8):
+            raise RuntimeError('Only the recorded GCN finite-difference construction failure is eligible for this amendment.')
+        if nonzero:
+            for name in ('course/feature_polish/refine.py','course/feature_polish/queue.py'):
+                if sha256(ROOT/name)!=previous_protocol['source_files'][name]:
+                    raise RuntimeError('Derivative-check amendment changed executed method/orchestration: '+name)
         launch=old_stage/'launch_receipt.json';launch_record=json.loads(launch.read_text(encoding='utf-8'))
-        synthetic=old_stage/'queue_attempt1/synthetic_receipt.json'
+        synthetic=(ROOT/previous_protocol['reuse_synthetic_ref']['path'] if 'reuse_synthetic_ref' in previous_protocol
+                   else old_stage/'queue_attempt1/synthetic_receipt.json')
         synthetic_record=json.loads(synthetic.read_text(encoding='utf-8'))
         synthetic_log=synthetic.parent/'synthetic_checks.log'
         if (synthetic_record['status']!='passed' or synthetic_record['exit_code'] or
                 sha256(synthetic_log)!=synthetic_record['stdout_sha256']):
             raise RuntimeError('The retained unchanged affine CPU checks did not pass.')
         for row in prior['jobs']:
-            guardian=progress.parent/(row['name']+'_guardian.json')
+            guardian=(ROOT/row['guardian_path'] if row.get('guardian_path')
+                      else progress.parent/(row['name']+'_guardian.json'))
             if sha256(guardian)!=row['guardian_sha256']:
                 raise RuntimeError('A prior process guardian changed.')
             retained.append(dict(path=guardian.relative_to(ROOT).as_posix(),sha256=sha256(guardian)))
@@ -104,9 +128,10 @@ def main():
             prior_progress_ref=dict(path=progress.relative_to(ROOT).as_posix(),sha256=sha256(progress)),
             reuse_synthetic_ref=dict(path=synthetic.relative_to(ROOT).as_posix(),sha256=sha256(synthetic)),
             reuse_execution_resource={key:previous_protocol[key] for key in ('execution_device','cuda_visible_devices','physical_gpu_uuid','resource_selection')},
-            phase_origin_started_utc=launch_record['started_utc'],
+            phase_origin_started_utc=previous_protocol.get('phase_origin_started_utc',launch_record['started_utc']),
             construction_amendment=dict(previous_source=previous_protocol['source_commit'],previous_protocol_sha256=sha256(previous),
-                reason='CPU-safe original-GCN checkpoint deserialization only; retain completed teacher and unchanged passed affine tests. Failed preflight had zero generations/classifier forwards/autograd/updates/victim calls. Method/settings unchanged.'))
+                reason=('Fixed sampled GCN block order plus isolated float64 finite differences with a fixed five-step convergence grid and unchanged tolerance. Retain both prior failures, completed teacher, unchanged passed synthetic tests and all counters. No VALID refinement, victim calls or optimizer updates before amendment.'
+                        if nonzero else 'CPU-safe original-GCN checkpoint deserialization only; retain completed teacher and unchanged passed affine tests. Failed preflight had zero generations/classifier forwards/autograd/updates/victim calls. Method/settings unchanged.')))
     stage=private_output(args.stage,create=True)
     p.update(status='frozen',source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,universal_newlines=True).strip(),
         source_files=sources,inputs=old['inputs'],retained_inputs=retained,baseline_runs=baselines,

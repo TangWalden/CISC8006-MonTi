@@ -659,7 +659,7 @@
     "independent_saved_phase_audit": "passed405actual-byte hashes/117125checks; agent audit, not human verification"
   },
   "feature_polish_phase": {
-    "status": "CPUteacher completed; isolated CPU checkpoint-loader repair registered after zero-forward preflight failure; continuation in preparation",
+    "status": "Completed CPU teacher retained; second TRAIN-only finite-difference preflight failure preserved; fixed-block float64 diagnostic amendment in preparation",
     "owner_instruction": "Further concrete case-based diagnosis, improvement and execution until a measured development loop closes; no positive effect guaranteed",
     "protocol": "course/FEATURE_POLISH_PROTOCOL_V1.json",
     "package": "course/feature_polish/README.md",
@@ -677,8 +677,16 @@
     "successful_teacher_updates": 494,
     "successful_teacher_forwards": 507,
     "teacher_weights_reused": true,
-    "failed_preflight_forwards": 0,
+    "failed_preflight_forwards": {
+      "original_GCN": 20,
+      "fresh_GAGA": 30
+    },
     "charged_GPU_hours": 0,
-    "build_amendment": "evidence/feature_polish_v1/build_amendment_v1.json"
+    "build_amendment": "evidence/feature_polish_v1/build_amendment_v2.json",
+    "failed_preflight_generations": 2,
+    "failed_preflight_autograd_calls": 8,
+    "selected_execution_device": "cpu",
+    "VALID_refinement_generations": 0,
+    "official_victim_forwards": 0
   }
 }

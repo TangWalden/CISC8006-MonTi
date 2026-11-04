@@ -1,0 +1,39 @@
+{
+  "status": "v2_source_frozen_before_attempt3_preflight_and_VALID_outputs",
+  "created_utc": "2026-11-04T07:31:11.697653+00:00",
+  "auditor": "independent of method implementation authorship; agent not human",
+  "audit_script": {
+    "path": "work/closure_20261104/polish_audit_source_v2.py",
+    "sha256": "bd4a2360aca7a6b25baee6b081b89798a0112e49fad24fd195f280b81f54a265",
+    "bytes": 59078
+  },
+  "immutable_v1_sources": {
+    "polish_audit_source.py": "67cb85b2b39804a06cdc5c8c88da8b65499edc31227fd1db539516226fecacd0",
+    "polish_tensor_audit_source.py": "494bc8170811cd3c5a3c3dde5183ef3d7842a8cafa64c73e7ac4f3e27d0a86db"
+  },
+  "reviewed_new_preflight_source_sha256": "b0d3a7205b6ccb01c019e05e4430a59ac13a20f34c070e1ccf6de78c5972b396",
+  "active_source_and_preparation_sha256": "Required explicit CLI inputs after root supplies committed source/protocol; never inferred from outcomes",
+  "allowed_prior_construction_metadata": {
+    "path": "work/closure_20261104/build_attempt2_metadata.json",
+    "sha256": "5834c6d71ff7e06e25c051bf52ef55f4a04298539ecde762b80551888850a3a4",
+    "scope": "Only prior failed TRAIN preflight/protocol/accounting; no VALID/victim outputs exist in this receipt"
+  },
+  "expected_cumulative_jobs": 8,
+  "preserved_failures": "Original zero-forward CPU checkpoint failure plus second TRAIN FD failure with 2 generations/30GAGA/20GCN/8autograd/6canonical updates; both no optimizer/victim/API/TEST",
+  "new_successful_preflight_counts": {
+    "generator": 4,
+    "GAGA": 60,
+    "GCN_total": 184,
+    "GCN_actual_float32": 20,
+    "GCN_isolated_float64_functional": 164,
+    "autograd": 24,
+    "canonical": 12,
+    "FD_GAGA": 32,
+    "FD_GCN": 160
+  },
+  "acceptance": "Original atol.001/rtol.03 retained; F32/F64 gradient summary passes; both objectives finest two steps of all five-grid coordinates pass with both LeakyReLU sign patterns unchanged",
+  "checks_performed": "AST syntax only; auditor not imported or executed",
+  "new_attempt3_output_reads": 0,
+  "scientific_operations_during_preparation": 0,
+  "execution_authorization": "Wait for root after experiment completion; no new network/model/API/dependency work"
+}

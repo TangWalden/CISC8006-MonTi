@@ -1,0 +1,53 @@
+{
+  "schema": "monti_feature_polish_construction_amendment_v2",
+  "created_utc": "2026-11-04T07:26:20.192722+00:00",
+  "previous_execution_source": "db48fd8f441b0ab8a9d36647b4dc4b4f99c77d02",
+  "previous_preparation_protocol_sha256": "359bef0232c5eed07d741754db8453cf3af175298ff39fef528e92d751359b84",
+  "previous_refinement_protocol_sha256": "8dd7408cefa68b840a56ee6ee6d5fe1e6fa6bf8c58180202680539152061a6a2",
+  "failure": {
+    "receipt": "build_attempt2_preflight_failure.json",
+    "sha256": "ae104e9db4030892af8600aa61841f2cb21946b9552099a79f116d07c1e7a0a3",
+    "group": 238,
+    "gcn_coordinate": 69,
+    "float32_autograd": -0.10971512645483017,
+    "float32_central_difference_h001": -0.10526180267333984,
+    "absolute_error": 0.004453323781490326,
+    "original_tolerance": 0.004291453793644906,
+    "counts": {
+      "generator_forwards": 2,
+      "gaga_forwards": 30,
+      "gcn_forwards": 20,
+      "autograd_calls": 8,
+      "canonical_sequence_updates": 6,
+      "optimizer_steps": 0,
+      "official_victim_forwards": 0,
+      "TEST_queries": 0,
+      "API_calls": 0
+    },
+    "interpretation": "A failed partial TRAIN-only functional preflight, not a passed two-case preflight or a zero-work failure. The single finite-difference observation does not separate summation/order sensitivity, float32 cancellation and activation kinks."
+  },
+  "amendment": "Freeze one sampled GCN block order within each feature-derivative check; use an isolated float64 copy of the same frozen weights and a fixed five-step finite-difference grid. Require original tolerances for actual float32 versus float64 automatic gradients, and require the finest two grid levels to pass and preserve activation branches. No first-passing-step selection or tolerance widening. Existing GAGA checks remain unchanged.",
+  "preserved": [
+    "Completed original full-TRAIN teacher and original initialization",
+    "Passed unchanged twelve synthetic affine tests",
+    "First zero-forward CPU-loader failure",
+    "Second partial finite-difference failure and every counter/guardian",
+    "Original phase start, CPU selection, total wall/GPU ceilings"
+  ],
+  "unchanged": "Five arms, all seeds/cohorts, baseline generator weights, feature-PGD objective/20steps/.02alpha, feature box, guard, physical topology and budgets, evaluation/closure rule. No new VALID refinement or official-victim call preceded the amendment.",
+  "effective_improvement_claimed": false,
+  "human_verification": false,
+  "amended_source_sha256": {
+    "course/feature_polish/preflight.py": "b0d3a7205b6ccb01c019e05e4430a59ac13a20f34c070e1ccf6de78c5972b396",
+    "course/feature_polish/prepare_protocol.py": "ccdbbfe114703805b22ab097eb549ef9d9238f7676ba241cd15201da563f5a28",
+    "course/FEATURE_POLISH_PROTOCOL_V1.json": "b11a5c5880e202544f9fd8fe062e1409417db596a5d62235ca29764bf1c4cb04"
+  },
+  "successful_preflight_expected_counts": {
+    "generations": 4,
+    "GAGA_float32_forwards": 60,
+    "GCN_actual_float32_forwards": 20,
+    "GCN_isolated_float64_functional_forwards": 164,
+    "autograd_calls": 24,
+    "canonical_sequence_updates": 12
+  }
+}
