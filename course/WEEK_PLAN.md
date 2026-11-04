@@ -142,3 +142,7 @@ one-edge budget and benefit over always-on/random gates remain unmeasured.
 | Yifan Fan | Improvement motivation and design, pilot/full-improvement/ablation checks, critical review of agent suggestions, improvement report section, and improvement demonstration. | Check Junyi's MR denominator, candidate flag, seeds, and interval. |
 
 Both members must approve and understand the final text, explain their own responsibilities and at least one module owned by the other member, and truthfully record contribution evidence. Codex-generated work does not automatically count as either person's completed contribution.
+
+## 4 November: owner-authorized source-role control
+
+The owner requested an improvement grounded in concrete failures and actual execution. A narrow legacy-versus-injected-source scoring comparison is being frozen before new calls: original GCN feedback, identical cohorts/budgets/three attack seeds/eight terminal epochs. A bounded companion will join fresh-teacher decisions on96existing attack snapshots to their saved victim decisions. No outcome or improvement is yet claimed. This changes the score representation only, not physical endpoint eligibility; prior negative studies remain intact. Final TEST and submission freeze retain separate checkpoints. See [the protocol](SOURCE_ROLE_FIX_PROTOCOL_V1.json) and [implementation](source_role_fix/README.md).
