@@ -1,5 +1,61 @@
 # AI Usage Record
 
+## Manual continuation: sharpening small positive but criterion failed, 5 November 2026
+
+The fixed beta-2 study actually completed from source
+`43e46e37621f203a51bbdfdb1667f5466e73ad68`, protocol SHA256
+`d40fc7d8c01b1eac1f8afac72e215161897fe8296206bdc194e4821d0a050447`.
+Mean official-GAGA MR is 47.97338173% baseline, 48.30611010% sharpened,
+48.33635814% linear contrast and 47.82214156% shuffled delta. The primary
++0.33272837 pp has seed gains +.45372051 / +.36297641 / +.18148820 pp and nominal
+t95 [-.01160766,.67706440] pp (`n=3`, `df=2`). Eleven successes are gained and
+none lost across 3,306 correlated occurrences (11 wins / 373 ties / zero losses). The
+fixed +1 pp and positive-lower-interval conditions fail. No candidate qualifies;
+linear is slightly higher and no control is promoted. There is no multiplier,
+seed or cohort expansion of this completed study.
+
+Selection code was committed before ID-only extraction and calls. The 128 new
+original-VALID contexts contain 1,102 occurrences/357 unique targets per seed;
+246 target identities overlap the earlier cohort and 111 are new relative to
+it. The contexts are not IID news, untouched validation data or TEST. Original
+target lists remain unchanged. The unchanged legacy source-role/feature-polish
+checkpoint family, candidate policy, RNG and budgets supplied 384 fresh common
+graphs. All 1,536 feature/canonical inputs sealed before dedicated evaluators
+and any official victim loading. Three preparatory GCN loads made zero forwards;
+three generators loaded. Evaluation spent 1,664 original-GCN and 1,664 GAGA
+forwards. There were zero updates/autograd/API/TEST calls and zero GPU hours. Measured
+CPU/wall/outer seconds were 5,639.965564446/1,380.318315148/1,381.348569339.
+
+Twelve committed synthetic checks passed beforehand (2.470270328 CPU/
+1.608656344 wall seconds). An implementation-author-independent agent audit
+passed 711,082 checks / 1,182 byte-hashed files, with 184.896039025 CPU/
+47.592551682 wall seconds and zero model calls. Producer-author saved-JSON reporting
+passed 472,249 checks, with 0.9375 CPU / 1.594 wall seconds; source SHA256
+`99731c32cfba0c8ad32286077d9d5c13413d64cc5f4a69b17322b2cc6b4f51ae`
+was frozen before current outcome reads. It is not another independent method
+audit, human review or actual student contribution. The
+[result addendum](course/feature_logit_sharpen/README.md) retains these boundaries.
+
+A new saved-geometry-only role derivation was source/scope-frozen before private
+physical-degree decoding, after preliminary published target-incidence values
+were already seen. Its single run passed 4,614 checks / 384 cases, using 0.109375 CPU /
+0.125 wall seconds and zero GPU; no labels, outcomes, tensors or models were accessed.
+Candidate edges represented 86.24% / 92.55% / 58.77% of pooled edge costs per seed;
+their useful context is not disproved and those fractions are not evidence of
+waste or expected gains. The next [candidate-to-target package](course/candidate_target_reallocation)
+is source-prepared and unexecuted. Its column-count priority, shared donors,
+fixed maximal common-feasible counts and role controls still require a separate
+freeze before calls. Random target filling need not underperform the primary;
+the question is role allocation, not balanced-priority superiority. A third
+ID-only 128-context sample uses seed 20261106 outside both earlier lists; new
+counts/effects are unknown. Eleven synthetic tests are prepared but unrun.
+
+The initial delivery snapshot, old scientific records and dated PDF/PPTX remain
+unchanged. Automation is deleted. Full TEST/tag, stable gain, course approval,
+genuine human checks/contributions and rehearsal remain incomplete. Research
+GPU charges remain 5.065219865793663 hours plus 0.02 reserve, with 6.914780134206337
+remaining; separate CPU records do not add GPU hours.
+
 ## Manual continuation: TRAIN prototypes completed negative, 5 November 2026
 
 Following the actual manual `continue` instruction, root completed the four-arm
@@ -54,21 +110,11 @@ These are agent records, not human technical review or actual student work.
 [Complete result addendum](course/train_prototype_mix/README.md) preserves the
 negative result and information boundaries.
 
-Root prepared the next isolated [feature-sharpening package](course/feature_logit_sharpen),
-not yet run: beta-2 unit-coordinate sigmoid sharpening; baseline, sharpened,
-linear-contrast 1.5 and shuffled-delta arms. Shuffle matches pre-clipping unit-
-coordinate delta L2, not terminal post-clipping L2. It uses no prototype means,
-class-conditioned text or deep-model fit. Before any calls, 128 original-VALID
-contexts will be selected by IDs outside the old 128; their occurrence/unique-
-node counts and outcomes are unmeasured. This prospective context comparison
-still follows earlier known failures and is not new IID news or a TEST set.
-It uses the frozen legacy checkpoint family shared with feature refinement /
-source-role baseline, not the earlier alignment-policy models. Planned limits
-are 384 new generator forwards and 1,664 each GCN/GAGA forwards, CPU eight
-threads / 5,400 seconds / zero GPU. Three preparatory GCN loads have zero GCN
-forwards, alongside three generator loads before input sealing; the official
-victim loads only after all cases are sealed. Actual counts remain zero at this
-preparation record. No effect is claimed before execution.
+The subsequently completed feature-sharpening study is recorded above. Its
+shuffle matches only pre-clipping unit-coordinate delta L2, not terminal/raw
+movement. It used no prototype means, class-conditioned text or new deep-model
+fit. Its positive mean failed the frozen criterion; this negative prototype
+phase was not expanded and its controls were not promoted.
 
 The manual continuation does not alter initial delivery snapshot `0c5e227` or
 rebuild dated PDF/PPTX. Automation stays deleted; no TEST/final tag is inferred.

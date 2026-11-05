@@ -1,0 +1,23 @@
+{
+  "evidence/feature_logit_sharpen_v1/all_case_counts.json": "7f12cbc01b4ca1708f78ff50857f3d96849140c04b1bff0da1a20b66bb0ed93a",
+  "evidence/feature_logit_sharpen_v1/audit_input_hashes.json": "c17ccde803ae65367c12e7891a4d6414f8fd458162374657189e1e405c78bcd7",
+  "evidence/feature_logit_sharpen_v1/audit_source_freeze_v1.json": "eb92947a95bd620b5e978f03c5ff363a69407fbfbcc62e46eefb3fb4cff3dfcd",
+  "evidence/feature_logit_sharpen_v1/case_report_source_freeze_v1.json": "b07685dab5132ae49dd5c0dd94236522e38596fb27748a84d68f8856086f8d48",
+  "evidence/feature_logit_sharpen_v1/execution_protocol.json": "d40fc7d8c01b1eac1f8afac72e215161897fe8296206bdc194e4821d0a050447",
+  "evidence/feature_logit_sharpen_v1/execution_trace.json": "ede1cf828baf4c901750af95b2998bc76aa1f0722b46e85960e9bae4d3b132b2",
+  "evidence/feature_logit_sharpen_v1/geometry_sealed.json": "e53a426306c520794a6c2a12f30cd8d46c7e81ac1ac579881e18f3aa606cc552",
+  "evidence/feature_logit_sharpen_v1/headroom.json": "0c27fbda408ef6087b630cb433bf068a7212ec158f6b2c29d7d5e7c9e83bef13",
+  "evidence/feature_logit_sharpen_v1/independent_saved_tensor_audit_v1.json": "9813bb99ba6e88b1853a1c1934cb56dcc71668f34e2626b8c64c9132fd48d0a3",
+  "evidence/feature_logit_sharpen_v1/launch_receipt.json": "fae11ad8882520df3043800fa5be52a56af79d39c368a033f33984afcfc5e59a",
+  "evidence/feature_logit_sharpen_v1/metadata_scope.json": "3db5b8e6a6ec557d70f97076ac5850d42d2a45913316ed44742cba06663aab2a",
+  "evidence/feature_logit_sharpen_v1/outer_receipt.json": "05755319e777138078d780f471549228563a9e69f68e9721ac80957a2c24acd4",
+  "evidence/feature_logit_sharpen_v1/prior_edge_role_composition.json": "d2c79521633172df74f92cce79938d1334b54161fa7e67fe4c65fafc2a993840",
+  "evidence/feature_logit_sharpen_v1/prior_edge_role_receipt.json": "62bed8877cd5e1127cfa74ec3bbacc7547c85c6fb41b2c9db35309660850f2d3",
+  "evidence/feature_logit_sharpen_v1/prior_edge_role_source_scope.json": "b9eb66f3c67c4c1e5b9a7e3ef71bf488687bd35dd05e22bad50384bb8460d0df",
+  "evidence/feature_logit_sharpen_v1/result.json": "307c0fc8df7057f630a16fdee2c8259f354bcd9ebab4f4d2e1dbb470fbc4985c",
+  "evidence/feature_logit_sharpen_v1/saved_case_report_receipt.json": "32b93dc07eb0413b27320cee85c5f40c6df18047f1cd38c879d39c8023bb3549",
+  "evidence/feature_logit_sharpen_v1/summary.json": "0fa9ebf8425881a72492d5dfd8d18e64868c3ee02a76ed56b9eb9ab0a0e49035",
+  "evidence/feature_logit_sharpen_v1/synthetic_receipt.json": "c63dc51dff2b9ae29e3a2d16bb9d4d03e6dbdcbf10af77462397c1fd30c2fa4f",
+  "evidence/feature_logit_sharpen_v1/synthetic_registration.json": "82c416dfbd24687971928c5fc4e66dc8fe6d3df9d1da54fd5c1a8853cc2c56da",
+  "evidence/feature_logit_sharpen_v1/synthetic_test.log": "1eacc0c35ef9013933eb262cb353fbfca4067ce6609775957c069dc526c42216"
+}

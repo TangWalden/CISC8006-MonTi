@@ -1,23 +1,30 @@
 # CISC8006: MonTi Reproduction and Improvements
 
-**Manual continuation, 5 November:** the fixed TRAIN-prototype mixture study
-completed and failed its development criterion. Mean official-GAGA attack MR is
-52.642835% baseline, 47.479377% benign mixture, 47.479377% all-TRAIN mixture and
-47.448824% fraud mixture. The primary change is -5.163459 pp, negative in all
-three seeds; benign and all-TRAIN have identical GAGA predictions for every
-one of the 3,273 paired occurrences. No candidate qualifies and the full-TEST
-gate stays closed. [Complete results and information boundaries](course/train_prototype_mix/README.md).
-The stable-effect objective remains unachieved.
+**Manual continuation, 5 November:** [fixed beta-2 feature sharpening](course/feature_logit_sharpen/README.md)
+completed with a small positive result that **fails the frozen development
+criterion**. Mean official-GAGA attack MR is 47.97338173% baseline,
+48.30611010% sharpened, 48.33635814% linear contrast and 47.82214156% shuffled
+delta. The primary change is +0.33272837 pp; all three seeds are positive, but
+the nominal paired-t95 interval is [-0.01160766, 0.67706440] pp and the fixed
++1 pp threshold is missed. Eleven wrong predictions are gained and none lost
+over 3,306 correlated occurrences (11 group-seed wins, 373 ties, zero losses).
+No candidate qualifies; the linear control is not promoted. The stable-effect
+objective and full-TEST qualification remain unachieved.
 
-The next [prepared feature-sharpening package](course/feature_logit_sharpen)
-is **unexecuted**. It uses fixed beta-2 unit-coordinate sigmoid sharpening with
-baseline, linear-contrast and shuffled-delta controls on 128 original-VALID
-contexts to be chosen by IDs outside the previous 128 before calls. This is a new
-prospective context comparison, not an extension of the failed mixture ratio;
-new-context occurrence/unique-target counts and outcomes are not yet measured.
-Its frozen legacy checkpoint
-family is the feature-refinement/source-role baseline family, distinct from the
-earlier alignment-policy models. No new effect or method selection is claimed.
+The 128 new original-VALID contexts contain 1,102 occurrences and 357 unique
+targets per seed; 246 target identities overlap the earlier cohort and 111 are
+new to it. These are overlapping development contexts, not IID news or an
+untouched validation set. The earlier [fixed-alpha TRAIN-prototype result](course/train_prototype_mix/README.md)
+remains negative and unchanged. Absolute scores from the two cohorts are not
+paired comparisons.
+
+The next [candidate-to-target reallocation package](course/candidate_target_reallocation)
+is **source-prepared and unexecuted**. Its fixed donor/count controls and
+separate protocol must be finalized before new calls. A third ID-only sample
+uses seed 20261106 and excludes both earlier 128-context lists; occurrence and
+unique-target counts remain unknown. No beta, seed or cohort expansion of the
+completed sharpening phase, favorable-control promotion or priority-superiority
+claim follows from these results.
 The original delivery snapshot `0c5e227` and dated artifacts remain historical;
 automation remains deleted, with no new scheduled task, TEST or final tag.
 
@@ -39,6 +46,7 @@ and [offline demo preparation](docs/DEMO_SCRIPT.md), plus the repository's code,
 protocols, English logs and completed experiment addenda. The dated PDF/PPTX
 remain **outdated drafts**: they were not rebuilt to include the latest studies.
 Use the [balancing addendum](course/target_degree_balance/README.md),
+[sharpening addendum](course/feature_logit_sharpen/README.md),
 [feature-refinement results](course/feature_polish/README.md) and
 [canonical diagnostic](course/feature_parity_check/README.md) for current results.
 

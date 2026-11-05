@@ -1,0 +1,17 @@
+test_all_flat_and_all_fixed_point_identity (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_baseline_bytes_immutability_and_no_aliases (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_closed_known_answer_and_fixed_arm_order (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_invalid_bounds_and_flat_value_rejected (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_invalid_feature_shapes_dtypes_and_nonfinite_values (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_invalid_identity_keys_rejected (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_monotone_and_preserves_half_sides_endpoints (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_nonunit_raw_box_and_exact_flat_signed_zero (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_private_shuffle_deterministic_and_no_global_rng_change (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_raw_dose_is_independently_reported_for_anisotropic_box (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_roundoff_baseline_preserved_other_arms_inside_box (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+test_shuffle_matches_preclip_unit_norm_not_terminal_norm (course.feature_logit_sharpen.synthetic_tests.SharpenTests) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.074s
+
+OK

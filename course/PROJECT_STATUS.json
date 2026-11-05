@@ -56,7 +56,7 @@
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
     "full_evaluation": "Pending concrete complete final-test protocol confirmation; completed new-method validation pilots do not authorize it.",
-    "active_direction": "Manual-continuation fixed TRAIN-prototype study completed negative; no candidate and full TEST gate closed. Next isolated beta2 unit-coordinate sharpening package is prepared but unexecuted on prospective ID-only new VALID contexts; stable effect unachieved. Automation remains deleted; original delivery snapshot unchanged.",
+    "active_direction": "Fixed beta2 feature sharpening completed with a small positive mean but failed its frozen development criterion; no candidate/full TEST qualification. Separate candidate-to-target source and11 synthetic tests are prepared but unexecuted; freeze controls/protocol and a third ID-only context sample before calls. Automation remains deleted, stable effect unachieved and initial delivery snapshot unchanged.",
     "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
@@ -67,11 +67,11 @@
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Publish the completed fixed-alpha prototype negative result, identical benign/all-TRAIN GAGA predictions, exact TRAIN-reference audit, information-boundary caveats and actual costs without control promotion",
-    "Freeze the isolated feature_logit_sharpen design/source/inputs and prospective128 original-VALID contexts selected by IDs outside the previous128 before calls; do not report unknown occurrence/unique-target counts or effects",
-    "Run only its bounded four-arm baseline/beta2logit/linearcontrast1.5/shuffled-delta comparison with the frozen legacy source-role/feature-refinement checkpoint family; shuffled control matches pre-clip unit-L2 only, not terminal displacement",
-    "Retain the failed prototypev1 ratio and all prior results; no mean/class-conditioned text/deep-model fit, automated outcome-driven expansion or control-as-candidate replacement",
-    "Keep automation deleted and initial delivery snapshot0c5e227 unchanged; full TEST/final tag, stable gain and genuine human/course/contribution/rehearsal requirements remain incomplete"
+    "Retain the completed beta2 result: +0.33272837265577476pp, nominal t95[-0.011607655801276762,0.6770644011128263], below the fixed+1pp threshold; no candidate, beta search, added seeds or control promotion",
+    "Finalize the separate candidate-to-target control/registration freeze before metadata or model calls; primary role-allocation criterion is >=1pp/all3positive/nominal t95lower>0/mean above candidate_rewire, while random_target_fill need not be worse",
+    "Use third128 original-VALID contexts sampled by ID with seed20261106 outside both previous128 lists; new occurrence/unique-target counts and effects are unknown until permitted metadata extraction; original lists are unchanged",
+    "Run no new calls under a historical protocol; the11 new synthetic tests and bounded experiment remain unexecuted pending their own source/inputs freeze",
+    "Preserve all prior negative/weak results, frozen science, original delivery snapshot0c5e227 and dated PDF/PPTX; keep automation deleted and full TEST/final tag/human/course/contribution/rehearsal gates separate"
   ],
   "results_first_diagnosis": {
     "phase": "saved-validation phase 1; later new inference is separately registered below",
@@ -960,7 +960,7 @@
     "owner_instruction": "Continue",
     "earlier_delivery_snapshot": "0c5e2271a25946b62eadeffe1b784ce5e938d10b",
     "automation_recreated": false,
-    "status": "prototype_v1_completed_negative_next_isolated_sharpening_prepared_unexecuted",
+    "status": "sharpening_completed_small_positive_criterion_failed_next_candidate_reallocation_prepared_unexecuted",
     "package": "course/train_prototype_mix/README.md",
     "new_saved_endpoint_diagnosis": "evidence/train_prototype_mix_v1/prior_endpoint_diagnosis.json",
     "method": "Fixed0.5*x0+0.5*uniqueTRAINclass0rawfeaturemean at unchangedoriginaltopology",
@@ -979,8 +979,11 @@
     "source_commit": "edb703e80c7378aa0f425cf047a03c962774e3bf",
     "protocol_sha256": "0f7f6510552b7c1a51ea001dd000868712f682b74b46cb0e3054c72c4ae62c27",
     "completion_utc": "2026-11-05T07:52:49.117615+00:00",
-    "next_package": "course/feature_logit_sharpen",
-    "v1_ratio_extension_selected": false
+    "next_package": "course/candidate_target_reallocation",
+    "v1_ratio_extension_selected": false,
+    "latest_completed_stage": "feature_logit_sharpen_stage",
+    "latest_completed_package": "course/feature_logit_sharpen/README.md",
+    "historical_fields_scope": "Existing prototype source/method/counters remain its completed phase record; latest sharpening is recorded separately."
   },
   "train_prototype_mix_stage": {
     "status": "completed_negative_criterion_failed",
@@ -1118,8 +1121,8 @@
     "dated_artifacts_rebuilt": false
   },
   "feature_logit_sharpen_stage": {
-    "status": "prepared_unexecuted",
-    "package": "course/feature_logit_sharpen",
+    "status": "completed_small_positive_frozen_criterion_failed_no_candidate",
+    "package": "course/feature_logit_sharpen/README.md",
     "new_isolated_hypothesis": true,
     "prototype_v1_ratio_extension": false,
     "beta": 2,
@@ -1133,9 +1136,14 @@
     "shuffled_control_matching": "Pre-clipping unit-coordinate delta L2; no terminal post-clipping L2 equality claim",
     "reference_means_or_class_conditioned_text_or_new_deep_fit": false,
     "context_selection": "128 original-VALID group contexts sampled by ID only outside the old128 before model calls; prospective relative to this experiment, not IID news or final TEST",
-    "new_context_target_occurrences": null,
-    "new_context_unique_targets": null,
-    "new_context_effects": null,
+    "new_context_target_occurrences": 1102,
+    "new_context_unique_targets": 357,
+    "new_context_effects": {
+      "baseline": 47.97338173018753,
+      "logit_sharp": 48.30611010284331,
+      "linear_contrast": 48.33635813672112,
+      "shuffled_delta": 47.82214156079855
+    },
     "checkpoint_family": "Frozen legacy source-role baseline / feature-refinement family, not alignment-policy18 models",
     "planned_generator_forwards": 384,
     "planned_classifier_forwards_each": 1664,
@@ -1146,9 +1154,251 @@
     "CPU_threads": 8,
     "inner_limit_seconds": 5400,
     "planned_GPU_hours": 0,
-    "model_calls_started": false,
+    "model_calls_started": true,
     "effective_improvement_claimed": false,
     "final_TEST_allowed": false,
+    "automation_recreated": false,
+    "source_commit": "43e46e37621f203a51bbdfdb1667f5466e73ad68",
+    "protocol_sha256": "d40fc7d8c01b1eac1f8afac72e215161897fe8296206bdc194e4821d0a050447",
+    "completion_utc": "2026-11-05T09:16:09.233381+00:00",
+    "new_context_overlap_unique_targets": 246,
+    "new_unique_targets_relative_to_prior_cohort": 111,
+    "cohort_scope": "128 ID-selected new original-VALID contexts,1102 occurrences/357 unique targets perseed;246 overlap old target identities and111 are new relative to them. Not IID news, untouched validation or final TEST.",
+    "mean_GAGA_MR_percent": {
+      "baseline": 47.97338173018753,
+      "logit_sharp": 48.30611010284331,
+      "linear_contrast": 48.33635813672112,
+      "shuffled_delta": 47.82214156079855
+    },
+    "primary_difference_pp": 0.33272837265577476,
+    "primary_seed_differences_pp": [
+      0.45372050816696685,
+      0.3629764065335692,
+      0.18148820326678816
+    ],
+    "primary_paired_t95_pp": [
+      -0.011607655801276762,
+      0.6770644011128263
+    ],
+    "primary_paired_counts": {
+      "occurrences": 3306,
+      "gained_wrong": 11,
+      "lost_wrong": 0,
+      "new_success_gained": 11,
+      "baseline_new_success_lost": 0,
+      "additional_recovery": 0,
+      "previous_recovery_lost": 0,
+      "group_wins": 11,
+      "group_ties": 373,
+      "group_losses": 0
+    },
+    "primary_development_criterion": {
+      "mean_delta_pp": 0.33272837265577476,
+      "all_three_seed_deltas_positive": true,
+      "paired_t95_lower_pp": -0.011607655801276762,
+      "mean_advantage_over_shuffled_delta_pp": 0.4839685420447661,
+      "criterion_met": false,
+      "linear_comparator_need_not_be_worse": true,
+      "controls_not_candidates": true,
+      "final_TEST_allowed": false
+    },
+    "criterion_met": false,
+    "candidate_selected": false,
+    "controls_promoted": false,
+    "actual_counters": {
+      "baseline_engine_load_dispatches": 3,
+      "baseline_engines_loaded": 3,
+      "dataset_loads": 3,
+      "proposal_gcn_models_loaded": 3,
+      "generator_models_loaded": 3,
+      "generator_forward_dispatches": 384,
+      "generator_completed_forwards": 384,
+      "baseline_generations": 384,
+      "proposal_gcn_forward_attempts": 0,
+      "scheduler_restoration_ticks_reported": 24,
+      "feature_cases_prepared": 384,
+      "geometry_feature_graph_variants": 1536,
+      "canonical_sequence_updates": 1536,
+      "fixed_token_invariant_checks": 1536,
+      "prepared_artifact_tensor_loads": 384,
+      "evaluation_base_graph_reconstructions": 384,
+      "evaluation_feature_graph_variants": 1536,
+      "original_gcn_load_dispatches": 1,
+      "original_gcn_models_loaded": 1,
+      "official_gaga_load_dispatches": 1,
+      "official_gaga_models_loaded": 1,
+      "original_gcn_forward_dispatches": 1664,
+      "original_gcn_completed_forwards": 1664,
+      "official_gaga_forward_dispatches": 1664,
+      "official_gaga_completed_forwards": 1664,
+      "original_gcn_clean_forwards": 128,
+      "official_gaga_clean_forwards": 128,
+      "original_gcn_attacked_forwards": 1536,
+      "official_gaga_attacked_forwards": 1536,
+      "generator_optimizer_steps": 0,
+      "fresh_teacher_model_constructions": 0,
+      "fresh_teacher_forwards": 0,
+      "autograd_calls": 0,
+      "API_calls": 0,
+      "TEST_queries": 0
+    },
+    "process_CPU_seconds": 5639.965564446,
+    "wall_seconds": 1380.3183151480043,
+    "outer_seconds": 1381.3485693390248,
+    "GPU_hours": 0,
+    "synthetic_checks": {
+      "tests": 12,
+      "status": "passed before real execution",
+      "process_CPU_seconds": 2.470270328,
+      "wall_seconds": 1.6086563440039754
+    },
+    "independent_method_audit": {
+      "checks": 711082,
+      "byte_hashed_files": 1182,
+      "process_CPU_seconds": 184.896039025,
+      "wall_seconds": 47.59255168202799,
+      "human_verification": false,
+      "independent_of_method_implementation_authorship": true,
+      "model_calls": 0
+    },
+    "producer_author_reporting": {
+      "checks": 472249,
+      "source_sha256": "99731c32cfba0c8ad32286077d9d5c13413d64cc5f4a69b17322b2cc6b4f51ae",
+      "process_CPU_seconds": 0.9375,
+      "wall_seconds": 1.5940000000409782,
+      "independent_method_audit": false,
+      "model_calls": 0,
+      "source_frozen_before_current_outcome_reads": true
+    },
+    "execution_trace": "evidence/feature_logit_sharpen_v1/execution_trace.json",
+    "stable_effect_objective_achieved": false,
+    "dated_artifacts_rebuilt": false,
+    "human_verification": false,
+    "completed_phase_closed": "No multiplier, seed, cohort or ratio expansion; linear may be higher without becoming a candidate; original criterion unchanged"
+  },
+  "prior_edge_role_composition_stage": {
+    "status": "completed_saved_geometry_only",
+    "cases": 384,
+    "checks": 4614,
+    "source_sha256": "916959e7a0f14c2fdccaeacfcbc97ed0effa755a18356fb24a7fd12eddb30e15",
+    "evidence": "evidence/feature_logit_sharpen_v1/prior_edge_role_composition.json",
+    "process_CPU_seconds": 0.109375,
+    "wall_seconds": 0.125,
+    "GPU_hours": 0,
+    "labels_accessed": 0,
+    "outcomes_accessed": 0,
+    "tensor_loads": 0,
+    "model_calls": 0,
+    "seed_role_totals": [
+      {
+        "seed": 3,
+        "cases": 128,
+        "summed_injected_node_instances": 7776,
+        "total_nonself_undirected_edges": 358491,
+        "edge_roles": {
+          "injected_to_target": 12337,
+          "injected_to_original_candidate": 309175,
+          "injected_to_injected": 36979
+        },
+        "fraction_of_summed_edges": {
+          "injected_to_target": 0.03441369518342162,
+          "injected_to_original_candidate": 0.8624344823161529,
+          "injected_to_injected": 0.1031518225004254
+        },
+        "mean_per_scenario_edge_fraction": {
+          "injected_to_target": 0.20446704033635218,
+          "injected_to_original_candidate": 0.7319426228074608,
+          "injected_to_injected": 0.06359033685618702
+        },
+        "cases_with_candidate_donors": 112,
+        "cases_with_intra_donors": 94,
+        "summed_candidate_move_upper_bounds": 72457,
+        "summed_intra_move_upper_bounds": 25228
+      },
+      {
+        "seed": 4,
+        "cases": 128,
+        "summed_injected_node_instances": 7776,
+        "total_nonself_undirected_edges": 358491,
+        "edge_roles": {
+          "injected_to_target": 20507,
+          "injected_to_original_candidate": 331772,
+          "injected_to_injected": 6212
+        },
+        "fraction_of_summed_edges": {
+          "injected_to_target": 0.05720366759556028,
+          "injected_to_original_candidate": 0.9254681428543534,
+          "injected_to_injected": 0.017328189550086335
+        },
+        "mean_per_scenario_edge_fraction": {
+          "injected_to_target": 0.2586082439512017,
+          "injected_to_original_candidate": 0.7134515860563783,
+          "injected_to_injected": 0.027940169992420057
+        },
+        "cases_with_candidate_donors": 109,
+        "cases_with_intra_donors": 107,
+        "summed_candidate_move_upper_bounds": 64196,
+        "summed_intra_move_upper_bounds": 6127
+      },
+      {
+        "seed": 5,
+        "cases": 128,
+        "summed_injected_node_instances": 7776,
+        "total_nonself_undirected_edges": 358491,
+        "edge_roles": {
+          "injected_to_target": 29348,
+          "injected_to_original_candidate": 210674,
+          "injected_to_injected": 118469
+        },
+        "fraction_of_summed_edges": {
+          "injected_to_target": 0.08186537458402024,
+          "injected_to_original_candidate": 0.5876688675587393,
+          "injected_to_injected": 0.33046575785724047
+        },
+        "mean_per_scenario_edge_fraction": {
+          "injected_to_target": 0.16935228366816438,
+          "injected_to_original_candidate": 0.6551295830408006,
+          "injected_to_injected": 0.175518133291035
+        },
+        "cases_with_candidate_donors": 123,
+        "cases_with_intra_donors": 101,
+        "summed_candidate_move_upper_bounds": 54374,
+        "summed_intra_move_upper_bounds": 47925
+      }
+    ],
+    "interpretation": "Pooled candidate fractions86.24/92.55/58.77percent do not establish wasted edges, exact feasible moves or efficacy. Preliminary public target-incidence values were seen before private physical-degree derivation source freeze."
+  },
+  "candidate_target_reallocation_stage": {
+    "status": "source_prepared_unexecuted",
+    "package": "course/candidate_target_reallocation",
+    "conditions": [
+      "baseline",
+      "balanced_target_fill",
+      "random_target_fill",
+      "candidate_rewire"
+    ],
+    "policy": "Perrow k=min(original candidate ones,original target zeros,original candidate zeros); exact shared removed donors, old target edges/injected block/row+total edge counts/physical injected degrees retained. Priority is baseline injected-attachment column count once, not full clean target degree.",
+    "primary_question": "Candidate-to-target role allocation; no superiority over random target priority claimed",
+    "draft_development_criterion": ">=1pp mean GAGA gain/all3seeds positive/nominal paired t95lower>0/mean above candidate_rewire; random_target_fill need not be worse; controls never candidates",
+    "new_context_selection": {
+      "rng_seed": 20261106,
+      "groups": 128,
+      "exclude": "Both prior original128 and sharpening128 context lists",
+      "target_occurrences": null,
+      "unique_targets": null,
+      "metadata_extracted": false
+    },
+    "synthetic_test_methods_prepared": 11,
+    "synthetic_tests_executed": 0,
+    "small_legal_geometries_prepared": 288,
+    "new_model_calls": 0,
+    "new_training_updates": 0,
+    "API_calls": 0,
+    "TEST_queries": 0,
+    "GPU_hours": 0,
+    "final_TEST_allowed": false,
+    "effect_established": false,
+    "freeze_complete_before_calls": false,
     "automation_recreated": false
   }
 }

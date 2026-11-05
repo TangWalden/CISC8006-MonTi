@@ -1,0 +1,42 @@
+{
+  "schema": "candidate_target_reallocation_independent_audit_source_freeze_v1",
+  "status": "frozen_before_new_metadata_and_model_calls",
+  "created_utc": "2026-11-05T10:06:58.672747+00:00",
+  "audit_source": "MonTi-public/course/candidate_target_reallocation/audits/saved_tensor_audit_v1.py",
+  "audit_source_sha256": "938196f092aa98b41290cbf8c6466fca7a5cb5445a3abdde2a94d25ffede639e",
+  "reviewed_source_hashes": {
+    "MonTi-public/course/candidate_target_reallocation/core.py": "1f824f842988d84edcdfdfaa9df18f2b83d722c124b8f18fa9a022e5c910bce2",
+    "MonTi-public/course/candidate_target_reallocation/run.py": "1712ff6a1bcac74f6953f04795d1bab8903d2b9c3fa00844a71d1ee7c6f1d301",
+    "MonTi-public/course/candidate_target_reallocation/prepare.py": "a5e079f999bd6a6f586477d5325f9fb3e8eebe2738f1310806cfa3810ac12005",
+    "MonTi-public/course/candidate_target_reallocation/synthetic_tests.py": "258c294c71e98ff6f0930b19cc5c31635e76206821c9098671b06724e9398775",
+    "MonTi-public/course/candidate_target_reallocation/__init__.py": "d674eecb7b4bfc5e337df6b7969724ddd59fd065aa1afd9bbc292580f5b21806",
+    "MonTi-public/course/candidate_target_reallocation/audits/saved_tensor_audit_v1.py": "938196f092aa98b41290cbf8c6466fca7a5cb5445a3abdde2a94d25ffede639e"
+  },
+  "checks": "All6sources AST-parse; all34 execution-counter names/values match runner AST;11synthetic methods counted in source; role/shared-donor/SHA-plan and final candidate-control-only qualification schemas statically reconciled. No producer-module imports in independent audit.",
+  "static_inspection_note": "An initial static stale-token scan overmatched the deliberately retained prior sharpen-protocol schema string. A corrected source-only scan passed; this was not an audit/data/model run.",
+  "method_or_audit_executed": false,
+  "synthetic_tests_executed": false,
+  "new_metadata_reads": 0,
+  "new_tensor_reads": 0,
+  "model_calls": 0,
+  "API_calls": 0,
+  "GPU_hours": 0,
+  "allowed_later_reads": [
+    "Hash-bound original DGL graph raw x only; y discarded unused, no original-label indexing",
+    "Original VALID group-ID array and CSR target membership for ID-only third-cohort replay; no TEST-prediction reads",
+    "Exactly384 fresh prepared tensor artifacts; no old captures or prediction streams decoded",
+    "New saved raw VALID logits, complete geometry and generation/engine/seal receipts",
+    "Opaque source, checkpoint and input byte hashing; classifier weights never deserialized"
+  ],
+  "independent_reimplementation": [
+    "Per-row original C1/T0/C0, maximal common k and shared SHA-selected candidate donors",
+    "ONCE baseline injected-attachment column priorities and SHA ties; random-target and candidate-rewire selections",
+    "All4 binary adjacencies, retained target/injection block, row counts/physical injected degrees, costs and candidate-removal fractions",
+    "SELF token0 byte invariance and measured all7 token-coordinate changes; no independent canonical neural replay",
+    "All raw argmax/transitions, micro/group-macro MR, paired seed contrasts/t95 and frozen qualification"
+  ],
+  "qualification": "balanced_target_fill mean official-GAGA delta>=1pp, all3positive, pairedt95lower>0, meanabovecandidate_rewire. Random target comparator need not be worse; no priority-superiority/control-promotion claim.",
+  "not_human_verification": true,
+  "execution_requires_root_completion_signal": true,
+  "cli": "--root ROOT --protocol PROTOCOL --protocol-sha256 SHA --execution-source COMMIT --stage COMPLETED_STAGE --output FRESH_RUNS_OUTPUT --audit-source-sha256 FROZEN_SHA"
+}

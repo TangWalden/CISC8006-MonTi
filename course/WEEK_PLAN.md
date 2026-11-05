@@ -1,6 +1,39 @@
 # One-week execution and acceptance plan
 
-## Manual continuation after delivery: prototype result and next prepared study
+## Manual continuation: sharpening completed; separate structural study unexecuted
+
+The [fixed beta-2 feature study](feature_logit_sharpen/README.md) completed from
+source `43e46e37621f203a51bbdfdb1667f5466e73ad68`. Mean official-GAGA MR is
+47.97338173% baseline, 48.30611010% sharpened, 48.33635814% linear contrast and
+47.82214156% shuffled delta. Primary +0.33272837 pp is positive in all three
+seeds, but the nominal t95 [-0.01160766, 0.67706440] pp and fixed +1 pp threshold
+fail. Eleven gains / zero losses over 3,306 correlated occurrences yield 11
+group-seed wins / 373 ties / zero losses. No candidate qualifies; controls are
+not promoted, and the stable-effect objective remains unachieved.
+
+ID-only selection froze 128 new original-VALID contexts before model calls:
+1,102 occurrences / 357 unique targets per seed, with 246 identities overlapping
+the earlier cohort and 111 new relative to it. These are not IID or untouched
+validation news. Execution spent 384 generator forwards and 1,664 GCN/GAGA
+forwards each; three preparatory GCN loads made zero forwards, plus three
+generator loads. CPU / wall / outer seconds were 5,639.965564446 /
+1,380.318315148 / 1,381.348569339, with zero GPU, updates, autograd, API or TEST.
+Twelve synthetic checks, a separate 711,082-check / 1,182-file agent audit, and
+472,249 producer-author JSON checks passed; agent review is not human review.
+
+The [candidate-to-target package](candidate_target_reallocation) is source-
+prepared and unexecuted. A saved-only 384-case role derivation passed 4,614 checks
+(0.109375 CPU / 0.125 wall seconds), without labels, outcomes, tensors or model
+calls. Candidate pooled-edge fractions 86.24% / 92.55% / 58.77% support a
+feasibility question, not a claim of waste. Freeze its strict shared donors,
+per-row counts, role controls and protocol before calls. The primary question
+is reallocation to targets; random target filling need not be worse, and
+controls never become candidates. Its third ID-only 128-context sample uses
+seed 20261106 outside both earlier lists; occurrence/unique-target counts are
+still unknown. Eleven synthetic tests are prepared but unrun. Do not tune beta,
+expand sharpening seeds/cohorts or promote a favorable control.
+
+## Earlier manual continuation: completed negative prototype study
 
 The [fixed TRAIN-prototype study](train_prototype_mix/README.md) completed on
 5 November from source `edb703e80c7378aa0f425cf047a03c962774e3bf`.
@@ -22,18 +55,10 @@ used 1,536 canonical updates and 1,664 fresh forwards per classifier; no new
 generator/training/autograd/API/TEST/GPU work. CPU/wall/outer time was
 5,115.328740816 / 1,320.5656187059358 / 1,321.322383858962 seconds.
 
-The next [unit-coordinate sharpening implementation](feature_logit_sharpen) is
-prepared but unexecuted. Freeze its new protocol and ID-only 128-context sample
-outside the earlier 128 original-VALID contexts before calls; new occurrence/
-unique-target counts and metrics are not known. This is distinct from a failed
-prototype-ratio extension. Four conditions are baseline, fixed beta-2 logit
-sharpening, linear contrast 1.5 and shuffled delta (pre-clip unit-L2 match only).
-Use the frozen legacy source-role/feature-refinement checkpoint family and
-retain every context; no means, class-conditioned text or deep-model fitting.
-Expected limits: 384 generator forwards, 1,664 each GCN/GAGA forwards, three
-preparatory GCN loads with zero forwards plus three generator loads, victim
-only after all inputs are sealed; CPU eight threads / 5,400 seconds / zero GPU.
-No effects or new-cohort numbers are claimed before execution.
+The subsequent sharpening study above is complete and separate from this
+failed prototype ratio. Its shuffle matches pre-clip unit-L2 only; neither
+terminal/raw displacement equality nor classifier-confidence calibration is
+claimed. All former negative results and unchanged controls remain retained.
 
 The original delivery snapshot `0c5e227` and dated PDF/PPTX remain historical.
 Automation was deleted and will not be recreated by this manual continuation.

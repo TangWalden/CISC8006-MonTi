@@ -1,0 +1,198 @@
+{
+  "status": "completed_saved_count_derivation",
+  "input_sha256": "8ada8dd4bcfa7bd0a2ffbb29d181d415792ad8cce182abeb4533553a243123cb",
+  "full_cases": 384,
+  "seed_totals": [
+    {
+      "seed": 3,
+      "cases": 128,
+      "summed_injected_node_instances": 7776,
+      "total_nonself_undirected_edges": 358491,
+      "edge_roles": {
+        "injected_to_target": 12337,
+        "injected_to_original_candidate": 309175,
+        "injected_to_injected": 36979
+      },
+      "fraction_of_summed_edges": {
+        "injected_to_target": 0.03441369518342162,
+        "injected_to_original_candidate": 0.8624344823161529,
+        "injected_to_injected": 0.1031518225004254
+      },
+      "mean_per_scenario_edge_fraction": {
+        "injected_to_target": 0.20446704033635218,
+        "injected_to_original_candidate": 0.7319426228074608,
+        "injected_to_injected": 0.06359033685618702
+      },
+      "cases_with_candidate_donors": 112,
+      "cases_with_intra_donors": 94,
+      "summed_candidate_move_upper_bounds": 72457,
+      "summed_intra_move_upper_bounds": 25228
+    },
+    {
+      "seed": 4,
+      "cases": 128,
+      "summed_injected_node_instances": 7776,
+      "total_nonself_undirected_edges": 358491,
+      "edge_roles": {
+        "injected_to_target": 20507,
+        "injected_to_original_candidate": 331772,
+        "injected_to_injected": 6212
+      },
+      "fraction_of_summed_edges": {
+        "injected_to_target": 0.05720366759556028,
+        "injected_to_original_candidate": 0.9254681428543534,
+        "injected_to_injected": 0.017328189550086335
+      },
+      "mean_per_scenario_edge_fraction": {
+        "injected_to_target": 0.2586082439512017,
+        "injected_to_original_candidate": 0.7134515860563783,
+        "injected_to_injected": 0.027940169992420057
+      },
+      "cases_with_candidate_donors": 109,
+      "cases_with_intra_donors": 107,
+      "summed_candidate_move_upper_bounds": 64196,
+      "summed_intra_move_upper_bounds": 6127
+    },
+    {
+      "seed": 5,
+      "cases": 128,
+      "summed_injected_node_instances": 7776,
+      "total_nonself_undirected_edges": 358491,
+      "edge_roles": {
+        "injected_to_target": 29348,
+        "injected_to_original_candidate": 210674,
+        "injected_to_injected": 118469
+      },
+      "fraction_of_summed_edges": {
+        "injected_to_target": 0.08186537458402024,
+        "injected_to_original_candidate": 0.5876688675587393,
+        "injected_to_injected": 0.33046575785724047
+      },
+      "mean_per_scenario_edge_fraction": {
+        "injected_to_target": 0.16935228366816438,
+        "injected_to_original_candidate": 0.6551295830408006,
+        "injected_to_injected": 0.175518133291035
+      },
+      "cases_with_candidate_donors": 123,
+      "cases_with_intra_donors": 101,
+      "summed_candidate_move_upper_bounds": 54374,
+      "summed_intra_move_upper_bounds": 47925
+    }
+  ],
+  "budget_strata": [
+    {
+      "seed": 3,
+      "regime": "one_node_one_edge",
+      "cases": 4,
+      "edges": 4,
+      "edge_roles": {
+        "injected_to_target": 4,
+        "injected_to_original_candidate": 0,
+        "injected_to_injected": 0
+      }
+    },
+    {
+      "seed": 3,
+      "regime": "one_node_multiple_edges",
+      "cases": 15,
+      "edges": 68,
+      "edge_roles": {
+        "injected_to_target": 37,
+        "injected_to_original_candidate": 31,
+        "injected_to_injected": 0
+      }
+    },
+    {
+      "seed": 3,
+      "regime": "multiple_nodes",
+      "cases": 109,
+      "edges": 358419,
+      "edge_roles": {
+        "injected_to_target": 12296,
+        "injected_to_original_candidate": 309144,
+        "injected_to_injected": 36979
+      }
+    },
+    {
+      "seed": 4,
+      "regime": "one_node_one_edge",
+      "cases": 4,
+      "edges": 4,
+      "edge_roles": {
+        "injected_to_target": 4,
+        "injected_to_original_candidate": 0,
+        "injected_to_injected": 0
+      }
+    },
+    {
+      "seed": 4,
+      "regime": "one_node_multiple_edges",
+      "cases": 15,
+      "edges": 68,
+      "edge_roles": {
+        "injected_to_target": 46,
+        "injected_to_original_candidate": 22,
+        "injected_to_injected": 0
+      }
+    },
+    {
+      "seed": 4,
+      "regime": "multiple_nodes",
+      "cases": 109,
+      "edges": 358419,
+      "edge_roles": {
+        "injected_to_target": 20457,
+        "injected_to_original_candidate": 331750,
+        "injected_to_injected": 6212
+      }
+    },
+    {
+      "seed": 5,
+      "regime": "one_node_one_edge",
+      "cases": 4,
+      "edges": 4,
+      "edge_roles": {
+        "injected_to_target": 4,
+        "injected_to_original_candidate": 0,
+        "injected_to_injected": 0
+      }
+    },
+    {
+      "seed": 5,
+      "regime": "one_node_multiple_edges",
+      "cases": 15,
+      "edges": 68,
+      "edge_roles": {
+        "injected_to_target": 18,
+        "injected_to_original_candidate": 50,
+        "injected_to_injected": 0
+      }
+    },
+    {
+      "seed": 5,
+      "regime": "multiple_nodes",
+      "cases": 109,
+      "edges": 358419,
+      "edge_roles": {
+        "injected_to_target": 29326,
+        "injected_to_original_candidate": 210624,
+        "injected_to_injected": 118469
+      }
+    }
+  ],
+  "identities": {
+    "intra": "sum(nonself physical injected degrees)-E",
+    "original": "2E-sum(nonself physical injected degrees)",
+    "candidate": "original-target incidence",
+    "role_sum": "target+candidate+intra=E"
+  },
+  "scope": "Only baseline role-count geometry already retained by the independently audited target-balancing study. All earlier variants have identical role totals.",
+  "limitations": [
+    "These are counts over128 separate scenarios per seed, not one combined graph or independently sampled edges.",
+    "Positive candidate/intra counts establish donor existence, not exact feasible reallocation: per-row candidate incidence, available target pairs and chosen donor endpoints need a later separately frozen adjacency-level feasibility audit.",
+    "The movement bounds are coarse count upper bounds, not feasible plans or efficacy estimates.",
+    "Replacing an injected-to-original-candidate edge by an injected-to-target edge can preserve that injected node degree. Replacing an inter-injected edge by one target edge generally changes physical injected degrees.",
+    "No outcomes, labels, features or model predictions were used. This derivation does not show that either reallocation improves MR, transfer, stealth, defense or course acceptance.",
+    "No new experiment is selected by these counts. Earlier public target-incidence values were seen during the prior-summary check before this private physical-degree derivation was frozen."
+  ]
+}

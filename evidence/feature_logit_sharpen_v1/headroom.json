@@ -1,0 +1,19 @@
+{
+  "provenance": {
+    "source_commit": "43e46e37621f203a51bbdfdb1667f5466e73ad68",
+    "protocol_sha256": "d40fc7d8c01b1eac1f8afac72e215161897fe8296206bdc194e4821d0a050447"
+  },
+  "groups_per_seed": 128,
+  "sealed_cases": 384,
+  "primary": "logit_sharp",
+  "nonidentity_cases_by_seed": {
+    "3": 128,
+    "4": 128,
+    "5": 128
+  },
+  "rule": "Stop before dedicated evaluators if ANY seed has zero nonidentity primary feature proposals; retain all384 generated cases and complete denominators.",
+  "stop_before_evaluation": false,
+  "uses_model_predictions": false,
+  "original_generator_calls_already_spent": 384,
+  "proposal_gcn_models_already_loaded": 3
+}

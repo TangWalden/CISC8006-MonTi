@@ -1,0 +1,43 @@
+{
+  "status": "AST_only_source_and_scope_frozen",
+  "source_path": "work/closure_20261105/saved_edge_role_composition_v1.py",
+  "source_sha256": "916959e7a0f14c2fdccaeacfcbc97ed0effa755a18356fb24a7fd12eddb30e15",
+  "created_utc": "2026-11-05T09:25:45.396178+00:00",
+  "private_geometry_decodes_so_far": 0,
+  "source_execution_count": 0,
+  "expected_input_sha256": "8ada8dd4bcfa7bd0a2ffbb29d181d415792ad8cce182abeb4533553a243123cb",
+  "prior_public_summary_search": "Existing target-incidence counts surfaced while searching published summary/all_case_counts; no intra/original/candidate-role aggregate found. Private physical-degree values have not been decoded.",
+  "allowed_fields": [
+    "seed",
+    "group",
+    "node_budget",
+    "targets",
+    "edge_budget",
+    "geometry.physical_injected_degrees",
+    "geometry.original_row_edge_counts",
+    "geometry.total_target_incidence",
+    "geometry.target_incoming_injected_degrees_before",
+    "geometry.target_incoming_injected_degrees_after",
+    "geometry.row_plan.original_target_count",
+    "variants.actual_injected_nodes",
+    "variants.actual_injected_nonself_undirected_edges",
+    "variants.physical_injected_degrees"
+  ],
+  "forbidden_value_fields": [
+    "labels",
+    "node_ids",
+    "logits",
+    "predictions",
+    "outcomes",
+    "margins",
+    "features"
+  ],
+  "whole_JSON_rows_materialized_but_forbidden_fields_not_accessed": true,
+  "model_queries": 0,
+  "tensor_loads": 0,
+  "dataset_loads": 0,
+  "API_calls": 0,
+  "GPU_hours": 0,
+  "post_hoc_descriptive": true,
+  "new_experiment_selected": false
+}
