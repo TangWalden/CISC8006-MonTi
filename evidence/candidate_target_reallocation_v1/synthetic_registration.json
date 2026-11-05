@@ -1,0 +1,11 @@
+{
+  "source_commit": "c3238ee62272d39f0337828718a3560abe101a00",
+  "source_files": {
+    "course/candidate_target_reallocation/core.py": "1f824f842988d84edcdfdfaa9df18f2b83d722c124b8f18fa9a022e5c910bce2",
+    "course/candidate_target_reallocation/synthetic_tests.py": "258c294c71e98ff6f0930b19cc5c31635e76206821c9098671b06724e9398775"
+  },
+  "registered_utc": "2026-11-05T10:10:42.938105+00:00",
+  "scope": "Synthetic standard-library geometry only; no Torch import, real datasets/captures, classifiers, weights, inference, API or GPU.",
+  "CUDA_VISIBLE_DEVICES": "",
+  "deadline_seconds": 60
+}

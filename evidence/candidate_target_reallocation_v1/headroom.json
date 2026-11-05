@@ -1,0 +1,19 @@
+{
+  "provenance": {
+    "source_commit": "c3238ee62272d39f0337828718a3560abe101a00",
+    "protocol_sha256": "24dfa6cadd2b1c2a90a1b283bf659a5a0234e4d336e10d5142a813fe8ada0d14"
+  },
+  "groups_per_seed": 128,
+  "sealed_cases": 384,
+  "primary": "balanced_target_fill",
+  "nonidentity_cases_by_seed": {
+    "3": 112,
+    "4": 91,
+    "5": 121
+  },
+  "rule": "Stop before dedicated evaluators if ANY seed has zero nonidentity primary topology proposals; retain all384 generated cases and complete denominators.",
+  "stop_before_evaluation": false,
+  "uses_model_predictions": false,
+  "original_generator_calls_already_spent": 384,
+  "proposal_gcn_models_already_loaded": 3
+}

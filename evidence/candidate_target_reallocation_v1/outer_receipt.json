@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "exit_code": 0,
+  "pid": 1197186,
+  "outer_seconds": 4689.3347970809555,
+  "outer_limit_seconds": 5460,
+  "inner_registered_limit_seconds": 5400,
+  "outer_timed_out": false,
+  "GPU_hours": 0,
+  "execution_device": "cpu",
+  "source_commit": "c3238ee62272d39f0337828718a3560abe101a00",
+  "protocol_sha256": "24dfa6cadd2b1c2a90a1b283bf659a5a0234e4d336e10d5142a813fe8ada0d14",
+  "completed_utc": "2026-11-05T11:29:05.061701+00:00",
+  "shared_phase_lock_held_until_completion": true
+}

@@ -1,6 +1,32 @@
 # CISC8006: MonTi Reproduction and Improvements
 
-**Manual continuation, 5 November:** [fixed beta-2 feature sharpening](course/feature_logit_sharpen/README.md)
+**Latest completed result, 5 November:** [candidate-to-target reallocation](course/candidate_target_reallocation/README.md)
+raises mean official-GAGA MR from 46.94881890% to 52.42782152%, a measured
++5.47900262 pp development gain. All three seeds improve (+7.77559055 /
++5.90551181 / +2.75590551 pp), but the nominal paired-t95 interval
+[-0.82294779, 11.78095304] pp fails the frozen positive-lower-bound condition.
+The other fixed conditions pass; no candidate qualifies and the stable-effect
+objective remains unachieved. There are 184 gained and 17 lost wrong predictions,
+net +167 over 3,048 correlated occurrences (112 group-seed wins / 267 ties /
+five losses). Random target filling averages 52.52624672%, candidate rewiring
+46.88320210%; no control is promoted and no superior-priority claim is made.
+
+All 384 cases completed once within the original limits: 384 generator calls,
+1,664 fresh GCN and 1,664 fresh official-GAGA forwards, zero updates/autograd/
+API/TEST/GPU work. The third ID-only cohort has 1,016 occurrences / 373 unique
+targets per seed; 306 overlap the union of prior cohorts and 67 are new relative
+to it. It is not IID or untouched validation. Every arm/seed retains the same
+x0, old target edges, injected-node degrees and physical budgets. Maximal
+reallocation still removes all candidate neighbors from 3,474 injected rows;
+all such cases and negative outcomes are retained.
+
+This registered matrix is closed. Publish and review the evidence with genuine
+human feedback; do not add seeds, change gates or launch new calls to force the
+interval above zero. Full TEST and final tag remain closed at their separate
+gates. Private conditional-TEST and faster-canonical drafts are unselected and
+unexecuted; neither is authorization or completed work.
+
+**Earlier manual result, 5 November:** [fixed beta-2 feature sharpening](course/feature_logit_sharpen/README.md)
 completed with a small positive result that **fails the frozen development
 criterion**. Mean official-GAGA attack MR is 47.97338173% baseline,
 48.30611010% sharpened, 48.33635814% linear contrast and 47.82214156% shuffled
@@ -18,13 +44,9 @@ untouched validation set. The earlier [fixed-alpha TRAIN-prototype result](cours
 remains negative and unchanged. Absolute scores from the two cohorts are not
 paired comparisons.
 
-The next [candidate-to-target reallocation package](course/candidate_target_reallocation)
-is **source-prepared and unexecuted**. Its fixed donor/count controls and
-separate protocol must be finalized before new calls. A third ID-only sample
-uses seed 20261106 and excludes both earlier 128-context lists; occurrence and
-unique-target counts remain unknown. No beta, seed or cohort expansion of the
-completed sharpening phase, favorable-control promotion or priority-superiority
-claim follows from these results.
+The subsequent structural comparison above was separately frozen before its
+metadata and calls. No beta, seed or cohort expansion of sharpening, favorable-
+control promotion or priority-superiority claim follows from either result.
 The original delivery snapshot `0c5e227` and dated artifacts remain historical;
 automation remains deleted, with no new scheduled task, TEST or final tag.
 
@@ -46,6 +68,7 @@ and [offline demo preparation](docs/DEMO_SCRIPT.md), plus the repository's code,
 protocols, English logs and completed experiment addenda. The dated PDF/PPTX
 remain **outdated drafts**: they were not rebuilt to include the latest studies.
 Use the [balancing addendum](course/target_degree_balance/README.md),
+[reallocation addendum](course/candidate_target_reallocation/README.md),
 [sharpening addendum](course/feature_logit_sharpen/README.md),
 [feature-refinement results](course/feature_polish/README.md) and
 [canonical diagnostic](course/feature_parity_check/README.md) for current results.

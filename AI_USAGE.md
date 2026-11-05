@@ -1,5 +1,67 @@
 # AI Usage Record
 
+## Manual continuation: reallocation completed once, observed gain but criterion failed
+
+The original candidate-to-target matrix completed from source
+`c3238ee62272d39f0337828718a3560abe101a00`, protocol SHA256
+`24dfa6cadd2b1c2a90a1b283bf659a5a0234e4d336e10d5142a813fe8ada0d14`.
+Mean GAGA MR is 46.94881890% baseline, 52.42782152% primary, 52.52624672% random
+target fill and 46.88320210% candidate rewiring. The primary gain is +5.47900262 pp,
+with all-three seed gains +7.77559055 / +5.90551181 / +2.75590551 pp. Nominal paired
+t95 [-0.82294779, 11.78095304] pp fails the frozen positive-lower-bound condition;
+the +1 pp / all-three-positive / above-candidate-control conditions pass. No candidate or
+stable-effect qualification follows, no gate is relaxed and no seeds are added.
+Random remains an unpromoted comparator, not evidence of better balanced ranking.
+
+All 384 cases and 3,048 correlated occurrences remain: 184 gained wrong predictions,
+17 lost, net +167; 112 wins / 267 ties / five losses. A post-hoc 51-target example changes
+17 to 27 wrong predictions, while a negative 4-target example changes four wrong to three. These are
+illustrations, not prospective case selection. Third-cohort ID-only selection
+uses 128 contexts outside both earlier lists: 1,016 occurrences / 373 unique targets
+per seed, 306 identities overlapping their union and 67 new relative to it. This
+is not IID or untouched validation news. Each seed's 128 independent scenarios
+sums 8,210 injected nodes / 377,838 actual edges, not one combined graph. Features,
+old target edges and physical injected degrees/budgets are fixed across arms.
+Across all seeds 122,420 edges move from candidates to targets (59,103 to 181,523
+target incidence). All 3,474 rows losing every candidate neighbor are retained;
+180 primary/random topology pairs are identical. No LLM or first-novelty benefit
+is established.
+
+Execution spent 384 generator and 1,664 GCN / 1,664 GAGA forwards; three preparatory
+GCN loads made zero forwards alongside three generator loads. There were zero training
+updates/autograd/API/TEST calls and zero GPU hours. The original run completed
+from 10:10:55 to 11:29:05 UTC on 5 November, with 15,482.323859363 CPU /
+4,687.314927649 wall / 4,689.334797081 outer seconds, within original limits.
+Torch intra-operation threads were configured to eight; no total OS-thread cap was
+enforced. A read-only snapshot saw 30 native/background threads, not proof that
+all 30 were simultaneously computing. Slow progress and uncertain confirmation
+did not result in a stop, retry, code/input amendment or deadline increase.
+
+Eleven synthetic tests / 288 legal geometries passed before calls
+(0.287128046 CPU / 0.307375527 wall seconds). An implementation-author-independent
+agent audit passed 231,878 checks / 1,186 byte-hashed files, using 240.269836838 CPU /
+93.149031946 wall seconds and zero model calls. Producer-author JSON reporting passed
+159,613 checks (0.78125 CPU / 1.187 wall seconds), source SHA256
+`d8f26475b5ea5a20d271a47c27fd71af5cecf98eefb1425fbf9a218c4986ecab`
+frozen before current cohort/model outcomes. This reporting is not an independent
+method audit, human review or actual student contribution. The
+[result addendum](course/candidate_target_reallocation/README.md) retains all limits.
+
+Private fast-canonical helper/seven-test source drafts were prepared as a
+contingency but remained unselected/unexecuted; no profiling run occurred.
+The scientific run had already completed within its registered limits; no
+single cause is assigned to delayed operator confirmation. A private conditional
+full-TEST reference plan is unselected, unapproved and nonexecutable. Formal
+seeds-0/1/2 loading, label-safe proposal and delayed-victim implementation gates
+remain unresolved. Neither private draft authorizes execution or completes TEST.
+
+This registered matrix is closed pending publication and genuine human feedback;
+there are no automatic new seeds/cohorts/model/API/TEST calls to force an interval.
+Old scientific sources, initial delivery snapshot and PDF/PPTX remain unchanged,
+automation remains deleted, and full TEST/tag/course/human/contribution/rehearsal
+requirements remain incomplete. Research charge remains 5.065219865793663 GPUh
+plus 0.02 reserve, with 6.914780134206337 remaining.
+
 ## Manual continuation: sharpening small positive but criterion failed, 5 November 2026
 
 The fixed beta-2 study actually completed from source
@@ -42,13 +104,11 @@ were already seen. Its single run passed 4,614 checks / 384 cases, using 0.10937
 0.125 wall seconds and zero GPU; no labels, outcomes, tensors or models were accessed.
 Candidate edges represented 86.24% / 92.55% / 58.77% of pooled edge costs per seed;
 their useful context is not disproved and those fractions are not evidence of
-waste or expected gains. The next [candidate-to-target package](course/candidate_target_reallocation)
-is source-prepared and unexecuted. Its column-count priority, shared donors,
-fixed maximal common-feasible counts and role controls still require a separate
-freeze before calls. Random target filling need not underperform the primary;
-the question is role allocation, not balanced-priority superiority. A third
-ID-only 128-context sample uses seed 20261106 outside both earlier lists; new
-counts/effects are unknown. Eleven synthetic tests are prepared but unrun.
+waste or expected gains. The subsequent [candidate-to-target comparison](course/candidate_target_reallocation)
+completed as recorded above, after its separate column-count/shared-donor/
+common-feasibility controls and third ID-only cohort were frozen. Random target
+filling need not underperform the primary; the question is role allocation,
+not balanced-priority superiority. No automatic expansion follows either study.
 
 The initial delivery snapshot, old scientific records and dated PDF/PPTX remain
 unchanged. Automation is deleted. Full TEST/tag, stable gain, course approval,

@@ -146,7 +146,7 @@ still need its concrete owner-confirmed full-TEST protocol; it would not establi
 generalization, novelty, course approval or completed human work. Dated PDF/PPTX
 drafts and the initial delivery snapshot remain unchanged.
 
-## Separate next structural question
+## Subsequent structural comparison completed separately
 
 A separately frozen saved-geometry derivation passed 4,614 checks on 384 earlier
 scenarios (0.109375 CPU / 0.125 wall seconds, zero GPU or model/tensor calls).
@@ -154,12 +154,15 @@ Candidate edges account for 86.24% / 92.55% / 58.77% of summed injected-edge
 costs across the three seeds. These pooled counts do not show that candidate
 edges are wasted or that moving them improves MR.
 
-The [candidate-to-target package](../candidate_target_reallocation) is prepared
-but unexecuted. It retains old target edges and injected-node degrees, with
-fixed matched donor/count controls. Its primary question is role allocation,
-not superiority of balanced priority over random target filling. A third
-128-context ID-only sample will exclude both earlier lists, using seed 20261106;
-its occurrence/unique-target counts are unknown. Eleven synthetic tests are
-source-prepared but unrun. Finish that separate protocol/control freeze before
-any calls. This completed feature study, old science, dated PDF/PPTX and initial
-delivery snapshot stay unchanged, and automation stays deleted.
+The [candidate-to-target comparison](../candidate_target_reallocation/README.md)
+subsequently completed once under its own frozen controls/cohort. Mean GAGA MR
+rose 46.94881890% to 52.42782152%, but nominal paired-t95 [-0.82294779, 11.78095304] pp
+failed its frozen positive-lower-bound condition. All three seeds improved;
+there is an observed development gain, but no qualified stable candidate. Its
+third 128-context ID-only cohort has 1,016 occurrences / 373 unique targets perseed,
+with 306 identities overlapping earlier cohorts and 67 new relative to them.
+Random target filling is similar and is not promoted; balanced-priority
+superiority is not established. Eleven synthetic tests passed before calls.
+That study is now closed without automatic seed/cohort/model/API/TEST expansion.
+This completed feature study, old science, dated PDF/PPTX and initial delivery
+snapshot stay unchanged, and automation stays deleted.

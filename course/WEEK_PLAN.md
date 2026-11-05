@@ -1,6 +1,46 @@
 # One-week execution and acceptance plan
 
-## Manual continuation: sharpening completed; separate structural study unexecuted
+## Latest manual continuation: reallocation completed, criterion failed
+
+The [candidate-to-target study](candidate_target_reallocation/README.md) completed
+its original matrix once. Baseline / primary / random-target / candidate-rewire
+mean GAGA MR is 46.94881890 / 52.42782152 / 52.52624672 / 46.88320210%.
+Primary +5.47900262 pp is positive in all three seeds and above the candidate-
+rewiring control, but nominal paired-t95 [-0.82294779, 11.78095304] pp leaves
+the frozen criterion unmet. Only its positive-lower-bound condition fails.
+No gate is lowered, extra seed added or control promoted. Stable-effect
+qualification and full TEST remain unachieved, despite an observed development gain.
+
+All 384 cases / 3,048 correlated occurrences are retained: 184 gained wrong
+predictions, 17 lost, net +167; 112 wins / 267 ties / five losses. The new 128
+ID-only contexts have 1,016 occurrences / 373 unique targets per seed, including
+306 identities shared with either earlier cohort and 67 new relative to their
+union. This is not independent news or untouched validation. All four arms
+retain x0, old target edges, injected-node degrees and actual budgets. Each
+seed's 128 separate scenarios sums 8,210 injected nodes / 377,838 edges; they
+are not one graph. Risks remain: 3,474 rows lose all candidate neighbors, and
+180 primary/random topologies are identical. The comparison does not establish
+better priority, LLM benefit or novelty.
+
+Source `c3238ee62272d39f0337828718a3560abe101a00` ran from 10:10:55 to
+11:29:05 UTC on 5 November, spending384 generator and 1,664 GCN/GAGA forwards
+each, no new training/autograd/API/TEST/GPU work. CPU / wall / outer seconds
+were 15,482.323859363 / 4,687.314927649 / 4,689.334797081, within original limits.
+Torch intra-operation threads were eight; no total OS-thread cap was enforced,
+and a 30-thread snapshot does not prove 30 simultaneously busy threads. No stop,
+retry or in-run source/cap change occurred. Eleven synthetic tests / 288 legal
+geometries passed before calls, followed by the separate 231,878-check / 1,186-
+file audit and 159,613 producer-author reporting checks. These are agents, not humans.
+
+Close this registered study and publish/review human feedback. No automatic
+new seeds, cohorts, models, API or TEST calls are used to force the confidence
+interval. The private conditional-TEST plan remains unselected/unapproved/
+nonexecutable; the formal-loader, label-safe proposal and delayed-victim gates
+are not implemented. The faster-canonical draft and seven test sources remain
+private, unselected and unrun; no profiling diagnostic occurred. Automation
+stays deleted; old science, initial delivery and dated artifacts are unchanged.
+
+## Earlier manual continuation: sharpening completed
 
 The [fixed beta-2 feature study](feature_logit_sharpen/README.md) completed from
 source `43e46e37621f203a51bbdfdb1667f5466e73ad68`. Mean official-GAGA MR is
@@ -21,17 +61,16 @@ generator loads. CPU / wall / outer seconds were 5,639.965564446 /
 Twelve synthetic checks, a separate 711,082-check / 1,182-file agent audit, and
 472,249 producer-author JSON checks passed; agent review is not human review.
 
-The [candidate-to-target package](candidate_target_reallocation) is source-
-prepared and unexecuted. A saved-only 384-case role derivation passed 4,614 checks
+The subsequently completed reallocation comparison is recorded above. Its
+prior saved-only 384-case role derivation passed 4,614 checks
 (0.109375 CPU / 0.125 wall seconds), without labels, outcomes, tensors or model
 calls. Candidate pooled-edge fractions 86.24% / 92.55% / 58.77% support a
 feasibility question, not a claim of waste. Freeze its strict shared donors,
 per-row counts, role controls and protocol before calls. The primary question
-is reallocation to targets; random target filling need not be worse, and
-controls never become candidates. Its third ID-only 128-context sample uses
-seed 20261106 outside both earlier lists; occurrence/unique-target counts are
-still unknown. Eleven synthetic tests are prepared but unrun. Do not tune beta,
-expand sharpening seeds/cohorts or promote a favorable control.
+was reallocation to targets; random target filling need not be worse, and
+controls never become candidates. Its source, third ID-only cohort and tests
+were frozen separately before calls. Do not tune beta, expand sharpening
+seeds/cohorts or promote a favorable control after either result.
 
 ## Earlier manual continuation: completed negative prototype study
 

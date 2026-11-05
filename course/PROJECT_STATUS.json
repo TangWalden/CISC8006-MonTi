@@ -56,7 +56,7 @@
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
     "full_evaluation": "Pending concrete complete final-test protocol confirmation; completed new-method validation pilots do not authorize it.",
-    "active_direction": "Fixed beta2 feature sharpening completed with a small positive mean but failed its frozen development criterion; no candidate/full TEST qualification. Separate candidate-to-target source and11 synthetic tests are prepared but unexecuted; freeze controls/protocol and a third ID-only context sample before calls. Automation remains deleted, stable effect unachieved and initial delivery snapshot unchanged.",
+    "active_direction": "Candidate-to-target reallocation completed its original registered matrix once: observed+5.479002624671918pp GAGA gain/all3seeds positive, but nominal t95lower=-0.8229477934948815 fails the frozen stability criterion. No qualified candidate/full TEST. Study closed pending publication and genuine human feedback; no automatic seeds/cohorts/model/API/TEST calls to force CI. Automation deleted; initial delivery and dated artifacts unchanged.",
     "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
@@ -67,11 +67,11 @@
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Retain the completed beta2 result: +0.33272837265577476pp, nominal t95[-0.011607655801276762,0.6770644011128263], below the fixed+1pp threshold; no candidate, beta search, added seeds or control promotion",
-    "Finalize the separate candidate-to-target control/registration freeze before metadata or model calls; primary role-allocation criterion is >=1pp/all3positive/nominal t95lower>0/mean above candidate_rewire, while random_target_fill need not be worse",
-    "Use third128 original-VALID contexts sampled by ID with seed20261106 outside both previous128 lists; new occurrence/unique-target counts and effects are unknown until permitted metadata extraction; original lists are unchanged",
-    "Run no new calls under a historical protocol; the11 new synthetic tests and bounded experiment remain unexecuted pending their own source/inputs freeze",
-    "Preserve all prior negative/weak results, frozen science, original delivery snapshot0c5e227 and dated PDF/PPTX; keep automation deleted and full TEST/final tag/human/course/contribution/rehearsal gates separate"
+    "Publish the closed full reallocation matrix and its separately audited observed development gain, losses, random/candidate controls, physical budgets, overlap and nominal uncertainty; no stable-effect or candidate qualification claim",
+    "Incorporate actual human feedback; do not relax the positive-CI gate, add seeds/cohorts or promote random_target_fill to force a winner",
+    "Keep final TEST/final tag separate. The private conditional full-TEST reference draft is unselected, unapproved and nonexecutable; formal seeds0/1/2 adapter, label-safe proposal handling and delayed victim loading are not implemented",
+    "Keep private fast-canonical helper and7test sources unselected/unrun; no profiling diagnostic or scientific restart is needed because the original run completed within unchanged limits",
+    "Retain all older scientific bytes, sourcec3238 execution, original delivery snapshot0c5e227 and dated PDF/PPTX; automation remains deleted and human/course/contribution/rehearsal requirements remain incomplete"
   ],
   "results_first_diagnosis": {
     "phase": "saved-validation phase 1; later new inference is separately registered below",
@@ -960,7 +960,7 @@
     "owner_instruction": "Continue",
     "earlier_delivery_snapshot": "0c5e2271a25946b62eadeffe1b784ce5e938d10b",
     "automation_recreated": false,
-    "status": "sharpening_completed_small_positive_criterion_failed_next_candidate_reallocation_prepared_unexecuted",
+    "status": "candidate_reallocation_completed_observed_gain_frozen_criterion_failed_closed_for_human_feedback",
     "package": "course/train_prototype_mix/README.md",
     "new_saved_endpoint_diagnosis": "evidence/train_prototype_mix_v1/prior_endpoint_diagnosis.json",
     "method": "Fixed0.5*x0+0.5*uniqueTRAINclass0rawfeaturemean at unchangedoriginaltopology",
@@ -979,11 +979,13 @@
     "source_commit": "edb703e80c7378aa0f425cf047a03c962774e3bf",
     "protocol_sha256": "0f7f6510552b7c1a51ea001dd000868712f682b74b46cb0e3054c72c4ae62c27",
     "completion_utc": "2026-11-05T07:52:49.117615+00:00",
-    "next_package": "course/candidate_target_reallocation",
+    "next_package": null,
     "v1_ratio_extension_selected": false,
-    "latest_completed_stage": "feature_logit_sharpen_stage",
-    "latest_completed_package": "course/feature_logit_sharpen/README.md",
-    "historical_fields_scope": "Existing prototype source/method/counters remain its completed phase record; latest sharpening is recorded separately."
+    "latest_completed_stage": "candidate_target_reallocation_stage",
+    "latest_completed_package": "course/candidate_target_reallocation/README.md",
+    "historical_fields_scope": "Existing prototype source/method/counters remain that completed phase record; separate later stages contain actual sharpening and reallocation results.",
+    "automatic_new_experiments": false,
+    "stable_effect_objective_achieved": false
   },
   "train_prototype_mix_stage": {
     "status": "completed_negative_criterion_failed",
@@ -1369,8 +1371,8 @@
     "interpretation": "Pooled candidate fractions86.24/92.55/58.77percent do not establish wasted edges, exact feasible moves or efficacy. Preliminary public target-incidence values were seen before private physical-degree derivation source freeze."
   },
   "candidate_target_reallocation_stage": {
-    "status": "source_prepared_unexecuted",
-    "package": "course/candidate_target_reallocation",
+    "status": "completed_promising_all_seed_positive_but_frozen_criterion_failed_no_candidate",
+    "package": "course/candidate_target_reallocation/README.md",
     "conditions": [
       "baseline",
       "balanced_target_fill",
@@ -1379,26 +1381,331 @@
     ],
     "policy": "Perrow k=min(original candidate ones,original target zeros,original candidate zeros); exact shared removed donors, old target edges/injected block/row+total edge counts/physical injected degrees retained. Priority is baseline injected-attachment column count once, not full clean target degree.",
     "primary_question": "Candidate-to-target role allocation; no superiority over random target priority claimed",
-    "draft_development_criterion": ">=1pp mean GAGA gain/all3seeds positive/nominal paired t95lower>0/mean above candidate_rewire; random_target_fill need not be worse; controls never candidates",
     "new_context_selection": {
       "rng_seed": 20261106,
       "groups": 128,
       "exclude": "Both prior original128 and sharpening128 context lists",
-      "target_occurrences": null,
-      "unique_targets": null,
-      "metadata_extracted": false
+      "target_occurrences": 1016,
+      "unique_targets": 373,
+      "overlap_unique_targets_with_either_previous_context_list": 306,
+      "new_unique_targets_relative_to_previous_context_lists": 67,
+      "metadata_extracted": true,
+      "scope": "Third ID-only context draw, not independent unseen news or a confirmatory untouched validation population. All original target lists and memberships are unchanged; overlap is reported."
     },
     "synthetic_test_methods_prepared": 11,
-    "synthetic_tests_executed": 0,
+    "synthetic_tests_executed": 11,
     "small_legal_geometries_prepared": 288,
-    "new_model_calls": 0,
+    "new_model_calls": 3712,
     "new_training_updates": 0,
     "API_calls": 0,
     "TEST_queries": 0,
     "GPU_hours": 0,
     "final_TEST_allowed": false,
-    "effect_established": false,
-    "freeze_complete_before_calls": false,
-    "automation_recreated": false
+    "freeze_complete_before_calls": true,
+    "automation_recreated": false,
+    "source_commit": "c3238ee62272d39f0337828718a3560abe101a00",
+    "protocol_sha256": "24dfa6cadd2b1c2a90a1b283bf659a5a0234e4d336e10d5142a813fe8ada0d14",
+    "completion_utc": "2026-11-05T11:29:05.061701+00:00",
+    "mean_GAGA_MR_percent": {
+      "baseline": 46.948818897637786,
+      "balanced_target_fill": 52.427821522309706,
+      "random_target_fill": 52.5262467191601,
+      "candidate_rewire": 46.88320209973753
+    },
+    "primary_difference_pp": 5.479002624671918,
+    "primary_seed_differences_pp": [
+      7.775590551181104,
+      5.905511811023622,
+      2.7559055118110294
+    ],
+    "primary_paired_t95_pp": [
+      -0.8229477934948815,
+      11.780953042838718
+    ],
+    "primary_paired_counts": {
+      "occurrences": 3048,
+      "gained_wrong": 184,
+      "lost_wrong": 17,
+      "new_success_gained": 184,
+      "baseline_new_success_lost": 17,
+      "additional_recovery": 0,
+      "previous_recovery_lost": 0,
+      "group_wins": 112,
+      "group_ties": 267,
+      "group_losses": 5
+    },
+    "primary_development_criterion": {
+      "primary": "balanced_target_fill",
+      "mean_delta_pp": 5.479002624671918,
+      "all_three_seed_deltas_positive": true,
+      "paired_t95_lower_pp": -0.8229477934948815,
+      "mean_advantage_over_candidate_rewire_pp": 5.54461942257218,
+      "criterion_met": false,
+      "random_target_comparator_need_not_be_worse": true,
+      "target_priority_superiority_required": false,
+      "controls_not_candidates": true,
+      "final_TEST_allowed": false
+    },
+    "observed_development_gain": true,
+    "stable_effect_established": false,
+    "stable_effect_objective_achieved": false,
+    "criterion_met": false,
+    "criterion_failure": "Only the positive nominal paired-t95 lower endpoint fails; mean>=1pp,all3positive and mean above candidate_rewire pass",
+    "candidate_selected": false,
+    "controls_promoted": false,
+    "random_target_comparison": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        -0.2952755905511779
+      ],
+      "mean_difference_pp": -0.09842519685039264,
+      "sample_sd_pp": 0.1704774416898483,
+      "paired_t95_pp": [
+        -0.5219146387548628,
+        0.3250642450540775
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "paired_counts": {
+        "occurrences": 3048,
+        "gained_wrong": 3,
+        "lost_wrong": 6,
+        "new_success_gained": 3,
+        "baseline_new_success_lost": 6,
+        "additional_recovery": 0,
+        "previous_recovery_lost": 0,
+        "group_wins": 2,
+        "group_ties": 377,
+        "group_losses": 5
+      }
+    },
+    "role_allocation_counts": {
+      "baseline_candidate_incidence": 902379,
+      "reallocated_edges": 122420,
+      "baseline_target_incidence": 59103,
+      "primary_target_incidence": 181523,
+      "primary_candidate_incidence_after": 779959,
+      "candidate_control_incidence_after": 902379,
+      "all_injected_rows": 24630,
+      "primary_equals_random_cases": 180,
+      "rows_without_candidate_edges": 2512,
+      "rows_with_positive_k": 20761,
+      "positive_k_rows_filling_all_missing_targets": 17695,
+      "rows_with_candidate_edges": 22118,
+      "rows_losing_all_candidate_neighbors": 3474
+    },
+    "whole_seed_geometry_totals": [
+      {
+        "seed": 3,
+        "arm": "baseline",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 3,
+        "arm": "balanced_target_fill",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 3,
+        "arm": "random_target_fill",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 3,
+        "arm": "candidate_rewire",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 4,
+        "arm": "baseline",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 4,
+        "arm": "balanced_target_fill",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 4,
+        "arm": "random_target_fill",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 4,
+        "arm": "candidate_rewire",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 5,
+        "arm": "baseline",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 5,
+        "arm": "balanced_target_fill",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 5,
+        "arm": "random_target_fill",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      },
+      {
+        "seed": 5,
+        "arm": "candidate_rewire",
+        "groups": 128,
+        "target_occurrences": 1016,
+        "unique_targets": 373,
+        "summed_injected_nodes": 8210,
+        "summed_nonself_undirected_edges": 377838
+      }
+    ],
+    "physical_budget_interpretation": "Perseed128 independent scenarios each sum8210injected nodes/377838actual nonselfundirected edges, not one combined graph; all4arms retain x0,oldtargetedges,injectedphysicaldegrees and budgets",
+    "actual_counters": {
+      "baseline_engine_load_dispatches": 3,
+      "baseline_engines_loaded": 3,
+      "dataset_loads": 3,
+      "proposal_gcn_models_loaded": 3,
+      "generator_models_loaded": 3,
+      "generator_forward_dispatches": 384,
+      "generator_completed_forwards": 384,
+      "baseline_generations": 384,
+      "proposal_gcn_forward_attempts": 0,
+      "scheduler_restoration_ticks_reported": 24,
+      "geometry_cases_prepared": 384,
+      "geometry_graph_reconstructions": 1536,
+      "canonical_sequence_updates": 1536,
+      "self_token_invariant_checks": 1536,
+      "prepared_artifact_tensor_loads": 384,
+      "evaluation_graph_reconstructions": 1536,
+      "original_gcn_load_dispatches": 1,
+      "original_gcn_models_loaded": 1,
+      "official_gaga_load_dispatches": 1,
+      "official_gaga_models_loaded": 1,
+      "original_gcn_forward_dispatches": 1664,
+      "original_gcn_completed_forwards": 1664,
+      "official_gaga_forward_dispatches": 1664,
+      "official_gaga_completed_forwards": 1664,
+      "original_gcn_clean_forwards": 128,
+      "official_gaga_clean_forwards": 128,
+      "original_gcn_attacked_forwards": 1536,
+      "official_gaga_attacked_forwards": 1536,
+      "generator_optimizer_steps": 0,
+      "fresh_teacher_model_constructions": 0,
+      "fresh_teacher_forwards": 0,
+      "autograd_calls": 0,
+      "API_calls": 0,
+      "TEST_queries": 0
+    },
+    "process_CPU_seconds": 15482.323859363,
+    "wall_seconds": 4687.314927648986,
+    "outer_seconds": 4689.3347970809555,
+    "CPU_thread_scope": {
+      "torch_intraop_threads_configured": 8,
+      "OS_wide_thread_limit_enforced": false,
+      "observed_process_threads_in_readonly_operational_snapshot": 30,
+      "interpretation": "Includes native/background threads; not evidence that30threads all computed simultaneously. No claim of a total OS8thread limit."
+    },
+    "original_attempt_completed_once": true,
+    "scientific_stops": 0,
+    "scientific_retries": 0,
+    "in_run_source_or_input_or_cap_changes": false,
+    "small_legal_geometries_passed": 288,
+    "synthetic_checks": {
+      "tests": 11,
+      "status": "passed before metadata/model calls",
+      "process_CPU_seconds": 0.287128046,
+      "wall_seconds": 0.3073755271034315
+    },
+    "independent_method_audit": {
+      "checks": 231878,
+      "byte_hashed_files": 1186,
+      "process_CPU_seconds": 240.269836838,
+      "wall_seconds": 93.14903194596991,
+      "human_verification": false,
+      "independent_of_method_implementation_authorship": true,
+      "model_calls": 0
+    },
+    "producer_author_reporting": {
+      "checks": 159613,
+      "source_sha256": "d8f26475b5ea5a20d271a47c27fd71af5cecf98eefb1425fbf9a218c4986ecab",
+      "process_CPU_seconds": 0.78125,
+      "wall_seconds": 1.187000000034459,
+      "independent_method_audit": false,
+      "model_calls": 0,
+      "source_frozen_before_current_cohort_and_model_outcomes": true
+    },
+    "qualification_design_review": "The source-only draft requirement to beat random_target_fill was corrected before any new cohort metadata or calls. Maximum feasible fill can make the two target choices algebraically identical; frozenv1 tests role allocation and requires beating candidate_rewire. Original amendment remains in protocol.",
+    "execution_trace": "evidence/candidate_target_reallocation_v1/execution_trace.json",
+    "human_verification": false,
+    "dated_artifacts_rebuilt": false,
+    "current_next": "Closed registered study: publish/review genuine human feedback, with no automatic new seeds/cohorts/model/API/TEST calls to force CI",
+    "conditional_full_TEST_plan": "Private source/reference-only conditional draft exists; unselected, unapproved and nonexecutable. Formal-loader, label-safe reconstruction and delayed-victim-load implementation gates remain unresolved. No TEST metadata/model calls were added.",
+    "operational_history": "Intermittent SSH failures and delayed operator confirmation occurred. The original scientific run completed within5400/5460secondlimits without stopping, retrying, changing inputs or altering HEAD. A private fast-canonical contingency/helper and7test sources were prepared but remained unselected and unexecuted; no profiling diagnostic ran."
+  },
+  "private_fast_canonical_contingency": {
+    "status": "private_source_only_unselected_unrun",
+    "helper_prepared": true,
+    "synthetic_test_sources_prepared": 7,
+    "synthetic_tests_executed": 0,
+    "profiling_diagnostic_executed": false,
+    "model_calls": 0,
+    "GPU_hours": 0,
+    "purpose": "Contingency draft only; original scientific run completed within original limits and was neither stopped nor amended"
+  },
+  "conditional_full_TEST_reference_draft": {
+    "status": "private_unselected_unapproved_nonexecutable",
+    "formal_seed_0_1_2_adapter_implemented": false,
+    "label_safe_proposal_handling_implemented": false,
+    "delayed_victim_load_implemented": false,
+    "TEST_metadata_or_model_calls": 0,
+    "selected": false,
+    "approved": false,
+    "automatic_execution": false
   }
 }
