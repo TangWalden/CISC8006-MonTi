@@ -667,3 +667,25 @@ The first full-TRAIN teacher fit actually completed on CPU:38epochs,494updates,5
 ## 2026-11-04 fixed-graph feature refinement construction
 
 Agents implemented the owner-authorized five-arm fixed-topology feature study and a separately trained full-TRAIN GAGA. The teacher and unchanged synthetic checks were reused after recorded CPU-loader and numerical finite-difference preflight failures. A separately reviewed fixed-block float64 diagnostic retained original tolerances and passed all four TRAIN cases; it does not uniquely identify the old numerical cause. The subsequent CPU process timed out before official-victim evaluation. A timer-only whole-process retry preserves its118complete cases,119generations and all extra partial counters/time, while retaining the same scientific settings. Separate saved-record audit sources were frozen before each revised execution; unused earlier versions remain preserved. These are agent implementation/checks, not human review, efficacy, novelty, course acceptance or actual student contributions. No new external LLM API call or final TEST query was made during construction.
+
+
+## Manual continuation, 5 November: one fixed TRAIN-reference contrast
+
+The human asked to continue after the achieved-artifact delivery and deletion
+of automation monti. Root coordinated a new endpoint-level saved diagnosis,
+method design, isolated core/functional checks, execution wrapper and an
+independently authored saved/tensor auditor. No real prototype statistics,
+new classifier calls or efficacy results have yet been extracted for the new
+method. The planned primary is a fixed half-mixture with unique original TRAIN
+class0 raw-feature means; all-TRAIN and class1 means are noncandidate controls.
+This is an exploratory numerical-feature intervention, with no article text,
+LLM/API call, new teacher or generator training, or selected validation gate.
+
+The preceding saved-only endpoint analysis used13retainedJSONinputs and8499
+data checks, with0.28125processCPU/0.407wallseconds until finalization. It wrote
+all outputs, then failed exit1 on an incorrect final stdout formatting argument.
+Original source, output bytes and the failure receipt remain preserved; no
+rerun or silently repaired exit is claimed. Descriptive VALID margins do not
+select or train the new method. Agents are not human verification or actual
+student contributions. Earlier delivery hashes refer to snapshot0c5e227; current
+manual work is separately versioned, and the automation is not recreated.

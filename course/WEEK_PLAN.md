@@ -209,3 +209,16 @@ All six fresh trainings and complete development evaluation finished without ret
 ## Further owner-authorized development: fixed-graph feature refinement
 
 The owner requested this diagnosis/change/execution loop after the failed source-role comparison. The five-condition study has now completed with negative primary and secondary results; [the protocol](FEATURE_POLISH_PROTOCOL_V1.json) and [full implementation/results](feature_polish/README.md) preserve fixed graphs, all groups, failures, counters and costs. The GCN prediction-preservation gate did not preserve official-GAGA attack success. Before another modification, measure the outstanding own-teacher affine/canonical full-cohort question on the saved graphs under a separately frozen diagnostic. No positive result, final TEST, course approval or completed human work is inferred.
+
+
+## Manual continuation after 5 November initial delivery
+
+The owner's later `continue` instruction authorizes the isolated
+[TRAIN-prototype experiment](train_prototype_mix/README.md). Its fixed four
+arms, ratio0.5, complete384case cohort, TRAIN-only reference selection and
+5,400secondCPU limit must be registered before real reference extraction.
+First run the meaningful committed synthetic checks; then seal all references
+and1,536feature/canonical variants before loading classifiers. No result or
+stable gain is claimed yet. Independent reference/tensor/raw-prediction audit
+and honest negative reporting remain required. Automation monti stays deleted;
+full TEST, actual human/course approval and final submission tag remain separate.

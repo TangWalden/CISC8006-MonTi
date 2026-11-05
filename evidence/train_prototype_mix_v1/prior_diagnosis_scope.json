@@ -1,0 +1,85 @@
+{
+  "schema": "saved_target_balance_endpoint_diagnosis_scope_v1",
+  "created_utc": "2026-11-05T07:03:35.439878+00:00",
+  "producer_provenance": {
+    "source_commit": "5d0f5a67c3b98f427f2a458bd47e5f946b404e37",
+    "protocol_sha256": "422ae756a052a2db343937c90269e8339f78b421a74b89058f89848bd35bf009"
+  },
+  "known_aggregate_context": "64gains/19losses and failed primary already known before this source; raw target-level rows not read while preparing it",
+  "input_hash_authority": "Completed public producer output manifest and independent-audit hash; raw JSONL files not read to obtain pins",
+  "inputs": {
+    "geometry": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\geometry.jsonl",
+      "sha256": "8ada8dd4bcfa7bd0a2ffbb29d181d415792ad8cce182abeb4533553a243123cb"
+    },
+    "clean": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\clean_predictions.jsonl",
+      "sha256": "1a399b0ac08ebc51357bcd266f50a01447b71d0e152340238f4680de7e9e394a"
+    },
+    "baseline_seed3": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\baseline_seed3_predictions.jsonl",
+      "sha256": "7c533a9256d03ef8b7ae027f36bac0bbc9ab2edc575129efa473bc076bdb407e"
+    },
+    "balanced_target_seed3": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\balanced_target_seed3_predictions.jsonl",
+      "sha256": "18badd84206e170d7d5b47b752a4f7e1e453a02622f9a65e27de02968a75387e"
+    },
+    "matched_random_seed3": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\matched_random_seed3_predictions.jsonl",
+      "sha256": "9da346848637206a75f70c985f2f5117f27731efd905dfe1ca64d5195e8c8db0"
+    },
+    "baseline_seed4": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\baseline_seed4_predictions.jsonl",
+      "sha256": "4a4eec3f8a7dd15a1bc00649309c80980a47f54d19bfeffe00ad0b0e9e17d580"
+    },
+    "balanced_target_seed4": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\balanced_target_seed4_predictions.jsonl",
+      "sha256": "a3fd2552612cf7459b4f7be2792aff79544554b43d5f8719973d4346b3f51d4f"
+    },
+    "matched_random_seed4": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\matched_random_seed4_predictions.jsonl",
+      "sha256": "db48b10161106e241aa53780c44f969cfa9d254023a70e06c77c323c9503ba0e"
+    },
+    "baseline_seed5": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\baseline_seed5_predictions.jsonl",
+      "sha256": "8db47ce7ad445af803777ac65c429afa35efed9c9e424f03b3803d940e15cf0d"
+    },
+    "balanced_target_seed5": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\balanced_target_seed5_predictions.jsonl",
+      "sha256": "6baf47e5d0d0f274e8117b63cb7724c94257b02c097951c328db19d006efdb95"
+    },
+    "matched_random_seed5": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\result_attempt1\\matched_random_seed5_predictions.jsonl",
+      "sha256": "6d8002affdcf20fb4d078017b9988817768cbabc3afa0d4b7c0a235a88010aa4"
+    },
+    "independent_audit": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\work\\closure_20261104\\target_balance_retained_text_records_v1\\runs\\target_degree_balance_20261104_attempt1\\audit_attempt1\\result.json",
+      "sha256": "ae16efe0fb319b3f45adcaee19212cd25238a2de263f9c997bc65d786b2eaa37"
+    },
+    "cost_ledger": {
+      "path": "C:\\Users\\Walden\\Documents\\Codex\\2026-10-28\\https-github-com-bdi-lab-monti-2\\MonTi-public\\evidence\\research_cost_ledger.json",
+      "sha256": "2d4b969f934406b31cfe3eebbd468162f1d2bbff958d02ca45997aeaa4937b50"
+    }
+  },
+  "source_sha256": "bb53cdc501c369e59cf535e10214dd2c29d0a1bf37c13c0ef169dda08762732e",
+  "read_scope": "Saved JSON only, no PT/dataset/model/API",
+  "denominator": 3273,
+  "unique_targets": 374,
+  "case_groups": [
+    1071,
+    1001,
+    938,
+    1130
+  ],
+  "quantile_probabilities": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    1
+  ],
+  "inference": "None; posthoc descriptive rates/quantiles, no VALID-derived gate selection",
+  "new_real_experiment_selected": false
+}

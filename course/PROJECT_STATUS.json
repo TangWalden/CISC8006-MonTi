@@ -56,7 +56,7 @@
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
     "full_evaluation": "Pending concrete complete final-test protocol confirmation; completed new-method validation pilots do not authorize it.",
-    "active_direction": "Target-attachment CPU study completed; frozen criterion failed, no candidate/control winner selected. Stable measured effect remains unachieved. One-week delivery documents achieved drafts/addenda and incomplete human/course/full-TEST requirements; no project completion claimed.",
+    "active_direction": "Manual human continue instruction after initial5November delivery; fixed TRAIN-prototype feature mixing is implemented but not yet executed. Existing automation remains deleted; final TEST/tag still separate.",
     "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
@@ -67,9 +67,9 @@
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Deliver the existing English repository/logs/protocols and completed results addenda, accurately retaining the failed balancing criterion and no selected candidate/control winner",
-    "Keep dated PDF/PPTX explicitly labeled outdated drafts; use current package addenda for later results rather than implying those artifacts were rebuilt",
-    "Retain failed v1 reporting output, unused v2 and actual v3 post-outcome reporting corrections; the independent method audit and producer-author arithmetic checks have distinct scopes",
+    "Run the committed, frozen meaningful synthetic checks, then register source/input hashes before any TRAIN-reference extraction.",
+    "Complete the one bounded four-arm prototype comparison at fixed alpha0.5 and the full retained384case cohort; no outcome-dependent seeds, ratios or gate.",
+    "Independently audit TRAIN pool/means, feature/edge/token invariants and every saved raw prediction; report negative controls, losses, uncertainty and actual costs.",
     "Record the stable-effect objective as not achieved; any further scientific study requires its own frozen design and resource/accounting boundaries, with no result-forcing control promotion",
     "Complete genuine human technical checks, verified Junyi Tang/Yifan Fan actual contributions, course approval and rehearsal; owner-confirmed full-TEST protocol/execution and final tag remain incomplete",
     "Stop scheduled follow-up at the 2026-11-05 delivery boundary via root; do not claim project or course completion"
@@ -956,5 +956,25 @@
     "project_complete_claimed": false,
     "course_complete_claimed": false,
     "delivery_manifest": "evidence/delivery_20261105.json"
+  },
+  "manual_continuation_20261105": {
+    "owner_instruction": "Continue",
+    "earlier_delivery_snapshot": "0c5e2271a25946b62eadeffe1b784ce5e938d10b",
+    "automation_recreated": false,
+    "status": "implementation_prepared_before_synthetic_and_real_reference_execution",
+    "package": "course/train_prototype_mix/README.md",
+    "new_saved_endpoint_diagnosis": "evidence/train_prototype_mix_v1/prior_endpoint_diagnosis.json",
+    "method": "Fixed0.5*x0+0.5*uniqueTRAINclass0rawfeaturemean at unchangedoriginaltopology",
+    "controls": [
+      "baseline",
+      "all_train_mix",
+      "fraud_mix"
+    ],
+    "real_reference_extracted": false,
+    "new_model_calls": 0,
+    "planned_classifier_forwards_each": 1664,
+    "planned_GPU_hours": 0,
+    "final_TEST_allowed": false,
+    "effect_established": false
   }
 }

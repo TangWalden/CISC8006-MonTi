@@ -1000,5 +1000,32 @@
     "accounting": "CPU-only measured process time, wall time and outer time are distinct; no GPU-hour addition; producer execution, independent tensor audit and producer-author reporting remain separate",
     "research_GPU_charge_unchanged": true,
     "execution_trace": "evidence/target_degree_balance_v1/execution_trace.json"
+  },
+  "manual_continue_endpoint_diagnosis_cpu_only": {
+    "status": "data_checks_and_outputs_complete_final_stdout_formatting_exit1_retained",
+    "source_sha256": "bb53cdc501c369e59cf535e10214dd2c29d0a1bf37c13c0ef169dda08762732e",
+    "evidence": "evidence/train_prototype_mix_v1/prior_diagnosis_execution_receipt.json",
+    "saved_JSON_inputs": 13,
+    "data_checks": 8499,
+    "executions": 1,
+    "reruns": 0,
+    "CPU_seconds_until_finalization": 0.28125,
+    "wall_seconds_until_finalization": 0.40700000000651926,
+    "tool_outer_wait_seconds": 0.965724,
+    "whole_process_CPU_after_finalization": "unmeasured",
+    "model_calls": 0,
+    "GPU_hours": 0,
+    "API_calls": 0
+  },
+  "train_prototype_mix_preparation": {
+    "status": "source_prepared_before_real_reference_or_efficacy_execution",
+    "alpha": 0.5,
+    "CPU_threads": 8,
+    "deadline_seconds": 5400,
+    "planned_classifier_forwards_each": 1664,
+    "new_model_calls": 0,
+    "GPU_hours": 0,
+    "API_calls": 0,
+    "automation_recreated": false
   }
 }

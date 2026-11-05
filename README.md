@@ -1,5 +1,15 @@
 # CISC8006: MonTi Reproduction and Improvements
 
+**Manual continuation after the initial 5 November delivery:** the owner asked to
+continue. A fixed half-mixture with unique-TRAIN benign raw-feature means is
+implemented for a new four-arm bounded development contrast; it has not yet
+extracted real means or measured effects. All original topology/budgets stay
+fixed, and controls use all-TRAIN/fraud-TRAIN means at the same ratio.
+[New protocol, motivation and limits](course/train_prototype_mix/README.md).
+The prior delivery hashes describe snapshot `0c5e227`; later manual records do
+not rewrite that historical delivery. The automation remains deleted; no new
+scheduled task, final TEST or final tag is authorized by this continuation.
+
 **5 November results update:** the target-attachment study completed on
 4 November. Observed mean official-GAGA MR rises from 52.642835% to 54.017721% (+1.374885 pp), but
 seed 5 declines and matched random averages 54.292698%. The frozen criterion
