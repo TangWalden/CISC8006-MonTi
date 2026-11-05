@@ -1,14 +1,25 @@
 # CISC8006: MonTi Reproduction and Improvements
 
-**Manual continuation after the initial 5 November delivery:** the owner asked to
-continue. A fixed half-mixture with unique-TRAIN benign raw-feature means is
-implemented for a new four-arm bounded development contrast; it has not yet
-extracted real means or measured effects. All original topology/budgets stay
-fixed, and controls use all-TRAIN/fraud-TRAIN means at the same ratio.
-[New protocol, motivation and limits](course/train_prototype_mix/README.md).
-The prior delivery hashes describe snapshot `0c5e227`; later manual records do
-not rewrite that historical delivery. The automation remains deleted; no new
-scheduled task, final TEST or final tag is authorized by this continuation.
+**Manual continuation, 5 November:** the fixed TRAIN-prototype mixture study
+completed and failed its development criterion. Mean official-GAGA attack MR is
+52.642835% baseline, 47.479377% benign mixture, 47.479377% all-TRAIN mixture and
+47.448824% fraud mixture. The primary change is -5.163459 pp, negative in all
+three seeds; benign and all-TRAIN have identical GAGA predictions for every
+one of the 3,273 paired occurrences. No candidate qualifies and the full-TEST
+gate stays closed. [Complete results and information boundaries](course/train_prototype_mix/README.md).
+The stable-effect objective remains unachieved.
+
+The next [prepared feature-sharpening package](course/feature_logit_sharpen)
+is **unexecuted**. It uses fixed beta-2 unit-coordinate sigmoid sharpening with
+baseline, linear-contrast and shuffled-delta controls on 128 original-VALID
+contexts to be chosen by IDs outside the previous 128 before calls. This is a new
+prospective context comparison, not an extension of the failed mixture ratio;
+new-context occurrence/unique-target counts and outcomes are not yet measured.
+Its frozen legacy checkpoint
+family is the feature-refinement/source-role baseline family, distinct from the
+earlier alignment-policy models. No new effect or method selection is claimed.
+The original delivery snapshot `0c5e227` and dated artifacts remain historical;
+automation remains deleted, with no new scheduled task, TEST or final tag.
 
 **5 November results update:** the target-attachment study completed on
 4 November. Observed mean official-GAGA MR rises from 52.642835% to 54.017721% (+1.374885 pp), but

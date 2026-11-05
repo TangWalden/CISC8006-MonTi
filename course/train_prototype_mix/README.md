@@ -1,11 +1,13 @@
 # Fixed TRAIN-prototype feature mixing
 
-**Status: implementation prepared; no new real reference statistics or efficacy
-results have been extracted.** The owner's new `continue` instruction on
-5 November authorizes another bounded development comparison. The existing
-automation was already deleted at the initial delivery boundary and is not
-recreated. Final TEST, submission freeze/tag and actual human/course checks
-remain separate.
+**Status: complete and negative. The fixed benign mixture fails its frozen
+development criterion in all three seeds. No candidate qualifies; the full-TEST
+gate remains closed and stable effect is not achieved.** The owner manually
+continued after the initial delivery; automation remains deleted. Source
+`edb703e80c7378aa0f425cf047a03c962774e3bf`, protocol SHA256
+`0f7f6510552b7c1a51ea001dd000868712f682b74b46cb0e3054c72c4ae62c27`
+completed at 2026-11-05 07:52:49 UTC. Existing delivery snapshot `0c5e227`, dated
+artifacts and final TEST/tag/human-course boundaries remain separate.
 
 ## Evidence motivating this isolated contrast
 
@@ -65,7 +67,7 @@ not generated articles. No audited raw-article mapping or independent semantic
 stealth/realizability claim is available. Prototype norms and generic shrinkage
 remain possible explanations; the controls do not match every geometric aspect.
 
-## Frozen development scope
+## Registered development scope (completed)
 
 Reuse all 384 original CPU baseline captures from seeds 3/4/5, each with 128
 fixed VALID groups, 1,091 target occurrences and 374 unique fraud targets. These
@@ -102,3 +104,94 @@ inspected development data; 3,273 repeated occurrences are not IID news. Even a
 passing development result does not demonstrate generalization, first novelty,
 course acceptance or authorize final TEST. Original formal reproduction and the
 dated PDF/PPTX drafts remain unchanged.
+
+## Actual results: no useful class-conditioned effect established
+
+All 384 baseline group-seed cases remained in every arm; each arm/seed retains
+128 groups / 1,091 occurrences / 374 unique targets. Mean official-GAGA MR and
+all three seeds are:
+
+| Arm | Seed 3 MR (%) | Seed 4 MR (%) | Seed 5 MR (%) | Mean MR (%) |
+|---|---:|---:|---:|---:|
+| Baseline | 51.420715 | 50.412466 | 56.095325 | 52.642835 |
+| Benign mixture (primary) | 46.471127 | 45.187901 | 50.779102 | 47.479377 |
+| All-TRAIN mixture (control) | 46.471127 | 45.187901 | 50.779102 | 47.479377 |
+| Fraud mixture (control) | 46.471127 | 45.096242 | 50.779102 | 47.448824 |
+
+Higher MR means a stronger attack. Primary seed changes are -4.949588 /
+-5.224565 / -5.316224 pp; mean -5.163459 pp, nominal paired t95
+[-5.637441, -4.689476] pp (`n=3`, `df=2`). The interval is conditional on these
+fixed classifiers/saved attacks and repeatedly inspected development contexts;
+overlapping occurrences are not IID news or fresh-teacher uncertainty.
+The primary gains one new error and loses 170 existing successes: one group-
+seed win, 271 ties, 112 losses. The criterion fails and no control is promoted.
+
+The all-TRAIN control and benign primary have identical **GAGA predictions at
+all 3,273 paired occurrences**, with zero pairwise gains/losses. This is stronger
+than equal aggregate MR, but does not imply identical feature vectors or GCN
+predictions: the GCN predictions do differ. Benign-label selection has no
+observed GAGA advantage over generic all-TRAIN mixing here. This does not prove
+a universal causal explanation for every possible mixing rule; the fixed
+half-mixture remains a completed negative study and is not retuned.
+
+## Reference, execution and audit evidence
+
+The actual unique TRAIN population is 6,595 nodes: 5,036 benign and 1,559 fraud.
+All three independently recomputed means match every stored float32 bit, with
+maximum 0 ULP error under the predeclared at-most-1-ULP reduction-order bound.
+This exact observed result is separate from the allowed bound. Whole-graph
+labels/class counts are materialized by the unchanged producer loader; DGL
+materialization also exposes global `y` to the audit before it indexes only
+TRAIN truth and discards global labels. No held-out label selects a pool and
+no TEST prediction is read. TRAIN-only selection does not mean the entire
+loader never materializes held-out metadata.
+
+Twelve committed CPU Torch synthetic checks passed before execution in
+3.395333711 CPU / 2.437720392 wall seconds. Actual execution used 384 base graph
+reconstructions and 1,536 local feature views in each of geometry/evaluation
+stages, 1,536 canonical updates, and 1,664 fresh forwards each for original GCN
+and official GAGA (128 clean plus 1,536 attacked). It used zero new generator/
+teacher forwards, training updates, autograd, API, TEST or GPU work. All means
+and proposed canonical inputs were sealed before classifier construction.
+CPU/wall/outer seconds were 5,115.328740816 / 1,320.5656187059358 /
+1,321.322383858962.
+
+The separate method-author-independent agent audit passed 138,606 checks and
+byte-hashed 1,185 actual files in 96.779026648 CPU / 30.062361425952986 wall
+seconds. It inspected one original DGL graph, three partition-ID arrays and
+769 reference/capture/geometry tensors, with no classifier weight load, model
+construction or inference. It independently verifies actual TRAIN pools/means,
+stored feature/token/edge invariants and raw predictions. Original-original
+arcs, full canonical input construction and seal-before-model timing retain
+producer/source boundaries. This is not human verification.
+
+Producer-author saved-JSON reporting separately passed 50,593 checks / all
+384 count-only cases, 0.21875 CPU / 0.547 wall seconds, using source SHA256
+`1997fcd97368d72b197b497dfb29376c553a93f915bf323f0ce76f3e5d477b42`.
+It loaded no tensors/datasets/models and is not another independent method
+audit. The [public evidence directory](../../evidence/train_prototype_mix_v1)
+retains raw result, reference checks, all-case summary, audits and execution
+trace. Cumulative GPU research charge stays 5.065219865793663 hours plus the
+separate 0.02 reserve. Human review, actual contributions, course approval,
+rehearsal and full TEST/final tag remain incomplete; dated PDF/PPTX are unchanged.
+
+## Next isolated hypothesis: prepared, not executed
+
+Root prepared [unit-coordinate feature sharpening](../feature_logit_sharpen)
+with fixed beta 2 and four arms: baseline, logit sharpening, linear contrast
+1.5 and shuffled delta. Shuffling matches the pre-clip unit-coordinate delta
+L2; terminal post-clipping L2 is not promised equal. It uses no prototype mean,
+class-conditioned text or new learned model fit. This is a new prospective
+128-context ID-only original-VALID sample outside the prior 128, selected
+before calls, rather than another ratio for the failed v1 mixture. Target
+occurrence/unique-node counts and new outcomes remain unknown, and different
+group IDs do not imply IID news or a held-out TEST population.
+
+The planned checkpoint family is the frozen legacy source-role baseline /
+feature-refinement family, not the earlier alignment-policy models. Planned
+limits are 384 generator forwards and 1,664 each GCN/GAGA forwards, CPU eight
+threads / 5,400 seconds / zero GPU. Before sealing there are three generator
+loads and three preparatory GCN loads with zero GCN forwards; the official
+victim loads only after all inputs are sealed. These are expected counts, not
+completed calls. No gain, new-cohort numbers, automation recreation, full TEST
+or final tag is claimed by this preparation.

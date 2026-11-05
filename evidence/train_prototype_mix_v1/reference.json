@@ -1,0 +1,37 @@
+{
+  "status": "reference_sealed_before_classifier",
+  "provenance": {
+    "source_commit": "edb703e80c7378aa0f425cf047a03c962774e3bf",
+    "protocol_sha256": "0f7f6510552b7c1a51ea001dd000868712f682b74b46cb0e3054c72c4ae62c27"
+  },
+  "alpha": 0.5,
+  "counts": {
+    "original_nodes": 16488,
+    "feature_dimension": 768,
+    "train_nodes": 6595,
+    "benign_train_nodes": 5036,
+    "fraud_train_nodes": 1559,
+    "valid_nodes": 3264,
+    "test_nodes": 6629,
+    "label_values_read": 6595
+  },
+  "labels_read_scope": "Exactly original TRAIN label entries; no VALID/TEST label values read",
+  "reference_scope": "Unweighted distinct original TRAIN nodes; float64 coordinate means cast to float32",
+  "arithmetic": "Unique TRAIN means accumulatedfloat64 thenfloat32; raw features, no L2 normalization",
+  "content_hashes": {
+    "minimum": "d761d1d2f3b99a0f6ef0fcfc44ce258417ac51d89c9995157ced112006b038c8",
+    "maximum": "734676e0609d5af83c47d2bc93bc4db31280f3b6dd47a62d4bd837a966f7ab9a",
+    "benign_mean": "3b18746847a2c33a9390c35389d688dda59748afab1b532d157ddc6deb783aab",
+    "all_train_mean": "cf545dcd2d62424cbdfcdedda72ffa00add98f9a59975550765d252d6fbe01ce",
+    "fraud_mean": "9133744c7fe9894efd42aa5fb8fdb4173455e205ecd1b3ebc655218d25c89b94",
+    "train_ids": "2098deae8df4b5731ceccb1b27212aa4b89f31eb3e9e245aabffc588c426cbbf",
+    "train_labels": "57432b236f658a9a974ffd2522c016f601f4714bdf1bdc67fb010a83c7e22753",
+    "benign_ids": "282f94b31a5b11c61b160f2d423d6b6a35bb271b3a28c3dc5f864c981b56c28d",
+    "fraud_ids": "3abac25281c361bc232e2015dc5f51434eb7b0a729c5ab8634eee912859dbed7"
+  },
+  "artifact": {
+    "path": "reference.pt",
+    "sha256": "b69ac79fd9b3f69cadede2dfb406aa4756f3096509f618dd747b1f9130ec6f8e"
+  },
+  "no_model_outcome_reference_selection": true
+}

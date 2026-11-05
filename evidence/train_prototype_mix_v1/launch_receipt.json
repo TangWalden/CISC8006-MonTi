@@ -1,0 +1,8 @@
+{
+  "pid": 1133702,
+  "source_commit": "edb703e80c7378aa0f425cf047a03c962774e3bf",
+  "protocol_sha256": "0f7f6510552b7c1a51ea001dd000868712f682b74b46cb0e3054c72c4ae62c27",
+  "driver_sha256": "a4241bcbb37d8c28c836cbeece7000e69eea88ed23aadcfbb39aee8d738f4133",
+  "synthetic_receipt_sha256": "55f5e9095a77ae2264227f0d68c21bef6a6605f299591e3fcbee49a674b6f577",
+  "started_utc": "2026-11-05T07:30:47.747061+00:00"
+}

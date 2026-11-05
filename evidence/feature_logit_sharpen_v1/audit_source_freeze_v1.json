@@ -1,0 +1,30 @@
+{
+  "status": "independent_source_frozen_before_new_cohort_metadata_or_model_calls",
+  "created_utc": "2026-11-05T08:45:42.683450+00:00",
+  "audit_source": {
+    "path": "MonTi-public/course/feature_logit_sharpen/audits/saved_tensor_audit_v1.py",
+    "sha256": "79d33e52ffa81e63b87082d335399c749fc5185747bd580e141bfa22249587d1",
+    "bytes": 43922
+  },
+  "reviewed_sources": {
+    "core.py": "73c95d7db77f3db47782267f3c316d17c464707599d7622cb1b90f79a19a0f5d",
+    "run.py": "fb73f2592ecb252933ce50200437493b27c8d9adef294cc4faee808b711337a0",
+    "prepare.py": "30999499628e47107c697cb1b3ebf001da03468af84a64ef996c7737218e8047",
+    "__init__.py": "45656839f897b06641d214bc2d2ff23a259f7b51ce64615200d4418d1799d45b",
+    "synthetic_tests.py": "06f02b29c706f12c5a856b02944ef58a37559cbf0660bfa2b22fbc2b3dc462e9"
+  },
+  "execution_source_and_protocol": "Required CLI inputs after root commits/registers; no assumed future values",
+  "allowed_reads_after_explicit_root_request": "One original DGL graph raw x/box with y discarded unused, original VALID group-ID array and sparse target-membership matrix,384FRESHfeature/capture/canonical artifacts, saved new VALID predictions. Old source/checkpoints/records opaque hashes except terminal model-state receipt fields.",
+  "forbidden": "Original label-value operations, old capture/old prediction decoding, classifier weights/model inference, gradients/training, API/network, TEST predictions, CUDA",
+  "cohort_replay": "Python3.8.20 Random(20261105).sample(sorted(originalVALIDids minus exactlyold128),128); preserve ordered draw and original membership lists, independently derive all new counts/overlap without hardcoding old1091/374 as new denominator.",
+  "transform_replay": "F64 normalized odds beta2 and linear1.5 with exact operation order/F32 box/flat baseline bits; private per-row SHA/Python permutation of ACTUALstoredprimaryunitdelta onmovablecoords; match PRECLIPunitnorm only. Actual postclip/rawnorms/saturation are recounted, not claimed equal.",
+  "generation_gate": "3legacygenerator+3proposalGCNloads beforeseal,384GENforwards,zero proposalGCNforwards; all1536proposals/canonical sequences seal before dedicatedGCN/anyofficialGGAv. Anyseedzeroidentity triggersplannednoeval branch, GENcost retained.",
+  "independent_proofs": "Current source/input/checkpoint bytes, generator normalized-state receipt bindings, actual schedulergetter before/after and8reportedticks (not replay),384freshcapturelegalgraphs/featuremath/physicalbudgets/token0/1/2/4/5bits, allnew128clean/12attackedstreams, dynamic MR/transitions/mean/macro/t95/primarycriterion.",
+  "qualification": "Primarylogit_sharp mean>=1pp/all3positive/t95lower>0/meanaboveshuffled_delta; linear need not be worse and no unique-curve superiority claim. Controlsnotcandidates; no finalTEST/tag.",
+  "producer_only": "Whole canonical construction/original-original arcs/temporal loading and schedulerhistoricalidentity are source/receipt assertions, not graph/model replay. Three proposalGCN loads are not zero-model work.",
+  "preparation": "AST and source/schema review only, no audit execution/tests/metadata/dataset/model/capture reads",
+  "real_new_metadata_or_outcome_reads": 0,
+  "model_calls_API_GPU_operations": 0,
+  "independence": "Auditor not producer/core author; agent not human verification",
+  "execution_authorization": "Wait for explicit root completion signal; this freeze is not authorization to read/run science."
+}

@@ -1,5 +1,46 @@
 # One-week execution and acceptance plan
 
+## Manual continuation after delivery: prototype result and next prepared study
+
+The [fixed TRAIN-prototype study](train_prototype_mix/README.md) completed on
+5 November from source `edb703e80c7378aa0f425cf047a03c962774e3bf`.
+Baseline/benign/all-TRAIN/fraud mean GAGA MR is 52.642835 / 47.479377 /
+47.479377 / 47.448824%. Primary benign-minus-baseline is -5.163459 pp,
+negative in all seeds; benign/all-TRAIN GAGA predictions are identical at every
+one of the 3,273 paired occurrences. The criterion failed; no candidate/control
+winner or full-TEST qualification follows. All 384 cases are retained. The
+stable-effect objective remains unachieved.
+
+The independent agent audit passed 138,606 checks / 1,185 byte-hashed files,
+including original-TRAIN pools (5,036 benign / 1,559 fraud) and means exact to
+float32 bits (0 ULP under the predeclared at-most-one-ULP bound). It read one
+DGL graph, three ID arrays and 769 tensors; no classifier weights/models.
+Whole-graph label/class metadata materialization remains explicitly distinct
+from TRAIN-only pool indexing. Producer-author JSON reporting passed 50,593
+checks; this is not another independent audit or human review. Real execution
+used 1,536 canonical updates and 1,664 fresh forwards per classifier; no new
+generator/training/autograd/API/TEST/GPU work. CPU/wall/outer time was
+5,115.328740816 / 1,320.5656187059358 / 1,321.322383858962 seconds.
+
+The next [unit-coordinate sharpening implementation](feature_logit_sharpen) is
+prepared but unexecuted. Freeze its new protocol and ID-only 128-context sample
+outside the earlier 128 original-VALID contexts before calls; new occurrence/
+unique-target counts and metrics are not known. This is distinct from a failed
+prototype-ratio extension. Four conditions are baseline, fixed beta-2 logit
+sharpening, linear contrast 1.5 and shuffled delta (pre-clip unit-L2 match only).
+Use the frozen legacy source-role/feature-refinement checkpoint family and
+retain every context; no means, class-conditioned text or deep-model fitting.
+Expected limits: 384 generator forwards, 1,664 each GCN/GAGA forwards, three
+preparatory GCN loads with zero forwards plus three generator loads, victim
+only after all inputs are sealed; CPU eight threads / 5,400 seconds / zero GPU.
+No effects or new-cohort numbers are claimed before execution.
+
+The original delivery snapshot `0c5e227` and dated PDF/PPTX remain historical.
+Automation was deleted and will not be recreated by this manual continuation.
+Stable measured gain, owner-confirmed full TEST, final tag, real human/course
+checks, actual contribution verification and rehearsal remain incomplete.
+Research GPU charge stays 5.065219865793663 hours plus 0.02 reserve.
+
 ## 5 November delivery and remaining acceptance items
 
 The [target-attachment study](target_degree_balance/README.md) completed all
@@ -29,7 +70,7 @@ outdated drafts, not a report of the newest results. Current package addenda are
 the authoritative account of later experiments. Still missing: stable measured
 gain; owner-confirmed full-TEST protocol/execution; genuine human technical
 checks; course approval; verified actual contributions; rehearsal; final tag.
-Root will stop scheduled follow-up at this one-week delivery boundary. Delivery
+The existing scheduled follow-up was deleted at this one-week delivery boundary. Delivery
 does not mean the project/course or the stable-effect objective is complete.
 Cumulative research remains 5.065219865793663 GPU-hours plus 0.02 reserve.
 

@@ -1,5 +1,81 @@
 # AI Usage Record
 
+## Manual continuation: TRAIN prototypes completed negative, 5 November 2026
+
+Following the actual manual `continue` instruction, root completed the four-arm
+fixed-alpha-0.5 prototype study from source
+`edb703e80c7378aa0f425cf047a03c962774e3bf`, protocol SHA256
+`0f7f6510552b7c1a51ea001dd000868712f682b74b46cb0e3054c72c4ae62c27`.
+Completion was 2026-11-05 07:52:49 UTC. Twelve committed CPU Torch synthetic
+checks had passed before execution (3.395333711 CPU / 2.437720392 wall seconds).
+All 384 original group-seed cases remained, with 128 groups, 1,091 occurrences
+and 374 unique target nodes per arm/seed. Reference means and all feature/
+canonical-input proposals were sealed before classifier loading.
+
+The actual reference uses 6,595 distinct TRAIN nodes: 5,036 class-0 benign and
+1,559 class-1 fraud. The independent audit recomputes all three means and finds
+exact float32 bits (0 ULP error); the predeclared bound was at most 1 ULP, not a
+post-outcome tolerance expansion. TRAIN-only reference selection is distinct
+from global metadata access: unchanged standard loading materializes whole-
+graph labels/class counts; audit graph deserialization also materializes global
+`y`, then indexes only TRAIN truth and discards it. Held-out ID arrays check
+partitions, not held-out labels or TEST predictions. Numerical prototypes are
+not generated articles or verified semantic camouflage.
+
+Mean official-GAGA MR is 52.642835% baseline, 47.479377% benign mixture,
+47.479377% all-TRAIN mixture and 47.448824% fraud mixture. The primary paired
+change is -5.163459 pp, nominal t95 [-5.637441, -4.689476] pp (`n=3`, `df=2`),
+negative in all seeds, conditional on fixed classifiers/attacks and repeatedly
+inspected, overlapping development contexts. Benign mixing gains one new error
+and loses 170 baseline successes (one group-seed win, 271 ties, 112 losses).
+Benign and all-TRAIN produce identical GAGA classes at all 3,273 paired
+occurrences, not merely equal accuracy; their GCN predictions do differ. No
+class-conditioned advantage or useful candidate is established; controls are
+not promoted and the full-TEST gate remains closed.
+
+Execution used 384 base graph reconstructions and 1,536 local feature graph
+views in each of geometry/evaluation stages, 1,536 canonical updates and 1,664
+fresh forwards each for GCN and official GAGA (128 clean / 1,536 attacked).
+There were no new generator/teacher forwards, training updates, autograd, API,
+TEST queries or GPU use. CPU/wall/outer seconds were 5,115.328740816 /
+1,320.5656187059358 / 1,321.322383858962.
+
+The independent method-author-separated agent audit passed 138,606 checks and
+byte-hashed 1,185 actual files (96.779026648 CPU / 30.062361425952986 wall
+seconds). It read one original DGL graph, three partition-ID arrays and 769
+reference/capture/geometry tensors, without classifier weights, models or
+forwards. It verifies TRAIN pools/means and saved feature/token/prediction
+invariants; full canonical construction and temporal gating retain producer/
+source boundaries. A separate producer-author JSON reporting check passed
+50,593 checks / all 384 count-only cases (0.21875 CPU / 0.547 wall seconds),
+script SHA256 `1997fcd97368d72b197b497dfb29376c553a93f915bf323f0ce76f3e5d477b42`.
+It made no ML/tensor/model calls and is not another independent method audit.
+These are agent records, not human technical review or actual student work.
+[Complete result addendum](course/train_prototype_mix/README.md) preserves the
+negative result and information boundaries.
+
+Root prepared the next isolated [feature-sharpening package](course/feature_logit_sharpen),
+not yet run: beta-2 unit-coordinate sigmoid sharpening; baseline, sharpened,
+linear-contrast 1.5 and shuffled-delta arms. Shuffle matches pre-clipping unit-
+coordinate delta L2, not terminal post-clipping L2. It uses no prototype means,
+class-conditioned text or deep-model fit. Before any calls, 128 original-VALID
+contexts will be selected by IDs outside the old 128; their occurrence/unique-
+node counts and outcomes are unmeasured. This prospective context comparison
+still follows earlier known failures and is not new IID news or a TEST set.
+It uses the frozen legacy checkpoint family shared with feature refinement /
+source-role baseline, not the earlier alignment-policy models. Planned limits
+are 384 new generator forwards and 1,664 each GCN/GAGA forwards, CPU eight
+threads / 5,400 seconds / zero GPU. Three preparatory GCN loads have zero GCN
+forwards, alongside three generator loads before input sealing; the official
+victim loads only after all cases are sealed. Actual counts remain zero at this
+preparation record. No effect is claimed before execution.
+
+The manual continuation does not alter initial delivery snapshot `0c5e227` or
+rebuild dated PDF/PPTX. Automation stays deleted; no TEST/final tag is inferred.
+Stable gain, genuine human/course checks, verified contributions and rehearsal
+remain incomplete. Cumulative GPU research charge remains 5.065219865793663
+hours plus the separate 0.02 reserve.
+
 ## Target-attachment study and one-week delivery, 5 November 2026
 
 The registered CPU structural run completed on 4 November; this 5 November

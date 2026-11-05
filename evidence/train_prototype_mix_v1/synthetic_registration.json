@@ -1,0 +1,11 @@
+{
+  "source_commit": "edb703e80c7378aa0f425cf047a03c962774e3bf",
+  "source_files": {
+    "course/train_prototype_mix/core.py": "8b8c60d9fad4eea829599bbedf07a5f534273f33afdc0ab19f92eed3152a7016",
+    "course/train_prototype_mix/synthetic_tests.py": "bc5549b8ca895c178afb9df89709c387b2bb3b14e826fd3de8296c3f28775dad"
+  },
+  "registered_utc": "2026-11-05T07:30:34.851805+00:00",
+  "scope": "Synthetic tensors only; no real datasets/captures, classifiers, weights, inference, API or GPU.",
+  "CUDA_VISIBLE_DEVICES": "",
+  "deadline_seconds": 60
+}

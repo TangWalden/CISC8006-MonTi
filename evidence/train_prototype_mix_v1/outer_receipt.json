@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "exit_code": 0,
+  "pid": 1133703,
+  "outer_seconds": 1321.322383858962,
+  "outer_limit_seconds": 5460,
+  "inner_registered_limit_seconds": 5400,
+  "outer_timed_out": false,
+  "GPU_hours": 0,
+  "execution_device": "cpu",
+  "source_commit": "edb703e80c7378aa0f425cf047a03c962774e3bf",
+  "protocol_sha256": "0f7f6510552b7c1a51ea001dd000868712f682b74b46cb0e3054c72c4ae62c27",
+  "completed_utc": "2026-11-05T07:52:49.117615+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "source_commit": "edb703e80c7378aa0f425cf047a03c962774e3bf",
+  "source_files": {
+    "course/train_prototype_mix/core.py": "8b8c60d9fad4eea829599bbedf07a5f534273f33afdc0ab19f92eed3152a7016",
+    "course/train_prototype_mix/synthetic_tests.py": "bc5549b8ca895c178afb9df89709c387b2bb3b14e826fd3de8296c3f28775dad"
+  },
+  "tests_run": 12,
+  "failures": 0,
+  "errors": 0,
+  "real_data_reads": 0,
+  "model_calls": 0,
+  "GPU_hours": 0,
+  "API_calls": 0,
+  "python": "3.8.20 (default, Oct  3 2024, 15:24:27) \n[GCC 11.2.0]",
+  "torch": "1.13.1+cu117",
+  "process_cpu_seconds": 3.3953337109999997,
+  "wall_seconds": 2.4377203920157626,
+  "test_log_sha256": "9870d9677cbb31557b955a05331e105065001d6b3922d96d0d5b8ea4b2c0476f"
+}

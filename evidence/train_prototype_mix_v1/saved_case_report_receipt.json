@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "source_sha256": "1997fcd97368d72b197b497dfb29376c553a93f915bf323f0ce76f3e5d477b42",
+  "started_utc": "2026-11-05T08:26:58.404381+00:00",
+  "producer_author_reporting": true,
+  "independent_method_audit": false,
+  "human_verification": false,
+  "model_queries": 0,
+  "tensor_loads": 0,
+  "NumPy_imports": 0,
+  "dataset_loads": 0,
+  "checkpoint_loads": 0,
+  "API_calls": 0,
+  "GPU_hours": 0,
+  "checks_passed": 50593,
+  "retained_count_only_cases": 384,
+  "independent_audit_sha256": "e06b64ac3afe43ee5656d8ae05ccfbd5d3bdf07a1f818ec88d208ef968904aaa",
+  "reporting_source_frozen_before_current_outcome_reads": true,
+  "output_hashes": {
+    "summary.json": "4bd17c6eceb4dd4ad976a7fe90def4e8d68f2288ac208f46635be464ec1fbdad",
+    "all_case_counts.json": "196312ad71c65c31ebc6c4709036b6e5475be281c2d37ca9117bf3d67bc46808",
+    "PRIVATE_case_key_map.json": "38b47119869ab440931fd1c6d24cb954adc5a350bf485ac4a06edb4e9a406201"
+  },
+  "process_cpu_seconds": 0.21875,
+  "wall_seconds": 0.5470000000204891,
+  "saved_JSON_input_files_read": 21
+}
