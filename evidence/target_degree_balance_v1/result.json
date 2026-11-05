@@ -1,0 +1,309 @@
+{
+  "status": "completed",
+  "counters": {
+    "source_capture_tensor_loads": 384,
+    "source_captures_prepared": 384,
+    "geometry_graph_reconstructions": 1152,
+    "canonical_sequence_updates": 1152,
+    "first_hop_invariant_checks": 1152,
+    "prepared_artifact_tensor_loads": 384,
+    "evaluation_graph_reconstructions": 1152,
+    "original_gcn_load_dispatches": 1,
+    "original_gcn_models_loaded": 1,
+    "official_gaga_load_dispatches": 1,
+    "official_gaga_models_loaded": 1,
+    "original_gcn_forward_dispatches": 1280,
+    "original_gcn_completed_forwards": 1280,
+    "official_gaga_forward_dispatches": 1280,
+    "official_gaga_completed_forwards": 1280,
+    "original_gcn_clean_forwards": 128,
+    "official_gaga_clean_forwards": 128,
+    "original_gcn_attacked_forwards": 1152,
+    "official_gaga_attacked_forwards": 1152,
+    "fresh_teacher_model_constructions": 0,
+    "fresh_teacher_forwards": 0,
+    "generator_model_constructions": 0,
+    "generator_forwards": 0,
+    "optimizer_steps": 0,
+    "autograd_calls": 0,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "classifier_loading_after_geometry_seal": true,
+  "immutable_content_hashes": {
+    "before": {
+      "features": "b8ea0997064107a96b8f5a55bc5e3c6a8d503b3daa96edfb94aad20257d48c87",
+      "feat_sum": "3487b3cb8372435f285eab99ee808787f741d619ba4afa670d64034670d9afcc",
+      "degrees": "b7f4a5403823197d93ac22a2835ff456f2c32575799f364d7375ffc17833858e",
+      "original_gcn": "7484a85f4634c3dd9154b2d5a64d78e3afcd1e341ef1fdc8f29eea8beeeadea1",
+      "official_gaga": "01c1a42a8f37fa31884276ee24cc0978d2b0e272c4c49348ed90e61d5365dc9f"
+    },
+    "after": {
+      "features": "b8ea0997064107a96b8f5a55bc5e3c6a8d503b3daa96edfb94aad20257d48c87",
+      "feat_sum": "3487b3cb8372435f285eab99ee808787f741d619ba4afa670d64034670d9afcc",
+      "degrees": "b7f4a5403823197d93ac22a2835ff456f2c32575799f364d7375ffc17833858e",
+      "original_gcn": "7484a85f4634c3dd9154b2d5a64d78e3afcd1e341ef1fdc8f29eea8beeeadea1",
+      "official_gaga": "01c1a42a8f37fa31884276ee24cc0978d2b0e272c4c49348ed90e61d5365dc9f"
+    }
+  },
+  "provenance": {
+    "source_commit": "5d0f5a67c3b98f427f2a458bd47e5f946b404e37",
+    "protocol_sha256": "422ae756a052a2db343937c90269e8339f78b421a74b89058f89848bd35bf009"
+  },
+  "geometry_marker_sha256": "d91e9671c8ba62b0645925ee69b3bae4cd4ec46cec5e5df1cbdfc13c9574f277",
+  "balanced_nonidentity_cases_by_seed": {
+    "3": 95,
+    "4": 85,
+    "5": 99
+  },
+  "all_geometry_prepared_before_classifier": true,
+  "summaries": [
+    {
+      "seed": 3,
+      "arm": "baseline",
+      "groups": 128,
+      "unique_targets": 374,
+      "totals": {
+        "gcn": {
+          "occurrences": 1091,
+          "clean_wrong": 498,
+          "attacked_wrong": 1055,
+          "new_wrong": 557,
+          "recoveries": 0
+        },
+        "gaga": {
+          "occurrences": 1091,
+          "clean_wrong": 398,
+          "attacked_wrong": 561,
+          "new_wrong": 163,
+          "recoveries": 0
+        }
+      },
+      "gcn_mr_percent": 96.70027497708524,
+      "gaga_mr_percent": 51.42071494042163
+    },
+    {
+      "seed": 3,
+      "arm": "balanced_target",
+      "groups": 128,
+      "unique_targets": 374,
+      "totals": {
+        "gcn": {
+          "occurrences": 1091,
+          "clean_wrong": 498,
+          "attacked_wrong": 1070,
+          "new_wrong": 572,
+          "recoveries": 0
+        },
+        "gaga": {
+          "occurrences": 1091,
+          "clean_wrong": 398,
+          "attacked_wrong": 574,
+          "new_wrong": 176,
+          "recoveries": 0
+        }
+      },
+      "gcn_mr_percent": 98.07516040329972,
+      "gaga_mr_percent": 52.61228230980752
+    },
+    {
+      "seed": 3,
+      "arm": "matched_random",
+      "groups": 128,
+      "unique_targets": 374,
+      "totals": {
+        "gcn": {
+          "occurrences": 1091,
+          "clean_wrong": 498,
+          "attacked_wrong": 1063,
+          "new_wrong": 565,
+          "recoveries": 0
+        },
+        "gaga": {
+          "occurrences": 1091,
+          "clean_wrong": 398,
+          "attacked_wrong": 573,
+          "new_wrong": 175,
+          "recoveries": 0
+        }
+      },
+      "gcn_mr_percent": 97.43354720439963,
+      "gaga_mr_percent": 52.52062328139322
+    },
+    {
+      "seed": 4,
+      "arm": "baseline",
+      "groups": 128,
+      "unique_targets": 374,
+      "totals": {
+        "gcn": {
+          "occurrences": 1091,
+          "clean_wrong": 498,
+          "attacked_wrong": 1058,
+          "new_wrong": 560,
+          "recoveries": 0
+        },
+        "gaga": {
+          "occurrences": 1091,
+          "clean_wrong": 398,
+          "attacked_wrong": 550,
+          "new_wrong": 152,
+          "recoveries": 0
+        }
+      },
+      "gcn_mr_percent": 96.97525206232814,
+      "gaga_mr_percent": 50.41246562786434
+    },
+    {
+      "seed": 4,
+      "arm": "balanced_target",
+      "groups": 128,
+      "unique_targets": 374,
+      "totals": {
+        "gcn": {
+          "occurrences": 1091,
+          "clean_wrong": 498,
+          "attacked_wrong": 1068,
+          "new_wrong": 570,
+          "recoveries": 0
+        },
+        "gaga": {
+          "occurrences": 1091,
+          "clean_wrong": 398,
+          "attacked_wrong": 584,
+          "new_wrong": 186,
+          "recoveries": 0
+        }
+      },
+      "gcn_mr_percent": 97.89184234647112,
+      "gaga_mr_percent": 53.5288725939505
+    },
+    {
+      "seed": 4,
+      "arm": "matched_random",
+      "groups": 128,
+      "unique_targets": 374,
+      "totals": {
+        "gcn": {
+          "occurrences": 1091,
+          "clean_wrong": 498,
+          "attacked_wrong": 1061,
+          "new_wrong": 563,
+          "recoveries": 0
+        },
+        "gaga": {
+          "occurrences": 1091,
+          "clean_wrong": 398,
+          "attacked_wrong": 588,
+          "new_wrong": 190,
+          "recoveries": 0
+        }
+      },
+      "gcn_mr_percent": 97.25022914757103,
+      "gaga_mr_percent": 53.895508707607696
+    },
+    {
+      "seed": 5,
+      "arm": "baseline",
+      "groups": 128,
+      "unique_targets": 374,
+      "totals": {
+        "gcn": {
+          "occurrences": 1091,
+          "clean_wrong": 498,
+          "attacked_wrong": 1008,
+          "new_wrong": 510,
+          "recoveries": 0
+        },
+        "gaga": {
+          "occurrences": 1091,
+          "clean_wrong": 398,
+          "attacked_wrong": 612,
+          "new_wrong": 214,
+          "recoveries": 0
+        }
+      },
+      "gcn_mr_percent": 92.3923006416132,
+      "gaga_mr_percent": 56.09532538955087
+    },
+    {
+      "seed": 5,
+      "arm": "balanced_target",
+      "groups": 128,
+      "unique_targets": 374,
+      "totals": {
+        "gcn": {
+          "occurrences": 1091,
+          "clean_wrong": 498,
+          "attacked_wrong": 1041,
+          "new_wrong": 543,
+          "recoveries": 0
+        },
+        "gaga": {
+          "occurrences": 1091,
+          "clean_wrong": 398,
+          "attacked_wrong": 610,
+          "new_wrong": 212,
+          "recoveries": 0
+        }
+      },
+      "gcn_mr_percent": 95.41704857928507,
+      "gaga_mr_percent": 55.912007332722276
+    },
+    {
+      "seed": 5,
+      "arm": "matched_random",
+      "groups": 128,
+      "unique_targets": 374,
+      "totals": {
+        "gcn": {
+          "occurrences": 1091,
+          "clean_wrong": 498,
+          "attacked_wrong": 1024,
+          "new_wrong": 526,
+          "recoveries": 0
+        },
+        "gaga": {
+          "occurrences": 1091,
+          "clean_wrong": 398,
+          "attacked_wrong": 616,
+          "new_wrong": 218,
+          "recoveries": 0
+        }
+      },
+      "gcn_mr_percent": 93.85884509624198,
+      "gaga_mr_percent": 56.461961503208066
+    }
+  ],
+  "baseline_channel": "Fresh CPU reconstruction and classifier inference, not old stored predictions",
+  "official_gaga_channel": "All1152canonical sequences sealed before classifier loading",
+  "no_gcn_class_protection_assumed": true,
+  "immutable_content_hashes_retained": true,
+  "interpretation": "Post-hoc structural hypothesis; fixed-total potential optimality is not attack efficacy, novelty or course approval.",
+  "final_TEST_used": false,
+  "experimental_API_calls": 0,
+  "prepared_cases": 384,
+  "process_cpu_seconds": 7213.101857664,
+  "wall_seconds": 1737.2862673660275,
+  "GPU_hours": 0,
+  "cuda_visibility": "",
+  "torch_cuda_available": false,
+  "torch_visible_gpu_count": 0,
+  "native_visible_gpu_count": 0,
+  "output_hashes": {
+    "registered.json": "6b86ccb092373da36e98e46a872f09123dc63fcbd98bd5a7820a5bc26365e696",
+    "geometry.jsonl": "8ada8dd4bcfa7bd0a2ffbb29d181d415792ad8cce182abeb4533553a243123cb",
+    "geometry_sealed.json": "d91e9671c8ba62b0645925ee69b3bae4cd4ec46cec5e5df1cbdfc13c9574f277",
+    "clean_predictions.jsonl": "1a399b0ac08ebc51357bcd266f50a01447b71d0e152340238f4680de7e9e394a",
+    "input_hashes.json": "394940d9535b94da9dc88d4acfad315bdca5bc6553da34b6d14bf9f155bf1f7a",
+    "baseline_seed3_predictions.jsonl": "7c533a9256d03ef8b7ae027f36bac0bbc9ab2edc575129efa473bc076bdb407e",
+    "baseline_seed4_predictions.jsonl": "4a4eec3f8a7dd15a1bc00649309c80980a47f54d19bfeffe00ad0b0e9e17d580",
+    "baseline_seed5_predictions.jsonl": "8db47ce7ad445af803777ac65c429afa35efed9c9e424f03b3803d940e15cf0d",
+    "balanced_target_seed3_predictions.jsonl": "18badd84206e170d7d5b47b752a4f7e1e453a02622f9a65e27de02968a75387e",
+    "balanced_target_seed4_predictions.jsonl": "a3fd2552612cf7459b4f7be2792aff79544554b43d5f8719973d4346b3f51d4f",
+    "balanced_target_seed5_predictions.jsonl": "6baf47e5d0d0f274e8117b63cb7724c94257b02c097951c328db19d006efdb95",
+    "matched_random_seed3_predictions.jsonl": "9da346848637206a75f70c985f2f5117f27731efd905dfe1ca64d5195e8c8db0",
+    "matched_random_seed4_predictions.jsonl": "db48b10161106e241aa53780c44f969cfa9d254023a70e06c77c323c9503ba0e",
+    "matched_random_seed5_predictions.jsonl": "6d8002affdcf20fb4d078017b9988817768cbabc3afa0d4b7c0a235a88010aa4"
+  }
+}

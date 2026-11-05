@@ -1,5 +1,5 @@
 {
-  "updated_date_asia_shanghai": "2026-11-04",
+  "updated_date_asia_shanghai": "2026-11-05",
   "delivery_deadline_asia_shanghai": "2026-11-05",
   "repository": "https://github.com/TangWalden/CISC8006-MonTi",
   "visibility": "public, explicitly requested by user",
@@ -56,7 +56,7 @@
     "pilot_scope": "technical research; course approval not confirmed",
     "pilot_selected": "coverage by the pre-registered rule; GCN validation gains were -0.1833pp for coverage and -0.5500pp for size sampling",
     "full_evaluation": "Pending concrete complete final-test protocol confirmation; completed new-method validation pilots do not authorize it.",
-    "active_direction": "Canonical own-teacher endpoint parity completed with zero class differences; target-attachment balancing implementation is ready at core/synthetic scope only, with real geometry and detector effects unmeasured. Owner-authorized bounded development continues; no final TEST/tag authorization inferred.",
+    "active_direction": "Target-attachment CPU study completed; frozen criterion failed, no candidate/control winner selected. Stable measured effect remains unachieved. One-week delivery documents achieved drafts/addenda and incomplete human/course/full-TEST requirements; no project completion claimed.",
     "historical_pilot_choice_only": true
   },
   "user_milestone_confirmations": {
@@ -67,13 +67,12 @@
     "final_submission_freeze": "pending; confirm before creating the final submission tag"
   },
   "next_actions": [
-    "Freeze source, input hashes and bounded target-attachment geometry/evaluation protocol for baseline, balanced_target and matched_random; implementation currently has synthetic checks only, not real headroom or efficacy",
-    "Before detector loading, measure all384 saved baseline captures and canonical token invariants under fixed x0, role counts, physical injected-node degrees and per-row edge cost; retain identity cases and complete denominators",
-    "Run only the predeclared bounded detector stage if its geometry gate passes; report all controls, negative cases, actual counters, costs and correlated three-seed uncertainty without tuning for a winner",
-    "Retain all completed negative methods and the canonical parity diagnostic; measured teacher/victim mismatch is not proof of a sole failure cause",
-    "Keep the frozen formal reproduction, inconclusive paired test interval and dated PDF/PPTX drafts separate from repeatedly inspected development results",
-    "Complete actual human technical review, Junyi Tang/Yifan Fan contribution records, course approval and rehearsal; final TEST and final submission tag remain separate checkpoints",
-    "By 2026-11-05 deliver achieved artifacts and honest remaining items, then stop automation; do not fabricate full course completion"
+    "Deliver the existing English repository/logs/protocols and completed results addenda, accurately retaining the failed balancing criterion and no selected candidate/control winner",
+    "Keep dated PDF/PPTX explicitly labeled outdated drafts; use current package addenda for later results rather than implying those artifacts were rebuilt",
+    "Retain failed v1 reporting output, unused v2 and actual v3 post-outcome reporting corrections; the independent method audit and producer-author arithmetic checks have distinct scopes",
+    "Record the stable-effect objective as not achieved; any further scientific study requires its own frozen design and resource/accounting boundaries, with no result-forcing control promotion",
+    "Complete genuine human technical checks, verified Junyi Tang/Yifan Fan actual contributions, course approval and rehearsal; owner-confirmed full-TEST protocol/execution and final tag remain incomplete",
+    "Stop scheduled follow-up at the 2026-11-05 delivery boundary via root; do not claim project or course completion"
   ],
   "results_first_diagnosis": {
     "phase": "saved-validation phase 1; later new inference is separately registered below",
@@ -157,7 +156,7 @@
     "owner_direction_confirmation": "Explanation requested before decision; still pending"
   },
   "automation_id": "monti",
-  "scheduled_followup": "every four hours, at most 42 invocations; stop at delivery",
+  "scheduled_followup": "Deleted existing monti automation via app tool on2026-11-05T06:39:49Z at the owner delivery boundary; project remains incomplete.",
   "research_gpu_hour_limit_additional": 12,
   "outcome_v2_preparation": {
     "status": "isolated adapters and CPU synthetic checks complete; real-data evaluation and training on hold",
@@ -179,7 +178,7 @@
     "human_technical_review": "pending; agent reviews are not human verification"
   },
   "reporting_preparation": {
-    "report_draft_status": "English factual draft complete and checked; final course report incomplete",
+    "report_draft_status": "Dated English draft retained unchanged; outdated for latest development addenda and not a complete final course report",
     "pdf": "docs/MonTi_Report_Draft.pdf",
     "editable_source": "docs/REPORT_DRAFT.md",
     "pages": 10,
@@ -191,10 +190,11 @@
     "demo_script": "docs/DEMO_SCRIPT.md; preparation only, no human rehearsal recorded",
     "slides": "English editable 12-slide draft prepared; native PowerPoint test, human rehearsal and final presentation pending",
     "final_improvement_control_results": "Development controls completed and published in package addenda; complete final TEST improvement/control study remains unperformed.",
-    "owner_direction": "LLM evidence-fusion defense direction selected; report remains a dated draft and new experiment protocol is pending",
+    "owner_direction": "Current stable-effect objective not achieved; report is a historical draft and current package addenda document subsequent studies",
     "human_review_contributions_and_course_approval": "pending",
     "new_model_calls": 0,
-    "gpu_hours": 0
+    "gpu_hours": 0,
+    "latest_results_included_in_dated_PDF": false
   },
   "slides_preparation": {
     "pptx": "docs/MonTi_Slides_Draft.pptx",
@@ -217,11 +217,12 @@
     "visual_review": "all 12 exact-file previews inspected; not human verification",
     "preview_worker_native_shutdown_incident": "0xC0000409 after complete writes; retained separately, not relabeled success",
     "PowerPoint_application_test": "unavailable and not performed",
-    "owner_direction_and_full_experiment": "LLM evidence-fusion defense direction selected; slides remain a dated draft, new full protocol pending",
+    "owner_direction_and_full_experiment": "Stable-effect objective not achieved; dated slides retained unchanged and outdated for latest development results; full TEST/final presentation remain incomplete",
     "human_review_contribution_rehearsal_and_course_freeze": "pending",
     "new_model_queries": 0,
     "training_runs": 0,
-    "research_gpu_hours": 0
+    "research_gpu_hours": 0,
+    "latest_results_included_in_dated_PPTX": false
   },
   "related_work_review": {
     "status": "bounded primary-source review complete; not exhaustive novelty determination or method selection",
@@ -803,7 +804,7 @@
     "audit": "evidence/feature_parity_check_v1/independent_saved_audit_v1.json"
   },
   "target_degree_balance_stage": {
-    "status": "implementation_ready_synthetic_only_before_real_run",
+    "status": "completed_frozen_development_criterion_failed_no_candidate",
     "package": "course/target_degree_balance/README.md",
     "conditions": [
       "baseline",
@@ -811,8 +812,8 @@
       "matched_random"
     ],
     "public_synthetic_test_methods_passed": 10,
-    "real_capture_headroom_measured": false,
-    "detector_effect_measured": false,
+    "real_capture_headroom_measured": true,
+    "detector_effect_measured": true,
     "fixed": [
       "injected_features_x0",
       "complete_target_lists_and_candidate_selection",
@@ -823,10 +824,137 @@
     ],
     "target_physical_degrees_may_change": true,
     "all_node_degrees_preserved": false,
-    "next_gate": "Source/input freeze and capture-only geometry/canonical-token checks before any bounded detector stage",
+    "next_gate": "Full TEST candidate gate remains closed after failed development criterion",
     "effective_improvement_claimed": false,
     "final_TEST_allowed": false,
     "human_verification": false,
-    "dated_artifacts_rebuilt": false
+    "dated_artifacts_rebuilt": false,
+    "source_commit": "5d0f5a67c3b98f427f2a458bd47e5f946b404e37",
+    "protocol_sha256": "422ae756a052a2db343937c90269e8339f78b421a74b89058f89848bd35bf009",
+    "nonidentity_cases_by_seed": {
+      "3": 95,
+      "4": 85,
+      "5": 99
+    },
+    "all_original_group_seed_cases_retained": 384,
+    "groups_per_arm_seed": 128,
+    "target_occurrences_per_arm_seed": 1091,
+    "unique_target_nodes": 374,
+    "official_GAGA_mean_MR_percent": {
+      "baseline": 52.64283531927895,
+      "balanced_target": 54.017720745493435,
+      "matched_random": 54.29269783073633
+    },
+    "balanced_minus_baseline_pp": 1.3748854262144832,
+    "balanced_minus_baseline_seed_differences_pp": [
+      1.1915673693858864,
+      3.11640696608616,
+      -0.1833180568285968
+    ],
+    "balanced_minus_baseline_paired_t95_pp": [
+      -2.7425310082479424,
+      5.492301860676909
+    ],
+    "paired_t_scope": "n=3, df=2; fixed saved attacks and repeatedly inspected correlated development cohort, not IID news uncertainty",
+    "balanced_minus_random_pp": -0.2749770852428952,
+    "primary_criterion_met": false,
+    "candidate_selected": false,
+    "control_promoted": false,
+    "stable_effect_objective_achieved": false,
+    "actual_counters": {
+      "source_capture_tensor_loads": 384,
+      "source_captures_prepared": 384,
+      "geometry_graph_reconstructions": 1152,
+      "canonical_sequence_updates": 1152,
+      "first_hop_invariant_checks": 1152,
+      "prepared_artifact_tensor_loads": 384,
+      "evaluation_graph_reconstructions": 1152,
+      "original_gcn_load_dispatches": 1,
+      "original_gcn_models_loaded": 1,
+      "official_gaga_load_dispatches": 1,
+      "official_gaga_models_loaded": 1,
+      "original_gcn_forward_dispatches": 1280,
+      "original_gcn_completed_forwards": 1280,
+      "official_gaga_forward_dispatches": 1280,
+      "official_gaga_completed_forwards": 1280,
+      "original_gcn_clean_forwards": 128,
+      "official_gaga_clean_forwards": 128,
+      "original_gcn_attacked_forwards": 1152,
+      "official_gaga_attacked_forwards": 1152,
+      "fresh_teacher_model_constructions": 0,
+      "fresh_teacher_forwards": 0,
+      "generator_model_constructions": 0,
+      "generator_forwards": 0,
+      "optimizer_steps": 0,
+      "autograd_calls": 0,
+      "API_calls": 0,
+      "TEST_queries": 0
+    },
+    "process_CPU_seconds": 7213.101857664,
+    "wall_seconds": 1737.2862673660275,
+    "outer_seconds": 1737.8046713980148,
+    "GPU_hours": 0,
+    "independent_method_audit": {
+      "status": "passed",
+      "checks": 223007,
+      "actual_byte_hashed_files": 1183,
+      "original_capture_tensor_loads": 384,
+      "new_geometry_tensor_loads": 384,
+      "original_dataset_loads": 0,
+      "classifier_weight_loads": 0,
+      "model_calls": 0,
+      "process_CPU_seconds": 111.631158848,
+      "wall_seconds": 36.909056378062814,
+      "human_verification": false
+    },
+    "producer_author_reporting": {
+      "v1": "failed CI-precision reconciliation retained;61419checks,CPU0.1875/wall0.375seconds",
+      "v2": "unused amendment retained; analytic df2 critical value, same1e-10tolerance",
+      "v3_status": "passed",
+      "v3_checks": 63811,
+      "v3_source_sha256": "44d716637c86fd0b52eb35a0ddf4b57b6c581995e6cd29425f2b903de7fc8c69",
+      "v3_process_CPU_seconds": 0.28125,
+      "v3_wall_seconds": 0.3130000000819564,
+      "v3_source_frozen_before_outcomes": false,
+      "original_v1_plan_frozen_before_outcomes": true,
+      "independent_of_method_author": false,
+      "scientific_inputs_or_case_selection_changed": false,
+      "new_model_calls": 0
+    },
+    "result": "evidence/target_degree_balance_v1/result.json",
+    "summary": "evidence/target_degree_balance_v1/summary.json",
+    "audit": "evidence/target_degree_balance_v1/independent_saved_tensor_audit_v1.json",
+    "execution_completed_utc": "2026-11-04T13:18:30.544757+00:00",
+    "reported_date_asia_shanghai": "2026-11-05",
+    "execution_trace": "evidence/target_degree_balance_v1/execution_trace.json"
+  },
+  "delivery_20261105": {
+    "status": "achieved_artifacts_and_incomplete_items_documented_not_project_completion",
+    "stable_effect_objective_achieved": false,
+    "achieved": [
+      "English public code, logs, frozen protocols and completed experiment addenda",
+      "Dated English report draft with editable Markdown source",
+      "Dated editable slide draft",
+      "Offline demo preparation script"
+    ],
+    "dated_report": "docs/MonTi_Report_Draft.pdf",
+    "dated_slides": "docs/MonTi_Slides_Draft.pptx",
+    "demo_preparation": "docs/DEMO_SCRIPT.md",
+    "dated_report_and_slides_rebuilt": false,
+    "dated_report_and_slides_current_for_latest_results": false,
+    "latest_results_addendum": "course/target_degree_balance/README.md",
+    "missing": [
+      "Stable measured gain",
+      "Owner-confirmed full-TEST protocol and execution",
+      "Genuine human technical checks",
+      "Course approval",
+      "Verified actual student contributions",
+      "Human rehearsal",
+      "Final submission tag"
+    ],
+    "automation_stop": "Confirmed deleted via app automation_update mode delete, deleteStatus deleted,2026-11-05T06:39:49Z",
+    "project_complete_claimed": false,
+    "course_complete_claimed": false,
+    "delivery_manifest": "evidence/delivery_20261105.json"
   }
 }

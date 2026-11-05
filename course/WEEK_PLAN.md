@@ -1,5 +1,38 @@
 # One-week execution and acceptance plan
 
+## 5 November delivery and remaining acceptance items
+
+The [target-attachment study](target_degree_balance/README.md) completed all
+three conditions / three seeds. Baseline mean GAGA MR is 52.642835%, balancing
+54.017721% and matched random 54.292698%. Balancing's +1.374885 pp average does
+not pass the frozen rule: seed 5 is negative and random's mean is higher. No
+candidate or control winner is selected. The stable-effect objective remains
+unachieved. Retain all 384 group-seed cases, controls, conditional uncertainty
+and failed reporting attempts; do not relabel a mean increase as stable efficacy.
+
+CPU execution used 1,280 fresh GCN and 1,280 fresh official-GAGA forwards;
+1,152 geometry/canonical updates preceded 1,152 evaluation reconstructions.
+There were no new generator/training/autograd/API/TEST calls or GPU work.
+Process CPU/wall/outer time was 7,213.101857664 / 1,737.2862673660275 /
+1,737.804671398 seconds. The separate method-author-independent saved/tensor
+agent audit passed 223,007 checks / 1,183 byte-hashed files. It inspected 768
+capture/geometry tensors without original dataset/weight loads or model calls.
+The producer-author v3 JSON reporting check passed 63,811 checks; its metadata
+and CI corrections occurred after aggregate outcomes were known and preserve
+the failed v1/unused v2, unchanged tolerance and scientific results.
+
+Achieved artifacts include the English repository and logs, completed experiment
+addenda, [dated report draft](../docs/MonTi_Report_Draft.pdf),
+[editable slide draft](../docs/MonTi_Slides_Draft.pptx) and
+[offline demo preparation](../docs/DEMO_SCRIPT.md). The unchanged PDF/PPTX are
+outdated drafts, not a report of the newest results. Current package addenda are
+the authoritative account of later experiments. Still missing: stable measured
+gain; owner-confirmed full-TEST protocol/execution; genuine human technical
+checks; course approval; verified actual contributions; rehearsal; final tag.
+Root will stop scheduled follow-up at this one-week delivery boundary. Delivery
+does not mean the project/course or the stable-effect objective is complete.
+Cumulative research remains 5.065219865793663 GPU-hours plus 0.02 reserve.
+
 Update 2026-11-04: the post-hoc [canonical own-teacher check](feature_parity_check/README.md)
 completed all 768 comparisons / 384 saved graphs, with zero class differences,
 maximum logit error 1.5497207641601562e-6 and sequence error
@@ -13,16 +46,10 @@ human verification. Own-teacher wrong counts rise 336 to 553 / 328 to 526 /
 364 to 694 while saved official-victim wrong counts fall 561 to 500 / 550 to 492 /
 612 to 537. Model-response mismatch is observed, not established as a sole cause.
 
-The next [target-attachment balancing core](target_degree_balance/README.md) is
-implemented and synthetic-only: ten test methods passed; real capture headroom
-and detector effects remain unmeasured. Prepare/freeze the bounded baseline,
-balanced-target and matched-random study, then check capture geometry and
-canonical token invariants before its detector gate. Keep injected features,
-role counts, physical injected-node degrees and row costs fixed; target node
-degrees intentionally change. Retain identity/no-action cases and all target
-occurrences. Cumulative GPU charge stays 5.065219865793663 hours plus 0.02 reserve.
-Final TEST/tag, actual human/course requirements and dated artifacts remain
-separate.
+The target-attachment study described as a next step at this earlier checkpoint
+has now completed; its failed criterion and delivery limitations are recorded
+above. The prior canonical diagnostic remains implementation evidence, not an
+effective method.
 
 Earlier completed method study, 2026-11-04:  all five [fixed-graph feature-refinement conditions](feature_polish/README.md) and three seeds completed, followed by full development evaluation and independent agent saved-record/tensor audits. Mean GAGA MR is 52.6428% baseline, 51.9096% GCN-PGD, 46.7156% GAGA-PGD, 47.3877% guarded GAGA-PGD and 49.3431% random. The primary guarded arm falls in every seed, paired -5.2551 pp with nominal three-seed t95 [-7.4666, -3.0436] pp. Its own-teacher loss improves but official-victim attack performance does not. Neither primary nor secondary meets the frozen rule; no improvement is selected. All 128 groups / 1,091 occurrences / 374 unique targets remain per arm/seed. This repeatedly inspected development cohort is separate from the original formal test reproduction.
 

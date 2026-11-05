@@ -1,6 +1,34 @@
 # CISC8006: MonTi Reproduction and Improvements
 
-**Latest diagnostic, 4 November:** canonical own-teacher parity completed on all
+**5 November results update:** the target-attachment study completed on
+4 November. Observed mean official-GAGA MR rises from 52.642835% to 54.017721% (+1.374885 pp), but
+seed 5 declines and matched random averages 54.292698%. The frozen criterion
+fails: no candidate is selected, and the random control is not promoted. All
+384 group-seed cases remain. [Results, controls, costs and audits](course/target_degree_balance/README.md).
+The stable-effect objective is **not achieved**. This CPU study made 1,280 fresh
+GCN and 1,280 fresh official-GAGA forwards, with no new generator/training/API/
+TEST calls or GPU charge. The separate implementation-independent agent audit
+passed 223,007 checks; it is not human verification.
+
+## 5 November delivery status
+
+Available artifacts are the [English report draft](docs/MonTi_Report_Draft.pdf)
+with [editable source](docs/REPORT_DRAFT.md), [editable slide draft](docs/MonTi_Slides_Draft.pptx)
+and [offline demo preparation](docs/DEMO_SCRIPT.md), plus the repository's code,
+protocols, English logs and completed experiment addenda. The dated PDF/PPTX
+remain **outdated drafts**: they were not rebuilt to include the latest studies.
+Use the [balancing addendum](course/target_degree_balance/README.md),
+[feature-refinement results](course/feature_polish/README.md) and
+[canonical diagnostic](course/feature_parity_check/README.md) for current results.
+
+Still missing are a stable measured gain, an owner-confirmed full-TEST protocol
+and execution, genuine human technical checks, course approval, verified actual
+contributions, rehearsal and a final submission tag. The original formal test
+reproduction and its inconclusive paired interval remain separate. The existing scheduled follow-up was deleted on5November via the app tool at
+this delivery boundary. The [delivery manifest](evidence/delivery_20261105.json)
+records exact files and pending requirements; the project and course remain incomplete.
+
+**Completed prior diagnostic, 4 November:** canonical own-teacher parity completed on all
 768 endpoints from 384 saved graphs: zero class differences, maximum logit error
 1.5497e-6 and sequence error 2.9802e-6; reported cache/alias checks pass. The fresh
 own teacher responds differently from the saved official victim, while the
@@ -9,14 +37,7 @@ a sole cause of failed transfer. The independent saved-record agent audit passed
 53,967 checks. [Results, CPU cost and limits](course/feature_parity_check/README.md).
 No new generator/GCN/official-victim/API/TEST call occurred; GPU charge is zero.
 
-**Next structural implementation:** [target-attachment balancing](course/target_degree_balance/README.md)
-is ready at core/synthetic scope only. Baseline, balanced-target and matched-random
-conditions keep injected features, role counts, physical injected-node degrees
-and per-row edge costs fixed; target physical degrees can change. Real headroom
-and effects are unmeasured. Final TEST/tag and human/course requirements remain
-separate; dated artifacts are unchanged.
-
-**Latest completed development study, 4 November:** all five fixed-graph feature-refinement conditions and three seeds completed. Mean GAGA MR is 52.6428% baseline, 51.9096% GCN-PGD, 46.7156% GAGA-PGD, 47.3877% guarded GAGA-PGD and 49.3431% random. The primary guarded method is lower in every seed, paired -5.2551 pp, and is not selected as an improvement. [Full results, cases, failed attempts and audit limits](course/feature_polish/README.md). The study ran on CPU with zero GPU charge; final TEST/tag and genuine human/course requirements remain separate. Dated report/slides remain unchanged.
+**Earlier completed feature study, 4 November:** all five fixed-graph feature-refinement conditions and three seeds completed. Mean GAGA MR is 52.6428% baseline, 51.9096% GCN-PGD, 46.7156% GAGA-PGD, 47.3877% guarded GAGA-PGD and 49.3431% random. The primary guarded method is lower in every seed, paired -5.2551 pp, and is not selected as an improvement. [Full results, cases, failed attempts and audit limits](course/feature_polish/README.md). The study ran on CPU with zero GPU charge; final TEST/tag and genuine human/course requirements remain separate. Dated report/slides remain unchanged.
 
 **Earlier 4 November source-role control:** the correction and matched original-GCN control completed six fresh trainings. Mean GAGA MR 52.7039% to 52.6734% (-0.0306 pp), with mixed seed directions; no consistent gain selected. [Results, concrete cases and limits](course/source_role_fix/README.md). This does not replace the frozen formal reproduction or authorize final TEST/tag.
 

@@ -1,0 +1,131 @@
+{
+  "schema": "monti_achieved_delivery_20261105_v1",
+  "delivery_date_Asia_Shanghai": "2026-11-05",
+  "status": "achieved_artifacts_delivered_with_honest_incomplete_requirements",
+  "scientific_execution_source": "5d0f5a67c3b98f427f2a458bd47e5f946b404e37",
+  "stable_improvement_objective_achieved": false,
+  "course_project_complete": false,
+  "new_final_TEST_queries": 0,
+  "final_submission_tag_created": false,
+  "actual_latest_result": "GAGA development mean52.6428353193% baseline to54.0177207455% balanced; matchedrandom54.2926978307%. Primaryfails because one negative seed and no advantageovercontrol; no candidate selected.",
+  "historical_formal_reproduction": "Learned43.7280% versusrandom40.1902%,paired+3.5378pp95CI[-1.5415,8.6171],INCONCLUSIVE; separatecohort/protocol,notreplacedbynewdevelopmentnumbers.",
+  "artifacts": [
+    {
+      "path": "docs/MonTi_Report_Draft.pdf",
+      "sha256": "066cb930744a767b631d608ee1a13f07201f19e71ddc550accc28c9b9f8ac082",
+      "bytes": 653623,
+      "role": "dated English report DRAFT; excludes later experiments"
+    },
+    {
+      "path": "docs/REPORT_DRAFT.md",
+      "sha256": "e391a0353cecbd47ecb043823ebc7a45bc86363d0c9bf075838640379bed49ff",
+      "bytes": 24606,
+      "role": "editable dated report source"
+    },
+    {
+      "path": "docs/MonTi_Slides_Draft.pptx",
+      "sha256": "e0c42466988c38aad344594a96c709350af9bc434ab91d166de4170c934449db",
+      "bytes": 73897,
+      "role": "dated editable slide DRAFT; excludes later experiments"
+    },
+    {
+      "path": "docs/DEMO_SCRIPT.md",
+      "sha256": "034c6dac659005d4a68d8e34ed124e54a90837e83c0c496906961732bdd76f2d",
+      "bytes": 10380,
+      "role": "prepared English offline demo; not human-rehearsed"
+    },
+    {
+      "path": "course/target_degree_balance/README.md",
+      "sha256": "d73436b1dc56aa15ad7fac6deff572af495d9e12db0307bfc5fbc434dcd5db6c",
+      "bytes": 13471,
+      "role": "current actual structural results, failed criterion, cases and limitations"
+    },
+    {
+      "path": "evidence/target_degree_balance_v1/summary.json",
+      "sha256": "d9417c33e0f3e507910a71c6a229df8581f4e5b481ee490d7243064dc78d46e2",
+      "bytes": 68981,
+      "role": "all-case numerical summary; reporting attribution correction is in execution_trace"
+    },
+    {
+      "path": "evidence/target_degree_balance_v1/all_case_counts.json",
+      "sha256": "32f2351d1b0bac7d8e31c9f6b2100d37f940b52ed373e52f8a201cf9e3ef4e1e",
+      "bytes": 1801635,
+      "role": "all384 retained count-only cases"
+    },
+    {
+      "path": "evidence/target_degree_balance_v1/execution_trace.json",
+      "sha256": "81ae11bbe85da22d3608b9a05332fa4b8879f4170ac00dec9a1fe6358c77fa97",
+      "bytes": 10349,
+      "role": "source/protocol/cost/audit/failure/attribution trace"
+    },
+    {
+      "path": "evidence/target_degree_balance_v1/independent_saved_tensor_audit_v1.json",
+      "sha256": "ae16efe0fb319b3f45adcaee19212cd25238a2de263f9c997bc65d786b2eaa37",
+      "bytes": 20776,
+      "role": "independent-of-method-author agent audit; not human verification"
+    },
+    {
+      "path": "course/feature_polish/README.md",
+      "sha256": "f20bf8a765f5ecb9d44cb6d897bfb31ccdcbb8ab7a14e7a3be5e3948c70b3acf",
+      "bytes": 13696,
+      "role": "completed negative feature-refinement addendum"
+    },
+    {
+      "path": "course/feature_parity_check/README.md",
+      "sha256": "cb1c2af05594b5a59e2a9fc708060042b8a3d27d80c7a2cf5b5a9f9aa162d817",
+      "bytes": 4588,
+      "role": "completed canonical endpoint diagnostic"
+    },
+    {
+      "path": "course/dual_surrogate/README.md",
+      "sha256": "9c759f054f50494b5fe6e315109f7aaab40284d50dbeb796af1c58c817e17b96",
+      "bytes": 17526,
+      "role": "negative independent-teacher comparison and diagnosis"
+    },
+    {
+      "path": "course/alignment_agent/README.md",
+      "sha256": "9194d749f646ea0b128b5b0d5ce0aeeafbaea72fb52a31bb12de1366308a34c4",
+      "bytes": 13196,
+      "role": "actual alignment/agent results and limitations"
+    },
+    {
+      "path": "AI_USAGE.md",
+      "sha256": "b7f49836b298ee02eb3eb632e67c085bb44080ff0b9dad6453f700c2b66af943",
+      "bytes": 69264,
+      "role": "AI usage and authorship distinctions"
+    },
+    {
+      "path": "evidence/research_cost_ledger.json",
+      "sha256": "2d4b969f934406b31cfe3eebbd468162f1d2bbff958d02ca45997aeaa4937b50",
+      "bytes": 40527,
+      "role": "research-resource accounting"
+    }
+  ],
+  "no_artifact_rebuild_or_human_application_test": true,
+  "pending": [
+    "Stable measured improvement under the frozen development criterion",
+    "Concrete owner-confirmed complete final TEST protocol and evaluation",
+    "Genuine human technical/application review",
+    "Actual instructor/latest UMMoodle rule and freeze confirmation",
+    "Verified actual member contributions",
+    "Human rehearsal/presentation/defense",
+    "Owner-confirmed final submission freeze/tag"
+  ],
+  "automation": {
+    "id": "monti",
+    "action": "deleted",
+    "tool": "app automation_update mode delete",
+    "tool_delete_status": "deleted",
+    "confirmed_UTC": "2026-11-05T06:39:49Z",
+    "reason": "Owner-authorized Nov5 delivery and automation-stop boundary; no project-completion claim."
+  },
+  "resource_status": {
+    "additional_research_GPU_hours_charged": 5.065219865793663,
+    "reserve": 0.02,
+    "remaining": 6.914780134206337,
+    "latest_structural_phase_GPU_hours": 0,
+    "latest_phase_API_calls": 0
+  },
+  "new_experiments_started_for_delivery": false,
+  "raw_attempts_and_private_history_preserved": true
+}

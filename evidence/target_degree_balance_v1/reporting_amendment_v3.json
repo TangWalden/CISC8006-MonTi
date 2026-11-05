@@ -1,0 +1,12 @@
+{
+  "schema": "saved_reporting_metadata_amendment_v3",
+  "registered_utc": "2026-11-05T06:33:10.380271+00:00",
+  "aggregate_outcomes_already_known": true,
+  "parent_unused_v2_sha256": "4503b05f4f174374abb7b69a2edfdeaa9540cec345a4a69cb2fbc1967593c8d2",
+  "source_sha256": "44d716637c86fd0b52eb35a0ddf4b57b6c581995e6cd29425f2b903de7fc8c69",
+  "change": "Correct inherited receipt flag: current v3 source was frozen after aggregate outcomes; only the original v1 reporting plan preceded outcomes.",
+  "scientific_calculations_changed": false,
+  "tolerance_changed": false,
+  "model_calls": 0,
+  "original_v1_failed_and_unused_v2_retained": true
+}

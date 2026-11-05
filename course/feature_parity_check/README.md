@@ -69,13 +69,12 @@ Cumulative research GPU charge remains 5.065219865793663 hours plus the separate
 
 ## Next bounded structural question
 
-The [target-attachment balancing implementation](../target_degree_balance/README.md)
-is ready at core/synthetic scope only; no real geometric headroom or detector
-effect has yet been measured. Its baseline, balanced-target and matched-random
-conditions retain injected features `x0`, role counts, each injected node's
-physical degree and every row's edge cost. Allocation among target endpoints
-can change target physical degrees, so it does not preserve every node degree.
-Source/input freezing and capture-only geometry/token checks precede any gated
-bounded detector study. No improvement is claimed in advance. The final TEST
-candidate gate remains closed; human/course checks and final submission freeze
-remain separate. Dated report/slides are unchanged.
+The [target-attachment study](../target_degree_balance/README.md), described as
+ready/synthetic-only at this earlier checkpoint, has subsequently completed its
+three-condition, three-seed CPU evaluation. Its mean gain fails the frozen
+criterion: one seed is negative and matched random has a higher mean. No
+candidate or control winner is selected; the stable-effect objective remains
+unachieved. See that package's completed result/audit addendum. The present
+parity result still establishes bounded implementation agreement, not attack
+efficacy. Full TEST/tag and genuine human/course requirements remain separate;
+dated report/slides are unchanged and outdated for the newer results.

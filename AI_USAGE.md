@@ -1,5 +1,63 @@
 # AI Usage Record
 
+## Target-attachment study and one-week delivery, 5 November 2026
+
+The registered CPU structural run completed on 4 November; this 5 November
+delivery record reports it without relaunch. Execution used source
+`5d0f5a67c3b98f427f2a458bd47e5f946b404e37`, protocol SHA256
+`422ae756a052a2db343937c90269e8339f78b421a74b89058f89848bd35bf009`.
+All 384 original group-seed cases were retained in baseline, balanced-target
+and matched-random conditions; balancing is nonidentity in 95 / 85 / 99 cases
+for seeds 3 / 4 / 5. Geometry was sealed before classifier loading. Injected
+features, role counts, physical injected-node degrees and row edge costs remain
+fixed; target physical degrees can change.
+
+Mean official-GAGA MR is 52.642835% baseline, 54.017721% balancing and 54.292698%
+matched random. Balancing-minus-baseline is +1.374885 pp, with seed differences
++1.191567 / +3.116407 / -0.183318 pp. The frozen criterion fails because not all
+three are positive and balancing does not exceed the random mean. No candidate
+or control winner is selected; the user's stable-effect objective is not
+achieved. The [complete addendum](course/target_degree_balance/README.md) retains
+the conditional three-seed uncertainty, all controls and failures of the rule.
+
+Execution used 1,152 geometry reconstructions/canonical updates and 1,152
+separate evaluation reconstructions, with 1,280 fresh GCN and 1,280 fresh
+official-GAGA forwards, including 128 clean forwards each. There were zero new
+generator forwards, teacher fits, optimizer updates, autograd, API calls, TEST
+queries or GPU charge. Process CPU/wall/outer seconds were 7,213.101857664 /
+1,737.2862673660275 / 1,737.804671398. The separate method-author-independent
+agent audit passed 223,007 checks and byte-hashed 1,183 actual files, with
+111.631158848 CPU / 36.909056378062814 wall seconds. It deserialized 384 original
+captures and 384 new geometry artifacts but loaded no original dataset, graph,
+label array or classifier weights and performed no model calls. Whole canonical
+construction/original-original arcs and seal timing retain producer/source
+boundaries. This is agent verification, not human review.
+
+The first JSON-only reporting attempt failed on CI precision reconciliation
+after 61,419 checks and is preserved (0.1875 CPU / 0.375 wall seconds). The
+unused v2 amendment uses the analytic df=2 critical value at the same 1e-10
+tolerance; v3 also corrects the inherited pre-outcome flag. Only the original
+v1 reporting plan preceded outcome inspection: v2/v3 corrections were made
+after aggregate outcomes were known. The executed v3 arithmetic cross-check
+passed 63,811 checks / all 384 cases (0.28125 CPU / 0.313 wall seconds), using
+script SHA256 `44d716637c86fd0b52eb35a0ddf4b57b6c581995e6cd29425f2b903de7fc8c69`.
+It is producer-author reporting, not another independent implementation audit.
+No scientific inputs, method/case selection or model execution changed; failed
+v1 and unused v2 remain. [Execution trace](evidence/target_degree_balance_v1/execution_trace.json),
+[saved summary](evidence/target_degree_balance_v1/summary.json),
+[v3 receipt](evidence/target_degree_balance_v1/saved_summary_receipt.json) and
+[metadata amendment](evidence/target_degree_balance_v1/reporting_amendment_v3.json)
+make those limits explicit.
+
+The 5 November delivery consists of existing English code/logs/protocols,
+completed results addenda and dated report/slide/demo drafts. PDF/PPTX bytes
+were not rebuilt and are outdated for these latest results. Stable gain, a
+confirmed full-TEST protocol/execution, actual human/course checks, verified
+student contributions, rehearsal and final tag remain incomplete. Root will
+stop the scheduled follow-up at the delivery boundary; no project/course
+completion is claimed. Research GPU charge remains 5.065219865793663 hours
+plus the separate 0.02 reserve. This documentation update reads saved JSON only.
+
 ## Canonical endpoint parity completed, 4 November 2026
 
 Root executed the post-hoc own-teacher consistency check from committed source
@@ -28,13 +86,12 @@ human verification. [Results and boundaries](course/feature_parity_check/README.
 and [execution trace](evidence/feature_parity_check_v1/execution_trace.json)
 retain source/input provenance and the diagnostic limits.
 
-The next isolated target-attachment balancing core is implemented with ten
-passing synthetic test methods; no real capture headroom or detector effect has
-yet been measured. Baseline, balanced-target and matched-random conditions keep
+At this earlier preparation checkpoint, the target-attachment core had ten
+passing synthetic methods and no real-data result. The subsequent completed
+study is recorded above; its frozen development criterion failed. Baseline, balanced-target and matched-random conditions keep
 injected features `x0`, role counts, physical injected-node degrees and per-row
 edge costs fixed; target physical degrees can change. Mathematical/synthetic
-success is not efficacy. Root is preparing the bounded capture/evaluation
-harness and source/input registration. No final TEST/tag, student contribution,
+success is not efficacy. The bounded capture/evaluation harness was subsequently registered and run. No final TEST/tag, student contribution,
 human/course approval or dated PDF/PPTX rebuild is claimed. Cumulative research
 GPU charge remains 5.065219865793663 hours plus 0.02 reserve.
 
