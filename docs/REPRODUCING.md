@@ -43,6 +43,30 @@ protocols, caches and hash-bound input files. Those assets are not supplied by
 the compact exports. A protocol that references retained private paths is an
 evidence record, not a self-contained public execution bundle.
 
+## Claim and paper comparison
+
+The original component claim asks whether learned candidate selection improves
+target-occurrence MR over the defined random selector on GossipCop-S split 0,
+using fixed official GCN-surrogate and GAGA-victim checkpoints.
+
+| GAGA comparison | Learned MR | Random MR |
+|---|---:|---:|
+| Paper Table 5 | 43.70% | 39.13% |
+| Our six formal runs, three paired seeds | 43.7280% | 40.1902% |
+
+Our paired difference is +3.5378 pp, nominal 95% interval [-1.5415, 8.6171] pp:
+**inconclusive**, as specified before those runs. See the
+[saved reproduction summary](../evidence/reproduction_summary.json) and
+[archived protocol](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/PROTOCOL.md).
+
+The comparison corrects the candidate-flag mapping and retains the code's
+incidence-based budget, which differs from the paper's unique-neighbor
+definition. Historical training/checkpoint equivalence is unconfirmed.
+Paper Table 4's MonTi value, 41.34 +/- 1.90%, also differs from Table 5;
+that discrepancy remains unresolved. These are material reproduction limits.
+The later 46.95% to 52.43% VALID study uses a different cohort/checkpoint family
+and is not a paired comparison with these formal TEST results.
+
 ## Historical ML environment
 
 The original paper implementation under `run.py`, `modules/`, `models/` and

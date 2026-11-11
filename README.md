@@ -2,6 +2,8 @@
 
 A CISC8006 study of [MonTi](https://github.com/bdi-lab/MonTi), with a budget-preserving graph-injection postprocessor.
 
+**For assessment:** [grading points, evidence and remaining gaps](docs/ASSESSMENT.md).
+
 ## Current method
 
 After MonTi generates an attack, move some injected-to-candidate edges to the existing target list. Keep injected features, previous target edges, injected-node degrees, and total node/edge budgets unchanged. The rule is deterministic; it uses no LLM or additional training. [Method](docs/METHOD.md).
@@ -42,7 +44,7 @@ These run synthetic geometry checks and recount saved results. Full model reruns
 | [methods/](methods/) | Current reallocation algorithm |
 | [results/](results/) | Seed metrics, all compact case counts, controls and provenance |
 | [tools/](tools/) and [tests/](tests/) | JSON interface, result checks and synthetic tests |
-| [docs/](docs/) | Method, reproduction and archive guide |
+| [docs/](docs/) | Method, reproduction, grading evidence and archive guide |
 | `models/`, `modules/`, `utils/`, `run.py` | Original MonTi implementation |
 | [environment/](environment/) | Recorded ML environment |
 | `course/`, `evidence/` | Baseline figure sources and publication verification |

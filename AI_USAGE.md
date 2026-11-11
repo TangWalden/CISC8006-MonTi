@@ -4,6 +4,14 @@ AI assistants supported paper/code review, experiment design, implementation,
 execution supervision, saved-record audits and documentation. AI-written code
 and agent audits are not human technical review or verified student contributions.
 
+## Three recorded phases
+
+| Phase | Task | Tool | Decision | Human check | Evidence |
+|---|---|---|---|---|---|
+| Understanding and planning | Review the paper, candidate flag and budget semantics | Codex | Define learned versus random; correct flag mapping; retain and disclose the incidence-based budget | Team technical verification pending | [Protocol][protocol], [frozen specification][frozen] |
+| Implementation and reproduction | Implement checks, run the frozen baseline and recount saved outputs | Codex | Retain failed runs and use the raw-output recount; do not select results by score | Actual team live code/configuration review pending | [Run registry][runs], [baseline audit][baseline] |
+| Improvement and critical analysis | Compare controls, examine failures and interpret development results | Codex and recorded DeepSeek experiments | Preserve negative controls; report the VALID gain and failed frozen CI gate without adding seeds | Team technical verification pending | [Current results](results/), [previous studies](results/previous_studies.csv), [full agent record][history] |
+
 ## Recorded experimental use
 
 - An external DeepSeek fusion experiment made 120 physical calls. Its selected
@@ -13,6 +21,15 @@ and agent audits are not human technical review or verified student contribution
 - The current edge-reallocation method uses no LLM/API call or extra training.
   Its development gain and failed stability criterion are both retained in
   [the results](results/).
+
+## Critically reviewed direction decision
+
+The owner rejected proposal-first justification and required analysis of saved
+experimental outcomes before choosing another improvement. The workflow changed
+to results-first diagnosis, and the historical coverage follow-up stayed on hold
+([diagnosis][diagnosis], [full record][history]). This is actual research-direction
+feedback, not member source-code verification or course approval. A genuine team
+technical accept/change/reject check, with evidence and confirmation, remains pending.
 
 ## Publication cleanup
 
@@ -24,3 +41,10 @@ dataset/checkpoint load, external experimental API call or GPU research.
 Earlier positive, negative and failed experiments remain in the
 [immutable archive](docs/ARCHIVE.md). Full raw-output review and genuine human
 verification remain distinct from these automated checks.
+
+[protocol]: https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/PROTOCOL.md
+[frozen]: https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/frozen_protocol.json
+[runs]: https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/run_registry.json
+[baseline]: https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/baseline_audit.json
+[history]: https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/AI_USAGE.md
+[diagnosis]: https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/docs/RESULTS_FIRST_DIAGNOSIS.md
