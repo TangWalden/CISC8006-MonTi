@@ -1,0 +1,23 @@
+{
+  "schema": "monti_feature_assignment_compact_provenance_v1",
+  "study_source_commit": "bc31f324ba1e2b1ab541b719695cfa51b9e49155",
+  "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+  "protocol_sha256": "b15527fa882fcdb808a303cf5e606239f97abffb95f0c9aea64981a1a9d2d679",
+  "exporter_source_sha256": "978eb6aa64675672867c8c38255a5eec4f901f165c47cac7196575daec164494",
+  "exporter_scope": "Saved-count report authored after the scientific model-run source; not part of that earlier source archive",
+  "original_audit_result_sha256": "4dd25967c7bbce7f4f5e1504c5f63eccbce377b13acc7efae3d8c776fb054985",
+  "original_main_result_sha256": "650bddf352f9941cd54c87c23f31c624772fbf4b3354ba89f0498743e4627050",
+  "original_audited_case_csv_sha256": "a81666ad8110a662abd3ebdb54f7c0915c5ed9c1caa5a0c6af493a4ab5e47967",
+  "original_audit_input_hashes_sha256": "ff3c33e7ed990496bf26712fd7dcab1ebc9f425041a6402992ce286c1a9d4880",
+  "original_audit_scope_sha256": "c60e8f8d73084936f2b9afb1248b3300d614a182294de82452512a1afa9c0d26",
+  "audit_source_sha256": "7121b218d5221ea1b230b704e263025020151f6d8127f8ae34cfa05268769619",
+  "audit_status": "passed",
+  "audit_independent_of_method_author": true,
+  "human_verification": false,
+  "compact_files": {
+    "summary.json": "55f19a639d0d61132c3c0aa32b024cb7951ef2aa8374e31eba614e85c09881c9",
+    "seed_metrics.csv": "0833c78e3d86b451996b871c45e1a75775fa47bf2549b9a8e5aed33ac9b0288a",
+    "case_counts.csv": "ed23cc74ebce3b80ba09b199ed0d5610f6e198935dfcd511f67c7332af1d163c"
+  },
+  "scope": "Derived saved-count tables, not original executed JSON or a new independent model/tensor audit. No raw target/group IDs, logits or private absolute paths are exported."
+}

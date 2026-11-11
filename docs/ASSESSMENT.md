@@ -38,3 +38,8 @@ unconfirmed. This table describes evidence availability, not an estimated grade.
 The concise front page and compact tables are entry points. Complete source,
 configurations, exact commands, failed runs and older artifacts remain in the
 [immutable archive](ARCHIVE.md); this mapping adds no experiment or approval.
+
+The [11 November feature-assignment extension](../experiments/feature_assignment/)
+adds actual implementation, a frozen four-condition VALID comparison and a null
+result to the improvement/audit evidence. It supplies no positive-performance,
+instructor-approval, full-TEST or human-verification claim.

@@ -18,9 +18,25 @@ and agent audits are not human technical review or verified student contribution
   cases did not establish superiority over graph-only, static or neural gates.
 - A later scheduling experiment made 15 physical calls; 11 decisions were applied,
   with registered fallbacks. No overall LLM scheduling advantage was established.
-- The current edge-reallocation method uses no LLM/API call or extra training.
+- The earlier edge-reallocation method uses no LLM/API call or extra training.
   Its development gain and failed stability criterion are both retained in
   [the results](results/).
+
+## 11 November: feature assignment
+
+At the owner's request, Codex used saved failures to propose a fixed-graph,
+fixed-feature-multiset assignment and explained it before execution. The method,
+four conditions, ID-only context draw and resources were frozen before new model
+calls. Existing independently trained classifiers were reused; there was no
+training update or experimental LLM call. Numerical checks, four TRAIN
+construction cases and the complete three-seed VALID study actually ran.
+
+A separate AI implementation of the saved-tensor auditor passes 190,857 checks;
+the main result and all controls are retained. Loss improvements without any
+classification improvement are reported as a failed method, not efficacy.
+[Source and complete compact results](experiments/feature_assignment/).
+Owner authorization and AI review do not establish student technical review,
+verified contributions, instructor approval or a final course submission.
 
 ## Critically reviewed direction decision
 

@@ -1,54 +1,53 @@
-# MonTi: Reproduction and Edge Reallocation
+# MonTi: Reproduction and Controlled Extensions
 
-A CISC8006 study of [MonTi](https://github.com/bdi-lab/MonTi), with a budget-preserving graph-injection postprocessor.
+A CISC8006 study of [MonTi](https://github.com/bdi-lab/MonTi). **No improvement over the strong random target-fill control is established.** [Grading evidence and remaining gaps](docs/ASSESSMENT.md).
 
-**For assessment:** [grading points, evidence and remaining gaps](docs/ASSESSMENT.md).
+## Latest experiment: feature placement, no measured gain
 
-## Current method
+Keep the randomly target-filled graph and the complete generated feature set fixed; change only which injected position receives each feature vector. A separate frozen GAGA surrogate guides a one-to-one assignment. [Method, controls and limits](experiments/feature_assignment/).
 
-After MonTi generates an attack, move some injected-to-candidate edges to the existing target list. Keep injected features, previous target edges, injected-node degrees, and total node/edge budgets unchanged. The rule is deterministic; it uses no LLM or additional training. [Method](docs/METHOD.md).
+GossipCop-S, split 0, development VALID; **higher miss rate (MR) means a stronger attack**. MR includes targets already missed before injection.
 
-## Latest results
-
-GossipCop-S, split 0; GCN surrogate and GAGA detector. **Higher miss rate (MR) means a stronger attack.** MR includes targets already misclassified before the attack.
-
-| Development condition | Mean GAGA MR |
+| Condition | Mean official-GAGA MR |
 |---|---:|
-| Original attack | 46.95% |
-| Candidate-to-target reallocation | **52.43%** |
-| Random target-fill control | 52.53% |
-| Candidate-rewiring control | 46.88% |
+| Random target-fill graph, original feature positions | 55.0576% |
+| Relation-model feature assignment (primary) | 55.0576% |
+| GCN feature proposal, common acceptance filter | 55.0576% |
+| Cycle-matched random feature permutation, common filter | 55.0576% |
 
-The measured gain is **+5.48 percentage points**, positive in all three seeds. Its nominal paired 95% interval is **[-0.82, 11.78] pp**, so the frozen stability criterion failed. Random target filling performs similarly; a benefit from the priority rule is unproven. No final TEST evaluation has run for this method.
+All four conditions have identical class predictions on all 3,213 target occurrences. The primary passes its own-model acceptance filter in 276/384 cases, but changes no own-GAGA or official-GAGA class. **Gain: 0 pp; frozen qualification failed.** A lower surrogate loss is not a detection result. [Seed/case tables and provenance](results/feature_assignment/).
 
-Scope: 128 validation groups per seed, 1,016 target occurrences and 373 unique targets per seed. The 3,048 pooled occurrences are correlated. [Complete compact results](results/) include negative cases and controls.
+Scope: 128 unchanged groups per seed, 1,071 occurrences and 323 unique targets; frozen generator seeds 3/4/5. Repeated news and previous development inspection limit generalization. The extra own-GAGA model changes the original GCN-only attacker knowledge. No training updates, experimental API calls, GPU work or final TEST queries occurred in this phase.
 
-The separate original full-test reproduction was 43.73% learned versus 40.19% random, **inconclusive**. It uses a different cohort and is not a paired baseline for the table above.
+## Earlier evidence
 
-## Try the standalone rule
+Edge reallocation previously gained +5.48 pp on a different development cohort, but random target filling was slightly higher and the stability criterion failed. [Earlier method](docs/METHOD.md) · [Preserved results](results/README.md).
 
-Python 3.8+; these commands need no ML dependencies or downloaded data:
+The separate full-test reproduction remains 43.73% learned versus 40.19% random, **inconclusive**. It is not the paired baseline for the latest experiment. [Reproduction and paper comparison](docs/REPRODUCING.md).
+
+## Check saved results
+
+These commands use the standard library; assignment numerical tests additionally need the recorded NumPy/SciPy environment.
 
 ```bash
-python -m unittest discover -s tests -v
-python -m tools.apply_reallocation --input examples/reallocation_input.json --output work/reallocated.json
 python -m tools.check_results
+python -m tools.feature_assignment_results check --results results/feature_assignment
+python -m unittest discover -s tests -v
 ```
 
-These run synthetic geometry checks and recount saved results. Full model reruns require the historical experiment source and assets; see [reproduction instructions](docs/REPRODUCING.md).
+Missing optional assignment dependencies produce explicit test skips. Full model reruns need the frozen historical runtime and assets; see [reproduction instructions](docs/REPRODUCING.md).
 
 ## Repository guide
 
 | Path | Contents |
 |---|---|
-| [methods/](methods/) | Current reallocation algorithm |
-| [results/](results/) | Seed metrics, all compact case counts, controls and provenance |
-| [tools/](tools/) and [tests/](tests/) | JSON interface, result checks and synthetic tests |
-| [docs/](docs/) | Method, reproduction, grading evidence and archive guide |
+| [methods/](methods/) | Edge reallocation and bijective feature assignment |
+| [experiments/feature_assignment/](experiments/feature_assignment/) | Bounded runner, TRAIN preflight and separate saved-record auditor |
+| [results/](results/) | Compact complete comparisons, controls and provenance |
+| [tools/](tools/) and [tests/](tests/) | Saved-count checks and synthetic contracts |
+| [docs/](docs/) and [environment/](environment/) | Method, setup, assessment mapping and recorded environment |
 | `models/`, `modules/`, `utils/`, `run.py` | Original MonTi implementation |
-| [environment/](environment/) | Recorded ML environment |
-| `course/`, `evidence/` | Baseline figure sources and publication verification |
 
-Detailed logs, superseded proposals and outdated presentation drafts remain in the [historical archive](docs/ARCHIVE.md), outside the current working tree.
+Detailed logs, tensors, superseded proposals and outdated presentation drafts stay outside this working tree. [Archive guide](docs/ARCHIVE.md). Raw attempts are retained; agent checks are not human verification or course completion.
 
 Upstream authors: Jinhyeok Choi, Heehyeon Kim and Joyce Jiyoung Whang, AAAI 2025. [License](LICENSE.txt) · [AI use](AI_USAGE.md) · [Contributions](CONTRIBUTIONS.md).
