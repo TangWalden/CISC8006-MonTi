@@ -1,0 +1,410 @@
+{
+  "schema": "monti_feature_assignment_compact_v1",
+  "method": "Own-GAGA-informed bijective injected-feature assignment",
+  "split": "GossipCop-S split0 development VALID; final TEST closed",
+  "baseline": "Frozen MonTi followed by the existing random-target-fill topology; fresh cohort, not the earlier study paired control",
+  "metric": "MR includes ALL fraud-target occurrences and clean errors; higher means a stronger attack",
+  "cohort": {
+    "groups_per_seed": 128,
+    "target_occurrences_per_seed": 1071,
+    "unique_targets_per_seed": 323,
+    "correlated_occurrences_all_seeds": 3213,
+    "target_identities_repeated_across_groups": 175,
+    "maximum_group_memberships": 32,
+    "overlap_with_previous_three_cohorts": 288,
+    "new_unique_relative_to_previous_contexts": 35,
+    "original_population_membership_verified_from_saved_metadata_only": true
+  },
+  "mean_mr_percent": {
+    "gaga": {
+      "baseline": 55.05757858699035,
+      "relation_assignment": 55.05757858699035,
+      "gcn_assignment": 55.05757858699035,
+      "matched_random_permutation": 55.05757858699035
+    },
+    "gcn": {
+      "baseline": 97.79022720199191,
+      "relation_assignment": 97.79022720199191,
+      "gcn_assignment": 97.79022720199191,
+      "matched_random_permutation": 97.79022720199191
+    }
+  },
+  "paired_contrasts": {
+    "relation_assignment-minus-baseline_gaga": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    },
+    "relation_assignment-minus-baseline_gcn": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    },
+    "gcn_assignment-minus-baseline_gaga": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    },
+    "gcn_assignment-minus-baseline_gcn": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    },
+    "matched_random_permutation-minus-baseline_gaga": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    },
+    "matched_random_permutation-minus-baseline_gcn": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    },
+    "relation_assignment-minus-gcn_assignment_gaga": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    },
+    "relation_assignment-minus-gcn_assignment_gcn": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    },
+    "relation_assignment-minus-matched_random_permutation_gaga": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    },
+    "relation_assignment-minus-matched_random_permutation_gcn": {
+      "seed_differences_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference_pp": 0.0,
+      "sample_sd_pp": 0.0,
+      "paired_t95_pp": [
+        0.0,
+        0.0
+      ],
+      "attack_seeds": 3,
+      "df": 2,
+      "recounted_paired_counts": {
+        "group_wins": 0,
+        "group_losses": 0,
+        "group_ties": 384,
+        "net_wrong": 0,
+        "occurrences": 3213,
+        "net_new_wrong": 0,
+        "net_recoveries": 0
+      }
+    }
+  },
+  "primary_qualification": {
+    "registered": {
+      "primary": "relation_assignment",
+      "mean_gain_at_least_pp": 1,
+      "all_three_seed_deltas_positive": true,
+      "paired_t95_lower_positive": true,
+      "mean_above_both_controls": true,
+      "controls_not_candidates": true
+    },
+    "mean_gain_pp": 0.0,
+    "all_three_seed_deltas_positive": false,
+    "nominal_paired_t95_pp": [
+      0.0,
+      0.0
+    ],
+    "mean_advantages_over_controls_pp": {
+      "gcn_assignment": 0.0,
+      "matched_random_permutation": 0.0
+    },
+    "criterion_met": false,
+    "controls_promoted": false,
+    "final_TEST_allowed": false,
+    "established_control_superiority_claimed": false,
+    "limitation": "Control advantages are means; qualification does not establish positive control-comparison confidence intervals."
+  },
+  "acceptance_and_change_counts": {
+    "baseline": {
+      "accepted": 0,
+      "rejected": null,
+      "raw_nonidentity_cases": 0,
+      "final_nonidentity_cases": 0,
+      "changed_feature_cases": 0
+    },
+    "relation_assignment": {
+      "accepted": 276,
+      "rejected": 108,
+      "raw_nonidentity_cases": 313,
+      "final_nonidentity_cases": 276,
+      "changed_feature_cases": 276
+    },
+    "gcn_assignment": {
+      "accepted": 209,
+      "rejected": 175,
+      "raw_nonidentity_cases": 331,
+      "final_nonidentity_cases": 209,
+      "changed_feature_cases": 209
+    },
+    "matched_random_permutation": {
+      "accepted": 111,
+      "rejected": 273,
+      "raw_nonidentity_cases": 313,
+      "final_nonidentity_cases": 111,
+      "changed_feature_cases": 111
+    }
+  },
+  "physical_cost_per_seed": [
+    {
+      "seed": 3,
+      "summed_injected_nodes": 7867,
+      "summed_nonself_undirected_edges": 362999
+    },
+    {
+      "seed": 4,
+      "summed_injected_nodes": 7867,
+      "summed_nonself_undirected_edges": 362999
+    },
+    {
+      "seed": 5,
+      "summed_injected_nodes": 7867,
+      "summed_nonself_undirected_edges": 362999
+    }
+  ],
+  "costs": {
+    "main_process_cpu_seconds": 5624.2453138460005,
+    "main_wall_seconds": 1748.8557379439007,
+    "phase_wall_seconds": 1976.743771,
+    "GPU_hours": 0,
+    "main_counters": {
+      "dataset_loads": 3,
+      "generator_models_loaded": 3,
+      "proposal_GCN_models_loaded": 3,
+      "own_GAGA_models_loaded": 1,
+      "generations": 384,
+      "generator_forward_dispatches": 384,
+      "generator_completed_forwards": 384,
+      "proposal_generation_GCN_forwards": 0,
+      "own_forward_requests": 3072,
+      "own_GAGA_physical_forwards": 1324,
+      "own_GCN_physical_forwards": 1324,
+      "own_GAGA_completed_forwards": 1324,
+      "own_GCN_completed_forwards": 1324,
+      "own_cache_hits": 424,
+      "native_sequence_cache_hits": 212,
+      "autograd_calls": 768,
+      "native_canonical_updates": 1324,
+      "final_canonical_sequences": 1536,
+      "sealed_cases": 384,
+      "official_GAGA_models_loaded": 1,
+      "official_GAGA_forwards": 1664,
+      "clean_GCN_forwards": 128,
+      "cached_attacked_GCN_requests": 1536,
+      "artifact_tensor_loads": 384,
+      "optimizer_updates": 0,
+      "API_calls": 0,
+      "TEST_queries": 0
+    },
+    "preflight_counters": {
+      "generations": 4,
+      "generator_completed_forwards": 4,
+      "proposal_generation_GCN_forwards": 0,
+      "native_canonical_updates": 8,
+      "own_GAGA_float32_forwards": 16,
+      "own_GCN_float32_forwards": 8,
+      "own_GAGA_float64_forwards": 12,
+      "own_GCN_float64_forwards": 12,
+      "autograd_calls": 16,
+      "GCN_block_topologies": 4,
+      "classifier_float64_clones": 2,
+      "official_GAGA_forwards": 0,
+      "optimizer_updates": 0,
+      "API_calls": 0,
+      "TEST_queries": 0,
+      "dataset_loads": 1,
+      "generator_models_loaded": 1,
+      "own_GAGA_models_loaded": 1,
+      "proposal_GCN_models_loaded": 1
+    },
+    "GCN_attacked_channel": "Cached own-GCN logits; not independent fresh neural replay"
+  },
+  "interpretation": [
+    "Three generator seeds, repeated targets and adaptively inspected VALID contexts; conditional df2 uncertainty, not IID or untouched confirmation.",
+    "The linear solver optimizes saved first-order costs, not the nonlinear victim. The own-GCN acceptance guard does not protect official GAGA.",
+    "Raw cycle matching does not match accepted displacement or prove agent, stealth, novelty or control superiority."
+  ],
+  "new_model_calls_by_exporter": 0,
+  "human_verification": false
+}
