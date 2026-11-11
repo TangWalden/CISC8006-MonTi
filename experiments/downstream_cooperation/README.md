@@ -81,6 +81,15 @@ original graph context. Target labels, classifier predictions and final victim
 outcomes are not policy inputs. A synthetic change to upstream attachments must
 change the corresponding downstream conditioning input.
 
+The downstream is an independent 151872-parameter scorer with hidden width64.
+It conditions on auxiliary features, the mean features and count of actually
+attached targets, candidate features and cached GCN candidate representations.
+This summary is not a lossless representation of all upstream decisions. It is
+a small specialized scorer rather than a second complete MonTi. The hard
+forward graph has legal binary edges; training uses an explicitly biased
+selected-edge straight-through surrogate, without gradients through hard graph
+degrees or the discrete endpoint changes themselves.
+
 A fixed GCN provides TRAIN-only optimization feedback without parameter
 updates. Official GAGA is reserved for a single terminal development evaluation
 after the downstream weights and all graphs have been sealed. No TEST inference

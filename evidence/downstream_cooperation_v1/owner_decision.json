@@ -1,0 +1,19 @@
+{
+  "date_asia_shanghai": "2026-11-11",
+  "record_type": "English paraphrase of the owner's Chinese instructions in this chat",
+  "execution_requested": true,
+  "upstream": "Freeze MonTi; downstream observes its decisions",
+  "downstream": "Train only the candidate-connection scorer",
+  "requested_quota": "Start from equal target and candidate edge permissions",
+  "capacity_clarification": "For each group choose the closest feasible ratio, preserve the original total budget and report its actual ratio",
+  "comparison_requested": ["original MonTi", "random candidate connections"],
+  "additional_control": "Same projected quota with frozen original candidate scores",
+  "scientific_execution_source": "9e013cb182b5af71a9d0b719b5a939deda3c88e2",
+  "downstream_architecture": "Independent conditional scorer with 151872 parameters, not a complete second MonTi",
+  "scope": "TRAIN optimization and terminal VALID pilot only",
+  "final_TEST_authorized": false,
+  "instructor_approval_claimed": false,
+  "human_technical_verification_claimed": false,
+  "novelty_or_effectiveness_established": false,
+  "training_results": "Pending execution"
+}
