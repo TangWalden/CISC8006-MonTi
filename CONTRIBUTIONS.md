@@ -11,4 +11,4 @@ Cross-checks: Junyi reviews the improvement mechanism and ablations. Yifan revie
 
 Codex assistance includes paper/code review, remote-environment inspection, protocol drafting, the candidate-flag correction, synthetic tests, the runner, and evidence registration. Team members remain responsible for reviewing and explaining all submitted code and conclusions.
 
-Human verification and peer evidence review are incomplete. Instructor approval of the reproduction level and resources has not been recorded. Improvement work and its current execution state are documented in the project status and experiment records.
+Human verification and peer evidence review are incomplete. Instructor approval of the reproduction level and resources has not been recorded. Current results are summarized in [results/](results/); historical execution records are indexed in the [archive](docs/ARCHIVE.md).

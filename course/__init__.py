@@ -1,1 +1,1 @@
-"""Auditable CISC8006 component reproduction; no improvement experiments."""
+"""Publication verification and historical plotting helpers."""

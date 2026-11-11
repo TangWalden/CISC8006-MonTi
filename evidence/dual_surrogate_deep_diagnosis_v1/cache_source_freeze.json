@@ -1,8 +1,0 @@
-{
-  "status": "source_frozen_before_numeric_cache_reads",
-  "source_sha256": "c0da1a67fb47df3df350b021a9319d473d64c949b6eccc57041dfec0d897a9c2",
-  "frozen_utc": "2026-11-03T09:18:40.066708+00:00",
-  "base_public_head": "ba76e5f1edbfedda998c1c4f48e8d07f35ad808c",
-  "overall_VALID_outcomes_already_known": true,
-  "scope": "Four registered numeric NPY caches, all374 unique selected VALID targets; no model/tensor/checkpoint/training/API/GPU"
-}

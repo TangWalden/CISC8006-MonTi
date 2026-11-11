@@ -1,0 +1,8 @@
+{
+  "adjacency": [[1, 0, 0, 1, 1, 0, 0, 0]],
+  "target_ids": [10, 20, 30],
+  "candidate_ids": [40, 50, 60, 70],
+  "injected_ids": [100],
+  "seed": 3,
+  "group_key": 938
+}

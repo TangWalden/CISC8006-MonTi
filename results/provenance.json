@@ -1,0 +1,113 @@
+{
+  "schema": "monti_compact_saved_publication_provenance_v1",
+  "record_snapshot": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+  "scientific_execution_source": "c3238ee62272d39f0337828718a3560abe101a00",
+  "original_execution_protocol_sha256": "24dfa6cadd2b1c2a90a1b283bf659a5a0234e4d336e10d5142a813fe8ada0d14",
+  "original_execution_protocol_url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/candidate_target_reallocation_v1/execution_protocol.json",
+  "method_core": {
+    "original_path": "course/candidate_target_reallocation/core.py",
+    "current_path": "methods/target_reallocation.py",
+    "sha256": "1f824f842988d84edcdfdfaa9df18f2b83d722c124b8f18fa9a022e5c910bce2",
+    "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/c3238ee62272d39f0337828718a3560abe101a00/course/candidate_target_reallocation/core.py",
+    "copy_policy": "Exact bytes; unchanged mathematical core"
+  },
+  "source_json_records": {
+    "evidence/candidate_target_reallocation_v1/summary.json": {
+      "sha256": "6ba26077a6e97157156312ef6c913e83d2d761ac6054663b93017a350500cfab",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/candidate_target_reallocation_v1/summary.json"
+    },
+    "evidence/candidate_target_reallocation_v1/all_case_counts.json": {
+      "sha256": "057ff96d87393a1e15515167071c616c659cdb9a62a9cc75601027f9e85efe2a",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/candidate_target_reallocation_v1/all_case_counts.json"
+    },
+    "evidence/candidate_target_reallocation_v1/execution_trace.json": {
+      "sha256": "e52d9db98f0616c24d879437005683a706a2cbc3f372bb4ca000b31a2c232a7a",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/candidate_target_reallocation_v1/execution_trace.json"
+    },
+    "evidence/candidate_target_reallocation_v1/outer_receipt.json": {
+      "sha256": "a0186ae408c8004d695ec98567a9440b7ae9472980ae6a1a7f24cab57b6927e1",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/candidate_target_reallocation_v1/outer_receipt.json"
+    },
+    "evidence/candidate_target_reallocation_v1/independent_saved_tensor_audit_v1.json": {
+      "sha256": "6b07abca7db4c82bf06e0d2f7867139a33ac6d3c86d84d900ff2aa679fac96aa",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/candidate_target_reallocation_v1/independent_saved_tensor_audit_v1.json"
+    },
+    "evidence/candidate_target_reallocation_v1/execution_protocol.json": {
+      "sha256": "24dfa6cadd2b1c2a90a1b283bf659a5a0234e4d336e10d5142a813fe8ada0d14",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/candidate_target_reallocation_v1/execution_protocol.json"
+    },
+    "evidence/new_methods_20261103/final_saved_recount.json": {
+      "sha256": "0ea19fe1978c0f583eceeb99fee7e29a5e3051af1209323f67d65d78150284c4",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/new_methods_20261103/final_saved_recount.json"
+    },
+    "evidence/dual_surrogate_v1/results.json": {
+      "sha256": "c1b2ab7c4a3b35b2e04f244c752271edff1063e828c1d7bbc9d279433a03d2df",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/dual_surrogate_v1/results.json"
+    },
+    "evidence/source_role_fix_v1/saved_summary.json": {
+      "sha256": "940b4e0fa3eca40c2127e70a121161d212294b47c09ce12bd5f5942f03ceea40",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/source_role_fix_v1/saved_summary.json"
+    },
+    "evidence/feature_polish_v1/results_summary.json": {
+      "sha256": "1059ceef10d24f40ef4399d4ee4b39372aad96b1ed1460c374b86fd55e189c4b",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/feature_polish_v1/results_summary.json"
+    },
+    "evidence/target_degree_balance_v1/summary.json": {
+      "sha256": "d9417c33e0f3e507910a71c6a229df8581f4e5b481ee490d7243064dc78d46e2",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/target_degree_balance_v1/summary.json"
+    },
+    "evidence/train_prototype_mix_v1/result.json": {
+      "sha256": "7561d59ca1d232f29072cb5842a67a7bbe882e699e69a05660adf4a0f354bc99",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/train_prototype_mix_v1/result.json"
+    },
+    "evidence/feature_logit_sharpen_v1/summary.json": {
+      "sha256": "0fa9ebf8425881a72492d5dfd8d18e64868c3ee02a76ed56b9eb9ab0a0e49035",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/feature_logit_sharpen_v1/summary.json"
+    },
+    "evidence/reproduction_summary.json": {
+      "sha256": "29d513ad5d572bd4cfc879c6e4d37182eb23b73e2184001a65122bdbbfdcdb99",
+      "url": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/reproduction_summary.json"
+    }
+  },
+  "compact_files": {
+    "latest.json": {
+      "sha256": "a1381d9c6e02b9c6067a5f626596c410a478ef24197d591ba4aee47041ed607b",
+      "kind": "Derived saved-count publication table"
+    },
+    "seed_metrics.csv": {
+      "sha256": "8cf8ca3d5b2eb55815e837be47696af65aa7afc1bb5e80696ba3e6e3b323bb8b",
+      "kind": "Derived saved-count publication table"
+    },
+    "case_counts.csv": {
+      "sha256": "d37b0bad91f413824cfb2078f62223a3d24369c6e0489bf7a4d43193550165dc",
+      "kind": "Derived saved-count publication table"
+    },
+    "previous_studies.csv": {
+      "sha256": "4700bca47e62f335f342ffb68fed5572986071a36a6229880e10059ce1acd92d",
+      "kind": "Derived saved-count publication table"
+    },
+    "audit.json": {
+      "sha256": "6b07abca7db4c82bf06e0d2f7867139a33ac6d3c86d84d900ff2aa679fac96aa",
+      "kind": "Exact original audit bytes"
+    }
+  },
+  "formal_reproduction_context": {
+    "source": "evidence/reproduction_summary.json",
+    "separate_from_current_development": true,
+    "learned_mean_mr_percent": 43.72800760817879,
+    "random_mean_mr_percent": 40.190204469805046,
+    "paired_mean_difference_pp": 3.5378031383737487,
+    "paired_t95_pp": [
+      -1.5415083979686783,
+      8.617114674716175
+    ],
+    "conclusion": "inconclusive"
+  },
+  "interpretation": "New compact curation manifest, not an original executed experiment manifest. Paths in the copied audit refer to the immutable historical snapshot/private artifacts.",
+  "previous_studies_policy": "Each row compares only its own phase/cohort/control. Absolute MR values between rows are not paired comparisons; the list is a selected compact history, not an exhaustive review.",
+  "verification_scope": "Saved-count arithmetic and publication-byte checks only, not a new raw-logit argmax recount, model experiment, independent method audit or human verification.",
+  "new_model_queries": 0,
+  "new_dataset_or_tensor_loads": 0,
+  "new_training_or_API_calls": 0,
+  "reproducibility": "Exporter reads only git show of the fixed snapshot; fetch full history if a shallow clone lacks that object. Private data/checkpoints are required to reproduce the historical full ML run."
+}

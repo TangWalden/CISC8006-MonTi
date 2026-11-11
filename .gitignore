@@ -1,14 +1,32 @@
-__pycache__
-config_files
-experimental_results
-Datasets/
-best_models/
-downloads/
+# Local data, generated configurations and checkpoints
+/Datasets/
+/best_models/
+/config_files/
+/experimental_results/
+/downloads/
 /runs/
-*.tar.gz
+/work/
+/artifacts/
+*.pt
+*.pth
 *.pickle
-evidence/bootstrap/incomplete-transfer-git/
-evidence/runs/*/*.jsonl
-evidence/improvements/*/*.jsonl
-evidence/one_edge_diagnosis*/raw/
-evidence/score_role_replay*/raw/
+*.bin
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.bundle
+
+# Raw execution output stays local; publish compact, reviewed result tables.
+*.log
+*.jsonl
+evidence/**/all_case_counts.json
+evidence/**/raw/
+
+# Caches and local credentials
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*

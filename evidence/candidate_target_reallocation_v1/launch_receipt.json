@@ -1,8 +1,0 @@
-{
-  "pid": 1197185,
-  "source_commit": "c3238ee62272d39f0337828718a3560abe101a00",
-  "protocol_sha256": "24dfa6cadd2b1c2a90a1b283bf659a5a0234e4d336e10d5142a813fe8ada0d14",
-  "driver_sha256": "c8fe25c2b08f3b9a5e7688eb63ff359b6f26075cf80ec96a42e5726a7f65ee53",
-  "synthetic_receipt_sha256": "445cbdc6bb8fb689e24364768bc7cd03cbf761dbaf91929a9bc45a2dc50d55d1",
-  "started_utc": "2026-11-05T10:10:55.540800+00:00"
-}

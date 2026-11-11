@@ -1,8 +1,0 @@
-{
-  "exit_code": 0,
-  "elapsed_process_seconds": 1.6719387869816273,
-  "gpu_hours": 0,
-  "source_commit": "5f43af26054e4f7f9d46720c8eb178deb32762ef",
-  "runtime_bootstrap": "existing course/run.sh",
-  "prior_failures_preserved": true
-}

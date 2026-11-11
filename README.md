@@ -1,269 +1,52 @@
-# CISC8006: MonTi Reproduction and Improvements
+# MonTi: Reproduction and Edge Reallocation
 
-**Latest completed result, 5 November:** [candidate-to-target reallocation](course/candidate_target_reallocation/README.md)
-raises mean official-GAGA MR from 46.94881890% to 52.42782152%, a measured
-+5.47900262 pp development gain. All three seeds improve (+7.77559055 /
-+5.90551181 / +2.75590551 pp), but the nominal paired-t95 interval
-[-0.82294779, 11.78095304] pp fails the frozen positive-lower-bound condition.
-The other fixed conditions pass; no candidate qualifies and the stable-effect
-objective remains unachieved. There are 184 gained and 17 lost wrong predictions,
-net +167 over 3,048 correlated occurrences (112 group-seed wins / 267 ties /
-five losses). Random target filling averages 52.52624672%, candidate rewiring
-46.88320210%; no control is promoted and no superior-priority claim is made.
+A CISC8006 study of [MonTi](https://github.com/bdi-lab/MonTi), with a budget-preserving graph-injection postprocessor.
 
-All 384 cases completed once within the original limits: 384 generator calls,
-1,664 fresh GCN and 1,664 fresh official-GAGA forwards, zero updates/autograd/
-API/TEST/GPU work. The third ID-only cohort has 1,016 occurrences / 373 unique
-targets per seed; 306 overlap the union of prior cohorts and 67 are new relative
-to it. It is not IID or untouched validation. Every arm/seed retains the same
-x0, old target edges, injected-node degrees and physical budgets. Maximal
-reallocation still removes all candidate neighbors from 3,474 injected rows;
-all such cases and negative outcomes are retained.
+## Current method
 
-This registered matrix is closed. Publish and review the evidence with genuine
-human feedback; do not add seeds, change gates or launch new calls to force the
-interval above zero. Full TEST and final tag remain closed at their separate
-gates. Private conditional-TEST and faster-canonical drafts are unselected and
-unexecuted; neither is authorization or completed work.
+After MonTi generates an attack, move some injected-to-candidate edges to the existing target list. Keep injected features, previous target edges, injected-node degrees, and total node/edge budgets unchanged. The rule is deterministic; it uses no LLM or additional training. [Method](docs/METHOD.md).
 
-**Earlier manual result, 5 November:** [fixed beta-2 feature sharpening](course/feature_logit_sharpen/README.md)
-completed with a small positive result that **fails the frozen development
-criterion**. Mean official-GAGA attack MR is 47.97338173% baseline,
-48.30611010% sharpened, 48.33635814% linear contrast and 47.82214156% shuffled
-delta. The primary change is +0.33272837 pp; all three seeds are positive, but
-the nominal paired-t95 interval is [-0.01160766, 0.67706440] pp and the fixed
-+1 pp threshold is missed. Eleven wrong predictions are gained and none lost
-over 3,306 correlated occurrences (11 group-seed wins, 373 ties, zero losses).
-No candidate qualifies; the linear control is not promoted. The stable-effect
-objective and full-TEST qualification remain unachieved.
+## Latest results
 
-The 128 new original-VALID contexts contain 1,102 occurrences and 357 unique
-targets per seed; 246 target identities overlap the earlier cohort and 111 are
-new to it. These are overlapping development contexts, not IID news or an
-untouched validation set. The earlier [fixed-alpha TRAIN-prototype result](course/train_prototype_mix/README.md)
-remains negative and unchanged. Absolute scores from the two cohorts are not
-paired comparisons.
+GossipCop-S, split 0; GCN surrogate and GAGA detector. **Higher miss rate (MR) means a stronger attack.** MR includes targets already misclassified before the attack.
 
-The subsequent structural comparison above was separately frozen before its
-metadata and calls. No beta, seed or cohort expansion of sharpening, favorable-
-control promotion or priority-superiority claim follows from either result.
-The original delivery snapshot `0c5e227` and dated artifacts remain historical;
-automation remains deleted, with no new scheduled task, TEST or final tag.
+| Development condition | Mean GAGA MR |
+|---|---:|
+| Original attack | 46.95% |
+| Candidate-to-target reallocation | **52.43%** |
+| Random target-fill control | 52.53% |
+| Candidate-rewiring control | 46.88% |
 
-**5 November results update:** the target-attachment study completed on
-4 November. Observed mean official-GAGA MR rises from 52.642835% to 54.017721% (+1.374885 pp), but
-seed 5 declines and matched random averages 54.292698%. The frozen criterion
-fails: no candidate is selected, and the random control is not promoted. All
-384 group-seed cases remain. [Results, controls, costs and audits](course/target_degree_balance/README.md).
-The stable-effect objective is **not achieved**. This CPU study made 1,280 fresh
-GCN and 1,280 fresh official-GAGA forwards, with no new generator/training/API/
-TEST calls or GPU charge. The separate implementation-independent agent audit
-passed 223,007 checks; it is not human verification.
+The measured gain is **+5.48 percentage points**, positive in all three seeds. Its nominal paired 95% interval is **[-0.82, 11.78] pp**, so the frozen stability criterion failed. Random target filling performs similarly; a benefit from the priority rule is unproven. No final TEST evaluation has run for this method.
 
-## 5 November delivery status
+Scope: 128 validation groups per seed, 1,016 target occurrences and 373 unique targets per seed. The 3,048 pooled occurrences are correlated. [Complete compact results](results/) include negative cases and controls.
 
-Available artifacts are the [English report draft](docs/MonTi_Report_Draft.pdf)
-with [editable source](docs/REPORT_DRAFT.md), [editable slide draft](docs/MonTi_Slides_Draft.pptx)
-and [offline demo preparation](docs/DEMO_SCRIPT.md), plus the repository's code,
-protocols, English logs and completed experiment addenda. The dated PDF/PPTX
-remain **outdated drafts**: they were not rebuilt to include the latest studies.
-Use the [balancing addendum](course/target_degree_balance/README.md),
-[reallocation addendum](course/candidate_target_reallocation/README.md),
-[sharpening addendum](course/feature_logit_sharpen/README.md),
-[feature-refinement results](course/feature_polish/README.md) and
-[canonical diagnostic](course/feature_parity_check/README.md) for current results.
+The separate original full-test reproduction was 43.73% learned versus 40.19% random, **inconclusive**. It uses a different cohort and is not a paired baseline for the table above.
 
-Still missing are a stable measured gain, an owner-confirmed full-TEST protocol
-and execution, genuine human technical checks, course approval, verified actual
-contributions, rehearsal and a final submission tag. The original formal test
-reproduction and its inconclusive paired interval remain separate. The existing scheduled follow-up was deleted on5November via the app tool at
-this delivery boundary. The [delivery manifest](evidence/delivery_20261105.json)
-records exact files and pending requirements; the project and course remain incomplete.
+## Try the standalone rule
 
-**Completed prior diagnostic, 4 November:** canonical own-teacher parity completed on all
-768 endpoints from 384 saved graphs: zero class differences, maximum logit error
-1.5497e-6 and sequence error 2.9802e-6; reported cache/alias checks pass. The fresh
-own teacher responds differently from the saved official victim, while the
-measured affine shortcut agrees with its canonical updater. This does not prove
-a sole cause of failed transfer. The independent saved-record agent audit passed
-53,967 checks. [Results, CPU cost and limits](course/feature_parity_check/README.md).
-No new generator/GCN/official-victim/API/TEST call occurred; GPU charge is zero.
-
-**Earlier completed feature study, 4 November:** all five fixed-graph feature-refinement conditions and three seeds completed. Mean GAGA MR is 52.6428% baseline, 51.9096% GCN-PGD, 46.7156% GAGA-PGD, 47.3877% guarded GAGA-PGD and 49.3431% random. The primary guarded method is lower in every seed, paired -5.2551 pp, and is not selected as an improvement. [Full results, cases, failed attempts and audit limits](course/feature_polish/README.md). The study ran on CPU with zero GPU charge; final TEST/tag and genuine human/course requirements remain separate. Dated report/slides remain unchanged.
-
-**Earlier 4 November source-role control:** the correction and matched original-GCN control completed six fresh trainings. Mean GAGA MR 52.7039% to 52.6734% (-0.0306 pp), with mixed seed directions; no consistent gain selected. [Results, concrete cases and limits](course/source_role_fix/README.md). This does not replace the frozen formal reproduction or authorize final TEST/tag.
-
-**Latest structural-feedback study, 3 November 2026:** the owner-authorized
-[independent GAGA-style surrogate implementation](course/dual_surrogate/README.md)
-and four-arm development comparison completed twelve terminal models. Mean GAGA
-MR is 51.3596% GCN-only, 46.1045% GAGA-only, 47.8766% two-GCN and 38.9245% joint.
-Higher MR is a stronger attack; the proposed joint method is worse by 12.4351 pp
-and is not recommended as an improvement. All 128 groups / 1,091 occurrences were
-retained; both saved-output audits passed. Build failures, the single incomplete
-job retry and their costs remain recorded. Total phase charge is 1.3334700 GPUh;
-no LLM API calls or final-test queries were made. These development figures do
-not replace the frozen 43.728% full-test baseline. Dated PDF/PPTX drafts remain
-unchanged; final testing, course approval and human requirements remain pending.
-
-**Failure-driven follow-up, 3 November 2026:** [Concrete failure analysis and the
-completed six-arm agent experiment](course/alignment_agent/README.md) are now
-available. All 18 GCN validation trainings completed, evaluated only at epoch eight. Direct
-alignment again reduces attack performance; block protection recovers part of
-that loss while losing most distance reduction. Hybrid-agent filtered MR is
-93.6450% versus 93.6144% smooth-OFF, only a net one wrong prediction over 3,273
-occurrences. Eleven decisions were actually LLM-controlled and ten were
-fallbacks; no overall improvement, LLM superiority or camouflage benefit is
-established. Fifteen real calls and all failures are retained. This phase used
-1.3617948 GPU-hours including diagnosis/waits; no final test/GAGA evaluation.
-
-**First implementation phase, 3 November 2026:** the owner-requested implementations and
-first bounded validation pilots have run: three self-model seeds, nine fresh
-OFF/ALWAYS/GATED alignment trainings, a numeric neural gate, and 120 real DeepSeek
-API calls including textual descriptions and four-example in-context learning.
-The [saved-output recount](evidence/new_methods_20261103/final_saved_recount.json)
-and [execution trace](evidence/new_methods_20261103/execution_trace.json) retain
-the negative outcomes. There is no demonstrated overall improvement:
-
-- [LLM fusion](course/fusion_pilot/README.md): graph-only, fixed fusion, numeric
-  gate and both LLM variants make identical predictions, 20/32 correct. These
-  are eight news nodes in repeated contexts, not 32 independent articles. The
-  20-case learning extension is also unchanged, 11/20 correct. No graph-branch
-  class flips were induced in this small transfer cohort, so it cannot establish
-  protective benefit. Input is numeric evidence; article mapping remains missing.
-- [Conditional alignment](course/conditional_alignment/README.md): three-seed
-  GCN-validation MR is 97.4947% OFF, 94.6227% ALWAYS and 95.3254% GATED. Alignment
-  lowers the optimized relationship-moment distance while reducing attack MR.
-  GATED exceeds ALWAYS but remains below OFF; it is not selected as a winner.
-
-The whole new GPU phase cost 0.7893103 GPU-hours; API peak-price cost upper bound
-was USD 0.0474795, separately recorded. No final test evaluation has started.
-Existing report/slides remain dated drafts; their snapshots predate these runs.
-
-
-Team: **Junyi Tang** and **Yifan Fan**. This course project studies one component of [MonTi](https://github.com/bdi-lab/MonTi), the AAAI 2025 paper by Jinhyeok Choi, Heehyeon Kim, and Joyce Jiyoung Whang. This is a course reproduction repository. Author credits and the upstream license are preserved.
-
-**Current baseline conclusion: inconclusive.** All six pre-registered runs are complete. On GossipCop-S, split 0, with fixed official GCN surrogate and GAGA victim checkpoints, learned candidate selection achieves **43.73 ± 0.75% MR**, versus **40.19 ± 1.30%** for the defined random selector (sample standard deviation, three seeds). The mean paired difference is **+3.54 percentage points**, with a **95% interval of [−1.54, 8.62]**. Higher MR means a stronger attack. A positive mean alone does not establish the claim.
-
-| Seed | Learned MR | Random MR | Paired difference, pp |
-|---|---:|---:|---:|
-| 0 | 44.2891% | 39.0870% | +5.2021 |
-| 1 | 42.8816% | 41.6262% | +1.2553 |
-| 2 | 44.0133% | 39.8573% | +4.1560 |
-
-Paper Table 5 reports 43.70% / 39.13%. Our comparison corrects the candidate flag mapping and explicitly defines random sampling during training and evaluation. Historical ablation semantics remain unconfirmed. The incidence-based budget, unresolved Table 4/5 difference, fixed detectors, and limited uncertainty scope are documented in the protocol. Numerical proximity does not remove these differences.
-
-## Evidence and project status
-
-This public repository is an English-only publication edition. Original execution histories are retained privately for audit. Historical non-English text artifacts are omitted from this edition; scientific source, configurations, metrics, and failed-run records are preserved. [Commit mapping](evidence/publication_history_map.json) links original execution IDs in the run records to equivalent public source snapshots. The publication cleanup does not change experiment results or imply that translated text existed before its actual translation date.
-
-- [Frozen baseline protocol](course/frozen_protocol.json), [results](evidence/reproduction_summary.json), and [registered baseline runs](evidence/run_registry.json).
-- [Independent prediction recount](evidence/baseline_audit.json), [public per-group error counts](evidence/published_baseline), [training logs](evidence/training_logs), and [failed setup and check attempts](evidence/bootstrap).
-- [Grading audit](course/GRADING_AUDIT.md), [one-week plan](course/WEEK_PLAN.md), [three improvement proposals](course/IMPROVEMENT_PROPOSAL.md), and [work status](course/PROJECT_STATUS.json).
-- [Full evaluation design for owner review](course/FULL_EVALUATION_PLAN.md) and [English public-history verification](evidence/publication_verification.json).
-- [Audited result figures](docs/figures/README.md), including seed-level baseline results, paired confidence intervals, pilot effects, plotted data and provenance.
-- [Train/validation diagnosis](course/TRAINING_DIAGNOSIS.md), [pre-run pilot protocol](course/improvements/pilot_protocol_v1.json), and [improvement implementation and tests](course/improvements).
-- [Agent-use record](AI_USAGE.md), [planned and actual contributions](CONTRIBUTIONS.md), and [baseline report](docs/baseline_report.html).
-
-The improvement pilots compare the common baseline, structural-coverage candidates, and group-size-proportional sampling using seeds 3/4/5. They use GCN validation only. Full improvement evaluation and mechanism controls require a separate freeze after the registered selection. Course approval remains unconfirmed; technical research pilots are not presented as approved course milestones.
-
-All nine pilots completed and passed independent saved-output audits. Mean paired GCN validation gains were -0.1833pp for coverage and -0.5500pp for size-proportional sampling. The pre-registered rule selected coverage; these negative pilot results are retained. No full improvement test run has started. The owner has requested confirmation of the reproduction conclusion, improvement direction, full evaluation protocol, and final freeze before those milestones advance.
-
-The owner subsequently required improvement ideas to follow analysis of actual outcomes. The earlier coverage follow-up is on hold. The [results-first diagnosis](docs/RESULTS_FIRST_DIAGNOSIS.md) now audits 15 runs and 160 saved GCN validation epochs. In the learned full baseline, 432 of 438 residual seed-occurrences are in the lowest training-derived nodes-per-target bin, which contains 18.32% of exposures. Budget, degree and structure are confounded; this is a diagnostic association, not an established cause or successful improvement. The next question is actual edge allocation under unchanged budgets. The [recorded plan](course/RESULTS_FIRST_DIAGNOSIS_PLAN.md), [complete tables](evidence/results_first_diagnosis_v1) and [separate audit](evidence/results_first_diagnosis_audit_v1.json) preserve the evidence. No new improvement has been selected, and the historical pilot choice does not authorize launching that proposal.
-
-Public documentation and newly generated logs are in English. English translations of earlier agent records identify their original source, hashes, and translation status. Original historical evidence is preserved; translated wording is not presented as verbatim API output.
-
-The subsequent [CPU-only one-edge diagnosis](docs/ONE_EDGE_DIAGNOSIS.md) completed 48 reconstructed group/checkpoint cases and 243 endpoint configurations. A fixed-feature endpoint oracle yields seven additional incorrect occurrences on that selected cohort; all seven reconstructed choices had spent the sole edge on an already clean-GCN-incorrect target. This is not a trained improvement. Historical full prediction agreement was only 17/48 CPU cases, despite residual-count agreement in 41/48. The failed 79-forward attempt, numerical-check amendment, complete 355-forward retry and [independent logit recount](evidence/one_edge_diagnosis_audit_v2.json) are preserved.
-
-The later [crossed-device score-role study](docs/SCORE_ROLE_REPLAY.md) completed 96 generator and 224 GCN forwards. GPU-generated attacks reproduce all 48 historical prediction vectors; detector CPU/GPU predictions agree for each captured attack. Runtime captures confirm that the one-node score source is the first target slot, while the [published formulation](course/PAPER_EDGE_SCORE_CHECK.md) uses the injected slot. Actual target probabilities have multiple exact maxima in 63/96 captures; identical-vector device top-k choices differ in 32/96. Candidate sets and features also differ, so no sole cause or successful correction is claimed. The [new outcome-based proposal](course/IMPROVEMENT_PROPOSAL_V2.md) awaits owner direction confirmation; neither proposed v2 variant has been trained and frozen scientific files remain unchanged.
-
-While that decision is pending, [isolated draft adapters](course/outcome_v2/README.md)
-passed 12 synthetic CPU checks, with no data/checkpoint loading, detector calls,
-training or GPU work. They are preparation, not effectiveness evidence. The
-[pilot protocol draft](course/outcome_v2/PILOT_PROTOCOL_DRAFT.md) is unapproved and
-unfrozen. An [English six-minute offline demonstration script](docs/DEMO_SCRIPT.md)
-shows how to present the recorded evidence; human rehearsal and review remain
-unrecorded.
-
-The [ten-page English report draft](docs/MonTi_Report_Draft.pdf) and
-[editable report source](docs/REPORT_DRAFT.md) consolidate the completed
-reproduction, negative pilots and validation diagnostics. Its
-[build provenance](evidence/report_draft_build.json) and
-[factual and visual review](evidence/report_draft_qa.json) accompany it. This is
-an incomplete report draft: it contains no new improvement/control results and
-does not establish completed human review or final course submission.
-
-The [editable English slide draft](docs/MonTi_Slides_Draft.pptx) has seven main
-slides and five evidence appendices, with versioned references in speaker notes.
-The [presentation guide](docs/SLIDES_GUIDE.md) proposes balanced six-minute
-speaking roles and records remaining rehearsal/application checks. Native
-charts/tables, source hashes and artifact-check limits are documented in the
-[build](evidence/slides_draft_build.json) and [review summary](evidence/slides_draft_qa.json).
-The deck is preparation, not a completed presentation or improvement study.
-
-A [bounded primary-source related-work check](docs/RELATED_WORK_CHECK.md)
-documents existing prediction/margin-informed injection and edge allocation.
-A remains a paper-conformance question; B is a proposed conditional extension,
-with neither efficacy nor first-in-literature novelty established. It changes
-no frozen protocol, result, selected method or execution authorization.
-
-The owner's 2 November questions prompted an [evidence-based reassessment](course/REASSESSMENT_PROPOSAL_V3.md).
-Saved GCN validation predictions give slightly opposite learned/random orderings
-under occurrence weighting and equal group weighting. The new recommendation for
-discussion is evaluation/grouping robustness with an input-order control; B is
-not recommended as the main contribution. The [post-hoc arithmetic](evidence/reassessment_20261102_v1.json)
-and its [review](evidence/reassessment_20261102_review_v1.json) add no model calls,
-training or GPU use. The owner subsequently declined this evaluation/grouping
-route. [Method-level alternatives](course/METHOD_ALTERNATIVES_20261102.md) discuss
-explicit budget conditioning and, as a different project direction, robust
-detection. Neither is selected, tested or approved for new experiments.
-
-The owner then selected detector-side defense and clarified an externally called
-LLM agent that fuses self/content and graph-context evidence, not neighbor or edge
-selection. The [evidence-fusion draft](course/LLM_EVIDENCE_FUSION_DRAFT.md) covers
-grounded textual descriptions, possible learning modes and same-information
-controls. LLM superiority, raw-text availability, exact learning design and a
-new inference protocol remain unestablished; no new model/API calls have begun.
-
-The owner also proposed [conditional attack-side relationship alignment](course/CONDITIONAL_ATTACK_ALIGNMENT_DRAFT.md).
-This additional camouflage candidate preserves the LLM defense direction and is
-compared conceptually with CANA/HAO. No alignment gap, gate benefit or novelty is
-established, and no new experiment is launched.
-
-Before publishing future changes, commit intended files and run `python -m course.verify_publication --committed-checksums` from this repository. It checks public ancestry and publication files, including escaped Unicode in JSON, rejects Chinese text or reintroduced private execution history, and verifies committed figure/script/source bytes against the baseline/pilot and results-first figure manifests. Publish from the clean public workspace only.
-
-## Environment and quick check
-
-The verified environment is Linux, Python 3.8.20, PyTorch 1.13.1+cu117, DGL 1.1.2+cu117, NumPy 1.24.4, SciPy 1.10.1, and CUDA 11.7. See the [package lock](environment/pip-freeze.txt) and [runtime record](environment/runtime.json).
-
-The wrapper defaults to the existing server environment. On another matching Linux installation, set `MONTI_PYTHON` to the absolute Python executable path. It sets process-local CUDA library paths and thread limits.
+Python 3.8+; these commands need no ML dependencies or downloaded data:
 
 ```bash
-MONTI_PYTHON=/absolute/path/to/monti/bin/python bash course/run.sh -m course.test_protocol
-bash course/run.sh -m course.improvements.test_policies
+python -m unittest discover -s tests -v
+python -m tools.apply_reallocation --input examples/reallocation_input.json --output work/reallocated.json
+python -m tools.check_results
 ```
 
-The first command checks the weighted MR known answer, actual selector dispatch, gradients, injection budgets, CPU/GPU execution, and failure handling with synthetic inputs. Six baseline checks and five improvement checks have passed. It does not download the dataset. A fresh-environment installation has not yet been independently verified; the recorded runs reuse the locked server environment.
+These run synthetic geometry checks and recount saved results. Full model reruns require the historical experiment source and assets; see [reproduction instructions](docs/REPRODUCING.md).
 
-Obtain the data and pretrained models through the [upstream setup instructions](docs/UPSTREAM_README.md). Preserve the expected directory layout. [Asset records](evidence/bootstrap/selected_assets.json) and the [partition audit](evidence/data/partition_audit.json) record sources and checksums. Use domestic Chinese mirrors when installing dependencies; no new dependencies were installed for these runs.
+## Repository guide
 
-```bash
-# Data audit, after placing the official assets in the expected locations
-bash course/run.sh -m course.prepare
+| Path | Contents |
+|---|---|
+| [methods/](methods/) | Current reallocation algorithm |
+| [results/](results/) | Seed metrics, all compact case counts, controls and provenance |
+| [tools/](tools/) and [tests/](tests/) | JSON interface, result checks and synthetic tests |
+| [docs/](docs/) | Method, reproduction and archive guide |
+| `models/`, `modules/`, `utils/`, `run.py` | Original MonTi implementation |
+| [environment/](environment/) | Recorded ML environment |
+| `course/`, `evidence/` | Baseline figure sources and publication verification |
 
-# Example of one full baseline run; requires the frozen files and a clean checkout
-bash course/run.sh -m course.runner --config course/configs/baseline.json --phase reproduction --mode learned --seed 0 --gpu 0
-```
+Detailed logs, superseded proposals and outdated presentation drafts remain in the [historical archive](docs/ARCHIVE.md), outside the current working tree.
 
-Every reported run links to its commit, exact command, configuration, seed, runtime, GPU wall-clock hours, memory, saved output, and checkpoint checksum. `reproduction-protocol-v1` identifies pre-run commit `9f782dfbb98581e8bbe3c10f5ea5de91237e09ab`; `reproduction-results-v1` archives baseline results. `improvement-pilot-protocol-v1` identifies the improvement pilot freeze. These technical tags are separate from the course's unconfirmed common Week 12 freeze.
-
-## Data, licenses, and remaining work
-
-Large datasets, checkpoints, and node-level predictions remain outside Git. Published group-level counts allow MR recounts; prediction hashes identify the retained originals. The upstream code uses CC BY-NC 4.0, with its [license](LICENSE.txt) retained. A separate data license has not been established, so the code license is not assumed to cover data and the raw dataset is not redistributed here.
-
-Improvement selection and full experiments are on hold for outcome-based diagnosis and owner checkpoints. The final report, slides, and demo are in preparation. Instructor approval, the latest course rules, actual human checks, individual contributions, and the assessed defense remain pending. Planned work and agent-generated work are not recorded as completed human contributions.
-
-## Citation and upstream attribution
-
-Jinhyeok Choi, Heehyeon Kim, and Joyce Jiyoung Whang. *Unveiling the Threat of Fraud Gangs to Graph Neural Networks: Multi-Target Graph Injection Attacks against GNN-Based Fraud Detectors.* AAAI 2025, pp. 16028–16036. [DOI: 10.1609/aaai.v39i15.33760](https://ojs.aaai.org/index.php/AAAI/article/view/33760).
-
-Upstream source revision: `10f233e953679ec3715125dc058ef6d28bee4691`. The original upstream README is retained in [docs/UPSTREAM_README.md](docs/UPSTREAM_README.md).
+Upstream authors: Jinhyeok Choi, Heehyeon Kim and Joyce Jiyoung Whang, AAAI 2025. [License](LICENSE.txt) · [AI use](AI_USAGE.md) · [Contributions](CONTRIBUTIONS.md).

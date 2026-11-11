@@ -1,0 +1,80 @@
+{
+  "schema": "monti_compact_saved_results_v1",
+  "method": "Candidate-to-target edge-budget reallocation",
+  "split": "GossipCop-S, split0, development VALID; no new full TEST",
+  "metric_definition": "MR=100*wrong fraud-target predictions/ALL target occurrences, including clean errors; higher MR is a stronger attack. Clean MR uses the same denominator before injection.",
+  "cohort": {
+    "seeds": [
+      3,
+      4,
+      5
+    ],
+    "groups_per_seed": 128,
+    "group_seed_cases": 384,
+    "target_occurrences_per_seed": 1016,
+    "unique_targets_per_seed": 373,
+    "correlated_occurrences_all_seeds": 3048
+  },
+  "gaga_mean_mr_percent": {
+    "baseline": 46.948818897637786,
+    "balanced_target_fill": 52.427821522309706,
+    "random_target_fill": 52.5262467191601,
+    "candidate_rewire": 46.88320209973753
+  },
+  "clean_mr_percent": {
+    "gcn": 43.30708661417323,
+    "gaga": 31.69291338582677
+  },
+  "primary_result": {
+    "arm": "balanced_target_fill",
+    "mean_gain_pp": 5.479002624671918,
+    "seed_gains_pp": [
+      7.775590551181104,
+      5.905511811023622,
+      2.7559055118110294
+    ],
+    "nominal_paired_t95_pp": [
+      -0.8229477934948815,
+      11.780953042838718
+    ],
+    "paired_counts": {
+      "gained_wrong": 184,
+      "lost_wrong": 17,
+      "net_wrong": 167,
+      "group_wins": 112,
+      "group_ties": 267,
+      "group_losses": 5
+    },
+    "mean_advantage_over_candidate_rewire_pp": 5.54461942257218,
+    "criterion_met": false,
+    "failed_condition": "Nominal paired-t95 lower endpoint is not above zero",
+    "random_target_fill_need_not_be_worse": true,
+    "controls_promoted": false,
+    "qualified_candidate": null
+  },
+  "physical_cost_per_arm_seed": {
+    "summed_injected_node_instances": 8210,
+    "summed_nonself_undirected_edges": 377838,
+    "scope": "Sums128 separate scenarios; all arms preserve physical injected degrees and budgets"
+  },
+  "costs": {
+    "process_cpu_seconds": 15482.323859363,
+    "wall_seconds": 4687.314927648986,
+    "outer_seconds": 4689.3347970809555,
+    "GPU_hours": 0,
+    "generator_forwards": 384,
+    "fresh_GCN_forwards": 1664,
+    "fresh_official_GAGA_forwards": 1664,
+    "optimizer_updates": 0,
+    "autograd_calls": 0,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "interpretation": [
+    "Observed gains in all three seeds; frozen stability criterion failed. No selected candidate.",
+    "The n=3/df=2 interval is conditional on fixed models and correlated, adaptively inspected development contexts.",
+    "Random target filling is slightly higher; no superior-priority, novelty, camouflage, human-verification or course-completion claim."
+  ],
+  "historical_formal_TEST_reference": "Separate earlier reproduction: evidence/reproduction_summary.json; not the paired control of this development cohort",
+  "new_experiments_or_queries": 0
+}
