@@ -1,0 +1,37 @@
+{
+  "status": "failed",
+  "counters": {
+    "real_data_generator_forwards": 0,
+    "real_data_GCN_forwards": 0,
+    "real_data_downstream_forwards": 0,
+    "real_data_backward_calls": 0,
+    "real_data_optimizer_updates": 0,
+    "real_data_GAGA_forwards": 0,
+    "TEST_queries": 0,
+    "API_calls": 0
+  },
+  "real_data_cases": [],
+  "synthetic_tests": null,
+  "GPU_hours": 0,
+  "provenance": {
+    "source_commit": "ffdd39f38645770d4cb6e62520d48f20bf92e6dd",
+    "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+    "protocol_sha256": "92c9f0a2cec2618d64e9b40191f93d13ffa94dcccd1ffc092ed4f4b294129e7a"
+  },
+  "device": {
+    "versions": {
+      "python": "3.8.20",
+      "torch": "1.13.1+cu117",
+      "dgl": "1.1.2+cu117",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1"
+    },
+    "device": "cpu",
+    "GPU_hours": 0,
+    "cpu_threads": 4
+  },
+  "error": "TypeError(\"write_text() got an unexpected keyword argument 'newline'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt2/source/experiments/downstream_cooperation/preflight.py\", line 81, in main\n    (output / 'synthetic_tests.log').write_text(test_log.getvalue(), encoding='utf-8', newline='\\n')\nTypeError: write_text() got an unexpected keyword argument 'newline'\n",
+  "wall_seconds": 5.416353479959071,
+  "process_cpu_seconds": 6.718439591
+}

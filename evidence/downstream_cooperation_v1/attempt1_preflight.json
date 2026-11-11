@@ -1,0 +1,25 @@
+{
+  "status": "failed",
+  "counters": {
+    "real_data_generator_forwards": 0,
+    "real_data_GCN_forwards": 0,
+    "real_data_downstream_forwards": 0,
+    "real_data_backward_calls": 0,
+    "real_data_optimizer_updates": 0,
+    "real_data_GAGA_forwards": 0,
+    "TEST_queries": 0,
+    "API_calls": 0
+  },
+  "real_data_cases": [],
+  "synthetic_tests": null,
+  "GPU_hours": 0,
+  "provenance": {
+    "source_commit": "eb916a2989dd5635c8023afb84fa784f20455128",
+    "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+    "protocol_sha256": "71feba6c01ced75e855b2a3e84cfae6354ef673808a7481a73aa84778f8c0c6b"
+  },
+  "error": "OSError('libcusparse.so.11: cannot open shared object file: No such file or directory')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt1/source/experiments/downstream_cooperation/preflight.py\", line 72, in main\n    result['device'] = check_device()\n  File \"/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt1/source/experiments/downstream_cooperation/common.py\", line 75, in check_device\n    import dgl\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/__init__.py\", line 14, in <module>\n    from .backend import backend_name, load_backend  # usort: skip\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/backend/__init__.py\", line 122, in <module>\n    load_backend(get_preferred_backend())\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/backend/__init__.py\", line 51, in load_backend\n    from .._ffi.base import load_tensor_adapter  # imports DGL C library\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/_ffi/base.py\", line 50, in <module>\n    _LIB, _LIB_NAME, _DIR_NAME = _load_lib()\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/site-packages/dgl/_ffi/base.py\", line 39, in _load_lib\n    lib = ctypes.CDLL(lib_path[0])\n  File \"/home/tjy/miniconda3/envs/monti/lib/python3.8/ctypes/__init__.py\", line 373, in __init__\n    self._handle = _dlopen(self._name, mode)\nOSError: libcusparse.so.11: cannot open shared object file: No such file or directory\n",
+  "wall_seconds": 4.582068815128878,
+  "process_cpu_seconds": 4.794449398
+}

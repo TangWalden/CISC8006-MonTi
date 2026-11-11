@@ -1,0 +1,67 @@
+{
+  "record_type": "Exact saved registration and startup/preflight receipts copied after main launch; no claim of earlier public preregistration",
+  "files": [
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt1/execution/preflight_attempt1/result.json",
+      "public_path": "evidence/downstream_cooperation_v1/attempt1_preflight.json",
+      "sha256": "decee35fcbd9715a7b7d8ccd2f27026126fc84d32609959ac881034f1895cbbe"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt1/execution/preflight_guardian.json",
+      "public_path": "evidence/downstream_cooperation_v1/attempt1_guardian.json",
+      "sha256": "a8ccc4d54c579eb00c6213af3d0efa6afb354f013ef104b9861afc7f8e76068e"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt1/execution/preflight_stdout.log",
+      "public_path": "evidence/downstream_cooperation_v1/attempt1_stdout.txt",
+      "sha256": "c67a0de0161c277212cf867a0376b21e07bfe6c276f2b483cbdd482669c0d4a2"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt2/execution/preflight_attempt1/result.json",
+      "public_path": "evidence/downstream_cooperation_v1/attempt2_preflight.json",
+      "sha256": "eb51802768faf3789e0bd965085d1089b2a7792e70e1168d6ac724d7da78c61b"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt2/execution/preflight_guardian.json",
+      "public_path": "evidence/downstream_cooperation_v1/attempt2_guardian.json",
+      "sha256": "5f3eb26e16dfec160c9e2ea47287ee607737c64535f219fc440db78c6cdb17ca"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt2/execution/preflight_stdout.log",
+      "public_path": "evidence/downstream_cooperation_v1/attempt2_stdout.txt",
+      "sha256": "3fbf37411b9fbe48be87f785dd59813e5e7bdecbc9400b6d551e99467ce3b6a4"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt3/execution/preflight_attempt1/result.json",
+      "public_path": "evidence/downstream_cooperation_v1/attempt3_preflight.json",
+      "sha256": "252b9ee89a8fc619979ea118db8693cc97565b9a532d6c54a6495430c4f91215"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt3/execution/preflight_guardian.json",
+      "public_path": "evidence/downstream_cooperation_v1/attempt3_guardian.json",
+      "sha256": "a788d92827eaf66c90be2f995c7d2ba3b7e7b66d9ed17c6d9c06abf1c84695df"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt3/execution/preflight_stdout.log",
+      "public_path": "evidence/downstream_cooperation_v1/attempt3_stdout.txt",
+      "sha256": "822f14e16a51d212f16046b81a5884dd256942baf334e0c9f2907491cde246f7"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt3/registration/protocol.json",
+      "public_path": "evidence/downstream_cooperation_v1/execution_protocol.json",
+      "sha256": "5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt3/registration/metadata_scope.json",
+      "public_path": "evidence/downstream_cooperation_v1/execution_metadata_scope.json",
+      "sha256": "4955b4def34836f3c929057729f108b94c58b7b6c5c3bc4f61dec7d2c29629b7"
+    },
+    {
+      "original_relative_path": "downstream_cooperation_20261111_attempt3/source_manifest_v3.json",
+      "public_path": "evidence/downstream_cooperation_v1/execution_source_manifest.json",
+      "sha256": "d612bcaee034202798f9c7addb8a04149d2aa189337c2dfc911d65535cac444c"
+    }
+  ],
+  "new_model_queries": 0,
+  "new_GPU_hours": 0
+}

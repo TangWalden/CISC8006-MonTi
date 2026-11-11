@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt2/source/experiments/downstream_cooperation/preflight.py", line 81, in main
+    (output / 'synthetic_tests.log').write_text(test_log.getvalue(), encoding='utf-8', newline='\n')
+TypeError: write_text() got an unexpected keyword argument 'newline'
+PREFLIGHT_RESULT failed GCN_FORWARDS 0

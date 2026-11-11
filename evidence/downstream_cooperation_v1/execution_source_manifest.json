@@ -1,0 +1,21 @@
+{
+  "source_commit": "9e013cb182b5af71a9d0b719b5a939deda3c88e2",
+  "files": {
+    "experiments/downstream_cooperation/budget_audit.py": "cb7e9754700a65878d2b418f79532c337e3f2250ba6c807ac5ef90a2b2ba1091",
+    "experiments/downstream_cooperation/common.py": "5a6284d14528d4bfd4c42785122465d3e54a9c7c80ef1ed62b28a0e5d5841979",
+    "experiments/downstream_cooperation/driver.py": "11ec4220e7b7f0a8ad7a7c1d16ae1a882c1e4a916909cc76b277cf7f81d751cd",
+    "experiments/downstream_cooperation/model.py": "dbb5de184077876f450f07441cf670de05138f8b65fb6b184033a45c418f0a2b",
+    "experiments/downstream_cooperation/preflight.py": "b515a755311de928d32371b3aea94abd5ecfdd13c9ae8271ec6785bd9ff2151c",
+    "experiments/downstream_cooperation/prepare.py": "7f78d678d4ca055a26ad1940db5854baf0b093cf8f7317139205f4c2e6943793",
+    "experiments/downstream_cooperation/run.py": "f3588b99cabf1649a7c9e5106e8ac711e5404b3b4acc3aa8dc4814c7f1fc2669",
+    "methods/__init__.py": "c0be7f5ee6bf74cd3668da4973811d2eb9c1e5f9778cd0c67ec4930e4c7f82d7",
+    "methods/downstream_quota.py": "438c18778fc71f1a3e637a31582ae7ce066e12ce999e90c2576c40d0e1258972",
+    "tests/__init__.py": "ee80c54ea821b5f1e159d713396d553c1e0ef19ca623151c3a694bfa77ed60ee",
+    "tests/test_downstream_budget_audit.py": "56e76a5bff26cb95177d7186efd8fcb6cc12aadd3fbbb5af7e0190d445d756a3",
+    "tests/test_downstream_model.py": "f6c1b0f07a8f49a9d36bf667a7974728808c545614cf895940a15c7e68d3946f",
+    "tests/test_downstream_quota.py": "74539b6df0e11818808e0f173e39e257aed4dfb51eabd6d58190a084676d448e"
+  },
+  "archive_sha256": "a2b115452a94bcb2ea825b7d4b8fd43305368fb391c738d85b0713ebdd8b6f26",
+  "created_utc": "2026-11-11T12:43:40.880592+00:00",
+  "inventory": "Separately committed Python3.8 logging compatibility amendment; unchanged mathematical policy/model/cohorts/settings."
+}
