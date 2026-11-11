@@ -8,7 +8,7 @@ reallocation results do not establish its effectiveness.
 
 ## Capacity decision
 
-The current study cannot apply a literal half-target, half-candidate allocation
+The study cannot apply a literal half-target, half-candidate allocation
 to every original case without changing another constraint. In the published
 128-group reallocation cohort, 97 groups in each seed fail even the necessary
 target-capacity test. With `b` injected nodes, `t` original targets and `e` total
@@ -34,8 +34,9 @@ of original candidates be `c`. The interval is
 and give the remaining edges to the candidate branch. Report every actual
 ratio; projected cases are not exact equal allocation. An empty interval stops
 the preflight or upstream-cache phase before training; it cannot silently
-remove a case. Training and real-data method evaluation await the source-bound
-registration and passed preflight.
+remove a case. The source-bound registration, passed preflight and completed
+pilot are now retained in [the execution evidence](../../evidence/downstream_cooperation_v1/)
+and [complete results](../../results/downstream_cooperation/).
 
 ## Fixed upstream decisions
 
@@ -64,9 +65,9 @@ and artificial self-loops cannot satisfy a quota.
 | Arm | Target connections | Candidate connections |
 |---|---|---|
 | Native MonTi | Native output | Native output |
-| Equal quotas with original scores | Fixed quota block | Frozen original scores |
-| Equal quotas with random choices | Same fixed quota block | Fixed private random stream |
-| Equal quotas with trained downstream | Same fixed quota block | Learned conditional scores |
+| Projected quotas with original scores | Fixed quota block | Frozen original scores |
+| Projected quotas with random choices | Same fixed quota block | Fixed private random stream |
+| Projected quotas with trained downstream | Same fixed quota block | Learned conditional scores |
 
 The three quota arms share byte-identical upstream features and target blocks.
 The extra frozen-score arm distinguishes a quota change from downstream
@@ -123,6 +124,14 @@ separate source, failure and CPU time are retained. The compatibility amendment
 uses an explicit text stream and does not change the experiment settings.
 
 ## Interpretation
+
+The completed three-seed development pilot reached official-GAGA MR of
+58.1436%, compared with native MonTi 53.6486%, frozen-score quota control
+56.8593% and random-candidate quota control 57.0344%. The pre-specified pilot
+qualification passed. The learned-minus-random nominal interval crosses zero,
+so superiority over random candidate selection remains uncertain. All weights
+and final topologies were sealed before the one planned GAGA evaluation.
+No final TEST evaluation or additional training was performed.
 
 Report occurrence-weighted MR, clean errors, newly incorrect predictions and
 recoveries for all arms. Seed is the replication unit; overlapping group-node

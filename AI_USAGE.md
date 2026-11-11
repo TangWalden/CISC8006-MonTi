@@ -38,6 +38,33 @@ classification improvement are reported as a failed method, not efficacy.
 Owner authorization and AI review do not establish student technical review,
 verified contributions, instructor approval or a final course submission.
 
+## 11 November: frozen upstream and trained downstream
+
+The owner proposed sequential cooperation, fixed the upstream and authorized
+training only a downstream candidate-edge policy. After a saved-geometry
+capacity check showed literal equal quotas were often impossible, the owner
+selected the nearest feasible ratio while retaining each original total budget.
+Codex implemented and registered a four-arm, three-seed TRAIN/VALID pilot before
+new model calls. The downstream observes actual frozen target attachments
+through a mean/count summary. It is a small conditional scorer, not a second
+complete MonTi. The frozen historical score-source semantics were retained.
+
+Two zero-real-data-query startup failures were preserved and charged to the
+same CPU phase. A separately frozen compatibility amendment passed 34 synthetic
+tests and four TRAIN gradient cases. The completed main run made 1500 downstream
+updates; upstream and classifier parameters remained fixed. All final weights
+and graphs were sealed before official-GAGA development evaluation. There were
+no experimental API calls, GPU work or final TEST queries.
+
+Separately authored AI audits recounted saved logits and serialized geometry;
+they added no model inference and do not establish human verification or seal
+chronology. The pilot passed its registered rule and improved over native MonTi,
+but the small advantage over random candidate selection remains uncertain.
+Neither cooperation-information benefit nor novelty is established.
+[Complete counts, controls and limits](results/downstream_cooperation/) retain
+the negative seed and all controls. Human technical checks, actual student
+contributions and final course authorization remain unverified.
+
 ## Critically reviewed direction decision
 
 The owner rejected proposal-first justification and required analysis of saved

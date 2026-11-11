@@ -1,0 +1,103 @@
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+CACHE 3 train 16
+CACHE 3 train 32
+CACHE 3 train 48
+CACHE 3 train 64
+CACHE 3 train 80
+CACHE 3 train 96
+CACHE 3 train 112
+CACHE 3 train 128
+CACHE 3 validation 16
+CACHE 3 validation 32
+CACHE 3 validation 48
+CACHE 3 validation 64
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+CACHE 4 train 16
+CACHE 4 train 32
+CACHE 4 train 48
+CACHE 4 train 64
+CACHE 4 train 80
+CACHE 4 train 96
+CACHE 4 train 112
+CACHE 4 train 128
+CACHE 4 validation 16
+CACHE 4 validation 32
+CACHE 4 validation 48
+CACHE 4 validation 64
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+CACHE 5 train 16
+CACHE 5 train 32
+CACHE 5 train 48
+CACHE 5 train 64
+CACHE 5 train 80
+CACHE 5 train 96
+CACHE 5 train 112
+CACHE 5 train 128
+CACHE 5 validation 16
+CACHE 5 validation 32
+CACHE 5 validation 48
+CACHE 5 validation 64
+TRAIN 3 1 32
+TRAIN 3 1 64
+TRAIN 3 1 96
+TRAIN 3 1 128
+TRAIN 3 2 32
+TRAIN 3 2 64
+TRAIN 3 2 96
+TRAIN 3 2 128
+TRAIN 3 3 32
+TRAIN 3 3 64
+TRAIN 3 3 96
+TRAIN 3 3 128
+TRAIN 3 4 32
+TRAIN 3 4 64
+TRAIN 3 4 96
+TRAIN 3 4 128
+TRAIN 4 1 32
+TRAIN 4 1 64
+TRAIN 4 1 96
+TRAIN 4 1 128
+TRAIN 4 2 32
+TRAIN 4 2 64
+TRAIN 4 2 96
+TRAIN 4 2 128
+TRAIN 4 3 32
+TRAIN 4 3 64
+TRAIN 4 3 96
+TRAIN 4 3 128
+TRAIN 4 4 32
+TRAIN 4 4 64
+TRAIN 4 4 96
+TRAIN 4 4 128
+TRAIN 5 1 32
+TRAIN 5 1 64
+TRAIN 5 1 96
+TRAIN 5 1 128
+TRAIN 5 2 32
+TRAIN 5 2 64
+TRAIN 5 2 96
+TRAIN 5 2 128
+TRAIN 5 3 32
+TRAIN 5 3 64
+TRAIN 5 3 96
+TRAIN 5 3 128
+TRAIN 5 4 32
+TRAIN 5 4 64
+TRAIN 5 4 96
+TRAIN 5 4 128
+EVALUATED 64
+EVALUATED 128
+EVALUATED 192
+EVALUATED 256
+EVALUATED 320
+EVALUATED 384
+EVALUATED 448
+EVALUATED 512
+EVALUATED 576
+EVALUATED 640
+EVALUATED 704
+EVALUATED 768
+{"status": "completed", "error": null, "counters": {"upstream_generations": 576, "upstream_optimizer_updates": 0, "training_GCN_forwards": 1500, "evaluation_GCN_forwards": 832, "official_GAGA_forwards": 832, "autograd_calls": 1500, "downstream_optimizer_updates": 1500, "degenerate_training_cases": 36, "API_calls": 0, "TEST_queries": 0}, "gaga_mean_mr_percent": {"native_monti": 53.64856976065382, "quota_original": 56.859311150029185, "quota_random": 57.03444249854057, "quota_learned": 58.14360770577934}, "wall_seconds": 3574.0371164369863, "GPU_hours": 0}

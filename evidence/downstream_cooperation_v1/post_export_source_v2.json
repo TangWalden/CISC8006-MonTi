@@ -1,0 +1,11 @@
+{
+  "schema": "monti_downstream_post_export_provenance_amendment_v1",
+  "created_utc": "2026-11-11T13:46:27.097026+00:00",
+  "source_commit": "8745e314ba5feca8f427f6b889d1531cf33c8dcd",
+  "path": "experiments/downstream_cooperation/export_saved.py",
+  "staged_name": "export_saved_v2.py",
+  "sha256": "e6fec5a0e68e66f3f7c4fe8ff3a0963dff5b7c48986073d5472d028c39925e0f",
+  "reason": "Clarify that inferred Git HEAD belongs to the ambient runtime repository, not necessarily the staged exporter source. No scientific settings or outcome calculations change. Original staged exporter is preserved.",
+  "model_queries": 0,
+  "GPU_hours": 0
+}

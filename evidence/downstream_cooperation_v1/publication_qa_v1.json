@@ -1,0 +1,54 @@
+{
+  "schema": "monti_downstream_public_export_local_qa_v1",
+  "created_utc": "2026-11-11T13:53:38.042778+00:00",
+  "status": "passed",
+  "scope": "Root automated saved-only publication checks; not human verification or new inference.",
+  "scientific_execution_source": "9e013cb182b5af71a9d0b719b5a939deda3c88e2",
+  "scientific_source_files_unchanged": [
+    "common.py",
+    "model.py",
+    "prepare.py",
+    "driver.py",
+    "preflight.py",
+    "run.py"
+  ],
+  "protocol_sha256": "5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13",
+  "row_counts": {
+    "seed_metrics": 12,
+    "case_counts": 768,
+    "quota_by_case": 192
+  },
+  "checks": [
+    "All exporter output byte hashes",
+    "Explicit protocol binding",
+    "Both saved-record audit source SHA values",
+    "Amended exporter source SHA",
+    "Complete per-seed/arm group and occurrence coverage",
+    "Every compact per-case transition identity and node/edge budget total",
+    "All seed aggregates recomputed from case CSV",
+    "Execution source unchanged since registered model run"
+  ],
+  "input_and_output_hashes": {
+    "results/downstream_cooperation/audit_saved.json": "4df9bc975e5e552aab9d6545e888a56d14ff58228d66a53720c075ad5fd83d3e",
+    "results/downstream_cooperation/audit_tensors.json": "3427a1fdf6fff74982ba2e6b464f5c9cfa3b2ee29d426e8bb7f0e0be78a78418",
+    "results/downstream_cooperation/case_counts.csv": "693eef09423505eec79017d8d489435fbefcd930f0481079279c0ab4daa38d43",
+    "results/downstream_cooperation/latest.json": "32547fcbdaa1fb8f521e5fea009ea9ed1b295cf4d18169b6e246156100d69950",
+    "results/downstream_cooperation/provenance.json": "f176079904e56da1cbff8696d341cd131d4ad64369e5e4eaac3975668fe929b0",
+    "results/downstream_cooperation/quota_by_case.csv": "147de542730d714ff096cdb20c4fba77cfe9311d3bc778664ae951ec03048c94",
+    "results/downstream_cooperation/README.md": "5ac4ed3566c2aceb805d12861d3a0726b208d7a057134934750966e3222c5f18",
+    "results/downstream_cooperation/seed_metrics.csv": "4cee6b5b039581732ce7630b9a305fd91f0adc9dd75d918e9a7b040700af0cf6"
+  },
+  "model_queries": 0,
+  "optimizer_updates": 0,
+  "GPU_hours": 0,
+  "human_review": false,
+  "documentation_checked_utc": "2026-11-11T13:54:45.923286+00:00",
+  "documentation_relative_links_checked": 63,
+  "documentation_sha256": {
+    "README.md": "d13759031463fabd73c1eac65d3a869c97844ca52930bcd0dc1fc9f967cea8af",
+    "AI_USAGE.md": "04c996685df53307601e5e85420ca3d42b57e2711066038b7fd7ebfa9a21c675",
+    "docs/ASSESSMENT.md": "eacc43c291a3dc064f7d06decb0abbbe2e67ab311d7dbb6173431e84ca882e74",
+    "experiments/downstream_cooperation/README.md": "59c14562c48653ed7ba28cb6f7dfb0cb5e3b0acb6ef68edf34f586e0922dda2b",
+    "results/downstream_cooperation/README.md": "08d151503670ae77d8c000906989c5a4376c62a6a09d41e515865a5edf5504cc"
+  }
+}

@@ -1,8 +1,25 @@
 # MonTi: Reproduction and Controlled Extensions
 
-A CISC8006 study of [MonTi](https://github.com/bdi-lab/MonTi). **No improvement over the strong random target-fill control is established.** [Grading evidence and remaining gaps](docs/ASSESSMENT.md).
+A CISC8006 study of [MonTi](https://github.com/bdi-lab/MonTi). [Grading evidence and remaining gaps](docs/ASSESSMENT.md).
 
-## Latest experiment: feature placement, no measured gain
+## Latest pilot: frozen upstream and trained downstream
+
+Freeze MonTi's upstream and train only the candidate-connection scorer. Preserve the total node/edge budgets and project the requested half-target quota to the closest feasible allocation; actual ratios can differ substantially from 50:50. [Method and controls](experiments/downstream_cooperation/) · [All seed/case results, ratios and audits](results/downstream_cooperation/).
+
+| Development condition | Mean official-GAGA MR |
+|---|---:|
+| Native MonTi | 53.6486% |
+| Projected quotas, original candidate scores | 56.8593% |
+| Projected quotas, random candidate connections | 57.0344% |
+| Projected quotas, trained downstream (primary) | **58.1436%** |
+
+On GossipCop-S split 0, using 64 VALID groups per seed with 571 target occurrences and 240 unique targets, the primary gains **+4.4950 percentage points** over native MonTi. All three seed gains are positive; the nominal paired 95% interval is **[+0.5715, +8.4185] pp**. The pre-specified pilot qualification passes. Higher MR means a stronger attack and includes targets already missed before injection.
+
+The gain over matched random candidate connections is **+1.1092 pp**, with one negative seed and an interval of **[-3.9892, +6.2075] pp**; superiority to this control remains uncertain. This `quota_random` control randomizes **candidate connections**, whereas the earlier random target-fill control below changes **target connections on a different cohort**. Neither their absolute scores nor their control conclusions are interchangeable. Repeated news and prior development inspection limit generalization; the study does not isolate the benefit of observing upstream decisions. **No final TEST evaluation has run for this method.**
+
+## Previous experiment: feature placement, no measured gain
+
+**No improvement over the strong random target-fill control was established in these earlier studies.**
 
 Keep the randomly target-filled graph and the complete generated feature set fixed; change only which injected position receives each feature vector. A separate frozen GAGA surrogate guides a one-to-one assignment. [Method, controls and limits](experiments/feature_assignment/).
 

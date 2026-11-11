@@ -1,0 +1,24 @@
+{
+  "archive_sha256": "c4207f966e9bb7007fe99ec41bcab57aff06a8f8608d8263e312ba5b4871f93a",
+  "archive_bytes": 2232320,
+  "files": {
+    "execution/main_attempt1/summary.json": "3f26e393e2217daa7aeddc2b1bd0f78587e29ba9e875b9cb5930bc16c3a062d9",
+    "execution/run_guardian.json": "19f543d44377bc7f53160222c849a58c9900e2dbc7d23971943f43e1f59fb890",
+    "execution/run_stdout.log": "58ff3dbfab5f99ce20372f0ff8c1b0b4b4ea71c0604ffd22eb273d2b787d01da",
+    "execution/phase_state.json": "43043061dfc4dc141c0854399426cb498fa8bb257aa1625a64b63a963c196217",
+    "post_audit_source_v1.json": "8f73bf95eca5bfaa965b1bcbf37debf9ca2de73d4b57454df4c2c9acf8303a6f",
+    "post_export_source_v2.json": "54058c6deb237846e9f27edb32a5f75b180047b5c5adf1ace9e6dc72e2dc31a2",
+    "post_processing_execution_v1.json": "c49d931850369a9980ede4e2fdd84bf28621fe12c6ad76429b3f5529b7d4edf1",
+    "public_export_v1/audit_saved.json": "4df9bc975e5e552aab9d6545e888a56d14ff58228d66a53720c075ad5fd83d3e",
+    "public_export_v1/audit_tensors.json": "3427a1fdf6fff74982ba2e6b464f5c9cfa3b2ee29d426e8bb7f0e0be78a78418",
+    "public_export_v1/case_counts.csv": "693eef09423505eec79017d8d489435fbefcd930f0481079279c0ab4daa38d43",
+    "public_export_v1/latest.json": "32547fcbdaa1fb8f521e5fea009ea9ed1b295cf4d18169b6e246156100d69950",
+    "public_export_v1/provenance.json": "f176079904e56da1cbff8696d341cd131d4ad64369e5e4eaac3975668fe929b0",
+    "public_export_v1/quota_by_case.csv": "147de542730d714ff096cdb20c4fba77cfe9311d3bc778664ae951ec03048c94",
+    "public_export_v1/seed_metrics.csv": "4cee6b5b039581732ce7630b9a305fd91f0adc9dd75d918e9a7b040700af0cf6",
+    "post_audits/audit_saved.py.stdout.txt": "255dabe492b9d64dd1937f6b9cb74d99d74dcfb3b2ef4fe11bb58d89e4a52b50",
+    "post_audits/audit_tensors.py.stdout.txt": "aa78deb6a1dc2b1158c5b4448f92b9f5a334df8261594b5bd2e55332d70b9e89",
+    "post_audits/export_saved_v2.py.stdout.txt": "b489486ac0e9ff94710ded5933ccb9d5a0c9e7b17934dec9aca8479b3a92160e"
+  },
+  "raw_tensors_checkpoints_and_logits_included": false
+}

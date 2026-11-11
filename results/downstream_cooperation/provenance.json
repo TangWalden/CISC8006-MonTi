@@ -1,0 +1,46 @@
+{
+  "schema": "monti_downstream_compact_publication_provenance_v1",
+  "created_utc": "2026-11-11T13:48:18.888641+00:00",
+  "scientific_execution_source_commit": "9e013cb182b5af71a9d0b719b5a939deda3c88e2",
+  "scientific_runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+  "scientific_protocol_sha256": "5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13",
+  "original_run_root": "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/execution/main_attempt1",
+  "original_protocol_path": "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/registration/protocol.json",
+  "input_json_file_sha256": {
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/registration/protocol.json": "5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/execution/main_attempt1/result.json": "f19aee765b85199343d49861949995fca0a6e72838954610a8351515977da7be",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/post_audits/saved_logit_audit_v1.json": "4df9bc975e5e552aab9d6545e888a56d14ff58228d66a53720c075ad5fd83d3e",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/post_audits/saved_tensor_audit_v1.json": "3427a1fdf6fff74982ba2e6b464f5c9cfa3b2ee29d426e8bb7f0e0be78a78418",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/execution/main_attempt1/upstream_cache_manifest.json": "5f7afb09270a7d618d2e37e9cfa54690d5dc4eb38c2ac01481eaa68bfde5ce50",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/execution/main_attempt1/sealed_before_victim.json": "9599baaf5d6baf47374e2e49da6d4e15c555dc5359a4116ae0a9b89c95b6af61",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/execution/main_attempt1/summary.json": "3f26e393e2217daa7aeddc2b1bd0f78587e29ba9e875b9cb5930bc16c3a062d9",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/execution/preflight_guardian.json": "a788d92827eaf66c90be2f995c7d2ba3b7e7b66d9ed17c6d9c06abf1c84695df",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/execution/run_guardian.json": "19f543d44377bc7f53160222c849a58c9900e2dbc7d23971943f43e1f59fb890",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/execution/preflight_attempt1/result.json": "252b9ee89a8fc619979ea118db8693cc97565b9a532d6c54a6495430c4f91215"
+  },
+  "exporter_source_sha256": "e6fec5a0e68e66f3f7c4fe8ff3a0963dff5b7c48986073d5472d028c39925e0f",
+  "exporter_source_binding": "The exact exporter source SHA256 and the separately retained post-audit source manifest bind this staged script. The ambient enclosing repository commit below is context only, not the exporter publication source.",
+  "output_sha256": {
+    "latest.json": "32547fcbdaa1fb8f521e5fea009ea9ed1b295cf4d18169b6e246156100d69950",
+    "seed_metrics.csv": "4cee6b5b039581732ce7630b9a305fd91f0adc9dd75d918e9a7b040700af0cf6",
+    "case_counts.csv": "693eef09423505eec79017d8d489435fbefcd930f0481079279c0ab4daa38d43",
+    "quota_by_case.csv": "147de542730d714ff096cdb20c4fba77cfe9311d3bc778664ae951ec03048c94",
+    "audit_saved.json": "4df9bc975e5e552aab9d6545e888a56d14ff58228d66a53720c075ad5fd83d3e",
+    "audit_tensors.json": "3427a1fdf6fff74982ba2e6b464f5c9cfa3b2ee29d426e8bb7f0e0be78a78418"
+  },
+  "row_counts": {
+    "seed_metrics": 12,
+    "case_counts": 768,
+    "quota_by_case": 192
+  },
+  "audit_copy_policy": "The two passed audit JSONs are copied byte-for-byte; their original scope and limitations are unchanged.",
+  "opaque_key_scheme": "SHA256 of JSON[seed, original group key, downstream_tensor_audit_v1], first 20 hex digits; individual node IDs are omitted.",
+  "reproducibility": "Derived saved-record publication. Original data, checkpoints and ignored run artifacts remain private; this is not a fresh-clone end-to-end execution bundle.",
+  "export_new_model_queries": 0,
+  "export_tensor_deserializations": 0,
+  "export_optimizer_updates": 0,
+  "export_GPU_hours": 0,
+  "export_API_calls": 0,
+  "export_TEST_queries": 0,
+  "exporter_ambient_repository_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c"
+}

@@ -1,0 +1,10 @@
+{
+  "source_commit": "0886a474b309ff183939bcaede8b7b92c8b172fa",
+  "files": {
+    "audit_saved.py": "2612a7e68d73ef8ea78aa0b86731d99d7f66e6966b497a73a43dba4db6080c2b",
+    "audit_tensors.py": "cf8078b590ca74980b53269fcf2bb2fa7145864f818bdf12838227c74b141917",
+    "export_saved.py": "fa337fd5bb07944b3c97606f205f9f30c1d19ef50996e8184bd0efb38f2b4f54"
+  },
+  "archive_sha256": "05714540ba288fa05f554f8029ecaecc5391bfa6d0912ebaff110ed35fd25526",
+  "scope": "Separately authored post-execution saved evidence checks; no model queries or changes to registered execution source."
+}

@@ -1,0 +1,213 @@
+{
+  "schema": "monti_downstream_cooperation_compact_v1",
+  "method": "Fixed upstream MonTi with a trained conditional candidate-edge scorer",
+  "study": "GossipCop-S split0 development VALID; projected quotas, not an exact-half experiment",
+  "provenance": {
+    "source_commit": "9e013cb182b5af71a9d0b719b5a939deda3c88e2",
+    "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+    "protocol_sha256": "5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13"
+  },
+  "metric_definition": "MR=100*incorrect fraud-target predictions/all target occurrences, including clean errors; higher is a stronger attack.",
+  "arms": [
+    "native_monti",
+    "quota_original",
+    "quota_random",
+    "quota_learned"
+  ],
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "cohort": {
+    "train_groups": 128,
+    "validation_groups_per_seed": 64,
+    "occurrences_per_arm_seed": 571,
+    "pooled_correlated_occurrences_per_arm": 1713,
+    "unique_validation_targets": 240,
+    "validation_targets_seen_in_earlier_contexts": 233,
+    "interpretation": "The group contexts are unused, but most target identities have appeared in earlier development groups; pooled occurrences are correlated."
+  },
+  "mean_mr_percent": {
+    "gcn": {
+      "native_monti": 97.1395213076474,
+      "quota_original": 97.66491535318156,
+      "quota_random": 97.66491535318156,
+      "quota_learned": 97.66491535318156
+    },
+    "gaga": {
+      "native_monti": 53.64856976065382,
+      "quota_original": 56.859311150029185,
+      "quota_random": 57.03444249854057,
+      "quota_learned": 58.14360770577934
+    }
+  },
+  "gaga_mean_mr_percent": {
+    "native_monti": 53.64856976065382,
+    "quota_original": 56.859311150029185,
+    "quota_random": 57.03444249854057,
+    "quota_learned": 58.14360770577934
+  },
+  "contrasts": {
+    "native_monti": {
+      "seed_differences_pp": [
+        6.129597197898427,
+        4.378283712784587,
+        2.9772329246935243
+      ],
+      "mean_pp": 4.495037945125513,
+      "nominal_paired_t95_pp": [
+        0.5715362417596745,
+        8.41853964849135
+      ]
+    },
+    "quota_original": {
+      "seed_differences_pp": [
+        1.9264448336252187,
+        -1.0507880910682985,
+        2.9772329246935243
+      ],
+      "mean_pp": 1.2842965557501482,
+      "nominal_paired_t95_pp": [
+        -3.9060083320720134,
+        6.47460144357231
+      ]
+    },
+    "quota_random": {
+      "seed_differences_pp": [
+        1.9264448336252187,
+        -1.225919439579684,
+        2.6269702276707534
+      ],
+      "mean_pp": 1.1091652072387628,
+      "nominal_paired_t95_pp": [
+        -3.989160069832754,
+        6.20749048431028
+      ]
+    }
+  },
+  "primary": "quota_learned",
+  "qualification_met": true,
+  "qualified_candidate": "quota_learned",
+  "controls_promoted": false,
+  "full_TEST_evaluated": false,
+  "quota_summary": {
+    "all_cache_cases": 576,
+    "projected_cache_cases": 405,
+    "validation_cases": 192,
+    "projected_validation_cases": 150,
+    "target_fraction_min_validation": 0.06382978723404255,
+    "target_fraction_max_validation": 1.0
+  },
+  "counters": {
+    "upstream_generations": 576,
+    "upstream_optimizer_updates": 0,
+    "training_GCN_forwards": 1500,
+    "evaluation_GCN_forwards": 832,
+    "official_GAGA_forwards": 832,
+    "autograd_calls": 1500,
+    "downstream_optimizer_updates": 1500,
+    "degenerate_training_cases": 36,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "costs": {
+    "main_child_wall_seconds": 3574.0371164369863,
+    "main_process_cpu_seconds": 9171.608189537,
+    "GPU_hours": 0,
+    "scope": "All recorded startup attempts and completed preflight/main guardians; review wait is reported separately from active process time.",
+    "setup_attempts": [
+      {
+        "attempt": 1,
+        "prior_guardian_sha256": "a8ccc4d54c579eb00c6213af3d0efa6afb354f013ef104b9861afc7f8e76068e",
+        "prior_result_sha256": "decee35fcbd9715a7b7d8ccd2f27026126fc84d32609959ac881034f1895cbbe",
+        "prior_guardian_wall_seconds": 8.555800727102906,
+        "prior_process_cpu_seconds": 4.794449398,
+        "prior_error": "OSError('libcusparse.so.11: cannot open shared object file: No such file or directory')",
+        "scientific_policy_changed": false,
+        "previous_real_data_model_queries": 0,
+        "synthetic_test_status": null,
+        "previous_GPU_hours": 0
+      },
+      {
+        "attempt": 2,
+        "prior_guardian_sha256": "5f3eb26e16dfec160c9e2ea47287ee607737c64535f219fc440db78c6cdb17ca",
+        "prior_result_sha256": "eb51802768faf3789e0bd965085d1089b2a7792e70e1168d6ac724d7da78c61b",
+        "prior_guardian_wall_seconds": 9.284105662954971,
+        "prior_process_cpu_seconds": 6.718439591,
+        "prior_error": "TypeError(\"write_text() got an unexpected keyword argument 'newline'\")",
+        "scientific_policy_changed": false,
+        "previous_real_data_model_queries": 0,
+        "synthetic_test_status": null,
+        "previous_GPU_hours": 0
+      }
+    ],
+    "preflight_child_wall_seconds": 19.687360669020563,
+    "preflight_process_cpu_seconds": 40.455977286,
+    "preflight_counters": {
+      "real_data_generator_forwards": 4,
+      "real_data_GCN_forwards": 12,
+      "real_data_downstream_forwards": 4,
+      "real_data_backward_calls": 4,
+      "real_data_optimizer_updates": 4,
+      "real_data_GAGA_forwards": 0,
+      "TEST_queries": 0,
+      "API_calls": 0
+    },
+    "prior_failed_startup_guardian_seconds": 17.839906390057877,
+    "prior_failed_startup_process_cpu_seconds": 11.512888989,
+    "completed_attempt_whole_phase_wall_seconds_including_review_wait": 3642.964871,
+    "all_attempt_elapsed_seconds_including_completed_attempt_review_wait": 3660.804777390058,
+    "active_guardian_wall_seconds": 3619.5581319688354,
+    "all_recorded_child_process_cpu_seconds": 9223.577055812
+  },
+  "downstream": [
+    {
+      "seed": 3,
+      "epochs": 4,
+      "optimizer_updates": 500,
+      "nonzero_gradient_cases": 500,
+      "initial_state_sha256": "e5581f44756f8e0fb91ab89398f9aba59c1fa847527621064dcc54bc61b29f49",
+      "final_state_sha256": "988f21aa2b7d571194e4674225d66e882dd5c6e0ebe9ec8771e182f80ea9987a",
+      "final_checkpoint_sha256": "dfb6ea6c81bda776efe987248781af9e2d2f23899730e7b0d3dec3119436826d",
+      "checkpoint_selection": "Terminal epoch4 only; no VALID selection.",
+      "parameter_count": 151872
+    },
+    {
+      "seed": 4,
+      "epochs": 4,
+      "optimizer_updates": 500,
+      "nonzero_gradient_cases": 500,
+      "initial_state_sha256": "6a32d2d198659f2864add7cba9e24496ec0467e4219961ada89112b7f447969b",
+      "final_state_sha256": "dfd51c7e1b30ca47ade7575a524a28fbe8a808eb1706dc8351676981c64596f0",
+      "final_checkpoint_sha256": "ed257e46f587b1f7813d89264deb06fea706ba6dad35469495d0a359ecca80af",
+      "checkpoint_selection": "Terminal epoch4 only; no VALID selection.",
+      "parameter_count": 151872
+    },
+    {
+      "seed": 5,
+      "epochs": 4,
+      "optimizer_updates": 500,
+      "nonzero_gradient_cases": 500,
+      "initial_state_sha256": "90af9d102d905cd2940f3b30c3c902dea06bd3cbd662c29f8fe4314ffaf3a03f",
+      "final_state_sha256": "3fa1c25e85e7748c25a70d44cf225f295f05a72de950806e937dcc2f8b7e7982",
+      "final_checkpoint_sha256": "832fe3ed6e5b4ade7dbd5009a066349681509350988f86d28823b3cd6de2a0bf",
+      "checkpoint_selection": "Terminal epoch4 only; no VALID selection.",
+      "parameter_count": 151872
+    }
+  ],
+  "audit_scopes": {
+    "logits": "Passed independent saved-logit prediction/count/aggregate recount and declared file-byte bindings; no tensor deserialization or new inference.",
+    "geometry": "Passed independent deserialization of own saved captures/plans, with tensor content hashes, IDs, quotas and owned-adjacency geometry; no original dataset, model checkpoint or executed-graph inspection.",
+    "human_verification": false
+  },
+  "limits": [
+    "Three training seeds on a fixed adaptively developed validation setup; the nominal paired interval is not an independent population guarantee.",
+    "The trained scorer adds 151872 parameters. No equal-capacity or action-hidden training ablation isolates the contribution of seeing upstream decisions.",
+    "Quota arms can change per-auxiliary-node degrees and remove native injected-to-injected edges. Their gain over native MonTi does not isolate downstream learning.",
+    "The three quota arms share fixed upstream features, target attachments, candidate lists, total node/edge budgets and projected role quotas.",
+    "The downstream observes an attachment mean and count, not a lossless encoding of every upstream decision.",
+    "Training uses a biased selected-edge straight-through surrogate, not the exact derivative of discrete topology.",
+    "No real fraud supply chain, novelty, human technical review, course approval or final TEST improvement is established."
+  ]
+}

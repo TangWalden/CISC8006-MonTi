@@ -43,3 +43,9 @@ The [11 November feature-assignment extension](../experiments/feature_assignment
 adds actual implementation, a frozen four-condition VALID comparison and a null
 result to the improvement/audit evidence. It supplies no positive-performance,
 instructor-approval, full-TEST or human-verification claim.
+
+The separate [frozen-upstream downstream pilot](../results/downstream_cooperation/)
+also completed on 11 November. It passed its registered development rule and
+improved over native MonTi, while its advantage over random candidate selection
+remains uncertain. This does not fill the missing full-TEST, course-approval or
+human-review requirements.
