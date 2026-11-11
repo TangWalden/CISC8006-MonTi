@@ -27,21 +27,22 @@ geometry recount are retained in the
 The published opaque case keys are seed-scoped; this audit compares geometry
 multisets and does not infer cross-seed group identity from those keys.
 
-The owner has been asked to choose one of two explicit policies:
-
-- Apply exact quotas to feasible cases, with the original attack retained in
-  every arm for infeasible cases. Report the complete cohort and the feasible
-  subset separately. No target is removed from the complete-cohort denominator.
-- Preserve the original total budget and project the requested target quota to
-  its feasible interval. Report actual ratios; do not label projected cases as
-  exact equal allocation.
-
-The choice is pending. Training and real-data method evaluation have not begun.
+The owner selected preservation of the original total budget and projection
+of the requested target quota to its feasible interval. Let the actual number
+of original candidates be `c`. The interval is
+`[max(b, e-b*c), min(b*t, e)]`. Project `ceil(e/2)` into this integer interval,
+and give the remaining edges to the candidate branch. Report every actual
+ratio; projected cases are not exact equal allocation. An empty interval stops
+the preflight or upstream-cache phase before training; it cannot silently
+remove a case. Training and real-data method evaluation await the source-bound
+registration and passed preflight.
 
 ## Fixed upstream decisions
 
 Reuse the three recorded terminal-eight legacy MonTi checkpoints for seeds
-3, 4 and 5. Their parameters remain frozen. Each case uses one cached upstream
+3, 4 and 5. Their parameters remain frozen, retaining the documented historical
+score-source semantics. This study does not silently introduce a source-role
+correction. Each case uses one cached upstream
 feature tensor, one original target list and one candidate list with preserved
 physical node IDs and order.
 
@@ -86,7 +87,7 @@ after the downstream weights and all graphs have been sealed. No TEST inference
 is permitted. Use the final fixed training epoch, not a checkpoint chosen by
 GAGA outcomes.
 
-The draft execution settings are three seeds, at most 256 original TRAIN groups
+The execution settings are three seeds, 128 original TRAIN groups
 and four downstream epochs per seed. Select 64 original VALID groups by a fixed
 ID-only draw from contexts not used in the four earlier 128-group lists,
 including the separate feature-assignment study. Target identities can still
@@ -94,12 +95,12 @@ overlap earlier groups, so these are fresh contexts, not independent unseen
 news. All models and inputs must be hashed before execution. A separate
 TRAIN-only gradient and geometry preflight must pass before the main run.
 
-The planned runtime is CPU-only with four threads and a four-hour outer phase
+The runtime is CPU-only with four threads and a four-hour outer phase
 limit. No GPU or external API call is required by the proposed pilot. Any
 failure or interruption retains its partial output and actual CPU time. There
 is no automatic retry, seed expansion or additional training after seeing
-development outcomes. These draft settings become executable only after the
-capacity policy and the source-bound execution registration are fixed.
+development outcomes. The source-bound execution registration must be fixed
+before any model call.
 
 ## Interpretation
 
@@ -108,5 +109,8 @@ recoveries for all arms. Seed is the replication unit; overlapping group-node
 occurrences are correlated. Report paired differences and the nominal
 three-seed interval, together with actual resource counts and fallback rates.
 Neither a larger model nor a quota restriction alone establishes cooperation.
+The matched arms test a trained conditional downstream policy. Without a
+separate action-hidden training ablation, any gain does not isolate the
+performance contribution of receiving the upstream decisions themselves.
 This pilot does not establish a real fraud supply chain, novelty, course
 approval or final TEST effectiveness.
