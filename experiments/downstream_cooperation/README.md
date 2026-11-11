@@ -108,7 +108,10 @@ libraries even when execution is CPU-only. A separately committed launcher
 amendment pins `LD_LIBRARY_PATH`, `PYTHONHASHSEED` and the DGL backend. The first
 source, registration, logs and zero-query receipt remain in their original
 attempt directory; the amendment charges its guardian time against the same
-four-hour CPU ceiling.
+four-hour CPU ceiling. A second startup exposed a Python 3.8 incompatibility in
+the synthetic-test log writer, also before any real-data model call. Its
+separate source, failure and CPU time are retained. The compatibility amendment
+uses an explicit text stream and does not change the experiment settings.
 
 ## Interpretation
 

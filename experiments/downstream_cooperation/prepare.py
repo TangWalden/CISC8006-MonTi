@@ -243,19 +243,24 @@ def main():
                            all_three_seed_deltas_positive=True, paired_t95_lower_positive=True,
                            mean_above_both_quota_controls=True, controls_not_candidates=True),
     )
-    prior = assets / 'runs/downstream_cooperation_20261111_attempt1/execution/preflight_guardian.json'
-    if prior.exists():
+    amendments = []
+    for attempt in (1, 2):
+        prior = assets / ('runs/downstream_cooperation_20261111_attempt%d/execution/preflight_guardian.json' % attempt)
+        if not prior.exists(): continue
         old = read_json(prior)
         if old['status'] != 'failed':
-            raise RuntimeError('Only an explicitly reviewed failed startup may precede this amendment.')
+            raise RuntimeError('Only explicitly reviewed failed startup attempts may precede this amendment.')
         failure_result = read_json(pathlib.Path(old['output']) / 'result.json')
-        if any(failure_result['counters'].values()) or 'libcusparse.so.11' not in failure_result.get('error', ''):
-            raise RuntimeError('This environment amendment is limited to the zero-query library startup failure.')
-        protocol['setup_amendment'] = dict(prior_guardian_sha256=sha(prior), prior_result_sha256=sha(pathlib.Path(old['output']) / 'result.json'),
+        error = failure_result.get('error', '')
+        if any(failure_result['counters'].values()) or not any(value in error for value in ('libcusparse.so.11', 'unexpected keyword argument')):
+            raise RuntimeError('Startup amendment cannot silently retry real-data model work or unrelated errors.')
+        amendments.append(dict(attempt=attempt, prior_guardian_sha256=sha(prior),
+            prior_result_sha256=sha(pathlib.Path(old['output']) / 'result.json'),
             prior_guardian_wall_seconds=old['guardian_wall_seconds'], prior_process_cpu_seconds=old['child_process_cpu_seconds'],
-            reason='The first launcher omitted the recorded environment lib directory required by CUDA-linked DGL even on CPU.',
-            scientific_policy_changed=False, previous_model_queries=0, previous_GPU_hours=0)
+            prior_error=error, scientific_policy_changed=False, previous_real_data_model_queries=0,
+            synthetic_test_status=failure_result.get('synthetic_tests'), previous_GPU_hours=0))
         protocol['resource']['CPU_phase_seconds'] -= int(old['guardian_wall_seconds']) + 1
+    protocol['setup_amendments'] = amendments
     write_json(output / 'protocol.json', protocol)
     print(json.dumps(dict(status='frozen_no_model_calls', protocol_sha256=sha(output / 'protocol.json'),
                           source_commit=manifest['source_commit'], train_groups=128, valid_groups=64,

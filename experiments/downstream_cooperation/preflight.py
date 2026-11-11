@@ -78,7 +78,8 @@ def main():
         suite = unittest.defaultTestLoader.loadTestsFromNames(TEST_MODULES)
         tests_started = time.monotonic()
         checked = unittest.TextTestRunner(stream=test_log, verbosity=2).run(suite)
-        (output / 'synthetic_tests.log').write_text(test_log.getvalue(), encoding='utf-8', newline='\n')
+        with (output / 'synthetic_tests.log').open('x', encoding='utf-8', newline='\n') as stream:
+            stream.write(test_log.getvalue())
         result['synthetic_tests'] = dict(
             modules=list(TEST_MODULES), tests_run=checked.testsRun,
             failures=len(checked.failures), errors=len(checked.errors), skipped=len(checked.skipped),
