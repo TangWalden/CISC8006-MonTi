@@ -306,6 +306,7 @@ def build_exports(run_root, protocol_path, logit_audit_path, tensor_audit_path):
         scientific_protocol_sha256=provenance['protocol_sha256'],
         original_run_root=str(run), original_protocol_path=str(protocol_path),
         input_json_file_sha256=inputs, exporter_source_sha256=sha(__file__),
+        exporter_source_binding='The exact exporter source SHA256 and the separately retained post-audit source manifest bind this staged script. The ambient enclosing repository commit below is context only, not the exporter publication source.',
         output_sha256={name: hashlib.sha256(value).hexdigest() for name, value in outputs.items()},
         row_counts=dict(seed_metrics=12, case_counts=768, quota_by_case=192),
         audit_copy_policy='The two passed audit JSONs are copied byte-for-byte; their original scope and limitations are unchanged.',
@@ -315,11 +316,11 @@ def build_exports(run_root, protocol_path, logit_audit_path, tensor_audit_path):
         export_GPU_hours=0, export_API_calls=0, export_TEST_queries=0,
     )
     try:
-        publication['exporter_publication_source_commit'] = subprocess.check_output(
+        publication['exporter_ambient_repository_commit'] = subprocess.check_output(
             ['git', 'rev-parse', 'HEAD'], cwd=Path(__file__).resolve().parents[2], text=True,
             stderr=subprocess.DEVNULL).strip()
     except (OSError, subprocess.CalledProcessError):
-        publication['exporter_publication_source_commit'] = None
+        publication['exporter_ambient_repository_commit'] = None
     outputs['provenance.json'] = json_bytes(publication)
     return outputs, latest
 
