@@ -20,6 +20,13 @@ edges, but only 366 distinct pairs exist. This result uses saved geometry only;
 it is not a new model evaluation. Passing this necessary test does not establish
 feasibility until the actual candidate list is known.
 
+The [saved metadata audit](../../evidence/downstream_cooperation_v1/budget_audit.json)
+records every checked row. Fourteen synthetic checks and a separate root
+geometry recount are retained in the
+[execution receipt](../../evidence/downstream_cooperation_v1/review_and_receipt.json).
+The published opaque case keys are seed-scoped; this audit compares geometry
+multisets and does not infer cross-seed group identity from those keys.
+
 The owner has been asked to choose one of two explicit policies:
 
 - Apply exact quotas to feasible cases, with the original attack retained in

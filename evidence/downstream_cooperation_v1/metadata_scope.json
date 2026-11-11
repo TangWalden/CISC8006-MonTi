@@ -1,0 +1,22 @@
+{
+  "status": "frozen_before_metadata_audit",
+  "source_commit": "e59e2d14b77332136c215204ab3cc190a8f91522",
+  "source_sha256": {
+    "experiments/downstream_cooperation/README.md": "279af1ab832e21bdb92830ce014ee9c92e56de96d16292ba1ec1aa2358d6de83",
+    "experiments/downstream_cooperation/budget_audit.py": "cb7e9754700a65878d2b418f79532c337e3f2250ba6c807ac5ef90a2b2ba1091",
+    "tests/test_downstream_budget_audit.py": "56e76a5bff26cb95177d7186efd8fcb6cc12aadd3fbbb5af7e0190d445d756a3"
+  },
+  "input_csv_sha256": "d37b0bad91f413824cfb2078f62223a3d24369c6e0489bf7a4d43193550165dc",
+  "created_utc": "2026-11-11T12:19:42.379264+00:00",
+  "owner_authorized_pilot": true,
+  "capacity_policy": "pending owner clarification",
+  "new_training_allowed": false,
+  "scope": "Baseline structural metadata only. No policy evaluation, model imports or model queries.",
+  "controls": [
+    "native_MonTi",
+    "half_quota_original_scores",
+    "half_quota_random_downstream",
+    "half_quota_trained_downstream"
+  ],
+  "final_TEST_allowed": false
+}

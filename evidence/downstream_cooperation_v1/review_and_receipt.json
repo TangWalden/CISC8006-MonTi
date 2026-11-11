@@ -1,0 +1,28 @@
+{
+  "status": "checked",
+  "source_commit": "e59e2d14b77332136c215204ab3cc190a8f91522",
+  "scope_sha256": "6fddc687aca35dd050892ee61ec64761fadeb123df139a598b32ac076a08be69",
+  "audit_sha256": "59e34e9d2e00172766eaebc3c9b4393d417c3b1a5f3ac97bd23ec71dd5cef6d4",
+  "tests_sha256": "d666753f362728dd6ff50ac46b5cc34c513f883556a3e6a0606a4000d168ea4a",
+  "root_independent_geometry_recount": {
+    "source_csv_sha256": "d37b0bad91f413824cfb2078f62223a3d24369c6e0489bf7a4d43193550165dc",
+    "seeds": [
+      3,
+      4,
+      5
+    ],
+    "groups_per_seed": 128,
+    "necessary_target_capacity_failures_per_seed": 97,
+    "not_rejected_per_seed": 31,
+    "target_occurrences_per_seed": 1016,
+    "failure_occurrences_per_seed": 633
+  },
+  "review": "Separate agent authored and tested the metadata checker; root inspected code, independently recounted geometry, reran synthetic checks and the frozen audit. Neither is human verification.",
+  "preparation_incident": "An initial unfrozen preparation check assumed opaque case keys identified the same group across seeds and stopped. The published keys include seed. The corrected source checks geometry multisets only and explicitly leaves cross-seed identity unverified. Original scientific records are unchanged.",
+  "training_status": "Not started; a required capacity-policy clarification is pending.",
+  "dataset_or_checkpoint_loads": 0,
+  "new_model_queries": 0,
+  "new_training_steps": 0,
+  "new_GPU_hours": 0,
+  "new_API_calls": 0
+}

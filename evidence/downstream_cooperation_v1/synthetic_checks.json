@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "wall_seconds": 0.26937899994663894,
+  "source_commit": "e59e2d14b77332136c215204ab3cc190a8f91522",
+  "source_hashes_before": {
+    "experiments/downstream_cooperation/README.md": "279af1ab832e21bdb92830ce014ee9c92e56de96d16292ba1ec1aa2358d6de83",
+    "experiments/downstream_cooperation/budget_audit.py": "cb7e9754700a65878d2b418f79532c337e3f2250ba6c807ac5ef90a2b2ba1091",
+    "tests/test_downstream_budget_audit.py": "56e76a5bff26cb95177d7186efd8fcb6cc12aadd3fbbb5af7e0190d445d756a3"
+  },
+  "source_hashes_after": {
+    "experiments/downstream_cooperation/README.md": "279af1ab832e21bdb92830ce014ee9c92e56de96d16292ba1ec1aa2358d6de83",
+    "experiments/downstream_cooperation/budget_audit.py": "cb7e9754700a65878d2b418f79532c337e3f2250ba6c807ac5ef90a2b2ba1091",
+    "tests/test_downstream_budget_audit.py": "56e76a5bff26cb95177d7186efd8fcb6cc12aadd3fbbb5af7e0190d445d756a3"
+  },
+  "ML_imports": 0,
+  "new_model_queries": 0,
+  "training_steps": 0,
+  "GPU_hours": 0
+}
