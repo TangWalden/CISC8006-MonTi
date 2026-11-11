@@ -1,1 +1,1 @@
-"""Standalone, standard-library graph postprocessing methods."""
+"""Graph postprocessing methods; optional assignment dependencies stay separate."""
