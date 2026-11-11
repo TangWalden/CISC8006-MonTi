@@ -78,6 +78,7 @@ def main():
             command += ['--preflight', str(preflight)]
         env = dict(os.environ, CUDA_VISIBLE_DEVICES='', OMP_NUM_THREADS='4', MKL_NUM_THREADS='4',
                    OPENBLAS_NUM_THREADS='4', PYTHONUNBUFFERED='1')
+        env.update(protocol['environment'])
         row = dict(phase=args.phase, status='running', started_utc=utc(), output=str(output),
                    inner_seconds=inner, outer_seconds=outer, command=command,
                    selected_device=protocol['device'], protocol_sha256=provenance['protocol_sha256'])

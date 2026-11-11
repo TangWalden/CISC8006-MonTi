@@ -226,6 +226,8 @@ def main():
                       loss='uniform_mean_softplus_fraud_minus_benign',
                       upstream_frozen=True, original_GCN_frozen=True, only_downstream_parameters_optimized=True),
         device=dict(kind='cpu', cuda_visible_devices='', uuid=None, selection='CPU-only registered experiment; no GPU fallback or allocation.'),
+        environment=dict(LD_LIBRARY_PATH='/home/tjy/miniconda3/envs/monti/lib',
+                         PYTHONHASHSEED='0', DGLBACKEND='pytorch'),
         resource=dict(CPU_phase_seconds=14400, GPU_phase_seconds=0, preflight_inner_seconds=900,
                       main_inner_seconds=10800, outer_extra_seconds=60, threads=4, automatic_retry=False),
         budget=dict(ledger=ledger_ref, charged_GPU_hours=ledger['measured_or_conservatively_charged'],
@@ -241,6 +243,19 @@ def main():
                            all_three_seed_deltas_positive=True, paired_t95_lower_positive=True,
                            mean_above_both_quota_controls=True, controls_not_candidates=True),
     )
+    prior = assets / 'runs/downstream_cooperation_20261111_attempt1/execution/preflight_guardian.json'
+    if prior.exists():
+        old = read_json(prior)
+        if old['status'] != 'failed':
+            raise RuntimeError('Only an explicitly reviewed failed startup may precede this amendment.')
+        failure_result = read_json(pathlib.Path(old['output']) / 'result.json')
+        if any(failure_result['counters'].values()) or 'libcusparse.so.11' not in failure_result.get('error', ''):
+            raise RuntimeError('This environment amendment is limited to the zero-query library startup failure.')
+        protocol['setup_amendment'] = dict(prior_guardian_sha256=sha(prior), prior_result_sha256=sha(pathlib.Path(old['output']) / 'result.json'),
+            prior_guardian_wall_seconds=old['guardian_wall_seconds'], prior_process_cpu_seconds=old['child_process_cpu_seconds'],
+            reason='The first launcher omitted the recorded environment lib directory required by CUDA-linked DGL even on CPU.',
+            scientific_policy_changed=False, previous_model_queries=0, previous_GPU_hours=0)
+        protocol['resource']['CPU_phase_seconds'] -= int(old['guardian_wall_seconds']) + 1
     write_json(output / 'protocol.json', protocol)
     print(json.dumps(dict(status='frozen_no_model_calls', protocol_sha256=sha(output / 'protocol.json'),
                           source_commit=manifest['source_commit'], train_groups=128, valid_groups=64,

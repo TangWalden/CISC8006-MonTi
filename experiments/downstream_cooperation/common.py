@@ -71,6 +71,9 @@ def verify_protocol(path):
 
 def check_device():
     if os.environ.get('CUDA_VISIBLE_DEVICES') != '': raise RuntimeError('CPU visibility must be explicit.')
+    expected_lib = '/home/tjy/miniconda3/envs/monti/lib'
+    if os.environ.get('LD_LIBRARY_PATH') != expected_lib or os.environ.get('DGLBACKEND') != 'pytorch':
+        raise RuntimeError('The locked DGL dynamic-library environment is missing.')
     import torch
     import dgl
     import numpy as np

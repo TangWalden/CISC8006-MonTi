@@ -102,6 +102,14 @@ is no automatic retry, seed expansion or additional training after seeing
 development outcomes. The source-bound execution registration must be fixed
 before any model call.
 
+The first preflight stopped before any model query because its launcher omitted
+the recorded environment library directory. CUDA-linked DGL needs those shared
+libraries even when execution is CPU-only. A separately committed launcher
+amendment pins `LD_LIBRARY_PATH`, `PYTHONHASHSEED` and the DGL backend. The first
+source, registration, logs and zero-query receipt remain in their original
+attempt directory; the amendment charges its guardian time against the same
+four-hour CPU ceiling.
+
 ## Interpretation
 
 Report occurrence-weighted MR, clean errors, newly incorrect predictions and
