@@ -1,0 +1,41 @@
+{
+  "schema": "monti_staged_report_qa_v1",
+  "created_utc": "2026-11-12T03:52:38.283388+00:00",
+  "status": "passed",
+  "pdf_sha256": "56e1ce8de933978caf1f3c5b47d411acf7b49f712910fba475fd92f203fb19ca",
+  "pages": 8,
+  "root_visual_review": "All eight exact-file PNG previews inspected; no clipping, missing visible glyphs, table overflow or pagination defect observed.",
+  "render_exit_code": 0,
+  "render_warnings_retained": "Syntax Error: No display font for 'Symbol'\r\nSyntax Error: No display font for 'ArialUnicode'\r\n",
+  "rendered_images": {
+    "page-1.png": "5234ef6949242a940fcc8ca63264a51673acf37c2099f2acf1b8b5e8e5fa259a",
+    "page-2.png": "75732381593ce0cb6935f8da333353a181dba836b5bfa751f52db5ad1693d1bb",
+    "page-3.png": "d734a46d70e1e87d35a28f3c1daf1318083fbd64bc107fb7b1c07b22083f5af5",
+    "page-4.png": "cb11b025061fbf74ecccb032cae66cf2eb083be1bdc6f94fc201be2977b76f8a",
+    "page-5.png": "5cdbeafb75db62d5f193b2a64bd877ef2894b8f1e3c63da0a46963c3a87585b1",
+    "page-6.png": "0b7a8464ae18597e2e908f0a222a85d44b585a28abf6d12c7d15664ca84670f9",
+    "page-7.png": "6c61d3d712949469404dca363a650992e222d755eeff02bb23c425106086df45",
+    "page-8.png": "d56a8f672adca0abc35fc6b2e5aa66b4f8981ea512d427df4757215ec49f8a7f"
+  },
+  "rendered_input_sha_matches_delivered_pdf": true,
+  "numerical_table_cells_checked": 32,
+  "required_key_values_checked": 9,
+  "relative_document_links_checked": 98,
+  "scientific_records_unchanged_from": "70c48d1a74aa4e5b3e1b1c6ce15c068ba8931980",
+  "document_hashes": {
+    "README.md": "d925a473007ff5f2d3755af1c40962ab7a8c15400b72139db38f11511a3cb97c",
+    "AI_USAGE.md": "a110e55bbb9ad22e4d488e7463320354d410209cbe6406dc57fecc76ea207057",
+    "docs/ARCHIVE.md": "531011a94bcd35ef6e84244c8bfd8e3d7c70883844419606a2eb10f5a65551f0",
+    "docs/ASSESSMENT.md": "3b58cdf0f76d76963f61c7b6004654a197195ab4d50f181ed51c641238f456b2",
+    "docs/METHOD.md": "6ac09f7af5f1da7e4989bbb571a5bfd7fc9798bddf86fe67209323b8e2243018",
+    "docs/STAGED_REPORT.md": "1f9e74ddda4c8b6f85e8178dd2c4ad61fcdeb471562ac0df626a3bda1b8b4023",
+    "docs/SUPPLEMENTARY_STUDIES.md": "c4b5fc6587be752409f8badd5512aeb799c64d1989fa820a33fc334543ee81f1",
+    "docs/LEGACY_REALLOCATION.md": "f3eea1a995bf70b8a1c8ec0a4a20d2570eb05dc2b970346d4aae94fafecd0df7",
+    "results/README.md": "bc0d8f3361b52eb3b45c0c4e673689ef2fd878af97c5869869dcfa6a5a554dc2"
+  },
+  "build_manifest_sha256": "79c436ec647f22876877e67db0f4e19d792a0868f55ea3dad48871193951efa4",
+  "model_queries": 0,
+  "GPU_hours": 0,
+  "human_review": false,
+  "scope": "Artifact and saved-evidence QA; no ML runtime or dataset/checkpoint load. Independent agent review is not human verification."
+}
