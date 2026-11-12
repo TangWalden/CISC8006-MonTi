@@ -74,6 +74,41 @@ def case_metrics(rows):
     return metrics
 
 
+def public_audit_summary(record,kind,raw_sha,provenance,protocol):
+    """Curate whitelisted scalar evidence, never relabel it as original bytes."""
+    require(record['status']=='passed' and re.fullmatch('[0-9a-f]{64}',raw_sha) is not None,
+        'A passed full raw audit and its actual SHA256 are required.')
+    if kind=='saved_logit_recount':
+        source_sha=record['auditor_source_sha256'];source_commit=protocol['source_manifest']['source_commit']
+        audited=record['recount']
+        require(audited['provenance']==provenance,'Raw saved audit has another scientific provenance.')
+        core={key:audited[key] for key in ('saved_rows','clean_groups','attacked_cases',
+            'occurrence_denominator_per_arm_seed','unique_test_targets','serialized_cache_files_hashed',
+            'serialized_plan_files_hashed','terminal_checkpoint_files_hashed','training_rows_recounted')}
+        counters={key:record[key] for key in ('model_queries','tensor_deserializations','checkpoint_deserializations',
+            'optimizer_updates','API_calls','GPU_hours')}
+        quota={};limitations=record['limitations']
+        source_name='experiments/author_staged/audit_saved.py'
+    elif kind=='saved_tensor_geometry':
+        source_sha=record['audit_source_binding']['auditor_source_sha256']
+        source_commit=record['audit_source_binding']['source_commit']
+        require(record['provenance']==provenance,'Raw tensor audit has another scientific provenance.')
+        core=dict(cache_cases=len(record['cache_metadata_rows']),test_geometry_cases=len(record['test_role_counts']))
+        counters=dict(record['counters']);quota=dict(record['quota_summary'])
+        limitations=[record[key] for key in ('scope','physical_mapping_scope','shared_features_scope',
+            'budget_scope','chronology_scope','independence')]
+        source_name='experiments/author_staged/audit_tensors.py'
+    else:raise RuntimeError('Unknown public audit summary kind.')
+    require(re.fullmatch('[0-9a-f]{40}',source_commit) is not None
+        and protocol['source_manifest']['files'][source_name]==source_sha,
+        'Raw author auditor source differs from the frozen scientific manifest.')
+    return dict(schema='monti_public_audit_summary_v1',public_summary=True,kind=kind,status='passed',
+        scientific_provenance=provenance,full_raw_audit_sha256=raw_sha,auditor_source_sha256=source_sha,
+        audit_source_commit=source_commit,core_counts=core,counters=counters,quota_summary=quota,
+        human_verification=False,model_replay=False,limitations=limitations,
+        summary_scope='Compact public curation of a passed audit; full original JSON and all file/cache/hash rows remain retained privately. Summary bytes are not the original audit bytes. Audit-work counters are distinct from producer training/evaluation counters.')
+
+
 def guardian_binding(guardian,p,protocol_path,run,result_sha):
     expected=['/home/tjy/miniconda3/envs/monti/bin/python',str(Path(p['source_root'])/'experiments/final_staged/run.py'),
         '--protocol',str(Path(protocol_path).resolve()),'--output',str(run),
@@ -231,9 +266,12 @@ def main(argv=None):
                 'Three-repetition/df2 intervals are conditional and do not erase repeated prior TEST inspection or correlated target occurrences.',
                 'Random comparison is secondary; negative and inconclusive outcomes stay visible. No control is promoted or new seed added.'])
         write_json('latest.json',latest);write_csv('seed_metrics.csv',metrics);write_csv('case_counts.csv',cases);write_csv('quota_by_case.csv',quotas)
+        raw_audits=dict(saved_logit_recount=inputs['saved_audit'],saved_tensor_geometry=inputs['tensor_audit'])
+        write_json('audit_saved.json',public_audit_summary(saved,'saved_logit_recount',raw_audits['saved_logit_recount'],provenance,p))
+        write_json('audit_tensors.json',public_audit_summary(tensor,'saved_tensor_geometry',raw_audits['saved_tensor_geometry'],provenance,p))
         write_json('provenance.json',dict(schema='monti_author_staged_export_provenance_v1',scientific_provenance=provenance,
             postprocessing_source_commit=post['source_commit'],exporter_source_sha256=receipt['source_sha256'],auditor_helper_source_sha256=helper_source,
-            original_input_sha256=inputs,author_upstream_binding=author,payload_sha256={name:sha(output/name) for name in generated},
+            original_input_sha256=inputs,full_raw_audit_sha256=raw_audits,author_upstream_binding=author,payload_sha256={name:sha(output/name) for name in generated},
             exact_original_guardian_verified=bool(args.guardian),opaque_key_scheme='SHA256(JSON[seed, original_group, author_staged_tensor_audit_v1])[:20]',
             scope='Saved audited count/geometry curation; zero tensor/model/dataset/parameter-object decoding. No raw per-target outputs or private absolute paths exported.'))
         receipt.update(status='completed',scientific_provenance=provenance,postprocessing_source_commit=post['source_commit'],
