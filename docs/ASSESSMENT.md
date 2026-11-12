@@ -14,7 +14,7 @@ comparison against the reproduced native MonTi baseline. The
 | Final reproduction and difference analysis | 20 | [Six-run reproduction](../evidence/reproduction_summary.json), [paper/setup comparison](REPRODUCING.md#claim-and-paper-comparison) | The frozen reproduction conclusion is inconclusive; incorporate the team's verified explanation in the final submission. |
 | Improvement experiments and ablations | 20 | [Staged scheme and controls](METHOD.md), [three-seed results](../results/downstream_cooperation/), [supplementary studies](SUPPLEMENTARY_STUDIES.md) | Complete or confirm the full fair evaluation of the chosen idea against the frozen reproduction baseline within the approved scope. Instructor approval of the required idea pilots is unrecorded. |
 | Repository, report and agent record | 15 | [Current report](STAGED_REPORT.md), [PDF](MonTi_Staged_Report.pdf), [setup and source records](REPRODUCING.md), [AI use](../AI_USAGE.md), [traceability](../results/downstream_cooperation/provenance.json) | Final human review, submission packaging and owner-confirmed course freeze tag. |
-| Presentation and demonstration | 5 | [Historical slides and demo preparation](ARCHIVE.md) | Align presentation materials with the staged method, check the application, rehearse and present. |
+| Presentation and demonstration | 5 | [Revised Bento and PowerPoint deck with speaking notes](SLIDES_GUIDE.md), [historical demo preparation](ARCHIVE.md) | Add audited full-test outcomes when available; complete the final demonstration, human application checks, rehearsal and presentation. |
 | Individual technical defense | 10 | [Method explanation](METHOD.md), [report](STAGED_REPORT.md) | Each member must personally explain and defend the work. |
 | Individual contribution | 5 | [Contribution record](../CONTRIBUTIONS.md) | Members confirm actual work and supporting evidence. |
 | **Total** | **100** | **85 team + 15 individual** | **Evidence availability is not a self-awarded mark.** |
@@ -29,8 +29,9 @@ and 64 validation groups. The earlier formal reproduction uses seeds 0/1/2
 and a different evaluation cohort. The current pilot is therefore not the
 registered final matched evaluation of that frozen reproduction baseline.
 
-The remaining experimental item is to lock that matched evaluation's scope,
-baseline, controls, resources and decision rule, then complete it. It does
+The matched evaluation's scope, baseline, controls, resources and decision rule
+are now [registered and frozen](FINAL_EVALUATION.md); execution and subsequent
+saved-record audits remain in progress. It does
 not require inventing another method or adding more mechanism studies. The
 guide permits instructor-approved Exact, Scaled-faithful and Component levels,
 all eligible for full marks. It does not independently require the full

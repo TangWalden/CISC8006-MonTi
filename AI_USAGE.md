@@ -118,6 +118,19 @@ to results-first diagnosis, and the historical coverage follow-up stayed on hold
 feedback, not member source-code verification or course approval. A genuine team
 technical accept/change/reject check, with evidence and confirmation, remains pending.
 
+## 12 November: presentation revision
+
+At the owner's request, Codex rewrote the presentation around upstream/downstream
+role division and created native editable Bento diagrams, two charts, a comparison
+table and English speaker notes. All numerical charts use the committed pilot
+evidence. The registered full TEST page remains pending. A separate agent checked
+numbers and document changes; the root agent visually reviewed the slide bodies
+and corrected overflow and a missing feedback arrow. The official Bento converter
+produced an editable PPTX with its conversion differences retained. These are AI
+preparation and checks, not human authorship, review, rehearsal or application
+validation. No additional experimental directions or model calls were introduced
+by the slide revision.
+
 ## Publication cleanup
 
 The 11 November 2026 cleanup extracted the existing algorithm without changing

@@ -1,0 +1,50 @@
+{
+  "schema": "monti_bento_story_build_v2",
+  "created_utc": "2026-11-12T08:08:22.689150+00:00",
+  "status": "Built; awaiting root visual review",
+  "builder_sha256": "3d125de94b6fe688e2a56ea8aa8d50a20f8737625053dfacd7e6d0130ad9968d",
+  "shell_sha256": "12cbb62c3a6b70937396f9faa955708c955c0bab9ef2e6a2cabe965233bccede",
+  "shell_outside_document_unchanged": true,
+  "schema_reference": "https://bento.page/agents.md",
+  "schema_version_reviewed": "1.2.13",
+  "input_sha256": {
+    "results/downstream_cooperation/latest.json": "32547fcbdaa1fb8f521e5fea009ea9ed1b295cf4d18169b6e246156100d69950",
+    "results/downstream_cooperation/seed_metrics.csv": "4cee6b5b039581732ce7630b9a305fd91f0adc9dd75d918e9a7b040700af0cf6",
+    "results/downstream_cooperation/provenance.json": "f176079904e56da1cbff8696d341cd131d4ad64369e5e4eaac3975668fe929b0",
+    "evidence/final_staged_v1/protocol.json": "2716a20b1b8c251466e35f7e93b750a3ab72b668c38d0199f9026b9c884f675f"
+  },
+  "pilot_snapshot": "70c48d1a74aa4e5b3e1b1c6ce15c068ba8931980",
+  "formal_protocol_snapshot": "d129b22c2772d678a35b44112693785b59be8d0f",
+  "formal_completed": false,
+  "main_slides": 12,
+  "optional_appendices": 2,
+  "spoken_script_words": {
+    "cover": 74,
+    "group": 74,
+    "original": 78,
+    "question": 76,
+    "roles": 83,
+    "budget": 83,
+    "train-transfer": 81,
+    "comparison": 81,
+    "pilot-results": 85,
+    "pilot-seeds": 80,
+    "formal-test": 78,
+    "conclusion": 84,
+    "mr-example": 81,
+    "quota-evidence": 81
+  },
+  "native_charts": 2,
+  "native_tables": 1,
+  "output_sha256": {
+    "docs/slides/MonTi_Staged_Role_Division.bento.html": "b552f04bb059ac29764d1b526436f6e7cc4176c1e28aea061a415193de2988ee",
+    "docs/slides/MonTi_Staged_Role_Division.bento.json": "6b77201cec52a0d739853165304efd8737e3e53d7dae2ebc58335b537029f094"
+  },
+  "new_model_queries": 0,
+  "new_training": 0,
+  "new_GPU_hours": 0,
+  "visual_review": "Pending root inspection in Bento; no child browser was used.",
+  "contribution_scope": "Planned speaking split: 180 seconds each over 12 main slides; no human rehearsal or actual authorship verified.",
+  "private_original_build_record_sha256": "78b3f14b3776cd8d87495ec180ccc51c4befa48fcd7e28311be491f303720bb8",
+  "publication_copy_note": "Absolute local paths replaced with repository-relative paths; original private receipt retained. Build-time pending review status preserved."
+}

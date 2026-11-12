@@ -1,0 +1,295 @@
+{
+  "schema": "monti_native_bento_pptx_package_qa_v5_amended",
+  "status": "passed_with_limits",
+  "checked_utc": "2026-11-12T08:21:13.392089+00:00",
+  "pptx_file": "MonTi_Staged_Role_Division_v5.pptx",
+  "pptx_sha256": "a93ae61d766d2cde23ba32ac6b42e463242c72db3c69755ca9b5fb0df9c742e6",
+  "pptx_bytes": 55494,
+  "source_bento_json": "bento/MonTi_Staged_Role_Division_v5.bento.json",
+  "source_bento_json_sha256": "6b77201cec52a0d739853165304efd8737e3e53d7dae2ebc58335b537029f094",
+  "scope": "Read-only ZIP/OOXML package and saved-source comparison. No PowerPoint application opening, rendering or human editing test.",
+  "validator_incident": {
+    "prior_receipt": "pptx_package_qa_v5_attempt1.json",
+    "prior_receipt_sha256": "6c5593e0e19c187b8f97560a72842b14689c4cd6607b5b408689a1fe88d50c89",
+    "cause": "The initial validator compared element.link only and omitted source HTML anchor href. The PPTX had correctly retained the GitHub link, so its extra target caused a false validation failure.",
+    "amendment": "Expected hyperlink sets now include both native element.link and HTML anchor href. The PPTX and source deck were not modified or re-exported."
+  },
+  "zip_entries": 75,
+  "xml_parts_parsed": 75,
+  "all_internal_relationship_targets_resolve": true,
+  "content_types_covered": true,
+  "slides": {
+    "total": 14,
+    "main": 12,
+    "hidden_appendix": [
+      13,
+      14
+    ]
+  },
+  "native_object_totals": {
+    "editable_text_shapes": 161,
+    "editable_diagram_shapes": 75,
+    "native_connectors": 63,
+    "native_tables": 1,
+    "native_charts": 2,
+    "pictures": 0
+  },
+  "meaningful_editable_text_elements_matched": 161,
+  "native_tables_cell_text_matched": 1,
+  "full_speaker_notes_matched": 14,
+  "hyperlinks": [
+    {
+      "slide": 9,
+      "kind": "internal",
+      "target": "ppt/slides/slide13.xml"
+    },
+    {
+      "slide": 12,
+      "kind": "external",
+      "target": "https://github.com/TangWalden/CISC8006-MonTi"
+    },
+    {
+      "slide": 12,
+      "kind": "internal",
+      "target": "ppt/slides/slide14.xml"
+    },
+    {
+      "slide": 13,
+      "kind": "internal",
+      "target": "ppt/slides/slide9.xml"
+    },
+    {
+      "slide": 14,
+      "kind": "internal",
+      "target": "ppt/slides/slide12.xml"
+    }
+  ],
+  "native_chart_checks": [
+    {
+      "slide": 9,
+      "part": "ppt/charts/chart1.xml",
+      "native_chart": true,
+      "series_values": [
+        [
+          53.64856976065382,
+          57.03444249854057,
+          58.14360770577934
+        ]
+      ],
+      "external_data_element_present": false
+    },
+    {
+      "slide": 10,
+      "part": "ppt/charts/chart2.xml",
+      "native_chart": true,
+      "series_values": [
+        [
+          6.129597197898427,
+          4.378283712784587,
+          2.9772329246935243
+        ]
+      ],
+      "external_data_element_present": false
+    }
+  ],
+  "embedded_workbooks": 0,
+  "image_media_files": 0,
+  "transition_types": {},
+  "english_only_character_check": {
+    "CJK_characters": 0
+  },
+  "per_slide": [
+    {
+      "slide": 1,
+      "source_id": "cover",
+      "hidden": false,
+      "text_elements_matched": 9,
+      "notes_match": true,
+      "editable_text_shapes": 9,
+      "editable_diagram_shapes": 2,
+      "native_connectors": 1,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 2,
+      "source_id": "group",
+      "hidden": false,
+      "text_elements_matched": 15,
+      "notes_match": true,
+      "editable_text_shapes": 15,
+      "editable_diagram_shapes": 10,
+      "native_connectors": 6,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 3,
+      "source_id": "original",
+      "hidden": false,
+      "text_elements_matched": 16,
+      "notes_match": true,
+      "editable_text_shapes": 16,
+      "editable_diagram_shapes": 13,
+      "native_connectors": 13,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 4,
+      "source_id": "question",
+      "hidden": false,
+      "text_elements_matched": 16,
+      "notes_match": true,
+      "editable_text_shapes": 16,
+      "editable_diagram_shapes": 10,
+      "native_connectors": 9,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 5,
+      "source_id": "roles",
+      "hidden": false,
+      "text_elements_matched": 17,
+      "notes_match": true,
+      "editable_text_shapes": 17,
+      "editable_diagram_shapes": 10,
+      "native_connectors": 11,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 6,
+      "source_id": "budget",
+      "hidden": false,
+      "text_elements_matched": 8,
+      "notes_match": true,
+      "editable_text_shapes": 8,
+      "editable_diagram_shapes": 18,
+      "native_connectors": 17,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 7,
+      "source_id": "train-transfer",
+      "hidden": false,
+      "text_elements_matched": 10,
+      "notes_match": true,
+      "editable_text_shapes": 10,
+      "editable_diagram_shapes": 4,
+      "native_connectors": 4,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 8,
+      "source_id": "comparison",
+      "hidden": false,
+      "text_elements_matched": 4,
+      "notes_match": true,
+      "editable_text_shapes": 4,
+      "editable_diagram_shapes": 0,
+      "native_connectors": 0,
+      "native_tables": 1,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 9,
+      "source_id": "pilot-results",
+      "hidden": false,
+      "text_elements_matched": 10,
+      "notes_match": true,
+      "editable_text_shapes": 10,
+      "editable_diagram_shapes": 0,
+      "native_connectors": 0,
+      "native_tables": 0,
+      "native_charts": 1,
+      "pictures": 0
+    },
+    {
+      "slide": 10,
+      "source_id": "pilot-seeds",
+      "hidden": false,
+      "text_elements_matched": 9,
+      "notes_match": true,
+      "editable_text_shapes": 9,
+      "editable_diagram_shapes": 0,
+      "native_connectors": 1,
+      "native_tables": 0,
+      "native_charts": 1,
+      "pictures": 0
+    },
+    {
+      "slide": 11,
+      "source_id": "formal-test",
+      "hidden": false,
+      "text_elements_matched": 10,
+      "notes_match": true,
+      "editable_text_shapes": 10,
+      "editable_diagram_shapes": 0,
+      "native_connectors": 0,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 12,
+      "source_id": "conclusion",
+      "hidden": false,
+      "text_elements_matched": 7,
+      "notes_match": true,
+      "editable_text_shapes": 7,
+      "editable_diagram_shapes": 0,
+      "native_connectors": 0,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 13,
+      "source_id": "mr-example",
+      "hidden": true,
+      "text_elements_matched": 24,
+      "notes_match": true,
+      "editable_text_shapes": 24,
+      "editable_diagram_shapes": 8,
+      "native_connectors": 0,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    },
+    {
+      "slide": 14,
+      "source_id": "quota-evidence",
+      "hidden": true,
+      "text_elements_matched": 6,
+      "notes_match": true,
+      "editable_text_shapes": 6,
+      "editable_diagram_shapes": 0,
+      "native_connectors": 1,
+      "native_tables": 0,
+      "native_charts": 0,
+      "pictures": 0
+    }
+  ],
+  "limits": [
+    "Native OOXML text, diagram geometry, one table and two charts are present rather than slide screenshots. Object types demonstrate editable representation, not a verified application-edit operation.",
+    "Charts preserve exact cached categories and values and reference Sheet1 formulas, but no embedded workbook is present. PowerPoint Edit Data behavior remains unverified.",
+    "Bento morphs, loop animations and exact visual appearance are not guaranteed by PPTX export. Rendering and actual presentation-application checks remain outstanding.",
+    "Speaker notes and hyperlinks were checked structurally and textually, without application playback or link clicking.",
+    "The measured chart values are development-pilot evidence. The deck labels the separately registered formal TEST evaluation as pending."
+  ],
+  "new_model_queries": 0,
+  "GPU_hours": 0,
+  "human_rehearsal_or_technical_review": false
+}

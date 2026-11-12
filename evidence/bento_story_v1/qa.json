@@ -1,0 +1,48 @@
+{
+  "schema": "monti_bento_story_review_v1",
+  "reviewed_utc": "2026-11-12T08:21:55.219589+00:00",
+  "status": "Bento visual review and separate PPTX package checks completed",
+  "formal_completed": false,
+  "pilot_snapshot": "70c48d1a74aa4e5b3e1b1c6ce15c068ba8931980",
+  "formal_protocol_snapshot": "d129b22c2772d678a35b44112693785b59be8d0f",
+  "root_visual_review": {
+    "scope": "All 14 slide bodies reviewed in the browser in v3/v4; all changed v4 bodies rechecked. Final v5 appendix titles and labels reviewed after the exact 7-leaf JSON difference check.",
+    "fixed_before_delivery": [
+      "An overflowing chart caption",
+      "A zero-height training-feedback arrow",
+      "An appendix link that left presentation mode"
+    ],
+    "observed_text_overflow_after_corrections": [],
+    "interactive_links": "MR example and quota appendix links and returns checked in v4; v5 link data unchanged.",
+    "screenshot_files_preserved": false
+  },
+  "agent_static_review": {
+    "scope": "Saved numerical source checks and final JSON difference review; not human verification.",
+    "v4_to_v5_changed_leaves": 7,
+    "changes": "One speaking-note phrase clarified structural budget; two appendix titles/names and labels.",
+    "geometry_charts_numbers_links_other_notes_unchanged": true,
+    "english_document": true,
+    "collaboration_credentials_in_document": false
+  },
+  "conversion": "Official bento.page converter: 14 slides, 302 editable objects, no pictures; exact differences retained in docs/slides/conversion_report.json.",
+  "limitations": [
+    "No PowerPoint application render or edit test; chart cached data has no embedded workbook and Edit Data is unverified",
+    "No human rehearsal or verified member contribution",
+    "Editable file distribution is not synchronized live coediting",
+    "Formal TEST results remain pending"
+  ],
+  "new_experimental_model_calls": 0,
+  "new_research_GPU_hours": 0,
+  "files_sha256": {
+    "docs/slides/conversion_report.json": "abf5760b3dd99a8cf47cbf97bac4a2121d57d977c7a00820391e183e4fb86eae",
+    "docs/slides/index.html": "afac28e34d60b47db9e0fb8cd524c24e70db79a2b12888e9eb085e16041b98ea",
+    "docs/slides/MonTi_Staged_Role_Division.bento.html": "b552f04bb059ac29764d1b526436f6e7cc4176c1e28aea061a415193de2988ee",
+    "docs/slides/MonTi_Staged_Role_Division.bento.json": "6b77201cec52a0d739853165304efd8737e3e53d7dae2ebc58335b537029f094",
+    "docs/slides/MonTi_Staged_Role_Division.pptx": "a93ae61d766d2cde23ba32ac6b42e463242c72db3c69755ca9b5fb0df9c742e6",
+    "tools/build_bento_story.py": "3d125de94b6fe688e2a56ea8aa8d50a20f8737625053dfacd7e6d0130ad9968d",
+    "tools/build_bento_slides.py": "c07e7a2bd52adb0e82926dd8b75234002df614810fb496bf9329bb1ccb27e4f8",
+    "docs/SLIDES_GUIDE.md": "9e8e3fb6a3a13ce9f6e1dd8e6688a72bcb946ffd195563762328a463c3d6e2d0",
+    "evidence/bento_story_v1/build.json": "e707f97251c404d6df7cd7b16af640ce833621f712380e29c80cf3651afbcef4",
+    "evidence/bento_story_v1/pptx_package_qa.json": "1d670a9515afa0c880c16438b2060cdb675541e9d493fc34646f6f5bfbb69f7a"
+  }
+}

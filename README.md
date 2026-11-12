@@ -22,10 +22,14 @@ The 53.6486% baseline comes from our three trained terminal-eight MonTi checkpoi
 
 ## Read the study
 
+- [Revised editable Bento presentation](https://tangwalden.github.io/CISC8006-MonTi/slides/) and [PowerPoint download](docs/slides/MonTi_Staged_Role_Division.pptx), with [speaker-note and editing guide](docs/SLIDES_GUIDE.md).
 - [English report](docs/STAGED_REPORT.md) and [PDF report](docs/MonTi_Staged_Report.pdf).
 - [Staged method and matched controls](docs/METHOD.md), [execution implementation](experiments/downstream_cooperation/) and [frozen protocol](evidence/downstream_cooperation_v1/execution_protocol.json).
 - [Complete main-study evidence](results/downstream_cooperation/) and [supplementary research index](docs/SUPPLEMENTARY_STUDIES.md), including all retained positive, null, negative and failed attempts.
 - [Reproduction and paper comparison](docs/REPRODUCING.md): the separate formal TEST study remains 43.7280% learned versus 40.1902% random, **inconclusive**. It is a different comparison from the development table above.
+
+The final staged comparison is [registered and frozen](docs/FINAL_EVALUATION.md).
+Its execution is in progress; the presentation marks those TEST results as pending.
 
 ## Budget and execution boundaries
 

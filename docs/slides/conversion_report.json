@@ -1,0 +1,87 @@
+{
+  "entries": [
+    {
+      "code": "states-as-hidden-slides",
+      "verdict": "approximated",
+      "where": "document",
+      "detail": "2 interactive state slide(s) exported as hidden slides after the slide they belong to: links reach them, and the show skips them",
+      "count": 1
+    },
+    {
+      "code": "presentation-effects-static",
+      "verdict": "approximated",
+      "where": "slide 1",
+      "detail": "entrance/count-up/ambient/hover effects render at their final frame",
+      "count": 1
+    },
+    {
+      "code": "connector-detached",
+      "verdict": "approximated",
+      "where": "slide 1",
+      "detail": "connector exported as a free line (no longer follows its elements)",
+      "count": 1
+    },
+    {
+      "code": "connector-detached",
+      "verdict": "approximated",
+      "where": "slide 2",
+      "detail": "connector exported as a free line (no longer follows its elements)",
+      "count": 6
+    },
+    {
+      "code": "connector-detached",
+      "verdict": "approximated",
+      "where": "slide 3",
+      "detail": "connector exported as a free line (no longer follows its elements)",
+      "count": 13
+    },
+    {
+      "code": "connector-detached",
+      "verdict": "approximated",
+      "where": "slide 4",
+      "detail": "connector exported as a free line (no longer follows its elements)",
+      "count": 8
+    },
+    {
+      "code": "morph-not-exported",
+      "verdict": "dropped",
+      "where": "slide 4",
+      "detail": "morph transition dropped (PowerPoint Morph is an extension this writer does not emit); slides cut instead",
+      "count": 1
+    },
+    {
+      "code": "connector-detached",
+      "verdict": "approximated",
+      "where": "slide 5",
+      "detail": "connector exported as a free line (no longer follows its elements)",
+      "count": 11
+    },
+    {
+      "code": "morph-not-exported",
+      "verdict": "dropped",
+      "where": "slide 5",
+      "detail": "morph transition dropped (PowerPoint Morph is an extension this writer does not emit); slides cut instead",
+      "count": 1
+    },
+    {
+      "code": "connector-detached",
+      "verdict": "approximated",
+      "where": "slide 6",
+      "detail": "connector exported as a free line (no longer follows its elements)",
+      "count": 16
+    },
+    {
+      "code": "connector-detached",
+      "verdict": "approximated",
+      "where": "slide 7",
+      "detail": "connector exported as a free line (no longer follows its elements)",
+      "count": 3
+    }
+  ],
+  "counts": {
+    "carried": 0,
+    "approximated": 60,
+    "dropped": 2
+  },
+  "provenance": {}
+}

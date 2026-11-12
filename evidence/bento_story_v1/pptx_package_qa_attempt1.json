@@ -1,0 +1,9 @@
+{
+  "schema": "monti_native_bento_pptx_package_qa_v5",
+  "status": "failed",
+  "checked_utc": "2026-11-12T08:19:03.465806+00:00",
+  "pptx_sha256": "a93ae61d766d2cde23ba32ac6b42e463242c72db3c69755ca9b5fb0df9c742e6",
+  "source_bento_json_sha256": "6b77201cec52a0d739853165304efd8737e3e53d7dae2ebc58335b537029f094",
+  "error": "AssertionError(('Hyperlinksnotpreserved', 12, {'quota-evidence'}, {'https://github.com/TangWalden/CISC8006-MonTi', 'quota-evidence'}))",
+  "scope": "Read-only package validation; no application/rendering/ML test."
+}
