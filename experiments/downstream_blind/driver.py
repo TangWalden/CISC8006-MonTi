@@ -31,6 +31,7 @@ def main():
     parser.add_argument('--phase', required=True, choices=('preflight', 'run'))
     args = parser.parse_args()
     guardian_start = time.monotonic()
+    guardian_started_utc = utc()
     protocol, provenance = verify_protocol(args.protocol)
     stage = pathlib.Path(args.stage).resolve()
     assets = pathlib.Path(protocol['asset_root']).resolve()
@@ -50,7 +51,7 @@ def main():
             if state['provenance'] != provenance:
                 raise RuntimeError('The phase accounting belongs to another frozen source/protocol.')
         else:
-            state = dict(provenance=provenance, phase_started_utc=utc(), rows=[], automatic_retry=False)
+            state = dict(provenance=provenance, phase_started_utc=guardian_started_utc, rows=[], automatic_retry=False)
             write_json(state_path, state)
         if any(row['phase'] == args.phase for row in state['rows']):
             raise RuntimeError('The phase already started; automatic retry or duplicate dispatch is forbidden.')

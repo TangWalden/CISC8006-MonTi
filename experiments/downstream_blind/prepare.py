@@ -250,7 +250,7 @@ def main():
                                TEST_queries=0, API_calls=0, GPU_hours=0),
         logical_preflight_caps=dict(upstream_generations=0, GCN_forwards=4,
                                     optimizer_updates=4, autograd_calls=4,
-                                    official_GAGA_forwards=0, TEST_queries=0, API_calls=0, GPU_hours=0),
+                                    GAGA_forwards=0, TEST_queries=0, API_calls=0, GPU_hours=0),
         qualification=dict(primary='visible_minus_blind', visible_arm='quota_learned',
                            require_all_three_seed_deltas_positive=True,
                            require_nominal_paired_t95_lower_above_zero=True,
