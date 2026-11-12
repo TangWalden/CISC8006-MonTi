@@ -52,6 +52,21 @@ class SyntheticAuthorExportChecks(unittest.TestCase):
         self.assertEqual(module.opaque(0,123),module.opaque(0,123))
         self.assertEqual(len(module.opaque(0,123)),20)
         self.assertNotEqual(module.opaque(0,123),module.opaque(1,123))
+    def test_public_audit_summary_keeps_raw_identity_and_filters_bulk(self):
+        provenance=dict(source_commit='1'*40,runtime_commit='2'*40,protocol_sha256='3'*64)
+        source_sha='4'*64;raw_sha='5'*64
+        protocol=dict(source_manifest=dict(source_commit='1'*40,files={'experiments/author_staged/audit_saved.py':source_sha}))
+        audited=dict(provenance=provenance,saved_rows=9090,clean_groups=909,attacked_cases=8181,
+            occurrence_denominator_per_arm_seed=10515,unique_test_targets=1221,serialized_cache_files_hashed=5538,
+            serialized_plan_files_hashed=2727,terminal_checkpoint_files_hashed=3,training_rows_recounted=11244,
+            producer_logical_counters=dict(training_GCN_forwards=11244))
+        raw=dict(status='passed',auditor_source_sha256=source_sha,recount=audited,limitations=['Synthetic scope'],
+            model_queries=0,tensor_deserializations=0,checkpoint_deserializations=0,optimizer_updates=0,API_calls=0,GPU_hours=0,
+            input_file_hashes={'private/example/path':'6'*64})
+        value=module.public_audit_summary(raw,'saved_logit_recount',raw_sha,provenance,protocol)
+        self.assertTrue(value['public_summary']);self.assertEqual(value['full_raw_audit_sha256'],raw_sha)
+        self.assertEqual(value['core_counts']['attacked_cases'],8181);self.assertEqual(value['counters']['model_queries'],0)
+        self.assertNotIn('input_file_hashes',value);self.assertNotIn('producer_logical_counters',value['counters'])
 
 
 if __name__=='__main__':unittest.main()
