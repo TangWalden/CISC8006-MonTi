@@ -11,7 +11,7 @@ import sys
 import time
 import traceback
 
-from common import verify_protocol, read_json, write_json, sha
+from common import verify_protocol, read_json, write_json, sha, execution_profile
 
 
 def utc():
@@ -42,7 +42,8 @@ def main():
     if protocol['resource']['threads'] != 4 or protocol['resource'].get('automatic_retry') is not False:
         raise RuntimeError('CPU thread or retry policy changed.')
     stage.mkdir(parents=True, exist_ok=True)
-    lock_path = assets / 'runs' / 'final_staged_exclusive.lock'
+    profile, lock_name = execution_profile(protocol)
+    lock_path = assets / 'runs' / lock_name
     with lock_path.open('a+') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         state_path = stage / 'phase_state.json'
@@ -51,7 +52,8 @@ def main():
             if state['provenance'] != provenance:
                 raise RuntimeError('The phase accounting belongs to another frozen source/protocol.')
         else:
-            state = dict(provenance=provenance, phase_started_utc=guardian_started_utc,
+            state = dict(provenance=provenance, execution_profile=profile, guardian_lock=lock_name,
+                         phase_started_utc=guardian_started_utc,
                          rows=[], automatic_retry=False)
             write_json(state_path, state)
         if any(row['phase'] == args.phase for row in state['rows']):
@@ -81,7 +83,8 @@ def main():
         env = dict(os.environ, CUDA_VISIBLE_DEVICES='', OMP_NUM_THREADS='4', MKL_NUM_THREADS='4',
                    OPENBLAS_NUM_THREADS='4', PYTHONUNBUFFERED='1')
         env.update(protocol['environment'])
-        row = dict(phase=args.phase, status='running', started_utc=utc(), output=str(output),
+        row = dict(phase=args.phase, status='running', execution_profile=profile, guardian_lock=lock_name,
+                   started_utc=utc(), output=str(output),
                    inner_seconds=inner, outer_seconds=outer, command=command,
                    selected_device=protocol['device'], protocol_sha256=provenance['protocol_sha256'])
         state['rows'].append(row)
