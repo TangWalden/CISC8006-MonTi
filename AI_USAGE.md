@@ -60,12 +60,14 @@ Separately authored AI audits recounted saved logits and serialized geometry;
 they added no model inference and do not establish human verification or seal
 chronology. The pilot passed its registered rule and improved over native MonTi,
 but the small advantage over random candidate selection remains uncertain.
-Neither cooperation-information benefit nor novelty is established.
+The complete staged scheme improved over native MonTi in this validation
+pilot. The pilot alone did not isolate the value of receiving an upstream
+action summary.
 [Complete counts, controls and limits](results/downstream_cooperation/) retain
 the negative seed and all controls. Human technical checks, actual student
 contributions and final course authorization remain unverified.
 
-## 12 November: matched action-summary ablation
+## 12 November: supplementary mechanism analysis
 
 The owner explicitly requested a downstream control without the upstream
 connection decisions, holding other conditions fixed and comparing with random
@@ -89,7 +91,23 @@ blind screen failed. The blind control's positive secondary comparison with
 random is retained without promoting it to a selected winner. This known-cohort
 post-hoc ablation supplies no general proof that communication is useless,
 first novelty, genuine human technical review or course approval.
-[Complete results and limits](results/downstream_blind/).
+[Complete supplementary records](docs/SUPPLEMENTARY_STUDIES.md).
+
+## 12 November: contribution and report focus
+
+The owner selected upstream/downstream role specialization as the contribution.
+The main comparison remains the originally registered staged scheme versus the
+reproduced native baseline. Whether a downstream policy receives a realized
+attachment summary is a supplementary mechanism question. Codex reorganized
+the report, README and method explanation around that distinction, with the
+random candidate control and all seed outcomes retained. The same data support
+the positive whole-scheme primary result and the separate mechanism result.
+
+This editorial update adds no experiments, changes no scientific thresholds
+or results, and preserves original run records and publication history. The
+updated report uses saved numerical evidence and records its source hashes.
+Human technical review and verified member contributions remain separate from
+AI preparation and owner direction.
 
 ## Critically reviewed direction decision
 

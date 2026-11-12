@@ -1,57 +1,55 @@
 # Grading points and evidence
 
-Mapped to the **user-provided CISC8006 Student Guide, 2 September 2026**:
-85 team points and 15 individual points. The retained guide text and
-[archived grading audit](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/GRADING_AUDIT.md)
-support this mapping. Final UMMoodle rules and instructor approvals remain
-unconfirmed. This table describes evidence availability, not an estimated grade.
+This mapping follows the user-provided **CISC8006 Student Guide, 2 September
+2026**: 85 team points and 15 individual points. The main improvement is
+upstream/downstream role specialization, with a positive registered validation
+comparison against the reproduced native MonTi baseline. The
+[current report](STAGED_REPORT.md) explains that result and its controls.
 
-| Grading component | Points | Where to find the evidence | Current gap |
+| Component | Points | Available evidence | Remaining completion item |
 |---|---:|---|---|
-| Scope and understanding of the claim | 5 | [Reproduced claim and paper comparison](REPRODUCING.md#claim-and-paper-comparison), [current method](METHOD.md) | Instructor-approved claim/level and team explanation remain unverified. |
-| Reproduction protocol and evaluation design | 10 | [Frozen baseline protocol](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/frozen_protocol.json), [seed results](../evidence/reproduction_summary.json), [current provenance](../results/provenance.json) | Recorded protocol and uncertainty are available; human verification is pending. |
-| Pilot implementation and audit readiness | 10 | [Runnable synthetic checks](../tests/), [archived pilot/run registry](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/run_registry.json), [saved audit](../results/audit.json) | Functional checks and technical pilots exist; live code/configuration review is unverified. |
-| Final reproduction and difference analysis | 20 | [Six-run reproduction summary](../evidence/reproduction_summary.json), [paper/setup differences](REPRODUCING.md#claim-and-paper-comparison), [baseline audit](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/baseline_audit.json) | Reproduction is complete and inconclusive; human review and final report integration remain pending. |
-| Improvement experiments and ablations | 20 | [Method and controls](METHOD.md), [all compact results](../results/README.md), [earlier ideas](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/IMPROVEMENT_PROPOSAL.md) | Controlled VALID studies exist. Two course-approved idea pilots and a full improvement evaluation against the frozen reproduction baseline are not established; the latest method has no final TEST result. |
-| Repository, report and agent-use record | 15 | [Setup/check commands](REPRODUCING.md), [environment](../environment/), [traceability](../results/provenance.json), [three-phase AI record](../AI_USAGE.md), [archived report draft](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/docs/MonTi_Report_Draft.pdf) | Standalone code/count checks work. Full ML reruns require private frozen assets; final report, genuine human checks and the course freeze tag remain pending. |
-| Team presentation and demonstration | 5 | [Archived slides, guide and demo](https://github.com/TangWalden/CISC8006-MonTi/tree/ca093d8b12ea153a076b02bbdbc4ede58508560c/docs) | Outdated drafts only; updated materials, application checks, rehearsal and actual presentation remain pending. |
-| Individual technical defense | 10 | [Method explanation](METHOD.md), [reproduction explanation](REPRODUCING.md) | Each member must personally explain and defend the work; prepared documents do not establish completion. |
-| Individual contribution | 5 | [Contribution record](../CONTRIBUTIONS.md) | Duties are planned; actual completed work and member confirmation remain unverified. |
-| **Total** | **100** | **85 team + 15 individual** | **No marks are self-awarded.** |
+| Scope and understanding | 5 | [Claim and paper comparison](REPRODUCING.md#claim-and-paper-comparison), [staged method](METHOD.md) | Confirm the instructor-approved reproduction level and each member's understanding. |
+| Reproduction protocol and evaluation design | 10 | [Frozen reproduction protocol](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/frozen_protocol.json), [seed results](../evidence/reproduction_summary.json) | Genuine team verification of the protocol and evaluation code. |
+| Pilot implementation and audit readiness | 10 | [Functional tests](../tests/), [staged preflight](../evidence/downstream_cooperation_v1/attempt3_preflight.json), [saved prediction and geometry audits](../results/downstream_cooperation/) | Complete the human live code/configuration review. |
+| Final reproduction and difference analysis | 20 | [Six-run reproduction](../evidence/reproduction_summary.json), [paper/setup comparison](REPRODUCING.md#claim-and-paper-comparison) | The frozen reproduction conclusion is inconclusive; incorporate the team's verified explanation in the final submission. |
+| Improvement experiments and ablations | 20 | [Staged scheme and controls](METHOD.md), [three-seed results](../results/downstream_cooperation/), [supplementary studies](SUPPLEMENTARY_STUDIES.md) | Complete or confirm the full fair evaluation of the chosen idea against the frozen reproduction baseline within the approved scope. Instructor approval of the required idea pilots is unrecorded. |
+| Repository, report and agent record | 15 | [Current report](STAGED_REPORT.md), [PDF](MonTi_Staged_Report.pdf), [setup and source records](REPRODUCING.md), [AI use](../AI_USAGE.md), [traceability](../results/downstream_cooperation/provenance.json) | Final human review, submission packaging and owner-confirmed course freeze tag. |
+| Presentation and demonstration | 5 | [Historical slides and demo preparation](ARCHIVE.md) | Align presentation materials with the staged method, check the application, rehearse and present. |
+| Individual technical defense | 10 | [Method explanation](METHOD.md), [report](STAGED_REPORT.md) | Each member must personally explain and defend the work. |
+| Individual contribution | 5 | [Contribution record](../CONTRIBUTIONS.md) | Members confirm actual work and supporting evidence. |
+| **Total** | **100** | **85 team + 15 individual** | **Evidence availability is not a self-awarded mark.** |
 
-## How to interpret the gaps
+## What experiment work remains
 
-- The guide requires **three improvement ideas, pilots of two approved ideas,
-  and one full fair evaluation**, with controls, uncertainty and retained failures.
-  Technical execution and instructor approval are different evidence.
-- A careful null or negative improvement can receive full credit under the
-  guide. Our +1 pp / positive-confidence-interval rule is an **experiment-specific
-  qualification rule**, not a course requirement to obtain a positive result.
-- Three-phase AI records need task, tool, decision, human checks and evidence.
-  [AI_USAGE.md](../AI_USAGE.md) distinguishes recorded owner direction from
-  genuine team technical review; [CONTRIBUTIONS.md](../CONTRIBUTIONS.md) does
-  not convert automated work into unverified member contributions.
-- Final report/slides/demo, genuine human checks, personal defense and the common
-  Week 12 tag/hash still need real completion. Exact deadlines and submission
-  rules must follow the final UMMoodle announcement.
+The guide requires at least three improvement ideas, pilots of two approved
+ideas, and a full evaluation of one idea against the frozen reproduction
+baseline. Multiple technical ideas, pilots and controls already exist. The
+current staged pilot uses seeds 3/4/5, its own terminal-eight upstream family
+and 64 validation groups. The earlier formal reproduction uses seeds 0/1/2
+and a different evaluation cohort. The current pilot is therefore not the
+registered final matched evaluation of that frozen reproduction baseline.
 
-The concise front page and compact tables are entry points. Complete source,
-configurations, exact commands, failed runs and older artifacts remain in the
-[immutable archive](ARCHIVE.md); this mapping adds no experiment or approval.
+The remaining experimental item is to lock that matched evaluation's scope,
+baseline, controls, resources and decision rule, then complete it. It does
+not require inventing another method or adding more mechanism studies. The
+guide permits instructor-approved Exact, Scaled-faithful and Component levels,
+all eligible for full marks. It does not independently require the full
+original dataset, the author's released checkpoint or a particular TEST phase.
 
-The [11 November feature-assignment extension](../experiments/feature_assignment/)
-adds actual implementation, a frozen four-condition VALID comparison and a null
-result to the improvement/audit evidence. It supplies no positive-performance,
-instructor-approval, full-TEST or human-verification claim.
+The staged pilot's primary mean gain is **+4.4950 pp**, with all three seed
+gains positive and nominal paired interval **[0.5715, 8.4185] pp**. The
+information-channel analysis is supplementary and does not replace this primary
+question. Complete controls, uncertainty, negative and failed outcomes remain
+indexed in [supplementary research](SUPPLEMENTARY_STUDIES.md).
 
-The separate [frozen-upstream downstream pilot](../results/downstream_cooperation/)
-also completed on 11 November. It passed its registered development rule and
-improved over native MonTi, while its advantage over random candidate selection
-remains uncertain. This does not fill the missing full-TEST, course-approval or
-human-review requirements.
+## Human and submission requirements
 
-The [12 November action-summary ablation](../results/downstream_blind/) adds a
-matched trained control without direct upstream-attachment summaries. Its
-primary communication-benefit screen failed. The retained secondary comparison
-with random does not promote a new method or satisfy the pending final TEST,
-instructor-approval or human-review requirements.
+Instructor approval, current UMMoodle rules, genuine technical reviews, actual
+member contributions, rehearsal, presentation, defense and final freeze need
+their own real evidence. Owner research direction and AI audits do not stand
+in for them. The guide explicitly requires retaining failed and negative runs
+and allows careful null or negative improvements to receive full credit.
+
+The [retained guide and grading audit](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/GRADING_AUDIT.md)
+provide the original mapping. Final UMMoodle announcements govern exact dates,
+approved scope and submission details.

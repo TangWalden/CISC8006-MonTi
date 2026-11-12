@@ -13,6 +13,8 @@ all 1,536 arm-case count rows and provenance, plus a [brief diagnosis](feature_a
 
 ## Earlier edge-reallocation study
 
+[Preserved deterministic method](../docs/LEGACY_REALLOCATION.md).
+
 These files are derived, compact exports of committed historical records, not
 the original executed JSON. Full source locations and hashes are retained.
 

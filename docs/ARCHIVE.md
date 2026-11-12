@@ -1,32 +1,34 @@
-# Historical archive
+# Research archive and current report
 
-This checkout keeps the current standalone method, compact results and the
-original paper implementation easy to find. The complete earlier project state
-is preserved at
+The [current report](STAGED_REPORT.md) and [PDF](MonTi_Staged_Report.pdf) focus
+on upstream/downstream role specialization. Its primary experiment used source
+`9e013cb182b5af71a9d0b719b5a939deda3c88e2` and protocol SHA256
+`5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13`.
+The saved numerical snapshot for the updated report is
+[`70c48d1a74aa4e5b3e1b1c6ce15c068ba8931980`](https://github.com/TangWalden/CISC8006-MonTi/tree/70c48d1a74aa4e5b3e1b1c6ce15c068ba8931980).
+
+The [supplementary-study index](SUPPLEMENTARY_STUDIES.md) links earlier and
+component experiments, including positive, negative, null and failed outcomes.
+Their original source, protocols, logs, thresholds, numerical exports and
+decision fields remain available. Editorial focus on the staged scheme does
+not change those scientific records.
+
+The complete earlier project state is preserved at
 [`ca093d8b12ea153a076b02bbdbc4ede58508560c`](https://github.com/TangWalden/CISC8006-MonTi/tree/ca093d8b12ea153a076b02bbdbc4ede58508560c).
-The latest scientific reallocation execution itself used
+Its older report PDF, slides and demo preparations describe an earlier stage
+of the project. The current staged report supersedes that report's narrative.
+The older files retain their dates and status.
+
+The earlier reallocation implementation and full execution used
 [`c3238ee62272d39f0337828718a3560abe101a00`](https://github.com/TangWalden/CISC8006-MonTi/tree/c3238ee62272d39f0337828718a3560abe101a00).
+Its [method description](LEGACY_REALLOCATION.md), [compact comparisons](../results/README.md)
+and [earlier-study table](../results/previous_studies.csv) remain accessible.
 
-Detailed historical pipelines, raw public logs, rejected proposals, earlier
-pilots and dated report/PPTX drafts are removed from the current tree but remain
-available through that snapshot and Git history. The PDF and slides are
-outdated drafts, not an updated account of the latest experiments.
-Private raw artifacts and a separate local/tree backup are retained outside
-this public checkout; their existence does not make private assets publicly
-downloadable.
+Private raw tensors, datasets, model assets and a separate audit backup stay
+outside the public checkout. Their existence does not make them downloadable
+from GitHub. Public source/configuration/count checks and full asset-dependent
+ML reruns are distinguished in [reproduction instructions](REPRODUCING.md).
 
-This is a current-tree cleanup, not a rewrite of published history or a claim
-that earlier objects disappeared from independent clones or caches. The compact
-[previous-study table](../results/previous_studies.csv) retains negative and
-inconclusive outcomes so the latest result is not presented as the only attempt.
-
-The current [result exports](../results/README.md) derive from saved committed
-records. Original executed JSON, complete protocols, audit sources and detailed
-receipts remain in the historical snapshot. Implementation-independent agent
-checks and producer-author arithmetic checks retain their distinct attribution;
-neither is human verification.
-
-The retained figure/publication guard checks eleven frozen historical
-figure/source/script files. Their provenance concerns the baseline and earlier
-diagnostic material; it does not certify a new chart of the latest method.
-No dated document or figure was rebuilt as part of this curation.
+The publication guard retains eleven frozen historical figure/source/script
+checksums. The current report has an additional build and visual-QA manifest.
+No scientific values or published history are rewritten by the report update.

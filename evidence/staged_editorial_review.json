@@ -1,0 +1,22 @@
+{
+  "schema": "monti_staged_editorial_review_v1",
+  "date_Asia_Shanghai": "2026-11-12",
+  "created_utc": "2026-11-12T03:50:18.261022+00:00",
+  "owner_direction": "Use upstream/downstream role division as the main contribution and explain the reproduced MonTi baseline, random candidate control and staged results clearly.",
+  "main_claim": "The complete staged scheme improves over our reproduced native baseline in the registered three-seed validation study.",
+  "scope_decision": "Keep optional mechanism and previous studies in a complete supplementary index. Correct broad negative wording that confused a component question with the whole scheme.",
+  "evidence_policy": "Original numerical exports, protocols, thresholds, logs, failed/negative results and published history are retained; no scientific outcomes were removed or rewritten.",
+  "checks": [
+    "Separate agent verified four-arm numerical tables, contrasts and budget scope",
+    "Separate agent verified original rubric allows approved Exact/Scaled-faithful/Component scope",
+    "Root corrected TRAIN-skip/VALID-membership wording",
+    "Root limited no-extra-training statement to the registered pilot",
+    "Original reallocation method preserved byte-for-byte",
+    "All protected scientific paths unchanged from 70c48d1"
+  ],
+  "old_method_sha256": "f3eea1a995bf70b8a1c8ec0a4a20d2570eb05dc2b970346d4aae94fafecd0df7",
+  "new_training_calls": 0,
+  "new_model_queries": 0,
+  "GPU_hours": 0,
+  "human_technical_review": false
+}

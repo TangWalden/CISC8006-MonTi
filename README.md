@@ -1,84 +1,51 @@
-# MonTi: Reproduction and Controlled Extensions
+# MonTi: Staged Attack Construction
 
-A CISC8006 study of [MonTi](https://github.com/bdi-lab/MonTi). [Grading evidence and remaining gaps](docs/ASSESSMENT.md).
+A CISC8006 reproduction and development study of [MonTi](https://github.com/bdi-lab/MonTi). Our selected extension divides attack construction into a **fixed upstream planner** and a **trained downstream candidate-edge selector**.
 
-## Latest ablation: direct upstream-decision benefit not shown
+The upstream retains the generated auxiliary-node features and plans their target connections. The downstream learns the remaining connections to candidate nodes while the upstream stays frozen. Both stages share each case's original total node and edge budget. [Method](docs/METHOD.md).
 
-Add an equally sized trained downstream that cannot directly observe each auxiliary node's actual target attachments. Keep the upstream captures, initial weights, training order, four epochs and structural budgets fixed. Replace the actual attached-target mean and count with the whole target-list mean and the registered average quota. Shared generated features can still carry indirect upstream information. [Design and boundaries](experiments/downstream_blind/) · [Complete comparisons and audits](results/downstream_blind/).
+## Main development result
 
-| Development condition | Mean official-GAGA MR |
-|---|---:|
-| Fixed random candidate connections, reused | 57.0344% |
-| Trained downstream with direct action summary, reused | 58.1436% |
-| Trained downstream without direct action summary, new | 58.7274% |
-
-Higher MR means a stronger attack and includes clean errors. The primary **visible-minus-blind** difference is **-0.5838 percentage points**, with seed differences **0, -2.2767 and +0.5254 pp** and a nominal paired 95% interval of **[-4.2838, +3.1163] pp**. **The registered direct-summary screen failed.** These results do not show that providing the actual attachment summary improves this downstream policy; they also do not establish that hiding it is generally better.
-
-Blind-minus-random is +1.6929 pp, with a nominal interval of [+0.2944, +3.0914] pp. This secondary result is descriptive in a post-hoc development ablation and does not promote the blind control to a new selected winner. The three seeds reuse 64 already inspected VALID contexts, 571 target occurrences per seed and 240 unique targets; 233 identities appeared in earlier development contexts. In 50/64 cases per seed, the full target block makes the visible and blind direct summaries identical, limiting the information removed. Separately trained policies can still differ on those cases. **No final TEST evaluation was performed.** The previous pilot's qualification remains unchanged.
-
-## Previous pilot: frozen upstream and trained downstream
-
-Freeze MonTi's upstream and train only the candidate-connection scorer. Preserve the total node/edge budgets and project the requested half-target quota to the closest feasible allocation; actual ratios can differ substantially from 50:50. [Method and controls](experiments/downstream_cooperation/) · [All seed/case results, ratios and audits](results/downstream_cooperation/).
-
-| Development condition | Mean official-GAGA MR |
-|---|---:|
-| Native MonTi | 53.6486% |
-| Projected quotas, original candidate scores | 56.8593% |
-| Projected quotas, random candidate connections | 57.0344% |
-| Projected quotas, trained downstream (primary) | **58.1436%** |
-
-On GossipCop-S split 0, using 64 VALID groups per seed with 571 target occurrences and 240 unique targets, the primary gains **+4.4950 percentage points** over native MonTi. All three seed gains are positive; the nominal paired 95% interval is **[+0.5715, +8.4185] pp**. The pre-specified pilot qualification passes. Higher MR means a stronger attack and includes targets already missed before injection.
-
-The gain over matched random candidate connections is **+1.1092 pp**, with one negative seed and an interval of **[-3.9892, +6.2075] pp**; superiority to this control remains uncertain. This `quota_random` control randomizes **candidate connections**, whereas the earlier random target-fill control below changes **target connections on a different cohort**. Neither their absolute scores nor their control conclusions are interchangeable. Repeated news and prior development inspection limit generalization; the study does not isolate the benefit of observing upstream decisions. **No final TEST evaluation has run for this method.**
-
-## Previous experiment: feature placement, no measured gain
-
-**No improvement over the strong random target-fill control was established in these earlier studies.**
-
-Keep the randomly target-filled graph and the complete generated feature set fixed; change only which injected position receives each feature vector. A separate frozen GAGA surrogate guides a one-to-one assignment. [Method, controls and limits](experiments/feature_assignment/).
-
-GossipCop-S, split 0, development VALID; **higher miss rate (MR) means a stronger attack**. MR includes targets already missed before injection.
+GossipCop-S, split 0, three seeds on the same 64 VALID groups per seed. Higher miss rate (MR) means a stronger attack; MR includes fraud targets already missed before injection.
 
 | Condition | Mean official-GAGA MR |
 |---|---:|
-| Random target-fill graph, original feature positions | 55.0576% |
-| Relation-model feature assignment (primary) | 55.0576% |
-| GCN feature proposal, common acceptance filter | 55.0576% |
-| Cycle-matched random feature permutation, common filter | 55.0576% |
+| Our reproduced native MonTi | 53.6486% |
+| Same projected role quotas, random candidate connections | 57.0344% |
+| **Fixed upstream + trained downstream** | **58.1436%** |
 
-All four conditions have identical class predictions on all 3,213 target occurrences. The primary passes its own-model acceptance filter in 276/384 cases, but changes no own-GAGA or official-GAGA class. **Gain: 0 pp; frozen qualification failed.** A lower surrogate loss is not a detection result. [Seed/case tables and provenance](results/feature_assignment/).
+The staged pipeline improves over our native baseline by **+4.4950 percentage points**. The three seed gains are **+6.1296, +4.3783 and +2.9772 pp**, with a nominal paired 95% interval of **[+0.5715, +8.4185] pp**. It passes the pre-specified development-pilot rule and shows a consistent gain over this native baseline across the three seeds.
 
-Scope: 128 unchanged groups per seed, 1,071 occurrences and 323 unique targets; frozen generator seeds 3/4/5. Repeated news and previous development inspection limit generalization. The extra own-GAGA model changes the original GCN-only attacker knowledge. No training updates, experimental API calls, GPU work or final TEST queries occurred in this phase.
+The secondary gain over matched random candidate connections is **+1.1092 pp**, with a nominal interval of **[-3.9892, +6.2075] pp**. Superiority over that random control remains uncertain. [All four conditions, seed metrics, per-case counts, quotas and audits](results/downstream_cooperation/).
 
-## Earlier evidence
+The 53.6486% baseline comes from our three trained terminal-eight MonTi checkpoints on this exact cohort. Each seed contains 571 target occurrences and 240 unique targets; 233 identities appeared in earlier development contexts. These are validation-stage results for our reproduced baseline, separate from the paper's reported test values and authors' released best checkpoint.
 
-Edge reallocation previously gained +5.48 pp on a different development cohort, but random target filling was slightly higher and the stability criterion failed. [Earlier method](docs/METHOD.md) · [Preserved results](results/README.md).
+## Read the study
 
-The separate full-test reproduction remains 43.73% learned versus 40.19% random, **inconclusive**. It is not the paired baseline for the latest experiment. [Reproduction and paper comparison](docs/REPRODUCING.md).
+- [English report](docs/STAGED_REPORT.md) and [PDF report](docs/MonTi_Staged_Report.pdf).
+- [Staged method and matched controls](docs/METHOD.md), [execution implementation](experiments/downstream_cooperation/) and [frozen protocol](evidence/downstream_cooperation_v1/execution_protocol.json).
+- [Complete main-study evidence](results/downstream_cooperation/) and [supplementary research index](docs/SUPPLEMENTARY_STUDIES.md), including all retained positive, null, negative and failed attempts.
+- [Reproduction and paper comparison](docs/REPRODUCING.md): the separate formal TEST study remains 43.7280% learned versus 40.1902% random, **inconclusive**. It is a different comparison from the development table above.
 
-## Check saved results
+## Budget and execution boundaries
 
-These commands use the standard library; assignment numerical tests additionally need the recorded NumPy/SciPy environment.
+The requested half-target, half-candidate allocation is projected to each case's feasible interval. Total injected nodes and undirected edges stay fixed; the allocation is not literally 50:50 in every case. Per-auxiliary-node degrees can change, and the staged quota arms remove auxiliary-to-auxiliary connections retained by native MonTi. The small downstream adds 151,872 trainable parameters and training computation; equal structural budgets do not imply equal total computational cost.
 
-```bash
-python -m tools.check_results
-python -m tools.feature_assignment_results check --results results/feature_assignment
-python -m unittest discover -s tests -v
-```
-
-Missing optional assignment dependencies produce explicit test skips. Full model reruns need the frozen historical runtime and assets; see [reproduction instructions](docs/REPRODUCING.md).
+The downstream alone is fitted for four epochs on 128 TRAIN groups per seed, using frozen GCN feedback. Terminal weights and all final topologies are sealed before official-GAGA development scoring. Detailed failures, actual budgets, source identities, saved-record audits and CPU costs are retained with the results. No extra seeds or fits were added to this registered pilot after viewing its outcomes. Separate studies retain their own protocols in the supplementary index.
 
 ## Repository guide
 
 | Path | Contents |
 |---|---|
-| [methods/](methods/) | Edge reallocation and bijective feature assignment |
-| [experiments/feature_assignment/](experiments/feature_assignment/) | Bounded runner, TRAIN preflight and separate saved-record auditor |
-| [results/](results/) | Compact complete comparisons, controls and provenance |
-| [tools/](tools/) and [tests/](tests/) | Saved-count checks and synthetic contracts |
-| [docs/](docs/) and [environment/](environment/) | Method, setup, assessment mapping and recorded environment |
+| [experiments/downstream_cooperation/](experiments/downstream_cooperation/) | Staged runner, fixed-source registration, TRAIN preflight and saved-record auditors |
+| [methods/downstream_quota.py](methods/downstream_quota.py) | Closest-feasible role quotas and legal deterministic hard selection |
+| [results/downstream_cooperation/](results/downstream_cooperation/) | Main comparison, all seed/case exports and provenance |
+| [docs/SUPPLEMENTARY_STUDIES.md](docs/SUPPLEMENTARY_STUDIES.md) | Index of the other preserved studies and their conclusions |
+| [tests/](tests/) and [environment/](environment/) | Synthetic contracts and recorded execution environment |
 | `models/`, `modules/`, `utils/`, `run.py` | Original MonTi implementation |
 
-Detailed logs, tensors, superseded proposals and outdated presentation drafts stay outside this working tree. [Archive guide](docs/ARCHIVE.md). Raw attempts are retained; agent checks are not human verification or course completion.
+[Setup and saved-result verification](docs/REPRODUCING.md) describe the available checks and their scope. Full ML reruns require the recorded historical runtime and frozen assets; compact exports are not a self-contained fresh-clone model bundle. [Archive guide](docs/ARCHIVE.md).
 
-Upstream authors: Jinhyeok Choi, Heehyeon Kim and Joyce Jiyoung Whang, AAAI 2025. [License](LICENSE.txt) · [AI use](AI_USAGE.md) · [Contributions](CONTRIBUTIONS.md).
+[Course evidence and remaining requirements](docs/ASSESSMENT.md), [AI use](AI_USAGE.md) and [contributions](CONTRIBUTIONS.md).
+
+Upstream authors: Jinhyeok Choi, Heehyeon Kim and Joyce Jiyoung Whang, AAAI 2025. [License](LICENSE.txt).
