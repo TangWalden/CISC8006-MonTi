@@ -1,7 +1,8 @@
 # Final evaluation: upstream/downstream role division
 
-Status: protocol preparation. This page will be completed from the sealed run
-and its saved-record audits; no formal improvement result is available yet.
+Status: registered before model calls. Scientific source: `32d563f49e19cea3b74bc74f048ddd9a5a934074`.
+Protocol SHA256: `2716a20b1b8c251466e35f7e93b750a3ab72b668c38d0199f9026b9c884f675f`.
+The formal result is pending the sealed execution and saved-record audits.
 
 ## Question and fixed comparison
 
@@ -43,8 +44,10 @@ The native comparison tests that complete bundle.
 * CPU execution, four threads, no GPU use. The main process has a 12-hour wall
   limit, the guarded phase a 16-hour limit, and automatic retries are disabled.
 
-The exact machine-readable registration, source identity, input checksums,
-commands and receipts will be linked here after registration. Raw predictions,
+The [machine-readable registration](../evidence/final_staged_v1/protocol.json)
+and [prior metadata boundary](../evidence/final_staged_v1/metadata_scope.json)
+retain exact source and input identities. TEST contains 10,515 target occurrences
+per seed; TRAIN contains 11,211. Raw predictions,
 features and checkpoints remain in ignored server run storage.
 
 ## Ordering and limits

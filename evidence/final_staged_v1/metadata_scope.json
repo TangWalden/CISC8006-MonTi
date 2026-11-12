@@ -1,0 +1,393 @@
+{
+  "schema": "monti_final_staged_metadata_scope_v1",
+  "created_utc": "2026-11-12T06:53:35.467525+00:00",
+  "source_manifest": {
+    "source_commit": "32d563f49e19cea3b74bc74f048ddd9a5a934074",
+    "files": {
+      "experiments/downstream_cooperation/budget_audit.py": "cb7e9754700a65878d2b418f79532c337e3f2250ba6c807ac5ef90a2b2ba1091",
+      "experiments/downstream_cooperation/common.py": "5a6284d14528d4bfd4c42785122465d3e54a9c7c80ef1ed62b28a0e5d5841979",
+      "experiments/downstream_cooperation/model.py": "dbb5de184077876f450f07441cf670de05138f8b65fb6b184033a45c418f0a2b",
+      "experiments/final_staged/audit_saved.py": "562e1ab92b7030280b6835c3319957694cf157c5295fc39ba660778e68b9e69a",
+      "experiments/final_staged/common.py": "35fdd83b27425e71c03223c6d2c6b0e01d22253a4506aada4d9534990d972d00",
+      "experiments/final_staged/driver.py": "64e232e25a0abb6d2df1bf2d9ca283ce0cbaaede26a9b1bf3a369ea789cfff7e",
+      "experiments/final_staged/loader.py": "130c49f12f1f160566eaea4dc09fbb9b51324e0da2fb8ba40c8d07d3ef413f62",
+      "experiments/final_staged/preflight.py": "4a12fd7b03a740314f4574ccff55fcbf45971604c003495d61650fb396613500",
+      "experiments/final_staged/prepare.py": "08148e2cbe85e916a97befa0d1c2fdf270f3c0bc2df920e589d25f491d2700c3",
+      "experiments/final_staged/run.py": "409e957507c2023dbb30e56570a5c62e0083b2f24bd1a1aca7acfc1842f19a80",
+      "methods/__init__.py": "c0be7f5ee6bf74cd3668da4973811d2eb9c1e5f9778cd0c67ec4930e4c7f82d7",
+      "methods/downstream_quota.py": "438c18778fc71f1a3e637a31582ae7ce066e12ce999e90c2576c40d0e1258972",
+      "tests/__init__.py": "ee80c54ea821b5f1e159d713396d553c1e0ef19ca623151c3a694bfa77ed60ee",
+      "tests/test_downstream_budget_audit.py": "56e76a5bff26cb95177d7186efd8fcb6cc12aadd3fbbb5af7e0190d445d756a3",
+      "tests/test_downstream_model.py": "f6c1b0f07a8f49a9d36bf667a7974728808c545614cf895940a15c7e68d3946f",
+      "tests/test_downstream_quota.py": "74539b6df0e11818808e0f173e39e257aed4dfb51eabd6d58190a084676d448e"
+    }
+  },
+  "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+  "formal_baselines": {
+    "0": {
+      "run_id": "20261028T122617Z_reproduction_learned_s0_772a5d",
+      "execution_source": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "best_epoch": 4,
+      "completed_epochs": 14,
+      "scheduler_restored_steps": 14,
+      "config_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/config.json",
+        "sha256": "e48d6d03470048114e0ceb6aaf598e15cac17d7267deceff69f59f4ea7ac8db5"
+      },
+      "result_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/result.json",
+        "sha256": "abc9bea705fb45781120ada460a4e8313107b785ee0e8c334a378ccdabbfc656"
+      },
+      "registered_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/registered.json",
+        "sha256": "cfeff0e736ef0f70eb3000f69797bbd48f42a71038d23a6cf1cb0b16281fd8d4"
+      },
+      "target_groups_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/target_groups.json",
+        "sha256": "705359aee104a088c5d43ccb31c2d690e8785186a1635c6199a523f5a3e3871c"
+      },
+      "checkpoint_ref": {
+        "root": "asset",
+        "path": "runs/20261028T122617Z_reproduction_learned_s0_772a5d/20261028T122617Z_reproduction_learned_s0_772a5d/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+        "sha256": "d1b566626db88b56637fc171c39dee312735a1252608b1c3181bf42cccdcb190"
+      }
+    },
+    "1": {
+      "run_id": "20261028T125935Z_reproduction_learned_s1_672f97",
+      "execution_source": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "best_epoch": 3,
+      "completed_epochs": 13,
+      "scheduler_restored_steps": 13,
+      "config_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/config.json",
+        "sha256": "8181cf84ecb2f382bf54a64ece0c2d755cdcc36f4bc8eb493b32d31c7d575b9d"
+      },
+      "result_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/result.json",
+        "sha256": "593e45c7f165a873bef3ecbde7d010d084ff8426ba2d0397ad547d91ef34d921"
+      },
+      "registered_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/registered.json",
+        "sha256": "362b8f59ba76803779180e33341302d15bf8210d9b8acd7b69a69df8b32f79d0"
+      },
+      "target_groups_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/target_groups.json",
+        "sha256": "705359aee104a088c5d43ccb31c2d690e8785186a1635c6199a523f5a3e3871c"
+      },
+      "checkpoint_ref": {
+        "root": "asset",
+        "path": "runs/20261028T125935Z_reproduction_learned_s1_672f97/20261028T125935Z_reproduction_learned_s1_672f97/gossipcop_0.05-1-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+        "sha256": "628b1790e09d01a599d5e9907afe5f271df4108588cafde7b78fadf2af331b11"
+      }
+    },
+    "2": {
+      "run_id": "20261028T132611Z_reproduction_learned_s2_8ba576",
+      "execution_source": "9f782dfbb98581e8bbe3c10f5ea5de91237e09ab",
+      "best_epoch": 5,
+      "completed_epochs": 15,
+      "scheduler_restored_steps": 15,
+      "config_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/config.json",
+        "sha256": "35b66737c49529283cb571e9137f7877d62f172dd910f0d21de1e6fd91f8958e"
+      },
+      "result_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/result.json",
+        "sha256": "3c032b4ce596394badea4027f9d05b2834078c10189fe01b28fe876a535b9a0b"
+      },
+      "registered_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/registered.json",
+        "sha256": "ed4cb4c1bab8724355100afa413d88856a7fc4e9fef032142bdbc328ff18288e"
+      },
+      "target_groups_ref": {
+        "root": "asset",
+        "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/target_groups.json",
+        "sha256": "705359aee104a088c5d43ccb31c2d690e8785186a1635c6199a523f5a3e3871c"
+      },
+      "checkpoint_ref": {
+        "root": "asset",
+        "path": "runs/20261028T132611Z_reproduction_learned_s2_8ba576/20261028T132611Z_reproduction_learned_s2_8ba576/gossipcop_0.05-2-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+        "sha256": "93d3515e9a96132bb05201f4815a0bb67976e47a63aeb11633a1627cf6df1fc0"
+      }
+    }
+  },
+  "input_refs": [
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/GossipCop_0.05.bin",
+      "sha256": "9b486ff167fd2b3a26e3e607ae9e91b15da6d826f9065a958ac39b8bc3902bd8"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_adj2_0.npz",
+      "sha256": "2b13c6a0bdf7d0dad9cf0700be8ba2629fb1317d1ca2408e57c173b3efa5c3f7"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_degree_0.npy",
+      "sha256": "41e401162c923650eeb825d582f96ac17498a6fed782c829efedbc95ac693ed9"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_feat_sum_0.npy",
+      "sha256": "4fa52be37a5154019722918a7706d18407a0db5afeb470242ab4557d3d72c2de"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/gossipcop_0.05_gaga_sequence_0.npy",
+      "sha256": "caf9f30772e2977f20ef3dcb4cb127d7cdf73e3986f7cc5599f5753cb3aa1b89"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/target_assign_matrix_0.npz",
+      "sha256": "7348373fdbf66a5807628c1214b633785cc31d9084d8d910e76319fc37128de8"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/test_idx_surro_0.npy",
+      "sha256": "21c249817b52902eb20d8d785700c01d60ef8150cda96f2f7422322367a4e151"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/test_target_mask_0.npy",
+      "sha256": "0e6ee63fc3a0d9b9e5450eac0029885dc7d9f36a06fc82ffc8c0d199550fdec4"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/train_idx_surro_0.npy",
+      "sha256": "80c2f401ff51809f7af492d14d5739ce76cc59d594e73102a4e8389a0dd3b1ec"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/train_target_mask_0.npy",
+      "sha256": "9dcd786d7ef5457e42d81a140b1bc42f7918698256ca784b5e59fec638732853"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/valid_idx_surro_0.npy",
+      "sha256": "37d27843b1d2726ec66ee01e56c3bdb550bcfd6ef6867efdc929658c570206a2"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/data_split/valid_target_mask_0.npy",
+      "sha256": "bacd467efc1c10b80d8b9728d9cc98b9b2079e675f670a7c6960c9b64300fb9b"
+    },
+    {
+      "root": "asset",
+      "path": "Datasets/GossipCop/h_GCN.npy",
+      "sha256": "e761da352675bfb8b43e98b974e73b8564e1e9fe9ba4a344eceb4927637ba20b"
+    },
+    {
+      "root": "asset",
+      "path": "best_models/configs/GCN-GAGA-gossipcop_0.05-best_config.json",
+      "sha256": "e27fd6959f35ab1786f35e4e70c89bec5156da1a6577f4481287310ebf552c2a"
+    },
+    {
+      "root": "asset",
+      "path": "course/frozen_protocol.json",
+      "sha256": "6bd8d1f3cdc4c1b463b4a190525ba5401db176dbde268c0494b80c057e9b55ff"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/research_cost_ledger.json",
+      "sha256": "f16c29266349eb9ae9c105cfea496d3e3c4c6e5edf6e082e9ba22ad6b4b077c8"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/run_registry.json",
+      "sha256": "5c43fdb892a0657ac6923bb2617484a0db30ed989d48669f5109a5e8c944ca57"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/config.json",
+      "sha256": "e48d6d03470048114e0ceb6aaf598e15cac17d7267deceff69f59f4ea7ac8db5"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/registered.json",
+      "sha256": "cfeff0e736ef0f70eb3000f69797bbd48f42a71038d23a6cf1cb0b16281fd8d4"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/result.json",
+      "sha256": "abc9bea705fb45781120ada460a4e8313107b785ee0e8c334a378ccdabbfc656"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T122617Z_reproduction_learned_s0_772a5d/target_groups.json",
+      "sha256": "705359aee104a088c5d43ccb31c2d690e8785186a1635c6199a523f5a3e3871c"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/config.json",
+      "sha256": "8181cf84ecb2f382bf54a64ece0c2d755cdcc36f4bc8eb493b32d31c7d575b9d"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/registered.json",
+      "sha256": "362b8f59ba76803779180e33341302d15bf8210d9b8acd7b69a69df8b32f79d0"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/result.json",
+      "sha256": "593e45c7f165a873bef3ecbde7d010d084ff8426ba2d0397ad547d91ef34d921"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T125935Z_reproduction_learned_s1_672f97/target_groups.json",
+      "sha256": "705359aee104a088c5d43ccb31c2d690e8785186a1635c6199a523f5a3e3871c"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/config.json",
+      "sha256": "35b66737c49529283cb571e9137f7877d62f172dd910f0d21de1e6fd91f8958e"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/registered.json",
+      "sha256": "ed4cb4c1bab8724355100afa413d88856a7fc4e9fef032142bdbc328ff18288e"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/result.json",
+      "sha256": "3c032b4ce596394badea4027f9d05b2834078c10189fe01b28fe876a535b9a0b"
+    },
+    {
+      "root": "asset",
+      "path": "evidence/runs/20261028T132611Z_reproduction_learned_s2_8ba576/target_groups.json",
+      "sha256": "705359aee104a088c5d43ccb31c2d690e8785186a1635c6199a523f5a3e3871c"
+    },
+    {
+      "root": "asset",
+      "path": "models/pretrained_models/configs/GAGA-gossipcop_0.05-0.json",
+      "sha256": "6e0282a0e03344fea6b77200baf84fb31bd23220f264bd9aeecbf3c072cb37b7"
+    },
+    {
+      "root": "asset",
+      "path": "models/pretrained_models/configs/GCN-gossipcop_0.05-0.json",
+      "sha256": "d354afe731161acfaaf82f65a30f7add90cfad5cc27b4691fff9385d70461e20"
+    },
+    {
+      "root": "asset",
+      "path": "models/pretrained_models/surrogate_models/GCN-gossipcop_0.05-0.pickle",
+      "sha256": "cbd561057e37d2a90b4797b16b8c0fff1229cf47145c4dfb860fc12b8bd8fe5e"
+    },
+    {
+      "root": "asset",
+      "path": "models/pretrained_models/victim_models/GAGA-gossipcop_0.05-0.pickle",
+      "sha256": "729b8624baac7429bd60e7bc2d3741a9d9ee7c4c7df921d618b53ceb0435c383"
+    },
+    {
+      "root": "asset",
+      "path": "runs/20261028T122617Z_reproduction_learned_s0_772a5d/20261028T122617Z_reproduction_learned_s0_772a5d/gossipcop_0.05-0-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "sha256": "d1b566626db88b56637fc171c39dee312735a1252608b1c3181bf42cccdcb190"
+    },
+    {
+      "root": "asset",
+      "path": "runs/20261028T125935Z_reproduction_learned_s1_672f97/20261028T125935Z_reproduction_learned_s1_672f97/gossipcop_0.05-1-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "sha256": "628b1790e09d01a599d5e9907afe5f271df4108588cafde7b78fadf2af331b11"
+    },
+    {
+      "root": "asset",
+      "path": "runs/20261028T132611Z_reproduction_learned_s2_8ba576/20261028T132611Z_reproduction_learned_s2_8ba576/gossipcop_0.05-2-MonTi-0.05-0.1-GCN-GAGA/saved_models/config_best.pickle",
+      "sha256": "93d3515e9a96132bb05201f4815a0bb67976e47a63aeb11633a1627cf6df1fc0"
+    },
+    {
+      "root": "runtime",
+      "path": "course/analyze.py",
+      "sha256": "b9329f8f23623053621b26a7174ec68734753600fcc9ffb69b705d6f839fdfbb"
+    },
+    {
+      "root": "runtime",
+      "path": "course/dual_surrogate/common.py",
+      "sha256": "e916ed0262fad33d4824b76df71990d96f92e3240fc9f3f18fc24c8439045770"
+    },
+    {
+      "root": "runtime",
+      "path": "course/dual_surrogate/experiment.py",
+      "sha256": "9a5eda5806759ae41a3e1ff5f153bf5a74b744917a50cc71fb48fc69a20baf37"
+    },
+    {
+      "root": "runtime",
+      "path": "course/dual_surrogate/runtime.py",
+      "sha256": "35b3ac1f9c91fa5e3ef71b80aae83efd8b946f05a775e1121b3e83b404e8e15a"
+    },
+    {
+      "root": "runtime",
+      "path": "course/dual_surrogate/sequence_adapter.py",
+      "sha256": "478051b15ec94ef5aebe05da64af9343437838fe9dfed1a4a6bddf93aba94e1a"
+    },
+    {
+      "root": "runtime",
+      "path": "course/dual_surrogate/verify.py",
+      "sha256": "93472b816471a2d7d3eb12a688c31de96f0d91a638f4f16cf7c2b27740dd6727"
+    },
+    {
+      "root": "runtime",
+      "path": "course/run.sh",
+      "sha256": "aee68668c4aa3d68abcdc868204487cb87e4471941b13066ec7e486f298fe0de"
+    },
+    {
+      "root": "runtime",
+      "path": "course/runner.py",
+      "sha256": "2c73753b0b892d10b398b24b14bd632d65adfb95bbd2843d1c23628f1de7df9e"
+    },
+    {
+      "root": "runtime",
+      "path": "models/attack_model.py",
+      "sha256": "5bf043f87c4cac4d98d28d87b88751ed62592742a33d349034fbbf570b6325d0"
+    },
+    {
+      "root": "runtime",
+      "path": "models/victim_model.py",
+      "sha256": "4648133355dfb3b99a7d1b5852dcb4d84c3977d462edff701287f1694718743a"
+    },
+    {
+      "root": "runtime",
+      "path": "modules/data_handler.py",
+      "sha256": "f7eabf047244659e5234cadc11c8a3ed8c4b7769116126fd79299f0aa1fa66aa"
+    },
+    {
+      "root": "runtime",
+      "path": "modules/experiment_handler.py",
+      "sha256": "ca0645620b7e70dc3d44733d6d9580abfea58e12749ec8e5e8e5d814f67846b8"
+    },
+    {
+      "root": "runtime",
+      "path": "modules/result_manager.py",
+      "sha256": "b79ed72b1f9f5edea952f9bd7bf77f735519dc2cd4604f6abe8be40099a3d06c"
+    },
+    {
+      "root": "runtime",
+      "path": "modules/schedulers.py",
+      "sha256": "b58506530fdf5611b627d74599af3357e8f77f021b64abdf0c8da5e17c39bee4"
+    },
+    {
+      "root": "runtime",
+      "path": "utils/constants.py",
+      "sha256": "d88414e1c4775ceb03c1968639493ca016b5f8ce118ce92f3f50bbc2e2f0a09e"
+    },
+    {
+      "root": "runtime",
+      "path": "utils/utils.py",
+      "sha256": "c95383d2bbacba69e81b6b65e7f8b53be4085fc317d08fb445a94f702b13a732"
+    }
+  ],
+  "new_ID_array_reads_started": false,
+  "model_imports_allowed": false,
+  "checkpoint_deserialization_allowed": false,
+  "outcome_based_selection_allowed": false,
+  "scope": "Read the complete original TRAIN/TEST group-ID arrays and target membership only after this metadata record. No labels, features, predictions, models or training.",
+  "owner_execution_authorized": true,
+  "historical_TEST_baseline_previously_inspected": true
+}
