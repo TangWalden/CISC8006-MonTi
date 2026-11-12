@@ -1,0 +1,36 @@
+{
+  "schema": "monti_downstream_blind_pre_execution_review_v1",
+  "date_Asia_Shanghai": "2026-11-12",
+  "owner_authorization": "Add an action-blind downstream control, holding other conditions fixed, and compare with the visible downstream and random candidate connections.",
+  "owner_selected_resources": "Inherit prior CPU-only four-thread development settings; no final TEST permission.",
+  "reviews": [
+    {
+      "role": "adapter author",
+      "scope": "Model parameter/init parity, direct action-free API and synthetic contract preparation; no claim of executed Torch tests."
+    },
+    {
+      "role": "separate static design reviewer",
+      "scope": "Information boundary, same seeds/order/optimizer/tie purpose, cache binding and pre-victim seal, post-hoc interpretation."
+    },
+    {
+      "role": "root integration review",
+      "scope": "Frozen-parent dependencies, no generation or comparator re-evaluation, actual detector query caps, inherited environment and source packaging."
+    }
+  ],
+  "corrections_before_freeze": [
+    "Use synthetic all-ones matrix multiplication and tensor row-count division to match full-target parent arithmetic.",
+    "Remove unrelated budget audit test from this isolated package.",
+    "Distinguish four real-data preflight updates from synthetic test updates."
+  ],
+  "static_compilation": "passed",
+  "synthetic_execution": "Pending mandatory server preflight; local Torch unavailable.",
+  "planned_synthetic_tests": 31,
+  "datasets_loaded": 0,
+  "new_model_queries": 0,
+  "new_optimizer_updates_on_real_data": 0,
+  "GPU_hours": 0,
+  "human_technical_review": false,
+  "post_hoc_development_ablation": true,
+  "prior_results_unchanged": true,
+  "created_utc": "2026-11-12T02:31:52.567172+00:00"
+}
