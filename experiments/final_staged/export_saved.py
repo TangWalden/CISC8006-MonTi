@@ -13,7 +13,6 @@ import math
 import os
 from pathlib import Path
 import re
-import shutil
 import signal
 import statistics
 import sys
@@ -101,6 +100,45 @@ def tensor_sha(value):
     value = value.detach().cpu().contiguous()
     header = json.dumps([str(value.dtype), list(value.shape)]).encode('ascii')
     return hashlib.sha256(header+b'\0'+value.numpy().tobytes()).hexdigest()
+
+
+def public_audit_summary(kind, record, raw_sha, protocol, post):
+    """Publish audit conclusions without duplicating private file inventories."""
+    require(record['status'] == 'passed', 'A failed audit cannot be summarized as passed.')
+    if kind == 'saved_logit_recount':
+        recount = record['recount']
+        auditor_sha = record['auditor_source_sha256']
+        require(auditor_sha == protocol['source_manifest']['files']['experiments/final_staged/audit_saved.py'],
+                'Saved-logit auditor source differs from its scientific source registration.')
+        source_commit = protocol['source_manifest']['source_commit']
+        provenance = recount['provenance']
+        counts = {name: recount[name] for name in ('saved_rows', 'clean_groups', 'attacked_cases',
+            'occurrence_denominator_per_arm_seed', 'unique_test_targets', 'serialized_cache_files_hashed',
+            'serialized_plan_files_hashed', 'terminal_checkpoint_files_hashed', 'training_rows_recounted')}
+        counters = {name: record[name] for name in ('model_queries', 'tensor_deserializations',
+            'checkpoint_deserializations', 'optimizer_updates', 'API_calls', 'GPU_hours')}
+        limits = list(record['limitations'])
+    else:
+        require(kind == 'saved_tensor_geometry', 'Unknown public audit summary kind.')
+        binding = record['audit_source_binding']
+        auditor_sha = binding['auditor_source_sha256']
+        require(auditor_sha == post['files']['experiments/final_staged/audit_tensors.py'],
+                'Saved-tensor auditor source differs from its committed postprocessing registration.')
+        source_commit, provenance = binding['source_commit'], record['provenance']
+        counts = dict(cache_tensor_files_deserialized=record['counters']['cache_tensor_files_deserialized'],
+            final_plan_files_deserialized=record['counters']['final_plan_files_deserialized'],
+            TEST_geometry_rows=len(record['test_role_counts']))
+        counters = record['counters']
+        limits = [record[name] for name in ('physical_mapping_scope', 'shared_features_scope',
+            'budget_scope', 'chronology_scope', 'independence')]
+    summary = dict(schema='monti_public_audit_summary_v1', public_summary=True, status='passed', kind=kind,
+        original_schema=record['schema'], scientific_provenance=provenance, full_raw_audit_sha256=raw_sha,
+        auditor_source_sha256=auditor_sha, audit_source_commit=source_commit, core_counts=counts,
+        counters=counters, limitations=limits, wall_seconds=record['wall_seconds'],
+        process_cpu_seconds=record.get('process_cpu_seconds'), GPU_hours=record['GPU_hours'],
+        retention='The complete raw audit, input hashes and tensor metadata remain in private run storage. This compact public file is not that raw audit and adds no verification calls.')
+    if kind == 'saved_tensor_geometry': summary['quota_summary'] = record['quota_summary']
+    return summary
 
 
 def main(argv=None):
@@ -334,11 +372,13 @@ def main(argv=None):
         write_csv('seed_metrics.csv', metrics, list(metrics[0]))
         write_csv('case_counts.csv', case_counts, list(case_counts[0]))
         write_csv('quota_by_case.csv', quota_rows, list(quota_rows[0]))
-        for name, source in (('audit_saved.json', args.saved_audit), ('audit_tensors.json', args.tensor_audit)):
-            require(not (output/name).exists(), 'Audit copy output exists.')
-            shutil.copyfile(source, output/name)
-            require(sha(output/name) == inputs[str(Path(source).resolve())],
-                    'Copied audit differs from the initially read input bytes.'); generated.append(name)
+        raw_audit_hashes = dict(saved_logit_recount=inputs[str(Path(args.saved_audit).resolve())],
+                               saved_tensor_geometry=inputs[str(Path(args.tensor_audit).resolve())])
+        for name, kind, source, record in (
+                ('audit_saved.json', 'saved_logit_recount', args.saved_audit, saved),
+                ('audit_tensors.json', 'saved_tensor_geometry', args.tensor_audit, geometry_audit)):
+            require(sha(source) == raw_audit_hashes[kind], 'A raw audit changed during export.')
+            write_json(name, public_audit_summary(kind, record, raw_audit_hashes[kind], p, post))
         for seed in SEEDS:
             require(sha(bound('downstream/s%d_final.pt' % seed)) == checkpoint_hashes[str(seed)], 'Export mutated a frozen downstream checkpoint.')
         require(sha(bound('sealed_before_victim.json')) == seal_sha and sha(bound('upstream_cache_manifest.json')) == cache_sha,
@@ -347,6 +387,7 @@ def main(argv=None):
         write_json('provenance.json', dict(schema='monti_final_staged_export_provenance_v1',
             scientific_provenance=provenance, postprocessing_source_commit=post['source_commit'],
             exporter_source_sha256=receipt['source_sha256'], input_file_sha256=inputs,
+            full_raw_audit_sha256=raw_audit_hashes,
             payload_sha256={name: sha(output/name) for name in generated},
             original_run_root=str(root), command=guardian['command'] if guardian else None,
             command_scope='Exact model command only when a completed guardian was supplied; export command is recorded separately.',
