@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="A saved-record viewer for the formal staged MonTi evaluation. No model calls.">
+<meta name="monti-result-snapshot" content="">
+<meta name="monti-result-sha256" content="">
 <title>MonTi saved-case demonstration</title>
 <style>
 :root{color-scheme:light;--paper:#f7f5ef;--ink:#17242b;--muted:#53636b;--accent:#d65a32;--line:#cbd3cf;--panel:#fff;--good:#16734c;--bad:#a92f36}
@@ -69,6 +71,19 @@ function require(ok, message){if(!ok) throw new Error(message);}
 function integer(x){return Number.isInteger(x) && x >= 0;}
 function signed(x){return (x>0?"+":"") + x.toFixed(2);}
 function setStatus(message, kind=""){const s=$("status");s.textContent=message;s.className="status"+(kind?" "+kind:"");}
+function configuredResult(){
+ const snapshot=(document.querySelector('meta[name="monti-result-snapshot"]')?.content||"").trim();
+ const sha256=(document.querySelector('meta[name="monti-result-sha256"]')?.content||"").trim();
+ if(!snapshot&&!sha256)return null;
+ require(/^[a-fA-F0-9]{40}$/.test(snapshot)&&/^[a-fA-F0-9]{64}$/.test(sha256),"The result pointer requires both a 40-character commit and a 64-character SHA-256. No alternative result was loaded.");
+ return {url:"https://raw.githubusercontent.com/TangWalden/CISC8006-MonTi/"+snapshot.toLowerCase()+"/results/final_staged/final_public.json",sha256:sha256.toLowerCase()};
+}
+async function verifiedJSON(bytes, expected){
+ require(globalThis.crypto&&globalThis.crypto.subtle,"SHA-256 verification is unavailable in this browser context. No unverified result was loaded.");
+ const hash=Array.from(new Uint8Array(await globalThis.crypto.subtle.digest("SHA-256",bytes)),b=>b.toString(16).padStart(2,"0")).join("");
+ require(hash===expected,"Result SHA-256 mismatch. Expected "+expected+", received "+hash+". No alternative result was loaded.");
+ return JSON.parse(new TextDecoder("utf-8",{fatal:true}).decode(bytes));
+}
 function cell(row, value, numeric=false){const td=document.createElement("td");td.textContent=String(value);if(numeric)td.className="num";row.append(td);}
 function clear(node){node.replaceChildren();}
 function row(parent, values){const tr=document.createElement("tr");values.forEach((v,i)=>cell(tr,v,i>0));parent.append(tr);}
@@ -165,8 +180,25 @@ function renderGraph(c,z,arm){
  $("graph-caption").textContent="Local IDs only. Compact view shows "+visible+" of "+valid+" valid recorded edges, with at most18nodes per role and220edges. "+(wanted==="all"?"All edge roles selected.":"Filtered to "+wanted+" edges.")+(invalid?" "+invalid+" malformed or out-of-range edges were omitted.":"")+mismatch+" Outcome rings appear only when saved per-target predictions are supplied. No new inference occurs.";
 }
 $("case").addEventListener("change",renderCase);$("arm").addEventListener("change",renderCase);$("edge-filter").addEventListener("change",renderCase);
-$("file").addEventListener("change",async e=>{const f=e.target.files[0];if(!f)return;try{install(JSON.parse(await f.text()),"local file "+f.name);}catch(err){setStatus(err.message,"error");}});
+$("file").addEventListener("change",async e=>{
+ const f=e.target.files[0];if(!f)return;
+ try{
+  const pointer=configuredResult();
+  const data=pointer?await verifiedJSON(await f.arrayBuffer(),pointer.sha256):JSON.parse(await f.text());
+  install(data,"local file "+f.name+(pointer?"; SHA-256 "+pointer.sha256:""));
+ }catch(err){setStatus(err.message,"error");}
+});
 (async()=>{
+ let pointer;
+ try{pointer=configuredResult();}catch(err){setStatus(err.message,"error");return;}
+ if(pointer){
+  try{
+   const response=await fetch(pointer.url,{credentials:"omit",cache:"no-store"});
+   require(response.ok,"The pinned result could not be fetched (HTTP "+response.status+"). No alternative result was loaded; choose the matching local file for offline use.");
+   install(await verifiedJSON(await response.arrayBuffer(),pointer.sha256),pointer.url+"; SHA-256 "+pointer.sha256);
+  }catch(err){setStatus("Pinned result error: "+err.message,"error");}
+  return;
+ }
  for(const path of ["../../results/final_staged/final_public.json","./final_public.json"]){
   try{const response=await fetch(path,{credentials:"omit",cache:"no-store"});if(!response.ok)continue;const data=await response.json();if(data.status!=="completed")continue;install(data,path);return;}catch(_){/* file:// fetch or unavailable formal artifact: retain explicit pending state */}
  }
