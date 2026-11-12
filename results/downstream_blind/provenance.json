@@ -1,0 +1,52 @@
+{
+  "schema": "monti_downstream_blind_compact_publication_provenance_v1",
+  "created_utc": "2026-11-12T03:09:40.131635+00:00",
+  "scientific_execution_source_commit": "b7809f420fc1b5453e748a9fd19c52234541cfd8",
+  "scientific_runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+  "scientific_protocol_sha256": "8bafbaf6c7590cd97f492f9d5edca90848193c76e5e3da0c4fdf5d8399500fd8",
+  "parent_scientific_source_commit": "9e013cb182b5af71a9d0b719b5a939deda3c88e2",
+  "parent_scientific_protocol_sha256": "5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13",
+  "original_run_root": "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1",
+  "original_protocol_path": "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/registration/protocol.json",
+  "input_json_file_sha256": {
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/registration/protocol.json": "8bafbaf6c7590cd97f492f9d5edca90848193c76e5e3da0c4fdf5d8399500fd8",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1/result.json": "af086c912b669f1a767462ca1c0aaeea16b8ce31891faa961e5f896bcce84f26",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/saved_logit_audit_v1.json": "6ff2cc56cdd270e3b8687d572f44a37015b1a2c47903667d81f82bd2b5aee7ff",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/saved_tensor_audit_v1.json": "e72b9be72c36e661a8369fb329a7c090e98289ad5ac9abe7fef1ae9d5ef0150f",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1/sealed_before_victim.json": "751f759c4a66fe193379ab1ef780b47905f7eea8f25595f4c3854a2c529f7634",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1/conditioning_scope.json": "d2b1c3f8a5d5f78a24296a0a72789499641643442756dee29131d29c078ed786",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1/summary.json": "0b4f7a5657ad285f5b99a3158365397546a329b78083a33d8655fa273be9b86a",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/execution/main_attempt1/result.json": "f19aee765b85199343d49861949995fca0a6e72838954610a8351515977da7be",
+    "/home/tjy/Project/MonTi-course/runs/downstream_cooperation_20261111_attempt3/post_audits/saved_tensor_audit_v1.json": "3427a1fdf6fff74982ba2e6b464f5c9cfa3b2ee29d426e8bb7f0e0be78a78418",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/preflight_guardian.json": "78f7b5adf7cd80e0147e4c8afe711d41072e4eb177c8eb73ca554615a71e79bd",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/run_guardian.json": "6521bbffdee43aada752b8f6f71f3eb557a03e0a8538173bb962f3a776b1e367",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/preflight_attempt1/result.json": "30bd4c93d3733d5bee9709ae5f3c9157a1145ea9f684ae2343cee6c90fd6478c"
+  },
+  "exporter_source_sha256": "5bb63de94cb26fe72ead7a152b970b959e8595d7e0b9d4d92c71a96e1333d90e",
+  "exporter_source_binding": "The exact script SHA256 and separately retained post-run source manifest bind this exporter. The ambient Git commit, when available, is context only.",
+  "output_sha256": {
+    "latest.json": "d94735476c9d8615f761a0544a97821ab58ee99bfd6e2e311986d4e2ea90f8b7",
+    "seed_metrics.csv": "31cae5481496c9d6ee20aa37a2f5b925eae305e5ee1c1bb98bb7e62c3cd24eee",
+    "case_counts.csv": "00d6c9c34e73d60184f8e3639938707330c37b3dd36251b64bb37e34ff655deb",
+    "quota_by_case.csv": "5473dd892516c33ccc522b63199a49f7d6ee78583d8ee6bc28c955d0c0f5bb0b",
+    "conditioning_scope.csv": "5475f84a87ba087043e21bfa52a0e41728bf1d076c4915adefcf5ad332201a8c",
+    "audit_saved.json": "6ff2cc56cdd270e3b8687d572f44a37015b1a2c47903667d81f82bd2b5aee7ff",
+    "audit_tensors.json": "e72b9be72c36e661a8369fb329a7c090e98289ad5ac9abe7fef1ae9d5ef0150f"
+  },
+  "row_counts": {
+    "seed_metrics": 15,
+    "case_counts": 960,
+    "quota_by_case": 192,
+    "conditioning_scope": 576
+  },
+  "audit_copy_policy": "Both passed audit reports are copied byte-for-byte, retaining their original limitations.",
+  "opaque_key_scheme": "Parent-compatible SHA256 of JSON[seed, group, downstream_tensor_audit_v1], first20hex. Node IDs are omitted from compact tables.",
+  "reproducibility": "Saved-record publication; original private assets and ignored execution artifacts are required for a full model rerun.",
+  "export_model_queries": 0,
+  "export_tensor_deserializations": 0,
+  "export_optimizer_updates": 0,
+  "export_GPU_hours": 0,
+  "export_API_calls": 0,
+  "export_TEST_queries": 0,
+  "exporter_ambient_repository_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c"
+}

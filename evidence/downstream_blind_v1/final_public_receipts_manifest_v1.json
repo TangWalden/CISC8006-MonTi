@@ -1,0 +1,25 @@
+{
+  "archive_filename": "final_public_receipts_v1.tar.gz",
+  "archive_sha256": "f2a323b62ff759ceec931dacc15f1caae1e6ae58088594d76c8c27ac98196b8c",
+  "archive_bytes": 150153,
+  "files": {
+    "execution/main_attempt1/summary.json": "0b4f7a5657ad285f5b99a3158365397546a329b78083a33d8655fa273be9b86a",
+    "execution/run_guardian.json": "6521bbffdee43aada752b8f6f71f3eb557a03e0a8538173bb962f3a776b1e367",
+    "execution/run_stdout.log": "e1bb87abd9db27456a1c7a5a7cdb518a3d09043897ac050728d8a1fd91dae4cd",
+    "execution/phase_state.json": "31a553aac2fb144346ff343d88fba1448a7d059a6d3dcab648457818cb72da51",
+    "post_audit_source_v1.json": "5be5adfb51bac65b14e961052a81ce6a62f2d9074a1a0e32a6f2c1a202712cf1",
+    "post_processing_execution_v1.json": "dafb350e256acfe0b9cc3cae3fd06358f3bcea196566393b14e8be68acfc8f77",
+    "public_export_v1/audit_saved.json": "6ff2cc56cdd270e3b8687d572f44a37015b1a2c47903667d81f82bd2b5aee7ff",
+    "public_export_v1/audit_tensors.json": "e72b9be72c36e661a8369fb329a7c090e98289ad5ac9abe7fef1ae9d5ef0150f",
+    "public_export_v1/case_counts.csv": "00d6c9c34e73d60184f8e3639938707330c37b3dd36251b64bb37e34ff655deb",
+    "public_export_v1/conditioning_scope.csv": "5475f84a87ba087043e21bfa52a0e41728bf1d076c4915adefcf5ad332201a8c",
+    "public_export_v1/latest.json": "d94735476c9d8615f761a0544a97821ab58ee99bfd6e2e311986d4e2ea90f8b7",
+    "public_export_v1/provenance.json": "90431cb2b228f5ccaaa4c160e13ca2f61604194eb4624abeda72aa164f8c969d",
+    "public_export_v1/quota_by_case.csv": "5473dd892516c33ccc522b63199a49f7d6ee78583d8ee6bc28c955d0c0f5bb0b",
+    "public_export_v1/seed_metrics.csv": "31cae5481496c9d6ee20aa37a2f5b925eae305e5ee1c1bb98bb7e62c3cd24eee",
+    "post_audits/audit_saved.py.stdout.txt": "aabd555fab8f19204137e2048167b6e2d3c2572ca57c9793b436d0772c836c02",
+    "post_audits/audit_tensors.py.stdout.txt": "ef0890b4bcde9d090513159471ca901e769714e2fb511f88955379418e52f786",
+    "post_audits/export_saved.py.stdout.txt": "01f4343c12806e79b33ec7af8a18e732ae85e4da6f49e3851205d3450be8c7d3"
+  },
+  "raw_features_logits_and_parameter_checkpoints_included": false
+}

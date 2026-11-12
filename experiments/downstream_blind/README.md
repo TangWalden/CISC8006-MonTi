@@ -8,6 +8,15 @@ and comparing it with the existing visible policy and random candidate control.
 The implementation and actual execution JSON must be frozen before model work;
 this document is the design specification, not an execution receipt.
 
+The run is now complete at source
+`b7809f420fc1b5453e748a9fd19c52234541cfd8`, protocol SHA256
+`8bafbaf6c7590cd97f492f9d5edca90848193c76e5e3da0c4fdf5d8399500fd8`.
+The visible-minus-blind screen failed: mean -0.5838 pp, nominal paired 95%
+interval [-4.2838, 3.1163] pp. The blind control's positive secondary comparison
+with random does not select a new winner. See the
+[complete saved results and audits](../../results/downstream_blind/) and
+[actual execution receipts](../../evidence/downstream_blind_v1/).
+
 The earlier visible-policy outcomes are already known. This is a post-hoc
 mechanistic development ablation, not fresh confirmation on unseen data. It
 does not change the earlier pilot's registered qualification rule or results.

@@ -1,0 +1,62 @@
+{
+  "schema": "monti_downstream_blind_post_processing_execution_v1",
+  "started_utc": "2026-11-12T03:09:29.178719+00:00",
+  "steps": [
+    {
+      "script": "audit_saved.py",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/audit_saved.py",
+        "--run-root",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1",
+        "--protocol",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/registration/protocol.json",
+        "--output",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/saved_logit_audit_v1.json"
+      ],
+      "exit_code": 0,
+      "outer_wall_seconds": 3.681777176912874,
+      "stdout": "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/audit_saved.py.stdout.txt"
+    },
+    {
+      "script": "audit_tensors.py",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/audit_tensors.py",
+        "--run-root",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1",
+        "--protocol",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/registration/protocol.json",
+        "--output",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/saved_tensor_audit_v1.json"
+      ],
+      "exit_code": 0,
+      "outer_wall_seconds": 7.046748373890296,
+      "stdout": "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/audit_tensors.py.stdout.txt"
+    },
+    {
+      "script": "export_saved.py",
+      "command": [
+        "/home/tjy/miniconda3/envs/monti/bin/python",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/export_saved.py",
+        "--run-root",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1",
+        "--protocol",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/registration/protocol.json",
+        "--logit-audit",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/saved_logit_audit_v1.json",
+        "--tensor-audit",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/saved_tensor_audit_v1.json",
+        "--output",
+        "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/public_export_v1"
+      ],
+      "exit_code": 0,
+      "outer_wall_seconds": 0.26825920795090497,
+      "stdout": "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/post_audits/export_saved.py.stdout.txt"
+    }
+  ],
+  "model_queries": 0,
+  "GPU_hours": 0,
+  "status": "passed",
+  "wall_seconds": 10.998004236025736
+}

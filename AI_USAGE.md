@@ -65,6 +65,32 @@ Neither cooperation-information benefit nor novelty is established.
 the negative seed and all controls. Human technical checks, actual student
 contributions and final course authorization remain unverified.
 
+## 12 November: matched action-summary ablation
+
+The owner explicitly requested a downstream control without the upstream
+connection decisions, holding other conditions fixed and comparing with random
+connections. Codex preserved the 151872-parameter architecture, initial states,
+training order, four epochs, optimizer and frozen structural budgets. The new
+policy receives the whole target-list mean and the known quota average rather
+than each auxiliary node's realized attachment mean/count. Shared features can
+still carry indirect information. All 576 upstream captures and the completed
+visible/random comparator predictions were reused through recorded byte hashes.
+
+The scientific source and a distinct protocol were frozen before new model
+work. Thirty-one synthetic checks and four real TRAIN gradient cases passed.
+The new control then completed 1500 updates and 36 no-choice skips. All three
+terminal weights and 192 final plans were sealed before 192 official-GAGA
+development calls. No upstream regeneration, API call, GPU work, comparator
+re-evaluation or final TEST query was performed.
+
+Separate AI implementations audited saved predictions/statistics and own tensor
+geometry/direct-summary algebra, adding no inference. The primary visible-minus-
+blind screen failed. The blind control's positive secondary comparison with
+random is retained without promoting it to a selected winner. This known-cohort
+post-hoc ablation supplies no general proof that communication is useless,
+first novelty, genuine human technical review or course approval.
+[Complete results and limits](results/downstream_blind/).
+
 ## Critically reviewed direction decision
 
 The owner rejected proposal-first justification and required analysis of saved

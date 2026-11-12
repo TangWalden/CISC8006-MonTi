@@ -49,3 +49,9 @@ also completed on 11 November. It passed its registered development rule and
 improved over native MonTi, while its advantage over random candidate selection
 remains uncertain. This does not fill the missing full-TEST, course-approval or
 human-review requirements.
+
+The [12 November action-summary ablation](../results/downstream_blind/) adds a
+matched trained control without direct upstream-attachment summaries. Its
+primary communication-benefit screen failed. The retained secondary comparison
+with random does not promote a new method or satisfy the pending final TEST,
+instructor-approval or human-review requirements.

@@ -1,0 +1,282 @@
+{
+  "schema": "monti_downstream_blind_compact_v1",
+  "provenance": {
+    "source_commit": "b7809f420fc1b5453e748a9fd19c52234541cfd8",
+    "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+    "protocol_sha256": "8bafbaf6c7590cd97f492f9d5edca90848193c76e5e3da0c4fdf5d8399500fd8",
+    "parent_protocol_sha256": "5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13"
+  },
+  "method": "Action-summary ablation of fixed-upstream downstream training",
+  "study": "Post-hoc GossipCop-S split0 development comparison on the already inspected parent cohort.",
+  "arms": [
+    "native_monti",
+    "quota_original",
+    "quota_random",
+    "quota_learned",
+    "quota_blind"
+  ],
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "new_arm": "quota_blind",
+  "measurement_origins": {
+    "reused_parent_arms": [
+      "native_monti",
+      "quota_original",
+      "quota_random",
+      "quota_learned"
+    ],
+    "new_blind_arm": "quota_blind",
+    "reused_parent_cases": 768,
+    "reused_clean_groups": 64,
+    "new_blind_cases": 192
+  },
+  "metric_definition": "MR=100*incorrect fraud-target predictions/all target occurrences, including clean errors; higher denotes a stronger attack.",
+  "cohort": {
+    "train_groups": 128,
+    "validation_groups_per_seed": 64,
+    "occurrences_per_arm_seed": 571,
+    "pooled_correlated_occurrences_per_arm": 1713,
+    "unique_validation_targets": 240,
+    "validation_targets_seen_in_earlier_contexts": 233,
+    "current_validation_outcomes_previously_inspected": true
+  },
+  "mean_mr_percent": {
+    "gcn": {
+      "native_monti": 97.1395213076474,
+      "quota_original": 97.66491535318156,
+      "quota_random": 97.66491535318156,
+      "quota_learned": 97.66491535318156,
+      "quota_blind": 97.66491535318156
+    },
+    "gaga": {
+      "native_monti": 53.64856976065382,
+      "quota_original": 56.859311150029185,
+      "quota_random": 57.03444249854057,
+      "quota_learned": 58.14360770577934,
+      "quota_blind": 58.72737886748395
+    }
+  },
+  "gaga_mean_mr_percent": {
+    "native_monti": 53.64856976065382,
+    "quota_original": 56.859311150029185,
+    "quota_random": 57.03444249854057,
+    "quota_learned": 58.14360770577934,
+    "quota_blind": 58.72737886748395
+  },
+  "contrasts": {
+    "visible_minus_blind": {
+      "seed_differences_pp": [
+        0.0,
+        -2.2767075306479825,
+        0.5253940455341493
+      ],
+      "mean_pp": -0.5837711617046111,
+      "nominal_paired_t95_pp": [
+        -4.283831439647516,
+        3.116289116238294
+      ]
+    },
+    "visible_minus_random": {
+      "seed_differences_pp": [
+        1.9264448336252187,
+        -1.225919439579684,
+        2.6269702276707534
+      ],
+      "mean_pp": 1.1091652072387628,
+      "nominal_paired_t95_pp": [
+        -3.989160069832754,
+        6.20749048431028
+      ]
+    },
+    "blind_minus_random": {
+      "seed_differences_pp": [
+        1.9264448336252187,
+        1.0507880910682985,
+        2.101576182136604
+      ],
+      "mean_pp": 1.6929363689433738,
+      "nominal_paired_t95_pp": [
+        0.29444503588830107,
+        3.0914277019984464
+      ]
+    }
+  },
+  "primary": "visible_minus_blind",
+  "direct_action_summary_criterion_met": false,
+  "previous_visible_pilot_qualification_met": true,
+  "prior_qualification_unchanged": true,
+  "controls_promoted": false,
+  "full_TEST_evaluated": false,
+  "information_limit": {
+    "full_target_block_cases_per_seed": {
+      "3": {
+        "train": 84,
+        "validation": 50
+      },
+      "4": {
+        "train": 84,
+        "validation": 50
+      },
+      "5": {
+        "train": 84,
+        "validation": 50
+      }
+    },
+    "full_target_block_train_cases_per_seed": 84,
+    "full_target_block_valid_cases_per_seed": 50,
+    "interpretation": "In these cases all targets attach to every auxiliary node, so the visible attachment mean/count equal the blind replacements; no extra summary information is removed there."
+  },
+  "conditioning_census": {
+    "3": {
+      "train": {
+        "cases": 128,
+        "full_target_block": 84,
+        "exact_same_mean": 84,
+        "exact_same_log_count": 98,
+        "exact_same_summary": 84
+      },
+      "validation": {
+        "cases": 64,
+        "full_target_block": 50,
+        "exact_same_mean": 50,
+        "exact_same_log_count": 59,
+        "exact_same_summary": 50
+      }
+    },
+    "4": {
+      "train": {
+        "cases": 128,
+        "full_target_block": 84,
+        "exact_same_mean": 84,
+        "exact_same_log_count": 98,
+        "exact_same_summary": 84
+      },
+      "validation": {
+        "cases": 64,
+        "full_target_block": 50,
+        "exact_same_mean": 50,
+        "exact_same_log_count": 59,
+        "exact_same_summary": 50
+      }
+    },
+    "5": {
+      "train": {
+        "cases": 128,
+        "full_target_block": 84,
+        "exact_same_mean": 84,
+        "exact_same_log_count": 98,
+        "exact_same_summary": 84
+      },
+      "validation": {
+        "cases": 64,
+        "full_target_block": 50,
+        "exact_same_mean": 50,
+        "exact_same_log_count": 58,
+        "exact_same_summary": 50
+      }
+    }
+  },
+  "topology_identity_counts": {
+    "validation_cases": 192,
+    "exact_blind_visible_matches": 20,
+    "exact_blind_random_matches": 6,
+    "interpretation": "Content-hash equality compares stored adjacency plans. Equal direct summaries alone do not imply equal trained policies or outputs."
+  },
+  "counters": {
+    "upstream_generations": 0,
+    "upstream_optimizer_updates": 0,
+    "training_GCN_forwards": 1500,
+    "evaluation_GCN_forwards": 192,
+    "official_GAGA_forwards": 192,
+    "downstream_optimizer_updates": 1500,
+    "autograd_calls": 1500,
+    "degenerate_training_cases": 36,
+    "summary_algebra_cases": 576,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "costs": {
+    "scope": "New blind phase only. Reused parent models and predictions retain their separately charged historical costs. Process CPU, active guardian wall time and phase elapsed time are distinct.",
+    "GPU_hours": 0,
+    "main_child_wall_seconds": 1926.8902839070652,
+    "main_process_cpu_seconds": 5017.901189971,
+    "preflight_child_wall_seconds": 13.732217838056386,
+    "preflight_process_cpu_seconds": 21.267703083999997,
+    "preflight_real_data_counters": {
+      "upstream_generations": 0,
+      "GCN_forwards": 4,
+      "GAGA_forwards": 0,
+      "optimizer_updates": 4,
+      "autograd_calls": 4,
+      "TEST_queries": 0,
+      "API_calls": 0
+    },
+    "prior_failed_startup_guardian_seconds": 0,
+    "prior_failed_startup_process_cpu_seconds": 0,
+    "retained_startup_amendments": [],
+    "active_guardian_wall_seconds": 1952.7039327288512,
+    "completed_attempt_whole_phase_wall_seconds_including_review_wait": 1992.5167,
+    "all_attempt_elapsed_seconds_including_completed_attempt_review_wait": 1992.5167,
+    "recorded_child_process_cpu_seconds": 5039.168893055,
+    "logit_audit_wall_seconds": 3.583154045045376,
+    "logit_audit_process_cpu_seconds": 3.583040589,
+    "tensor_audit_wall_seconds": 6.6942780611570925,
+    "tensor_audit_process_cpu_seconds": 18.486257738,
+    "preparation_cost_scope": "Initial source preparation, static review and synthetic-only work outside the executed child receipts are not included in main-process CPU."
+  },
+  "downstream": [
+    {
+      "seed": 3,
+      "epochs": 4,
+      "optimizer_updates": 500,
+      "parameter_count": 151872,
+      "nonzero_gradient_cases": 500,
+      "initial_state_sha256": "e5581f44756f8e0fb91ab89398f9aba59c1fa847527621064dcc54bc61b29f49",
+      "matches_visible_initial_state": true,
+      "final_state_sha256": "28cd43795dc5e5acf0fce1105a29e15adb8ee9795c1ad6fc7883b0b9234c712b",
+      "final_checkpoint_sha256": "4d030c5d91f89356eb1aa63d8bc99daf15e686ca69f5e893ba04063b7b6782c5",
+      "checkpoint_selection": "Terminal epoch4; no VALID selection."
+    },
+    {
+      "seed": 4,
+      "epochs": 4,
+      "optimizer_updates": 500,
+      "parameter_count": 151872,
+      "nonzero_gradient_cases": 500,
+      "initial_state_sha256": "6a32d2d198659f2864add7cba9e24496ec0467e4219961ada89112b7f447969b",
+      "matches_visible_initial_state": true,
+      "final_state_sha256": "02232c4931d8c41d51ec6d5a97a187203efec7755406397f82b80aa47b4fadc0",
+      "final_checkpoint_sha256": "dd47658e3ff24cfd5f564bf6706126145fe676fdc9622c3e90d74a3c34cf701b",
+      "checkpoint_selection": "Terminal epoch4; no VALID selection."
+    },
+    {
+      "seed": 5,
+      "epochs": 4,
+      "optimizer_updates": 500,
+      "parameter_count": 151872,
+      "nonzero_gradient_cases": 500,
+      "initial_state_sha256": "90af9d102d905cd2940f3b30c3c902dea06bd3cbd662c29f8fe4314ffaf3a03f",
+      "matches_visible_initial_state": true,
+      "final_state_sha256": "0017514b515396ef5d0b115532ba256aea7c63e5c109e044ec073bf769f9a245",
+      "final_checkpoint_sha256": "132e0df24d6944650b5b8a6f98a67afd465823d1dbe536f2263119dc84f3e823",
+      "checkpoint_selection": "Terminal epoch4; no VALID selection."
+    }
+  ],
+  "audit_scopes": {
+    "logits": "Separately authored saved-logit recount and file-byte bindings; no new inference.",
+    "geometry": "Own saved cache/plan deserialization and geometry/summary algebra; executed graph internals and seal chronology are not independently proven.",
+    "reused_geometry": "Old four-arm actual role counts are reused from the exact hash-bound passed parent geometry audit.",
+    "human_verification": false
+  },
+  "limits": [
+    "The direct attached-target mean and row-count summary are removed; common generated features/context and TRAIN feedback can still indirectly encode upstream information.",
+    "Both trained policies have 151872 parameters, identical initial states, training order, epochs and optimization settings; only the conditioning summary changes.",
+    "The full-target-block cases remove no direct summary information; separately trained policy equality does not follow from equality of those case inputs.",
+    "Only three training seeds and adaptively inspected development groups are used; nominal intervals are not independent population guarantees.",
+    "Passing the direct-summary screen does not itself establish superiority over fixed random candidate connections.",
+    "No upstream adaptation, real fraud supply chain, novelty, human verification, course approval or final TEST benefit is established."
+  ]
+}

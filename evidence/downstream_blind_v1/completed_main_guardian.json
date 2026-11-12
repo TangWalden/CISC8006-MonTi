@@ -1,0 +1,36 @@
+{
+  "phase": "run",
+  "status": "completed",
+  "started_utc": "2026-11-12T02:35:29.389038+00:00",
+  "output": "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1",
+  "inner_seconds": 10800,
+  "outer_seconds": 10860,
+  "command": [
+    "/home/tjy/miniconda3/envs/monti/bin/python",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/source/experiments/downstream_blind/run.py",
+    "--protocol",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/registration/protocol.json",
+    "--output",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/main_attempt1",
+    "--preflight",
+    "/home/tjy/Project/MonTi-course/runs/downstream_blind_20261112_attempt1/execution/preflight_attempt1/result.json"
+  ],
+  "selected_device": {
+    "kind": "cpu",
+    "cuda_visible_devices": "",
+    "uuid": null,
+    "selection": "CPU-only registered experiment; no GPU fallback or allocation."
+  },
+  "protocol_sha256": "8bafbaf6c7590cd97f492f9d5edca90848193c76e5e3da0c4fdf5d8399500fd8",
+  "pid": 3211057,
+  "exit_code": 0,
+  "error": null,
+  "result_read_error": null,
+  "finished_utc": "2026-11-12T03:07:36.938296+00:00",
+  "outer_wall_seconds": 1927.582079702057,
+  "guardian_wall_seconds": 1933.042431301903,
+  "child_result_sha256": "af086c912b669f1a767462ca1c0aaeea16b8ce31891faa961e5f896bcce84f26",
+  "whole_phase_wall_seconds_including_review_wait": 1992.5167,
+  "whole_phase_GPU_hours": 0,
+  "child_process_cpu_seconds": 5017.901189971
+}

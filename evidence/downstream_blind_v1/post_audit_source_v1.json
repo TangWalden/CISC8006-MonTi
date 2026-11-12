@@ -1,0 +1,10 @@
+{
+  "source_commit": "81144324b701019979b97c94c0be334492fe271a",
+  "files": {
+    "audit_saved.py": "3d9e2df948bba27ab9cc0fb3547ba5e81c2ac083f3c1674ffcdf1102ad23cd47",
+    "audit_tensors.py": "ea99e8c4c3f13076460b32060bede1da5c075d627dd350492d38dda26913fc8f",
+    "export_saved.py": "5bb63de94cb26fe72ead7a152b970b959e8595d7e0b9d4d92c71a96e1333d90e"
+  },
+  "archive_sha256": "1b9c3ab3f6ef326c6e3c8f9ddf482d42a01603f4ddd68c2ca9da37df8f1013b3",
+  "scope": "Post-execution saved-record checks and exporter, separately staged; registered training source unchanged."
+}

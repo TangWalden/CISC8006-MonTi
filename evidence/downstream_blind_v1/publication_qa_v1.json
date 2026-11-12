@@ -1,0 +1,46 @@
+{
+  "schema": "monti_downstream_blind_publication_qa_v1",
+  "created_utc": "2026-11-12T03:13:46.367750+00:00",
+  "status": "passed",
+  "scope": "Root automated checks of exported saved records and source bindings; no human verification or new inference.",
+  "row_counts": {
+    "seed_metrics": 15,
+    "case_counts": 960,
+    "quota_by_case": 192,
+    "conditioning_scope": 576
+  },
+  "checks": [
+    "All exporter output SHA256 values",
+    "Protocol and both auditor/exporter source bindings",
+    "All960compacttransition identities and total structural budgets",
+    "All15seed aggregates and571occurrence coverage",
+    "All3paired differences and nominalt95intervals recomputed from CSV",
+    "Exact preservation of all12parentseedmetrics and768parentcase records",
+    "Six registered scientific execution sources unchanged",
+    "Earlier scientific inputs/results unchanged"
+  ],
+  "output_sha256": {
+    "results/downstream_blind/audit_saved.json": "6ff2cc56cdd270e3b8687d572f44a37015b1a2c47903667d81f82bd2b5aee7ff",
+    "results/downstream_blind/audit_tensors.json": "e72b9be72c36e661a8369fb329a7c090e98289ad5ac9abe7fef1ae9d5ef0150f",
+    "results/downstream_blind/case_counts.csv": "00d6c9c34e73d60184f8e3639938707330c37b3dd36251b64bb37e34ff655deb",
+    "results/downstream_blind/conditioning_scope.csv": "5475f84a87ba087043e21bfa52a0e41728bf1d076c4915adefcf5ad332201a8c",
+    "results/downstream_blind/latest.json": "d94735476c9d8615f761a0544a97821ab58ee99bfd6e2e311986d4e2ea90f8b7",
+    "results/downstream_blind/provenance.json": "90431cb2b228f5ccaaa4c160e13ca2f61604194eb4624abeda72aa164f8c969d",
+    "results/downstream_blind/quota_by_case.csv": "5473dd892516c33ccc522b63199a49f7d6ee78583d8ee6bc28c955d0c0f5bb0b",
+    "results/downstream_blind/README.md": "914c7a4f7cffcd885c8fc592c27a698ff7ad4175882d4590b493d8828117730f",
+    "results/downstream_blind/seed_metrics.csv": "31cae5481496c9d6ee20aa37a2f5b925eae305e5ee1c1bb98bb7e62c3cd24eee"
+  },
+  "model_queries": 0,
+  "optimizer_updates": 0,
+  "GPU_hours": 0,
+  "human_review": false,
+  "documentation_checked_utc": "2026-11-12T03:15:01.562309+00:00",
+  "documentation_relative_links_checked": 67,
+  "documentation_sha256": {
+    "README.md": "cca0770326c29cd6a339608152eedf83eb85e813bd7577ab4bf2eb48cebcc226",
+    "AI_USAGE.md": "cd029077cc724dc99041ed53bb2e3034ce8beea73ea31de60bb4bafc55569175",
+    "docs/ASSESSMENT.md": "49ee769f45788d6f1a4f8d516de7fa3345560ec1ede9618390843726d99a6f25",
+    "experiments/downstream_blind/README.md": "0b267463403d09ae5162f78c74a76948702edc6c02ca96fe88548cf650ba6aa7",
+    "results/downstream_blind/README.md": "914c7a4f7cffcd885c8fc592c27a698ff7ad4175882d4590b493d8828117730f"
+  }
+}

@@ -2,7 +2,21 @@
 
 A CISC8006 study of [MonTi](https://github.com/bdi-lab/MonTi). [Grading evidence and remaining gaps](docs/ASSESSMENT.md).
 
-## Latest pilot: frozen upstream and trained downstream
+## Latest ablation: direct upstream-decision benefit not shown
+
+Add an equally sized trained downstream that cannot directly observe each auxiliary node's actual target attachments. Keep the upstream captures, initial weights, training order, four epochs and structural budgets fixed. Replace the actual attached-target mean and count with the whole target-list mean and the registered average quota. Shared generated features can still carry indirect upstream information. [Design and boundaries](experiments/downstream_blind/) · [Complete comparisons and audits](results/downstream_blind/).
+
+| Development condition | Mean official-GAGA MR |
+|---|---:|
+| Fixed random candidate connections, reused | 57.0344% |
+| Trained downstream with direct action summary, reused | 58.1436% |
+| Trained downstream without direct action summary, new | 58.7274% |
+
+Higher MR means a stronger attack and includes clean errors. The primary **visible-minus-blind** difference is **-0.5838 percentage points**, with seed differences **0, -2.2767 and +0.5254 pp** and a nominal paired 95% interval of **[-4.2838, +3.1163] pp**. **The registered direct-summary screen failed.** These results do not show that providing the actual attachment summary improves this downstream policy; they also do not establish that hiding it is generally better.
+
+Blind-minus-random is +1.6929 pp, with a nominal interval of [+0.2944, +3.0914] pp. This secondary result is descriptive in a post-hoc development ablation and does not promote the blind control to a new selected winner. The three seeds reuse 64 already inspected VALID contexts, 571 target occurrences per seed and 240 unique targets; 233 identities appeared in earlier development contexts. In 50/64 cases per seed, the full target block makes the visible and blind direct summaries identical, limiting the information removed. Separately trained policies can still differ on those cases. **No final TEST evaluation was performed.** The previous pilot's qualification remains unchanged.
+
+## Previous pilot: frozen upstream and trained downstream
 
 Freeze MonTi's upstream and train only the candidate-connection scorer. Preserve the total node/edge budgets and project the requested half-target quota to the closest feasible allocation; actual ratios can differ substantially from 50:50. [Method and controls](experiments/downstream_cooperation/) · [All seed/case results, ratios and audits](results/downstream_cooperation/).
 
