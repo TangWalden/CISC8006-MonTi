@@ -1,13 +1,13 @@
 {
   "schema": "monti_staged_report_build_v1",
-  "created_utc": "2026-11-12T03:50:40.868482+00:00",
+  "created_utc": "2026-11-12T03:53:56.168214+00:00",
   "status": "PDF rendered; separate visual and factual review required",
   "numerical_evidence_snapshot": "70c48d1a74aa4e5b3e1b1c6ce15c068ba8931980",
-  "editorial_source_commit": "e2d582b74ca4c92dd1caea477233b86b90aca233",
+  "editorial_source_commit": "ef2b6987cea6d6adb9f60979d547f31beeb01850",
   "scientific_execution_source": "9e013cb182b5af71a9d0b719b5a939deda3c88e2",
   "pages": 8,
   "expected_pages": 8,
-  "reference_links_checked": 9,
+  "reference_links_checked": 10,
   "inputs": {
     "results/downstream_cooperation/latest.json": "32547fcbdaa1fb8f521e5fea009ea9ed1b295cf4d18169b6e246156100d69950",
     "results/downstream_cooperation/seed_metrics.csv": "4cee6b5b039581732ce7630b9a305fd91f0adc9dd75d918e9a7b040700af0cf6",
@@ -22,11 +22,11 @@
     "evidence/downstream_cooperation_v1/completed_main_guardian.json": "19f543d44377bc7f53160222c849a58c9900e2dbc7d23971943f43e1f59fb890",
     "evidence/reproduction_summary.json": "29d513ad5d572bd4cfc879c6e4d37182eb23b73e2184001a65122bdbbfdcdb99",
     "evidence/research_cost_ledger.json": "82ca43a3a5bae121b75b90e248e0da0e9dd9e84513728796c68a6790826e2610",
-    "docs/STAGED_REPORT.md": "1f9e74ddda4c8b6f85e8178dd2c4ad61fcdeb471562ac0df626a3bda1b8b4023",
+    "docs/STAGED_REPORT.md": "570e3f5d380ed240095a0cc6346d5abb3d64c69ae1c8580407ddd05347b6a010",
     "tools/build_staged_report.py": "3f6681907806d5d04158f7a5e485cefc5dfb3001d6363b68bdf7f583dcbe5f3e"
   },
   "output": {
-    "docs/MonTi_Staged_Report.pdf": "56e1ce8de933978caf1f3c5b47d411acf7b49f712910fba475fd92f203fb19ca"
+    "docs/MonTi_Staged_Report.pdf": "db3b279805a2ebf703952736386bc16b419f977f11aed3d2bcddc24a079dc578"
   },
   "runtime": {
     "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
