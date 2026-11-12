@@ -1,0 +1,21 @@
+{
+  "source_commit": "b7809f420fc1b5453e748a9fd19c52234541cfd8",
+  "files": {
+    "methods/__init__.py": "c0be7f5ee6bf74cd3668da4973811d2eb9c1e5f9778cd0c67ec4930e4c7f82d7",
+    "methods/downstream_quota.py": "438c18778fc71f1a3e637a31582ae7ce066e12ce999e90c2576c40d0e1258972",
+    "tests/__init__.py": "ee80c54ea821b5f1e159d713396d553c1e0ef19ca623151c3a694bfa77ed60ee",
+    "tests/test_downstream_quota.py": "74539b6df0e11818808e0f173e39e257aed4dfb51eabd6d58190a084676d448e",
+    "tests/test_downstream_model.py": "f6c1b0f07a8f49a9d36bf667a7974728808c545614cf895940a15c7e68d3946f",
+    "tests/test_downstream_blind_model.py": "4d7a83a01a0085d342a78291efbb03a069c43ed04f860ba69aa490675fb61327",
+    "experiments/downstream_cooperation/common.py": "5a6284d14528d4bfd4c42785122465d3e54a9c7c80ef1ed62b28a0e5d5841979",
+    "experiments/downstream_cooperation/model.py": "dbb5de184077876f450f07441cf670de05138f8b65fb6b184033a45c418f0a2b",
+    "experiments/downstream_blind/common.py": "cc20d410132914264b66b3f714bc925e7bab2107de100678efa8ec87d357f629",
+    "experiments/downstream_blind/model.py": "ae5178d34172b68f14997fa9cc3da1fc52c92a4b0c4f8c2f5c9631b11f0a62f9",
+    "experiments/downstream_blind/prepare.py": "ca6a4834127237706a9c97a454a0100568ca3420fd8e65f93b1a42163e0cc75b",
+    "experiments/downstream_blind/driver.py": "0658ceafe721c6e5167a6f8ff03afe10e6265fd6e0be0ee5d2a8ea3b91b7c651",
+    "experiments/downstream_blind/preflight.py": "e93ca9e0db4ddece9062adb8618c51ad11201f472ab8f126cdaaf8449b33baee",
+    "experiments/downstream_blind/run.py": "f8cc518b3a94057e1ae801418dc708e2c1629a96b46a5077b5aa17a3b4e44dc3"
+  },
+  "archive_sha256": "d8682a92387ec0f8d39067716b60ff276be35e37fe5a7809cacf4299e37e8350",
+  "scope": "Committed isolated action-blind execution source; separate post-run auditors excluded."
+}

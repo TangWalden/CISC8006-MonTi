@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-11-12T02:37:37.677523+00:00",
+  "receipt_archive_sha256": "6f6c0735fb619a79585506800e4270be06351cf61eb4d8735ea865b53a6608af",
+  "scope": "Copied exact registration and passed preflight after main launch. The scientific source and remote protocol were frozen before model work; this publication copy is not claimed to predate the main launch.",
+  "files": {
+    "execution_source_manifest.json": "41c05cd7d5141de3828a5490622aa59acc045630020a13da1389ad8b4ea4e168",
+    "execution_protocol.json": "8bafbaf6c7590cd97f492f9d5edca90848193c76e5e3da0c4fdf5d8399500fd8",
+    "execution_metadata_scope.json": "9ee77fcd278edf1195120e574220888d538f26f20d1ccb3a1bbebf790a987785",
+    "registration_stdout.txt": "0da1c4a4e10935cb762a28c835ad191e1cc34487749e1778e618b08e1fd39d68",
+    "preflight_result.json": "30bd4c93d3733d5bee9709ae5f3c9157a1145ea9f684ae2343cee6c90fd6478c",
+    "synthetic_tests.txt": "ec6ce522a9bd516a80b757f55ee9be150dfdf660283f9bfba077b71a973b0e6e",
+    "preflight_guardian.json": "78f7b5adf7cd80e0147e4c8afe711d41072e4eb177c8eb73ca554615a71e79bd",
+    "preflight_stdout.txt": "2b671d89e702dc775871ece4357851f4531a61d2963d3df5559dd3adf950e992"
+  },
+  "model_queries": 0,
+  "GPU_hours": 0
+}

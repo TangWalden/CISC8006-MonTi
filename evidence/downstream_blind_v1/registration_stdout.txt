@@ -1,0 +1,1 @@
+{"GPU_hours": 0, "model_queries": 0, "parent_cache_files_hashed": 576, "parent_plan_files_hashed": 192, "parent_visible_checkpoints_hashed": 3, "protocol_sha256": "8bafbaf6c7590cd97f492f9d5edca90848193c76e5e3da0c4fdf5d8399500fd8", "source_commit": "b7809f420fc1b5453e748a9fd19c52234541cfd8", "status": "frozen_no_model_calls", "tensor_deserializations": 0}

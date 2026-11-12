@@ -1,0 +1,29 @@
+{
+  "schema": "monti_downstream_blind_post_source_preparation_v1",
+  "created_utc": "2026-11-12T02:45:17.192290+00:00",
+  "scope": "Separately authored post-run auditors and saved-record exporter, prepared during training without reading partial scientific outcomes. Not part of the registered execution source.",
+  "source_hashes": {
+    "audit_saved.py": "3d9e2df948bba27ab9cc0fb3547ba5e81c2ac083f3c1674ffcdf1102ad23cd47",
+    "audit_tensors.py": "ea99e8c4c3f13076460b32060bede1da5c075d627dd350492d38dda26913fc8f",
+    "export_saved.py": "5bb63de94cb26fe72ead7a152b970b959e8595d7e0b9d4d92c71a96e1333d90e"
+  },
+  "checks": [
+    {
+      "script": "audit_saved.py",
+      "check": "Author synthetic complete fixture passed: 960 attacked cases, 15 metrics, 994 file bindings; no ML imports."
+    },
+    {
+      "script": "audit_tensors.py",
+      "check": "Static compilation and root interface review; actual saved-tensor audit pending completed run."
+    },
+    {
+      "script": "export_saved.py",
+      "check": "Author synthetic complete fixture checked row coverage, native actual fractions, exact audit copies, private-field omission and rejection of incomplete/stale/failed/overwrite inputs."
+    }
+  ],
+  "integration_correction": "Tensor auditor provenance includes parent_protocol_sha256, matching the four-field scientific execution binding.",
+  "model_queries": 0,
+  "actual_training_output_reads": 0,
+  "GPU_hours": 0,
+  "human_review": false
+}

@@ -1,0 +1,36 @@
+test_candidate_capacity_projects_to_targets (tests.test_downstream_quota.QuotaPlanTests) ... ok
+test_impossible_total_or_mandatory_budget_raises (tests.test_downstream_quota.QuotaPlanTests) ... ok
+test_mandatory_target_edges_project_when_E_equals_B (tests.test_downstream_quota.QuotaPlanTests) ... ok
+test_odd_and_zero_candidate_cases (tests.test_downstream_quota.QuotaPlanTests) ... ok
+test_projection_is_nearest_legal_quota_for_small_exhaustive_cases (tests.test_downstream_quota.QuotaPlanTests) ... ok
+test_published_capacity_witness_projects_without_losing_budget (tests.test_downstream_quota.QuotaPlanTests) ... ok
+test_duplicate_required_or_insufficient_quota_is_rejected (tests.test_downstream_quota.SelectionTests) ... ok
+test_empty_candidate_matrix_preserves_zero_quota (tests.test_downstream_quota.SelectionTests) ... ok
+test_global_top_with_required_pairs (tests.test_downstream_quota.SelectionTests) ... ok
+test_ids_shape_and_nonfinite_scores_are_rejected (tests.test_downstream_quota.SelectionTests) ... ok
+test_mandatory_target_selection_is_globally_optimal (tests.test_downstream_quota.SelectionTests) ... ok
+test_physical_ties_reproduce_under_reordering_without_using_rng (tests.test_downstream_quota.SelectionTests) ... ok
+test_count_conditioning_changes_even_when_target_feature_mean_is_equal (tests.test_downstream_model.DownstreamModelTests) ... ok
+test_empty_candidates_are_valid_without_learning_a_connection (tests.test_downstream_model.DownstreamModelTests) ... ok
+test_invalid_upstream_or_selection_inputs_are_rejected (tests.test_downstream_model.DownstreamModelTests) ... ok
+test_known_answer_changed_upstream_decision_changes_scores_and_gradient (tests.test_downstream_model.DownstreamModelTests) ... ok
+test_model_construction_and_outputs_reproduce_with_same_seed (tests.test_downstream_model.DownstreamModelTests) ... ok
+test_only_downstream_parameters_receive_gradients_and_optimizer_updates (tests.test_downstream_model.DownstreamModelTests) ... ok
+test_straight_through_forward_is_exact_binary_and_backward_is_finite (tests.test_downstream_model.DownstreamModelTests) ... ok
+test_zero_and_full_quotas_have_no_trainable_selection (tests.test_downstream_model.DownstreamModelTests) ... ok
+test_actual_attachment_matrix_is_not_a_policy_argument (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_exact_architecture_and_initial_state_parity (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_forward_does_not_mutate_inputs_or_rng (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_full_target_attachment_is_a_matched_information_boundary (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_illegal_quotas_are_rejected (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_known_answer_whole_list_mean_and_average_quota_count (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_nonfinite_features_and_empty_candidates (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_only_model_parameters_update_and_upstream_inputs_are_detached (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_realistic_full_target_summary_scores_and_parameter_gradients_are_exact (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_target_and_count_projections_receive_finite_nonzero_gradients (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+test_target_list_permutation_does_not_change_blind_scores (tests.test_downstream_blind_model.DownstreamBlindModelTests) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.063s
+
+OK

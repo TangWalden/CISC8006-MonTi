@@ -1,0 +1,3 @@
+Start loading gossipcop_0.05-0
+Finished loading gossipcop_0.05-0
+{"status": "passed", "error": null, "synthetic_tests": {"tests_run": 31, "failures": 0, "errors": 0, "skipped": 0, "wall_seconds": 0.06341223395429552}, "counters": {"upstream_generations": 0, "GCN_forwards": 4, "GAGA_forwards": 0, "optimizer_updates": 4, "autograd_calls": 4, "TEST_queries": 0, "API_calls": 0}, "wall_seconds": 13.732217838056386}

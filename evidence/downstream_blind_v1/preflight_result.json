@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "counters": {
+    "upstream_generations": 0,
+    "GCN_forwards": 4,
+    "GAGA_forwards": 0,
+    "optimizer_updates": 4,
+    "autograd_calls": 4,
+    "TEST_queries": 0,
+    "API_calls": 0
+  },
+  "GPU_hours": 0,
+  "cases": [
+    {
+      "group": 839,
+      "gradient_l2": 0.0008751770678010312,
+      "loss": 0.00212481408379972,
+      "blind_scores_invariant_to_rewiring": true,
+      "cache_inputs_unchanged": true
+    },
+    {
+      "group": 835,
+      "gradient_l2": 0.012138159291988092,
+      "loss": 0.08104439824819565,
+      "blind_scores_invariant_to_rewiring": true,
+      "cache_inputs_unchanged": true
+    },
+    {
+      "group": 910,
+      "gradient_l2": 3.5853916713509245e-05,
+      "loss": 0.0003641607763711363,
+      "blind_scores_invariant_to_rewiring": true,
+      "cache_inputs_unchanged": true
+    },
+    {
+      "group": 238,
+      "gradient_l2": 8.59728717051759e-06,
+      "loss": 0.15552282333374023,
+      "blind_scores_invariant_to_rewiring": true,
+      "cache_inputs_unchanged": true
+    }
+  ],
+  "provenance": {
+    "source_commit": "b7809f420fc1b5453e748a9fd19c52234541cfd8",
+    "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+    "protocol_sha256": "8bafbaf6c7590cd97f492f9d5edca90848193c76e5e3da0c4fdf5d8399500fd8",
+    "parent_protocol_sha256": "5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13"
+  },
+  "runtime": {
+    "versions": {
+      "python": "3.8.20",
+      "torch": "1.13.1+cu117",
+      "dgl": "1.1.2+cu117",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1"
+    },
+    "device": "cpu",
+    "GPU_hours": 0,
+    "cpu_threads": 4
+  },
+  "synthetic_tests": {
+    "tests_run": 31,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "wall_seconds": 0.06341223395429552
+  },
+  "initial_state_sha256": "e5581f44756f8e0fb91ab89398f9aba59c1fa847527621064dcc54bc61b29f49",
+  "matches_visible_initial_state": true,
+  "final_state_sha256": "a6282ec014df5d0528d3340d0ab8bb3b7591ab9c29c1deb7d2b19dada8dafb59",
+  "frozen_models_unchanged": true,
+  "parameter_count": 151872,
+  "upstream_checkpoint_sha256": "fb07990fe50fbd4f7203eaa145681589fc439b106680622269dd22257a6d19a5",
+  "wall_seconds": 13.732217838056386,
+  "process_cpu_seconds": 21.267703083999997
+}
