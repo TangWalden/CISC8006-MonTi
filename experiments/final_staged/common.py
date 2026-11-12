@@ -18,6 +18,24 @@ SOURCE_ROOT = pathlib.Path(__file__).resolve().parents[2]
 RUNTIME_COMMIT = 'ca093d8b12ea153a076b02bbdbc4ede58508560c'
 ARMS = ('native_monti', 'quota_random', 'quota_learned')
 SEEDS = (0, 1, 2)
+PROFILES = {
+    'monti_final_staged_v1': ('formal_reproduction', 'final_staged_exclusive.lock'),
+    'monti_author_staged_v1': ('author_upstream', 'author_staged_exclusive.lock'),
+}
+
+
+def execution_profile(protocol):
+    """Explicitly bind a known loader family to its own guardian lock."""
+    if protocol.get('schema') not in PROFILES:
+        raise RuntimeError('Unknown staged execution profile.')
+    name, lock = PROFILES[protocol['schema']]
+    if protocol['schema'] == 'monti_author_staged_v1':
+        if protocol.get('execution_profile') != name or protocol.get('guardian_lock') != lock:
+            raise RuntimeError('Author study must explicitly bind its separate profile/lock.')
+    elif (protocol.get('execution_profile', name) != name
+          or protocol.get('guardian_lock', lock) != lock):
+        raise RuntimeError('Formal reproduction profile/lock changed.')
+    return name, lock
 
 
 def sha(path):
@@ -37,7 +55,8 @@ def write_json(path, value):
 
 def verify_protocol(path):
     p = read_json(path)
-    if (p.get('schema') != 'monti_final_staged_v1' or p.get('status') != 'frozen'
+    profile, _ = execution_profile(p)
+    if (p.get('status') != 'frozen'
             or p.get('owner_execution_authorized') is not True or p.get('final_TEST_allowed') is not True
             or tuple(p['arms']) != ARMS or tuple(p['seeds']) != SEEDS
             or len(p['train_groups']) != 937 or len(p['test_groups']) != 909
@@ -92,6 +111,17 @@ def verify_protocol(path):
                          controls_not_candidates=True)
     if p.get('qualification') != qualification:
         raise RuntimeError('Registered primary criterion or secondary-control role changed.')
+    if profile == 'author_upstream':
+        required = {'experiments/author_staged/loader.py', 'experiments/author_staged/prepare.py'} | {
+            'experiments/final_staged/' + name for name in ('common.py', 'driver.py', 'run.py', 'preflight.py')}
+        if not required <= set(p['source_manifest']['files']):
+            raise RuntimeError('The author profile source inventory is incomplete.')
+        if (p.get('formal_baselines') is not None or p['author_upstream']['distinct_upstream_checkpoints'] != 1
+                or p['author_upstream']['author_configuration_seed'] != 3
+                or p['author_upstream']['capture_noise_repetition_seeds'] != list(SEEDS)
+                or p['settings']['scheduler_restore'] != 'fresh_official_inference_initial_schedulers_no_steps'
+                or p['settings']['capture_rng_epoch'] != 'synthetic_epoch0_seeded_per_case_no_historical_bitwise_claim'):
+            raise RuntimeError('The single-author-checkpoint or explicit capture/scheduler scope changed.')
     # The archive supplies course/models/modules; the new source supplies only
     # the isolated experiment and method. Neither historical source is edited.
     for root in (str(runtime), str(SOURCE_ROOT)):
@@ -172,8 +202,12 @@ def assert_frozen(model, wanted):
 
 
 def load_engine(p, seed, output, deadline):
-    from experiments.final_staged.loader import load_engine as formal_loader
-    engine, data, receipt, hashes = formal_loader(p, seed, output, deadline)
+    profile, _ = execution_profile(p)
+    if profile == 'author_upstream':
+        from experiments.author_staged.loader import load_engine as selected_loader
+    else:
+        from experiments.final_staged.loader import load_engine as selected_loader
+    engine, data, receipt, hashes = selected_loader(p, seed, output, deadline)
     if (data.device.type != 'cpu' or engine.victim_model is not None
             or set(engine.teachers) != {'gcn_base'} or engine.optimizer_steps != 0
             or not hasattr(engine, 'capture_epoch')):
