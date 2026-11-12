@@ -1,10 +1,11 @@
 # Grading points and evidence
 
 This mapping follows the user-provided **CISC8006 Student Guide, 2 September
-2026**: 85 team points and 15 individual points. The main improvement is
-upstream/downstream role specialization, with a positive registered validation
-comparison against the reproduced native MonTi baseline. The
-[current report](STAGED_REPORT.md) explains that result and its controls.
+2026**: 85 team points and 15 individual points. Upstream/downstream role
+specialization produced a positive native-baseline development comparison,
+but the [completed full TEST](../results/final_staged/) failed its criterion.
+The [author-checkpoint local-swap study](../results/local_swap/) is also null.
+The report/presentation drafts predate these results and are not final submissions.
 
 | Component | Points | Available evidence | Remaining completion item |
 |---|---:|---|---|
@@ -12,9 +13,9 @@ comparison against the reproduced native MonTi baseline. The
 | Reproduction protocol and evaluation design | 10 | [Frozen reproduction protocol](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/frozen_protocol.json), [seed results](../evidence/reproduction_summary.json) | Genuine team verification of the protocol and evaluation code. |
 | Pilot implementation and audit readiness | 10 | [Functional tests](../tests/), [staged preflight](../evidence/downstream_cooperation_v1/attempt3_preflight.json), [saved prediction and geometry audits](../results/downstream_cooperation/) | Complete the human live code/configuration review. |
 | Final reproduction and difference analysis | 20 | [Six-run reproduction](../evidence/reproduction_summary.json), [paper/setup comparison](REPRODUCING.md#claim-and-paper-comparison) | The frozen reproduction conclusion is inconclusive; incorporate the team's verified explanation in the final submission. |
-| Improvement experiments and ablations | 20 | [Staged scheme and controls](METHOD.md), [three-seed results](../results/downstream_cooperation/), [supplementary studies](SUPPLEMENTARY_STUDIES.md) | Complete or confirm the full fair evaluation of the chosen idea against the frozen reproduction baseline within the approved scope. Instructor approval of the required idea pilots is unrecorded. |
+| Improvement experiments and ablations | 20 | [Completed full evaluation](../results/final_staged/), [author-checkpoint correction](../results/local_swap/), [supplementary studies](SUPPLEMENTARY_STUDIES.md) | Full evaluation exists but does not establish a reliable improvement. Instructor approval of the required idea pilots is unrecorded; current downstream iteration is development. |
 | Repository, report and agent record | 15 | [Current report](STAGED_REPORT.md), [PDF](MonTi_Staged_Report.pdf), [setup and source records](REPRODUCING.md), [AI use](../AI_USAGE.md), [traceability](../results/downstream_cooperation/provenance.json) | Final human review, submission packaging and owner-confirmed course freeze tag. |
-| Presentation and demonstration | 5 | [Revised Bento and PowerPoint deck with speaking notes](SLIDES_GUIDE.md), [historical demo preparation](ARCHIVE.md) | Add audited full-test outcomes when available; complete the final demonstration, human application checks, rehearsal and presentation. |
+| Presentation and demonstration | 5 | [Bento and PowerPoint draft with speaking notes](SLIDES_GUIDE.md), [historical demo preparation](ARCHIVE.md) | Incorporate the now-completed negative full-test outcome; complete the final demonstration, human application checks, rehearsal and presentation. |
 | Individual technical defense | 10 | [Method explanation](METHOD.md), [report](STAGED_REPORT.md) | Each member must personally explain and defend the work. |
 | Individual contribution | 5 | [Contribution record](../CONTRIBUTIONS.md) | Members confirm actual work and supporting evidence. |
 | **Total** | **100** | **85 team + 15 individual** | **Evidence availability is not a self-awarded mark.** |
@@ -29,19 +30,20 @@ and 64 validation groups. The earlier formal reproduction uses seeds 0/1/2
 and a different evaluation cohort. The current pilot is therefore not the
 registered final matched evaluation of that frozen reproduction baseline.
 
-The matched evaluation's scope, baseline, controls, resources and decision rule
-are now [registered and frozen](FINAL_EVALUATION.md); execution and subsequent
-saved-record audits remain in progress. It does
-not require inventing another method or adding more mechanism studies. The
+The matched evaluation was [registered and frozen](FINAL_EVALUATION.md),
+executed, and recounted from saved records. It failed its declared improvement
+criterion. Subsequent author-checkpoint development is explicitly exploratory;
+the observed TEST set cannot become untouched confirmation again. The
 guide permits instructor-approved Exact, Scaled-faithful and Component levels,
 all eligible for full marks. It does not independently require the full
 original dataset, the author's released checkpoint or a particular TEST phase.
 
-The staged pilot's primary mean gain is **+4.4950 pp**, with all three seed
-gains positive and nominal paired interval **[0.5715, 8.4185] pp**. The
-information-channel analysis is supplementary and does not replace this primary
-question. Complete controls, uncertainty, negative and failed outcomes remain
-indexed in [supplementary research](SUPPLEMENTARY_STUDIES.md).
+The staged pilot's **+4.4950 pp** native gain did not carry into a qualified
+full-test result: the latter is **+0.4089 pp**, nominal interval
+**[-8.3199, 9.1378] pp**, with seed 2 negative. Full-test learning versus
+random is **+0.2092 pp**, also uncertain. Complete controls, uncertainty,
+negative and failed outcomes remain indexed in
+[supplementary research](SUPPLEMENTARY_STUDIES.md).
 
 ## Human and submission requirements
 

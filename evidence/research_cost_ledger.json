@@ -15,31 +15,22 @@
   "curation_GPU_hours": 0,
   "archive": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/research_cost_ledger.json",
   "last_completed_extension": {
-    "date": "2026-11-12",
-    "method": "Matched action-blind downstream development ablation",
-    "scientific_source": "b7809f420fc1b5453e748a9fd19c52234541cfd8",
-    "protocol_sha256": "8bafbaf6c7590cd97f492f9d5edca90848193c76e5e3da0c4fdf5d8399500fd8",
+    "date": "2026-11-13",
+    "method": "Local swap post-hoc model-free reachability diagnosis",
     "GPU_hours": 0,
-    "main_process_CPU_seconds": 5017.901189971,
-    "main_wall_seconds": 1926.8902839070652,
-    "preflight_process_CPU_seconds": 21.267703083999997,
-    "preflight_wall_seconds": 13.732217838056386,
-    "active_guardian_wall_seconds": 1952.7039327288512,
-    "whole_phase_wall_seconds_including_review_wait": 1992.5167,
-    "saved_logit_audit_wall_seconds": 3.583154045045376,
-    "saved_logit_audit_process_CPU_seconds": 3.583040589,
-    "saved_tensor_audit_wall_seconds": 6.6942780611570925,
-    "saved_tensor_audit_process_CPU_seconds": 18.486257738,
-    "upstream_generations": 0,
-    "official_GAGA_VALID_forwards": 192,
-    "new_main_GCN_forwards": 1692,
-    "main_downstream_optimizer_updates": 1500,
-    "preflight_GCN_forwards": 4,
-    "preflight_real_data_optimizer_updates": 4,
-    "failed_startup_attempts": 0,
-    "experimental_API_calls": 0,
+    "process_CPU_seconds": 12.471833855,
+    "wall_seconds": 11.36845848406665,
+    "outer_wall_seconds": 11.737907368922606,
+    "model_calls": 0,
+    "raw_graph_loads": 1,
     "TEST_queries": 0,
-    "cost_scope": "New CPU-only blind control. Reused parent artifacts retain historical charges. Recorded child CPU includes the preflight synthetic suite; other preparation outside those child receipts is separate."
+    "additional_directionality_check": {
+      "raw_graph_loads": 1,
+      "model_calls": 0,
+      "wall_seconds": 2.272406223928556,
+      "process_CPU_seconds": null,
+      "reason": "Validate incoming versus outgoing adjacency equality required by the reachability reconstruction."
+    }
   },
   "completed_extensions": [
     {
@@ -109,6 +100,84 @@
       "experimental_API_calls": 0,
       "TEST_queries": 0,
       "cost_scope": "New CPU-only blind control. Reused parent artifacts retain historical charges. Recorded child CPU includes the preflight synthetic suite; other preparation outside those child receipts is separate."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Author checkpoint local hard-swap ridge development",
+      "scientific_source": "b403314962a69d891a56525c8381d14d44ca91b6",
+      "protocol_sha256": "4efd6f81f7c466917b25f4af0fbfb8ca1a2fd204904353c4ea0cb4215f143bda",
+      "GPU_hours": 0,
+      "main_process_CPU_seconds": 11544.983254849,
+      "main_wall_seconds": 4283.798505089944,
+      "preflight_process_CPU_seconds": 29.898942294999998,
+      "preflight_wall_seconds": 15.929175567813218,
+      "guardian_wall_seconds": 4305.860632380005,
+      "main_counters": {
+        "generations": 576,
+        "train_GCN": 3056,
+        "evaluation_GCN": 832,
+        "official_GAGA_VALID": 832,
+        "ridge_fits": 3,
+        "upstream_updates": 0,
+        "autograd_calls": 0,
+        "API_calls": 0,
+        "TEST_queries": 0
+      },
+      "preflight_counters": {
+        "generations": 2,
+        "train_GCN": 6,
+        "evaluation_GCN": 0,
+        "official_GAGA_VALID": 0,
+        "ridge_fits": 0,
+        "upstream_updates": 0,
+        "autograd_calls": 0,
+        "API_calls": 0,
+        "TEST_queries": 0
+      },
+      "audit_scope": "Root-authored saved recount and tensor checks; separate analysis receipts retained in results/local_swap. No new TEST/API/GPU."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Local swap post-hoc model-free reachability diagnosis",
+      "GPU_hours": 0,
+      "process_CPU_seconds": 12.471833855,
+      "wall_seconds": 11.36845848406665,
+      "outer_wall_seconds": 11.737907368922606,
+      "model_calls": 0,
+      "raw_graph_loads": 1,
+      "TEST_queries": 0,
+      "additional_directionality_check": {
+        "raw_graph_loads": 1,
+        "model_calls": 0,
+        "wall_seconds": 2.272406223928556,
+        "process_CPU_seconds": null,
+        "reason": "Validate incoming versus outgoing adjacency equality required by the reachability reconstruction."
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "method": "Completed frozen staged full TEST evaluation",
+      "scientific_source": "32d563f49e19cea3b74bc74f048ddd9a5a934074",
+      "GPU_hours": 0,
+      "main_wall_seconds": 30400.43017519079,
+      "main_guardian_wall_seconds": 30401.84474482201,
+      "stage_process_CPU_seconds": 79004.786249716,
+      "actual_counters": {
+        "upstream_generations": 5538,
+        "upstream_optimizer_updates": 0,
+        "training_GCN_forwards": 10992,
+        "evaluation_GCN_forwards": 9090,
+        "official_GAGA_forwards": 9090,
+        "autograd_calls": 10992,
+        "downstream_optimizer_updates": 10992,
+        "degenerate_training_cases": 252,
+        "API_calls": 0,
+        "TEST_queries": 18180,
+        "validation_queries": 0,
+        "TEST_upstream_generations": 2727,
+        "TEST_downstream_policy_forwards": 2727
+      },
+      "cost_scope": "Completed main run, retained stage receipts. Main CPU sum excludes any work outside these recorded stages; preflight/setup not claimed included."
     }
   ],
   "current_action_blind_phase_GPU_hours": 0

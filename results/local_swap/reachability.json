@@ -1,0 +1,48 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 11.737907368922606,
+  "stderr": "",
+  "summary": {
+    "status": "completed",
+    "scope": "Post-hoc structural diagnosis, not a new efficacy test. Exact canonical added-neighbor membership is reconstructed from the frozen original graph and saved masks. With fixed features/group labels, unchanged memberships imply unchanged mathematical aggregate inputs; floating-point ordering is not asserted identical.",
+    "summary": {
+      "local_rank": {
+        "active_cases": 79,
+        "active_occurrences": 669,
+        "invariant_cases": 27,
+        "invariant_occurrences": 455,
+        "class_changes": 2,
+        "max_invariant_logit_difference": 0
+      },
+      "matched_random": {
+        "active_cases": 79,
+        "active_occurrences": 669,
+        "invariant_cases": 33,
+        "invariant_occurrences": 522,
+        "class_changes": 1,
+        "max_invariant_logit_difference": 0
+      },
+      "always_random": {
+        "active_cases": 170,
+        "active_occurrences": 1597,
+        "invariant_cases": 102,
+        "invariant_occurrences": 1375,
+        "class_changes": 2,
+        "max_invariant_logit_difference": 0
+      }
+    },
+    "train_feasibility": {
+      "cases": 384,
+      "feasible_cases": 334,
+      "multirow_feasible_cases": 315
+    },
+    "raw_graph_loads": 1,
+    "model_loads": 0,
+    "model_calls": 0,
+    "new_generation": 0,
+    "TEST_queries": 0,
+    "GPU_hours": 0,
+    "process_cpu_seconds": 12.471833855,
+    "wall_seconds": 11.36845848406665
+  }
+}

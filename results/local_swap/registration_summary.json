@@ -1,0 +1,94 @@
+{
+  "schema": "monti_local_swap_v1",
+  "status": "frozen",
+  "frozen_utc": "2026-11-12T16:29:37.936162+00:00",
+  "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "arms": [
+    "native",
+    "local_rank",
+    "matched_random",
+    "always_random"
+  ],
+  "cohort": {
+    "train_groups": 128,
+    "valid_groups": 64,
+    "train_target_occurrences": 1616,
+    "valid_target_occurrences": 571,
+    "unique_train_targets": 650,
+    "unique_valid_targets": 240,
+    "valid_target_overlap_with_previous_contexts": 233,
+    "interpretation": "Unused VALID contexts, not independent unseen news; original target identities can overlap earlier development groups."
+  },
+  "exposure": "Reused development group contexts and target identities; not untouched confirmation. Prior final TEST outcomes known, but no TEST access or tuning in this run.",
+  "checkpoint_scope": "One official author state; three capture-noise repetitions and separately fitted downstream models, not three independent author models.",
+  "settings": {
+    "pool_size": 8,
+    "max_exchanges": 1,
+    "training_target": "native_softplus_minus_swapped_softplus_on_original_GCN",
+    "ridge_regularization": 0.1,
+    "feature_count": 32,
+    "fit": "one exact float64 zero-intercept ridge solve per seed",
+    "threshold": "max(1e-6,0.1*TRAIN_gain_RMS)",
+    "policy": "best pool prediction above threshold; otherwise identity",
+    "random": "uniform fixed-seed draw from the same proposal pool; matched arm uses learned activation, always arm ignores activation",
+    "preserve": "all original node features, target and injected-to-injected blocks, candidate identities/order, every injected physical degree and total budgets",
+    "training_importance": "One row per sampled legal swap; proposal sampling is uniform over legal triples within a case, not uniform across all graph edges.",
+    "no_gradient_through_graph": true
+  },
+  "resources": {
+    "device": "cpu",
+    "threads": 4,
+    "GPU_hours": 0,
+    "API_calls": 0,
+    "preflight_seconds": 300,
+    "main_seconds": 7200,
+    "outer_extra": 30,
+    "automatic_retry": false
+  },
+  "caps": {
+    "preflight_generations": 2,
+    "preflight_GCN": 6,
+    "main_generations": 576,
+    "train_GCN": 3456,
+    "evaluation_GCN": 832,
+    "official_GAGA_VALID": 832,
+    "ridge_fits": 3,
+    "upstream_updates": 0,
+    "TEST_queries": 0
+  },
+  "qualification": {
+    "primary": "local_rank-minus-matched_random official GAGA occurrence MR",
+    "secondary": "local_rank-minus-native",
+    "rule": "Both contrasts mean > 0, all three differences > 0, and nominal paired t95 lower > 0; otherwise no reliable improvement established.",
+    "no_choice_cases": "Identity retained in every denominator; no replacement or favorable case filtering.",
+    "uncertainty": "Three conditional repeats, correlated target occurrences and prior adaptive development; nominal seed interval only."
+  },
+  "ledger_snapshot": {
+    "sha256": "f16c29266349eb9ae9c105cfea496d3e3c4c6e5edf6e082e9ba22ad6b4b077c8",
+    "charged_GPU_hours": 5.065219865793663,
+    "remaining_GPU_hours": 6.914780134206337
+  },
+  "local_export_sha256": "31a2cd9b8d4458f6f3e155b1129f8e9daf943c834c2bff0ddd585c7cf8668c78",
+  "executed_protocol_sha256": "4efd6f81f7c466917b25f4af0fbfb8ca1a2fd204904353c4ea0cb4215f143bda",
+  "scientific_source_commit": "b403314962a69d891a56525c8381d14d44ca91b6",
+  "source_files": {
+    "experiments/local_swap/README.md": "a3c55852511d5b340dfd79bebe98ba9a164708c0f0db1890bf41e0f0281e6a8b",
+    "experiments/local_swap/__init__.py": "b91535dbda9af20fb4ca9fbb8294f9b28cebcb98565c84cd5ef44c6ddd45e11d",
+    "experiments/local_swap/audit.py": "ae36372957e2b898bdc545edfa7a5295d9aecf23382d7934907305f91de89332",
+    "experiments/local_swap/checks.py": "095d049bca070ec81ebb4a92d205c757a4bd6c7d4f248d4fe9b912d107bb8023",
+    "experiments/local_swap/core.py": "bfb35a9c0caf46958a7897d0e94c4dc2731c1fd599d235e5758768c36c369c82",
+    "experiments/local_swap/driver.py": "c708295177acceefaae1a4e5aadff2450f385b2b728afb9c99ce12f82f365ece",
+    "experiments/local_swap/helpers.py": "3d3526f4340a507b2fe84c3ecc9669b8de5e219c8ac563c0789efd547387ee91",
+    "experiments/local_swap/loader.py": "43aa876e36c1a2e286be16069ab50ea470e021d5e1b9292043c89cc81e902d4e",
+    "experiments/local_swap/prepare.py": "ab682906fec5c8f7796c15931e11e5b8bd21ac83f8d70d3a2bebaf34db99bd60",
+    "experiments/local_swap/run.py": "d3801d78a3e52e86572e1f5d5e5d1de1eb6029c28c38f7a937e65df195dec364",
+    "experiments/downstream_cooperation/common.py": "5a6284d14528d4bfd4c42785122465d3e54a9c7c80ef1ed62b28a0e5d5841979",
+    "cohort_parent.json": "5174bd650628b3300fcf6c091101d176cda304e4136a6801845c421ed451df13"
+  },
+  "input_count": 21
+}

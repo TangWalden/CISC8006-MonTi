@@ -1,55 +1,49 @@
-# MonTi: Staged Attack Construction
+# MonTi: Frozen Upstream, Local Downstream
 
-A CISC8006 reproduction and development study of [MonTi](https://github.com/bdi-lab/MonTi). Our selected extension divides attack construction into a **fixed upstream planner** and a **trained downstream candidate-edge selector**.
+CISC8006 reproduction and extension of [MonTi](https://github.com/bdi-lab/MonTi).
+We freeze the upstream attack generator and learn downstream connections under
+controlled node/edge budgets. **A reliable advantage over matched random
+connections has not yet been established.**
 
-The upstream retains the generated auxiliary-node features and plans their target connections. The downstream learns the remaining connections to candidate nodes while the upstream stays frozen. Both stages share each case's original total node and edge budget. [Method](docs/METHOD.md).
+## Results
 
-## Main development result
+Higher GAGA miss rate (MR) means a stronger attack. Each row is a separate
+matched study; rates across rows use different cohorts/checkpoints.
 
-GossipCop-S, split 0, three seeds on the same 64 VALID groups per seed. Higher miss rate (MR) means a stronger attack; MR includes fraud targets already missed before injection.
+| Study | Native MR | Random control MR | Learned MR | Conclusion |
+|---|---:|---:|---:|---|
+| [Staged development](results/downstream_cooperation/) | 53.6486% | 57.0344% | 58.1436% | Native gain; learning advantage over random uncertain |
+| [Completed staged TEST](results/final_staged/) | 43.8168% | 44.0165% | 44.2257% | Criterion failed; one seed declined substantially |
+| [Author-checkpoint local swap, VALID](results/local_swap/) | 57.9101% | 57.8517% | 57.9101% | No gain over native |
 
-| Condition | Mean official-GAGA MR |
-|---|---:|
-| Our reproduced native MonTi | 53.6486% |
-| Same projected role quotas, random candidate connections | 57.0344% |
-| **Fixed upstream + trained downstream** | **58.1436%** |
+The separate original six-run reproduction remains **inconclusive**:
+43.7280% learned-candidate versus 40.1902% random-candidate MR,
+paired 95% interval [-1.5415, 8.6171] pp. This random-candidate baseline is
+different from the downstream random controls above.
 
-The staged pipeline improves over our native baseline by **+4.4950 percentage points**. The three seed gains are **+6.1296, +4.3783 and +2.9772 pp**, with a nominal paired 95% interval of **[+0.5715, +8.4185] pp**. It passes the pre-specified development-pilot rule and shows a consistent gain over this native baseline across the three seeds.
+## Current method and evidence
 
-The secondary gain over matched random candidate connections is **+1.1092 pp**, with a nominal interval of **[-3.9892, +6.2075] pp**. Superiority over that random control remains uncertain. [All four conditions, seed metrics, per-case counts, quotas and audits](results/downstream_cooperation/).
+The latest local correction retains the **author's released checkpoint**,
+generated features, target edges, injected-to-injected edges, individual
+injected degrees and total budgets. Its null result revealed that many single
+edge swaps leave GAGA's added-neighbor membership unchanged. The registered
+[block-recipient follow-up](experiments/block_swap/) tests whole-column
+exchanges against random choices with the **same donor rows and activation**.
+Execution is in progress; no improvement is claimed.
 
-The 53.6486% baseline comes from our three trained terminal-eight MonTi checkpoints on this exact cohort. Each seed contains 571 target occurrences and 240 unique targets; 233 identities appeared in earlier development contexts. These are validation-stage results for our reproduced baseline, separate from the paper's reported test values and authors' released best checkpoint.
+## Read and reproduce
 
-## Read the study
-
-- [Revised editable Bento presentation](https://tangwalden.github.io/CISC8006-MonTi/slides/) and [PowerPoint download](docs/slides/MonTi_Staged_Role_Division.pptx), with [speaker-note and editing guide](docs/SLIDES_GUIDE.md).
-- [English report](docs/STAGED_REPORT.md) and [PDF report](docs/MonTi_Staged_Report.pdf).
-- [Staged method and matched controls](docs/METHOD.md), [execution implementation](experiments/downstream_cooperation/) and [frozen protocol](evidence/downstream_cooperation_v1/execution_protocol.json).
-- [Complete main-study evidence](results/downstream_cooperation/) and [supplementary research index](docs/SUPPLEMENTARY_STUDIES.md), including all retained positive, null, negative and failed attempts.
-- [Reproduction and paper comparison](docs/REPRODUCING.md): the separate formal TEST study remains 43.7280% learned versus 40.1902% random, **inconclusive**. It is a different comparison from the development table above.
-
-The final staged comparison is [registered and frozen](docs/FINAL_EVALUATION.md).
-Its execution is in progress; the presentation marks those TEST results as pending.
-
-## Budget and execution boundaries
-
-The requested half-target, half-candidate allocation is projected to each case's feasible interval. Total injected nodes and undirected edges stay fixed; the allocation is not literally 50:50 in every case. Per-auxiliary-node degrees can change, and the staged quota arms remove auxiliary-to-auxiliary connections retained by native MonTi. The small downstream adds 151,872 trainable parameters and training computation; equal structural budgets do not imply equal total computational cost.
-
-The downstream alone is fitted for four epochs on 128 TRAIN groups per seed, using frozen GCN feedback. Terminal weights and all final topologies are sealed before official-GAGA development scoring. Detailed failures, actual budgets, source identities, saved-record audits and CPU costs are retained with the results. No extra seeds or fits were added to this registered pilot after viewing its outcomes. Separate studies retain their own protocols in the supplementary index.
-
-## Repository guide
-
-| Path | Contents |
+| Purpose | Entry |
 |---|---|
-| [experiments/downstream_cooperation/](experiments/downstream_cooperation/) | Staged runner, fixed-source registration, TRAIN preflight and saved-record auditors |
-| [methods/downstream_quota.py](methods/downstream_quota.py) | Closest-feasible role quotas and legal deterministic hard selection |
-| [results/downstream_cooperation/](results/downstream_cooperation/) | Main comparison, all seed/case exports and provenance |
-| [docs/SUPPLEMENTARY_STUDIES.md](docs/SUPPLEMENTARY_STUDIES.md) | Index of the other preserved studies and their conclusions |
-| [tests/](tests/) and [environment/](environment/) | Synthetic contracts and recorded execution environment |
-| `models/`, `modules/`, `utils/`, `run.py` | Original MonTi implementation |
+| Course scoring points and genuine remaining work | [Assessment mapping](docs/ASSESSMENT.md) |
+| Method, controls and executable source | [Staged method](docs/METHOD.md), [local swap](experiments/local_swap/), [block swap](experiments/block_swap/) |
+| Latest results and audits | [Full staged TEST](results/final_staged/), [author local correction](results/local_swap/) |
+| Setup and historical reproduction | [Reproducing](docs/REPRODUCING.md) |
+| Other attempts, including failures | [Supplementary index](docs/SUPPLEMENTARY_STUDIES.md) |
+| Report and presentation drafts | [Report](docs/STAGED_REPORT.md), [slides guide](docs/SLIDES_GUIDE.md) - predate the latest results |
+| AI assistance and human contributions | [AI use](AI_USAGE.md), [contributions](CONTRIBUTIONS.md) |
 
-[Setup and saved-result verification](docs/REPRODUCING.md) describe the available checks and their scope. Full ML reruns require the recorded historical runtime and frozen assets; compact exports are not a self-contained fresh-clone model bundle. [Archive guide](docs/ARCHIVE.md).
-
-[Course evidence and remaining requirements](docs/ASSESSMENT.md), [AI use](AI_USAGE.md) and [contributions](CONTRIBUTIONS.md).
-
-Upstream authors: Jinhyeok Choi, Heehyeon Kim and Joyce Jiyoung Whang, AAAI 2025. [License](LICENSE.txt).
+Compact methods/results are public; large raw runs and frozen assets remain
+in the recorded archive. Full ML reruns require that runtime and its assets.
+Instructor approval, human review, actual contributions, defense and final
+submission remain unconfirmed. [License](LICENSE.txt).

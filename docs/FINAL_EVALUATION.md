@@ -2,7 +2,9 @@
 
 Status: registered before model calls. Scientific source: `32d563f49e19cea3b74bc74f048ddd9a5a934074`.
 Protocol SHA256: `2716a20b1b8c251466e35f7e93b750a3ab72b668c38d0199f9026b9c884f675f`.
-The formal result is pending the sealed execution and saved-record audits.
+Execution and a saved-record audit are complete. The registered criterion
+failed: learned MR 44.2257%, native 43.8168%, random 44.0165%; differences
+are uncertain and seed 2 is negative. [Full results and audit scope](../results/final_staged/).
 
 ## Question and fixed comparison
 
@@ -84,7 +86,8 @@ cohort; its 53.6486% to 58.1436% result is not the final TEST comparison.
 
 ## Formal results and delivery
 
-Pending the one registered execution and audits. The final report, Bento deck,
-PowerPoint export and saved-evidence demonstration will all use one audited
-result export. Actual human review, rehearsal, presentation and course
-submission are recorded only when performed.
+The completed results are in the [compact result export](../results/final_staged/).
+The report and presentation drafts predate this result and require an explicit
+final update. Human review, rehearsal, presentation and course submission
+are recorded only when performed. Subsequent development cannot treat this
+observed TEST set as untouched confirmation.

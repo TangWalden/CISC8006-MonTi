@@ -1,0 +1,277 @@
+{
+  "status": "completed",
+  "analysis_scope": "Descriptive saved-case diagnosis after the registered experiment; no new selection, tuning or causal attribution.",
+  "result_sha256": "daa2a18ee83b1ddcf01fd1fa42714927733d5e7bb4914aa35ac14c6bcc5a584a",
+  "paired": [
+    {
+      "seed": 0,
+      "control": "native",
+      "group_wins": 0,
+      "group_ties": 64,
+      "group_losses": 0,
+      "gross_gained_occurrences": 0,
+      "gross_lost_occurrences": 0,
+      "net_occurrences": 0,
+      "outcome_selected_positive_examples": [],
+      "outcome_selected_negative_examples": []
+    },
+    {
+      "seed": 0,
+      "control": "matched_random",
+      "group_wins": 0,
+      "group_ties": 64,
+      "group_losses": 0,
+      "gross_gained_occurrences": 0,
+      "gross_lost_occurrences": 0,
+      "net_occurrences": 0,
+      "outcome_selected_positive_examples": [],
+      "outcome_selected_negative_examples": []
+    },
+    {
+      "seed": 0,
+      "control": "always_random",
+      "group_wins": 1,
+      "group_ties": 63,
+      "group_losses": 0,
+      "gross_gained_occurrences": 1,
+      "gross_lost_occurrences": 0,
+      "net_occurrences": 1,
+      "outcome_selected_positive_examples": [
+        {
+          "group": 1172,
+          "targets": 14,
+          "learned_wrong": 8,
+          "control_wrong": 7,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ],
+      "outcome_selected_negative_examples": []
+    },
+    {
+      "seed": 1,
+      "control": "native",
+      "group_wins": 1,
+      "group_ties": 62,
+      "group_losses": 1,
+      "gross_gained_occurrences": 1,
+      "gross_lost_occurrences": 1,
+      "net_occurrences": 0,
+      "outcome_selected_positive_examples": [
+        {
+          "group": 1432,
+          "targets": 3,
+          "learned_wrong": 2,
+          "control_wrong": 1,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ],
+      "outcome_selected_negative_examples": [
+        {
+          "group": 1492,
+          "targets": 10,
+          "learned_wrong": 5,
+          "control_wrong": 6,
+          "gained": 0,
+          "lost": 1,
+          "net": -1
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "control": "matched_random",
+      "group_wins": 1,
+      "group_ties": 62,
+      "group_losses": 1,
+      "gross_gained_occurrences": 1,
+      "gross_lost_occurrences": 1,
+      "net_occurrences": 0,
+      "outcome_selected_positive_examples": [
+        {
+          "group": 1432,
+          "targets": 3,
+          "learned_wrong": 2,
+          "control_wrong": 1,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ],
+      "outcome_selected_negative_examples": [
+        {
+          "group": 1492,
+          "targets": 10,
+          "learned_wrong": 5,
+          "control_wrong": 6,
+          "gained": 0,
+          "lost": 1,
+          "net": -1
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "control": "always_random",
+      "group_wins": 1,
+      "group_ties": 62,
+      "group_losses": 1,
+      "gross_gained_occurrences": 1,
+      "gross_lost_occurrences": 1,
+      "net_occurrences": 0,
+      "outcome_selected_positive_examples": [
+        {
+          "group": 1432,
+          "targets": 3,
+          "learned_wrong": 2,
+          "control_wrong": 1,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ],
+      "outcome_selected_negative_examples": [
+        {
+          "group": 1492,
+          "targets": 10,
+          "learned_wrong": 5,
+          "control_wrong": 6,
+          "gained": 0,
+          "lost": 1,
+          "net": -1
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "control": "native",
+      "group_wins": 0,
+      "group_ties": 64,
+      "group_losses": 0,
+      "gross_gained_occurrences": 0,
+      "gross_lost_occurrences": 0,
+      "net_occurrences": 0,
+      "outcome_selected_positive_examples": [],
+      "outcome_selected_negative_examples": []
+    },
+    {
+      "seed": 2,
+      "control": "matched_random",
+      "group_wins": 1,
+      "group_ties": 63,
+      "group_losses": 0,
+      "gross_gained_occurrences": 1,
+      "gross_lost_occurrences": 0,
+      "net_occurrences": 1,
+      "outcome_selected_positive_examples": [
+        {
+          "group": 1473,
+          "targets": 6,
+          "learned_wrong": 3,
+          "control_wrong": 2,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ],
+      "outcome_selected_negative_examples": []
+    },
+    {
+      "seed": 2,
+      "control": "always_random",
+      "group_wins": 1,
+      "group_ties": 63,
+      "group_losses": 0,
+      "gross_gained_occurrences": 1,
+      "gross_lost_occurrences": 0,
+      "net_occurrences": 1,
+      "outcome_selected_positive_examples": [
+        {
+          "group": 1473,
+          "targets": 6,
+          "learned_wrong": 3,
+          "control_wrong": 2,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ],
+      "outcome_selected_negative_examples": []
+    }
+  ],
+  "gating": [
+    {
+      "seed": 0,
+      "all_groups": 64,
+      "eligible_groups": 56,
+      "active_groups": 20,
+      "active_target_occurrences": 130,
+      "all_target_occurrences": 571,
+      "all_unique_targets": 240
+    },
+    {
+      "seed": 1,
+      "all_groups": 64,
+      "eligible_groups": 57,
+      "active_groups": 33,
+      "active_target_occurrences": 335,
+      "all_target_occurrences": 571,
+      "all_unique_targets": 240
+    },
+    {
+      "seed": 2,
+      "all_groups": 64,
+      "eligible_groups": 57,
+      "active_groups": 26,
+      "active_target_occurrences": 204,
+      "all_target_occurrences": 571,
+      "all_unique_targets": 240
+    }
+  ],
+  "teacher_transfer": [
+    {
+      "seed": 0,
+      "active": 20,
+      "actual_GCN_loss_improves": 11,
+      "actual_GCN_loss_worsens": 4,
+      "mean_predicted_gain": 0.0005342648006595082,
+      "mean_actual_GCN_gain": 9.918548892487236e-05,
+      "GAGA_net_wrong_on_active": 0
+    },
+    {
+      "seed": 1,
+      "active": 33,
+      "actual_GCN_loss_improves": 11,
+      "actual_GCN_loss_worsens": 2,
+      "mean_predicted_gain": 0.000920733232029556,
+      "mean_actual_GCN_gain": 0.0001494140086155117,
+      "GAGA_net_wrong_on_active": 0
+    },
+    {
+      "seed": 2,
+      "active": 26,
+      "actual_GCN_loss_improves": 9,
+      "actual_GCN_loss_worsens": 4,
+      "mean_predicted_gain": 0.0020706505507759377,
+      "mean_actual_GCN_gain": 0.0012806553518966495,
+      "GAGA_net_wrong_on_active": 0
+    }
+  ],
+  "identity_controls": {
+    "equal_topology_comparisons": 498,
+    "gcn_class_differences": 0,
+    "gaga_class_differences": 0,
+    "max_gcn_logit_difference": 6.771087646484375e-05,
+    "max_gaga_logit_difference": 0.0
+  },
+  "model_queries": 0,
+  "dataset_loads": 0,
+  "checkpoint_loads": 0,
+  "GPU_hours": 0,
+  "process_cpu_seconds": 0.07228067299999999,
+  "wall_seconds": 0.07228460907936096,
+  "caution": "Occurrences are correlated. Three repeats share one author checkpoint. Examples selected after outcomes do not define a new rule."
+}

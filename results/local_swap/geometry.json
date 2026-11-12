@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "native_scenarios": 576,
+  "final_plans": 768,
+  "totals": {
+    "0_train": {
+      "scenarios": 128,
+      "actual_nodes": 6860,
+      "actual_unique_nonself_edges": 311004
+    },
+    "0_valid": {
+      "scenarios": 64,
+      "actual_nodes": 4210,
+      "actual_unique_nonself_edges": 194884
+    },
+    "1_train": {
+      "scenarios": 128,
+      "actual_nodes": 6860,
+      "actual_unique_nonself_edges": 311004
+    },
+    "1_valid": {
+      "scenarios": 64,
+      "actual_nodes": 4210,
+      "actual_unique_nonself_edges": 194884
+    },
+    "2_train": {
+      "scenarios": 128,
+      "actual_nodes": 6860,
+      "actual_unique_nonself_edges": 311004
+    },
+    "2_valid": {
+      "scenarios": 64,
+      "actual_nodes": 4210,
+      "actual_unique_nonself_edges": 194884
+    }
+  },
+  "turnover": {
+    "0_native": {
+      "cases": 64,
+      "changed_edges": 0
+    },
+    "0_local_rank": {
+      "cases": 64,
+      "changed_edges": 40
+    },
+    "0_matched_random": {
+      "cases": 64,
+      "changed_edges": 40
+    },
+    "0_always_random": {
+      "cases": 64,
+      "changed_edges": 112
+    },
+    "1_native": {
+      "cases": 64,
+      "changed_edges": 0
+    },
+    "1_local_rank": {
+      "cases": 64,
+      "changed_edges": 66
+    },
+    "1_matched_random": {
+      "cases": 64,
+      "changed_edges": 66
+    },
+    "1_always_random": {
+      "cases": 64,
+      "changed_edges": 114
+    },
+    "2_native": {
+      "cases": 64,
+      "changed_edges": 0
+    },
+    "2_local_rank": {
+      "cases": 64,
+      "changed_edges": 52
+    },
+    "2_matched_random": {
+      "cases": 64,
+      "changed_edges": 52
+    },
+    "2_always_random": {
+      "cases": 64,
+      "changed_edges": 114
+    }
+  },
+  "physical_scope": "Distinct original IDs, contiguous injected IDs, binary cells and strict lower-triangular injected-edge ownership prove unique nonself unordered pairs in saved masks. Injected degree includes both row-owned edges and incoming injected edges. Totals sum independent scenarios, not one graph.",
+  "model_calls": 0,
+  "raw_dataset_loads": 0,
+  "parameter_checkpoint_loads": 0,
+  "GPU_hours": 0,
+  "wall_seconds": 3.0475206261035055,
+  "process_cpu_seconds": 3.151437178
+}

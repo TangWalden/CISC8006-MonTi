@@ -1,0 +1,296 @@
+{
+  "status": "completed",
+  "provenance": {
+    "source_commit": "b403314962a69d891a56525c8381d14d44ca91b6",
+    "protocol_sha256": "4efd6f81f7c466917b25f4af0fbfb8ca1a2fd204904353c4ea0cb4215f143bda",
+    "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c"
+  },
+  "counters": {
+    "generations": 576,
+    "train_GCN": 3056,
+    "evaluation_GCN": 832,
+    "official_GAGA_VALID": 832,
+    "ridge_fits": 3,
+    "upstream_updates": 0,
+    "autograd_calls": 0,
+    "API_calls": 0,
+    "TEST_queries": 0
+  },
+  "GPU_hours": 0,
+  "environment": {
+    "versions": {
+      "python": "3.8.20",
+      "torch": "1.13.1+cu117",
+      "dgl": "1.1.2+cu117",
+      "numpy": "1.24.4",
+      "scipy": "1.10.1"
+    },
+    "device": "cpu",
+    "GPU_hours": 0,
+    "cpu_threads": 4
+  },
+  "metrics": [
+    {
+      "seed": 0,
+      "arm": "native",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 58.14360770577933,
+      "gcn_mr": 98.24868651488616,
+      "exchanges": 0
+    },
+    {
+      "seed": 0,
+      "arm": "local_rank",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 58.14360770577933,
+      "gcn_mr": 98.24868651488616,
+      "exchanges": 20
+    },
+    {
+      "seed": 0,
+      "arm": "matched_random",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 58.14360770577933,
+      "gcn_mr": 98.24868651488616,
+      "exchanges": 20
+    },
+    {
+      "seed": 0,
+      "arm": "always_random",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 57.96847635726795,
+      "gcn_mr": 98.24868651488616,
+      "exchanges": 56
+    },
+    {
+      "seed": 1,
+      "arm": "native",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 58.14360770577933,
+      "gcn_mr": 98.24868651488616,
+      "exchanges": 0
+    },
+    {
+      "seed": 1,
+      "arm": "local_rank",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 58.14360770577933,
+      "gcn_mr": 98.42381786339755,
+      "exchanges": 33
+    },
+    {
+      "seed": 1,
+      "arm": "matched_random",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 58.14360770577933,
+      "gcn_mr": 98.42381786339755,
+      "exchanges": 33
+    },
+    {
+      "seed": 1,
+      "arm": "always_random",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 58.14360770577933,
+      "gcn_mr": 98.42381786339755,
+      "exchanges": 57
+    },
+    {
+      "seed": 2,
+      "arm": "native",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 57.443082311733804,
+      "gcn_mr": 98.24868651488616,
+      "exchanges": 0
+    },
+    {
+      "seed": 2,
+      "arm": "local_rank",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 57.443082311733804,
+      "gcn_mr": 98.24868651488616,
+      "exchanges": 26
+    },
+    {
+      "seed": 2,
+      "arm": "matched_random",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 57.26795096322242,
+      "gcn_mr": 98.24868651488616,
+      "exchanges": 26
+    },
+    {
+      "seed": 2,
+      "arm": "always_random",
+      "groups": 64,
+      "occurrences": 571,
+      "gaga_mr": 57.26795096322242,
+      "gcn_mr": 98.24868651488616,
+      "exchanges": 57
+    }
+  ],
+  "means": {
+    "native": 57.91009924109749,
+    "local_rank": 57.91009924109749,
+    "matched_random": 57.85172212492703,
+    "always_random": 57.79334500875657
+  },
+  "contrasts": {
+    "native": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "matched_random": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.17513134851138545
+      ],
+      "mean_pp": 0.05837711617046182,
+      "nominal_t95": [
+        -0.19279934208472338,
+        0.309553574425647
+      ]
+    },
+    "always_random": {
+      "deltas_pp": [
+        0.17513134851137835,
+        0.0,
+        0.17513134851138545
+      ],
+      "mean_pp": 0.11675423234092126,
+      "nominal_t95": [
+        -0.13442222591425884,
+        0.36793069059610134
+      ]
+    }
+  },
+  "qualification_met": false,
+  "models": [
+    {
+      "seed": 0,
+      "path": "models/s0.json",
+      "sha256": "96f14a77307a1fe703d914cb4d60e101e187fd3f463cedb8729abeffc52a53da",
+      "training_rows": 896,
+      "threshold": 0.0001388024546139718,
+      "train_rmse": 0.0013118460385820566
+    },
+    {
+      "seed": 1,
+      "path": "models/s1.json",
+      "sha256": "74291d67b27438e223e7138014921e8b3aa5784ecbd3cbec84d380d1d1f5cd2a",
+      "training_rows": 888,
+      "threshold": 0.0001732290781961152,
+      "train_rmse": 0.0015982625133639909
+    },
+    {
+      "seed": 2,
+      "path": "models/s2.json",
+      "sha256": "6e48d0284f0552af3deda2f1f2657f0d31640dd07696a08db487c5ad3980714c",
+      "training_rows": 888,
+      "threshold": 0.00020712730216732074,
+      "train_rmse": 0.0016491286591823963
+    }
+  ],
+  "author_receipts": [
+    {
+      "downstream_seed": 0,
+      "capture_noise_seed": 0,
+      "author_configuration_seed": 3,
+      "checkpoint_sha256": "9f5dc7dd594a8e8927449665ef3a07b777199c2436d6fd1cc1f7adf0fdb6c23d",
+      "final_model_sha256": "9f5dc7dd594a8e8927449665ef3a07b777199c2436d6fd1cc1f7adf0fdb6c23d",
+      "config_sha256": "e27fd6959f35ab1786f35e4e70c89bec5156da1a6577f4481287310ebf552c2a",
+      "upstream_origin": "Official released best_models/checkpoints/GCN-GAGA-gossipcop_0.05-best_model.pickle",
+      "distinct_author_checkpoint_count": 1,
+      "capture_epoch": 0,
+      "capture_epoch_semantics": "Synthetic RNG key only, not an author training/best epoch",
+      "scheduler_steps_applied": 0,
+      "restored_temperature": 10,
+      "restored_epsilon": 10,
+      "upstream_state_sha256": "999cd331e0f31c126b15b6fbe33764a81493cd8d6cd0e910debd54f3901051f2",
+      "original_GCN_state_sha256": "7484a85f4634c3dd9154b2d5a64d78e3afcd1e341ef1fdc8f29eea8beeeadea1",
+      "upstream_optimizer_steps": 0,
+      "official_GAGA_loaded": false,
+      "strict_state_dictionary_compatible": true,
+      "configuration_adaptation": "CPU device and GCN-only loader declaration; author seed3 and all MonTi architecture/default flags retained.",
+      "RNG_scope": "Native eval keeps torch.randn latent noise when node_budget>1. Repetition0/1/2 keys are explicit per-case fork_rng, shared across arms; not historical CLI bitwise replay.",
+      "scheduler_scope": "Official run.py inference constructs initial scheduler objects; eval randomness=False ignores temperature/epsilon. No historical epoch is fabricated.",
+      "replication_scope": "One fixed author state, three downstream/capture-noise repetitions; not three independently trained author models or a paper-table equivalence claim."
+    },
+    {
+      "downstream_seed": 1,
+      "capture_noise_seed": 1,
+      "author_configuration_seed": 3,
+      "checkpoint_sha256": "9f5dc7dd594a8e8927449665ef3a07b777199c2436d6fd1cc1f7adf0fdb6c23d",
+      "final_model_sha256": "9f5dc7dd594a8e8927449665ef3a07b777199c2436d6fd1cc1f7adf0fdb6c23d",
+      "config_sha256": "e27fd6959f35ab1786f35e4e70c89bec5156da1a6577f4481287310ebf552c2a",
+      "upstream_origin": "Official released best_models/checkpoints/GCN-GAGA-gossipcop_0.05-best_model.pickle",
+      "distinct_author_checkpoint_count": 1,
+      "capture_epoch": 0,
+      "capture_epoch_semantics": "Synthetic RNG key only, not an author training/best epoch",
+      "scheduler_steps_applied": 0,
+      "restored_temperature": 10,
+      "restored_epsilon": 10,
+      "upstream_state_sha256": "999cd331e0f31c126b15b6fbe33764a81493cd8d6cd0e910debd54f3901051f2",
+      "original_GCN_state_sha256": "7484a85f4634c3dd9154b2d5a64d78e3afcd1e341ef1fdc8f29eea8beeeadea1",
+      "upstream_optimizer_steps": 0,
+      "official_GAGA_loaded": false,
+      "strict_state_dictionary_compatible": true,
+      "configuration_adaptation": "CPU device and GCN-only loader declaration; author seed3 and all MonTi architecture/default flags retained.",
+      "RNG_scope": "Native eval keeps torch.randn latent noise when node_budget>1. Repetition0/1/2 keys are explicit per-case fork_rng, shared across arms; not historical CLI bitwise replay.",
+      "scheduler_scope": "Official run.py inference constructs initial scheduler objects; eval randomness=False ignores temperature/epsilon. No historical epoch is fabricated.",
+      "replication_scope": "One fixed author state, three downstream/capture-noise repetitions; not three independently trained author models or a paper-table equivalence claim."
+    },
+    {
+      "downstream_seed": 2,
+      "capture_noise_seed": 2,
+      "author_configuration_seed": 3,
+      "checkpoint_sha256": "9f5dc7dd594a8e8927449665ef3a07b777199c2436d6fd1cc1f7adf0fdb6c23d",
+      "final_model_sha256": "9f5dc7dd594a8e8927449665ef3a07b777199c2436d6fd1cc1f7adf0fdb6c23d",
+      "config_sha256": "e27fd6959f35ab1786f35e4e70c89bec5156da1a6577f4481287310ebf552c2a",
+      "upstream_origin": "Official released best_models/checkpoints/GCN-GAGA-gossipcop_0.05-best_model.pickle",
+      "distinct_author_checkpoint_count": 1,
+      "capture_epoch": 0,
+      "capture_epoch_semantics": "Synthetic RNG key only, not an author training/best epoch",
+      "scheduler_steps_applied": 0,
+      "restored_temperature": 10,
+      "restored_epsilon": 10,
+      "upstream_state_sha256": "999cd331e0f31c126b15b6fbe33764a81493cd8d6cd0e910debd54f3901051f2",
+      "original_GCN_state_sha256": "7484a85f4634c3dd9154b2d5a64d78e3afcd1e341ef1fdc8f29eea8beeeadea1",
+      "upstream_optimizer_steps": 0,
+      "official_GAGA_loaded": false,
+      "strict_state_dictionary_compatible": true,
+      "configuration_adaptation": "CPU device and GCN-only loader declaration; author seed3 and all MonTi architecture/default flags retained.",
+      "RNG_scope": "Native eval keeps torch.randn latent noise when node_budget>1. Repetition0/1/2 keys are explicit per-case fork_rng, shared across arms; not historical CLI bitwise replay.",
+      "scheduler_scope": "Official run.py inference constructs initial scheduler objects; eval randomness=False ignores temperature/epsilon. No historical epoch is fabricated.",
+      "replication_scope": "One fixed author state, three downstream/capture-noise repetitions; not three independently trained author models or a paper-table equivalence claim."
+    }
+  ],
+  "limitations": [
+    "Development reused; no TEST calls.",
+    "One author state; conditional repeats, not independent author models.",
+    "A TRAIN GCN gain prediction does not guarantee GAGA transfer.",
+    "Matched random shares learned activation; always-random is auxiliary, not a replacement candidate."
+  ],
+  "wall_seconds": 4283.798505089944,
+  "process_cpu_seconds": 11544.983254849,
+  "finished_utc": "2026-11-12T17:41:42.447534+00:00"
+}

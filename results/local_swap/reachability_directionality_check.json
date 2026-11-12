@@ -1,0 +1,7 @@
+{
+  "exit": 0,
+  "stdout": "{\"raw_graph_loads\": 1, \"model_calls\": 0, \"GPU_hours\": 0, \"asymmetric_entries\": 0}\n",
+  "stderr": "",
+  "wall_seconds": 2.272406223928556,
+  "reason": "Validate incoming versus outgoing adjacency equality required by the reachability reconstruction."
+}

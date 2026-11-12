@@ -1,0 +1,26 @@
+{
+  "audit_output": "/home/tjy/.cache/codex_diagnostics/final_staged_saved_audit_20261113_v1.json",
+  "exit": 0,
+  "wall_seconds": 15.636174215003848,
+  "stdout": "{\"GPU_hours\": 0, \"model_queries\": 0, \"status\": \"passed\", \"wall_seconds\": 15.533233316848055}\n",
+  "stderr": "",
+  "status": "passed",
+  "error": null,
+  "file_hashes_checked": 8276,
+  "queries": 0,
+  "wall_seconds_recorded": 15.533233316848055,
+  "recount": {
+    "saved_rows": 9090,
+    "clean_groups": 909,
+    "attacked_cases": 8181,
+    "occurrence_denominator_per_arm_seed": 10515,
+    "unique_test_targets": 1221,
+    "gaga_mean_mr_percent": {
+      "native_monti": 43.81676969408781,
+      "quota_random": 44.01648438738311,
+      "quota_learned": 44.225709304168646
+    },
+    "qualification_met": false,
+    "training_rows_recounted": 11244
+  }
+}

@@ -1,5 +1,12 @@
 # MonTi with Staged Role Division
 
+> Draft status, updated 13 November: the text and dated PDF below describe
+> the earlier development study. The [completed formal TEST](../results/final_staged/)
+> failed the registered improvement criterion. The [author-checkpoint local
+> correction](../results/local_swap/) is also null. These result addenda must
+> be incorporated before final submission; this draft is not final evidence
+> of a successful improvement.
+
 ## A reproduction and development study
 
 CISC8006 team: Junyi Tang and Yifan Fan. Prepared 12 November 2026.

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "checks": 9633,
+  "hashes_checked": 772,
+  "evaluation_records": 832,
+  "training_GCN_recount": 3056,
+  "model_calls": 0,
+  "pretrained_parameter_loads": 0,
+  "raw_graph_loads": 0,
+  "GPU_hours": 0,
+  "process_cpu_seconds": 6.193993777,
+  "wall_seconds": 4.299929209053516,
+  "scope": "Root-authored saved fit/logit and cached-tensor geometry recount, not independent human verification. Original graph descriptors not independently regenerated; on-execution physical graph guards supply that scope.",
+  "full_audit_sha256": "10715a6da9b35afa44814f9c45de54c2af14a005d7a695eade1e5cd995a7a07c"
+}

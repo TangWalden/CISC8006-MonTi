@@ -131,7 +131,22 @@ preparation and checks, not human authorship, review, rehearsal or application
 validation. No additional experimental directions or model calls were introduced
 by the slide revision.
 
-## Publication cleanup
+## 13 November: continued author-checkpoint downstream development
+
+The owner explicitly requested repeated evidence-guided downstream revisions,
+with the author's released upstream checkpoint frozen. Codex implemented and
+ran the three-repeat local-swap study, verified saved fits/logits/geometry,
+and retained its null result. It then registered and executed a model-free
+reachability diagnosis on all saved validation masks, with TRAIN-only block
+feasibility inspection. A new whole-column recipient-learning study was frozen
+and launched once, reusing upstream captures and matching exact donor rows,
+activation and exchange counts in the random control. No new TEST/API/GPU
+calls occurred in these development phases. Root-authored audits are not
+independent implementation reviews or human verification. Publication summaries
+were corrected to include the completed negative formal TEST outcome;
+dated PDF/PPTX artifacts were not rebuilt or relabeled as current.
+
+## Publication cleanup (historical)
 
 The 11 November 2026 cleanup extracted the existing algorithm without changing
 its bytes, exported compact saved results, checked all case denominators, and

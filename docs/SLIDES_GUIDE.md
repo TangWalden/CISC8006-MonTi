@@ -1,5 +1,10 @@
 # MonTi with two construction roles
 
+> The downloadable deck is a dated development draft. The now-completed
+> [formal TEST](../results/final_staged/) failed its improvement criterion;
+> [author-checkpoint local correction](../results/local_swap/) also has no
+> native gain. The existing slides do not yet incorporate these outcomes.
+
 The revised English presentation follows one story: MonTi's joint construction,
 a fixed upstream planner, a trained downstream candidate-edge policy, a matched
 budget comparison, and the measured development result.

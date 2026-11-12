@@ -1,0 +1,14 @@
+{
+  "source_sha256": "f4c71c4f515aaacf7df499eb09a37948687082c40adc475e21acdb400d2f7587",
+  "registered_utc": "2026-11-12T17:45:30.291482+00:00",
+  "purpose": "Explain local-swap insensitivity using all saved VALID masks and inspect block feasibility on TRAIN only.",
+  "cohort": "All 192 saved VALID cases, all 384 TRAIN cases; no outcome selection.",
+  "resources": {
+    "CPU_threads": 4,
+    "wall_cap_seconds": 600,
+    "GPU_hours": 0,
+    "model_calls": 0,
+    "TEST_queries": 0
+  },
+  "prior_result_known": true
+}
