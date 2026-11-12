@@ -21,9 +21,9 @@ must never fill an empty formal-results chart or table.
 
 The editable Bento presentation is a separate file with native text, charts,
 tables and pipeline objects. Use the current published presentation links in
-the [project README](../README.md). Its key-free source and official exported
-PowerPoint copy should accompany the live editing link. A live room can change
-after publication, so it does not replace the committed evidence snapshot.
+the [project README](../README.md). The published Bento is a key-free editable
+file copy; no live coediting room is configured. Editing that copy does not
+change the committed evidence snapshot.
 
 ## Proposed demonstration
 
@@ -97,11 +97,25 @@ picture.”
 
 ## Offline and published use
 
-The viewer first looks for `results/final_staged/final_public.json` relative to
-the repository. It also accepts a colocated `demo/final_public.json` for a
-Pages deployment that serves only the documentation folder. If browser
-restrictions prevent a local `file://` fetch, use **Load local result JSON**.
-The file stays in the browser. No upload or model service is involved.
+The viewer's `monti-result-snapshot` and `monti-result-sha256` metadata are blank
+until the audited data is committed. With both fields blank, it keeps its
+pending state unless a completed local export is available through the existing
+repository-relative paths or **Load local result JSON**.
+
+For GitHub Pages, publication will set an immutable 40-character commit and the
+export's 64-character SHA-256. The viewer then fetches the single public JSON
+from that commit on `raw.githubusercontent.com`, without credentials, and
+verifies its bytes with browser SHA-256 before parsing or displaying it. The
+data-source label shows the actual URL and verified hash. The JSON is not copied
+into the documentation folder. A malformed pointer, unavailable verification,
+failed fetch or hash mismatch produces an explicit error, with no fallback to
+another result or development scores.
+
+For offline use, choose the saved `final_public.json` with **Load local result
+JSON**. When a hash is configured, the local file must match that same hash
+before it can be displayed. With blank metadata, the existing formal-export
+scope checks still apply. The file stays in the browser; no upload or model
+service is involved.
 
 The export uses MR percentages from 0 to 100 and percentage-point contrasts.
 It identifies completed formal results, seeds 0/1/2, the actual TRAIN/TEST group
@@ -111,11 +125,11 @@ per-case records. Missing edge arrays remain missing. The optional
 `attacked_correct` arrays supply target prediction rings. Do not silently
 convert development records into this formal interface.
 
-A public Bento **Invite to edit** copy deliberately grants live editing to
-whoever holds that file or link. Keep the owner's original copy and its owner
-capability private. GitHub Pages serves a committed snapshot; live-room edits
-do not create Git commits or change the scientific results. Save and review a
-new snapshot separately if the canonical presentation needs updating.
+The current Bento file has no configured **Invite to edit** live room. Its
+key-free editable copy and GitHub Pages snapshot do not grant GitHub write
+access. Save and review a new presentation snapshot separately if the canonical
+presentation needs updating; keep its scientific data tied to the committed
+result and verified hash.
 
 ## Actual checks still requiring people
 
