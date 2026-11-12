@@ -48,15 +48,19 @@ a separate completion role. The original formulation is described in
 Our earlier formal component reproduction compared learned and random
 candidate selection on a separate full-test cohort with seeds 0, 1 and 2.
 
-| Formal reproduction | Mean GAGA MR % |
-|---|---:|
-| Learned candidate selection | 43.7280 |
-| Random candidate selection | 40.1902 |
+| Component comparison | Learned MR % | Random MR % |
+|---|---:|---:|
+| Paper Table 5 | 43.7000 | 39.1300 |
+| Our frozen reproduction | 43.7280 | 40.1902 |
 
 The paired difference was +3.5378 pp, with nominal 95% interval
 [-1.5415, 8.6171] pp: the frozen conclusion remains **inconclusive**. That result
 and the later staged study use different cohorts and generator families; their
 absolute rates are not paired before-and-after measurements.
+
+The paper's main Table 4 reports 41.34 +/- 1.90% for GCN-to-GAGA, a different
+value from its Table 5. The [paper and reproduction comparison](REPRODUCING.md#claim-and-paper-comparison)
+records this unresolved difference and the implementation's budget differences.
 
 For the staged experiment, the attack generators are **our three terminal
 eight-epoch legacy MonTi checkpoints**, not the authors' supplied best MonTi
