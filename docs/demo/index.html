@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A saved-record viewer for the formal staged MonTi evaluation. No model calls.">
+<title>MonTi saved-case demonstration</title>
+<style>
+:root{color-scheme:light;--paper:#f7f5ef;--ink:#17242b;--muted:#53636b;--accent:#d65a32;--line:#cbd3cf;--panel:#fff;--good:#16734c;--bad:#a92f36}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:1360px;margin:auto;padding:40px 32px 64px}h1{font-size:clamp(30px,4vw,49px);letter-spacing:-.035em;line-height:1.08;margin:10px 0 18px}h2{font-size:22px;line-height:1.2;margin:0 0 18px}p{max-width:1000px;margin:12px 0}a{color:var(--ink);text-underline-offset:3px}.eyebrow{font-weight:650;color:var(--accent);letter-spacing:.06em;font-size:13px;text-transform:uppercase}.intro{color:var(--muted);font-size:18px}.status{border-left:5px solid var(--accent);padding:14px 18px;background:#fff4e8;margin:24px 0}.status.ready{border-color:var(--good);background:#eef7f0}.status.error{border-color:var(--bad);background:#fff0f1}.controls{display:flex;flex-wrap:wrap;gap:16px;align-items:end;margin:26px 0}.controls label{display:grid;gap:6px;font-weight:600;font-size:14px}select,button,input{font:inherit}select,button{min-height:43px;border:1px solid var(--line);border-radius:7px;padding:8px 12px;background:#fff;color:var(--ink)}select{min-width:210px;max-width:480px}button{cursor:pointer;font-weight:600}button:hover{border-color:var(--accent)}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #e4a87a;outline-offset:3px}button:disabled,select:disabled{opacity:.5;cursor:default}.load-label{display:inline-flex;align-items:center;gap:8px;cursor:pointer;border:1px solid var(--line);border-radius:7px;background:#fff;padding:9px 12px;min-height:43px;font-weight:600}.load-label input{position:absolute;width:1px;height:1px;opacity:0}.layout{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(310px,1fr);gap:26px;align-items:start}.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:23px;min-width:0}.graph-panel{padding-bottom:14px}.graph{width:100%;height:auto;min-height:350px;display:block}.caption,.muted{color:var(--muted)}.caption{font-size:13px;line-height:1.45;margin:12px 0 2px}.legend{display:flex;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin:16px 0}.legend span{display:inline-flex;align-items:center;gap:7px}.dot{width:12px;height:12px;border-radius:50%;display:inline-block;background:var(--ink)}.dot.target{background:var(--accent)}.dot.candidate{background:#fff;border:2px solid #7d8b91}.metric-line{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #e5e9e6;padding:11px 0}.metric-line strong{font-size:22px;font-variant-numeric:tabular-nums}.metric-line:last-child{border-bottom:0}.section{margin-top:28px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid #dce2de}th{font-size:12px;color:var(--muted);font-weight:650}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}.nowrap{white-space:nowrap}.wide{margin-top:26px}.small{font-size:13px}.links{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px}.file-source{overflow-wrap:anywhere}.pending-score{color:var(--muted)}.graph text{font-family:system-ui,sans-serif}.sr-only{position:absolute;left:-10000px}.edge{stroke-width:1.6;stroke-opacity:.24}.role-title{font-size:24px;font-weight:650;fill:var(--ink)}.role-sub{font-size:16px;fill:var(--muted)}.node-label{font-size:13px;fill:var(--ink)}.placeholder{font-size:23px;fill:var(--muted)}
+@media(max-width:900px){main{padding:25px 18px 45px}.layout{grid-template-columns:1fr}.controls{align-items:stretch}.controls label{flex:1;min-width:230px}select{max-width:100%;width:100%}.panel{padding:18px}.graph{min-height:300px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="eyebrow">Saved evidence demonstration</div>
+<h1>MonTi: fixed upstream,<br>trained downstream</h1>
+<p class="intro">Explore recorded formal evaluation cases. Choose a case and a connection policy to inspect its budgets, outcomes and saved edges. This page performs no training, attack generation or detector query.</p>
+</header>
+<div id="status" class="status" role="status" aria-live="polite">Formal results are not attached yet. The viewer will load the audited formal export when available. It never substitutes development-pilot scores.</div>
+<div class="controls">
+<label>Recorded case<select id="case" disabled><option>No formal cases attached</option></select></label>
+<label>Connection policy<select id="arm" disabled><option value="native_monti">Native MonTi</option><option value="quota_random">Random candidate connections</option><option value="quota_learned">Staged pipeline</option></select></label>
+<label>Edges to display<select id="edge-filter" disabled><option value="all">All recorded roles</option><option value="target">Target connections</option><option value="candidate">Candidate connections</option><option value="auxiliary">Auxiliary-to-auxiliary</option></select></label>
+<label class="load-label">Load local result JSON<input id="file" type="file" accept="application/json,.json"></label>
+</div>
+<div class="layout">
+<section class="panel graph-panel" aria-labelledby="graph-heading">
+<h2 id="graph-heading">Recorded connection view</h2>
+<svg id="graph" class="graph" viewBox="0 0 1100 690" role="img" aria-label="Saved graph edges, or an explicit data-unavailable notice"><text class="placeholder" x="70" y="275">No recorded graph attached.</text><text class="role-sub" x="70" y="320">Counts and edges remain empty until the formal export is loaded.</text></svg>
+<div class="legend"><span><i class="dot"></i>Auxiliary nodes</span><span><i class="dot target"></i>Known fraud targets</span><span><i class="dot candidate"></i>Original candidates, class not assumed</span></div>
+<p id="graph-caption" class="caption">No synthetic edges or predictions appear in place of missing measurements.</p>
+</section>
+<aside class="panel">
+<h2>Selected case</h2>
+<div class="metric-line"><span>Missed targets / total</span><strong id="wrong">Pending</strong></div>
+<div class="metric-line"><span>Miss rate</span><strong id="mr">Pending</strong></div>
+<div class="metric-line"><span>New clean-to-wrong flips</span><strong id="flips">Not supplied</strong></div>
+<p class="small muted">MR includes targets already missed on the clean graph. New flips require separate saved clean and attacked outcomes.</p>
+<div class="section"><h2>Structural budget</h2><table><tbody id="budget"><tr><td>No case attached</td></tr></tbody></table></div>
+<p class="caption">Target and candidate quotas describe the staged arms. Native MonTi's actual role counts can differ. Total node and edge budgets stay fixed.</p>
+</aside>
+</div>
+<section class="panel wide">
+<h2>Same-case policy comparison</h2>
+<table><thead><tr><th>Policy</th><th class="num">Missed</th><th class="num">Total</th><th class="num">MR</th><th class="num">New flips</th></tr></thead><tbody id="case-table"><tr><td colspan="5">No formal case attached.</td></tr></tbody></table>
+</section>
+<section class="panel wide">
+<h2>Complete formal summary</h2>
+<table><thead><tr><th>Condition</th><th class="num">Mean official-GAGA MR</th></tr></thead><tbody id="summary"><tr><td colspan="2">Formal results pending.</td></tr></tbody></table>
+<p id="contrast" class="small muted">Paired differences and uncertainty will come from the audited final export.</p>
+<p class="small muted">A graph shows the stored constructed connections. It does not demonstrate which edge caused a prediction. A positive complete-pipeline comparison does not isolate role division alone.</p>
+<p class="small muted">All formal case counts remain in the export. Full edge arrays are limited to the first two small eligible graphs per seed under a rule fixed from geometry before outcomes. Missing edge arrays use a counts-only view.</p>
+<p id="source" class="caption file-source">Data source: not attached.</p>
+</section>
+<nav class="links" aria-label="Evidence links"><a href="../FINAL_EVALUATION.md">Frozen formal protocol</a><a href="../../results/final_staged/provenance.json">Results and provenance</a><a href="../METHOD.md">Method explanation</a><a href="../SUPPLEMENTARY_STUDIES.md">Supplementary evidence</a><a href="../../README.md">Project README</a></nav>
+<p class="caption">For offline viewing, choose the saved <code>final_public.json</code> with the local-file control. Hosting this viewer or an editable presentation does not grant write access to GitHub commits.</p>
+</main>
+<script>
+"use strict";
+const ARMS = ["native_monti", "quota_random", "quota_learned"];
+const LABELS = {native_monti:"Native MonTi", quota_random:"Random candidate connections", quota_learned:"Staged pipeline"};
+const NS = "http://www.w3.org/2000/svg";
+const $ = id => document.getElementById(id);
+let DATA = null;
+function finite(x){return typeof x === "number" && Number.isFinite(x);}
+function require(ok, message){if(!ok) throw new Error(message);}
+function integer(x){return Number.isInteger(x) && x >= 0;}
+function signed(x){return (x>0?"+":"") + x.toFixed(2);}
+function setStatus(message, kind=""){const s=$("status");s.textContent=message;s.className="status"+(kind?" "+kind:"");}
+function cell(row, value, numeric=false){const td=document.createElement("td");td.textContent=String(value);if(numeric)td.className="num";row.append(td);}
+function clear(node){node.replaceChildren();}
+function row(parent, values){const tr=document.createElement("tr");values.forEach((v,i)=>cell(tr,v,i>0));parent.append(tr);}
+function svg(tag, attrs, title){const e=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,String(v)));if(title){const t=document.createElementNS(NS,"title");t.textContent=title;e.append(t);}return e;}
+function label(x,y,message,cls="role-sub"){const t=svg("text",{x,y,class:cls});t.textContent=message;return t;}
+function validate(data){
+ require(data && data.status === "completed", "A completed audited formal export is required. No pending or failed run is displayed as completed.");
+ require(JSON.stringify(data.seeds) === "[0,1,2]", "This viewer expects formal seeds0,1,2, not the development cohort.");
+ require(data.protocol && Number.isInteger(data.protocol.test_groups) && data.protocol.test_groups>0, "Formal TEST group count is missing.");
+ require([undefined,"percent","percentage"].includes(data.metric_unit), "MR values must use percent units.");
+ ARMS.forEach(a=>require(data.arms && data.arms[a] && finite(data.arms[a].mean_mr) && data.arms[a].mean_mr>=0 && data.arms[a].mean_mr<=100, "Missing formal arm summary: "+a));
+ require(Array.isArray(data.cases), "Saved cases must be an array.");
+ const seen=new Set();data.cases.forEach(c=>{
+  require(data.seeds.includes(c.seed), "A saved case has an unregistered seed.");
+  const k=JSON.stringify([c.seed,c.group]);require(!seen.has(k),"Duplicate seed/group case.");seen.add(k);
+  const n=Array.isArray(c.targets)?c.targets.length:c.targets;require(Number.isInteger(n)&&n>0,"Target count is missing.");
+  require(integer(c.auxiliary_count)&&integer(c.node_budget)&&integer(c.edge_budget),"Case structural budgets must be nonnegative integers.");
+  require(c.auxiliary_count===c.node_budget,"Recorded auxiliary count differs from node budget.");
+  if(c.clean_correct!==undefined)require(Array.isArray(c.clean_correct)&&c.clean_correct.length===n&&c.clean_correct.every(v=>typeof v==="boolean"),"Invalid saved clean-prediction array.");
+  ARMS.forEach(a=>{
+   const z=c.arms&&c.arms[a];require(z&&integer(z.wrong)&&integer(z.total)&&z.total===n&&z.wrong<=z.total,"Missing or invalid selected-case outcome.");
+   if(z.new_flips!==undefined)require(integer(z.new_flips)&&z.new_flips<=n,"Invalid new-flip count.");
+   if(z.attacked_correct!==undefined){require(Array.isArray(z.attacked_correct)&&z.attacked_correct.length===n&&z.attacked_correct.every(v=>typeof v==="boolean"),"Invalid saved attacked-prediction array.");require(z.attacked_correct.filter(v=>!v).length===z.wrong,"Saved predictions and wrong count differ.");}
+   if(c.clean_correct&&z.attacked_correct&&z.new_flips!==undefined)require(c.clean_correct.filter((v,i)=>v&&!z.attacked_correct[i]).length===z.new_flips,"Saved predictions and new-flip count differ.");
+   const roles=actualRoles(z);if(roles)require(roles.target+roles.candidate+roles.auxiliary===c.edge_budget,"Saved actual edge roles do not sum to the total budget.");
+  });
+ });
+ return data;
+}
+function showSummary(){
+ clear($("summary"));ARMS.forEach(a=>row($("summary"),[DATA.arms[a].name||LABELS[a],DATA.arms[a].mean_mr.toFixed(4)+"%"]));
+ const p=DATA.primary,r=DATA.secondary_random;
+ if(p&&finite(p.mean_pp)&&Array.isArray(p.ci95_pp)&&p.ci95_pp.length===2&&p.ci95_pp.every(finite)){
+  let s="Staged minus native: "+signed(p.mean_pp)+" pp, reported95% interval ["+signed(p.ci95_pp[0])+", "+signed(p.ci95_pp[1])+"] pp.";
+  if(r&&finite(r.mean_pp)&&Array.isArray(r.ci95_pp)&&r.ci95_pp.length===2&&r.ci95_pp.every(finite))s+=" Staged minus random: "+signed(r.mean_pp)+" pp, interval ["+signed(r.ci95_pp[0])+", "+signed(r.ci95_pp[1])+"] pp.";
+  $("contrast").textContent=s;
+ }else $("contrast").textContent="The export does not supply a complete paired-contrast summary.";
+}
+function install(raw, source){
+ DATA=validate(raw);const menu=$("case");clear(menu);
+ DATA.cases.forEach((c,i)=>{const o=document.createElement("option");o.value=String(i);o.textContent="Seed "+c.seed+", group "+String(c.group)+", "+(Array.isArray(c.targets)?c.targets.length:c.targets)+" targets";menu.append(o);});
+ const available=DATA.cases.length>0;const firstGraph=DATA.cases.findIndex(c=>ARMS.some(a=>Array.isArray(c.arms[a].edges)));menu.value=String(firstGraph>=0?firstGraph:0);["case","arm","edge-filter"].forEach(id=>$(id).disabled=!available);
+ $("source").textContent="Data source: "+source+". Only saved formal measurements are shown.";
+ setStatus("Completed formal export loaded. "+DATA.cases.length+" recorded seed/group cases. This viewer makes zero model calls.","ready");showSummary();
+ if(available) renderCase(); else{$("graph-caption").textContent="The formal aggregate is available, but this export contains no per-case graph records.";}
+}
+function actualRoles(z){
+ if(z.edge_roles){const r=z.edge_roles;const v={target:r.target_edges??r.target,candidate:r.candidate_edges??r.candidate,auxiliary:r.injected_to_injected_owned_edges??r.auxiliary_edges??r.auxiliary};if(Object.values(v).every(integer))return v;}
+ if(!Array.isArray(z.edges))return null;
+ const counts={target:0,candidate:0,auxiliary:0};
+ z.edges.forEach(e=>{if(Array.isArray(e)&&counts[e[1]]!==undefined)counts[e[1]]++;});return counts;
+}
+function renderCase(){
+ const c=DATA.cases[Number($("case").value)],arm=$("arm").value,z=c.arms[arm];
+ $("wrong").textContent=z.wrong+" / "+z.total;$("mr").textContent=(100*z.wrong/z.total).toFixed(2)+"%";$("flips").textContent=z.new_flips===undefined?"Not supplied":String(z.new_flips);
+ clear($("case-table"));ARMS.forEach(a=>{const v=c.arms[a];row($("case-table"),[LABELS[a],v.wrong,v.total,(100*v.wrong/v.total).toFixed(2)+"%",v.new_flips===undefined?"Not supplied":v.new_flips]);});
+ const roles=actualRoles(z);clear($("budget"));
+ const budgetRows=[["Auxiliary nodes / node budget",c.auxiliary_count+" / "+c.node_budget],["Total new-edge budget",c.edge_budget],["Staged target quota",c.target_quota===undefined?"Not supplied":c.target_quota],["Staged candidate quota",c.candidate_quota===undefined?"Not supplied":c.candidate_quota],["Quota projection applied",c.projection_applied===undefined?"Not supplied":c.projection_applied?"Yes":"No"],["Selected-arm target edges",roles?roles.target:"Not supplied"],["Selected-arm candidate edges",roles?roles.candidate:"Not supplied"],["Selected-arm auxiliary edges",roles?roles.auxiliary:"Not supplied"]];
+ budgetRows.forEach(v=>row($("budget"),v));renderGraph(c,z,arm);
+}
+function renderGraph(c,z,arm){
+ const targetCount=Array.isArray(c.targets)?c.targets.length:c.targets;
+ let candidateCount=integer(c.candidate_count)?c.candidate_count:null;const candidateFromEdges=candidateCount===null;
+ const edges=Array.isArray(z.edges)?z.edges:null;
+ if(candidateCount===null&&edges){const end=edges.filter(e=>Array.isArray(e)&&e[1]==="candidate"&&integer(e[2])).map(e=>e[2]);candidateCount=end.length?end.reduce((a,b)=>Math.max(a,b),-1)+1:0;}
+ const graph=$("graph");clear(graph);
+ const full={auxiliary:c.auxiliary_count,target:targetCount,candidate:candidateCount};
+ const shown={auxiliary:Math.min(18,full.auxiliary),target:Math.min(18,full.target),candidate:full.candidate===null?0:Math.min(18,full.candidate)};
+ const xs={auxiliary:135,target:545,candidate:945};const pos={};
+ ["auxiliary","target","candidate"].forEach(role=>{
+  const name=role==="auxiliary"?"Auxiliary nodes":role==="target"?"Fraud targets":"Candidates";
+  graph.append(label(xs[role]-90,38,name,"role-title"));graph.append(label(xs[role]-90,66,full[role]===null?"Count not supplied":role==="candidate"&&candidateFromEdges?"At least "+full[role]+" by local indices":String(full[role])+" recorded"));
+  for(let i=0;i<shown[role];i++){const y=110+i*(510/Math.max(1,shown[role]-1));pos[role+":"+i]={x:xs[role],y};}
+ });
+ let valid=0,invalid=0,visible=0;const wanted=$("edge-filter").value;const edgeLayer=svg("g",{});
+ if(edges){
+  edges.forEach(e=>{
+   if(!Array.isArray(e)||e.length!==3||!integer(e[0])||!integer(e[2])||!Object.hasOwn(full,e[1])||e[0]>=full.auxiliary||(full[e[1]]!==null&&e[2]>=full[e[1]])){invalid++;return;}
+   valid++;if(wanted!=="all"&&e[1]!==wanted)return;
+   const from=pos["auxiliary:"+e[0]],to=pos[e[1]+":"+e[2]];if(!from||!to||visible>=220)return;
+   const color=e[1]==="target"?"#d65a32":e[1]==="candidate"?"#647882":"#17242b";
+   edgeLayer.append(svg("line",{x1:from.x,y1:from.y,x2:to.x,y2:to.y,stroke:color,class:"edge"},"Auxiliary "+e[0]+" to "+e[1]+" "+e[2]));visible++;
+  });graph.append(edgeLayer);
+ }
+ Object.entries(pos).forEach(([k,p])=>{
+  const parts=k.split(":"),role=parts[0],index=Number(parts[1]);const fill=role==="target"?"#d65a32":role==="candidate"?"#ffffff":"#17242b";
+  const correct=role==="target"&&Array.isArray(z.attacked_correct)&&typeof z.attacked_correct[index]==="boolean"?z.attacked_correct[index]:null;
+  const stroke=correct===null?(role==="candidate"?"#7d8b91":"#f7f5ef"):(correct?"#16734c":"#a92f36");
+  graph.append(svg("circle",{cx:p.x,cy:p.y,r:11,fill,stroke,"stroke-width":correct===null?2:4},role+" local ID "+index+(correct===null?"":correct?", correctly detected":", missed")));
+  graph.append(label(p.x+18,p.y+5,(role==="auxiliary"?"A":role==="target"?"T":"C")+index,"node-label"));
+ });
+ if(!edges){graph.append(label(250,650,"No edge list supplied. Role counts only.","placeholder"));$("graph-caption").textContent="This export has no saved edge array for the selected arm. The view shows role counts only and invents no connections.";return;}
+ const mismatch=edges.length!==c.edge_budget?" Recorded edge-array length differs from the case budget.":"";
+ $("graph-caption").textContent="Local IDs only. Compact view shows "+visible+" of "+valid+" valid recorded edges, with at most18nodes per role and220edges. "+(wanted==="all"?"All edge roles selected.":"Filtered to "+wanted+" edges.")+(invalid?" "+invalid+" malformed or out-of-range edges were omitted.":"")+mismatch+" Outcome rings appear only when saved per-target predictions are supplied. No new inference occurs.";
+}
+$("case").addEventListener("change",renderCase);$("arm").addEventListener("change",renderCase);$("edge-filter").addEventListener("change",renderCase);
+$("file").addEventListener("change",async e=>{const f=e.target.files[0];if(!f)return;try{install(JSON.parse(await f.text()),"local file "+f.name);}catch(err){setStatus(err.message,"error");}});
+(async()=>{
+ for(const path of ["../../results/final_staged/final_public.json","./final_public.json"]){
+  try{const response=await fetch(path,{credentials:"omit",cache:"no-store"});if(!response.ok)continue;const data=await response.json();if(data.status!=="completed")continue;install(data,path);return;}catch(_){/* file:// fetch or unavailable formal artifact: retain explicit pending state */}
+ }
+})();
+</script>
+</body>
+</html>
