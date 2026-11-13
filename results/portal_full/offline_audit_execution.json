@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "error": null,
+  "waiting_wall_seconds": 12477.439861749997,
+  "audit_outer_wall_seconds": 617.7846778510138,
+  "audit_source_sha256": "63431f80c4d3f85a45b8d43faec51d510f88cf51bc00dbf0c58d1183faccdc0b",
+  "GPU_hours": 0,
+  "automatic_retry": false
+}

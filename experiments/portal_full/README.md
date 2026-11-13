@@ -1,5 +1,9 @@
 # Frozen context-retrieval complete-cohort benchmark
 
+**Completed:** neural 45.3733% MR, native 44.2638%, matched random 44.5649%.
+Direct search 45.3955%, its random 44.6156%. Both overall-mean screens pass;
+see [full evidence, uncertainty and limits](../../results/portal_full/).
+
 This applies the already fitted three downstream models to **all 909 original
 TEST groups**, 10,515 fraud-target occurrences and 1,221 unique targets per
 noise repetition. It does not retrain or select models on TEST. Both the neural
@@ -7,7 +11,7 @@ decoder and direct-search candidate, plus their own activation/dose-matched
 random controls and native author model, remain fixed from development.
 
 The author checkpoint, bank size eight, geometric donor, TRAIN-benign pool,
-native features/owned mask/degrees/budgets, independent GAGA teacher and gain
+native features/owned mask/injected degrees/budgets, independent GAGA teacher and gain
 threshold 0.0001 are unchanged. All physical option inputs and decisions are
 hash-sealed before the official GAGA victim loads. Evaluation reuses these
 physical canonical inputs rather than reconstructing every duplicate arm.
@@ -26,3 +30,10 @@ driven expansion. Caps: 2,727 author generations, at most 24,543 physical
 canonical builds, 2,727 batched own-teacher calls (up to 24,543 hard contexts),
 2,727 downstream policy calls and 13,635 official GAGA TEST calls. No case
 filtering, replacement or early efficacy inspection is allowed.
+
+The scientific source was frozen at `3ec9664`. A separately registered saved
+auditor was queued on QY without modifying that source. It ran after scientific
+completion and passed 157,331 checks, including 2,727 downstream policy replays
+and no pretrained classifier replay. This is root-authored automated checking,
+not independent implementation review or human verification. The audit sidecar
+is in `analyses/`; it provides server-side offline completion, not a Dot handoff.

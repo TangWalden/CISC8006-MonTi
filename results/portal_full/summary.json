@@ -1,0 +1,222 @@
+{
+  "status": "completed",
+  "protocol_sha256": "206225b7a23e40e941571fd050630d7eb42f6c2ed7b7d406317f98272885f5a1",
+  "counters": {
+    "generations": 2727,
+    "physical_canonical_builds": 20975,
+    "own_teacher_batched_forwards": 2727,
+    "own_teacher_hard_contexts": 20975,
+    "policy_forwards": 2727,
+    "official_GAGA_TEST": 13635,
+    "updates": 0,
+    "API_calls": 0
+  },
+  "GPU_hours": 0,
+  "metrics": [
+    {
+      "seed": 0,
+      "arm": "native",
+      "MR": 44.18449833571089,
+      "teacher_MR": 28.930099857346647,
+      "wrong": 4646,
+      "occurrences": 10515,
+      "active_cases": 0
+    },
+    {
+      "seed": 0,
+      "arm": "neural",
+      "MR": 45.28768426058012,
+      "teacher_MR": 29.538754160722778,
+      "wrong": 4762,
+      "occurrences": 10515,
+      "active_cases": 757
+    },
+    {
+      "seed": 0,
+      "arm": "random_neural",
+      "MR": 44.545886828340464,
+      "teacher_MR": 29.053732762719925,
+      "wrong": 4684,
+      "occurrences": 10515,
+      "active_cases": 757
+    },
+    {
+      "seed": 0,
+      "arm": "direct",
+      "MR": 45.335235378031385,
+      "teacher_MR": 29.586305278174038,
+      "wrong": 4767,
+      "occurrences": 10515,
+      "active_cases": 706
+    },
+    {
+      "seed": 0,
+      "arm": "random_direct",
+      "MR": 44.61245839277223,
+      "teacher_MR": 29.09177365668093,
+      "wrong": 4691,
+      "occurrences": 10515,
+      "active_cases": 706
+    },
+    {
+      "seed": 1,
+      "arm": "native",
+      "MR": 44.260580123632906,
+      "teacher_MR": 28.920589633856395,
+      "wrong": 4654,
+      "occurrences": 10515,
+      "active_cases": 0
+    },
+    {
+      "seed": 1,
+      "arm": "neural",
+      "MR": 45.34474560152164,
+      "teacher_MR": 29.548264384213027,
+      "wrong": 4768,
+      "occurrences": 10515,
+      "active_cases": 755
+    },
+    {
+      "seed": 1,
+      "arm": "random_neural",
+      "MR": 44.583927722301475,
+      "teacher_MR": 29.044222539229672,
+      "wrong": 4688,
+      "occurrences": 10515,
+      "active_cases": 755
+    },
+    {
+      "seed": 1,
+      "arm": "direct",
+      "MR": 45.35425582501189,
+      "teacher_MR": 29.59581550166429,
+      "wrong": 4769,
+      "occurrences": 10515,
+      "active_cases": 726
+    },
+    {
+      "seed": 1,
+      "arm": "random_direct",
+      "MR": 44.64098906324298,
+      "teacher_MR": 29.101283880171184,
+      "wrong": 4694,
+      "occurrences": 10515,
+      "active_cases": 726
+    },
+    {
+      "seed": 2,
+      "arm": "native",
+      "MR": 44.34617213504517,
+      "teacher_MR": 28.9396100808369,
+      "wrong": 4663,
+      "occurrences": 10515,
+      "active_cases": 0
+    },
+    {
+      "seed": 2,
+      "arm": "neural",
+      "MR": 45.48739895387541,
+      "teacher_MR": 29.624346172135045,
+      "wrong": 4783,
+      "occurrences": 10515,
+      "active_cases": 755
+    },
+    {
+      "seed": 2,
+      "arm": "random_neural",
+      "MR": 44.56490727532097,
+      "teacher_MR": 29.044222539229672,
+      "wrong": 4686,
+      "occurrences": 10515,
+      "active_cases": 755
+    },
+    {
+      "seed": 2,
+      "arm": "direct",
+      "MR": 45.496909177365666,
+      "teacher_MR": 29.681407513076557,
+      "wrong": 4784,
+      "occurrences": 10515,
+      "active_cases": 716
+    },
+    {
+      "seed": 2,
+      "arm": "random_direct",
+      "MR": 44.59343794579173,
+      "teacher_MR": 29.053732762719925,
+      "wrong": 4689,
+      "occurrences": 10515,
+      "active_cases": 716
+    }
+  ],
+  "means": {
+    "native": 44.26375019812966,
+    "neural": 45.37327627199239,
+    "random_neural": 44.56490727532097,
+    "direct": 45.395466793469645,
+    "random_direct": 44.615628467268984
+  },
+  "contrasts": {
+    "neural__native": {
+      "deltas_pp": [
+        1.10318592486923,
+        1.0841654778887317,
+        1.1412268188302406
+      ],
+      "mean_pp": 1.1095260738627342,
+      "nominal_t95": [
+        1.0373514084563753,
+        1.181700739269093
+      ]
+    },
+    "neural__random_neural": {
+      "deltas_pp": [
+        0.7417974322396574,
+        0.7608178792201628,
+        0.9224916785544437
+      ],
+      "mean_pp": 0.8083689966714213,
+      "nominal_t95": [
+        0.5617198371660281,
+        1.0550181561768144
+      ]
+    },
+    "direct__native": {
+      "deltas_pp": [
+        1.1507370423204932,
+        1.0936757013789844,
+        1.1507370423204932
+      ],
+      "mean_pp": 1.1317165953399904,
+      "nominal_t95": [
+        1.0498782172151968,
+        1.213554973464784
+      ]
+    },
+    "direct__random_direct": {
+      "deltas_pp": [
+        0.7227769852591521,
+        0.7132667617689066,
+        0.9034712315739384
+      ],
+      "mean_pp": 0.7798383262006657,
+      "nominal_t95": [
+        0.513601424014172,
+        1.0460752283871595
+      ]
+    }
+  },
+  "owner_mean_criterion": {
+    "neural": true,
+    "direct": true
+  },
+  "scope": [
+    "Full original TEST cohort; historical TEST from other studies already observed, not untouched confirmation.",
+    "Existing downstream models reused without retraining/selection. One author checkpoint,three generation-noise repetitions.",
+    "Original TRAIN-only benign bank and independent teacher unchanged. Same graph budget,broader context access and additional surrogate information/compute.",
+    "All physical canonical options/choices sealed before original GAGA load; final scoring uses those actual graph inputs.",
+    "No outcome peeking/tuning/filtering/replacement or cap expansion; preserve failures and all denominators."
+  ],
+  "wall_seconds": 21649.80498305685,
+  "process_cpu_seconds": 52978.731701328
+}

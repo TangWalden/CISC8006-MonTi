@@ -4,6 +4,10 @@
 > [formal TEST](../results/final_staged/) failed its improvement criterion;
 > [author-checkpoint local correction](../results/local_swap/) also has no
 > native gain. The existing slides do not yet incorporate these outcomes.
+>
+> The latest [complete context-retrieval benchmark](../results/portal_full/)
+> is positive versus native and matched random. It is also absent from this
+> dated deck; use its result addendum for current evidence.
 
 The revised English presentation follows one story: MonTi's joint construction,
 a fixed upstream planner, a trained downstream candidate-edge policy, a matched

@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "protocol_sha256": "206225b7a23e40e941571fd050630d7eb42f6c2ed7b7d406317f98272885f5a1",
+  "checks": [
+    {
+      "group": 839,
+      "sequence_error": 0.0,
+      "own_teacher_logit_error": 0.0,
+      "physical_budget_passed": true,
+      "actions_identical": true
+    },
+    {
+      "group": 835,
+      "sequence_error": 0.0,
+      "own_teacher_logit_error": 0.0,
+      "physical_budget_passed": true,
+      "actions_identical": true
+    }
+  ],
+  "counters": {
+    "generations": 2,
+    "physical_canonical_builds": 18,
+    "own_teacher_batched_forwards": 2,
+    "own_teacher_hard_contexts": 18,
+    "official_GAGA_forwards": 0,
+    "TEST_queries": 0,
+    "updates": 0
+  },
+  "author_receipt": {
+    "downstream_seed": 0,
+    "capture_noise_seed": 0,
+    "author_configuration_seed": 3,
+    "checkpoint_sha256": "9f5dc7dd594a8e8927449665ef3a07b777199c2436d6fd1cc1f7adf0fdb6c23d",
+    "final_model_sha256": "9f5dc7dd594a8e8927449665ef3a07b777199c2436d6fd1cc1f7adf0fdb6c23d",
+    "config_sha256": "e27fd6959f35ab1786f35e4e70c89bec5156da1a6577f4481287310ebf552c2a",
+    "upstream_origin": "Official released best_models/checkpoints/GCN-GAGA-gossipcop_0.05-best_model.pickle",
+    "distinct_author_checkpoint_count": 1,
+    "capture_epoch": 0,
+    "capture_epoch_semantics": "Synthetic RNG key only, not an author training/best epoch",
+    "scheduler_steps_applied": 0,
+    "restored_temperature": 10,
+    "restored_epsilon": 10,
+    "upstream_state_sha256": "999cd331e0f31c126b15b6fbe33764a81493cd8d6cd0e910debd54f3901051f2",
+    "original_GCN_state_sha256": "7484a85f4634c3dd9154b2d5a64d78e3afcd1e341ef1fdc8f29eea8beeeadea1",
+    "upstream_optimizer_steps": 0,
+    "official_GAGA_loaded": false,
+    "strict_state_dictionary_compatible": true,
+    "configuration_adaptation": "CPU device and GCN-only loader declaration; author seed3 and all MonTi architecture/default flags retained.",
+    "RNG_scope": "Native eval keeps torch.randn latent noise when node_budget>1. Repetition0/1/2 keys are explicit per-case fork_rng, shared across arms; not historical CLI bitwise replay.",
+    "scheduler_scope": "Official run.py inference constructs initial scheduler objects; eval randomness=False ignores temperature/epsilon. No historical epoch is fabricated.",
+    "replication_scope": "One fixed author state, three downstream/capture-noise repetitions; not three independently trained author models or a paper-table equivalence claim."
+  },
+  "wall_seconds": 24.8398620611988,
+  "process_cpu_seconds": 52.456009259,
+  "GPU_hours": 0
+}

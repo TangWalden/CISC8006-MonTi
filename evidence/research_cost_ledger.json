@@ -16,13 +16,15 @@
   "archive": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/research_cost_ledger.json",
   "last_completed_extension": {
     "date": "2026-11-13",
-    "method": "Saved portal dose and transfer diagnosis",
+    "method": "Post-hoc saved full-cohort weighting sensitivity",
     "GPU_hours": 0,
-    "outer_wall_seconds": 1.6545717581175268,
-    "wall_seconds": 0.40268067410215735,
-    "process_CPU_seconds": 1.270478851,
-    "graph_classifier_calls": 0,
-    "parameter_loads": 0
+    "wall_seconds": 0.9578458729665726,
+    "process_CPU_seconds": 0.957273124,
+    "outer_wall_seconds": 1.134377694921568,
+    "model_calls": 0,
+    "TEST_queries": 0,
+    "saved_TEST_prediction_reads": true,
+    "classification": "Posthoc after primary results; additional descriptive estimands, not primary replacement or preregistration."
   },
   "completed_extensions": [
     {
@@ -398,6 +400,59 @@
       "process_CPU_seconds": 1.270478851,
       "graph_classifier_calls": 0,
       "parameter_loads": 0
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Frozen portal decoder complete original TEST cohort",
+      "GPU_hours": 0,
+      "scientific_source": "3ec9664e2b25f11eed5e96f72b54766b36982332",
+      "protocol_sha256": "206225b7a23e40e941571fd050630d7eb42f6c2ed7b7d406317f98272885f5a1",
+      "main_wall_seconds": 21649.80498305685,
+      "main_process_CPU_seconds": 52978.731701328,
+      "guardian_wall_seconds": 21685.632640896132,
+      "main_counters": {
+        "generations": 2727,
+        "physical_canonical_builds": 20975,
+        "own_teacher_batched_forwards": 2727,
+        "own_teacher_hard_contexts": 20975,
+        "policy_forwards": 2727,
+        "official_GAGA_TEST": 13635,
+        "updates": 0,
+        "API_calls": 0
+      },
+      "preparation_wall_seconds": 4.170113374944776,
+      "preflight_wall_seconds": 24.8398620611988,
+      "preflight_process_CPU_seconds": 52.456009259,
+      "preflight_counters": {
+        "generations": 2,
+        "physical_canonical_builds": 18,
+        "own_teacher_batched_forwards": 2,
+        "own_teacher_hard_contexts": 18,
+        "official_GAGA_forwards": 0,
+        "TEST_queries": 0,
+        "updates": 0
+      },
+      "audit_wall_seconds": 613.185689356178,
+      "audit_process_CPU_seconds": 819.640521122,
+      "audit_outer_wall_seconds": 617.7846778510138,
+      "audit_waiting_wall_seconds_overlaps_main": 12477.439861749997,
+      "audit_downstream_parameter_loads": 3,
+      "audit_policy_forwards": 2727,
+      "audit_graph_classifier_calls": 0,
+      "scope": "All909originalTESTgroups perrepeat. Existing128TRAIN-fitted downstreams reused without retraining. CPU4nice10,noGPU/API. RawTESTgraphoutputs queried13635times after allphysicalchoicesseal. Allfailedhistoricalattempts retained separately.",
+      "timer_scope": "Main execution-region CPU begins after imports/device checks; startup CPU outside region unmetered. Guardian wall includes preflight and main child startup; registration preparation is separate. Audit wait overlaps main and is not extra compute time."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Post-hoc saved full-cohort weighting sensitivity",
+      "GPU_hours": 0,
+      "wall_seconds": 0.9578458729665726,
+      "process_CPU_seconds": 0.957273124,
+      "outer_wall_seconds": 1.134377694921568,
+      "model_calls": 0,
+      "TEST_queries": 0,
+      "saved_TEST_prediction_reads": true,
+      "classification": "Posthoc after primary results; additional descriptive estimands, not primary replacement or preregistration."
     }
   ],
   "current_action_blind_phase_GPU_hours": 0

@@ -1,0 +1,8 @@
+{
+  "status": "queued_after_scientific_completion",
+  "pid": 3455332,
+  "audit_source_sha256": "63431f80c4d3f85a45b8d43faec51d510f88cf51bc00dbf0c58d1183faccdc0b",
+  "scientific_source_modified": false,
+  "duplicate_scientific_launch": false,
+  "external_messages": false
+}

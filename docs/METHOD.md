@@ -1,5 +1,11 @@
 # Fixed-upstream staged attack construction
 
+> Historical staged-method description. The current author-checkpoint
+> extension is [context retrieval](../experiments/portal_decoder/), with a
+> [completed full-cohort comparison](../results/portal_full/). The older
+> staged full evaluation was negative; the body below retains that method's
+> original scope and development results.
+
 The selected extension separates a MonTi attack into target-facing upstream
 planning and downstream selection of candidate connections. The upstream is
 frozen while a small specialized downstream is trained. The measured claim is

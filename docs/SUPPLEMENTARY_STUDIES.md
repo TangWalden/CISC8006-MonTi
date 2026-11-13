@@ -1,12 +1,14 @@
 # Supplementary research and experiment records
 
 The studied extension separates upstream construction and downstream correction.
-The positive development result did not establish a stable learning advantage
-in the completed full TEST. Later author-checkpoint studies remain development.
+The original staged development result did not establish a stable learning
+advantage in its completed full TEST. The later author-checkpoint context-
+retrieval benchmark has a positive complete-cohort matched comparison.
 All positive, null, negative and failed outcomes keep their original scope.
 
 | Study | Recorded finding | Complete record |
 |---|---|---|
+| Context retrieval, complete original TEST cohort | Neural 45.3733%, native 44.2638%, matched random 44.5649%; +1.1095/+0.8084 pp. All three conditional repeats positive. Direct search slightly higher; broader context/surrogate access and earlier TEST exposure disclosed. | [All rates, controls, cases and audit](../results/portal_full/) |
 | Context-retrieval decoder | Neural 59.1360%, native 57.9101%, matched random 58.0269%. Direct search 59.2528%, its random 58.1436%. Both development mean criteria pass; random-contrast interval crosses zero. | [Methods, all repeats and audit](../results/portal_decoder/) |
 | Contextual feature residuals | Attention 57.3263%, native 57.9101%, matched random 57.9685%; mean-context residual also below baseline/random. Both owner mean criteria fail. | [Results, gradients and audit](../results/residual_attention/) |
 | Completed staged TEST, 12 November | Native 43.8168%, random 44.0165%, learned 44.2257%. Qualification failed; seed 2 negative and both intervals cross zero. | [Full comparison](../results/final_staged/) |

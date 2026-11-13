@@ -10,7 +10,7 @@ and agent audits are not human technical review or verified student contribution
 |---|---|---|---|---|---|
 | Understanding and planning | Review the paper, candidate flag and budget semantics | Codex | Define learned versus random; correct flag mapping; retain and disclose the incidence-based budget | Team technical verification pending | [Protocol][protocol], [frozen specification][frozen] |
 | Implementation and reproduction | Implement checks, run the frozen baseline and recount saved outputs | Codex | Retain failed runs and use the raw-output recount; do not select results by score | Actual team live code/configuration review pending | [Run registry][runs], [baseline audit][baseline] |
-| Improvement and critical analysis | Compare controls, examine failures and interpret development results | Codex and recorded DeepSeek experiments | Preserve negative controls; report the VALID gain and failed frozen CI gate without adding seeds | Team technical verification pending | [Current results](results/), [previous studies](results/previous_studies.csv), [full agent record][history] |
+| Improvement and critical analysis | Compare controls, inspect failures and complete frozen evaluation | Codex and recorded DeepSeek experiments | Retain earlier negative studies and current positive retrieval comparison; disclose controls, access changes and exploratory scope | Team technical verification pending | [Current complete results](results/portal_full/), [previous studies](results/previous_studies.csv), [full agent record][history] |
 
 ## Recorded experimental use
 
@@ -123,7 +123,8 @@ technical accept/change/reject check, with evidence and confirmation, remains pe
 At the owner's request, Codex rewrote the presentation around upstream/downstream
 role division and created native editable Bento diagrams, two charts, a comparison
 table and English speaker notes. All numerical charts use the committed pilot
-evidence. The registered full TEST page remains pending. A separate agent checked
+evidence. The deck described full TEST as pending at build time; later result
+addenda now exist. A separate agent checked
 numbers and document changes; the root agent visually reviewed the slide bodies
 and corrected overflow and a missing feedback arrow. The official Bento converter
 produced an editable PPTX with its conversion differences retained. These are AI
@@ -182,6 +183,35 @@ or human verification, novelty or completed course requirements. Under the
 owner's prior conditional authorization, the next complete-cohort benchmark
 keeps the existing models and controls frozen. Previously observed TEST
 outcomes preclude calling it untouched confirmation.
+
+## 13 November: complete frozen-retrieval evaluation and offline audit
+
+After both predeclared candidates exceeded native and matched random in
+development mean, Codex followed the owner's existing conditional authorization
+to run the complete original TEST cohort. All 909 groups, 10,515 occurrences
+and 1,221 unique targets per repeat were retained. Existing downstream fits,
+eight-node banks, gate threshold and models stayed fixed; no retraining or
+outcome-driven resource expansion occurred. All physical choices were sealed
+before official GAGA loaded. Neural MR was 45.3733%, native 44.2638% and matched
+random 44.5649%; direct search was slightly above neural. Both candidates and
+all repeats are reported, with conditional intervals and prior TEST exposure.
+
+The root-authored saved audit passed 157,331 checks, including three downstream
+parameter loads and 2,727 policy replays, with zero pretrained-classifier
+replays. A separately labeled POST HOC standard-library analysis checked equal-
+group and equal-target-context weighting after primary outcomes were known.
+It read saved TEST predictions and made no new model queries. These checks are
+not independent implementation or human verification.
+
+When the owner asked about Dot offline work, Codex checked official OpenAI Docs.
+No cloud thread, Dot handoff or credential transfer was performed. The already
+registered auditor was instead queued as a detached QY postprocessing stage,
+without changing scientific source. Computation and automatic audit both
+completed independently of the local client. GPU/API use was zero; actual CPU,
+guardian, audit and overlapping waiting times are recorded separately. Current
+results and assessment pointers were updated; dated PDF/PPTX binaries were
+not rebuilt or relabeled as current. Course approvals, human review, actual
+contributions, rehearsal, defense and final freeze remain unconfirmed.
 
 ## Publication cleanup (historical)
 

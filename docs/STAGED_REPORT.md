@@ -6,6 +6,11 @@
 > correction](../results/local_swap/) is also null. These result addenda must
 > be incorporated before final submission; this draft is not final evidence
 > of a successful improvement.
+>
+> The latest [complete context-retrieval benchmark](../results/portal_full/)
+> measures +1.1095 pp over its own native author baseline and +0.8084 pp over
+> matched random. It uses a different method and frozen author checkpoint;
+> it is not incorporated into this dated report/PDF body.
 
 ## A reproduction and development study
 

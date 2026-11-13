@@ -1,0 +1,12 @@
+{
+  "executed_source_hashes": {
+    "saved_audit.py": "63431f80c4d3f85a45b8d43faec51d510f88cf51bc00dbf0c58d1183faccdc0b",
+    "offline_audit_guardian.py": "42e2a8acbecd0fb3cf2c8cf265c79ace08342b7fcc32465b3ecf06c13580e743",
+    "saved_weighting_summary.py": "937e0f284ac1a0e27cef0c17d667d49ba8bf61af92a79fbdf62f432b878696bc"
+  },
+  "weighting_registration": {
+    "source_sha256": "937e0f284ac1a0e27cef0c17d667d49ba8bf61af92a79fbdf62f432b878696bc",
+    "registered_utc": "2026-11-13T15:50:23.422181+00:00",
+    "classification": "POST HOC after overall results; before new saved weighting calculations."
+  }
+}

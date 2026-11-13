@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "phases": [
+    {
+      "phase": "preflight",
+      "pid": 3430311,
+      "exit_code": 0,
+      "wall_seconds": 29.47950136102736
+    },
+    {
+      "phase": "run",
+      "pid": 3430428,
+      "exit_code": 0,
+      "wall_seconds": 21656.150724567007
+    }
+  ],
+  "wall_seconds": 21685.632640896132,
+  "GPU_hours": 0,
+  "automatic_retry": false
+}

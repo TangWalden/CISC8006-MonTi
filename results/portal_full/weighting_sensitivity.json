@@ -1,0 +1,175 @@
+{
+  "status": "completed",
+  "classification": "POST HOC; overall occurrence results already known before source registration. Not preregistration or a replacement primary metric.",
+  "input_sha256": "10eec2d1d24e0a6d435e8da2d5d4808be1a015fbb2122c5b82f372fbd71c4621",
+  "metrics": [
+    {
+      "seed": 0,
+      "arm": "native",
+      "occurrence_MR": 44.18449833571089,
+      "group_equal_MR": 41.75988939290998,
+      "target_equal_context_average_MR": 39.2274904493105
+    },
+    {
+      "seed": 0,
+      "arm": "neural",
+      "occurrence_MR": 45.28768426058012,
+      "group_equal_MR": 43.119033142903255,
+      "target_equal_context_average_MR": 40.77275848267972
+    },
+    {
+      "seed": 0,
+      "arm": "random_neural",
+      "occurrence_MR": 44.545886828340464,
+      "group_equal_MR": 42.21850015660703,
+      "target_equal_context_average_MR": 39.76074573119664
+    },
+    {
+      "seed": 0,
+      "arm": "direct",
+      "occurrence_MR": 45.335235378031385,
+      "group_equal_MR": 43.13630776073577,
+      "target_equal_context_average_MR": 40.9127148726361
+    },
+    {
+      "seed": 0,
+      "arm": "random_direct",
+      "occurrence_MR": 44.61245839277223,
+      "group_equal_MR": 42.281665950310575,
+      "target_equal_context_average_MR": 39.80696890241981
+    },
+    {
+      "seed": 1,
+      "arm": "native",
+      "occurrence_MR": 44.260580123632906,
+      "group_equal_MR": 41.655936144353966,
+      "target_equal_context_average_MR": 39.35097218609652
+    },
+    {
+      "seed": 1,
+      "arm": "neural",
+      "occurrence_MR": 45.34474560152164,
+      "group_equal_MR": 43.00149980494711,
+      "target_equal_context_average_MR": 40.874391666915415
+    },
+    {
+      "seed": 1,
+      "arm": "random_neural",
+      "occurrence_MR": 44.583927722301475,
+      "group_equal_MR": 42.054797439213516,
+      "target_equal_context_average_MR": 39.755956656414696
+    },
+    {
+      "seed": 1,
+      "arm": "direct",
+      "occurrence_MR": 45.35425582501189,
+      "group_equal_MR": 43.00470845914586,
+      "target_equal_context_average_MR": 40.87017672367608
+    },
+    {
+      "seed": 1,
+      "arm": "random_direct",
+      "occurrence_MR": 44.64098906324298,
+      "group_equal_MR": 42.11180270513429,
+      "target_equal_context_average_MR": 39.81169606605901
+    },
+    {
+      "seed": 2,
+      "arm": "native",
+      "occurrence_MR": 44.34617213504517,
+      "group_equal_MR": 41.69386494159345,
+      "target_equal_context_average_MR": 39.65762540005626
+    },
+    {
+      "seed": 2,
+      "arm": "neural",
+      "occurrence_MR": 45.48739895387541,
+      "group_equal_MR": 43.14358463885149,
+      "target_equal_context_average_MR": 41.34183579925674
+    },
+    {
+      "seed": 2,
+      "arm": "random_neural",
+      "occurrence_MR": 44.56490727532097,
+      "group_equal_MR": 42.03414759175171,
+      "target_equal_context_average_MR": 40.00460911178499
+    },
+    {
+      "seed": 2,
+      "arm": "direct",
+      "occurrence_MR": 45.496909177365666,
+      "group_equal_MR": 43.14693991524196,
+      "target_equal_context_average_MR": 41.364921901888295
+    },
+    {
+      "seed": 2,
+      "arm": "random_direct",
+      "occurrence_MR": 44.59343794579173,
+      "group_equal_MR": 42.07060170886154,
+      "target_equal_context_average_MR": 40.016275434426916
+    }
+  ],
+  "means": {
+    "native": {
+      "occurrence_MR": 44.26375019812966,
+      "group_equal_MR": 41.70323015961913,
+      "target_equal_context_average_MR": 39.41202934515443
+    },
+    "neural": {
+      "occurrence_MR": 45.37327627199239,
+      "group_equal_MR": 43.08803919556728,
+      "target_equal_context_average_MR": 40.99632864961729
+    },
+    "random_neural": {
+      "occurrence_MR": 44.56490727532097,
+      "group_equal_MR": 42.10248172919075,
+      "target_equal_context_average_MR": 39.84043716646544
+    },
+    "direct": {
+      "occurrence_MR": 45.395466793469645,
+      "group_equal_MR": 43.09598537837453,
+      "target_equal_context_average_MR": 41.04927116606682
+    },
+    "random_direct": {
+      "occurrence_MR": 44.615628467268984,
+      "group_equal_MR": 42.154690121435465,
+      "target_equal_context_average_MR": 39.878313467635245
+    }
+  },
+  "descriptive_deltas_pp": {
+    "neural": {
+      "native": {
+        "occurrence_MR": 1.1095260738627317,
+        "group_equal_MR": 1.3848090359481517,
+        "target_equal_context_average_MR": 1.58429930446286
+      },
+      "random_neural": {
+        "occurrence_MR": 0.8083689966714189,
+        "group_equal_MR": 0.9855574663765339,
+        "target_equal_context_average_MR": 1.1558914831518479
+      }
+    },
+    "direct": {
+      "native": {
+        "occurrence_MR": 1.131716595339988,
+        "group_equal_MR": 1.392755218755397,
+        "target_equal_context_average_MR": 1.6372418209123936
+      },
+      "random_direct": {
+        "occurrence_MR": 0.779838326200661,
+        "group_equal_MR": 0.941295256939064,
+        "target_equal_context_average_MR": 1.1709576984315788
+      }
+    }
+  },
+  "definitions": {
+    "occurrence_MR": "All10515occurrences equalweight perrepeat; frozen primary.",
+    "group_equal_MR": "Each909scenario group equalweight, mean within-group MR.",
+    "target_equal_context_average_MR": "Each1221unique target equalweight after averaging its scenario-specific outcomes; not one deduplicated graph/prediction."
+  },
+  "scope": "Correlated memberships and adaptive history remain; weighting summaries are descriptive. Zero graph/checkpoint/model/API/TEST queries; saved TEST predictions read.",
+  "wall_seconds": 0.9578458729665726,
+  "process_cpu_seconds": 0.957273124,
+  "GPU_hours": 0,
+  "model_calls": 0
+}

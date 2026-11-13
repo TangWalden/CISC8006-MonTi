@@ -1,10 +1,10 @@
-# MonTi: Frozen Upstream, Local Downstream
+# MonTi: Frozen Upstream, Context Retrieval
 
 CISC8006 reproduction and extension of [MonTi](https://github.com/bdi-lab/MonTi).
 We freeze the upstream attack generator and learn downstream connections under
-controlled node/edge budgets. **The new context-retrieval downstream exceeds
-native and matched random in development mean; complete-cohort transfer remains
-to be checked.**
+controlled node/edge budgets. **The context-retrieval downstream improves
+complete-cohort GAGA miss rate by 1.1095 pp over native and 0.8084 pp over
+matched random.** This is one exploratory benchmark, not a first-novelty claim.
 
 ## Results
 
@@ -13,12 +13,9 @@ matched study; rates across rows use different cohorts/checkpoints.
 
 | Study | Native MR | Random control MR | Learned MR | Conclusion |
 |---|---:|---:|---:|---|
-| [Staged development](results/downstream_cooperation/) | 53.6486% | 57.0344% | 58.1436% | Native gain; learning advantage over random uncertain |
-| [Completed staged TEST](results/final_staged/) | 43.8168% | 44.0165% | 44.2257% | Criterion failed; one seed declined substantially |
-| [Author-checkpoint local swap, VALID](results/local_swap/) | 57.9101% | 57.8517% | 57.9101% | No gain over native |
-| [Author-checkpoint block swap, VALID](results/block_swap/) | 57.9101% | 57.9685% | 57.9101% | No native gain; below random |
-| [Author-checkpoint attention residual, VALID](results/residual_attention/) | 57.9101% | 57.9685% | 57.3263% | Below native and random |
-| [Context retrieval, VALID](results/portal_decoder/) | 57.9101% | 58.0269% | 59.1360% | +1.2259 pp native; +1.1092 pp random; full benchmark pending |
+| [Author-checkpoint context retrieval, all TEST groups](results/portal_full/) | 44.2638% | 44.5649% | **45.3733%** | Positive against both controls in all three conditional repeats |
+| [Context retrieval, VALID](results/portal_decoder/) | 57.9101% | 58.0269% | 59.1360% | Positive development mean; later complete-cohort result above |
+| [Earlier staged TEST, different upstreams](results/final_staged/) | 43.8168% | 44.0165% | 44.2257% | Criterion failed; negative history retained |
 
 The separate original six-run reproduction remains **inconclusive**:
 43.7280% learned-candidate versus 40.1902% random-candidate MR,
@@ -27,28 +24,28 @@ different from the downstream random controls above.
 
 ## Current method and evidence
 
-The latest local correction retains the **author's released checkpoint**,
-generated features, target edges, injected-to-injected edges, individual
-injected degrees and total budgets. Its null result revealed that many single
-edge swaps leave GAGA's added-neighbor membership unchanged. The registered
-[block-recipient follow-up](results/block_swap/) was null; its direct-GCN
-follow-up was withdrawn before scoring when the owner changed strategy.
-[Feature-residual attention](results/residual_attention/) also declined.
-The [context-retrieval decoder](results/portal_decoder/) learns to choose
-new TRAIN-benign relation context against same-pool random controls. Its
-development mean improves; direct teacher search reaches 59.2528% versus its
-58.1436% random control. The random-contrast interval still crosses zero.
-Both use broader context access and architecture-matched teacher information
-than the original local GCN-only attack. Complete-cohort evaluation will keep
-both candidates fixed and report failures as well as gains.
+Freeze the **author's released checkpoint** and all generated fake features.
+A new contextual dual encoder retrieves a TRAIN-benign connection endpoint,
+changing relation evidence while preserving target edges, injected-to-injected
+edges, every injected degree and total budgets. Random controls match the
+pool, donor, activation and exact exchange dose. Context access and GAGA
+surrogate information are broader than original local GCN-only MonTi.
+
+The [complete benchmark](results/portal_full/) covers all 909 TEST groups,
+10,515 occurrences and 1,221 unique targets per repeat. Existing downstream
+fits are reused; three repeats share one author checkpoint and overlapping
+targets. Neural-minus-random nominal 95% interval is [0.5617, 1.0550] pp,
+conditional on these repeats. Earlier TEST exposure limits confirmation.
+Direct teacher search reaches 45.3955% against its 44.6156% random control,
+slightly above neural. Earlier null/negative attempts remain recorded.
 
 ## Read and reproduce
 
 | Purpose | Entry |
 |---|---|
 | Course scoring points and genuine remaining work | [Assessment mapping](docs/ASSESSMENT.md) |
-| Method, controls and executable source | [Staged method](docs/METHOD.md), [local swap](experiments/local_swap/), [block swap](experiments/block_swap/) |
-| Latest results and audits | [Full staged TEST](results/final_staged/), [author local correction](results/local_swap/) |
+| Current method, controls and executable source | [Retrieval decoder](experiments/portal_decoder/), [complete-cohort runner](experiments/portal_full/) |
+| Latest results and audits | [Complete retrieval benchmark](results/portal_full/), [development](results/portal_decoder/) |
 | Setup and historical reproduction | [Reproducing](docs/REPRODUCING.md) |
 | Other attempts, including failures | [Supplementary index](docs/SUPPLEMENTARY_STUDIES.md) |
 | Report and presentation drafts | [Report](docs/STAGED_REPORT.md), [slides guide](docs/SLIDES_GUIDE.md) - predate the latest results |

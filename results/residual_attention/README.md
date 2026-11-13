@@ -56,5 +56,6 @@ recorded execution-region CPU 2,854.83 s, guardian 1,282.98 s. Imports/version
 checks precede that CPU timer; their CPU is unmetered, while guardian wall
 covers child startup. Teacher/preflight costs are separate. GPU/API/TEST use
 was zero. The current
-[context-retrieval decoder](../../experiments/portal_decoder/) remains a new
-registered study with no efficacy result yet.
+[context-retrieval decoder](../../experiments/portal_decoder/) subsequently
+completed a [positive matched full-cohort comparison](../portal_full/).
+That separate method does not change this negative result.

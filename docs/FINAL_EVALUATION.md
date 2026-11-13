@@ -1,5 +1,9 @@
 # Final evaluation: upstream/downstream role division
 
+> This is the earlier staged evaluation. The later author-checkpoint context-
+> retrieval benchmark is [complete and reported separately](../results/portal_full/).
+> Its positive comparison does not change the negative result below.
+
 Status: registered before model calls. Scientific source: `32d563f49e19cea3b74bc74f048ddd9a5a934074`.
 Protocol SHA256: `2716a20b1b8c251466e35f7e93b750a3ab72b668c38d0199f9026b9c884f675f`.
 Execution and a saved-record audit are complete. The registered criterion
