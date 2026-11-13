@@ -1,0 +1,28 @@
+{
+  "scope": "Post-hoc same-victim scale comparison; no teacher/victim logit scale equivalence assumed.",
+  "rows": [
+    {
+      "seed": 0,
+      "victim_mean_abs_margin_change": 0.018370716736346954,
+      "victim_median_abs_margin_change": 0.011497791856527328,
+      "victim_median_abs_native_margin": 1.8648169040679932,
+      "occurrences_change_atleast_native_boundary_distance": 6
+    },
+    {
+      "seed": 1,
+      "victim_mean_abs_margin_change": 0.0159739377319604,
+      "victim_median_abs_margin_change": 0.009689271450042725,
+      "victim_median_abs_native_margin": 1.859845221042633,
+      "occurrences_change_atleast_native_boundary_distance": 6
+    },
+    {
+      "seed": 2,
+      "victim_mean_abs_margin_change": 0.014570143863219514,
+      "victim_median_abs_margin_change": 0.0071680545806884766,
+      "victim_median_abs_native_margin": 1.8814366161823273,
+      "occurrences_change_atleast_native_boundary_distance": 5
+    }
+  ],
+  "model_calls": 0,
+  "wall_seconds": 0.03139244904741645
+}

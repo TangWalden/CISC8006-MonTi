@@ -7,6 +7,8 @@ All positive, null, negative and failed outcomes keep their original scope.
 
 | Study | Recorded finding | Complete record |
 |---|---|---|
+| Context-retrieval decoder | Neural 59.1360%, native 57.9101%, matched random 58.0269%. Direct search 59.2528%, its random 58.1436%. Both development mean criteria pass; random-contrast interval crosses zero. | [Methods, all repeats and audit](../results/portal_decoder/) |
+| Contextual feature residuals | Attention 57.3263%, native 57.9101%, matched random 57.9685%; mean-context residual also below baseline/random. Both owner mean criteria fail. | [Results, gradients and audit](../results/residual_attention/) |
 | Completed staged TEST, 12 November | Native 43.8168%, random 44.0165%, learned 44.2257%. Qualification failed; seed 2 negative and both intervals cross zero. | [Full comparison](../results/final_staged/) |
 | Author checkpoint plus one local swap, 13 November | Native and learned 57.9101%, matched random 57.8517%. No native gain. 455/669 activated target occurrences retain identical canonical neighbor memberships. | [Results and diagnosis](../results/local_swap/) |
 | Whole-column downstream correction | Native and learned 57.9101%, matched random 57.9685%; null. Original saved audit failed on empty-array deserialization; separate audit amendment passed without scientific rerun. | [Result and diagnosis](../results/block_swap/) |

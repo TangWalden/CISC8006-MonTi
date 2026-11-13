@@ -1,0 +1,193 @@
+{
+  "status": "completed",
+  "counters": {
+    "cards": 576,
+    "physical_canonical_builds": 4032,
+    "teacher_TRAIN": 384,
+    "teacher_VALID_selection": 192,
+    "neural_updates": 2672,
+    "training_visits": 3072,
+    "no_choice_skips": 400,
+    "official_GAGA_VALID": 960,
+    "generations": 0,
+    "TEST_queries": 0
+  },
+  "GPU_hours": 0,
+  "protocol_sha256": "b64ff37248f66fa57989481382d41a5c05632a20b2fca5b7fe720ea756838d23",
+  "metrics": [
+    {
+      "seed": 0,
+      "arm": "native",
+      "MR": 58.14360770577933,
+      "teacher_MR": 41.5061295971979,
+      "active_cases": 0
+    },
+    {
+      "seed": 0,
+      "arm": "neural",
+      "MR": 59.5446584938704,
+      "teacher_MR": 42.03152364273205,
+      "active_cases": 55
+    },
+    {
+      "seed": 0,
+      "arm": "random_neural",
+      "MR": 57.79334500875657,
+      "teacher_MR": 41.68126094570928,
+      "active_cases": 55
+    },
+    {
+      "seed": 0,
+      "arm": "direct",
+      "MR": 59.5446584938704,
+      "teacher_MR": 42.03152364273205,
+      "active_cases": 53
+    },
+    {
+      "seed": 0,
+      "arm": "random_direct",
+      "MR": 57.79334500875657,
+      "teacher_MR": 41.68126094570928,
+      "active_cases": 53
+    },
+    {
+      "seed": 1,
+      "arm": "native",
+      "MR": 58.14360770577933,
+      "teacher_MR": 41.5061295971979,
+      "active_cases": 0
+    },
+    {
+      "seed": 1,
+      "arm": "neural",
+      "MR": 59.19439579684764,
+      "teacher_MR": 42.03152364273205,
+      "active_cases": 57
+    },
+    {
+      "seed": 1,
+      "arm": "random_neural",
+      "MR": 58.66900175131349,
+      "teacher_MR": 41.68126094570928,
+      "active_cases": 57
+    },
+    {
+      "seed": 1,
+      "arm": "direct",
+      "MR": 59.36952714535902,
+      "teacher_MR": 42.03152364273205,
+      "active_cases": 53
+    },
+    {
+      "seed": 1,
+      "arm": "random_direct",
+      "MR": 58.844133099824866,
+      "teacher_MR": 41.68126094570928,
+      "active_cases": 53
+    },
+    {
+      "seed": 2,
+      "arm": "native",
+      "MR": 57.443082311733804,
+      "teacher_MR": 41.33099824868651,
+      "active_cases": 0
+    },
+    {
+      "seed": 2,
+      "arm": "neural",
+      "MR": 58.66900175131349,
+      "teacher_MR": 42.03152364273205,
+      "active_cases": 57
+    },
+    {
+      "seed": 2,
+      "arm": "random_neural",
+      "MR": 57.61821366024518,
+      "teacher_MR": 41.68126094570928,
+      "active_cases": 57
+    },
+    {
+      "seed": 2,
+      "arm": "direct",
+      "MR": 58.844133099824866,
+      "teacher_MR": 42.03152364273205,
+      "active_cases": 55
+    },
+    {
+      "seed": 2,
+      "arm": "random_direct",
+      "MR": 57.79334500875657,
+      "teacher_MR": 41.68126094570928,
+      "active_cases": 55
+    }
+  ],
+  "means": {
+    "native": 57.91009924109749,
+    "neural": 59.136018680677175,
+    "random_neural": 58.026853473438415,
+    "direct": 59.2527729130181,
+    "random_direct": 58.14360770577933
+  },
+  "owner_mean_criterion": {
+    "neural": true,
+    "direct": true
+  },
+  "contrasts": {
+    "neural__native": {
+      "deltas_pp": [
+        1.4010507880910694,
+        1.0507880910683056,
+        1.225919439579684
+      ],
+      "mean_pp": 1.2259194395796864,
+      "nominal_t95": [
+        0.7908690522165114,
+        1.6609698269428614
+      ]
+    },
+    "neural__random_neural": {
+      "deltas_pp": [
+        1.7513134851138332,
+        0.5253940455341493,
+        1.0507880910683056
+      ],
+      "mean_pp": 1.1091652072387628,
+      "nominal_t95": [
+        -0.41868154152887405,
+        2.6370119560063996
+      ]
+    },
+    "direct__native": {
+      "deltas_pp": [
+        1.4010507880910694,
+        1.225919439579691,
+        1.4010507880910623
+      ],
+      "mean_pp": 1.3426736719206076,
+      "nominal_t95": [
+        1.0914972136654377,
+        1.5938501301757775
+      ]
+    },
+    "direct__random_direct": {
+      "deltas_pp": [
+        1.7513134851138332,
+        0.5253940455341564,
+        1.0507880910682985
+      ],
+      "mean_pp": 1.1091652072387628,
+      "nominal_t95": [
+        -0.4186815415288665,
+        2.637011956006392
+      ]
+    }
+  },
+  "limitations": [
+    "Broader context access than original local candidate selector; same graphbudget is not same information/compute.",
+    "Knownbenign labels only originalTRAIN; no VALID/test truth or original victim answer guides retrieval.",
+    "Reused development,oneauthorcheckpoint,3noise repeats andtwo candidates; report both andnominal intervals,not untouchedconfirmation/firstnovelty.",
+    "Failed shortcut arose under invalid CSC eligibility; corrected rows normalized to CSR, all physical candidates still computed directly. Originalfailedsource/records retained."
+  ],
+  "wall_seconds": 3533.6604581379797,
+  "process_cpu_seconds": 8194.892342997
+}

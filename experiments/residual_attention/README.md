@@ -28,5 +28,8 @@ gradients, subject to a canonical-input/gradient preflight. No straight-through
 topology derivative is used. The full downstream protocol must be frozen
 after that construction check and before any new development scoring.
 
-This is a new design under preparation. It has no measured efficacy or
+The [completed development result](../../results/residual_attention/) is
+negative: attention57.3263%, native57.9101%, matchedrandom57.9685%; the mean
+network also declines. Exact gradients and feature constraints passed,
+but neither candidate met the owner mean criterion. No efficacy or
 first-novelty claim. Original failed/null studies stay preserved.

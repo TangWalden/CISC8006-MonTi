@@ -1,0 +1,176 @@
+{
+  "status": "completed",
+  "counters": {
+    "cards": 576,
+    "updates": 3072,
+    "own_teacher_TRAIN": 3072,
+    "own_teacher_VALID": 960,
+    "official_GAGA_VALID": 960,
+    "upstream_updates": 0,
+    "generations": 0,
+    "TEST_queries": 0
+  },
+  "GPU_hours": 0,
+  "protocol_sha256": "64e1887ebd711eb8a4d580c182f4db068df4050e2941884e040cab348c5b8172",
+  "metrics": [
+    {
+      "seed": 0,
+      "arm": "native",
+      "MR": 58.14360770577933,
+      "teacher_MR": 41.5061295971979
+    },
+    {
+      "seed": 0,
+      "arm": "attention",
+      "MR": 57.61821366024518,
+      "teacher_MR": 41.68126094570928
+    },
+    {
+      "seed": 0,
+      "arm": "random_attention",
+      "MR": 58.31873905429072,
+      "teacher_MR": 41.5061295971979
+    },
+    {
+      "seed": 0,
+      "arm": "mean",
+      "MR": 57.61821366024518,
+      "teacher_MR": 41.68126094570928
+    },
+    {
+      "seed": 0,
+      "arm": "random_mean",
+      "MR": 58.14360770577933,
+      "teacher_MR": 41.5061295971979
+    },
+    {
+      "seed": 1,
+      "arm": "native",
+      "MR": 58.14360770577933,
+      "teacher_MR": 41.5061295971979
+    },
+    {
+      "seed": 1,
+      "arm": "attention",
+      "MR": 57.443082311733804,
+      "teacher_MR": 41.68126094570928
+    },
+    {
+      "seed": 1,
+      "arm": "random_attention",
+      "MR": 57.96847635726795,
+      "teacher_MR": 41.5061295971979
+    },
+    {
+      "seed": 1,
+      "arm": "mean",
+      "MR": 57.443082311733804,
+      "teacher_MR": 41.68126094570928
+    },
+    {
+      "seed": 1,
+      "arm": "random_mean",
+      "MR": 58.14360770577933,
+      "teacher_MR": 41.5061295971979
+    },
+    {
+      "seed": 2,
+      "arm": "native",
+      "MR": 57.443082311733804,
+      "teacher_MR": 41.33099824868651
+    },
+    {
+      "seed": 2,
+      "arm": "attention",
+      "MR": 56.91768826619965,
+      "teacher_MR": 41.5061295971979
+    },
+    {
+      "seed": 2,
+      "arm": "random_attention",
+      "MR": 57.61821366024518,
+      "teacher_MR": 41.33099824868651
+    },
+    {
+      "seed": 2,
+      "arm": "mean",
+      "MR": 57.09281961471103,
+      "teacher_MR": 41.5061295971979
+    },
+    {
+      "seed": 2,
+      "arm": "random_mean",
+      "MR": 57.443082311733804,
+      "teacher_MR": 41.33099824868651
+    }
+  ],
+  "means": {
+    "native": 57.91009924109749,
+    "attention": 57.32632807939288,
+    "random_attention": 57.96847635726795,
+    "mean": 57.38470519556334,
+    "random_mean": 57.91009924109749
+  },
+  "contrasts": {
+    "attention__native": {
+      "deltas_pp": [
+        -0.5253940455341493,
+        -0.7005253940455276,
+        -0.5253940455341564
+      ],
+      "mean_pp": -0.5837711617046111,
+      "nominal_t95": [
+        -0.834947619959781,
+        -0.3325947034494412
+      ]
+    },
+    "attention__random_attention": {
+      "deltas_pp": [
+        -0.7005253940455347,
+        -0.5253940455341493,
+        -0.7005253940455347
+      ],
+      "mean_pp": -0.6421482778750729,
+      "nominal_t95": [
+        -0.8933247361302581,
+        -0.3909718196198877
+      ]
+    },
+    "mean__native": {
+      "deltas_pp": [
+        -0.5253940455341493,
+        -0.7005253940455276,
+        -0.3502626970227709
+      ],
+      "mean_pp": -0.5253940455341493,
+      "nominal_t95": [
+        -0.9604444328973155,
+        -0.090343658170983
+      ]
+    },
+    "mean__random_mean": {
+      "deltas_pp": [
+        -0.5253940455341493,
+        -0.7005253940455276,
+        -0.3502626970227709
+      ],
+      "mean_pp": -0.5253940455341493,
+      "nominal_t95": [
+        -0.9604444328973155,
+        -0.090343658170983
+      ]
+    }
+  },
+  "owner_mean_criterion": {
+    "attention": false,
+    "mean": false
+  },
+  "limitations": [
+    "Reused development and one author checkpoint,3cached noise repetitions.",
+    "Independent GAGA architecture/fullTRAIN refit changes GCN-only attacker knowledge. Teacher quality is in-sample.",
+    "Mean ablation differs effective capacity; not proof solely of attention causality.",
+    "Two candidate network designs and adaptive history; report both means and nominal intervals, no first novelty or significance guarantee."
+  ],
+  "wall_seconds": 1276.7900833990425,
+  "process_cpu_seconds": 2854.82610988
+}

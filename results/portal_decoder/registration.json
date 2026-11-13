@@ -1,0 +1,19 @@
+{
+  "source_commit": "779bc276fa7d36639fb20326501a8abe043282b0",
+  "sources": {
+    "model.py": "71dcf718c861f6d71f73ee9e50880fe0366ffdd08a2c8a56cecdf783c49e56aa",
+    "geometry_hard.py": "6ca342c2b103af1bf9ad04113a32d6e95eb4473e32de89a15f3d1e30980a23ba",
+    "preflight_hard_v3.py": "1320ff4fce8c151c749f0fb72b77dd95847057b47f9eb280e4862e2ec6ebb2f4",
+    "sparse_checks.py": "f9253e964069872b6dc509c97e97472fa3e6adf01bbfd4a95d562660fece9cd3",
+    "run.py": "67b516aa78b5e98fcaad68de7f9759642b96c9dfa684be81b864602b6a8fe814",
+    "README.md": "b1223592ccdb9b84d21ddb364e605c158c10c723d2ec6cde623b6b8a01632559"
+  },
+  "runtime_root": "/home/tjy/Project/MonTi-course",
+  "support_source": "/home/tjy/Project/MonTi-course/runs/block_swap_20261113_attempt1/source",
+  "teacher_checkpoint": "/home/tjy/Project/MonTi-course/runs/residual_attention_20261113_attempt1/teacher/model.pt",
+  "teacher_sha256": "eec1e5f55006ef7405e7256db29b9ff6e337b5bd8826d8da4e7a84de7910df85",
+  "capture_parent": "/home/tjy/Project/MonTi-course/runs/local_swap_20261113_attempt1/main",
+  "registered_utc": "2026-11-13T03:29:44.633082+00:00",
+  "scope": "TRAIN-only preflight of new remote-context decoder: preserve features/structural budgets, independently check portal token affine identity and own-teacher logits. No official-victim calls.",
+  "amendment": "Correct only newly-written CSC/CSR eligibility extraction, retain invalidattempt1cards/source/stopreceipt. Explicit CSR/CSC regression plus cached and actual adjacency assertions before modelcalls. Original DATA/caches remain unchanged."
+}

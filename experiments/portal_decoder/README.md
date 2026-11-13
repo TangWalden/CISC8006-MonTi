@@ -31,5 +31,23 @@ to CSR and has an explicit CSR/CSC regression test. The new implementation const
 counterfactual graph, without using the shortcut or relaxing its tolerance.
 Training labels come from the
 attacker's known original TRAIN partition; no VALID/test truth or official
-victim answers select a portal. This is preparation, not measured efficacy or
-first novelty. Earlier negative attempts remain intact.
+victim answers select a portal. The corrected development study completed:
+neural 59.1360%, native 57.9101%, matched random 58.0269%; direct search
+59.2528% versus its random 58.1436%. Both overall-mean criteria pass, while
+the nominal random-contrast interval includes zero. See the
+[complete results and limitations](../../results/portal_decoder/).
+This is not established first novelty or complete-cohort efficacy.
+Earlier negative attempts remain intact.
+
+## Active files
+
+| File | Purpose |
+|---|---|
+| `model.py` | Contextual query/key/change scorer |
+| `geometry_hard.py` | Corrected CSR/CSC-safe eligibility and endpoint replacement |
+| `run.py` | Physical counterfactuals, listwise training, seals and evaluation |
+| `sparse_checks.py`, `preflight_hard_v3.py` | Format regression and real-graph eligibility/budget checks |
+
+`geometry.py`, `preflight.py` and `preflight_hard_v2.py` are retained failed or
+incomplete construction prototypes. The active run uses the corrected files
+above, not the affine shortcut. All original data and caches remain unchanged.

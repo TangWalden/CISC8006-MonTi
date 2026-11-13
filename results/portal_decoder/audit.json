@@ -1,0 +1,655 @@
+{
+  "status": "passed",
+  "checks": 19593,
+  "metrics": [
+    {
+      "seed": 0,
+      "arm": "native",
+      "MR": 58.14360770577933
+    },
+    {
+      "seed": 0,
+      "arm": "neural",
+      "MR": 59.5446584938704
+    },
+    {
+      "seed": 0,
+      "arm": "random_neural",
+      "MR": 57.79334500875657
+    },
+    {
+      "seed": 0,
+      "arm": "direct",
+      "MR": 59.5446584938704
+    },
+    {
+      "seed": 0,
+      "arm": "random_direct",
+      "MR": 57.79334500875657
+    },
+    {
+      "seed": 1,
+      "arm": "native",
+      "MR": 58.14360770577933
+    },
+    {
+      "seed": 1,
+      "arm": "neural",
+      "MR": 59.19439579684764
+    },
+    {
+      "seed": 1,
+      "arm": "random_neural",
+      "MR": 58.66900175131349
+    },
+    {
+      "seed": 1,
+      "arm": "direct",
+      "MR": 59.36952714535902
+    },
+    {
+      "seed": 1,
+      "arm": "random_direct",
+      "MR": 58.844133099824866
+    },
+    {
+      "seed": 2,
+      "arm": "native",
+      "MR": 57.443082311733804
+    },
+    {
+      "seed": 2,
+      "arm": "neural",
+      "MR": 58.66900175131349
+    },
+    {
+      "seed": 2,
+      "arm": "random_neural",
+      "MR": 57.61821366024518
+    },
+    {
+      "seed": 2,
+      "arm": "direct",
+      "MR": 58.844133099824866
+    },
+    {
+      "seed": 2,
+      "arm": "random_direct",
+      "MR": 57.79334500875657
+    }
+  ],
+  "means": {
+    "native": 57.91009924109749,
+    "neural": 59.136018680677175,
+    "random_neural": 58.026853473438415,
+    "direct": 59.2527729130181,
+    "random_direct": 58.14360770577933
+  },
+  "owner_mean_criterion": {
+    "neural": true,
+    "direct": true
+  },
+  "paired": [
+    {
+      "seed": 0,
+      "mode": "neural",
+      "control": "native",
+      "gained": 8,
+      "lost": 0,
+      "net": 8,
+      "group_wins": 7,
+      "group_ties": 57,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1356,
+          "targets": 6,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1505,
+          "targets": 13,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "mode": "neural",
+      "control": "native",
+      "gained": 7,
+      "lost": 1,
+      "net": 6,
+      "group_wins": 7,
+      "group_ties": 56,
+      "group_losses": 1,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1316,
+          "targets": 8,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1172,
+          "targets": 14,
+          "gained": 0,
+          "lost": 1,
+          "net": -1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "mode": "neural",
+      "control": "native",
+      "gained": 8,
+      "lost": 1,
+      "net": 7,
+      "group_wins": 7,
+      "group_ties": 56,
+      "group_losses": 1,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1492,
+          "targets": 10,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1441,
+          "targets": 4,
+          "gained": 0,
+          "lost": 1,
+          "net": -1
+        },
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "mode": "neural",
+      "control": "random_neural",
+      "gained": 10,
+      "lost": 0,
+      "net": 10,
+      "group_wins": 8,
+      "group_ties": 56,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1356,
+          "targets": 6,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1441,
+          "targets": 4,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "mode": "neural",
+      "control": "random_neural",
+      "gained": 3,
+      "lost": 0,
+      "net": 3,
+      "group_wins": 3,
+      "group_ties": 61,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1316,
+          "targets": 8,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1356,
+          "targets": 6,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "mode": "neural",
+      "control": "random_neural",
+      "gained": 6,
+      "lost": 0,
+      "net": 6,
+      "group_wins": 5,
+      "group_ties": 59,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1492,
+          "targets": 10,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1444,
+          "targets": 9,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "mode": "direct",
+      "control": "native",
+      "gained": 8,
+      "lost": 0,
+      "net": 8,
+      "group_wins": 7,
+      "group_ties": 57,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1356,
+          "targets": 6,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1505,
+          "targets": 13,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "mode": "direct",
+      "control": "native",
+      "gained": 7,
+      "lost": 0,
+      "net": 7,
+      "group_wins": 7,
+      "group_ties": 57,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1316,
+          "targets": 8,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1444,
+          "targets": 9,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "mode": "direct",
+      "control": "native",
+      "gained": 8,
+      "lost": 0,
+      "net": 8,
+      "group_wins": 7,
+      "group_ties": 57,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1492,
+          "targets": 10,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1444,
+          "targets": 9,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 0,
+      "mode": "direct",
+      "control": "random_direct",
+      "gained": 10,
+      "lost": 0,
+      "net": 10,
+      "group_wins": 8,
+      "group_ties": 56,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1356,
+          "targets": 6,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1441,
+          "targets": 4,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "mode": "direct",
+      "control": "random_direct",
+      "gained": 3,
+      "lost": 0,
+      "net": 3,
+      "group_wins": 3,
+      "group_ties": 61,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1316,
+          "targets": 8,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1356,
+          "targets": 6,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "mode": "direct",
+      "control": "random_direct",
+      "gained": 6,
+      "lost": 0,
+      "net": 6,
+      "group_wins": 5,
+      "group_ties": 59,
+      "group_losses": 0,
+      "largest_outcome_selected_changes": [
+        {
+          "group": 1492,
+          "targets": 10,
+          "gained": 2,
+          "lost": 0,
+          "net": 2
+        },
+        {
+          "group": 1402,
+          "targets": 42,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1432,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1486,
+          "targets": 3,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        },
+        {
+          "group": 1444,
+          "targets": 9,
+          "gained": 1,
+          "lost": 0,
+          "net": 1
+        }
+      ]
+    }
+  ],
+  "raw_graph_loads": 1,
+  "physical_counterfactual_cards": 4032,
+  "hard_action_contexts": 4608,
+  "batched_teacher_forwards": 576,
+  "saved_card_loads": 576,
+  "downstream_parameter_loads": 3,
+  "policy_forwards": 192,
+  "pretrained_parameter_loads": 0,
+  "graph_classifier_forwards": 0,
+  "GPU_hours": 0,
+  "wall_seconds": 141.91301548993215,
+  "process_cpu_seconds": 183.319638582,
+  "scope": "Root-authored saved policy/eligibility/graph-budget/logit recount; not independent implementation/human review. Does not rerun classifier or full canonical input construction."
+}

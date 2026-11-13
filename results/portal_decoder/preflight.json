@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "group": 839,
+      "bank_count": 8,
+      "donor_slot": 16,
+      "canonical_checks": [
+        {
+          "physical_graph_passed": true,
+          "teacher_logits_finite": true
+        },
+        {
+          "physical_graph_passed": true,
+          "teacher_logits_finite": true
+        },
+        {
+          "physical_graph_passed": true,
+          "teacher_logits_finite": true
+        }
+      ],
+      "physical_degrees_preserved": true,
+      "synthetic_ranker_update_passed": true
+    },
+    {
+      "group": 835,
+      "bank_count": 8,
+      "donor_slot": 48,
+      "canonical_checks": [
+        {
+          "physical_graph_passed": true,
+          "teacher_logits_finite": true
+        },
+        {
+          "physical_graph_passed": true,
+          "teacher_logits_finite": true
+        },
+        {
+          "physical_graph_passed": true,
+          "teacher_logits_finite": true
+        }
+      ],
+      "physical_degrees_preserved": true,
+      "synthetic_ranker_update_passed": true
+    }
+  ],
+  "own_teacher_forwards": 6,
+  "original_victim_forwards": 0,
+  "TEST_queries": 0,
+  "GPU_hours": 0,
+  "wall_seconds": 14.39327656594105,
+  "process_cpu_seconds": 26.931102617999997
+}

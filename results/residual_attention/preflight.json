@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "group": 839,
+      "sequence_error": 1.0132789611816406e-06,
+      "logit_error": 1.1920928955078125e-06,
+      "feature_gradient_error": 1.862645149230957e-09,
+      "feature_gradient_norm": 0.1456683874130249,
+      "network_gradient_sums": [
+        0.38013311475515366,
+        1.0636118634392915
+      ],
+      "initial_identity": true,
+      "bounds_passed": true
+    },
+    {
+      "group": 835,
+      "sequence_error": 1.1920928955078125e-07,
+      "logit_error": 2.5331974029541016e-07,
+      "feature_gradient_error": 3.725290298461914e-09,
+      "feature_gradient_norm": 0.09358840435743332,
+      "network_gradient_sums": [
+        0.13499750010669231,
+        0.38487752328364877
+      ],
+      "initial_identity": true,
+      "bounds_passed": true
+    }
+  ],
+  "own_teacher_forwards": 8,
+  "preflight_downstream_updates": 4,
+  "original_victim_forwards": 0,
+  "TEST_queries": 0,
+  "GPU_hours": 0,
+  "wall_seconds": 9.242114126915112,
+  "process_cpu_seconds": 14.840713048999998
+}

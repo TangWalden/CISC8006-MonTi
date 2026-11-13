@@ -157,6 +157,32 @@ evaluation in that follow-up, the owner clarified that the overall mean need
 only exceed native and random; individual repeats/cases need not all improve.
 Both the original strict screen and the new owner criterion are retained.
 
+The owner then requested a larger strategy change. Codex stopped only its own
+direct-search child, retaining 136 complete search records and zero official
+GAGA evaluations. A contextual feature-residual architecture, independent
+full-TRAIN GAGA teacher, exact feature-gradient preflight and six downstream
+fits were completed. Both attention and mean networks declined against their
+native and amplitude-matched random controls; the failed results are retained.
+
+The next context-retrieval decoder initially misread CSC row-slice indices as
+global columns. A first affine shortcut failed its preflight; physical graph
+construction alone did not test the eligibility premise. Before any official
+GAGA scoring, Codex stopped the invalid partial run at 197 cards and diagnosed
+the new-code bug. An initial suspicion about cache mismatch was withdrawn:
+all 890 current target identities have identical cached and actual two-hop
+support. The original data/caches were not changed. A separate corrected run
+uses CSR-normalized row indices, a CSR/CSC regression and direct cached/actual
+neighborhood assertions. It completed 576 physical cards, three downstream
+models, 2,672 updates and 960 official GAGA VALID calls. Both neural retrieval
+and direct search passed the owner's mean-above-native/random screen; the
+nominal random-contrast interval still spans zero. The root-authored saved
+audit passed 19,593 checks, including 192 policy replays and no classifier
+replays. These are AI construction/audit actions, not independent implementation
+or human verification, novelty or completed course requirements. Under the
+owner's prior conditional authorization, the next complete-cohort benchmark
+keeps the existing models and controls frozen. Previously observed TEST
+outcomes preclude calling it untouched confirmation.
+
 ## Publication cleanup (historical)
 
 The 11 November 2026 cleanup extracted the existing algorithm without changing

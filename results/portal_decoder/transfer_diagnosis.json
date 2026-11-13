@@ -1,0 +1,97 @@
+{
+  "status": "completed",
+  "scope": "Saved post-hoc development dose/transfer diagnosis. No classifier calls, parameter loads, TEST queries or GPU. Occurrences correlated; active-only magnitude summaries are not full-cohort MR.",
+  "summary": [
+    {
+      "mode": "neural",
+      "active_cases": 169,
+      "active_target_occurrences": 1580,
+      "dose_changed_target_occurrences": 1570,
+      "gained": 23,
+      "lost": 2,
+      "teacher_wrong_net": 10,
+      "native_wrong": 992,
+      "new_wrong": 1013,
+      "random_wrong": 994,
+      "median_abs_victim_margin_change_on_active": 0.0016800016164779663,
+      "median_abs_native_victim_margin_on_active": 1.828465610742569,
+      "opposite_teacher_victim_direction_occurrences": 147,
+      "max_change_by_token": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0166927576065063,
+        1.0,
+        0.16819976270198822
+      ]
+    },
+    {
+      "mode": "direct",
+      "active_cases": 161,
+      "active_target_occurrences": 1531,
+      "dose_changed_target_occurrences": 1521,
+      "gained": 23,
+      "lost": 0,
+      "teacher_wrong_net": 10,
+      "native_wrong": 992,
+      "new_wrong": 1015,
+      "random_wrong": 996,
+      "median_abs_victim_margin_change_on_active": 0.0016988515853881836,
+      "median_abs_native_victim_margin_on_active": 1.8273839950561523,
+      "opposite_teacher_victim_direction_occurrences": 145,
+      "max_change_by_token": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.16819976270198822
+      ]
+    }
+  ],
+  "train_loss_endpoints": [
+    {
+      "seed": 0,
+      "epoch": 1,
+      "mean_listwise_loss": 1.69142110273242,
+      "scope": "Teacher-target entropy varies across cases; loss alone is not attack efficacy."
+    },
+    {
+      "seed": 0,
+      "epoch": 8,
+      "mean_listwise_loss": 1.6323306858539581,
+      "scope": "Teacher-target entropy varies across cases; loss alone is not attack efficacy."
+    },
+    {
+      "seed": 1,
+      "epoch": 1,
+      "mean_listwise_loss": 1.6770787769928575,
+      "scope": "Teacher-target entropy varies across cases; loss alone is not attack efficacy."
+    },
+    {
+      "seed": 1,
+      "epoch": 8,
+      "mean_listwise_loss": 1.6157145323231816,
+      "scope": "Teacher-target entropy varies across cases; loss alone is not attack efficacy."
+    },
+    {
+      "seed": 2,
+      "epoch": 1,
+      "mean_listwise_loss": 1.6857494348660111,
+      "scope": "Teacher-target entropy varies across cases; loss alone is not attack efficacy."
+    },
+    {
+      "seed": 2,
+      "epoch": 8,
+      "mean_listwise_loss": 1.630323770456016,
+      "scope": "Teacher-target entropy varies across cases; loss alone is not attack efficacy."
+    }
+  ],
+  "wall_seconds": 0.40268067410215735,
+  "process_cpu_seconds": 1.270478851,
+  "graph_classifier_calls": 0,
+  "parameter_loads": 0,
+  "GPU_hours": 0
+}

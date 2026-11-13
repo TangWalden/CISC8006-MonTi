@@ -1,0 +1,11 @@
+{
+  "scope": "All current TRAIN/VALID target identities, topology only. No truth-label values or model outputs read.",
+  "unique_nodes": 890,
+  "cache_format": "csc",
+  "different_support_entries": 0,
+  "rows_with_difference": 0,
+  "graph_classifier_calls": 0,
+  "parameter_loads": 0,
+  "GPU_hours": 0,
+  "wall_seconds": 3.2445459400769323
+}

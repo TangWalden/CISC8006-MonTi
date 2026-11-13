@@ -1,0 +1,242 @@
+{
+  "status": "completed",
+  "scope": "Transfer arithmetic is post hoc. Retrieval feasibility uses all384TRAIN cases only; no VALID portal selection/outcome measurements.",
+  "transfer": [
+    {
+      "seed": 0,
+      "mode": "attention",
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_attack_loss": 2.3088382165296935,
+          "teacher_TRAIN_wrong": 437,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 2,
+          "mean_attack_loss": 2.3058677290100604,
+          "teacher_TRAIN_wrong": 438,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 3,
+          "mean_attack_loss": 2.3057330191368237,
+          "teacher_TRAIN_wrong": 439,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 4,
+          "mean_attack_loss": 2.305745623598341,
+          "teacher_TRAIN_wrong": 439,
+          "occurrences": 1616
+        }
+      ],
+      "median_delta_L2": 24.219432830810547,
+      "mean_teacher_margin_change": -0.039704791544210784,
+      "mean_victim_margin_change": 0.012490781924431253,
+      "median_abs_native_victim_margin": 1.8648169040679932,
+      "teacher_attack_direction_occurrences": 416,
+      "victim_attack_direction_occurrences": 181,
+      "opposing_direction_occurrences": 334
+    },
+    {
+      "seed": 1,
+      "mode": "attention",
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_attack_loss": 2.3156899251043797,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 2,
+          "mean_attack_loss": 2.312484882771969,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 3,
+          "mean_attack_loss": 2.3123757921275683,
+          "teacher_TRAIN_wrong": 430,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 4,
+          "mean_attack_loss": 2.3123279901919886,
+          "teacher_TRAIN_wrong": 430,
+          "occurrences": 1616
+        }
+      ],
+      "median_delta_L2": 24.144484519958496,
+      "mean_teacher_margin_change": -0.03885333754461513,
+      "mean_victim_margin_change": 0.008979180928861198,
+      "median_abs_native_victim_margin": 1.859845221042633,
+      "teacher_attack_direction_occurrences": 414,
+      "victim_attack_direction_occurrences": 198,
+      "opposing_direction_occurrences": 317
+    },
+    {
+      "seed": 2,
+      "mode": "attention",
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_attack_loss": 2.3132725239847787,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 2,
+          "mean_attack_loss": 2.3104560241336003,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 3,
+          "mean_attack_loss": 2.3104533510049805,
+          "teacher_TRAIN_wrong": 430,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 4,
+          "mean_attack_loss": 2.310389680089429,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        }
+      ],
+      "median_delta_L2": 24.04080104827881,
+      "mean_teacher_margin_change": -0.039367762464384067,
+      "mean_victim_margin_change": 0.005091879934385654,
+      "median_abs_native_victim_margin": 1.8814366161823273,
+      "teacher_attack_direction_occurrences": 417,
+      "victim_attack_direction_occurrences": 247,
+      "opposing_direction_occurrences": 269
+    },
+    {
+      "seed": 0,
+      "mode": "mean",
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_attack_loss": 2.308754804835189,
+          "teacher_TRAIN_wrong": 437,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 2,
+          "mean_attack_loss": 2.305863634275738,
+          "teacher_TRAIN_wrong": 438,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 3,
+          "mean_attack_loss": 2.3057760124793276,
+          "teacher_TRAIN_wrong": 439,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 4,
+          "mean_attack_loss": 2.3057568512740545,
+          "teacher_TRAIN_wrong": 439,
+          "occurrences": 1616
+        }
+      ],
+      "median_delta_L2": 24.195158004760742,
+      "mean_teacher_margin_change": -0.03945873207013056,
+      "mean_victim_margin_change": 0.009957704653934089,
+      "median_abs_native_victim_margin": 1.8648169040679932,
+      "teacher_attack_direction_occurrences": 411,
+      "victim_attack_direction_occurrences": 208,
+      "opposing_direction_occurrences": 307
+    },
+    {
+      "seed": 1,
+      "mode": "mean",
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_attack_loss": 2.315539733681362,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 2,
+          "mean_attack_loss": 2.3124861412798055,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 3,
+          "mean_attack_loss": 2.312397730827797,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 4,
+          "mean_attack_loss": 2.3123272783122957,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        }
+      ],
+      "median_delta_L2": 24.14402961730957,
+      "mean_teacher_margin_change": -0.03937071458650215,
+      "mean_victim_margin_change": 0.008118332228288968,
+      "median_abs_native_victim_margin": 1.859845221042633,
+      "teacher_attack_direction_occurrences": 419,
+      "victim_attack_direction_occurrences": 213,
+      "opposing_direction_occurrences": 305
+    },
+    {
+      "seed": 2,
+      "mode": "mean",
+      "epochs": [
+        {
+          "epoch": 1,
+          "mean_attack_loss": 2.313196195871569,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 2,
+          "mean_attack_loss": 2.3104102519573644,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 3,
+          "mean_attack_loss": 2.310449446202256,
+          "teacher_TRAIN_wrong": 429,
+          "occurrences": 1616
+        },
+        {
+          "epoch": 4,
+          "mean_attack_loss": 2.3103903207811527,
+          "teacher_TRAIN_wrong": 431,
+          "occurrences": 1616
+        }
+      ],
+      "median_delta_L2": 24.19277858734131,
+      "mean_teacher_margin_change": -0.03931655887279483,
+      "mean_victim_margin_change": 0.00420239318860287,
+      "median_abs_native_victim_margin": 1.8814366161823273,
+      "teacher_attack_direction_occurrences": 416,
+      "victim_attack_direction_occurrences": 250,
+      "opposing_direction_occurrences": 263
+    }
+  ],
+  "TRAIN_feasibility": {
+    "cases": 384,
+    "with_remote_benign": 384,
+    "with_replaceable_column": 334,
+    "total_target_occurrences": 4848,
+    "known_benign_twohop_empty": 660,
+    "known_benign_twohop_atmost3": 1389
+  },
+  "graph_classifier_calls": 0,
+  "parameter_loads": 0,
+  "raw_graph_loads": 1,
+  "GPU_hours": 0,
+  "wall_seconds": 7.367185235954821,
+  "process_cpu_seconds": 7.457402292
+}

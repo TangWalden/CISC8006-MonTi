@@ -16,26 +16,13 @@
   "archive": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/research_cost_ledger.json",
   "last_completed_extension": {
     "date": "2026-11-13",
-    "method": "Frozen author whole-column recipient ridge development",
-    "scientific_source": "d076ad095e34d0b55ceedfd5dcb228f90262b266",
-    "protocol_sha256": "f93af68e3abb4dcf4289118d2bb995cc7978f1e7bd11faf38f83848e648e202f",
+    "method": "Saved portal dose and transfer diagnosis",
     "GPU_hours": 0,
-    "main_wall_seconds": 3051.0145560121164,
-    "main_process_CPU_seconds": 8416.881958969,
-    "preflight_wall_seconds": 12.44556118012406,
-    "preflight_process_CPU_seconds": 20.182979301,
-    "original_guardian_wall_seconds": 3070.1586044039577,
-    "audit_amendment_outer_seconds": 7.4452135160099715,
-    "actual_main_counters": {
-      "generations": 0,
-      "train_GCN": 3056,
-      "evaluation_GCN": 832,
-      "official_GAGA_VALID": 832,
-      "ridge_fits": 3,
-      "upstream_updates": 0,
-      "TEST_queries": 0
-    },
-    "scope": "Original audit failed on empty JSON shape; separate audit amendment passed without changing scientific outputs. Additional saved diagnoses have their own exported CPU/wall receipts; none make classifier calls."
+    "outer_wall_seconds": 1.6545717581175268,
+    "wall_seconds": 0.40268067410215735,
+    "process_CPU_seconds": 1.270478851,
+    "graph_classifier_calls": 0,
+    "parameter_loads": 0
   },
   "completed_extensions": [
     {
@@ -206,6 +193,211 @@
         "TEST_queries": 0
       },
       "scope": "Original audit failed on empty JSON shape; separate audit amendment passed without changing scientific outputs. Additional saved diagnoses have their own exported CPU/wall receipts; none make classifier calls."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Owner-withdrawn direct GCN block search",
+      "GPU_hours": 0,
+      "guardian_wall_seconds": 1001.8975669951178,
+      "main_wall_seconds": 997.4015467960853,
+      "main_process_CPU_seconds": 2739.216928013,
+      "dispatch_counters": {
+        "search_GCN": 1107,
+        "evaluation_GCN": 0,
+        "official_GAGA_VALID": 0,
+        "generations": 0,
+        "updates": 0,
+        "TEST_queries": 0
+      },
+      "saved_complete_GCN_forwards_lower_bound": 1104,
+      "complete_records": 136,
+      "status": "Owner strategy change;136of192searchcases;no GAGA evaluation. Dispatch counts can include interrupted work."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Independent full-TRAIN GAGA feedback refit",
+      "GPU_hours": 0,
+      "scientific_source": "9811e0fef06bb06f14acf2f7f362898ac48d303e",
+      "main_wall_seconds": 27.16760714002885,
+      "main_process_CPU_seconds": 104.946806086,
+      "optimizer_steps": 494,
+      "forwards": 507,
+      "TEST_queries": 0,
+      "quality_scope": "In-sample training check, not fresh held-out calibration/generalization."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Contextual feature residual attention and mean development",
+      "GPU_hours": 0,
+      "scientific_source": "4e16d6d",
+      "protocol_sha256": "64e1887ebd711eb8a4d580c182f4db068df4050e2941884e040cab348c5b8172",
+      "main_wall_seconds": 1276.7900833990425,
+      "main_process_CPU_seconds": 2854.82610988,
+      "guardian_wall_seconds": 1282.9803944770247,
+      "main_counters": {
+        "cards": 576,
+        "updates": 3072,
+        "own_teacher_TRAIN": 3072,
+        "own_teacher_VALID": 960,
+        "official_GAGA_VALID": 960,
+        "upstream_updates": 0,
+        "generations": 0,
+        "TEST_queries": 0
+      },
+      "audit_wall_seconds": 9.232646236894652,
+      "audit_process_CPU_seconds": 9.299923398,
+      "scope": "Three noise repetitions of one frozenauthorcheckpoint;6downstreammodels andmagnitude-matchedsigncontrols. Teacher training/preflight recorded separately. No API/TEST/GPU.",
+      "timer_scope": "Recorded execution region begins after imports/version checks; CPU outside that region is unmetered. Guardian wall includes child startup and wait. Scientific timing values are unchanged."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Prototype .1std residual functional preflight",
+      "GPU_hours": 0,
+      "outer_wall_seconds": 11.51641873200424,
+      "process_CPU_seconds": 15.047277457000002,
+      "own_teacher_forwards": 8,
+      "functional_updates": 4,
+      "original_victim_forwards": 0
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Frozen1std residual functional preflight",
+      "GPU_hours": 0,
+      "outer_wall_seconds": 11.42860712017864,
+      "process_CPU_seconds": 14.840713048999998,
+      "own_teacher_forwards": 8,
+      "functional_updates": 4,
+      "original_victim_forwards": 0
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Saved residual transfer and TRAIN portal feasibility diagnosis",
+      "GPU_hours": 0,
+      "wall_seconds": 7.367185235954821,
+      "process_CPU_seconds": 7.457402292,
+      "outer_wall_seconds": 7.787327260011807,
+      "graph_classifier_calls": 0,
+      "raw_graph_loads": 1
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Portal affine preflight: failed; invalid CSC eligibility",
+      "GPU_hours": 0,
+      "exit_code": 1,
+      "outer_wall_seconds": 15.245768592925742,
+      "wall_seconds": null,
+      "process_CPU_seconds": null,
+      "own_teacher_forwards": null,
+      "official_GAGA_forwards": 0,
+      "scope": "Failed before a complete counter receipt; partial own-teacher calls unknown. Original failure retained."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Portal physical v2 preflight: incomplete eligibility assertions",
+      "GPU_hours": 0,
+      "exit_code": 0,
+      "outer_wall_seconds": 20.190608794102445,
+      "wall_seconds": 13.847954901168123,
+      "process_CPU_seconds": 26.200536834999998,
+      "own_teacher_forwards": 6,
+      "official_GAGA_forwards": 0
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Corrected portal physical v3 and sparse-format preflight",
+      "GPU_hours": 0,
+      "exit_code": 0,
+      "outer_wall_seconds": 21.987892678007483,
+      "wall_seconds": 14.39327656594105,
+      "process_CPU_seconds": 26.931102617999997,
+      "own_teacher_forwards": 6,
+      "official_GAGA_forwards": 0
+    },
+    {
+      "date": "2026-11-13",
+      "method": "TRAIN canonical repeatability diagnosis",
+      "GPU_hours": 0,
+      "wall_seconds": 17.60084171500057,
+      "graph_classifier_calls": 0,
+      "parameter_loads": 0,
+      "scope": "TRAIN-only diagnosis of failed shortcut; no classifier/parameter/test calls."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "CSC row-index diagnosis",
+      "GPU_hours": 0,
+      "wall_seconds": 16.856766089098528,
+      "graph_classifier_calls": 0,
+      "parameter_loads": 0,
+      "scope": "TRAIN-only diagnosis of failed shortcut; no classifier/parameter/test calls."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Full current target topology/cache support check",
+      "GPU_hours": 0,
+      "wall_seconds": 3.2445459400769323,
+      "graph_classifier_calls": 0,
+      "parameter_loads": 0,
+      "scope": "All current TRAIN/VALID target identities, topology only. No truth-label values or model outputs read."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Stopped invalid portal attempt1: CSC eligibility bug",
+      "GPU_hours": 0,
+      "status": "Stopped; no efficacy conclusion",
+      "guardian_wall_seconds": 865.2744857349899,
+      "main_wall_seconds": 859.186068315059,
+      "main_process_CPU_seconds": 1944.206161059,
+      "partial_counters": {
+        "cards": 197,
+        "physical_canonical_builds": 1383,
+        "teacher_TRAIN": 133,
+        "teacher_VALID_selection": 64,
+        "neural_updates": 0,
+        "training_visits": 0,
+        "no_choice_skips": 0,
+        "official_GAGA_VALID": 0,
+        "generations": 0,
+        "TEST_queries": 0
+      },
+      "scope": "Own child interrupted before neural training or official GAGA. Invalid banks/cards not reused. Original dataset/cache unchanged; initial cache suspicion corrected to new-code CSC indexing error."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Corrected physical context-retrieval decoder development",
+      "GPU_hours": 0,
+      "protocol_sha256": "b64ff37248f66fa57989481382d41a5c05632a20b2fca5b7fe720ea756838d23",
+      "main_wall_seconds": 3533.6604581379797,
+      "main_process_CPU_seconds": 8194.892342997,
+      "guardian_wall_seconds": 3540.0077910178807,
+      "main_counters": {
+        "cards": 576,
+        "physical_canonical_builds": 4032,
+        "teacher_TRAIN": 384,
+        "teacher_VALID_selection": 192,
+        "neural_updates": 2672,
+        "training_visits": 3072,
+        "no_choice_skips": 400,
+        "official_GAGA_VALID": 960,
+        "generations": 0,
+        "TEST_queries": 0
+      },
+      "audit_wall_seconds": 141.91301548993215,
+      "audit_process_CPU_seconds": 183.319638582,
+      "audit_policy_forwards": 192,
+      "audit_downstream_parameter_loads": 3,
+      "audit_graph_classifier_calls": 0,
+      "scope": "Same author checkpoint;three cached generation-noise repetitions,not three upstream trainings. Root-authored saved audit. Main CPU timer excludes startup/imports. Batched teacher forwards cover multiple hard graph contexts; see audit. GPU/API/TEST zero."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Saved portal dose and transfer diagnosis",
+      "GPU_hours": 0,
+      "outer_wall_seconds": 1.6545717581175268,
+      "wall_seconds": 0.40268067410215735,
+      "process_CPU_seconds": 1.270478851,
+      "graph_classifier_calls": 0,
+      "parameter_loads": 0
     }
   ],
   "current_action_blind_phase_GPU_hours": 0
