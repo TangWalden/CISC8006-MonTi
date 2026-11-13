@@ -7,7 +7,7 @@ def write(p,v):
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--stage',required=True);a=ap.parse_args();s=pathlib.Path(a.stage);p=read(s/'main_protocol.json')
  for n,h in p['sources'].items():assert sha(s/'source'/n)==h
- assert read(s/'preflight_hard_v2_result.json')['status']=='passed' and sha(p['teacher_checkpoint'])==p['teacher_sha256']
+ assert read(s/'preflight_hard_v3_result.json')['status']=='passed' and sha(p['teacher_checkpoint'])==p['teacher_sha256']
  sys.path[:0]=[str(s/'source'),p['support_source']+'/experiments/block_swap',p['support_source'],p['runtime_root']]
  from helpers import verify
  verify(pathlib.Path(p['support_source']).parent/'registration/protocol.json')

@@ -3,7 +3,7 @@ import numpy as np,torch,random,hashlib
 def key(*values):return int(hashlib.sha256(repr(values).encode()).hexdigest()[:16],16)
 def proposals(case,view,benign,limit=8):
     ids=case['ids'].numpy();cids=case['candidate_ids'].numpy();t=len(ids);c=len(cids);a=case['native_adjacency']
-    banned=np.unique(np.concatenate((ids,cids,view.adj[ids].indices,view.adj2[ids].indices)))
+    banned=np.unique(np.concatenate((ids,cids,view.adj[ids].tocsr().indices,view.adj2[ids].tocsr().indices)))
     eligible=np.setdiff1d(benign,banned,assume_unique=False)
     used=torch.nonzero(a[:,t:t+c].sum(0)>0).flatten().tolist()
     if not len(eligible) or not used:return None,[]

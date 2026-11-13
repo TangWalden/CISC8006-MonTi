@@ -1,4 +1,7 @@
-"""Replace one used candidate slot by one original TRAIN-benign remote node."""
+"""Historical failed prototype: CSC row-index handling is invalid here.
+
+Use geometry_hard.py. Original source remains bound to the failed registration.
+"""
 import numpy as np,torch,random,hashlib
 def key(*values):return int(hashlib.sha256(repr(values).encode()).hexdigest()[:16],16)
 def proposals(case,view,benign,limit=8):
