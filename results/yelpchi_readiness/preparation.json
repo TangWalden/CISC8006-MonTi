@@ -1,0 +1,227 @@
+{
+  "status": "prepared_not_evaluated",
+  "date": "2026-11-14",
+  "owner_direction": "Prepare data and caches; defer YelpChi training and efficacy evaluation. LifeIns excluded.",
+  "result": {
+    "status": "completed",
+    "scope": "Asset compatibility and deterministic input caches only, no attack or efficacy evaluation",
+    "counters": {
+      "GCN_representation_forwards": 45,
+      "MonTi_generations": 0,
+      "GAGA_forwards": 0,
+      "optimizer_updates": 0,
+      "TEST_queries": 0,
+      "GPU_hours": 0
+    },
+    "nodes": 45900,
+    "features": 32,
+    "split_nodes": {
+      "train": 18360,
+      "valid": 9170,
+      "test": 18370
+    },
+    "target_metadata": {
+      "train": {
+        "groups": 556,
+        "occurrences": 2681,
+        "unique_targets": 2452
+      },
+      "valid": {
+        "groups": 331,
+        "occurrences": 1178,
+        "unique_targets": 1145
+      },
+      "test": {
+        "groups": 548,
+        "occurrences": 2682,
+        "unique_targets": 2452
+      }
+    },
+    "outputs": {
+      "Datasets/YelpChi_RTR/h_GCN.npy": {
+        "sha256": "78ffb78724d6826453bb22bb82796294853ea8baa80583019ae5cb218c5c291c",
+        "bytes": 11750528
+      },
+      "Datasets/YelpChi_RTR/data_split/yelpchi_rtr_gaga_sequence_0.npy": {
+        "sha256": "4598e7771bb4b78a215a2df805f7cc29bfa580cfa4eafa9a88869d071d6d5c4f",
+        "bytes": 41126528
+      },
+      "Datasets/YelpChi_RTR/data_split/yelpchi_rtr_gaga_adj2_0.npz": {
+        "sha256": "977b49486cf8e133660e3d5b2b35448bea6042aaae8d7753a3cbc2e9ea2164b2",
+        "bytes": 50102437
+      },
+      "Datasets/YelpChi_RTR/data_split/yelpchi_rtr_gaga_feat_sum_0.npy": {
+        "sha256": "e31eeb4658596d1f3c1d2a2b83770aaccdd037bd962a6002a34447bde8fadfbd",
+        "bytes": 41126528
+      },
+      "Datasets/YelpChi_RTR/data_split/yelpchi_rtr_gaga_degree_0.npy": {
+        "sha256": "fde35cc88b8c53c19268f2f3e364c7e881e4aff63981e55a34004c9dd8141289",
+        "bytes": 1285328
+      }
+    },
+    "strict_author_and_victim_compatible": true,
+    "cache_label_scope": "Only original TRAIN labels enter GAGA groups. Full transductive topology/features as upstream code. No TEST prediction or label-outcome evaluation.",
+    "wall_seconds": 49.10940585192293,
+    "process_cpu_seconds": 89.45960538700001
+  },
+  "closure": {
+    "checked_staged_files": 18,
+    "runtime_head": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+    "runtime_tracked_status": "",
+    "preparation_pid_alive": false,
+    "ML_imports": 0,
+    "model_calls": 0,
+    "reviewer": "Root-authored saved-byte check, not independent implementation or human review"
+  },
+  "asset_hashes": [
+    {
+      "path": "Datasets/YelpChi_RTR/data_split/target_assign_matrix_0.npz",
+      "bytes": 18819,
+      "sha256": "8fe5ddedbf26760772aaa1f30661d42e434f9fa50b2a2f6a83dcf3df7d5f18bd",
+      "official_file_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+      "member": {
+        "name": "YelpChi_RTR/data_split/target_assign_matrix_0.npz",
+        "size": 18819,
+        "compressed": 14568,
+        "offset": 73578595,
+        "crc32": 2923989406
+      }
+    },
+    {
+      "path": "Datasets/YelpChi_RTR/data_split/test_idx_surro_0.npy",
+      "bytes": 147088,
+      "sha256": "12f33b6cb2bf4d1fca4ded84c528c04a88d651bfe6b31429dd8b279cc34be9d8",
+      "official_file_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+      "member": {
+        "name": "YelpChi_RTR/data_split/test_idx_surro_0.npy",
+        "size": 147088,
+        "compressed": 51828,
+        "offset": 73593242,
+        "crc32": 4218977323
+      }
+    },
+    {
+      "path": "Datasets/YelpChi_RTR/data_split/test_target_mask_0.npy",
+      "bytes": 2320,
+      "sha256": "dc5d05a13beb9141d0f2b1b7b0e25cc062abb8b3e75037694895fc0a572d34d8",
+      "official_file_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+      "member": {
+        "name": "YelpChi_RTR/data_split/test_target_mask_0.npy",
+        "size": 2320,
+        "compressed": 897,
+        "offset": 73645143,
+        "crc32": 1756120697
+      }
+    },
+    {
+      "path": "Datasets/YelpChi_RTR/data_split/train_idx_surro_0.npy",
+      "bytes": 147008,
+      "sha256": "cbae26384821c4a18683b2a245c1d0afe04b82655b42c176a1ff78fafbc7dbb0",
+      "official_file_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+      "member": {
+        "name": "YelpChi_RTR/data_split/train_idx_surro_0.npy",
+        "size": 147008,
+        "compressed": 51790,
+        "offset": 73646115,
+        "crc32": 3384029761
+      }
+    },
+    {
+      "path": "Datasets/YelpChi_RTR/data_split/train_target_mask_0.npy",
+      "bytes": 2352,
+      "sha256": "ab390cd12c8b7bd39278bfdbf1dd4caebc7d71bace97c4ab05288bff557ca601",
+      "official_file_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+      "member": {
+        "name": "YelpChi_RTR/data_split/train_target_mask_0.npy",
+        "size": 2352,
+        "compressed": 905,
+        "offset": 73697979,
+        "crc32": 659926698
+      }
+    },
+    {
+      "path": "Datasets/YelpChi_RTR/data_split/valid_idx_surro_0.npy",
+      "bytes": 73488,
+      "sha256": "a467f3d77ec5b96dad74ba34201592d833f9cb3c0439460a8bdaa93504a8d2eb",
+      "official_file_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+      "member": {
+        "name": "YelpChi_RTR/data_split/valid_idx_surro_0.npy",
+        "size": 73488,
+        "compressed": 26000,
+        "offset": 73698960,
+        "crc32": 347272133
+      }
+    },
+    {
+      "path": "Datasets/YelpChi_RTR/data_split/valid_target_mask_0.npy",
+      "bytes": 1452,
+      "sha256": "4282d2a6bf9278351a354f3e9babdfdcea68eb70d6d5acac235047e89c3fc660",
+      "official_file_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+      "member": {
+        "name": "YelpChi_RTR/data_split/valid_target_mask_0.npy",
+        "size": 1452,
+        "compressed": 602,
+        "offset": 73725034,
+        "crc32": 3333593838
+      }
+    },
+    {
+      "path": "Datasets/YelpChi_RTR/YelpChi.bin",
+      "bytes": 130450160,
+      "sha256": "21e4e82ef6795e9711ffc320e96c337eb1ac8cbca39ad170b5588ea22307d4ef",
+      "official_file_id": "1sLcalw491WFjZ3rzgD32DldsSU6MNjHx",
+      "member": {
+        "name": "YelpChi_RTR/YelpChi.bin",
+        "size": 130450160,
+        "compressed": 10496536,
+        "offset": 73725712,
+        "crc32": 162095135
+      }
+    },
+    {
+      "path": "best_models/checkpoints/GCN-GAGA-yelpchi_rtr-best_model.pickle",
+      "bytes": 7008205,
+      "sha256": "18b4b85e44d360f350e14587786c2cf31133497da54cac2d70854e64aeeeaca4",
+      "official_file_id": "1A5d3l4-4_N9jUzok9J6TFd_DHALDBDgV",
+      "member": {
+        "name": "checkpoints/GCN-GAGA-yelpchi_rtr-best_model.pickle",
+        "size": 7008205,
+        "compressed": 6838110,
+        "offset": 21844909,
+        "crc32": 2931351327
+      }
+    },
+    {
+      "path": "best_models/configs/GCN-GAGA-yelpchi_rtr-best_config.json",
+      "bytes": 741,
+      "sha256": "ba641ee57d6d22d989dfc41e6239cea31e1d273aab91321855f93037f9264681",
+      "official_file_id": "1A5d3l4-4_N9jUzok9J6TFd_DHALDBDgV",
+      "member": {
+        "name": "configs/GCN-GAGA-yelpchi_rtr-best_config.json",
+        "size": 741,
+        "compressed": 324,
+        "offset": 52170086,
+        "crc32": 2572297923
+      }
+    },
+    {
+      "path": "models/pretrained_models/surrogate_models/GCN-yelpchi_rtr-0.pickle",
+      "bytes": 28303,
+      "sha256": "be3c7be91f1041af07a8dcd3c036a32b8f4cbc39bb8107a8499049a41f0781b4",
+      "source": "retained official Git LFS object",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:be3c7be91f1041af07a8dcd3c036a32b8f4cbc39bb8107a8499049a41f0781b4\nsize 28303\n"
+    },
+    {
+      "path": "models/pretrained_models/victim_models/GAGA-yelpchi_rtr-0.pickle",
+      "bytes": 430148,
+      "sha256": "5422b9ed067f268b81d810e9eb9fe1bb0b8662d78715c98e9f7d8aed49cd751f",
+      "source": "retained official Git LFS object",
+      "pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:5422b9ed067f268b81d810e9eb9fe1bb0b8662d78715c98e9f7d8aed49cd751f\nsize 430148\n"
+    }
+  ],
+  "source_archive_scope": "Official range retrieval with ZIP header/size/CRC and matching SHA256 between local and server copies; classifier bytes match official Git LFS IDs. No author-signed release hash asserted.",
+  "remote_preparation_outer_wall_seconds": 97.35666702594608,
+  "remote_download_wall_seconds": 47.7138993719127,
+  "local_download_wall_seconds": 53.31289000000106,
+  "local_transfer_note": "An incomplete monolithic upload and partial chunk upload were stopped locally before any server cache job launched. Partial staging retained; successful server fetched official sources directly. Transfer CPU time unmetered; no ML/GPU in these transfers."
+}

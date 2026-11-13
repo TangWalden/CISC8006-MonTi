@@ -15,16 +15,19 @@
   "curation_GPU_hours": 0,
   "archive": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/research_cost_ledger.json",
   "last_completed_extension": {
-    "date": "2026-11-13",
-    "method": "Post-hoc saved full-cohort weighting sensitivity",
+    "date": "2026-11-14",
+    "method": "YelpChi input-asset and cache preparation only",
     "GPU_hours": 0,
-    "wall_seconds": 0.9578458729665726,
-    "process_CPU_seconds": 0.957273124,
-    "outer_wall_seconds": 1.134377694921568,
-    "model_calls": 0,
+    "wall_seconds": 49.10940585192293,
+    "process_CPU_seconds": 89.45960538700001,
+    "remote_download_and_cache_outer_wall_seconds": 97.35666702594608,
+    "GCN_representation_forwards": 45,
+    "MonTi_generations": 0,
+    "GAGA_forwards": 0,
+    "optimizer_updates": 0,
     "TEST_queries": 0,
-    "saved_TEST_prediction_reads": true,
-    "classification": "Posthoc after primary results; additional descriptive estimands, not primary replacement or preregistration."
+    "experimental_API_calls": 0,
+    "scope": "No attack efficacy evaluation. Input caches use original TRAIN labels plus transductive graph/features; strict author/victim state compatibility checked without their forward calls. Local transfer CPU unmetered; no GPU."
   },
   "completed_extensions": [
     {
@@ -453,6 +456,21 @@
       "TEST_queries": 0,
       "saved_TEST_prediction_reads": true,
       "classification": "Posthoc after primary results; additional descriptive estimands, not primary replacement or preregistration."
+    },
+    {
+      "date": "2026-11-14",
+      "method": "YelpChi input-asset and cache preparation only",
+      "GPU_hours": 0,
+      "wall_seconds": 49.10940585192293,
+      "process_CPU_seconds": 89.45960538700001,
+      "remote_download_and_cache_outer_wall_seconds": 97.35666702594608,
+      "GCN_representation_forwards": 45,
+      "MonTi_generations": 0,
+      "GAGA_forwards": 0,
+      "optimizer_updates": 0,
+      "TEST_queries": 0,
+      "experimental_API_calls": 0,
+      "scope": "No attack efficacy evaluation. Input caches use original TRAIN labels plus transductive graph/features; strict author/victim state compatibility checked without their forward calls. Local transfer CPU unmetered; no GPU."
     }
   ],
   "current_action_blind_phase_GPU_hours": 0

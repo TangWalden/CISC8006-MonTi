@@ -220,6 +220,19 @@ its bytes, exported compact saved results, checked all case denominators, and
 ran synthetic tests and the JSON example. It added no model inference, training,
 dataset/checkpoint load, external experimental API call or GPU research.
 
+On 14 November 2026, the root agent verified the already published complete
+retrieval benchmark, retrieved and checked official YelpChi assets, and built
+five input caches after the owner limited YelpChi work to preparation. There
+were 45 GCN representation forwards, no attack generation, GAGA inference,
+training, TEST prediction, experimental API or GPU use. Two incomplete local
+asset-transfer approaches were retained; direct official-source retrieval on
+QY completed. Only the task's local transfer processes were stopped. No VPN,
+server service or unrelated job was changed. The root-authored saved-byte
+closure checked 18 staged files; it is not independent or human verification.
+The owner also requested a bolder literature-grounded GossipCop design. A
+bounded primary-source design review and an unexecuted private planning draft
+add no new efficacy evidence; no new GossipCop model work occurred.
+
 Earlier positive, negative and failed experiments remain in the
 [immutable archive](docs/ARCHIVE.md). Full raw-output review and genuine human
 verification remain distinct from these automated checks.
