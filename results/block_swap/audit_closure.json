@@ -1,0 +1,8 @@
+{
+  "scientific_status": "completed",
+  "original_driver_status": "failed_at_audit",
+  "amended_audit_status": "passed",
+  "audit_v2_sha256": "fccbdce9e2c13cd9831498f1fbd34777536a0bc224574880b5b7f1f9c44414f8",
+  "original_result_sha256": "fbc9bc6dec4152bc0e93374e13ea643a8610c7a8a28b52b564992f748560cf88",
+  "registration_sha256": "7a86d24e8dfede290ab2fdc4b6c9e527c1f24fa2c8bc90c21b203610f9e38701"
+}

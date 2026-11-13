@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "diagnostic_ridge_fits": 15,
+  "summary": [
+    {
+      "seed": 0,
+      "groups": 128,
+      "eligible_groups": 112,
+      "active_groups": 55,
+      "action_rows": 896,
+      "heldout_rmse": 0.001925403315461903,
+      "zero_prediction_rmse": 0.001841180499314501,
+      "selected_GCN_gain_per_all_group": 0.0002622434347741079,
+      "matched_random_expected_GCN_gain_per_all_group": 0.00014324044132565323,
+      "rank_beats_random_expectation_groups": 25,
+      "rank_loses_random_expectation_groups": 9
+    },
+    {
+      "seed": 1,
+      "groups": 128,
+      "eligible_groups": 111,
+      "active_groups": 62,
+      "action_rows": 888,
+      "heldout_rmse": 0.0017243007424871922,
+      "zero_prediction_rmse": 0.0017877796218873415,
+      "selected_GCN_gain_per_all_group": 0.00027734198814914266,
+      "matched_random_expected_GCN_gain_per_all_group": 0.0001919542122892521,
+      "rank_beats_random_expectation_groups": 26,
+      "rank_loses_random_expectation_groups": 10
+    },
+    {
+      "seed": 2,
+      "groups": 128,
+      "eligible_groups": 111,
+      "active_groups": 56,
+      "action_rows": 888,
+      "heldout_rmse": 0.001233718487424806,
+      "zero_prediction_rmse": 0.0012247465482242929,
+      "selected_GCN_gain_per_all_group": 2.6510580319503523e-05,
+      "matched_random_expected_GCN_gain_per_all_group": 7.958242457855294e-06,
+      "rank_beats_random_expectation_groups": 19,
+      "rank_loses_random_expectation_groups": 12
+    }
+  ],
+  "graph_classifier_forwards": 0,
+  "new_graphs": 0,
+  "TEST_queries": 0,
+  "GPU_hours": 0,
+  "wall_seconds": 0.22577988682314754,
+  "process_cpu_seconds": 0.772130399,
+  "scope": "Group-held-out TRAIN only; fixed five folds, no parameter grid, no VALID labels. GCN finite-difference fit diagnosis, not GAGA efficacy or independent-news confirmation."
+}

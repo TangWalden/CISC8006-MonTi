@@ -16,21 +16,26 @@
   "archive": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/research_cost_ledger.json",
   "last_completed_extension": {
     "date": "2026-11-13",
-    "method": "Local swap post-hoc model-free reachability diagnosis",
+    "method": "Frozen author whole-column recipient ridge development",
+    "scientific_source": "d076ad095e34d0b55ceedfd5dcb228f90262b266",
+    "protocol_sha256": "f93af68e3abb4dcf4289118d2bb995cc7978f1e7bd11faf38f83848e648e202f",
     "GPU_hours": 0,
-    "process_CPU_seconds": 12.471833855,
-    "wall_seconds": 11.36845848406665,
-    "outer_wall_seconds": 11.737907368922606,
-    "model_calls": 0,
-    "raw_graph_loads": 1,
-    "TEST_queries": 0,
-    "additional_directionality_check": {
-      "raw_graph_loads": 1,
-      "model_calls": 0,
-      "wall_seconds": 2.272406223928556,
-      "process_CPU_seconds": null,
-      "reason": "Validate incoming versus outgoing adjacency equality required by the reachability reconstruction."
-    }
+    "main_wall_seconds": 3051.0145560121164,
+    "main_process_CPU_seconds": 8416.881958969,
+    "preflight_wall_seconds": 12.44556118012406,
+    "preflight_process_CPU_seconds": 20.182979301,
+    "original_guardian_wall_seconds": 3070.1586044039577,
+    "audit_amendment_outer_seconds": 7.4452135160099715,
+    "actual_main_counters": {
+      "generations": 0,
+      "train_GCN": 3056,
+      "evaluation_GCN": 832,
+      "official_GAGA_VALID": 832,
+      "ridge_fits": 3,
+      "upstream_updates": 0,
+      "TEST_queries": 0
+    },
+    "scope": "Original audit failed on empty JSON shape; separate audit amendment passed without changing scientific outputs. Additional saved diagnoses have their own exported CPU/wall receipts; none make classifier calls."
   },
   "completed_extensions": [
     {
@@ -178,6 +183,29 @@
         "TEST_downstream_policy_forwards": 2727
       },
       "cost_scope": "Completed main run, retained stage receipts. Main CPU sum excludes any work outside these recorded stages; preflight/setup not claimed included."
+    },
+    {
+      "date": "2026-11-13",
+      "method": "Frozen author whole-column recipient ridge development",
+      "scientific_source": "d076ad095e34d0b55ceedfd5dcb228f90262b266",
+      "protocol_sha256": "f93af68e3abb4dcf4289118d2bb995cc7978f1e7bd11faf38f83848e648e202f",
+      "GPU_hours": 0,
+      "main_wall_seconds": 3051.0145560121164,
+      "main_process_CPU_seconds": 8416.881958969,
+      "preflight_wall_seconds": 12.44556118012406,
+      "preflight_process_CPU_seconds": 20.182979301,
+      "original_guardian_wall_seconds": 3070.1586044039577,
+      "audit_amendment_outer_seconds": 7.4452135160099715,
+      "actual_main_counters": {
+        "generations": 0,
+        "train_GCN": 3056,
+        "evaluation_GCN": 832,
+        "official_GAGA_VALID": 832,
+        "ridge_fits": 3,
+        "upstream_updates": 0,
+        "TEST_queries": 0
+      },
+      "scope": "Original audit failed on empty JSON shape; separate audit amendment passed without changing scientific outputs. Additional saved diagnoses have their own exported CPU/wall receipts; none make classifier calls."
     }
   ],
   "current_action_blind_phase_GPU_hours": 0

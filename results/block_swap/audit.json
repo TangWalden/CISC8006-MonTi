@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "checks": 13538,
+  "training_GCN_recount": 3056,
+  "evaluation_records": 832,
+  "physical_totals": {
+    "0_native": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "0_block_rank": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "0_matched_random": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "0_always_random": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "1_native": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "1_block_rank": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "1_matched_random": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "1_always_random": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "2_native": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "2_block_rank": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "2_matched_random": {
+      "nodes": 4210,
+      "edges": 194884
+    },
+    "2_always_random": {
+      "nodes": 4210,
+      "edges": 194884
+    }
+  },
+  "model_calls": 0,
+  "raw_dataset_loads": 0,
+  "pretrained_parameter_loads": 0,
+  "GPU_hours": 0,
+  "wall_seconds": 7.097067121881992,
+  "process_cpu_seconds": 7.296372638,
+  "scope": "Root-authored saved fit/decision/logit and cached-tensor recount, not independent human verification. Feature descriptors are not independently regenerated."
+}

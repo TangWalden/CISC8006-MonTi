@@ -1,0 +1,36 @@
+{
+  "status": "failed",
+  "rows": [
+    {
+      "phase": "preflight",
+      "started_utc": "2026-11-12T17:49:49.457698+00:00",
+      "status": "completed",
+      "pid": 3399767,
+      "exit_code": 0,
+      "wall_seconds": 13.026309688109905,
+      "finished_utc": "2026-11-12T17:50:02.484048+00:00"
+    },
+    {
+      "phase": "main",
+      "started_utc": "2026-11-12T17:50:02.484820+00:00",
+      "status": "completed",
+      "pid": 3399869,
+      "exit_code": 0,
+      "wall_seconds": 3051.5692511559464,
+      "finished_utc": "2026-11-12T18:40:54.054112+00:00"
+    },
+    {
+      "phase": "audit",
+      "started_utc": "2026-11-12T18:40:54.054785+00:00",
+      "status": "failed",
+      "pid": 3404930,
+      "exit_code": 1,
+      "wall_seconds": 5.561072574928403,
+      "finished_utc": "2026-11-12T18:40:59.615897+00:00"
+    }
+  ],
+  "wall_seconds": 3070.1586044039577,
+  "finished_utc": "2026-11-12T18:40:59.616216+00:00",
+  "GPU_hours": 0,
+  "automatic_retry": false
+}

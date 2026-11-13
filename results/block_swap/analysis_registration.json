@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-11-12T17:55:24.481304+00:00",
+  "source_sha256": {
+    "saved_diagnosis.py": "dab615ddc3ec158431a6468d598c2eed01a1f1abfabbfdb5611c4d517c2b1a0d",
+    "reachability.py": "3826453ac1269c6e42298da45142cb6dc2b14656397cc8d2bf5fab96115c71d7",
+    "train_generalization.py": "f081e5eeadeb1a0fcb15afe2f4a5ec8370976332108b3f1a940d71f8c1487667"
+  },
+  "scope": "Planned before block VALID outcomes: complete saved paired analysis and model-free membership reconstruction; no selection/tuning or new model calls.",
+  "resources": {
+    "CPU_threads": 4,
+    "wall_cap_seconds": 600,
+    "model_calls": 0,
+    "raw_graph_loads": 1,
+    "GPU_hours": 0,
+    "TEST_queries": 0,
+    "diagnostic_ridge_fits": 15
+  },
+  "amended_utc_before_VALID_outcomes": "2026-11-12T17:57:41.670632+00:00",
+  "amendment_reason": "Separate TRAIN gain-prediction generalization from final GAGA transfer; no hyperparameter grid or model queries.",
+  "native_repeatability_added_utc_before_VALID_outcomes": "2026-11-12T18:13:15.175480+00:00",
+  "native_repeatability_reason": "Quantify same-cache numerical loss variability from existing TRAIN records, given small finite-difference labels; no new inference."
+}

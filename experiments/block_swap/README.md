@@ -29,4 +29,5 @@ lower bound against both native and matched random. Development has been
 reused; intervals do not correct adaptive search. No TEST access is allowed.
 
 The frozen protocol binds source, inputs, CPU cost caps and saved-only audits.
-This is an implementation awaiting measurement, not an efficacy/novelty claim.
+The [completed result](../../results/block_swap/) is null: learned and native
+57.9101% MR, matched random 57.9685%. No efficacy or first-novelty claim.

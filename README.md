@@ -15,6 +15,7 @@ matched study; rates across rows use different cohorts/checkpoints.
 | [Staged development](results/downstream_cooperation/) | 53.6486% | 57.0344% | 58.1436% | Native gain; learning advantage over random uncertain |
 | [Completed staged TEST](results/final_staged/) | 43.8168% | 44.0165% | 44.2257% | Criterion failed; one seed declined substantially |
 | [Author-checkpoint local swap, VALID](results/local_swap/) | 57.9101% | 57.8517% | 57.9101% | No gain over native |
+| [Author-checkpoint block swap, VALID](results/block_swap/) | 57.9101% | 57.9685% | 57.9101% | No native gain; below random |
 
 The separate original six-run reproduction remains **inconclusive**:
 43.7280% learned-candidate versus 40.1902% random-candidate MR,
@@ -27,8 +28,10 @@ The latest local correction retains the **author's released checkpoint**,
 generated features, target edges, injected-to-injected edges, individual
 injected degrees and total budgets. Its null result revealed that many single
 edge swaps leave GAGA's added-neighbor membership unchanged. The registered
-[block-recipient follow-up](experiments/block_swap/) tests whole-column
-exchanges against random choices with the **same donor rows and activation**.
+[block-recipient follow-up](results/block_swap/) tested whole-column exchanges
+with the **same donor rows and activation**; its result is null. A registered
+[direct-surrogate search](experiments/block_swap/hard_search.py) now tests
+whether measuring proposal gains avoids the observed prediction error.
 Execution is in progress; no improvement is claimed.
 
 ## Read and reproduce

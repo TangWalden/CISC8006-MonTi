@@ -146,6 +146,17 @@ independent implementation reviews or human verification. Publication summaries
 were corrected to include the completed negative formal TEST outcome;
 dated PDF/PPTX artifacts were not rebuilt or relabeled as current.
 
+The whole-column study subsequently completed with no mean native gain and
+a mean below matched random. Its original saved audit failed because an
+empty serialized feature list had shape `(0,)` instead of `(0,32)`.
+An explicitly separate audit-only source restored that shape and passed
+13,538 checks while preserving all scientific bytes and failed receipts.
+The root then froze a bounded direct-GCN proposal search to test prediction
+error, with no new upstream generation or TEST access. Before any GAGA
+evaluation in that follow-up, the owner clarified that the overall mean need
+only exceed native and random; individual repeats/cases need not all improve.
+Both the original strict screen and the new owner criterion are retained.
+
 ## Publication cleanup (historical)
 
 The 11 November 2026 cleanup extracted the existing algorithm without changing
