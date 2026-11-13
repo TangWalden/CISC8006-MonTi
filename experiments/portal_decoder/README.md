@@ -22,9 +22,11 @@ TRAIN-only GAGA teacher. A direct teacher-search decoder is a separate candidate
 Each candidate has its own activation-matched random control. Identity actions
 and infeasible cases remain in the denominator.
 
-For remote TRAIN-benign portals, changing portal identity changes one two-hop
-feature token affinely. This shortcut must pass canonical physical-graph
-equivalence checks before any main evaluation. Training labels come from the
+The first proposed affine token shortcut failed its canonical preflight
+(sequence discrepancy 0.0009402, logit discrepancy 0.0002037). That failure
+is retained. The new implementation constructs and scores each full physical
+counterfactual graph, without using the shortcut or relaxing its tolerance.
+Training labels come from the
 attacker's known original TRAIN partition; no VALID/test truth or official
 victim answers select a portal. This is preparation, not measured efficacy or
 first novelty. Earlier negative attempts remain intact.
