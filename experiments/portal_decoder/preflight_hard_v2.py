@@ -2,7 +2,7 @@
 import argparse,pathlib,json,sys,time,hashlib
 def sha(p):return hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--stage',required=True);a=ap.parse_args();s=pathlib.Path(a.stage);p=json.loads((s/'registration.json').read_text())
+ ap=argparse.ArgumentParser();ap.add_argument('--stage',required=True);a=ap.parse_args();s=pathlib.Path(a.stage);p=json.loads((s/'registration_hard_v2.json').read_text())
  for n,h in p['sources'].items():assert sha(s/'source'/n)==h
  sys.path[:0]=[str(s/'source'),p['support_source']+'/experiments/block_swap',p['support_source'],p['runtime_root']]
  from helpers import verify
@@ -40,6 +40,6 @@ def main():
   if len(rows)==2:break
  assert len(rows)==2
  out=dict(status='passed',cases=rows,own_teacher_forwards=forwards,original_victim_forwards=0,TEST_queries=0,GPU_hours=0,wall_seconds=time.monotonic()-start,process_cpu_seconds=time.process_time()-cpu)
- with (s/'preflight_result.json').open('x') as f:json.dump(out,f,indent=2);f.write('\n')
+ with (s/'preflight_hard_v2_result.json').open('x') as f:json.dump(out,f,indent=2);f.write('\n')
  print(json.dumps(out))
 if __name__=='__main__':main()
