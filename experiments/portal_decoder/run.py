@@ -29,7 +29,7 @@ def main():
   trainids=torch.as_tensor(data.idx_train).long();benign=trainids[data.labels[trainids]==0].numpy();mean=data.features[trainids].mean(0);std=data.features[trainids].std(0,unbiased=False).clamp_min(1e-6)
   teacher=GAGA(data.feat_dim,64,2);teacher.load_state_dict(torch.load(p['teacher_checkpoint'],map_location='cpu'));teacher.eval()
   for v in teacher.parameters():v.requires_grad_(False)
-  th=state_hash(teacher);baseparent=pathlib.Path(p['base_cards_parent']);index0={tuple(v['key']):v for v in read(baseparent/'card_seal.json')['cards']};index={}
+  th=state_hash(teacher);baseparent=pathlib.Path(p['base_cards_parent']);assert sha(baseparent/'card_seal.json')==p['base_card_seal_sha256'];index0={tuple(v['key']):v for v in read(baseparent/'card_seal.json')['cards']};index={}
   print('STAGE physical_counterfactual_cards',flush=True)
   for i,((seed,phase,group),ref) in enumerate(index0.items()):
    f=baseparent/ref['path'];assert sha(f)==ref['sha256'];old=torch.load(f,map_location='cpu');case=old['case'];native=old['sequence'];donor,bank=proposals(case,view,benign)
