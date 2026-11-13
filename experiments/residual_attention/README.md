@@ -7,7 +7,7 @@ features. Two local context streams attend to actually connected targets and
 candidates; a learned gate fuses them. A zero-initialized decoder begins at
 exactly the author output.
 
-Per-feature residual magnitude is bounded by 0.1 original-TRAIN standard
+Per-feature residual magnitude is bounded by 1.0 original-TRAIN standard
 deviation and the symmetric distance to the original MonTi feature box.
 Thus both residual signs stay within the original per-feature full-graph
 minimum/maximum range. No baseline clipping or extra nodes/edges is introduced.

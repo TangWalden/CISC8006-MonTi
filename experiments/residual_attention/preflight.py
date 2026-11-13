@@ -25,7 +25,7 @@ def main():
     for ref in refs:
         path=parent/ref['path'];assert sha(path)==ref['sha256'];v=torch.load(path,map_location='cpu');L1,L2=coefficients(view,v);base=make_graph(data,v,v['native_adjacency'])
         with torch.no_grad():seq=canonical(data,view,base,v)
-        radius=torch.minimum(.1*std,torch.minimum(v['x_aux']-low,high-v['x_aux']).clamp_min(0));d=(.2*radius*torch.randn_like(radius).tanh()).requires_grad_();direct=d.detach().clone().requires_grad_()
+        radius=torch.minimum(1.0*std,torch.minimum(v['x_aux']-low,high-v['x_aux']).clamp_min(0));d=(.2*radius*torch.randn_like(radius).tanh()).requires_grad_();direct=d.detach().clone().requires_grad_()
         changed=make_graph(data,v,v['native_adjacency']);changed.ndata['x']=torch.cat((data.features,v['x_aux']+direct))
         actual=canonical(data,view,changed,v);linear=feature_update(seq,L1,L2,d);error=float((actual-linear).abs().max());assert error<2e-5,error
         za=model(actual);zb=model(linear);forwards+=2;logit_error=float((za-zb).abs().max());assert logit_error<2e-5,logit_error

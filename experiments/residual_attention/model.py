@@ -24,7 +24,7 @@ class Residual(nn.Module):
         zt=stream(v['x_targets'],a[:,:t],self.targets,getattr(self,'att_t',None))
         zc=stream(v['x_candidates'],a[:,t:t+c],self.context,getattr(self,'att_c',None))
         gate=torch.sigmoid(self.gate(torch.cat((q,zt,zc),1)));fused=gate*zt+(1-gate)*zc
-        radius=torch.minimum(.1*std,torch.minimum(x-low,high-x).clamp_min(0))
+        radius=torch.minimum(1.0*std,torch.minimum(x-low,high-x).clamp_min(0))
         return radius*torch.tanh(self.decode(torch.cat((q,fused),1)))
 
 def feature_update(sequence,L1,L2,delta):
