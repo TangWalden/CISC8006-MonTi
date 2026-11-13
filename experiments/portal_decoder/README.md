@@ -24,7 +24,10 @@ and infeasible cases remain in the denominator.
 
 The first proposed affine token shortcut failed its canonical preflight
 (sequence discrepancy 0.0009402, logit discrepancy 0.0002037). That failure
-is retained. The new implementation constructs and scores each full physical
+is retained. A TRAIN-only diagnosis traced the failed premise to CSC indices
+being read as CSR in the new retrieval code; the checked cached entries
+agree with actual graph paths. The corrected filter converts row slices
+to CSR and has an explicit CSR/CSC regression test. The new implementation constructs and scores each full physical
 counterfactual graph, without using the shortcut or relaxing its tolerance.
 Training labels come from the
 attacker's known original TRAIN partition; no VALID/test truth or official
