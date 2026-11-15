@@ -233,6 +233,20 @@ The owner also requested a bolder literature-grounded GossipCop design. A
 bounded primary-source design review and an unexecuted private planning draft
 add no new efficacy evidence; no new GossipCop model work occurred.
 
+Following the owner's execution and iterative-improvement request, the root
+agent implemented and ran the target-aware two-step rewriter on 14 November.
+One registered launch completed 12,864 neural updates, 10,440 main teacher
+contexts and 2,112 official VALID forwards. The frozen author outputs were
+reused; no new TEST, YelpChi, API or GPU work occurred in this phase. The root
+authored the implementation and 31,123-check saved audit; this is not independent
+implementation or human verification. A 15 November saved-JSON interpretation
+distinguished six gained occurrences from five unique targets and confirmed
+identical greedy/independent class predictions. The primary mean screen passed,
+but +0.3503 pp over existing neural is modest, its nominal interval crosses zero,
+and greedy remains slightly higher. Neither first novelty nor learned interaction
+superiority is established. New literature/design and YelpChi requests remain
+separate from this completed result.
+
 Earlier positive, negative and failed experiments remain in the
 [immutable archive](docs/ARCHIVE.md). Full raw-output review and genuine human
 verification remain distinct from these automated checks.

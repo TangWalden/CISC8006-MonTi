@@ -1,8 +1,10 @@
 # Target-aware two-step local rewriter
 
-Owner-authorized **GossipCop development** experiment, 14 November 2026.
-No result is claimed by this implementation. YelpChi and new TEST work remain
-on hold. The author upstream and cached attacks are unchanged.
+Owner-authorized **GossipCop development** experiment, executed 14 November 2026.
+The [completed result](../../results/target_rewriter/) passes its mean screen,
+but the gain over existing neural is modest and does not beat two-step greedy.
+This phase made no YelpChi or new TEST calls. Author upstream/cached attacks
+remain unchanged. The exact executed README is retained at source `73e3487`.
 
 The new downstream retains individual target tokens. Cross attention links
 legal candidate replacements to affected targets; separate heads select a

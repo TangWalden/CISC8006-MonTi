@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": 31123,
+  "root_authored": true,
+  "independent_or_human_review": false,
+  "model_forwards": 0,
+  "tensor_loads": true,
+  "protocol_sha256": "970e59981394d2bbc4d15032771e79abaa1471ebc2b88f75dcbb7db83d7db75f",
+  "result_sha256": "0f23b9c7320428990e50af344c90d47f85792f875045e37d76a0a07dd7d611ae",
+  "wall_seconds": 4.541186791146174,
+  "process_cpu_seconds": 6.0494702469999995
+}

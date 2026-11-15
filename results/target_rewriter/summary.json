@@ -1,0 +1,501 @@
+{
+  "status": "completed",
+  "counters": {
+    "physical_builds": 7621,
+    "teacher_batches": 1099,
+    "teacher_contexts": 10440,
+    "policy_forwards": 360,
+    "updates": 12864,
+    "official_GAGA_VALID": 2112,
+    "upstream_generations": 0,
+    "TEST_queries": 0,
+    "API_calls": 0
+  },
+  "GPU_hours": 0,
+  "protocol_sha256": "970e59981394d2bbc4d15032771e79abaa1471ebc2b88f75dcbb7db83d7db75f",
+  "metrics": [
+    {
+      "seed": 0,
+      "arm": "native",
+      "MR": 58.14360770577933,
+      "wrong": 332,
+      "occurrences": 571,
+      "exchanged_edges": 0,
+      "changed_slots": 0
+    },
+    {
+      "seed": 0,
+      "arm": "single_neural",
+      "MR": 59.5446584938704,
+      "wrong": 340,
+      "occurrences": 571,
+      "exchanged_edges": 1092,
+      "changed_slots": 55
+    },
+    {
+      "seed": 0,
+      "arm": "single_direct",
+      "MR": 59.5446584938704,
+      "wrong": 340,
+      "occurrences": 571,
+      "exchanged_edges": 1085,
+      "changed_slots": 53
+    },
+    {
+      "seed": 0,
+      "arm": "random_single",
+      "MR": 57.79334500875657,
+      "wrong": 330,
+      "occurrences": 571,
+      "exchanged_edges": 1092,
+      "changed_slots": 55
+    },
+    {
+      "seed": 0,
+      "arm": "rewriter",
+      "MR": 59.719789842381786,
+      "wrong": 341,
+      "occurrences": 571,
+      "exchanged_edges": 2289,
+      "changed_slots": 110
+    },
+    {
+      "seed": 0,
+      "arm": "random_endpoint",
+      "MR": 58.4938704028021,
+      "wrong": 334,
+      "occurrences": 571,
+      "exchanged_edges": 2289,
+      "changed_slots": 110
+    },
+    {
+      "seed": 0,
+      "arm": "random_joint",
+      "MR": 58.14360770577933,
+      "wrong": 332,
+      "occurrences": 571,
+      "exchanged_edges": 2289,
+      "changed_slots": 110
+    },
+    {
+      "seed": 0,
+      "arm": "greedy",
+      "MR": 59.89492119089317,
+      "wrong": 342,
+      "occurrences": 571,
+      "exchanged_edges": 2208,
+      "changed_slots": 106
+    },
+    {
+      "seed": 0,
+      "arm": "random_greedy",
+      "MR": 58.844133099824866,
+      "wrong": 336,
+      "occurrences": 571,
+      "exchanged_edges": 2208,
+      "changed_slots": 106
+    },
+    {
+      "seed": 0,
+      "arm": "independent",
+      "MR": 59.89492119089317,
+      "wrong": 342,
+      "occurrences": 571,
+      "exchanged_edges": 2198,
+      "changed_slots": 105
+    },
+    {
+      "seed": 0,
+      "arm": "random_independent",
+      "MR": 58.4938704028021,
+      "wrong": 334,
+      "occurrences": 571,
+      "exchanged_edges": 2198,
+      "changed_slots": 105
+    },
+    {
+      "seed": 1,
+      "arm": "native",
+      "MR": 58.14360770577933,
+      "wrong": 332,
+      "occurrences": 571,
+      "exchanged_edges": 0,
+      "changed_slots": 0
+    },
+    {
+      "seed": 1,
+      "arm": "single_neural",
+      "MR": 59.19439579684764,
+      "wrong": 338,
+      "occurrences": 571,
+      "exchanged_edges": 1133,
+      "changed_slots": 57
+    },
+    {
+      "seed": 1,
+      "arm": "single_direct",
+      "MR": 59.36952714535902,
+      "wrong": 339,
+      "occurrences": 571,
+      "exchanged_edges": 1056,
+      "changed_slots": 53
+    },
+    {
+      "seed": 1,
+      "arm": "random_single",
+      "MR": 58.66900175131349,
+      "wrong": 335,
+      "occurrences": 571,
+      "exchanged_edges": 1133,
+      "changed_slots": 57
+    },
+    {
+      "seed": 1,
+      "arm": "rewriter",
+      "MR": 59.719789842381786,
+      "wrong": 341,
+      "occurrences": 571,
+      "exchanged_edges": 2104,
+      "changed_slots": 104
+    },
+    {
+      "seed": 1,
+      "arm": "random_endpoint",
+      "MR": 58.31873905429072,
+      "wrong": 333,
+      "occurrences": 571,
+      "exchanged_edges": 2104,
+      "changed_slots": 104
+    },
+    {
+      "seed": 1,
+      "arm": "random_joint",
+      "MR": 58.14360770577933,
+      "wrong": 332,
+      "occurrences": 571,
+      "exchanged_edges": 2104,
+      "changed_slots": 104
+    },
+    {
+      "seed": 1,
+      "arm": "greedy",
+      "MR": 59.89492119089317,
+      "wrong": 342,
+      "occurrences": 571,
+      "exchanged_edges": 2047,
+      "changed_slots": 103
+    },
+    {
+      "seed": 1,
+      "arm": "random_greedy",
+      "MR": 58.66900175131349,
+      "wrong": 335,
+      "occurrences": 571,
+      "exchanged_edges": 2047,
+      "changed_slots": 103
+    },
+    {
+      "seed": 1,
+      "arm": "independent",
+      "MR": 59.89492119089317,
+      "wrong": 342,
+      "occurrences": 571,
+      "exchanged_edges": 2055,
+      "changed_slots": 104
+    },
+    {
+      "seed": 1,
+      "arm": "random_independent",
+      "MR": 58.844133099824866,
+      "wrong": 336,
+      "occurrences": 571,
+      "exchanged_edges": 2055,
+      "changed_slots": 104
+    },
+    {
+      "seed": 2,
+      "arm": "native",
+      "MR": 57.443082311733804,
+      "wrong": 328,
+      "occurrences": 571,
+      "exchanged_edges": 0,
+      "changed_slots": 0
+    },
+    {
+      "seed": 2,
+      "arm": "single_neural",
+      "MR": 58.66900175131349,
+      "wrong": 335,
+      "occurrences": 571,
+      "exchanged_edges": 1126,
+      "changed_slots": 57
+    },
+    {
+      "seed": 2,
+      "arm": "single_direct",
+      "MR": 58.844133099824866,
+      "wrong": 336,
+      "occurrences": 571,
+      "exchanged_edges": 1093,
+      "changed_slots": 55
+    },
+    {
+      "seed": 2,
+      "arm": "random_single",
+      "MR": 57.61821366024518,
+      "wrong": 329,
+      "occurrences": 571,
+      "exchanged_edges": 1126,
+      "changed_slots": 57
+    },
+    {
+      "seed": 2,
+      "arm": "rewriter",
+      "MR": 59.01926444833625,
+      "wrong": 337,
+      "occurrences": 571,
+      "exchanged_edges": 2247,
+      "changed_slots": 111
+    },
+    {
+      "seed": 2,
+      "arm": "random_endpoint",
+      "MR": 58.14360770577933,
+      "wrong": 332,
+      "occurrences": 571,
+      "exchanged_edges": 2247,
+      "changed_slots": 111
+    },
+    {
+      "seed": 2,
+      "arm": "random_joint",
+      "MR": 57.96847635726795,
+      "wrong": 331,
+      "occurrences": 571,
+      "exchanged_edges": 2247,
+      "changed_slots": 111
+    },
+    {
+      "seed": 2,
+      "arm": "greedy",
+      "MR": 59.01926444833625,
+      "wrong": 337,
+      "occurrences": 571,
+      "exchanged_edges": 2185,
+      "changed_slots": 109
+    },
+    {
+      "seed": 2,
+      "arm": "random_greedy",
+      "MR": 57.96847635726795,
+      "wrong": 331,
+      "occurrences": 571,
+      "exchanged_edges": 2185,
+      "changed_slots": 109
+    },
+    {
+      "seed": 2,
+      "arm": "independent",
+      "MR": 59.01926444833625,
+      "wrong": 337,
+      "occurrences": 571,
+      "exchanged_edges": 2185,
+      "changed_slots": 109
+    },
+    {
+      "seed": 2,
+      "arm": "random_independent",
+      "MR": 58.66900175131349,
+      "wrong": 335,
+      "occurrences": 571,
+      "exchanged_edges": 2185,
+      "changed_slots": 109
+    }
+  ],
+  "means": {
+    "native": 57.91009924109749,
+    "single_neural": 59.136018680677175,
+    "single_direct": 59.2527729130181,
+    "random_single": 58.026853473438415,
+    "rewriter": 59.48628137769994,
+    "random_endpoint": 58.31873905429072,
+    "random_joint": 58.08523058960887,
+    "greedy": 59.60303561004086,
+    "random_greedy": 58.4938704028021,
+    "independent": 59.60303561004086,
+    "random_independent": 58.66900175131349
+  },
+  "contrasts": {
+    "rewriter__native": {
+      "deltas_pp": [
+        1.5761821366024549,
+        1.5761821366024549,
+        1.5761821366024478
+      ],
+      "mean_pp": 1.5761821366024524,
+      "nominal_t95": [
+        1.5761821366024422,
+        1.5761821366024626
+      ]
+    },
+    "rewriter__single_neural": {
+      "deltas_pp": [
+        0.17513134851138545,
+        0.5253940455341493,
+        0.3502626970227638
+      ],
+      "mean_pp": 0.3502626970227662,
+      "nominal_t95": [
+        -0.08478769034040884,
+        0.7853130843859413
+      ]
+    },
+    "rewriter__single_direct": {
+      "deltas_pp": [
+        0.17513134851138545,
+        0.3502626970227638,
+        0.17513134851138545
+      ],
+      "mean_pp": 0.2335084646818449,
+      "nominal_t95": [
+        -0.017667993573330126,
+        0.4846849229370199
+      ]
+    },
+    "rewriter__random_endpoint": {
+      "deltas_pp": [
+        1.225919439579684,
+        1.4010507880910694,
+        0.8756567425569202
+      ],
+      "mean_pp": 1.1675423234092246,
+      "nominal_t95": [
+        0.5029918796720177,
+        1.8320927671464315
+      ]
+    },
+    "rewriter__random_joint": {
+      "deltas_pp": [
+        1.5761821366024549,
+        1.5761821366024549,
+        1.0507880910682985
+      ],
+      "mean_pp": 1.4010507880910694,
+      "nominal_t95": [
+        0.6475214133255139,
+        2.154580162856625
+      ]
+    },
+    "rewriter__greedy": {
+      "deltas_pp": [
+        -0.17513134851138545,
+        -0.17513134851138545,
+        0.0
+      ],
+      "mean_pp": -0.11675423234092364,
+      "nominal_t95": [
+        -0.36793069059610883,
+        0.13442222591426156
+      ]
+    },
+    "rewriter__independent": {
+      "deltas_pp": [
+        -0.17513134851138545,
+        -0.17513134851138545,
+        0.0
+      ],
+      "mean_pp": -0.11675423234092364,
+      "nominal_t95": [
+        -0.36793069059610883,
+        0.13442222591426156
+      ]
+    },
+    "greedy__native": {
+      "deltas_pp": [
+        1.7513134851138403,
+        1.7513134851138403,
+        1.5761821366024478
+      ],
+      "mean_pp": 1.692936368943376,
+      "nominal_t95": [
+        1.4417599106881807,
+        1.9441128271985715
+      ]
+    },
+    "greedy__single_neural": {
+      "deltas_pp": [
+        0.3502626970227709,
+        0.7005253940455347,
+        0.3502626970227638
+      ],
+      "mean_pp": 0.4670169293636898,
+      "nominal_t95": [
+        -0.03533598714667535,
+        0.969369845874055
+      ]
+    },
+    "greedy__random_greedy": {
+      "deltas_pp": [
+        1.0507880910683056,
+        1.225919439579684,
+        1.0507880910682985
+      ],
+      "mean_pp": 1.1091652072387628,
+      "nominal_t95": [
+        0.8579887489835827,
+        1.3603416654939429
+      ]
+    },
+    "independent__native": {
+      "deltas_pp": [
+        1.7513134851138403,
+        1.7513134851138403,
+        1.5761821366024478
+      ],
+      "mean_pp": 1.692936368943376,
+      "nominal_t95": [
+        1.4417599106881807,
+        1.9441128271985715
+      ]
+    },
+    "independent__single_neural": {
+      "deltas_pp": [
+        0.3502626970227709,
+        0.7005253940455347,
+        0.3502626970227638
+      ],
+      "mean_pp": 0.4670169293636898,
+      "nominal_t95": [
+        -0.03533598714667535,
+        0.969369845874055
+      ]
+    },
+    "independent__random_independent": {
+      "deltas_pp": [
+        1.4010507880910694,
+        1.0507880910683056,
+        0.3502626970227638
+      ],
+      "mean_pp": 0.9340338587273797,
+      "nominal_t95": [
+        -0.395067028747046,
+        2.263134746201805
+      ]
+    }
+  },
+  "primary_pass": true,
+  "one_pp_above_existing": false,
+  "limitations": [
+    "Exploratory reused development: 64 groups,571 target occurrences,240 unique targets/repeat; one author checkpoint and three cached generation/noise repeats. No independent confirmation or IID occurrence inference.",
+    "TRAIN first32 groups chosen by existing order before new model calls; new two-edit imitation has less training-group coverage than existing128-group ranker.",
+    "Three geometrically nominated regions limit learned region choice; four disjoint candidates/region versus old eight for its first region. No hidden equal-information claim.",
+    "Two-stage heads learn exact two-edit value-to-go by listwise imitation, not policy-gradient reinforcement learning or first novelty.",
+    "Selection teacher-context ceilings: new neural2, original9, independent13, greedy21. Shared21 ceiling is not equal actual computation; full costs retained.",
+    "Same-position random tests endpoint choice. Joint random matches total exchanged-edge count and step count, may have no alternative region subset; degeneracy reported.",
+    "All injected features, target edges, owned adjacency, injected degree and physical node/edge budgets fixed. Original endpoint degrees may change.",
+    "Independent teacher only drives decisions. Official GAGA is loaded after all VALID plans seal. No TEST/YelpChi/API/new upstream generation.",
+    "Robust teacher-view variant deferred: isolate region/rule and sequential decision mechanisms first."
+  ],
+  "wall_seconds": 6517.412158664083,
+  "process_cpu_seconds": 15864.757758169
+}

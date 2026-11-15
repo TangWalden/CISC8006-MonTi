@@ -1,0 +1,558 @@
+{
+  "details": {
+    "rewriter__single_neural": {
+      "gained_occurrences": 6,
+      "lost_occurrences": 0,
+      "unique_gained_targets": 5,
+      "unique_lost_targets": 0,
+      "class_disagreements": 6,
+      "case_gains": [
+        [
+          0,
+          1174,
+          2608
+        ],
+        [
+          1,
+          1172,
+          11929
+        ],
+        [
+          1,
+          1356,
+          13036
+        ],
+        [
+          1,
+          1174,
+          2608
+        ],
+        [
+          2,
+          1441,
+          12673
+        ],
+        [
+          2,
+          1492,
+          2654
+        ]
+      ],
+      "case_losses": []
+    },
+    "rewriter__native": {
+      "gained_occurrences": 27,
+      "lost_occurrences": 0,
+      "unique_gained_targets": 13,
+      "unique_lost_targets": 0,
+      "class_disagreements": 27,
+      "case_gains": [
+        [
+          0,
+          1402,
+          10877
+        ],
+        [
+          0,
+          1432,
+          11717
+        ],
+        [
+          0,
+          1486,
+          3204
+        ],
+        [
+          0,
+          1505,
+          11345
+        ],
+        [
+          0,
+          1444,
+          11500
+        ],
+        [
+          0,
+          1051,
+          3312
+        ],
+        [
+          0,
+          1356,
+          13036
+        ],
+        [
+          0,
+          1356,
+          13097
+        ],
+        [
+          0,
+          1174,
+          2608
+        ],
+        [
+          1,
+          1402,
+          10877
+        ],
+        [
+          1,
+          1316,
+          2605
+        ],
+        [
+          1,
+          1432,
+          11717
+        ],
+        [
+          1,
+          1486,
+          3204
+        ],
+        [
+          1,
+          1444,
+          11500
+        ],
+        [
+          1,
+          1051,
+          3312
+        ],
+        [
+          1,
+          1356,
+          13036
+        ],
+        [
+          1,
+          1356,
+          13097
+        ],
+        [
+          1,
+          1174,
+          2608
+        ],
+        [
+          2,
+          1402,
+          10877
+        ],
+        [
+          2,
+          1432,
+          11717
+        ],
+        [
+          2,
+          1486,
+          3204
+        ],
+        [
+          2,
+          1444,
+          11500
+        ],
+        [
+          2,
+          1051,
+          3312
+        ],
+        [
+          2,
+          1356,
+          13036
+        ],
+        [
+          2,
+          1492,
+          2654
+        ],
+        [
+          2,
+          1492,
+          2730
+        ],
+        [
+          2,
+          1492,
+          12432
+        ]
+      ],
+      "case_losses": []
+    },
+    "rewriter__random_endpoint": {
+      "gained_occurrences": 20,
+      "lost_occurrences": 0,
+      "unique_gained_targets": 13,
+      "unique_lost_targets": 0,
+      "class_disagreements": 20,
+      "case_gains": [
+        [
+          0,
+          1441,
+          12673
+        ],
+        [
+          0,
+          1402,
+          10877
+        ],
+        [
+          0,
+          1432,
+          11717
+        ],
+        [
+          0,
+          1444,
+          11500
+        ],
+        [
+          0,
+          1051,
+          3312
+        ],
+        [
+          0,
+          1174,
+          2608
+        ],
+        [
+          0,
+          1492,
+          2654
+        ],
+        [
+          1,
+          1402,
+          10877
+        ],
+        [
+          1,
+          1316,
+          2605
+        ],
+        [
+          1,
+          1172,
+          11929
+        ],
+        [
+          1,
+          1432,
+          11717
+        ],
+        [
+          1,
+          1356,
+          13036
+        ],
+        [
+          1,
+          1356,
+          13097
+        ],
+        [
+          1,
+          1174,
+          2608
+        ],
+        [
+          1,
+          1492,
+          2654
+        ],
+        [
+          2,
+          1402,
+          10877
+        ],
+        [
+          2,
+          1486,
+          3204
+        ],
+        [
+          2,
+          1473,
+          10911
+        ],
+        [
+          2,
+          1356,
+          13036
+        ],
+        [
+          2,
+          1492,
+          2654
+        ]
+      ],
+      "case_losses": []
+    },
+    "rewriter__random_joint": {
+      "gained_occurrences": 24,
+      "lost_occurrences": 0,
+      "unique_gained_targets": 14,
+      "unique_lost_targets": 0,
+      "class_disagreements": 24,
+      "case_gains": [
+        [
+          0,
+          1402,
+          10877
+        ],
+        [
+          0,
+          1402,
+          11296
+        ],
+        [
+          0,
+          1402,
+          11533
+        ],
+        [
+          0,
+          1172,
+          11929
+        ],
+        [
+          0,
+          1432,
+          11717
+        ],
+        [
+          0,
+          1051,
+          3312
+        ],
+        [
+          0,
+          1356,
+          13036
+        ],
+        [
+          0,
+          1356,
+          13097
+        ],
+        [
+          0,
+          1174,
+          2608
+        ],
+        [
+          1,
+          1402,
+          10877
+        ],
+        [
+          1,
+          1172,
+          11929
+        ],
+        [
+          1,
+          1432,
+          11717
+        ],
+        [
+          1,
+          1486,
+          3204
+        ],
+        [
+          1,
+          1444,
+          11500
+        ],
+        [
+          1,
+          1356,
+          13036
+        ],
+        [
+          1,
+          1356,
+          13097
+        ],
+        [
+          1,
+          1174,
+          2608
+        ],
+        [
+          1,
+          1492,
+          2654
+        ],
+        [
+          2,
+          1402,
+          10877
+        ],
+        [
+          2,
+          1486,
+          3204
+        ],
+        [
+          2,
+          1051,
+          3312
+        ],
+        [
+          2,
+          1492,
+          2654
+        ],
+        [
+          2,
+          1492,
+          2730
+        ],
+        [
+          2,
+          1492,
+          12432
+        ]
+      ],
+      "case_losses": []
+    },
+    "greedy__independent": {
+      "gained_occurrences": 0,
+      "lost_occurrences": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "class_disagreements": 0,
+      "case_gains": [],
+      "case_losses": []
+    },
+    "greedy__rewriter": {
+      "gained_occurrences": 2,
+      "lost_occurrences": 0,
+      "unique_gained_targets": 1,
+      "unique_lost_targets": 0,
+      "class_disagreements": 2,
+      "case_gains": [
+        [
+          0,
+          1051,
+          10892
+        ],
+        [
+          1,
+          1051,
+          10892
+        ]
+      ],
+      "case_losses": []
+    },
+    "random_region_feasibility": {
+      "cases": 192,
+      "active": 168,
+      "degenerate_all": 56,
+      "degenerate_active": 32
+    },
+    "decision_context_totals": {
+      "neural_selection_contexts": 360,
+      "greedy_selection_contexts": 3440,
+      "old_single_selection_contexts": 1552,
+      "independent_selection_contexts": 2168
+    },
+    "scope": "Posthoc saved JSON analysis, no model/tensor/dataset loads. Decision context totals include reused native evidence and are not measured speedups. Unique IDs overlap across repeats.",
+    "input_sha256": "65830a55d034e13c948a804a9965d518d16251452e347d1e872b3243b1e768e6",
+    "wall_seconds": 0.14566418807953596,
+    "process_cpu_seconds": 0.137798414
+  },
+  "group_case_summary": {
+    "status": "posthoc_after_outcomes",
+    "total_gains_vs_existing": 6,
+    "total_losses_vs_existing": 0,
+    "wins": 6,
+    "ties": 186,
+    "losses": 0,
+    "region_random_degenerate": 56,
+    "causal_claim": false
+  },
+  "posthoc_examples": [
+    {
+      "seed": 1,
+      "group": 1356,
+      "targets": 6,
+      "rewriter_wrong": 2,
+      "native_wrong": 0,
+      "existing_wrong": 1,
+      "random_wrong": 0,
+      "gains_vs_existing": 1,
+      "losses_vs_existing": 0,
+      "slots": 2,
+      "exchanged_edges": 14,
+      "region_random_feasible_subsets": 3,
+      "mean_victim_margin_delta": -0.6350052356719971,
+      "mean_teacher_margin_delta": -0.728977620601654,
+      "teacher_queries": {
+        "neural_selection_contexts": 2,
+        "greedy_selection_contexts": 21,
+        "old_single_selection_contexts": 9,
+        "independent_selection_contexts": 13
+      }
+    },
+    {
+      "seed": 0,
+      "group": 1174,
+      "targets": 6,
+      "rewriter_wrong": 5,
+      "native_wrong": 4,
+      "existing_wrong": 4,
+      "random_wrong": 4,
+      "gains_vs_existing": 1,
+      "losses_vs_existing": 0,
+      "slots": 2,
+      "exchanged_edges": 44,
+      "region_random_feasible_subsets": 3,
+      "mean_victim_margin_delta": -0.031150957569479942,
+      "mean_teacher_margin_delta": -0.0608244352042675,
+      "teacher_queries": {
+        "neural_selection_contexts": 2,
+        "greedy_selection_contexts": 21,
+        "old_single_selection_contexts": 9,
+        "independent_selection_contexts": 13
+      }
+    },
+    {
+      "seed": 0,
+      "group": 1441,
+      "targets": 4,
+      "rewriter_wrong": 3,
+      "native_wrong": 3,
+      "existing_wrong": 3,
+      "random_wrong": 2,
+      "gains_vs_existing": 0,
+      "losses_vs_existing": 0,
+      "slots": 2,
+      "exchanged_edges": 32,
+      "region_random_feasible_subsets": 3,
+      "mean_victim_margin_delta": 0.006330773234367371,
+      "mean_teacher_margin_delta": -0.01338285207748413,
+      "teacher_queries": {
+        "neural_selection_contexts": 2,
+        "greedy_selection_contexts": 21,
+        "old_single_selection_contexts": 9,
+        "independent_selection_contexts": 13
+      }
+    }
+  ],
+  "interpretation": "Six gained occurrences versus existing neural involve five unique targets; no lost occurrences. Greedy and independent have identical class predictions on all1713 occurrences, so no demonstrated interaction benefit. Greedy adds two successes over neural on one repeated target. Same-position and joint random comparisons do not establish first novelty.",
+  "saved_detail_registration": {
+    "status": "posthoc_after_primary_results",
+    "source_sha256": "cab65120b4b3a2c544db795a28f3ed8e3b5204a3a4136f0856bdbf0a8bfaf442",
+    "purpose": "Distinguish repeated occurrences from unique news and identical rates from identical predictions; clarify random-region feasibility and query accounting."
+  }
+}

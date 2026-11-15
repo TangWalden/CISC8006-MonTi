@@ -1,0 +1,334 @@
+{
+  "scientific_source_commit": "73e34879936d261fda7a120471b843620f011a29",
+  "source_hashes_at_execution": {
+    "audit.py": "485f832f911af6b97ef2c82aa7e1873318ce03a58952314d0a9da80af0fd483e",
+    "checks.py": "a6181c601bc462fbe6139d2eda95fa3fc705eb0b79a605d3a4486c684d97654c",
+    "common.py": "c69f775f84de6a8dc0075d87c61507834ae689856862e7ad9f890fa841d7230a",
+    "driver.py": "c5568ed6f6e3e81a8463ff47cf1bd884c74d57008e36dd0e3567f8f9f071fa41",
+    "kernel.py": "a621bae95bea612310d40c0502c56e5faf4f74a08f9b5608fa83fcc206666342",
+    "network.py": "49df9cf80dac491d511c0ac39262e96970f0746fcb07cf6f0dea7d8be3259a52",
+    "preflight.py": "361e19b80f0e9e8874e57e1d42a0a36a3b328a2fea42003011b762c4e7b67ab6",
+    "prepare.py": "16bf10c5773b37fa8fd6f0e2bc0b775f20b974f6f652d39cbb2606b5975558fa",
+    "README.md": "88e6c7542832edff4f29343ac22e7e4611b933fe223dd8f3a441023c4a228a95",
+    "run.py": "1e85ed5a655ae75adf3e89349248801b7387977af714bfda38ee6b5cbce7c354"
+  },
+  "protocol_sha256": "970e59981394d2bbc4d15032771e79abaa1471ebc2b88f75dcbb7db83d7db75f",
+  "launch": {
+    "pid": 3530981,
+    "started_utc": "2026-11-14T01:10:44.460964+00:00",
+    "protocol_sha256": "970e59981394d2bbc4d15032771e79abaa1471ebc2b88f75dcbb7db83d7db75f"
+  },
+  "preparation": {
+    "exit_code": 0,
+    "wall_seconds": 4.225361017044634,
+    "stdout": "{'status': 'frozen', 'protocol_sha256': '970e59981394d2bbc4d15032771e79abaa1471ebc2b88f75dcbb7db83d7db75f', 'model_calls': 0}\n",
+    "stderr": ""
+  },
+  "guardian": {
+    "status": "completed",
+    "phases": [
+      {
+        "phase": "preflight",
+        "pid": 3530982,
+        "exit_code": 0,
+        "wall_seconds": 19.339109044056386
+      },
+      {
+        "phase": "run",
+        "pid": 3531139,
+        "exit_code": 0,
+        "wall_seconds": 6523.5672854280565
+      },
+      {
+        "phase": "audit",
+        "pid": 3540327,
+        "exit_code": 0,
+        "wall_seconds": 9.051582101034
+      }
+    ],
+    "wall_seconds": 6551.958605865017,
+    "GPU_hours": 0,
+    "automatic_retry": false
+  },
+  "preflight": {
+    "status": "passed",
+    "counters": {
+      "physical_builds": 8,
+      "teacher_batches": 2,
+      "teacher_contexts": 4,
+      "policy_forwards": 0,
+      "updates": 2,
+      "official_GAGA_VALID": 0,
+      "upstream_generations": 0,
+      "TEST_queries": 0,
+      "API_calls": 0
+    },
+    "GPU_hours": 0,
+    "synthetic": {
+      "status": "passed",
+      "checks": 127,
+      "scope": "Synthetic target/action equivariance, normalization, empty STOP and exact random dose/count invariants"
+    },
+    "checks": [
+      {
+        "group": 839,
+        "regions": 3,
+        "options": 12,
+        "native_sequence_error": 0.0,
+        "composition_order_error": 0.0,
+        "checks": "passed"
+      },
+      {
+        "group": 835,
+        "regions": 3,
+        "options": 12,
+        "native_sequence_error": 0.0,
+        "composition_order_error": 0.0,
+        "checks": "passed"
+      }
+    ],
+    "official_victim_loaded": false,
+    "wall_seconds": 14.74580459902063,
+    "process_cpu_seconds": 26.658913089000002,
+    "protocol_sha256": "970e59981394d2bbc4d15032771e79abaa1471ebc2b88f75dcbb7db83d7db75f"
+  },
+  "closure": {
+    "status": "completed_closed",
+    "runtime_head": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+    "tracked_status": "",
+    "driver_absent": true,
+    "model_calls": 0
+  },
+  "private_stage": "/home/tjy/Project/MonTi-course/runs/target_rewriter_20261114_attempt1",
+  "training_epochs": [
+    [
+      {
+        "epoch": 1,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.932398150033421
+      },
+      {
+        "epoch": 2,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8917128723528651
+      },
+      {
+        "epoch": 3,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8780036018954382
+      },
+      {
+        "epoch": 4,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8704778653052119
+      },
+      {
+        "epoch": 5,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8598518446087837
+      },
+      {
+        "epoch": 6,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8517503836088711
+      },
+      {
+        "epoch": 7,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8516919040017659
+      },
+      {
+        "epoch": 8,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8425152068336805
+      },
+      {
+        "epoch": 9,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.845759227209621
+      },
+      {
+        "epoch": 10,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.837703592909707
+      },
+      {
+        "epoch": 11,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8396266419026586
+      },
+      {
+        "epoch": 12,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8370338219735358
+      }
+    ],
+    [
+      {
+        "epoch": 1,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.941791839220307
+      },
+      {
+        "epoch": 2,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.9018975648690353
+      },
+      {
+        "epoch": 3,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.88330217924985
+      },
+      {
+        "epoch": 4,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.8707297678020867
+      },
+      {
+        "epoch": 5,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.8644703518260608
+      },
+      {
+        "epoch": 6,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.8631752031770619
+      },
+      {
+        "epoch": 7,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.8558419048786163
+      },
+      {
+        "epoch": 8,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.8555517592890696
+      },
+      {
+        "epoch": 9,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.8525331545282493
+      },
+      {
+        "epoch": 10,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.8501308553598144
+      },
+      {
+        "epoch": 11,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.851292418485338
+      },
+      {
+        "epoch": 12,
+        "states": 360,
+        "updates": 352,
+        "mean_cross_entropy": 1.8498363251035863
+      }
+    ],
+    [
+      {
+        "epoch": 1,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.9238414681620069
+      },
+      {
+        "epoch": 2,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.885766210158666
+      },
+      {
+        "epoch": 3,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8698958221409057
+      },
+      {
+        "epoch": 4,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8547512587573793
+      },
+      {
+        "epoch": 5,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8482117157843378
+      },
+      {
+        "epoch": 6,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8412563948167695
+      },
+      {
+        "epoch": 7,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.84068833142519
+      },
+      {
+        "epoch": 8,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8394335087802676
+      },
+      {
+        "epoch": 9,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8387059559424719
+      },
+      {
+        "epoch": 10,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.836353345712026
+      },
+      {
+        "epoch": 11,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8380871163474188
+      },
+      {
+        "epoch": 12,
+        "states": 364,
+        "updates": 360,
+        "mean_cross_entropy": 1.8368528342909283
+      }
+    ]
+  ],
+  "compact_file_hashes": {
+    "audit.json": "5400e45ebdf2180f1bbe82a52fc1a6b42dab48079b379ae03d00d579b43a7e74",
+    "paired.json": "0731a8545bf6a12b294ba2e49fa2f6cd1af6db716bb2a5a8007222089955e592",
+    "protocol.json": "970e59981394d2bbc4d15032771e79abaa1471ebc2b88f75dcbb7db83d7db75f",
+    "summary.json": "0f23b9c7320428990e50af344c90d47f85792f875045e37d76a0a07dd7d611ae"
+  },
+  "description": "One scientific launch, no retry. Source/readme hashes refer to73e3487; later result documentation is separate. Raw cards/models/all logits remain private; no TEST/YelpChi/API/GPU work."
+}

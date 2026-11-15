@@ -16,18 +16,43 @@
   "archive": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/research_cost_ledger.json",
   "last_completed_extension": {
     "date": "2026-11-14",
-    "method": "YelpChi input-asset and cache preparation only",
+    "method": "Target-aware two-step rewriter development, completed one launch",
     "GPU_hours": 0,
-    "wall_seconds": 49.10940585192293,
-    "process_CPU_seconds": 89.45960538700001,
-    "remote_download_and_cache_outer_wall_seconds": 97.35666702594608,
-    "GCN_representation_forwards": 45,
-    "MonTi_generations": 0,
-    "GAGA_forwards": 0,
-    "optimizer_updates": 0,
-    "TEST_queries": 0,
-    "experimental_API_calls": 0,
-    "scope": "No attack efficacy evaluation. Input caches use original TRAIN labels plus transductive graph/features; strict author/victim state compatibility checked without their forward calls. Local transfer CPU unmetered; no GPU."
+    "guardian_wall_seconds": 6551.958605865017,
+    "main_wall_seconds": 6517.412158664083,
+    "main_process_CPU_seconds": 15864.757758169,
+    "preflight_process_CPU_seconds": 26.658913089000002,
+    "audit_process_CPU_seconds": 6.0494702469999995,
+    "main_counters": {
+      "physical_builds": 7621,
+      "teacher_batches": 1099,
+      "teacher_contexts": 10440,
+      "policy_forwards": 360,
+      "updates": 12864,
+      "official_GAGA_VALID": 2112,
+      "upstream_generations": 0,
+      "TEST_queries": 0,
+      "API_calls": 0
+    },
+    "preflight_counters": {
+      "physical_builds": 8,
+      "teacher_batches": 2,
+      "teacher_contexts": 4,
+      "policy_forwards": 0,
+      "updates": 2,
+      "official_GAGA_VALID": 0,
+      "upstream_generations": 0,
+      "TEST_queries": 0,
+      "API_calls": 0
+    },
+    "audit_model_forwards": 0,
+    "posthoc_saved_detail": {
+      "date": "2026-11-15",
+      "wall_seconds": 0.14566418807953596,
+      "process_CPU_seconds": 0.137798414,
+      "model_forwards": 0
+    },
+    "scope": "CPU timing windows are recorded by each script; outer wall includes startup/wait. API/GPU/TEST/YelpChi and new upstream generation all zero. No automatic retry."
   },
   "completed_extensions": [
     {
@@ -471,6 +496,46 @@
       "TEST_queries": 0,
       "experimental_API_calls": 0,
       "scope": "No attack efficacy evaluation. Input caches use original TRAIN labels plus transductive graph/features; strict author/victim state compatibility checked without their forward calls. Local transfer CPU unmetered; no GPU."
+    },
+    {
+      "date": "2026-11-14",
+      "method": "Target-aware two-step rewriter development, completed one launch",
+      "GPU_hours": 0,
+      "guardian_wall_seconds": 6551.958605865017,
+      "main_wall_seconds": 6517.412158664083,
+      "main_process_CPU_seconds": 15864.757758169,
+      "preflight_process_CPU_seconds": 26.658913089000002,
+      "audit_process_CPU_seconds": 6.0494702469999995,
+      "main_counters": {
+        "physical_builds": 7621,
+        "teacher_batches": 1099,
+        "teacher_contexts": 10440,
+        "policy_forwards": 360,
+        "updates": 12864,
+        "official_GAGA_VALID": 2112,
+        "upstream_generations": 0,
+        "TEST_queries": 0,
+        "API_calls": 0
+      },
+      "preflight_counters": {
+        "physical_builds": 8,
+        "teacher_batches": 2,
+        "teacher_contexts": 4,
+        "policy_forwards": 0,
+        "updates": 2,
+        "official_GAGA_VALID": 0,
+        "upstream_generations": 0,
+        "TEST_queries": 0,
+        "API_calls": 0
+      },
+      "audit_model_forwards": 0,
+      "posthoc_saved_detail": {
+        "date": "2026-11-15",
+        "wall_seconds": 0.14566418807953596,
+        "process_CPU_seconds": 0.137798414,
+        "model_forwards": 0
+      },
+      "scope": "CPU timing windows are recorded by each script; outer wall includes startup/wait. API/GPU/TEST/YelpChi and new upstream generation all zero. No automatic retry."
     }
   ],
   "current_action_blind_phase_GPU_hours": 0
