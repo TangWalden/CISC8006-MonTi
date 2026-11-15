@@ -1,8 +1,10 @@
-# YelpChi assets prepared; experiments deferred
+# YelpChi asset preparation, 14 November snapshot
 
 On 14 November 2026 the owner requested data/cache preparation, followed by
 holding YelpChi experiments while reconsidering the GossipCop downstream.
-LifeIns is excluded. No YelpChi efficacy result is claimed.
+LifeIns is excluded. This preparation snapshot makes no efficacy claim.
+The owner later authorized the [completed YelpChi development comparison](../yelpchi_validation/),
+which found no measured gain. The original preparation record below is retained.
 
 - Official graph, split-0 node lists and target membership are present:
   45,900 nodes and 32 features; 556 TRAIN, 331 VALID and 548 TEST target groups.

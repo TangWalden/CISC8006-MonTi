@@ -13,6 +13,7 @@ matched study; rates across rows use different cohorts/checkpoints.
 
 | Study | Native MR | Random control MR | Learned MR | Conclusion |
 |---|---:|---:|---:|---|
+| [YelpChi method transfer, VALID](results/yelpchi_validation/) | 29.1304% | 29.1304% | 29.1304% | No gain; all eleven arms have identical paired class predictions |
 | [Two-step target-aware rewriter, VALID](results/target_rewriter/) | 57.9101% | 58.3187% / 58.0852% | **59.4863%** | +0.3503 pp over existing neural; below two-step greedy 59.6030% |
 | [Author-checkpoint context retrieval, all TEST groups](results/portal_full/) | 44.2638% | 44.5649% | **45.3733%** | Positive against both controls in all three conditional repeats |
 | [Context retrieval, VALID](results/portal_decoder/) | 57.9101% | 58.0269% | 59.1360% | Positive development mean; later complete-cohort result above |
@@ -46,7 +47,7 @@ slightly above neural. Earlier null/negative attempts remain recorded.
 |---|---|
 | Course scoring points and genuine remaining work | [Assessment mapping](docs/ASSESSMENT.md) |
 | Current method, controls and executable source | [Retrieval decoder](experiments/portal_decoder/), [complete-cohort runner](experiments/portal_full/) |
-| Latest results and audits | [Two-step development](results/target_rewriter/), [complete retrieval benchmark](results/portal_full/), [earlier development](results/portal_decoder/) |
+| Latest results and audits | [YelpChi transfer](results/yelpchi_validation/), [two-step development](results/target_rewriter/), [complete retrieval benchmark](results/portal_full/) |
 | Setup and historical reproduction | [Reproducing](docs/REPRODUCING.md) |
 | Other attempts, including failures | [Supplementary index](docs/SUPPLEMENTARY_STUDIES.md) |
 | Report and presentation drafts | [Report](docs/STAGED_REPORT.md), [slides guide](docs/SLIDES_GUIDE.md) - predate the latest results |

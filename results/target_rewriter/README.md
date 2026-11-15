@@ -56,11 +56,16 @@ existing neural one, and the rewriter two; its endpoint-random has zero. Seed
 the teacher and victim mean margin changes have opposite signs. These are
 illustrations after outcomes, not selection rules or causal proofs.
 
-Decision input-context totals, including reused initial evidence, are 360 for
-rewriter, 1,552 for the old single method, 2,168 for independent composition,
-and 3,440 for greedy. They are **not measured latency speedups** and exclude
-training, diagnostics and official evaluation; actual usage is recorded
-separately. Training used 32 fixed TRAIN groups per repeat, versus the old
+Recorded selection context totals, including reused initial evidence, are 360
+for rewriter, 1,552 for the old shared single-candidate cards, 2,168 for
+independent composition, and 3,440 for greedy. **These are not comparable
+minimum teacher-forward requirements or measured latency speedups.** The old
+neural ranker uses physical sequence changes and features, not teacher logits;
+it can rank without a teacher classifier forward. Its shared cards were also
+scored for direct-search controls. The new rewriter does use teacher margins.
+Physical reconstruction, classifier forwards, training and latency must be
+distinguished. See the [source-based accounting clarification](cost_interpretation.json);
+all original counters and results are retained. Training used 32 fixed TRAIN groups per repeat, versus the old
 ranker's 128; search pools also differ (three disjoint pools of four versus
 the old first pool of eight). Same graph budgets are not equal information,
 edit dose, or computation across all methods.

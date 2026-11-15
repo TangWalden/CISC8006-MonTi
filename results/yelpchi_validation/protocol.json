@@ -1,0 +1,1689 @@
+{
+  "schema": "yelpchi_validation_v1",
+  "status": "frozen",
+  "frozen_utc": "2026-11-15T15:27:59.288282+00:00",
+  "owner_authorization": "Latest owner asks fair cross-dataset validation; supersedes YelpChi preparation-only hold. LifeIns excluded.",
+  "dataset": "yelpchi_rtr",
+  "TEST_allowed": false,
+  "runtime_root": "/home/tjy/Project/MonTi-course",
+  "runtime_commit": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+  "asset_root": "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1",
+  "support_source": "/home/tjy/Project/MonTi-course/runs/block_swap_20261113_attempt1/source",
+  "source_commit": "61eeb4a4018c3b65318b85d8e7d393a2bd318cdc",
+  "sources": {
+    "adapter.py": "78d07853b1686ed100749b570f5bf3f2e426ff959cf704e1c43e7da067792091",
+    "audit.py": "970614e2faf1c36bbc943fd69f7353c8214741005eefb2293ed2cb98b4274e74",
+    "baseline_audit.py": "fe8260b78e9e793fbe8041c26c89f7f7bd11dea95c632968fdab8f65367f2c44",
+    "common.py": "3c3002e1b4deebe478f0bc64247a7aa0163956fc9a4da5b597613dddb3e43400",
+    "driver.py": "e09b69c60106e5f7de699c89e5c27e8dfae8ce0acd72347d7b51c8c4dddb2768",
+    "native_preflight.py": "03402dd007b4b6b686055877f75a28e54402eb2d81b4cfc7aa642838ef0647ed",
+    "preflight.py": "8f78cdddeb7d35fed4bdbad54a9e5e8e8c5aa81b5d14a49a571d72770a171a09",
+    "prepare.py": "11fc152cc43a789b4c9a240aa1d3c364f99df1f146484638af8d514b01cc781c",
+    "README.md": "9d76296e8b7a63d716baeb2e5e9d35f3c7df5704e05c0cc81ccb208fbea6a30b",
+    "run.py": "9670e6f45ab4fc388f6a85fd91310035db8a355d27bc392bd27e175ba85f3016",
+    "single.py": "ea1a87c0f853fc839cd5c71926252ddcbda59cfcfbee7426192aa9f497964ef0",
+    "teacher.py": "af06f4572f7f03e24dd81e417bee01a5b969c3304dd7e77469034f1f43a532c8"
+  },
+  "shared_sources": {
+    "run.py": {
+      "path": "/home/tjy/Project/MonTi-course/runs/target_rewriter_20261114_attempt1/source/run.py",
+      "sha256": "1e85ed5a655ae75adf3e89349248801b7387977af714bfda38ee6b5cbce7c354"
+    },
+    "audit.py": {
+      "path": "/home/tjy/Project/MonTi-course/runs/target_rewriter_20261114_attempt1/source/audit.py",
+      "sha256": "485f832f911af6b97ef2c82aa7e1873318ce03a58952314d0a9da80af0fd483e"
+    },
+    "preflight.py": {
+      "path": "/home/tjy/Project/MonTi-course/runs/target_rewriter_20261114_attempt1/source/preflight.py",
+      "sha256": "361e19b80f0e9e8874e57e1d42a0a36a3b328a2fea42003011b762c4e7b67ab6"
+    },
+    "checks.py": {
+      "path": "/home/tjy/Project/MonTi-course/runs/target_rewriter_20261114_attempt1/source/checks.py",
+      "sha256": "a6181c601bc462fbe6139d2eda95fa3fc705eb0b79a605d3a4486c684d97654c"
+    },
+    "kernel.py": {
+      "path": "/home/tjy/Project/MonTi-course/runs/target_rewriter_20261114_attempt1/source/kernel.py",
+      "sha256": "a621bae95bea612310d40c0502c56e5faf4f74a08f9b5608fa83fcc206666342"
+    },
+    "network.py": {
+      "path": "/home/tjy/Project/MonTi-course/runs/target_rewriter_20261114_attempt1/source/network.py",
+      "sha256": "49df9cf80dac491d511c0ac39262e96970f0746fcb07cf6f0dea7d8be3259a52"
+    },
+    "geometry_hard.py": {
+      "path": "/home/tjy/Project/MonTi-course/runs/portal_decoder_20261113_attempt2/source/geometry_hard.py",
+      "sha256": "6ca342c2b103af1bf9ad04113a32d6e95eb4473e32de89a15f3d1e30980a23ba"
+    },
+    "model.py": {
+      "path": "/home/tjy/Project/MonTi-course/runs/portal_decoder_20261113_attempt2/source/model.py",
+      "sha256": "71dcf718c861f6d71f73ee9e50880fe0366ffdd08a2c8a56cecdf783c49e56aa"
+    },
+    "portal_common.py": {
+      "path": "/home/tjy/Project/MonTi-course/runs/portal_full_20261113_attempt1/source/common.py",
+      "sha256": "c988e305f0dc60299ebaba1ae9ab2ffe7beb7bdeff59caffb4c4c204e1997d80"
+    }
+  },
+  "inputs": {
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/target_assign_matrix_0.npz": "8fe5ddedbf26760772aaa1f30661d42e434f9fa50b2a2f6a83dcf3df7d5f18bd",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/test_idx_surro_0.npy": "12f33b6cb2bf4d1fca4ded84c528c04a88d651bfe6b31429dd8b279cc34be9d8",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/test_target_mask_0.npy": "dc5d05a13beb9141d0f2b1b7b0e25cc062abb8b3e75037694895fc0a572d34d8",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/train_idx_surro_0.npy": "cbae26384821c4a18683b2a245c1d0afe04b82655b42c176a1ff78fafbc7dbb0",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/train_target_mask_0.npy": "ab390cd12c8b7bd39278bfdbf1dd4caebc7d71bace97c4ab05288bff557ca601",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/valid_idx_surro_0.npy": "a467f3d77ec5b96dad74ba34201592d833f9cb3c0439460a8bdaa93504a8d2eb",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/valid_target_mask_0.npy": "4282d2a6bf9278351a354f3e9babdfdcea68eb70d6d5acac235047e89c3fc660",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/YelpChi.bin": "21e4e82ef6795e9711ffc320e96c337eb1ac8cbca39ad170b5588ea22307d4ef",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/best_models/checkpoints/GCN-GAGA-yelpchi_rtr-best_model.pickle": "18b4b85e44d360f350e14587786c2cf31133497da54cac2d70854e64aeeeaca4",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/best_models/configs/GCN-GAGA-yelpchi_rtr-best_config.json": "ba641ee57d6d22d989dfc41e6239cea31e1d273aab91321855f93037f9264681",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/models/pretrained_models/surrogate_models/GCN-yelpchi_rtr-0.pickle": "be3c7be91f1041af07a8dcd3c036a32b8f4cbc39bb8107a8499049a41f0781b4",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/models/pretrained_models/victim_models/GAGA-yelpchi_rtr-0.pickle": "5422b9ed067f268b81d810e9eb9fe1bb0b8662d78715c98e9f7d8aed49cd751f",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/cache_prepare.py": "52b0d626dafd397426c148fe467a9ae998ec01fcbc35e5b6362910d8aeda31d3",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/h_GCN.npy": "78ffb78724d6826453bb22bb82796294853ea8baa80583019ae5cb218c5c291c",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/yelpchi_rtr_gaga_sequence_0.npy": "4598e7771bb4b78a215a2df805f7cc29bfa580cfa4eafa9a88869d071d6d5c4f",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/yelpchi_rtr_gaga_adj2_0.npz": "977b49486cf8e133660e3d5b2b35448bea6042aaae8d7753a3cbc2e9ea2164b2",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/yelpchi_rtr_gaga_feat_sum_0.npy": "e31eeb4658596d1f3c1d2a2b83770aaccdd037bd962a6002a34447bde8fadfbd",
+    "/home/tjy/Project/MonTi-course/runs/yelpchi_assets_20261114_attempt1/Datasets/YelpChi_RTR/data_split/yelpchi_rtr_gaga_degree_0.npy": "fde35cc88b8c53c19268f2f3e364c7e881e4aff63981e55a34004c9dd8141289",
+    "/home/tjy/Project/MonTi-course/modules/result_manager.py": "b79ed72b1f9f5edea952f9bd7bf77f735519dc2cd4604f6abe8be40099a3d06c",
+    "/home/tjy/Project/MonTi-course/modules/data_handler.py": "f7eabf047244659e5234cadc11c8a3ed8c4b7769116126fd79299f0aa1fa66aa",
+    "/home/tjy/Project/MonTi-course/modules/experiment_handler.py": "ca0645620b7e70dc3d44733d6d9580abfea58e12749ec8e5e8e5d814f67846b8",
+    "/home/tjy/Project/MonTi-course/modules/schedulers.py": "b58506530fdf5611b627d74599af3357e8f77f021b64abdf0c8da5e17c39bee4",
+    "/home/tjy/Project/MonTi-course/models/victim_model.py": "4648133355dfb3b99a7d1b5852dcb4d84c3977d462edff701287f1694718743a",
+    "/home/tjy/Project/MonTi-course/models/attack_model.py": "5bf043f87c4cac4d98d28d87b88751ed62592742a33d349034fbbf570b6325d0",
+    "/home/tjy/Project/MonTi-course/utils/constants.py": "d88414e1c4775ceb03c1968639493ca016b5f8ce118ce92f3f50bbc2e2f0a09e",
+    "/home/tjy/Project/MonTi-course/utils/utils.py": "c95383d2bbacba69e81b6b65e7f8b53be4085fc317d08fb445a94f702b13a732",
+    "/home/tjy/Project/MonTi-course/models/pretrained_models/configs/GCN-yelpchi_rtr-0.json": "972e1c1b30460a54c88c979ac9de36282ad3976f42c509b55184343e9d76dc61"
+  },
+  "parent": "/home/tjy/Project/MonTi-course/runs/yelpchi_validation_20261115_attempt1/single",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "single_train_groups": [
+    282,
+    195,
+    295,
+    264,
+    500,
+    263,
+    242,
+    238,
+    123,
+    127,
+    380,
+    161,
+    130,
+    436,
+    513,
+    521,
+    64,
+    472,
+    36,
+    296,
+    378,
+    98,
+    464,
+    483,
+    313,
+    59,
+    286,
+    268,
+    187,
+    33,
+    117,
+    164,
+    66,
+    25,
+    58,
+    23,
+    62,
+    553,
+    456,
+    322,
+    160,
+    555,
+    503,
+    188,
+    466,
+    211,
+    185,
+    384,
+    214,
+    241,
+    244,
+    337,
+    110,
+    182,
+    154,
+    408,
+    547,
+    107,
+    339,
+    390,
+    372,
+    335,
+    518,
+    47,
+    115,
+    46,
+    119,
+    235,
+    428,
+    303,
+    171,
+    196,
+    126,
+    512,
+    227,
+    338,
+    184,
+    19,
+    99,
+    155,
+    280,
+    114,
+    78,
+    82,
+    481,
+    143,
+    367,
+    101,
+    437,
+    271,
+    317,
+    383,
+    6,
+    89,
+    273,
+    289,
+    178,
+    245,
+    37,
+    360,
+    328,
+    63,
+    453,
+    534,
+    129,
+    28,
+    200,
+    301,
+    65,
+    524,
+    71,
+    275,
+    35,
+    44,
+    528,
+    414,
+    137,
+    158,
+    215,
+    221,
+    463,
+    180,
+    9,
+    529,
+    404,
+    104,
+    124,
+    83
+  ],
+  "train_groups": [
+    282,
+    195,
+    295,
+    264,
+    500,
+    263,
+    242,
+    238,
+    123,
+    127,
+    380,
+    161,
+    130,
+    436,
+    513,
+    521,
+    64,
+    472,
+    36,
+    296,
+    378,
+    98,
+    464,
+    483,
+    313,
+    59,
+    286,
+    268,
+    187,
+    33,
+    117,
+    164
+  ],
+  "valid_groups": [
+    725,
+    655,
+    584,
+    611,
+    595,
+    839,
+    858,
+    813,
+    886,
+    758,
+    707,
+    757,
+    849,
+    822,
+    756,
+    692,
+    864,
+    592,
+    881,
+    720,
+    574,
+    788,
+    801,
+    746,
+    759,
+    803,
+    634,
+    710,
+    796,
+    580,
+    670,
+    792,
+    709,
+    564,
+    859,
+    857,
+    795,
+    814,
+    637,
+    750,
+    767,
+    703,
+    831,
+    687,
+    786,
+    560,
+    651,
+    706,
+    779,
+    696,
+    785,
+    714,
+    850,
+    557,
+    668,
+    598,
+    811,
+    860,
+    613,
+    685,
+    619,
+    810,
+    678,
+    604
+  ],
+  "preflight_groups": [
+    282,
+    195
+  ],
+  "train_members": {
+    "282": [
+      40453,
+      40454
+    ],
+    "195": [
+      6111,
+      6114,
+      6116,
+      6118,
+      6119
+    ],
+    "295": [
+      42254,
+      42996,
+      42998,
+      42999,
+      43000,
+      43001,
+      43053,
+      43643
+    ],
+    "264": [
+      36549,
+      40104,
+      42684,
+      42691,
+      42692,
+      42694,
+      42707,
+      42717
+    ],
+    "500": [
+      41393,
+      41394
+    ],
+    "263": [
+      44099,
+      44680,
+      44682
+    ],
+    "242": [
+      40066,
+      40959,
+      41514,
+      41518,
+      41522,
+      41531,
+      41590,
+      41591
+    ],
+    "238": [
+      41471,
+      41473,
+      41524,
+      43505
+    ],
+    "123": [
+      41683,
+      42731,
+      45196,
+      45215,
+      45218
+    ],
+    "127": [
+      40054,
+      40055,
+      40056,
+      40057,
+      40059,
+      40062,
+      40064,
+      40065,
+      40067,
+      40069,
+      40070
+    ],
+    "380": [
+      40738,
+      40739,
+      40740,
+      40764,
+      40766,
+      40768,
+      40770,
+      40871,
+      40872,
+      40879,
+      40880,
+      40881
+    ],
+    "161": [
+      40534,
+      43432
+    ],
+    "130": [
+      36069,
+      41156,
+      41521,
+      42494,
+      45314,
+      45318,
+      45325,
+      45330,
+      45331,
+      45334,
+      45335,
+      45336,
+      45337
+    ],
+    "436": [
+      44943,
+      44945,
+      44947,
+      44948,
+      44949
+    ],
+    "513": [
+      42101,
+      42102
+    ],
+    "521": [
+      42564,
+      42565
+    ],
+    "64": [
+      5976,
+      5977,
+      5999
+    ],
+    "472": [
+      40479,
+      40480
+    ],
+    "36": [
+      45602,
+      45603,
+      45606,
+      45608,
+      45610,
+      45613,
+      45637,
+      45641,
+      45678,
+      45682,
+      45684,
+      45686
+    ],
+    "296": [
+      41334,
+      43325,
+      43327,
+      43330,
+      43331,
+      43333
+    ],
+    "378": [
+      40391,
+      45148,
+      45157,
+      45160,
+      45161
+    ],
+    "98": [
+      40981,
+      41166,
+      41167,
+      41168,
+      41169,
+      41203
+    ],
+    "464": [
+      40353,
+      40354
+    ],
+    "483": [
+      40810,
+      40811
+    ],
+    "313": [
+      42075,
+      44653,
+      44654,
+      44655,
+      44708
+    ],
+    "59": [
+      6145,
+      6149,
+      6159
+    ],
+    "286": [
+      41273,
+      43808,
+      43810,
+      43812,
+      43813
+    ],
+    "268": [
+      44611,
+      44612,
+      44624
+    ],
+    "187": [
+      33493,
+      42712,
+      43247,
+      43249,
+      43250,
+      43252,
+      43267,
+      43268,
+      43273,
+      43274,
+      43282,
+      43283
+    ],
+    "33": [
+      6501,
+      6503
+    ],
+    "117": [
+      40176,
+      41305,
+      41306,
+      41308,
+      43482
+    ],
+    "164": [
+      11361,
+      42758,
+      42759,
+      42760,
+      42761,
+      42763,
+      42777,
+      43625
+    ],
+    "66": [
+      41423,
+      41425,
+      43507
+    ],
+    "25": [
+      6362,
+      6363
+    ],
+    "58": [
+      40791,
+      43190,
+      45094,
+      45095,
+      45107,
+      45115,
+      45117,
+      45118
+    ],
+    "23": [
+      40790,
+      41632,
+      44465,
+      44468,
+      44469,
+      44473,
+      44474,
+      44479,
+      44480,
+      44483,
+      44486,
+      44487
+    ],
+    "62": [
+      41199,
+      42541,
+      44490,
+      44492,
+      44493,
+      44494
+    ],
+    "553": [
+      44702,
+      44703
+    ],
+    "456": [
+      40196,
+      40197
+    ],
+    "322": [
+      41764,
+      41766,
+      41776,
+      41781,
+      41789,
+      41790,
+      43529
+    ],
+    "160": [
+      42796,
+      43111,
+      44700,
+      44705,
+      44707,
+      44714,
+      44721,
+      44725,
+      44726,
+      44729,
+      44731,
+      44767
+    ],
+    "555": [
+      45669,
+      45670
+    ],
+    "503": [
+      41520,
+      41521
+    ],
+    "188": [
+      40277,
+      41676,
+      41677,
+      41685,
+      41700,
+      41701,
+      41702,
+      41705,
+      41720,
+      41721,
+      41722,
+      41724
+    ],
+    "466": [
+      40382,
+      40383
+    ],
+    "211": [
+      40506,
+      43428
+    ],
+    "185": [
+      40333,
+      40392,
+      40418,
+      40419,
+      43419
+    ],
+    "384": [
+      41587,
+      44743,
+      44750,
+      44754,
+      44758,
+      44773,
+      44775,
+      44780,
+      44781
+    ],
+    "214": [
+      45727,
+      45728,
+      45731,
+      45761,
+      45762
+    ],
+    "241": [
+      40620,
+      40622,
+      40638,
+      40640,
+      40643,
+      40647,
+      40649,
+      40651,
+      40652
+    ],
+    "244": [
+      42474,
+      42475,
+      42486,
+      42487,
+      42489,
+      42500,
+      42501,
+      42502,
+      42503,
+      43602
+    ],
+    "337": [
+      41324,
+      41325,
+      41342,
+      41343,
+      41344,
+      41345,
+      41347,
+      41349,
+      41350,
+      42957
+    ],
+    "110": [
+      44096,
+      44101,
+      44111
+    ],
+    "182": [
+      42752,
+      45001,
+      45003,
+      45005,
+      45012
+    ],
+    "154": [
+      6103,
+      6330,
+      6331,
+      6332
+    ],
+    "408": [
+      41333,
+      43071,
+      43072,
+      43073,
+      43074,
+      43652
+    ],
+    "547": [
+      44272,
+      44273
+    ],
+    "107": [
+      44319,
+      45795,
+      45799
+    ],
+    "339": [
+      45446,
+      45449,
+      45450,
+      45463
+    ],
+    "390": [
+      41150,
+      41293,
+      43210,
+      43216,
+      43227,
+      43228,
+      43243,
+      43244
+    ],
+    "372": [
+      6069,
+      6072,
+      6073
+    ],
+    "335": [
+      42984,
+      43641
+    ],
+    "518": [
+      42398,
+      42399
+    ],
+    "47": [
+      43673,
+      43981,
+      43994,
+      44802
+    ],
+    "115": [
+      41758,
+      43062,
+      43068,
+      43069
+    ],
+    "46": [
+      44027,
+      44029
+    ],
+    "119": [
+      40206,
+      42043,
+      42506,
+      44785,
+      44786,
+      44787,
+      44789,
+      44790,
+      44791,
+      44792,
+      44793,
+      44800,
+      44804,
+      44806,
+      44807,
+      44808,
+      44809
+    ],
+    "235": [
+      43096,
+      43100,
+      43101,
+      43103
+    ],
+    "428": [
+      41654,
+      41657,
+      41658,
+      41730,
+      43519
+    ],
+    "303": [
+      44838,
+      44839,
+      44840,
+      44842
+    ],
+    "171": [
+      6336,
+      6337
+    ],
+    "196": [
+      6530,
+      6531
+    ],
+    "126": [
+      42703,
+      45586,
+      45588,
+      45594,
+      45666,
+      45668,
+      45669
+    ],
+    "512": [
+      42096,
+      42098
+    ],
+    "227": [
+      40629,
+      40654,
+      40656,
+      40659,
+      40663
+    ],
+    "338": [
+      40085,
+      43388
+    ],
+    "184": [
+      41614,
+      41646,
+      41648,
+      43518
+    ],
+    "19": [
+      44258,
+      44261,
+      44263,
+      44266,
+      44267,
+      44268,
+      44281,
+      44283,
+      44284,
+      44295
+    ],
+    "99": [
+      42497,
+      43914,
+      43934,
+      43937,
+      43940,
+      43941
+    ],
+    "155": [
+      6152,
+      6155
+    ],
+    "280": [
+      41311,
+      43486,
+      43488
+    ],
+    "114": [
+      6413,
+      6417,
+      6418,
+      6420,
+      6421
+    ],
+    "78": [
+      45767,
+      45810,
+      45820,
+      45826,
+      45829,
+      45833,
+      45834,
+      45836,
+      45838
+    ],
+    "82": [
+      42792,
+      42814
+    ],
+    "481": [
+      40790,
+      40791
+    ],
+    "143": [
+      42058,
+      43261,
+      44049,
+      44606,
+      45488,
+      45493,
+      45494,
+      45513
+    ],
+    "367": [
+      40044,
+      43276,
+      43277
+    ],
+    "101": [
+      44997,
+      45037
+    ],
+    "437": [
+      41771,
+      43984,
+      45049,
+      45092
+    ],
+    "271": [
+      29129,
+      29774,
+      35730,
+      41884,
+      41885,
+      41887,
+      41904,
+      41905,
+      41906,
+      41907,
+      41908,
+      41910,
+      41911,
+      41917,
+      41919,
+      41921,
+      41923,
+      41937,
+      41938,
+      41953,
+      41956,
+      41957,
+      41959,
+      41960,
+      41964,
+      41965,
+      41967,
+      41971,
+      41972,
+      41976,
+      41979,
+      41992,
+      41994,
+      41995,
+      42037,
+      42038,
+      42042,
+      43541
+    ],
+    "317": [
+      6342,
+      6343,
+      6344
+    ],
+    "383": [
+      42947,
+      42952,
+      42956,
+      42958
+    ],
+    "6": [
+      5986,
+      5988,
+      5995,
+      5997
+    ],
+    "89": [
+      6633,
+      6634
+    ],
+    "273": [
+      42574,
+      42589,
+      42590,
+      42591
+    ],
+    "289": [
+      40190,
+      44766
+    ],
+    "178": [
+      43366,
+      43370,
+      43371,
+      43379,
+      43382
+    ],
+    "245": [
+      42180,
+      42199,
+      42202,
+      42204,
+      42206,
+      42207,
+      42212,
+      42214,
+      42217,
+      42218,
+      42219
+    ],
+    "37": [
+      42435,
+      43592
+    ],
+    "360": [
+      45750,
+      45752,
+      45756,
+      45758,
+      45773,
+      45774
+    ],
+    "328": [
+      44876,
+      44877
+    ],
+    "63": [
+      45152,
+      45471
+    ],
+    "453": [
+      40174,
+      40176,
+      40178
+    ],
+    "534": [
+      43304,
+      43305
+    ],
+    "129": [
+      40286,
+      43368,
+      44961,
+      44967,
+      45024,
+      45030
+    ],
+    "28": [
+      6092,
+      6093
+    ],
+    "200": [
+      40523,
+      42079,
+      42083,
+      42084,
+      42117,
+      42122
+    ],
+    "301": [
+      40163,
+      40693,
+      41054,
+      41056,
+      41058,
+      41060,
+      41062,
+      41063,
+      41073,
+      41074,
+      41075,
+      41100,
+      43468
+    ],
+    "65": [
+      40811,
+      42398
+    ],
+    "524": [
+      42712,
+      42713
+    ],
+    "71": [
+      23693,
+      41464,
+      41620,
+      43098,
+      44691,
+      44692,
+      44693,
+      44733,
+      44734,
+      44735
+    ],
+    "275": [
+      42894,
+      42895,
+      42900
+    ],
+    "35": [
+      6466,
+      6467
+    ],
+    "44": [
+      45112,
+      45113
+    ],
+    "528": [
+      42838,
+      42839
+    ],
+    "414": [
+      40914,
+      40916,
+      40918,
+      40920,
+      40921,
+      40922,
+      40923,
+      40924,
+      40941,
+      40942,
+      40943
+    ],
+    "137": [
+      41113,
+      42126,
+      42131,
+      42144,
+      42145,
+      43554
+    ],
+    "158": [
+      6436,
+      6438
+    ],
+    "215": [
+      41295,
+      43480
+    ],
+    "221": [
+      40445,
+      40840,
+      40964,
+      40967,
+      40971,
+      40976,
+      40977,
+      40978,
+      40979,
+      40984,
+      40994,
+      43457
+    ],
+    "463": [
+      40313,
+      40314
+    ],
+    "180": [
+      42389,
+      42397,
+      43585
+    ],
+    "9": [
+      35403,
+      44273,
+      45142,
+      45145,
+      45150,
+      45153,
+      45158,
+      45167,
+      45171
+    ],
+    "529": [
+      42956,
+      42957
+    ],
+    "404": [
+      41155,
+      45050,
+      45051,
+      45057,
+      45058,
+      45059
+    ],
+    "104": [
+      41943,
+      44106,
+      44107,
+      44110,
+      44124,
+      44125,
+      44128,
+      44129
+    ],
+    "124": [
+      40435,
+      40553,
+      40575,
+      40577,
+      40591,
+      40594,
+      40595,
+      40599,
+      40604,
+      43435
+    ],
+    "83": [
+      40815,
+      43200,
+      45231,
+      45235
+    ]
+  },
+  "valid_members": {
+    "725": [
+      41087,
+      44269,
+      44274,
+      44275,
+      44297,
+      44300,
+      44303
+    ],
+    "655": [
+      40545,
+      40546,
+      40548,
+      40563,
+      40568,
+      40572,
+      43434
+    ],
+    "584": [
+      45377,
+      45378,
+      45379,
+      45380
+    ],
+    "611": [
+      45372,
+      45373,
+      45383,
+      45385,
+      45387,
+      45420
+    ],
+    "595": [
+      6175,
+      6180
+    ],
+    "839": [
+      42614,
+      42616,
+      42618,
+      42651
+    ],
+    "858": [
+      42403,
+      42405,
+      42448
+    ],
+    "813": [
+      45078,
+      45099,
+      45120
+    ],
+    "886": [
+      44752,
+      44753
+    ],
+    "758": [
+      42868,
+      42904,
+      42910
+    ],
+    "707": [
+      34644,
+      41864
+    ],
+    "757": [
+      25715,
+      32189,
+      41980,
+      42003,
+      42006,
+      42007,
+      42009,
+      42014,
+      42015,
+      42017,
+      42020,
+      42047,
+      42049
+    ],
+    "849": [
+      44450,
+      44453,
+      44454,
+      44458,
+      44459
+    ],
+    "822": [
+      6067,
+      6068
+    ],
+    "756": [
+      44637,
+      44642
+    ],
+    "692": [
+      43208,
+      44524,
+      44528
+    ],
+    "864": [
+      44355,
+      44357
+    ],
+    "592": [
+      41243,
+      42239,
+      42555,
+      42558
+    ],
+    "881": [
+      42595,
+      42596
+    ],
+    "720": [
+      40202,
+      41619,
+      42476,
+      42485,
+      42492,
+      42504,
+      42505,
+      43604
+    ],
+    "574": [
+      41144,
+      41147
+    ],
+    "788": [
+      40539,
+      41412,
+      41561,
+      41563
+    ],
+    "801": [
+      42508,
+      42519,
+      42567
+    ],
+    "746": [
+      41352,
+      41359,
+      41360,
+      41362,
+      43495
+    ],
+    "759": [
+      44181,
+      44182
+    ],
+    "803": [
+      44073,
+      44074,
+      44076,
+      44080,
+      44086
+    ],
+    "634": [
+      42463,
+      42522
+    ],
+    "710": [
+      45133,
+      45136,
+      45138,
+      45139
+    ],
+    "796": [
+      21490,
+      43947
+    ],
+    "580": [
+      40669,
+      40671,
+      40674,
+      40676,
+      40681,
+      43441
+    ],
+    "670": [
+      40796,
+      40842,
+      40913,
+      43452
+    ],
+    "792": [
+      40514,
+      43733,
+      43735,
+      43739
+    ],
+    "709": [
+      40975,
+      42432
+    ],
+    "564": [
+      40713,
+      42163
+    ],
+    "859": [
+      42090,
+      43551
+    ],
+    "857": [
+      40147,
+      40149,
+      43397
+    ],
+    "795": [
+      41066,
+      43573
+    ],
+    "814": [
+      43692,
+      43697
+    ],
+    "637": [
+      38417,
+      45211,
+      45213,
+      45216
+    ],
+    "750": [
+      43820,
+      45355
+    ],
+    "767": [
+      44982,
+      45016
+    ],
+    "703": [
+      45414,
+      45430,
+      45456,
+      45459
+    ],
+    "831": [
+      44288,
+      44292
+    ],
+    "687": [
+      42872,
+      42873,
+      42875,
+      42877,
+      43633
+    ],
+    "786": [
+      43901,
+      43903
+    ],
+    "560": [
+      40075,
+      40076,
+      40078,
+      43387
+    ],
+    "651": [
+      43215,
+      43775,
+      43779
+    ],
+    "706": [
+      44320,
+      44333,
+      44339
+    ],
+    "779": [
+      42413,
+      42417,
+      42449,
+      43595
+    ],
+    "696": [
+      40166,
+      40208,
+      40212,
+      40215
+    ],
+    "785": [
+      43834,
+      43835,
+      43840,
+      43852
+    ],
+    "714": [
+      43083,
+      43095,
+      43099
+    ],
+    "850": [
+      41392,
+      41398,
+      41402,
+      41406,
+      41476
+    ],
+    "557": [
+      6047,
+      6188,
+      6191
+    ],
+    "668": [
+      43303,
+      43684
+    ],
+    "598": [
+      42273,
+      42282,
+      42286,
+      42336,
+      42337
+    ],
+    "811": [
+      41124,
+      41183
+    ],
+    "860": [
+      44832,
+      44859,
+      44862
+    ],
+    "613": [
+      41089,
+      41091,
+      41105,
+      41108,
+      41114,
+      41115
+    ],
+    "685": [
+      43725,
+      43732
+    ],
+    "619": [
+      41416,
+      41417,
+      41427,
+      41429,
+      41439
+    ],
+    "810": [
+      43199,
+      43203
+    ],
+    "678": [
+      40185,
+      43401
+    ],
+    "604": [
+      40177,
+      41494,
+      43825,
+      43832,
+      43858,
+      43871,
+      43872
+    ]
+  },
+  "valid_occurrences": 230,
+  "valid_unique": 230,
+  "arms": [
+    "native",
+    "single_neural",
+    "single_direct",
+    "random_single",
+    "rewriter",
+    "random_endpoint",
+    "random_joint",
+    "greedy",
+    "random_greedy",
+    "independent",
+    "random_independent"
+  ],
+  "resources": {
+    "teacher_seconds": 1800,
+    "native_preflight_seconds": 900,
+    "single_seconds": 14400,
+    "preflight_seconds": 900,
+    "main_seconds": 21600,
+    "audit_seconds": 1800,
+    "CPU_threads": 4,
+    "nice": 10,
+    "GPU_hours": 0,
+    "API_calls": 0,
+    "automatic_retry": false
+  },
+  "caps": {
+    "physical_builds": 11000,
+    "teacher_batches": 3000,
+    "teacher_contexts": 12500,
+    "policy_forwards": 384,
+    "updates": 14976,
+    "official_GAGA_VALID": 2112,
+    "upstream_generations": 0,
+    "TEST_queries": 0,
+    "API_calls": 0
+  },
+  "settings": {
+    "teacher_seed": 20261113,
+    "teacher_epochs": 38,
+    "teacher_batch_size": 512,
+    "teacher_lr": 0.001,
+    "teacher_weight_decay": 0.0001,
+    "single_epochs": 8,
+    "single_lr": 0.001,
+    "rewriter_epochs": 12,
+    "rewriter_lr": 0.0005,
+    "rewriter_regions": 3,
+    "rewriter_bank": 4,
+    "horizon": 2
+  },
+  "primary": "Same neural-rewriter mean screen as GossipCop: exceeds native, single neural, single direct and both own random controls. Also report each old single method against its random where available; no outcome-based tuning.",
+  "limitations": [
+    "Independent first YelpChi development comparison.64 of331 VALIDgroups selected with frozen RNG2026111501 before modelcalls,all retained;not fullTEST or a paper-table replay.",
+    "One authorYelpChi checkpoint,originalseed2/nodebudget.05/edgebudget.5;3capture-noise repeats,not3authortrainings. No cross-dataset equality of rawMRorbudgets claimed.",
+    "Same downstream architectures,optimizers,epochs,candidate rules and respective TRAINgroup counts as GossipCop;feature inputdimension follows32YelpChifeatures.",
+    "FullTRAIN independentGAGAteacher fits38fixedepochs;in-samplequality check not OOF or held-outcalibration;neveroriginalvictimweight reuse.",
+    "Target memberships and order,allcases and denominatorsfixed;knownbenignendpoint labels onlyTRAIN;originaltransductivegraph/featuresconvention retained.",
+    "Rewriter2teachercontexts,oldsingle9,independent13,greedy21selection caps,not equalactualquery/compute;physicalnodes/edgesfixed,same-dose random per candidate.",
+    "All choices seal before any originalGAGA evaluation;noTEST/LifeIns/API/GPU work."
+  ]
+}

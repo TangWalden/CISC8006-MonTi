@@ -1,0 +1,323 @@
+{
+  "status": "posthoc_saved_logits_after_null_outcome",
+  "source_sha256": "98d338236a939f56c8bfc7eb5153d1a13621b6e32270eb60ed4ffc70ecdf95b2",
+  "input_sha256": "3ffed435afac33ece913f19ad718293348c3622d0c7dc1cfcd0ff4a253ba4448",
+  "arms": {
+    "single_neural": {
+      "logit_changed_occurrences": 681,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.43612098693847656,
+      "mean_abs_margin_delta": 0.0057163555552993996,
+      "max_abs_margin_delta": 0.6766631603240967,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.5039219569871499,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.04084587097167969,
+          "margin_delta": -0.0019724667072296143,
+          "exchanged_edges": 21
+        },
+        {
+          "seed": 2,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 7.547022819519043,
+          "margin_delta": -0.6766631603240967,
+          "exchanged_edges": 1
+        }
+      ]
+    },
+    "single_direct": {
+      "logit_changed_occurrences": 668,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.9737935066223145,
+      "mean_abs_margin_delta": 0.007953697826335395,
+      "max_abs_margin_delta": 1.8238754272460938,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.22178320423670686,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.040541499853134155,
+          "margin_delta": -0.0022768378257751465,
+          "exchanged_edges": 21
+        },
+        {
+          "seed": 1,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 6.399810552597046,
+          "margin_delta": -1.8238754272460938,
+          "exchanged_edges": 1
+        }
+      ]
+    },
+    "random_single": {
+      "logit_changed_occurrences": 681,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.29689979553222656,
+      "mean_abs_margin_delta": 0.004162099957466125,
+      "max_abs_margin_delta": 0.3679680824279785,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.5179593278216416,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.0413595587015152,
+          "margin_delta": -0.001458778977394104,
+          "exchanged_edges": 21
+        },
+        {
+          "seed": 1,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 7.855717897415161,
+          "margin_delta": -0.3679680824279785,
+          "exchanged_edges": 1
+        }
+      ]
+    },
+    "rewriter": {
+      "logit_changed_occurrences": 676,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.40372323989868164,
+      "mean_abs_margin_delta": 0.006692373088520506,
+      "max_abs_margin_delta": 0.5546717643737793,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.21314777500530713,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.037866413593292236,
+          "margin_delta": -0.004951924085617065,
+          "exchanged_edges": 39
+        },
+        {
+          "seed": 0,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 7.66901421546936,
+          "margin_delta": -0.5546717643737793,
+          "exchanged_edges": 2
+        }
+      ]
+    },
+    "random_endpoint": {
+      "logit_changed_occurrences": 676,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.3208580017089844,
+      "mean_abs_margin_delta": 0.005559155420548674,
+      "max_abs_margin_delta": 0.5197663307189941,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.11516413838224598,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.037887200713157654,
+          "margin_delta": -0.004931136965751648,
+          "exchanged_edges": 39
+        },
+        {
+          "seed": 0,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 7.7039196491241455,
+          "margin_delta": -0.5197663307189941,
+          "exchanged_edges": 2
+        }
+      ]
+    },
+    "random_joint": {
+      "logit_changed_occurrences": 676,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.5878758430480957,
+      "mean_abs_margin_delta": 0.00700397692296816,
+      "max_abs_margin_delta": 1.049828290939331,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.5419293012313016,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.03912907838821411,
+          "margin_delta": -0.0036892592906951904,
+          "exchanged_edges": 39
+        },
+        {
+          "seed": 1,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 7.173857688903809,
+          "margin_delta": -1.049828290939331,
+          "exchanged_edges": 2
+        }
+      ]
+    },
+    "greedy": {
+      "logit_changed_occurrences": 685,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.6380290985107422,
+      "mean_abs_margin_delta": 0.00910606877743334,
+      "max_abs_margin_delta": 1.1970255374908447,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.1455582740421804,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.04058828949928284,
+          "margin_delta": -0.002230048179626465,
+          "exchanged_edges": 42
+        },
+        {
+          "seed": 0,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 7.026660442352295,
+          "margin_delta": -1.1970255374908447,
+          "exchanged_edges": 1
+        }
+      ]
+    },
+    "random_greedy": {
+      "logit_changed_occurrences": 685,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.34499502182006836,
+      "mean_abs_margin_delta": 0.0066781618348930195,
+      "max_abs_margin_delta": 0.612250804901123,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.1393740712513355,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.0405055433511734,
+          "margin_delta": -0.002312794327735901,
+          "exchanged_edges": 42
+        },
+        {
+          "seed": 2,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 7.611435174942017,
+          "margin_delta": -0.612250804901123,
+          "exchanged_edges": 1
+        }
+      ]
+    },
+    "independent": {
+      "logit_changed_occurrences": 685,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.636383056640625,
+      "mean_abs_margin_delta": 0.008848027399052744,
+      "max_abs_margin_delta": 1.2036151885986328,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.14635957544448833,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.04058828949928284,
+          "margin_delta": -0.002230048179626465,
+          "exchanged_edges": 42
+        },
+        {
+          "seed": 0,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 7.020070791244507,
+          "margin_delta": -1.2036151885986328,
+          "exchanged_edges": 2
+        }
+      ]
+    },
+    "random_independent": {
+      "logit_changed_occurrences": 685,
+      "class_changes": 0,
+      "max_abs_logit_delta": 0.3250770568847656,
+      "mean_abs_margin_delta": 0.0050630666261565855,
+      "max_abs_margin_delta": 0.43892908096313477,
+      "minimum_native_abs_margin": 0.0428183376789093,
+      "max_fraction_of_native_margin_closed": 0.19516546081594158,
+      "teacher_wrong_native": 147,
+      "teacher_wrong_arm": 147,
+      "examples_posthoc": [
+        {
+          "seed": 0,
+          "group": 619,
+          "node_id": 41429,
+          "native_margin": 0.0428183376789093,
+          "changed_margin": 0.0405055433511734,
+          "margin_delta": -0.002312794327735901,
+          "exchanged_edges": 42
+        },
+        {
+          "seed": 2,
+          "group": 822,
+          "node_id": 6067,
+          "native_margin": 8.22368597984314,
+          "changed_margin": 7.784756898880005,
+          "margin_delta": -0.43892908096313477,
+          "exchanged_edges": 2
+        }
+      ]
+    }
+  },
+  "scope": "690 repeated occurrences,230unique targets. Margin is fraud minus benign logit. Examples are post-hoc extrema, not representative selection or causal proof. Native is the author attack, not a clean graph. Changes in logits with unchanged classes establish threshold non-crossing on these records, not a sole cause or a universal robustness bound.",
+  "model_calls": 0,
+  "tensor_loads": 0,
+  "GPU_hours": 0,
+  "wall_seconds": 0.062000000034458935,
+  "process_cpu_seconds": 0.0625
+}

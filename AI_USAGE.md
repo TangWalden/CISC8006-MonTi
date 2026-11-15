@@ -247,6 +247,25 @@ and greedy remains slightly higher. Neither first novelty nor learned interactio
 superiority is established. New literature/design and YelpChi requests remain
 separate from this completed result.
 
+On 15–16 November 2026, following the owner's newer cross-dataset instruction,
+the root agent adapted the frozen method to YelpChi and ran one bounded CPU
+pipeline. This superseded the preparation-only hold. All 576 common captures,
+the independent teacher, old/new downstream fits and 2,112 official VALID
+forwards completed; all eleven methods tied 29.1304% with identical paired
+classes. Root-authored baseline and tensor audits passed 3,850/31,782 checks.
+Saved-only paired and margin analyses added no model calls. These are not
+independent implementation or human reviews. Three observed SSH polling
+disconnects recovered without restarting scientific work. No GPU/API/TEST or
+LifeIns evaluation occurred; raw records remain private.
+
+A source-only cost review also corrected the interpretation of the old
+single-method context counter: its neural policy does not consume teacher
+logits at deployment, even though shared experimental candidate cards were
+teacher-scored for other controls. Raw counters, source and results remain
+unchanged; no teacher-query or latency speedup is inferred from 2-versus-9.
+Additional bounded primary-source reading informed unimplemented GossipCop
+design notes; it is not a new efficacy result or a verified citation ranking.
+
 Earlier positive, negative and failed experiments remain in the
 [immutable archive](docs/ARCHIVE.md). Full raw-output review and genuine human
 verification remain distinct from these automated checks.

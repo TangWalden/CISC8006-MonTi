@@ -1,0 +1,16 @@
+{
+  "status": "source_only_reporting_clarification_before_YelpChi_victim_results",
+  "client_date": "2026-11-16",
+  "finding": "PortalRanker.forward consumes query, endpoint keys and physically reconstructed sequence changes. The query contains standardized target/auxiliary/two-hop features and geometry, but no teacher logits. It does not require a GAGA teacher forward for deployment once the physical candidate sequences are available.",
+  "source_evidence": [
+    "experiments/portal_decoder/model.py:PortalRanker.forward",
+    "experiments/portal_full/common.py:card computes all teacher scores for the shared experiment but constructs query/keys/changes without them",
+    "experiments/target_rewriter/run.py stores old_single_selection_contexts=len(old['sequences'])",
+    "experiments/target_rewriter/kernel.py:state explicitly uses teacher margins; the new rewriter does need initial/intermediate teacher feedback"
+  ],
+  "interpretation": "The retained old_single_selection_contexts counter is the shared candidate-card context count, also relevant to physical canonical reconstruction and direct search. It is not the minimum number of teacher classifier forwards required by the old neural policy. Existing counters, source, raw outputs, scientific comparisons and executed manifests are preserved.",
+  "allowed_claim": "Learned rewriter uses at most two selection teacher contexts in this implementation; direct search controls evaluate more candidate contexts. Old neural can rank from physical sequence features without teacher forwards. Physical builds, classifier forwards, network training and wall latency are different costs.",
+  "disallowed_claim": "Do not infer a speedup or lower teacher-inference requirement over the old neural model from2versus9 or360versus1552. No isolated per-arm deployment latency was measured.",
+  "new_model_calls": 0,
+  "scientific_source_or_output_changes": 0
+}

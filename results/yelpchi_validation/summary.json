@@ -1,0 +1,499 @@
+{
+  "status": "completed",
+  "counters": {
+    "physical_builds": 9041,
+    "teacher_batches": 1242,
+    "teacher_contexts": 11891,
+    "policy_forwards": 379,
+    "updates": 14976,
+    "official_GAGA_VALID": 2112,
+    "upstream_generations": 0,
+    "TEST_queries": 0,
+    "API_calls": 0
+  },
+  "GPU_hours": 0,
+  "protocol_sha256": "09aaed11a1c511dfc30d888fb986db984b7a2edc66575b95a01b5c3bbe56c615",
+  "metrics": [
+    {
+      "seed": 0,
+      "arm": "native",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 0,
+      "changed_slots": 0
+    },
+    {
+      "seed": 0,
+      "arm": "single_neural",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 877,
+      "changed_slots": 63
+    },
+    {
+      "seed": 0,
+      "arm": "single_direct",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 865,
+      "changed_slots": 63
+    },
+    {
+      "seed": 0,
+      "arm": "random_single",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 877,
+      "changed_slots": 63
+    },
+    {
+      "seed": 0,
+      "arm": "rewriter",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1716,
+      "changed_slots": 124
+    },
+    {
+      "seed": 0,
+      "arm": "random_endpoint",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1716,
+      "changed_slots": 124
+    },
+    {
+      "seed": 0,
+      "arm": "random_joint",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1716,
+      "changed_slots": 124
+    },
+    {
+      "seed": 0,
+      "arm": "greedy",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1720,
+      "changed_slots": 124
+    },
+    {
+      "seed": 0,
+      "arm": "random_greedy",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1720,
+      "changed_slots": 124
+    },
+    {
+      "seed": 0,
+      "arm": "independent",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1721,
+      "changed_slots": 125
+    },
+    {
+      "seed": 0,
+      "arm": "random_independent",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1721,
+      "changed_slots": 125
+    },
+    {
+      "seed": 1,
+      "arm": "native",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 0,
+      "changed_slots": 0
+    },
+    {
+      "seed": 1,
+      "arm": "single_neural",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 847,
+      "changed_slots": 63
+    },
+    {
+      "seed": 1,
+      "arm": "single_direct",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 820,
+      "changed_slots": 61
+    },
+    {
+      "seed": 1,
+      "arm": "random_single",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 847,
+      "changed_slots": 63
+    },
+    {
+      "seed": 1,
+      "arm": "rewriter",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1617,
+      "changed_slots": 119
+    },
+    {
+      "seed": 1,
+      "arm": "random_endpoint",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1617,
+      "changed_slots": 119
+    },
+    {
+      "seed": 1,
+      "arm": "random_joint",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1617,
+      "changed_slots": 119
+    },
+    {
+      "seed": 1,
+      "arm": "greedy",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1699,
+      "changed_slots": 125
+    },
+    {
+      "seed": 1,
+      "arm": "random_greedy",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1699,
+      "changed_slots": 125
+    },
+    {
+      "seed": 1,
+      "arm": "independent",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1699,
+      "changed_slots": 125
+    },
+    {
+      "seed": 1,
+      "arm": "random_independent",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1699,
+      "changed_slots": 125
+    },
+    {
+      "seed": 2,
+      "arm": "native",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 0,
+      "changed_slots": 0
+    },
+    {
+      "seed": 2,
+      "arm": "single_neural",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 883,
+      "changed_slots": 64
+    },
+    {
+      "seed": 2,
+      "arm": "single_direct",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 851,
+      "changed_slots": 62
+    },
+    {
+      "seed": 2,
+      "arm": "random_single",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 883,
+      "changed_slots": 64
+    },
+    {
+      "seed": 2,
+      "arm": "rewriter",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1616,
+      "changed_slots": 114
+    },
+    {
+      "seed": 2,
+      "arm": "random_endpoint",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1616,
+      "changed_slots": 114
+    },
+    {
+      "seed": 2,
+      "arm": "random_joint",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1616,
+      "changed_slots": 114
+    },
+    {
+      "seed": 2,
+      "arm": "greedy",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1698,
+      "changed_slots": 124
+    },
+    {
+      "seed": 2,
+      "arm": "random_greedy",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1698,
+      "changed_slots": 124
+    },
+    {
+      "seed": 2,
+      "arm": "independent",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1699,
+      "changed_slots": 125
+    },
+    {
+      "seed": 2,
+      "arm": "random_independent",
+      "MR": 29.130434782608695,
+      "wrong": 67,
+      "occurrences": 230,
+      "exchanged_edges": 1699,
+      "changed_slots": 125
+    }
+  ],
+  "means": {
+    "native": 29.130434782608695,
+    "single_neural": 29.130434782608695,
+    "single_direct": 29.130434782608695,
+    "random_single": 29.130434782608695,
+    "rewriter": 29.130434782608695,
+    "random_endpoint": 29.130434782608695,
+    "random_joint": 29.130434782608695,
+    "greedy": 29.130434782608695,
+    "random_greedy": 29.130434782608695,
+    "independent": 29.130434782608695,
+    "random_independent": 29.130434782608695
+  },
+  "contrasts": {
+    "rewriter__native": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "rewriter__single_neural": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "rewriter__single_direct": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "rewriter__random_endpoint": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "rewriter__random_joint": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "rewriter__greedy": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "rewriter__independent": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "greedy__native": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "greedy__single_neural": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "greedy__random_greedy": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "independent__native": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "independent__single_neural": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    },
+    "independent__random_independent": {
+      "deltas_pp": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_pp": 0.0,
+      "nominal_t95": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "primary_pass": false,
+  "one_pp_above_existing": false,
+  "limitations": [
+    "Independent first YelpChi development comparison.64 of331 VALIDgroups selected with frozen RNG2026111501 before modelcalls,all retained;not fullTEST or a paper-table replay.",
+    "One authorYelpChi checkpoint,originalseed2/nodebudget.05/edgebudget.5;3capture-noise repeats,not3authortrainings. No cross-dataset equality of rawMRorbudgets claimed.",
+    "Same downstream architectures,optimizers,epochs,candidate rules and respective TRAINgroup counts as GossipCop;feature inputdimension follows32YelpChifeatures.",
+    "FullTRAIN independentGAGAteacher fits38fixedepochs;in-samplequality check not OOF or held-outcalibration;neveroriginalvictimweight reuse.",
+    "Target memberships and order,allcases and denominatorsfixed;knownbenignendpoint labels onlyTRAIN;originaltransductivegraph/featuresconvention retained.",
+    "Rewriter2teachercontexts,oldsingle9,independent13,greedy21selection caps,not equalactualquery/compute;physicalnodes/edgesfixed,same-dose random per candidate.",
+    "All choices seal before any originalGAGA evaluation;noTEST/LifeIns/API/GPU work."
+  ],
+  "wall_seconds": 7895.4004782869015,
+  "process_cpu_seconds": 19190.404359063003
+}

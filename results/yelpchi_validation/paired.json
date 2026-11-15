@@ -1,0 +1,736 @@
+{
+  "scope": "Saved-only interpretation after registered results; target occurrences repeat across noise runs. Native means author attack, not a clean graph. No IID occurrence inference.",
+  "input_sha256": {
+    "protocol.json": "09aaed11a1c511dfc30d888fb986db984b7a2edc66575b95a01b5c3bbe56c615",
+    "main/evaluation.jsonl": "3ffed435afac33ece913f19ad718293348c3622d0c7dc1cfcd0ff4a253ba4448",
+    "main/result.json": "1ac71e87a3ce16e67a5a24d1a089e99e4feae58bc3dfc3b8e50b0594a71c24f7",
+    "case_diagnosis.json": "a1128bcb670742b4c02b5dc096e026cd4838d7625c4076b70ee105c9eb63fa3d"
+  },
+  "source_sha256": "8292758b6d94a9f6cd75f7a4a75e916a50d334451cc22c8296e27bef81c1728f",
+  "arms": {
+    "native": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 0,
+      "actual_exchanged_edges": 0
+    },
+    "single_neural": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 190,
+      "actual_exchanged_edges": 2607
+    },
+    "single_direct": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 186,
+      "actual_exchanged_edges": 2536
+    },
+    "random_single": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 190,
+      "actual_exchanged_edges": 2607
+    },
+    "rewriter": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 187,
+      "actual_exchanged_edges": 4949
+    },
+    "random_endpoint": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 187,
+      "actual_exchanged_edges": 4949
+    },
+    "random_joint": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 187,
+      "actual_exchanged_edges": 4949
+    },
+    "greedy": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 191,
+      "actual_exchanged_edges": 5117
+    },
+    "random_greedy": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 191,
+      "actual_exchanged_edges": 5117
+    },
+    "independent": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 191,
+      "actual_exchanged_edges": 5119
+    },
+    "random_independent": {
+      "pooled_wrong": 201,
+      "occurrences": 690,
+      "group_equal_MR": 30.831902472527474,
+      "modified_cases": 191,
+      "actual_exchanged_edges": 5119
+    }
+  },
+  "contrasts": {
+    "rewriter__native": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 0
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 0,
+          "control_exchanged_edges": 0
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "rewriter__single_neural": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 2
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 0,
+          "control_exchanged_edges": 3
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "rewriter__single_direct": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 2
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 0,
+          "control_exchanged_edges": 3
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "rewriter__random_endpoint": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 4
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 0,
+          "control_exchanged_edges": 0
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "rewriter__random_joint": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 4
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 0,
+          "control_exchanged_edges": 0
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "rewriter__greedy": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 4
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 0,
+          "control_exchanged_edges": 6
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "rewriter__independent": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 4
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 0,
+          "control_exchanged_edges": 6
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "greedy__independent": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 4
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 6,
+          "control_exchanged_edges": 6
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "single_neural__random_single": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 2,
+          "control_exchanged_edges": 2
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 3,
+          "control_exchanged_edges": 3
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "greedy__random_greedy": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 4
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 6,
+          "control_exchanged_edges": 6
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    },
+    "independent__random_independent": {
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "unique_gained_targets": 0,
+      "unique_lost_targets": 0,
+      "targets_with_both_gain_and_loss": 0,
+      "wins": 0,
+      "ties": 192,
+      "loss_cases": 0,
+      "identical_class_predictions": true,
+      "per_seed": {
+        "0": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "1": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        },
+        "2": {
+          "gains": 0,
+          "losses": 0,
+          "delta_pp": 0.0
+        }
+      },
+      "illustrative_extrema_after_outcomes": [
+        {
+          "seed": 0,
+          "group": 557,
+          "targets": 3,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 4,
+          "control_exchanged_edges": 4
+        },
+        {
+          "seed": 2,
+          "group": 886,
+          "targets": 2,
+          "method_wrong": 0,
+          "control_wrong": 0,
+          "net_wrong": 0,
+          "gain_node_ids": [],
+          "loss_node_ids": [],
+          "method_exchanged_edges": 6,
+          "control_exchanged_edges": 6
+        }
+      ],
+      "example_caution": "Outcome-selected extrema are illustrative, not representative samples or causal explanations."
+    }
+  },
+  "model_calls": 0,
+  "tensor_loads": 0,
+  "GPU_hours": 0,
+  "random_matching": {
+    "root_authored_tensor_audit": {
+      "status": "passed",
+      "checks": 31782,
+      "root_authored": true,
+      "independent_or_human_review": false,
+      "model_forwards": 0,
+      "tensor_loads": true,
+      "protocol_sha256": "09aaed11a1c511dfc30d888fb986db984b7a2edc66575b95a01b5c3bbe56c615",
+      "result_sha256": "1ac71e87a3ce16e67a5a24d1a089e99e4feae58bc3dfc3b8e50b0594a71c24f7",
+      "wall_seconds": 3.3552900708746165,
+      "process_cpu_seconds": 3.6895911990000005
+    },
+    "group_diagnosis_summary": {
+      "status": "posthoc_after_outcomes",
+      "total_gains_vs_existing": 0,
+      "total_losses_vs_existing": 0,
+      "wins": 0,
+      "ties": 192,
+      "losses": 0,
+      "region_random_degenerate": 72,
+      "causal_claim": false
+    }
+  },
+  "wall_seconds": 0.15700000000651926,
+  "process_cpu_seconds": 0.0625
+}

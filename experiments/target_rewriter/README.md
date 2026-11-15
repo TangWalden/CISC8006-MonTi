@@ -32,8 +32,12 @@ single-edit composition, and matched random for each new candidate. New-policy
 endpoint random keeps its chosen positions; joint random also randomizes the
 region subset when exact total edge-dose/count matching permits it. Degenerate
 joint random subsets are reported. A common 21-context selection ceiling is
-not equal actual compute: neural <=2, original <=9, independent <=13, greedy
-<=21. TRAIN-label construction and all evaluation costs are counted separately.
+not equal actual compute: rewriter <=2, shared original candidate cards <=9,
+independent <=13, greedy <=21. The old neural ranker needs physical sequence
+features but no teacher logits at deployment; its shared-card count must not
+be read as its minimum teacher-forward cost. No per-arm latency advantage is
+established. TRAIN-label construction and evaluation costs are separate; see
+the [accounting clarification](../../results/target_rewriter/cost_interpretation.json).
 
 All choices seal before official GAGA is loaded. Primary success requires the
 neural rewriter's pooled MR to exceed native, both existing methods and both

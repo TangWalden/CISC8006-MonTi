@@ -9,6 +9,9 @@ The author-checkpoint local-swap study was null. The latest
 and matched random by +1.1095/+0.8084 pp, respectively, on the fixed original
 TEST cohort. Earlier TEST exposure and conditional repeats limit inference.
 Report/presentation drafts predate these latest results and are not final submissions.
+The [YelpChi development transfer](../results/yelpchi_validation/) found no gain:
+all eleven arms 29.1304% MR with identical paired predictions. This adds a
+cross-dataset limitation, not evidence of general superiority.
 
 | Component | Points | Available evidence | Remaining completion item |
 |---|---:|---|---|
@@ -16,7 +19,7 @@ Report/presentation drafts predate these latest results and are not final submis
 | Reproduction protocol and evaluation design | 10 | [Frozen reproduction protocol](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/frozen_protocol.json), [seed results](../evidence/reproduction_summary.json) | Genuine team verification of the protocol and evaluation code. |
 | Pilot implementation and audit readiness | 10 | [Functional tests](../tests/), [retrieval preflight and 19,593-check development audit](../results/portal_decoder/), [full saved audit](../results/portal_full/audit.json) | Complete the human live code/configuration review. Automated audits are root-authored, not independent implementation/human review. |
 | Final reproduction and difference analysis | 20 | [Six-run reproduction](../evidence/reproduction_summary.json), [paper/setup comparison](REPRODUCING.md#claim-and-paper-comparison) | The frozen reproduction conclusion is inconclusive; incorporate the team's verified explanation in the final submission. |
-| Improvement experiments and ablations | 20 | [Complete retrieval benchmark and matched controls](../results/portal_full/), [earlier negative full study](../results/final_staged/), [all attempts](SUPPLEMENTARY_STUDIES.md) | Positive controlled means are measured; instructor approval of required pilots, scope and interpretation is unrecorded. No untouched-confirmation claim. |
+| Improvement experiments and ablations | 20 | [Complete retrieval benchmark and controls](../results/portal_full/), [null YelpChi transfer](../results/yelpchi_validation/), [all attempts](SUPPLEMENTARY_STUDIES.md) | Positive and null controlled means are recorded; instructor approval of required pilots, scope and interpretation is unrecorded. No untouched-confirmation claim. |
 | Repository, report and agent record | 15 | [Latest result addendum](../results/portal_full/), [dated report draft](STAGED_REPORT.md), [PDF](MonTi_Staged_Report.pdf), [setup/source](REPRODUCING.md), [AI use](../AI_USAGE.md) | Incorporate the latest addendum into final report/slides; human review, packaging and owner-confirmed freeze tag. |
 | Presentation and demonstration | 5 | [Bento and PowerPoint draft with speaking notes](SLIDES_GUIDE.md), [historical demo preparation](ARCHIVE.md) | Incorporate positive and negative complete studies; final demonstration, human application checks, rehearsal and presentation. |
 | Individual technical defense | 10 | [Method explanation](METHOD.md), [report](STAGED_REPORT.md) | Each member must personally explain and defend the work. |

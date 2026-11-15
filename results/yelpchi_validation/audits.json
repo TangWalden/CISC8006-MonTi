@@ -1,0 +1,116 @@
+{
+  "main": {
+    "status": "passed",
+    "checks": 31782,
+    "root_authored": true,
+    "independent_or_human_review": false,
+    "model_forwards": 0,
+    "tensor_loads": true,
+    "protocol_sha256": "09aaed11a1c511dfc30d888fb986db984b7a2edc66575b95a01b5c3bbe56c615",
+    "result_sha256": "1ac71e87a3ce16e67a5a24d1a089e99e4feae58bc3dfc3b8e50b0594a71c24f7",
+    "wall_seconds": 3.3552900708746165,
+    "process_cpu_seconds": 3.6895911990000005
+  },
+  "baseline": {
+    "status": "passed",
+    "checks": 3850,
+    "root_authored": true,
+    "model_forwards": 0,
+    "tensor_loads": true,
+    "inputs_rechecked": true,
+    "wall_seconds": 1.903093608096242,
+    "process_cpu_seconds": 2.260469304
+  },
+  "native_preflight": {
+    "status": "passed",
+    "counters": {
+      "upstream_generations": 4,
+      "physical_builds": 18,
+      "teacher_batches": 2,
+      "teacher_contexts": 18,
+      "official_GAGA": 0,
+      "TEST_queries": 0
+    },
+    "GPU_hours": 0,
+    "checks": [
+      {
+        "group": 282,
+        "targets": 2,
+        "injected_nodes": 23,
+        "actual_edges": 1932,
+        "candidate_pool": 8,
+        "canonical_error": 0.0,
+        "author_repeat_identical": true
+      },
+      {
+        "group": 195,
+        "targets": 5,
+        "injected_nodes": 11,
+        "actual_edges": 484,
+        "candidate_pool": 8,
+        "canonical_error": 0.0,
+        "author_repeat_identical": true
+      }
+    ],
+    "author_configuration_seed": 2,
+    "author_node_budget": 0.05,
+    "author_edge_budget": 0.5,
+    "official_victim_loaded": false,
+    "wall_seconds": 30.460074943955988,
+    "process_cpu_seconds": 63.301734843999995
+  },
+  "rewriter_preflight": {
+    "status": "passed",
+    "counters": {
+      "physical_builds": 8,
+      "teacher_batches": 2,
+      "teacher_contexts": 4,
+      "policy_forwards": 0,
+      "updates": 2,
+      "official_GAGA_VALID": 0,
+      "upstream_generations": 0,
+      "TEST_queries": 0,
+      "API_calls": 0
+    },
+    "GPU_hours": 0,
+    "synthetic": {
+      "status": "passed",
+      "checks": 127,
+      "scope": "Synthetic target/action equivariance, normalization, empty STOP and exact random dose/count invariants"
+    },
+    "checks": [
+      {
+        "group": 282,
+        "regions": 3,
+        "options": 12,
+        "native_sequence_error": 0.0,
+        "composition_order_error": 0.0,
+        "checks": "passed"
+      },
+      {
+        "group": 195,
+        "regions": 3,
+        "options": 12,
+        "native_sequence_error": 0.0,
+        "composition_order_error": 0.0,
+        "checks": "passed"
+      }
+    ],
+    "official_victim_loaded": false,
+    "wall_seconds": 15.248609493020922,
+    "process_cpu_seconds": 28.53895151,
+    "protocol_sha256": "09aaed11a1c511dfc30d888fb986db984b7a2edc66575b95a01b5c3bbe56c615"
+  },
+  "paired_analysis_registration": {
+    "source_sha256": "8292758b6d94a9f6cd75f7a4a75e916a50d334451cc22c8296e27bef81c1728f",
+    "prepared_utc": "2026-11-15T15:45:00.183878+00:00",
+    "scope": "Post-run saved-only interpretation prepared during input capture, before official YelpChi GAGA evaluation. Not a new scientific protocol or inference.",
+    "executed": false
+  },
+  "margin_analysis_registration": {
+    "source_sha256": "98d338236a939f56c8bfc7eb5153d1a13621b6e32270eb60ed4ffc70ecdf95b2",
+    "frozen_utc": "2026-11-15T19:10:07.087675+00:00",
+    "scope": "Post-hoc after null aggregate and paired outcomes; no new inference. Verify saved logits changed without threshold crossing. Not preregistration."
+  },
+  "review_scope": "Root authored implementation, audits and interpretation; not independent implementation or human verification."
+}
