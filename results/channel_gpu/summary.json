@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "parity_passed": true,
+  "GPU_process_absent": true,
+  "GPU_hours": 0.018835913099723663,
+  "GPU_guardian_seconds": 67.80928663583472,
+  "GPU_peak_allocated_MiB": 25.7890625,
+  "physical_GPU_teacher_calls": 24,
+  "GPU_teacher_contexts": 368,
+  "GPU_gradient_calls": 12,
+  "timings": {
+    "gossipcop": {
+      "cpu": 11.21242021303624,
+      "gpu": 11.008635500911623
+    },
+    "yelpchi": {
+      "cpu": 11.062227419926785,
+      "gpu": 12.312308212509379
+    }
+  },
+  "decision": "The teacher-only GPU bridge passed four fixed development plan/logit/gradient checks, but did not demonstrate a useful end-to-end speedup on these cases. Leave the existing CPU full study uninterrupted. No TEST outputs influenced this operational decision.",
+  "limitations": [
+    "Only two predetermined development cases per dataset, not a broad speed benchmark or whole-generator CPU/GPU identity proof.",
+    "Only fixed teacher forward/input gradients were offloaded. CPU graph construction and ranking remain; a full graph CUDA implementation was not tested.",
+    "No other GPU process was stopped or modified; transient shared-device slowdown was not measured."
+  ],
+  "launcher_parse_failure": {
+    "status": "preserved",
+    "path": "work/channel_full_20261116/launch_gpu_check_syntax_attempt.py",
+    "model_calls": 0,
+    "GPU_hours": 0,
+    "reason": "Initial remote source string had an unescaped newline and failed Python parsing before execution. Fixed locally; only one check job launched."
+  }
+}

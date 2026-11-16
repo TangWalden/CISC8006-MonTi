@@ -287,6 +287,21 @@ Whole-driver wall time was 6056.26 seconds; GPU/API/TEST
 use remained zero. The exact source/protocol preceded execution and both
 datasets' plans preceded either official evaluation.
 
+The owner explicitly authorized complete GossipCop/YelpChi TEST evaluation of
+the frozen channel method. The root agent implemented orchestration only,
+registered complete cohorts, ran both dataset action sets before victim scoring,
+and retained every control and repetition. The criterion passed; no TEST tuning
+or new model training/API/GPU occurred. Source, counters, root-authored saved
+audit and limitations are in results/channel_full. This is not independent or
+human verification, and no human contribution is inferred from automation.
+
+During the run the owner requested GPU use. A separate bounded teacher-offload
+check on four predetermined development cases reproduced endpoint choices but
+did not demonstrate useful overall acceleration. It used 0.0188359131 GPU hours,
+24 GPU teacher forwards and no TEST queries. The CPU full study continued
+unchanged. The initial launcher parse failure, exact checks and small-sample
+timing limitation are retained in results/channel_gpu and the private record.
+
 Earlier positive, negative and failed experiments remain in the
 [immutable archive](docs/ARCHIVE.md). Full raw-output review and genuine human
 verification remain distinct from these automated checks.

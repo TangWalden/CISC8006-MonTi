@@ -1,9 +1,9 @@
 {
   "unit": "GPU wall-clock hours, summed across concurrent devices; price unavailable",
   "limit": 12,
-  "measured_or_conservatively_charged": 5.065219865793663,
+  "measured_or_conservatively_charged": 5.084055778893387,
   "unmetered_setup_reserve": 0.02,
-  "remaining_after_reserve": 6.914780134206337,
+  "remaining_after_reserve": 6.895944221106613,
   "record_type": "Curated summary of the saved research ledger; not a reset of historical charges",
   "recorded_scientific_snapshot": "2026-11-05",
   "curated_date": "2026-11-12",
@@ -15,171 +15,102 @@
   "curation_GPU_hours": 0,
   "archive": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/research_cost_ledger.json",
   "last_completed_extension": {
-    "study": "channel_retrieval_20261116_attempt1",
-    "source_commit": "6e2982ccf3634a1b924d561f92ff14b7163be075",
+    "study": "channel_full_20261116_attempt1",
+    "source_commit": "7eeee3d0e043f7e2a62a313b165c94d2ae23cd55",
     "GPU_hours": 0,
     "API_calls": 0,
-    "TEST_queries": 0,
-    "outer_wall_seconds": 6056.258491555927,
+    "TEST_queries": {
+      "gossipcop": 10908,
+      "yelpchi": 6576
+    },
+    "outer_wall_seconds": 15502.966663223924,
     "phase_outer_receipts": [
       {
-        "phase": "preflight_gossipcop",
-        "pid": 3827676,
-        "exit_code": 0,
-        "wall_seconds": 59.895443432964385
-      },
-      {
         "phase": "preflight_yelpchi",
-        "pid": 3827912,
+        "pid": 3868407,
         "exit_code": 0,
-        "wall_seconds": 52.67105178791098
+        "wall_seconds": 34.37014539795928
       },
       {
-        "phase": "selection_gossipcop",
-        "pid": 3828165,
+        "phase": "preflight_gossipcop",
+        "pid": 3868406,
         "exit_code": 0,
-        "wall_seconds": 2848.768671770813
+        "wall_seconds": 43.220100360922515
       },
       {
-        "phase": "selection_yelpchi",
-        "pid": 3836692,
+        "phase": "selection_yelpchi_1",
+        "pid": 3868947,
         "exit_code": 0,
-        "wall_seconds": 3049.694133552024
+        "wall_seconds": 11576.405690693064
       },
       {
-        "phase": "evaluation_gossipcop",
-        "pid": 3858645,
+        "phase": "selection_yelpchi_0",
+        "pid": 3868945,
         "exit_code": 0,
-        "wall_seconds": 25.2171523780562
+        "wall_seconds": 11606.171119815204
+      },
+      {
+        "phase": "selection_gossipcop_0",
+        "pid": 3868944,
+        "exit_code": 0,
+        "wall_seconds": 15305.715443477966
+      },
+      {
+        "phase": "selection_gossipcop_1",
+        "pid": 3868943,
+        "exit_code": 0,
+        "wall_seconds": 15339.684192340123
       },
       {
         "phase": "evaluation_yelpchi",
-        "pid": 3858833,
+        "pid": 3964170,
         "exit_code": 0,
-        "wall_seconds": 14.621623359853402
+        "wall_seconds": 27.20506829000078
+      },
+      {
+        "phase": "evaluation_gossipcop",
+        "pid": 3964169,
+        "exit_code": 0,
+        "wall_seconds": 82.06579284998588
       },
       {
         "phase": "audit",
-        "pid": 3858994,
+        "pid": 3964573,
         "exit_code": 0,
-        "wall_seconds": 5.388663771795109
+        "wall_seconds": 37.656095993937925
       }
     ],
     "phase_process_CPU_seconds": {
       "gossipcop": {
-        "preflight": 118.867849951,
-        "selection": 6393.195863129,
-        "evaluation": 46.410456289
+        "preflight": 77.473865649,
+        "selection_0": 34225.808431666,
+        "selection_1": 34276.665722559,
+        "evaluation": 229.70080443499998
       },
       "yelpchi": {
-        "preflight": 113.131756372,
-        "selection": 7104.202306809,
-        "evaluation": 31.786412606
-      }
-    },
-    "phase_counters": {
-      "gossipcop": {
-        "preflight": {
-          "physical_builds": 52,
-          "teacher_forwards": 24,
-          "teacher_contexts": 80,
-          "backward_calls": 8,
-          "algebraic_pool_scores": 0,
-          "official_GAGA_VALID": 0,
-          "upstream_generations": 0,
-          "updates": 0,
-          "TEST_queries": 0,
-          "API_calls": 0
-        },
-        "selection": {
-          "physical_builds": 2975,
-          "teacher_forwards": 1572,
-          "teacher_contexts": 30116,
-          "backward_calls": 332,
-          "algebraic_pool_scores": 2032273,
-          "official_GAGA_VALID": 0,
-          "upstream_generations": 0,
-          "updates": 0,
-          "TEST_queries": 0,
-          "API_calls": 0
-        },
-        "evaluation": {
-          "physical_builds": 0,
-          "teacher_forwards": 0,
-          "teacher_contexts": 0,
-          "backward_calls": 0,
-          "algebraic_pool_scores": 0,
-          "official_GAGA_VALID": 1920,
-          "upstream_generations": 0,
-          "updates": 0,
-          "TEST_queries": 0,
-          "API_calls": 0
-        }
-      },
-      "yelpchi": {
-        "preflight": {
-          "physical_builds": 52,
-          "teacher_forwards": 24,
-          "teacher_contexts": 80,
-          "backward_calls": 8,
-          "algebraic_pool_scores": 0,
-          "official_GAGA_VALID": 0,
-          "upstream_generations": 0,
-          "updates": 0,
-          "TEST_queries": 0,
-          "API_calls": 0
-        },
-        "selection": {
-          "physical_builds": 3378,
-          "teacher_forwards": 1728,
-          "teacher_contexts": 34944,
-          "backward_calls": 384,
-          "algebraic_pool_scores": 17068101,
-          "official_GAGA_VALID": 0,
-          "upstream_generations": 0,
-          "updates": 0,
-          "TEST_queries": 0,
-          "API_calls": 0
-        },
-        "evaluation": {
-          "physical_builds": 0,
-          "teacher_forwards": 0,
-          "teacher_contexts": 0,
-          "backward_calls": 0,
-          "algebraic_pool_scores": 0,
-          "official_GAGA_VALID": 1920,
-          "upstream_generations": 0,
-          "updates": 0,
-          "TEST_queries": 0,
-          "API_calls": 0
-        }
+        "preflight": 69.435735532,
+        "selection_0": 26695.472776869,
+        "selection_1": 26610.146619313,
+        "evaluation": 82.69745703000001
       }
     },
     "audit": {
-      "checks": 31224,
+      "checks": 192372,
       "model_forwards": 0,
       "tensor_loads": true,
       "independent_or_human_review": false,
-      "wall_seconds": 5.029402989894152,
-      "process_cpu_seconds": 6.512728577
+      "wall_seconds": 37.24878028803505,
+      "process_cpu_seconds": 51.572571786999994
     },
-    "saved_analysis": {
-      "paired": {
-        "wall_seconds": 0.0779999999795109,
-        "process_cpu_seconds": 0.0625,
-        "model_calls": 0,
-        "tensor_loads": false
-      },
-      "channels": {
-        "wall_seconds": 0.125,
-        "process_cpu_seconds": 0.078125,
-        "model_calls": 0,
-        "tensor_loads": false
-      }
+    "saved_arithmetic": {
+      "checks": 61194,
+      "model_calls": 0,
+      "tensor_loads": false,
+      "wall_seconds": 0.7349999999860302,
+      "process_cpu_seconds": 0.671875,
+      "source_sha256": "ef75ee70c4d2b2f07ba189108304bbc485537b9cd0a173a1aa2717df0fd49d80"
     },
-    "scope": "CPU4nice10. Process CPU and wall times differ; overlapping timing windows are not additive. GPU totals unchanged.",
-    "date": "2026-11-16",
-    "method": "Two-channel relation retrieval, completed two-dataset registered development screen"
+    "scope": "CPU4 per worker, at most four concurrent selection workers, nice10. Overlapping worker wall times are not elapsed time. GPU totals unchanged."
   },
   "completed_extensions": [
     {
@@ -1067,6 +998,117 @@
         }
       },
       "scope": "CPU4nice10. Process CPU and wall times differ; overlapping timing windows are not additive. GPU totals unchanged."
+    },
+    {
+      "study": "channel_gpu_check_20261116_attempt1",
+      "source_commit": "60e8485449cf1feef5fece4bf406a8558ec596ea",
+      "GPU_hours": 0.018835913099723663,
+      "GPU_guardian_seconds": 67.80928663583472,
+      "API_calls": 0,
+      "TEST_queries": 0,
+      "teacher_GPU_calls": 24,
+      "teacher_GPU_contexts": 368,
+      "GPU_gradient_calls": 12,
+      "full_check_wall_seconds": 94.79859922989272,
+      "scope": "Owner-requested operational GPU parity/timing check, not efficacy retuning. Conservative whole GPU-process outer lifetime charged; original CPU full study never interrupted."
+    },
+    {
+      "study": "channel_full_20261116_attempt1",
+      "source_commit": "7eeee3d0e043f7e2a62a313b165c94d2ae23cd55",
+      "GPU_hours": 0,
+      "API_calls": 0,
+      "TEST_queries": {
+        "gossipcop": 10908,
+        "yelpchi": 6576
+      },
+      "outer_wall_seconds": 15502.966663223924,
+      "phase_outer_receipts": [
+        {
+          "phase": "preflight_yelpchi",
+          "pid": 3868407,
+          "exit_code": 0,
+          "wall_seconds": 34.37014539795928
+        },
+        {
+          "phase": "preflight_gossipcop",
+          "pid": 3868406,
+          "exit_code": 0,
+          "wall_seconds": 43.220100360922515
+        },
+        {
+          "phase": "selection_yelpchi_1",
+          "pid": 3868947,
+          "exit_code": 0,
+          "wall_seconds": 11576.405690693064
+        },
+        {
+          "phase": "selection_yelpchi_0",
+          "pid": 3868945,
+          "exit_code": 0,
+          "wall_seconds": 11606.171119815204
+        },
+        {
+          "phase": "selection_gossipcop_0",
+          "pid": 3868944,
+          "exit_code": 0,
+          "wall_seconds": 15305.715443477966
+        },
+        {
+          "phase": "selection_gossipcop_1",
+          "pid": 3868943,
+          "exit_code": 0,
+          "wall_seconds": 15339.684192340123
+        },
+        {
+          "phase": "evaluation_yelpchi",
+          "pid": 3964170,
+          "exit_code": 0,
+          "wall_seconds": 27.20506829000078
+        },
+        {
+          "phase": "evaluation_gossipcop",
+          "pid": 3964169,
+          "exit_code": 0,
+          "wall_seconds": 82.06579284998588
+        },
+        {
+          "phase": "audit",
+          "pid": 3964573,
+          "exit_code": 0,
+          "wall_seconds": 37.656095993937925
+        }
+      ],
+      "phase_process_CPU_seconds": {
+        "gossipcop": {
+          "preflight": 77.473865649,
+          "selection_0": 34225.808431666,
+          "selection_1": 34276.665722559,
+          "evaluation": 229.70080443499998
+        },
+        "yelpchi": {
+          "preflight": 69.435735532,
+          "selection_0": 26695.472776869,
+          "selection_1": 26610.146619313,
+          "evaluation": 82.69745703000001
+        }
+      },
+      "audit": {
+        "checks": 192372,
+        "model_forwards": 0,
+        "tensor_loads": true,
+        "independent_or_human_review": false,
+        "wall_seconds": 37.24878028803505,
+        "process_cpu_seconds": 51.572571786999994
+      },
+      "saved_arithmetic": {
+        "checks": 61194,
+        "model_calls": 0,
+        "tensor_loads": false,
+        "wall_seconds": 0.7349999999860302,
+        "process_cpu_seconds": 0.671875,
+        "source_sha256": "ef75ee70c4d2b2f07ba189108304bbc485537b9cd0a173a1aa2717df0fd49d80"
+      },
+      "scope": "CPU4 per worker, at most four concurrent selection workers, nice10. Overlapping worker wall times are not elapsed time. GPU totals unchanged."
     }
   ],
   "current_action_blind_phase_GPU_hours": 0

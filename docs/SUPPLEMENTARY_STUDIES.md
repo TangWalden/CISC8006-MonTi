@@ -8,6 +8,8 @@ All positive, null, negative and failed outcomes keep their original scope.
 
 | Study | Recorded finding | Complete record |
 |---|---|---|
+| Frozen two-channel retrieval, complete TEST | GossipCop 49.1932% versus native 44.2638% / same-class random 44.1591%; YelpChi 37.6957% versus 30.9098% / 32.9605%. Registered mean criterion passed; no TEST tuning. | [Full outcomes, all controls and audit](../results/channel_full/) |
+| GPU operational check | Four fixed development endpoint plans reproduced. Teacher offload did not demonstrate useful whole-search acceleration; original CPU full run remained uninterrupted. No TEST calls. | [Timing and parity evidence](../results/channel_gpu/) |
 | Two-channel relation retrieval, both VALID datasets | GossipCop 64.1565% vs native 57.9101% / same-class random 57.6182%; YelpChi 34.7826% vs 29.1304% / 30.5797%. Registered screen passed; each repeat positive versus both random controls and uniform-shortlist search. Reused development, not new TEST confirmation. | [Results, cases and all controls](../results/channel_retrieval/) |
 | Benign-only full-pool gradient retrieval, both VALID datasets | GossipCop 60.4203% vs native 57.9101% / matched random 58.4355%; YelpChi all 29.1304%, zero teacher/victim class changes. Two-dataset criterion failed. | [Complete preceding result](../results/gradient_retrieval/) |
 | YelpChi frozen-method development transfer | All 11 arms 29.1304%, 67/230 misses per repeat; identical paired classes. Rewriter changed 187/192 cases but crossed no target decision boundary. Improvement screen failed; no TEST. | [Results, source and audits](../results/yelpchi_validation/) |

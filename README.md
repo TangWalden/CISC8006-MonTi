@@ -1,65 +1,67 @@
 # MonTi: Frozen Upstream, Relation-Aware Retrieval
 
 CISC8006 reproduction and extension of [MonTi](https://github.com/bdi-lab/MonTi).
-We freeze the author's attack checkpoint and optimize downstream connections
-under unchanged physical node/edge budgets. **The latest two-channel search
-improves development GAGA miss rate by 6.2464 pp on GossipCop and 5.6522 pp
-on YelpChi over native, and by 6.5382/4.2029 pp over same-class matched random.**
-Both datasets pass the registered screen in all three conditional repeats.
-These are exploratory VALID results, not final TEST confirmation or first novelty.
+We keep the author's attack checkpoint fixed and optimize at most two downstream
+candidate endpoints under the same physical node/edge budgets.
 
-## Results
+## Complete TEST results
 
-Higher GAGA miss rate (MR) means a stronger attack. Each row is a separate
-matched study; rates across rows use different cohorts/checkpoints.
+The frozen two-dataset mean criterion **passed**. Higher GAGA miss rate (MR)
+means a stronger attack; the original checkpoint below already generates attacks.
 
-| Study | Native MR | Random control MR | Modified MR | Conclusion |
-|---|---:|---:|---:|---|
-| [Two-channel retrieval, both VALID sets](results/channel_retrieval/) | GossipCop 57.9101%; YelpChi 29.1304% | Same-class 57.6182%; 30.5797% | 64.1565%; 34.7826% | Registered two-dataset screen passed |
-| [Full-pool gradient search, both VALID sets](results/gradient_retrieval/) | GossipCop 57.9101%; YelpChi 29.1304% | 58.4355%; 29.1304% | 60.4203%; 29.1304% | GossipCop +2.5102 pp; YelpChi no gain |
-| [YelpChi method transfer, VALID](results/yelpchi_validation/) | 29.1304% | 29.1304% | 29.1304% | No gain; all eleven arms have identical paired class predictions |
-| [Two-step target-aware rewriter, VALID](results/target_rewriter/) | 57.9101% | 58.3187% / 58.0852% | **59.4863%** | +0.3503 pp over existing neural; below two-step greedy 59.6030% |
-| [Author-checkpoint context retrieval, all TEST groups](results/portal_full/) | 44.2638% | 44.5649% | **45.3733%** | Positive against both controls in all three conditional repeats |
-| [Context retrieval, VALID](results/portal_decoder/) | 57.9101% | 58.0269% | 59.1360% | Positive development mean; later complete-cohort result above |
-| [Earlier staged TEST, different upstreams](results/final_staged/) | 43.8168% | 44.0165% | 44.2257% | Criterion failed; negative history retained |
+| Method | GossipCop MR | YelpChi MR |
+|---|---:|---:|
+| Original author checkpoint | 44.2638% | 30.9098% |
+| Frozen two-channel retrieval | 49.1932% | 37.6957% |
+| Same-class equal-dose random | 44.1591% | 32.9605% |
+| Joint-pool equal-dose random | 44.2194% | 31.1708% |
 
-The separate original six-run reproduction remains **inconclusive**:
-43.7280% learned-candidate versus 40.1902% random-candidate MR,
-paired 95% interval [-1.5415, 8.6171] pp. This random-candidate baseline is
-different from the downstream random controls above.
+Current-method gains over the author checkpoint are **+4.9295 / +6.7860 pp**;
+over same-class random, **+5.0341 / +4.7353 pp**.
+[All repeats, contrasts, negative cases and audit](results/channel_full/).
 
-## Current method and evidence
+- Complete original cohorts: GossipCop 909 groups / 10,515 target occurrences;
+  YelpChi 548 groups / 2,682 occurrences per repeat. Repetitions 0/1/2 share
+  fixed author and teacher checkpoints; repeated target identities are correlated.
+- Parameters and cohorts were fixed before this test. Both datasets' actions
+  were sealed before either official evaluation. No test-driven retuning occurred.
+- GossipCop TEST has historical exposure; it is not an untouched holdout.
+  [Development scores](results/channel_retrieval/) use different groups and
+  must not be subtracted from these full-test rates.
 
-Freeze the **author's released checkpoint** and generated features. The latest
-downstream compares known TRAIN-benign and TRAIN-fraud group-summary channels,
-ranks legal real endpoints with the fixed teacher's input gradient, and checks
-shortlisted choices. It preserves target edges, injected-to-injected edges,
-every injected degree and total budgets. Same-class random matches class,
-donor and exact edge dose; joint-pool random and uniform-shortlist search are
-also included. Context/GAGA surrogate access is broader than original local
-GCN-only MonTi, and extra search computation is disclosed.
+## Method and contribution
 
-The earlier learned decoder's [complete benchmark](results/portal_full/) covers all 909 TEST groups,
-10,515 occurrences and 1,221 unique targets per repeat. Existing downstream
-fits are reused; three repeats share one author checkpoint and overlapping
-targets. Neural-minus-random nominal 95% interval is [0.5617, 1.0550] pp,
-conditional on these repeats. Earlier TEST exposure limits confirmation.
-Direct teacher search reaches 45.3955% against its 44.6156% random control,
-slightly above neural. Earlier null/negative attempts remain recorded.
+A fixed independent TRAIN-fitted teacher evaluates label-grouped relation
+evidence. Its input gradient ranks real endpoints from both known TRAIN classes;
+the search then checks shortlisted substitutions. Target memberships/order,
+direct target attachments, injected features/degrees and node/edge totals stay
+fixed. Same-class random matches chosen classes, slots and exact edge dose;
+joint-pool random matches slots/dose without fixing class frequency.
 
-## Read and reproduce
+GAGA's existing label grouping, HotFlip-style discrete gradient search and the
+typed-message idea behind HGT inform the design. This is a downstream optimizer,
+not a new HGT architecture or a first-novelty claim. Expanded endpoint/context
+and GAGA-surrogate access exceed original GCN-only MonTi; additional search
+compute is disclosed. Equal physical budgets do not mean equal computation.
+
+The separate six-run reproduction remains **inconclusive**: learned candidates
+43.7280%, random candidates 40.1902%, paired interval [-1.5415, 8.6171] pp.
+That random-candidate baseline differs from these downstream controls. Earlier
+null/negative attempts are retained in the supplementary index.
+
+## Project entries
 
 | Purpose | Entry |
 |---|---|
-| Course scoring points and genuine remaining work | [Assessment mapping](docs/ASSESSMENT.md) |
-| Current method, controls and executable source | [Two-channel retrieval](experiments/channel_retrieval/), [earlier learned decoder](experiments/portal_decoder/) |
-| Latest results and audits | [Both-dataset result](results/channel_retrieval/), [preceding partial success](results/gradient_retrieval/), [earlier complete benchmark](results/portal_full/) |
+| Course scoring points and genuine remaining requirements | [Assessment mapping](docs/ASSESSMENT.md) |
+| Fixed method and full runner | [Method](experiments/channel_retrieval/), [full evaluation](experiments/channel_full/) |
+| Results, controls and provenance | [Full TEST](results/channel_full/), [development](results/channel_retrieval/) |
 | Setup and historical reproduction | [Reproducing](docs/REPRODUCING.md) |
-| Other attempts, including failures | [Supplementary index](docs/SUPPLEMENTARY_STUDIES.md) |
-| Report and presentation drafts | [Report](docs/STAGED_REPORT.md), [slides guide](docs/SLIDES_GUIDE.md) - predate the latest results |
-| AI assistance and human contributions | [AI use](AI_USAGE.md), [contributions](CONTRIBUTIONS.md) |
+| Other studies and operational checks | [Supplementary index](docs/SUPPLEMENTARY_STUDIES.md), [GPU timing check](results/channel_gpu/) |
+| Dated report and slides | [Report](docs/STAGED_REPORT.md), [slides](docs/SLIDES_GUIDE.md) - predate these results |
+| AI assistance and actual human contributions | [AI use](AI_USAGE.md), [contributions](CONTRIBUTIONS.md) |
 
-Compact methods/results are public; large raw runs and frozen assets remain
-in the recorded archive. Full ML reruns require that runtime and its assets.
-Instructor approval, human review, actual contributions, defense and final
-submission remain unconfirmed. [License](LICENSE.txt).
+Compact source/results are public; large models, graph cards and raw logs stay
+in the recorded archive. Instructor approval, human technical review, verified
+contributions, rehearsal/defense and final submission remain separate.
+[License](LICENSE.txt).

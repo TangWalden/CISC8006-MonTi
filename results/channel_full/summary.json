@@ -1,0 +1,607 @@
+{
+  "status": "completed",
+  "datasets": {
+    "gossipcop": {
+      "means": {
+        "native": 44.26375019812966,
+        "channel": 49.19321604057696,
+        "random_channel": 44.159137739736884,
+        "random_joint": 44.21936915517515
+      },
+      "metrics": [
+        {
+          "seed": 0,
+          "arm": "native",
+          "wrong": 4646,
+          "occurrences": 10515,
+          "MR": 44.18449833571089,
+          "group_macro_MR": 41.75988939290998,
+          "exchanged_edges": 0,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 0,
+          "arm": "channel",
+          "wrong": 5162,
+          "occurrences": 10515,
+          "MR": 49.091773656680935,
+          "group_macro_MR": 47.32935706973394,
+          "exchanged_edges": 21962,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 0,
+          "arm": "random_channel",
+          "wrong": 4622,
+          "occurrences": 10515,
+          "MR": 43.95625297194484,
+          "group_macro_MR": 41.23629414754006,
+          "exchanged_edges": 21962,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 0,
+          "arm": "random_joint",
+          "wrong": 4632,
+          "occurrences": 10515,
+          "MR": 44.05135520684736,
+          "group_macro_MR": 41.761502169250655,
+          "exchanged_edges": 21962,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 1,
+          "arm": "native",
+          "wrong": 4654,
+          "occurrences": 10515,
+          "MR": 44.260580123632906,
+          "group_macro_MR": 41.65593614435397,
+          "exchanged_edges": 0,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 1,
+          "arm": "channel",
+          "wrong": 5174,
+          "occurrences": 10515,
+          "MR": 49.20589633856395,
+          "group_macro_MR": 47.26851369121806,
+          "exchanged_edges": 22069,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 1,
+          "arm": "random_channel",
+          "wrong": 4647,
+          "occurrences": 10515,
+          "MR": 44.194008559201144,
+          "group_macro_MR": 41.39992862034933,
+          "exchanged_edges": 22069,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 1,
+          "arm": "random_joint",
+          "wrong": 4659,
+          "occurrences": 10515,
+          "MR": 44.30813124108417,
+          "group_macro_MR": 41.57155214711992,
+          "exchanged_edges": 22069,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 2,
+          "arm": "native",
+          "wrong": 4663,
+          "occurrences": 10515,
+          "MR": 44.34617213504517,
+          "group_macro_MR": 41.69386494159345,
+          "exchanged_edges": 0,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 2,
+          "arm": "channel",
+          "wrong": 5182,
+          "occurrences": 10515,
+          "MR": 49.281978126485974,
+          "group_macro_MR": 47.269966053834,
+          "exchanged_edges": 21986,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 2,
+          "arm": "random_channel",
+          "wrong": 4661,
+          "occurrences": 10515,
+          "MR": 44.32715168806467,
+          "group_macro_MR": 41.349616314459034,
+          "exchanged_edges": 21986,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        },
+        {
+          "seed": 2,
+          "arm": "random_joint",
+          "wrong": 4658,
+          "occurrences": 10515,
+          "MR": 44.298621017593916,
+          "group_macro_MR": 41.5918932614675,
+          "exchanged_edges": 21986,
+          "actual_nodes": 41264,
+          "actual_edges": 1835045
+        }
+      ],
+      "contrasts": {
+        "native": {
+          "mean_pp": 4.929465842447297,
+          "deltas_pp": [
+            4.907275320970043,
+            4.945316214931051,
+            4.935805991440799
+          ],
+          "all_repeats_positive": true,
+          "gained_occurrences": 1608,
+          "lost_occurrences": 53,
+          "group_seed_cases": {
+            "win": 971,
+            "tie": 1735,
+            "loss": 21
+          },
+          "nominal_t95_conditional": [
+            4.8802870976756685,
+            4.978644587218926
+          ]
+        },
+        "random_channel": {
+          "mean_pp": 5.034078300840069,
+          "deltas_pp": [
+            5.1355206847360915,
+            5.011887779362815,
+            4.9548264384213025
+          ],
+          "all_repeats_positive": true,
+          "gained_occurrences": 1619,
+          "lost_occurrences": 31,
+          "group_seed_cases": {
+            "win": 989,
+            "tie": 1720,
+            "loss": 18
+          },
+          "nominal_t95_conditional": [
+            4.804622531805939,
+            5.2635340698742
+          ]
+        },
+        "random_joint": {
+          "mean_pp": 4.973846885401807,
+          "deltas_pp": [
+            5.040418449833571,
+            4.897765097479791,
+            4.983357108892059
+          ],
+          "all_repeats_positive": true,
+          "gained_occurrences": 1624,
+          "lost_occurrences": 55,
+          "group_seed_cases": {
+            "win": 968,
+            "tie": 1733,
+            "loss": 26
+          },
+          "nominal_t95_conditional": [
+            4.7954842754271745,
+            5.1522094953764395
+          ]
+        }
+      },
+      "selected_class_counts": {
+        "channel": {
+          "0": 859,
+          "1": 3620
+        },
+        "random_channel": {
+          "0": 859,
+          "1": 3620
+        },
+        "random_joint": {
+          "0": 2875,
+          "1": 1604
+        }
+      },
+      "primary_pass": true,
+      "selection_counters": {
+        "physical_builds": 31516,
+        "teacher_forwards": 14420,
+        "teacher_contexts": 211941,
+        "backward_calls": 4483,
+        "algebraic_pool_scores": 31808073,
+        "official_GAGA_TEST": 0,
+        "upstream_generations": 0,
+        "native_canonical_builds": 0,
+        "updates": 0,
+        "API_calls": 0,
+        "GPU_hours": 0
+      },
+      "evaluation": {
+        "status": "completed",
+        "dataset": "gossipcop",
+        "mode": "evaluation",
+        "shard": 0,
+        "counters": {
+          "physical_builds": 0,
+          "teacher_forwards": 0,
+          "teacher_contexts": 0,
+          "backward_calls": 0,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_TEST": 10908,
+          "upstream_generations": 0,
+          "native_canonical_builds": 0,
+          "updates": 0,
+          "API_calls": 0,
+          "GPU_hours": 0
+        },
+        "rows": 10908,
+        "max_native_logit_error": 0.0,
+        "wall_seconds": 81.54048585402779,
+        "process_cpu_seconds": 229.70080443499998
+      },
+      "preflight": {
+        "status": "completed",
+        "dataset": "gossipcop",
+        "mode": "preflight",
+        "shard": 0,
+        "counters": {
+          "physical_builds": 28,
+          "teacher_forwards": 12,
+          "teacher_contexts": 190,
+          "backward_calls": 4,
+          "algebraic_pool_scores": 21091,
+          "official_GAGA_TEST": 0,
+          "upstream_generations": 0,
+          "native_canonical_builds": 0,
+          "updates": 0,
+          "API_calls": 0,
+          "GPU_hours": 0
+        },
+        "checks": [
+          {
+            "seed": 0,
+            "group": 1189,
+            "plans_reproduced": true,
+            "sequence_and_teacher_parity": true
+          },
+          {
+            "seed": 0,
+            "group": 1441,
+            "plans_reproduced": true,
+            "sequence_and_teacher_parity": true
+          }
+        ],
+        "TEST_calls": 0,
+        "wall_seconds": 42.645754870027304,
+        "process_cpu_seconds": 77.473865649
+      }
+    },
+    "yelpchi": {
+      "means": {
+        "native": 30.909768829231915,
+        "channel": 37.695749440715886,
+        "random_channel": 32.96047725577927,
+        "random_joint": 31.17076808351976
+      },
+      "metrics": [
+        {
+          "seed": 0,
+          "arm": "native",
+          "wrong": 829,
+          "occurrences": 2682,
+          "MR": 30.909768829231915,
+          "group_macro_MR": 32.210926222442666,
+          "exchanged_edges": 0,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 0,
+          "arm": "channel",
+          "wrong": 1011,
+          "occurrences": 2682,
+          "MR": 37.695749440715886,
+          "group_macro_MR": 38.70949792222451,
+          "exchanged_edges": 15169,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 0,
+          "arm": "random_channel",
+          "wrong": 886,
+          "occurrences": 2682,
+          "MR": 33.03504847129008,
+          "group_macro_MR": 33.86538471588502,
+          "exchanged_edges": 15169,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 0,
+          "arm": "random_joint",
+          "wrong": 838,
+          "occurrences": 2682,
+          "MR": 31.245339299030576,
+          "group_macro_MR": 32.45062113823247,
+          "exchanged_edges": 15169,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 1,
+          "arm": "native",
+          "wrong": 829,
+          "occurrences": 2682,
+          "MR": 30.909768829231915,
+          "group_macro_MR": 32.210926222442666,
+          "exchanged_edges": 0,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 1,
+          "arm": "channel",
+          "wrong": 1011,
+          "occurrences": 2682,
+          "MR": 37.695749440715886,
+          "group_macro_MR": 38.70949792222451,
+          "exchanged_edges": 15162,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 1,
+          "arm": "random_channel",
+          "wrong": 876,
+          "occurrences": 2682,
+          "MR": 32.66219239373602,
+          "group_macro_MR": 33.683851960639245,
+          "exchanged_edges": 15162,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 1,
+          "arm": "random_joint",
+          "wrong": 834,
+          "occurrences": 2682,
+          "MR": 31.09619686800895,
+          "group_macro_MR": 32.34835570293784,
+          "exchanged_edges": 15162,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 2,
+          "arm": "native",
+          "wrong": 829,
+          "occurrences": 2682,
+          "MR": 30.909768829231915,
+          "group_macro_MR": 32.210926222442666,
+          "exchanged_edges": 0,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 2,
+          "arm": "channel",
+          "wrong": 1011,
+          "occurrences": 2682,
+          "MR": 37.695749440715886,
+          "group_macro_MR": 38.70949792222451,
+          "exchanged_edges": 15174,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 2,
+          "arm": "random_channel",
+          "wrong": 890,
+          "occurrences": 2682,
+          "MR": 33.184190902311705,
+          "group_macro_MR": 34.43200739401366,
+          "exchanged_edges": 15174,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        },
+        {
+          "seed": 2,
+          "arm": "random_joint",
+          "wrong": 836,
+          "occurrences": 2682,
+          "MR": 31.17076808351976,
+          "group_macro_MR": 32.46258488626998,
+          "exchanged_edges": 15174,
+          "actual_nodes": 14402,
+          "actual_edges": 1191471
+        }
+      ],
+      "contrasts": {
+        "native": {
+          "mean_pp": 6.785980611483967,
+          "deltas_pp": [
+            6.785980611483967,
+            6.785980611483967,
+            6.785980611483967
+          ],
+          "all_repeats_positive": true,
+          "gained_occurrences": 552,
+          "lost_occurrences": 6,
+          "group_seed_cases": {
+            "tie": 1248,
+            "win": 393,
+            "loss": 3
+          },
+          "nominal_t95_conditional": [
+            6.785980611483967,
+            6.785980611483967
+          ]
+        },
+        "random_channel": {
+          "mean_pp": 4.735272184936615,
+          "deltas_pp": [
+            4.660700969425801,
+            5.033557046979865,
+            4.511558538404176
+          ],
+          "all_repeats_positive": true,
+          "gained_occurrences": 392,
+          "lost_occurrences": 11,
+          "group_seed_cases": {
+            "tie": 1336,
+            "win": 301,
+            "loss": 7
+          },
+          "nominal_t95_conditional": [
+            4.067361230770587,
+            5.403183139102643
+          ]
+        },
+        "random_joint": {
+          "mean_pp": 6.524981357196122,
+          "deltas_pp": [
+            6.4504101416853095,
+            6.599552572706935,
+            6.524981357196122
+          ],
+          "all_repeats_positive": true,
+          "gained_occurrences": 531,
+          "lost_occurrences": 6,
+          "group_seed_cases": {
+            "tie": 1261,
+            "win": 380,
+            "loss": 3
+          },
+          "nominal_t95_conditional": [
+            6.3397361885276835,
+            6.71022652586456
+          ]
+        }
+      },
+      "selected_class_counts": {
+        "channel": {
+          "1": 3231,
+          "0": 57
+        },
+        "random_channel": {
+          "1": 3231,
+          "0": 57
+        },
+        "random_joint": {
+          "0": 2778,
+          "1": 510
+        }
+      },
+      "primary_pass": true,
+      "selection_counters": {
+        "physical_builds": 22733,
+        "teacher_forwards": 9864,
+        "teacher_contexts": 156072,
+        "backward_calls": 3288,
+        "algebraic_pool_scores": 145355811,
+        "official_GAGA_TEST": 0,
+        "upstream_generations": 0,
+        "native_canonical_builds": 0,
+        "updates": 0,
+        "API_calls": 0,
+        "GPU_hours": 0
+      },
+      "evaluation": {
+        "status": "completed",
+        "dataset": "yelpchi",
+        "mode": "evaluation",
+        "shard": 0,
+        "counters": {
+          "physical_builds": 0,
+          "teacher_forwards": 0,
+          "teacher_contexts": 0,
+          "backward_calls": 0,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_TEST": 6576,
+          "upstream_generations": 0,
+          "native_canonical_builds": 0,
+          "updates": 0,
+          "API_calls": 0,
+          "GPU_hours": 0
+        },
+        "rows": 6576,
+        "max_native_logit_error": 0,
+        "wall_seconds": 26.65002503991127,
+        "process_cpu_seconds": 82.69745703000001
+      },
+      "preflight": {
+        "status": "completed",
+        "dataset": "yelpchi",
+        "mode": "preflight",
+        "shard": 0,
+        "counters": {
+          "physical_builds": 28,
+          "teacher_forwards": 12,
+          "teacher_contexts": 190,
+          "backward_calls": 4,
+          "algebraic_pool_scores": 175406,
+          "official_GAGA_TEST": 0,
+          "upstream_generations": 0,
+          "native_canonical_builds": 0,
+          "updates": 0,
+          "API_calls": 0,
+          "GPU_hours": 0
+        },
+        "checks": [
+          {
+            "seed": 0,
+            "group": 725,
+            "plans_reproduced": true,
+            "sequence_and_teacher_parity": true
+          },
+          {
+            "seed": 0,
+            "group": 655,
+            "plans_reproduced": true,
+            "sequence_and_teacher_parity": true
+          }
+        ],
+        "TEST_calls": 0,
+        "wall_seconds": 33.810398128814995,
+        "process_cpu_seconds": 69.435735532
+      }
+    }
+  },
+  "both_datasets_pass": true,
+  "protocol_sha256": "64d69f9f74165c7b4ec84e97b44c729d2e056c3ec0aa17651b9664eabc1e74c3",
+  "root_authored_audit": {
+    "checks": 192372,
+    "model_forwards": 0,
+    "tensor_loads": true,
+    "independent_or_human_review": false,
+    "wall_seconds": 37.24878028803505,
+    "process_cpu_seconds": 51.572571786999994
+  },
+  "limitations": [
+    "Owner explicitly authorized full TEST on both datasets. No new tuning or training is permitted from these outputs.",
+    "GossipCop TEST was used by earlier historical comparisons; this is a frozen benchmark, not an untouched confirmation cohort. YelpChi original TEST has not been evaluated by this downstream method.",
+    "Author and independently TRAIN-fitted teacher checkpoints are fixed. Repetitions are conditional on these checkpoints, not three independent teacher/upstream trainings. Repeated targets within groups are correlated.",
+    "Native GossipCop captures are reused byte-for-byte. YelpChi native captures use the same original author checkpoint and frozen original budget/candidate/RNG implementation, shared by all four arms.",
+    "Method cr_core and gr_core are unchanged. Candidate endpoint labels come only from known TRAIN labels. All TEST targets, features, direct target attachments, injected degrees, nonself edge counts and evaluation denominators remain fixed.",
+    "Same-class random matches selected slots, classes and exact edge dose. Joint random matches slots/dose but not class frequency. Equal physical budgets do not mean equal computation.",
+    "Both complete dataset action sets must be sealed before any new official victim scoring. No failed or identity case may be removed.",
+    "Saved-record/tensor audit is root-authored, not independent or human verification. Final submission, human contribution verification and final tag are separate."
+  ]
+}

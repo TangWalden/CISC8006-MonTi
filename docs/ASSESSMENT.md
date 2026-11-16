@@ -1,31 +1,24 @@
 # Grading points and evidence
 
 This mapping follows the user-provided **CISC8006 Student Guide, 2 September
-2026**: 85 team points and 15 individual points. Upstream/downstream role
-specialization produced a positive native-baseline development comparison,
-but the [completed full TEST](../results/final_staged/) failed its criterion.
-The author-checkpoint local-swap study was null. The latest
-[context-retrieval complete benchmark](../results/portal_full/) exceeds native
-and matched random by +1.1095/+0.8084 pp, respectively, on the fixed original
-TEST cohort. Earlier TEST exposure and conditional repeats limit inference.
-Report/presentation drafts predate these latest results and are not final submissions.
-The earlier [YelpChi development transfer](../results/yelpchi_validation/) found no gain:
-all eleven arms 29.1304% MR with identical paired predictions. This adds a
-cross-dataset limitation, not evidence of general superiority. The subsequent
-[two-channel retrieval](../results/channel_retrieval/) passes its registered
-two-dataset development screen: GossipCop +6.2464 pp and YelpChi +5.6522 pp
-over native; +6.5382/+4.2029 pp over same-class random. Every conditional repeat
-is positive. These reused VALID results have not received a new complete TEST
-evaluation and do not erase earlier nulls or complete the human requirements.
+2026**: 85 team points and 15 individual points. The latest frozen
+[complete two-dataset comparison](../results/channel_full/) passed its
+predeclared mean criterion. Current-minus-native gains are
++4.9295 pp on GossipCop and +6.7860 pp on YelpChi;
+current-minus-same-class-random gains are +5.0341/+4.7353 pp.
+All original TEST groups and all three conditional repeats were retained.
+The earlier reproduction, nulls and failures are not replaced. Earlier GossipCop
+TEST exposure limits confirmation. Dated report/slides still need the latest
+result addendum and genuine human review before submission.
 
 | Component | Points | Available evidence | Remaining completion item |
 |---|---:|---|---|
-| Scope and understanding | 5 | [Claim and paper comparison](REPRODUCING.md#claim-and-paper-comparison), [staged method](METHOD.md) | Confirm the instructor-approved reproduction level and each member's understanding. |
+| Scope and understanding | 5 | [Claim and paper comparison](REPRODUCING.md#claim-and-paper-comparison), [current downstream design](../experiments/channel_retrieval/) | Confirm the instructor-approved reproduction level and each member's understanding. |
 | Reproduction protocol and evaluation design | 10 | [Frozen reproduction protocol](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/frozen_protocol.json), [seed results](../evidence/reproduction_summary.json) | Genuine team verification of the protocol and evaluation code. |
-| Pilot implementation and audit readiness | 10 | [Functional tests](../tests/), [retrieval preflight and 19,593-check development audit](../results/portal_decoder/), [full saved audit](../results/portal_full/audit.json) | Complete the human live code/configuration review. Automated audits are root-authored, not independent implementation/human review. |
+| Pilot implementation and audit readiness | 10 | [Historical functional tests](../tests/), [current preflight and 192,372-check saved audit](../results/channel_full/), [development ablations](../results/channel_retrieval/) | Complete the human live code/configuration review. Automated audits are root-authored, not independent implementation/human review. |
 | Final reproduction and difference analysis | 20 | [Six-run reproduction](../evidence/reproduction_summary.json), [paper/setup comparison](REPRODUCING.md#claim-and-paper-comparison) | The frozen reproduction conclusion is inconclusive; incorporate the team's verified explanation in the final submission. |
-| Improvement experiments and ablations | 20 | [Both-dataset development and controls](../results/channel_retrieval/), [earlier complete benchmark](../results/portal_full/), [all attempts](SUPPLEMENTARY_STUDIES.md) | Freeze the new method for complete evaluation; instructor approval of required pilots/scope is unrecorded. No untouched-confirmation claim. |
-| Repository, report and agent record | 15 | [Latest result addendum](../results/channel_retrieval/), [dated report draft](STAGED_REPORT.md), [PDF](MonTi_Staged_Report.pdf), [setup/source](REPRODUCING.md), [AI use](../AI_USAGE.md) | Incorporate the latest addendum into final report/slides; human review, packaging and owner-confirmed freeze tag. |
+| Improvement experiments and ablations | 20 | [Frozen complete two-dataset study](../results/channel_full/), [development ablations](../results/channel_retrieval/), [earlier complete benchmark](../results/portal_full/), [all attempts](SUPPLEMENTARY_STUDIES.md) | The new method is fixed and completely evaluated; instructor approval of required pilots/scope remains unrecorded. No untouched-confirmation claim. |
+| Repository, report and agent record | 15 | [Latest complete result addendum](../results/channel_full/), [dated report draft](STAGED_REPORT.md), [PDF](MonTi_Staged_Report.pdf), [setup/source](REPRODUCING.md), [AI use](../AI_USAGE.md) | Incorporate the latest addendum into final report/slides; human review, packaging and owner-confirmed freeze tag. |
 | Presentation and demonstration | 5 | [Bento and PowerPoint draft with speaking notes](SLIDES_GUIDE.md), [historical demo preparation](ARCHIVE.md) | Incorporate positive and negative complete studies; final demonstration, human application checks, rehearsal and presentation. |
 | Individual technical defense | 10 | [Method explanation](METHOD.md), [report](STAGED_REPORT.md) | Each member must personally explain and defend the work. |
 | Individual contribution | 5 | [Contribution record](../CONTRIBUTIONS.md) | Members confirm actual work and supporting evidence. |
@@ -38,7 +31,7 @@ ideas, and a full evaluation of one idea against the frozen reproduction
 baseline. Multiple technical ideas, pilots and controls already exist. The
 historical staged pilot uses seeds 3/4/5, its own terminal-eight upstream family
 and 64 validation groups. The earlier formal reproduction uses seeds 0/1/2
-and a different evaluation cohort. The current pilot is therefore not the
+and a different evaluation cohort. That historical staged pilot is therefore not the
 registered final matched evaluation of that frozen reproduction baseline.
 
 The matched evaluation was [registered and frozen](FINAL_EVALUATION.md),

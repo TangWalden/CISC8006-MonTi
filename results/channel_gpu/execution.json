@@ -1,0 +1,216 @@
+{
+  "source_commit": "60e8485449cf1feef5fece4bf406a8558ec596ea",
+  "protocol_sha256": "f8051f98a198716d379e0d5d6e4eda1351f630fe204ac5cfabb65336a325bb1b",
+  "protocol": {
+    "schema": "channel_gpu_check_v1",
+    "source_commit": "60e8485449cf1feef5fece4bf406a8558ec596ea",
+    "sources": {
+      "check_driver.py": "10bce6808cb0e42002bbbd9ee560325a2c8aa3edfe34420e662a9264a0058f1e",
+      "client.py": "edb1562c0fc819b876aed9745f53032d766fa687f7dafbb0f048186dc0e31709",
+      "gpu_service.py": "514d7190a2f8ba5e51f907cfd5120e85f3aff2789016c83717c4b9a47090b9e3",
+      "preflight.py": "6552c4c0ca6a990b71151a99440820afc9a161d40b0b6a83c20aa1229724ca2b",
+      "README.md": "e4193566368247242e714cff1af886ed535ba7486b4998b03092d445648e660a"
+    },
+    "frozen_utc": "2026-11-16T09:10:46.693831+00:00",
+    "CPU_full_stage": "/home/tjy/Project/MonTi-course/runs/channel_full_20261116_attempt1",
+    "CPU_full_protocol_sha256": "64d69f9f74165c7b4ec84e97b44c729d2e056c3ec0aa17651b9664eabc1e74c3",
+    "runtime_root": "/home/tjy/Project/MonTi-course",
+    "datasets": [
+      "gossipcop",
+      "yelpchi"
+    ],
+    "gpu_ordinal": 0,
+    "gpu_uuid": "GPU-d7aa6d97-d823-0319-b218-84acc8e26019",
+    "minimum_free_MiB": 3000,
+    "allocator_fraction": 0.06,
+    "maximum_targets": 95,
+    "GPU_service_seconds": 360,
+    "TEST_calls": 0,
+    "eligibility": "All four predetermined development searches reproduce exact selected endpoints, maximum logits error <=2e-5, maximum gradient error <=2e-6. Record actual end-to-end timings. No final TEST outcomes may be read. CPU study continues untouched; continuation needs a separate recorded amendment."
+  },
+  "check_receipt": {
+    "status": "completed",
+    "phases": [
+      {
+        "dataset": "gossipcop",
+        "mode": "export",
+        "exit_code": 0,
+        "wall_seconds": 17.33633875497617
+      },
+      {
+        "dataset": "yelpchi",
+        "mode": "export",
+        "exit_code": 0,
+        "wall_seconds": 9.652758036041632
+      },
+      {
+        "dataset": "gossipcop",
+        "mode": "check",
+        "exit_code": 0,
+        "wall_seconds": 63.06982743786648
+      },
+      {
+        "dataset": "yelpchi",
+        "mode": "check",
+        "exit_code": 0,
+        "wall_seconds": 57.398063600063324
+      }
+    ],
+    "wall_seconds": 94.79859922989272,
+    "GPU_guardian_seconds": 67.80928663583472,
+    "GPU_hours": 0.018835913099723663,
+    "TEST_calls": 0,
+    "CPU_full_run_not_interrupted": true,
+    "parity_passed": true,
+    "checks": {
+      "gossipcop": {
+        "status": "completed",
+        "passed": true,
+        "checks": [
+          {
+            "seed": 0,
+            "group": 1189,
+            "plans_identical": true,
+            "CPU_plan": {
+              "57": 15905,
+              "66": 10857
+            },
+            "GPU_plan": {
+              "57": 15905,
+              "66": 10857
+            },
+            "max_logit_error": 2.1457672119140625e-06,
+            "max_gradient_error": 2.9802322387695312e-08,
+            "seconds": {
+              "cpu": 11.691359949065372,
+              "gpu": 11.174547545844689
+            },
+            "passed": true
+          },
+          {
+            "seed": 0,
+            "group": 1441,
+            "plans_identical": true,
+            "CPU_plan": {
+              "54": 12611,
+              "22": 11133
+            },
+            "GPU_plan": {
+              "54": 12611,
+              "22": 11133
+            },
+            "max_logit_error": 1.3709068298339844e-06,
+            "max_gradient_error": 2.9802322387695312e-08,
+            "seconds": {
+              "cpu": 10.733480477007106,
+              "gpu": 10.842723455978557
+            },
+            "passed": true
+          }
+        ],
+        "counters": {
+          "physical_builds": 44,
+          "teacher_forwards": 24,
+          "teacher_contexts": 368,
+          "backward_calls": 12,
+          "algebraic_pool_scores": 42182,
+          "official_GAGA_TEST": 0,
+          "upstream_generations": 0,
+          "native_canonical_builds": 0,
+          "updates": 0,
+          "API_calls": 0,
+          "GPU_hours": 0,
+          "GPU_RPC_calls": 12,
+          "GPU_RPC_wait_seconds": 0.2764526845421642
+        },
+        "wall_seconds": 45.509197189006954,
+        "process_CPU_seconds": 100.545312874,
+        "TEST_calls": 0
+      },
+      "yelpchi": {
+        "status": "completed",
+        "passed": true,
+        "checks": [
+          {
+            "seed": 0,
+            "group": 725,
+            "plans_identical": true,
+            "CPU_plan": {
+              "41": 45563,
+              "45": 44840
+            },
+            "GPU_plan": {
+              "41": 45563,
+              "45": 44840
+            },
+            "max_logit_error": 7.152557373046875e-07,
+            "max_gradient_error": 1.043081283569336e-07,
+            "seconds": {
+              "cpu": 10.904433762887493,
+              "gpu": 13.31022250186652
+            },
+            "passed": true
+          },
+          {
+            "seed": 0,
+            "group": 655,
+            "plans_identical": true,
+            "CPU_plan": {
+              "17": 45464,
+              "62": 45343
+            },
+            "GPU_plan": {
+              "17": 45464,
+              "62": 45343
+            },
+            "max_logit_error": 7.152557373046875e-07,
+            "max_gradient_error": 1.341104507446289e-07,
+            "seconds": {
+              "cpu": 11.220021076966077,
+              "gpu": 11.314393923152238
+            },
+            "passed": true
+          }
+        ],
+        "counters": {
+          "physical_builds": 44,
+          "teacher_forwards": 24,
+          "teacher_contexts": 368,
+          "backward_calls": 12,
+          "algebraic_pool_scores": 350812,
+          "official_GAGA_TEST": 0,
+          "upstream_generations": 0,
+          "native_canonical_builds": 0,
+          "updates": 0,
+          "API_calls": 0,
+          "GPU_hours": 0,
+          "GPU_RPC_calls": 12,
+          "GPU_RPC_wait_seconds": 1.8671477360185236
+        },
+        "wall_seconds": 47.61906422697939,
+        "process_CPU_seconds": 105.49653441400001,
+        "TEST_calls": 0
+      }
+    }
+  },
+  "collection_hashes": {
+    "protocol.json": "f8051f98a198716d379e0d5d6e4eda1351f630fe204ac5cfabb65336a325bb1b",
+    "launch_receipt.json": "de0d4b2d65d8d5e42fbfbd835eb2685069f9db42a39cf896205cfcd2d118399e",
+    "check_receipt.json": "9a768bc614f055030a857ecfe96a1ab60f98e732b751d6be3d09aaa200f8e9c9",
+    "gpu_receipt.json": "8789cbc26fd2d1e1a1b40b78de35a676805de07e2740388b15a1bef3596ecd56",
+    "gpu_ready.json": "138ca16a21b2edf832161679fc3eb0645842dd32bd86cb1c494b094c5653ffc2",
+    "gossipcop_export.json": "4d25a0ac3a2d22c6faca3aaeccb7e85576498161cc17e3438fa6ca11dfc9aecc",
+    "yelpchi_export.json": "a1c58e0e2cff55bf60526b0d7c502d3dd0e858e225f89a6d496e0774ab015240",
+    "gossipcop_preflight.json": "ba3a8162f91593cba17966fd335a7247073f7763af39a4b0f9c733fbfb475e1e",
+    "yelpchi_preflight.json": "c4234e0677b319e0afcb3ca6594cb087dff6750d6a5c8da6f87a125916013ad6",
+    "gpu.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check_yelpchi.log": "fedfaa0d21baa6c84098edf205d8c5dd7679f533fa295c38b31c2a9e7668d41e",
+    "driver.log": "cf37fde252ef9accf747f7108b997c5fc0d08e6050c567ce2627ea4bdd5beb0c",
+    "export_gossipcop.log": "a750e160c9ec1722e4fefd202539a5f17fa479b436e30ffba78d339114766e0f",
+    "export_yelpchi.log": "ec46559443a1f59b8a352f601a579500ca619208b03006e74cbbb13c5589c976",
+    "check_gossipcop.log": "9fb1883f4f5d812c8cd44401ee90c014bbe06b9720a49b2ea336566a3ac1781d"
+  },
+  "private_stage": "/home/tjy/Project/MonTi-course/runs/channel_gpu_check_20261116_attempt1",
+  "GPU_process_absent": true,
+  "audit_authorship": "Root-authored checks, not independent or human verification."
+}

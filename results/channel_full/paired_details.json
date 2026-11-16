@@ -1,0 +1,321 @@
+{
+  "scope": "Post-hoc saved arithmetic only. Changes are relative to author attacks, not clean graphs. Target-equal summaries are descriptive, not replacement primary estimands. Cases selected after outcomes cannot justify new tuning.",
+  "datasets": {
+    "gossipcop": {
+      "evaluation_sha256": "60b5914a7815223b8b75450ae342035b1275a5d8587df35642937ce1f1e8403f",
+      "contrasts": {
+        "native": {
+          "mean_pp": 4.929465842447297,
+          "gained_occurrences": 1608,
+          "lost_occurrences": 53,
+          "deltas_pp": [
+            4.907275320970043,
+            4.945316214931051,
+            4.935805991440799
+          ]
+        },
+        "random_channel": {
+          "mean_pp": 5.034078300840069,
+          "gained_occurrences": 1619,
+          "lost_occurrences": 31,
+          "deltas_pp": [
+            5.1355206847360915,
+            5.011887779362815,
+            4.9548264384213025
+          ]
+        },
+        "random_joint": {
+          "mean_pp": 4.973846885401807,
+          "gained_occurrences": 1624,
+          "lost_occurrences": 55,
+          "deltas_pp": [
+            5.040418449833571,
+            4.897765097479791,
+            4.983357108892059
+          ]
+        }
+      },
+      "target_equal_context_average_MR": {
+        "native": 39.41202934515443,
+        "channel": 45.9662515442343,
+        "random_channel": 38.981433118499424,
+        "random_joint": 39.012409346607605
+      },
+      "outcome_selected_illustrations": {
+        "lowest": [
+          {
+            "group": 1531,
+            "targets": 7,
+            "wrong_by_repeat": {
+              "native": [
+                1,
+                1,
+                1
+              ],
+              "channel": [
+                0,
+                0,
+                0
+              ],
+              "random_channel": [
+                1,
+                1,
+                1
+              ],
+              "random_joint": [
+                1,
+                1,
+                1
+              ]
+            },
+            "net_wrong_difference": -3
+          },
+          {
+            "group": 1693,
+            "targets": 10,
+            "wrong_by_repeat": {
+              "native": [
+                3,
+                3,
+                3
+              ],
+              "channel": [
+                2,
+                2,
+                2
+              ],
+              "random_channel": [
+                4,
+                2,
+                2
+              ],
+              "random_joint": [
+                3,
+                3,
+                2
+              ]
+            },
+            "net_wrong_difference": -3
+          }
+        ],
+        "highest": [
+          {
+            "group": 1984,
+            "targets": 19,
+            "wrong_by_repeat": {
+              "native": [
+                9,
+                9,
+                9
+              ],
+              "channel": [
+                14,
+                15,
+                15
+              ],
+              "random_channel": [
+                8,
+                9,
+                10
+              ],
+              "random_joint": [
+                8,
+                11,
+                12
+              ]
+            },
+            "net_wrong_difference": 17
+          },
+          {
+            "group": 1785,
+            "targets": 35,
+            "wrong_by_repeat": {
+              "native": [
+                17,
+                17,
+                17
+              ],
+              "channel": [
+                24,
+                24,
+                24
+              ],
+              "random_channel": [
+                21,
+                15,
+                16
+              ],
+              "random_joint": [
+                18,
+                17,
+                18
+              ]
+            },
+            "net_wrong_difference": 21
+          }
+        ]
+      }
+    },
+    "yelpchi": {
+      "evaluation_sha256": "a76b8cafc69d30d5b53beeb055e31cb84f3de15cc4da7db165c40ea838a81950",
+      "contrasts": {
+        "native": {
+          "mean_pp": 6.785980611483967,
+          "gained_occurrences": 552,
+          "lost_occurrences": 6,
+          "deltas_pp": [
+            6.785980611483967,
+            6.785980611483967,
+            6.785980611483967
+          ]
+        },
+        "random_channel": {
+          "mean_pp": 4.735272184936615,
+          "gained_occurrences": 392,
+          "lost_occurrences": 11,
+          "deltas_pp": [
+            4.660700969425801,
+            5.033557046979865,
+            4.511558538404176
+          ]
+        },
+        "random_joint": {
+          "mean_pp": 6.524981357196122,
+          "gained_occurrences": 531,
+          "lost_occurrences": 6,
+          "deltas_pp": [
+            6.4504101416853095,
+            6.599552572706935,
+            6.524981357196122
+          ]
+        }
+      },
+      "target_equal_context_average_MR": {
+        "native": 28.81321370309951,
+        "channel": 35.8278955954323,
+        "random_channel": 30.94752582925503,
+        "random_joint": 29.05111473626971
+      },
+      "outcome_selected_illustrations": {
+        "lowest": [
+          {
+            "group": 1403,
+            "targets": 2,
+            "wrong_by_repeat": {
+              "native": [
+                2,
+                2,
+                2
+              ],
+              "channel": [
+                1,
+                1,
+                1
+              ],
+              "random_channel": [
+                1,
+                2,
+                2
+              ],
+              "random_joint": [
+                2,
+                2,
+                2
+              ]
+            },
+            "net_wrong_difference": -3
+          },
+          {
+            "group": 887,
+            "targets": 2,
+            "wrong_by_repeat": {
+              "native": [
+                0,
+                0,
+                0
+              ],
+              "channel": [
+                0,
+                0,
+                0
+              ],
+              "random_channel": [
+                0,
+                0,
+                0
+              ],
+              "random_joint": [
+                0,
+                0,
+                0
+              ]
+            },
+            "net_wrong_difference": 0
+          }
+        ],
+        "highest": [
+          {
+            "group": 1093,
+            "targets": 11,
+            "wrong_by_repeat": {
+              "native": [
+                6,
+                6,
+                6
+              ],
+              "channel": [
+                10,
+                10,
+                10
+              ],
+              "random_channel": [
+                6,
+                7,
+                6
+              ],
+              "random_joint": [
+                6,
+                6,
+                6
+              ]
+            },
+            "net_wrong_difference": 12
+          },
+          {
+            "group": 1287,
+            "targets": 9,
+            "wrong_by_repeat": {
+              "native": [
+                2,
+                2,
+                2
+              ],
+              "channel": [
+                8,
+                8,
+                8
+              ],
+              "random_channel": [
+                5,
+                2,
+                5
+              ],
+              "random_joint": [
+                2,
+                2,
+                2
+              ]
+            },
+            "net_wrong_difference": 18
+          }
+        ]
+      }
+    }
+  },
+  "checks": 61194,
+  "model_calls": 0,
+  "tensor_loads": false,
+  "wall_seconds": 0.7349999999860302,
+  "process_cpu_seconds": 0.671875,
+  "source_sha256": "ef75ee70c4d2b2f07ba189108304bbc485537b9cd0a173a1aa2717df0fd49d80"
+}
