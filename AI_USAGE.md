@@ -266,6 +266,17 @@ unchanged; no teacher-query or latency speedup is inferred from 2-versus-9.
 Additional bounded primary-source reading informed unimplemented GossipCop
 design notes; it is not a new efficacy result or a verified citation ranking.
 
+On 16 November 2026, the root agent registered and executed full-pool gradient
+retrieval on both reused development cohorts. GossipCop improved to 60.4203%
+from native 57.9101% and matched random 58.4355%; YelpChi remained 29.1304%
+with no class flips. The two-dataset primary criterion failed. Source and
+actions were frozen before scoring; all alternatives were retained. The
+root-authored saved tensor audit passed 27,372 checks, not independent or
+human verification. Saved-only paired interpretation added no model calls.
+Whole driver wall time was 4,035.01 seconds with zero GPU/API/TEST use.
+The next relation-channel iteration is separately registered after these
+outcomes, with no claim of confirmation or guaranteed positive performance.
+
 Earlier positive, negative and failed experiments remain in the
 [immutable archive](docs/ARCHIVE.md). Full raw-output review and genuine human
 verification remain distinct from these automated checks.

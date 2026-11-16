@@ -11,8 +11,9 @@ matched random.** This is one exploratory benchmark, not a first-novelty claim.
 Higher GAGA miss rate (MR) means a stronger attack. Each row is a separate
 matched study; rates across rows use different cohorts/checkpoints.
 
-| Study | Native MR | Random control MR | Learned MR | Conclusion |
+| Study | Native MR | Random control MR | Modified MR | Conclusion |
 |---|---:|---:|---:|---|
+| [Full-pool gradient search, both VALID sets](results/gradient_retrieval/) | GossipCop 57.9101%; YelpChi 29.1304% | 58.4355%; 29.1304% | 60.4203%; 29.1304% | GossipCop +2.5102 pp; YelpChi no gain |
 | [YelpChi method transfer, VALID](results/yelpchi_validation/) | 29.1304% | 29.1304% | 29.1304% | No gain; all eleven arms have identical paired class predictions |
 | [Two-step target-aware rewriter, VALID](results/target_rewriter/) | 57.9101% | 58.3187% / 58.0852% | **59.4863%** | +0.3503 pp over existing neural; below two-step greedy 59.6030% |
 | [Author-checkpoint context retrieval, all TEST groups](results/portal_full/) | 44.2638% | 44.5649% | **45.3733%** | Positive against both controls in all three conditional repeats |

@@ -1,0 +1,489 @@
+{
+  "scope": "Post-result interpretation with source written before this round results. Correlated occurrences; teacher mismatch observations are not causal identification.",
+  "datasets": {
+    "gossipcop": {
+      "softplus": {
+        "counts": {
+          "logit_changed_occurrences": 1587,
+          "class_changed_occurrences": 43,
+          "teacher_victim_attacked_disagreements": 320,
+          "occurrences": 1713,
+          "victim_new_errors": 43,
+          "victim_recoveries": 0,
+          "teacher_new_errors": 19,
+          "teacher_recoveries": 0
+        },
+        "mean_absolute_margin_change": 0.14371694015938152,
+        "max_absolute_margin_change": 5.219012439250946,
+        "examples_scope": "Outcome-selected illustrations, not selection rules or causal proof.",
+        "largest_gains": [
+          {
+            "seed": 0,
+            "group": 1402,
+            "targets": 42,
+            "victim_net": 3,
+            "victim_gains": 3,
+            "victim_losses": 0,
+            "teacher_net": 2,
+            "exchanged_edges": 86
+          },
+          {
+            "seed": 1,
+            "group": 1402,
+            "targets": 42,
+            "victim_net": 3,
+            "victim_gains": 3,
+            "victim_losses": 0,
+            "teacher_net": 2,
+            "exchanged_edges": 69
+          },
+          {
+            "seed": 2,
+            "group": 1402,
+            "targets": 42,
+            "victim_net": 3,
+            "victim_gains": 3,
+            "victim_losses": 0,
+            "teacher_net": 2,
+            "exchanged_edges": 54
+          }
+        ],
+        "largest_losses": [
+          {
+            "seed": 0,
+            "group": 943,
+            "targets": 9,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 48
+          },
+          {
+            "seed": 0,
+            "group": 954,
+            "targets": 3,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 54
+          },
+          {
+            "seed": 0,
+            "group": 962,
+            "targets": 4,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 40
+          }
+        ]
+      },
+      "boundary": {
+        "counts": {
+          "logit_changed_occurrences": 1567,
+          "class_changed_occurrences": 43,
+          "teacher_victim_attacked_disagreements": 320,
+          "occurrences": 1713,
+          "victim_new_errors": 43,
+          "victim_recoveries": 0,
+          "teacher_new_errors": 19,
+          "teacher_recoveries": 0
+        },
+        "mean_absolute_margin_change": 0.14092219811448284,
+        "max_absolute_margin_change": 5.219012439250946,
+        "examples_scope": "Outcome-selected illustrations, not selection rules or causal proof.",
+        "largest_gains": [
+          {
+            "seed": 0,
+            "group": 1402,
+            "targets": 42,
+            "victim_net": 3,
+            "victim_gains": 3,
+            "victim_losses": 0,
+            "teacher_net": 2,
+            "exchanged_edges": 86
+          },
+          {
+            "seed": 1,
+            "group": 1402,
+            "targets": 42,
+            "victim_net": 3,
+            "victim_gains": 3,
+            "victim_losses": 0,
+            "teacher_net": 2,
+            "exchanged_edges": 69
+          },
+          {
+            "seed": 2,
+            "group": 1402,
+            "targets": 42,
+            "victim_net": 3,
+            "victim_gains": 3,
+            "victim_losses": 0,
+            "teacher_net": 2,
+            "exchanged_edges": 54
+          }
+        ],
+        "largest_losses": [
+          {
+            "seed": 0,
+            "group": 943,
+            "targets": 9,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 48
+          },
+          {
+            "seed": 0,
+            "group": 954,
+            "targets": 3,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 54
+          },
+          {
+            "seed": 0,
+            "group": 962,
+            "targets": 4,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 40
+          }
+        ]
+      },
+      "uniform": {
+        "counts": {
+          "logit_changed_occurrences": 1587,
+          "class_changed_occurrences": 31,
+          "teacher_victim_attacked_disagreements": 314,
+          "occurrences": 1713,
+          "victim_new_errors": 30,
+          "victim_recoveries": 1,
+          "teacher_new_errors": 17,
+          "teacher_recoveries": 0
+        },
+        "mean_absolute_margin_change": 0.11311983808622816,
+        "max_absolute_margin_change": 4.890698969364166,
+        "examples_scope": "Outcome-selected illustrations, not selection rules or causal proof.",
+        "largest_gains": [
+          {
+            "seed": 2,
+            "group": 1492,
+            "targets": 10,
+            "victim_net": 3,
+            "victim_gains": 3,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 20
+          },
+          {
+            "seed": 0,
+            "group": 1051,
+            "targets": 22,
+            "victim_net": 2,
+            "victim_gains": 2,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 78
+          },
+          {
+            "seed": 0,
+            "group": 1356,
+            "targets": 6,
+            "victim_net": 2,
+            "victim_gains": 2,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 12
+          }
+        ],
+        "largest_losses": [
+          {
+            "seed": 1,
+            "group": 1492,
+            "targets": 10,
+            "victim_net": -1,
+            "victim_gains": 0,
+            "victim_losses": 1,
+            "teacher_net": 0,
+            "exchanged_edges": 2
+          },
+          {
+            "seed": 0,
+            "group": 943,
+            "targets": 9,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 48
+          },
+          {
+            "seed": 0,
+            "group": 954,
+            "targets": 3,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 54
+          }
+        ]
+      }
+    },
+    "yelpchi": {
+      "softplus": {
+        "counts": {
+          "logit_changed_occurrences": 687,
+          "class_changed_occurrences": 0,
+          "teacher_victim_attacked_disagreements": 120,
+          "occurrences": 690,
+          "victim_new_errors": 0,
+          "victim_recoveries": 0,
+          "teacher_new_errors": 0,
+          "teacher_recoveries": 0
+        },
+        "mean_absolute_margin_change": 0.01415191306800082,
+        "max_absolute_margin_change": 0.996647834777832,
+        "examples_scope": "Outcome-selected illustrations, not selection rules or causal proof.",
+        "largest_gains": [
+          {
+            "seed": 0,
+            "group": 557,
+            "targets": 3,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 4
+          },
+          {
+            "seed": 0,
+            "group": 560,
+            "targets": 4,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 39
+          },
+          {
+            "seed": 0,
+            "group": 564,
+            "targets": 2,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 33
+          }
+        ],
+        "largest_losses": [
+          {
+            "seed": 0,
+            "group": 557,
+            "targets": 3,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 4
+          },
+          {
+            "seed": 0,
+            "group": 560,
+            "targets": 4,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 39
+          },
+          {
+            "seed": 0,
+            "group": 564,
+            "targets": 2,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 33
+          }
+        ]
+      },
+      "boundary": {
+        "counts": {
+          "logit_changed_occurrences": 687,
+          "class_changed_occurrences": 0,
+          "teacher_victim_attacked_disagreements": 120,
+          "occurrences": 690,
+          "victim_new_errors": 0,
+          "victim_recoveries": 0,
+          "teacher_new_errors": 0,
+          "teacher_recoveries": 0
+        },
+        "mean_absolute_margin_change": 0.013641810908481695,
+        "max_absolute_margin_change": 0.996647834777832,
+        "examples_scope": "Outcome-selected illustrations, not selection rules or causal proof.",
+        "largest_gains": [
+          {
+            "seed": 0,
+            "group": 557,
+            "targets": 3,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 4
+          },
+          {
+            "seed": 0,
+            "group": 560,
+            "targets": 4,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 39
+          },
+          {
+            "seed": 0,
+            "group": 564,
+            "targets": 2,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 33
+          }
+        ],
+        "largest_losses": [
+          {
+            "seed": 0,
+            "group": 557,
+            "targets": 3,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 4
+          },
+          {
+            "seed": 0,
+            "group": 560,
+            "targets": 4,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 39
+          },
+          {
+            "seed": 0,
+            "group": 564,
+            "targets": 2,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 33
+          }
+        ]
+      },
+      "uniform": {
+        "counts": {
+          "logit_changed_occurrences": 687,
+          "class_changed_occurrences": 0,
+          "teacher_victim_attacked_disagreements": 120,
+          "occurrences": 690,
+          "victim_new_errors": 0,
+          "victim_recoveries": 0,
+          "teacher_new_errors": 0,
+          "teacher_recoveries": 0
+        },
+        "mean_absolute_margin_change": 0.010467767251142557,
+        "max_absolute_margin_change": 1.2503039836883545,
+        "examples_scope": "Outcome-selected illustrations, not selection rules or causal proof.",
+        "largest_gains": [
+          {
+            "seed": 0,
+            "group": 557,
+            "targets": 3,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 4
+          },
+          {
+            "seed": 0,
+            "group": 560,
+            "targets": 4,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 39
+          },
+          {
+            "seed": 0,
+            "group": 564,
+            "targets": 2,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 33
+          }
+        ],
+        "largest_losses": [
+          {
+            "seed": 0,
+            "group": 557,
+            "targets": 3,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 4
+          },
+          {
+            "seed": 0,
+            "group": 560,
+            "targets": 4,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 39
+          },
+          {
+            "seed": 0,
+            "group": 564,
+            "targets": 2,
+            "victim_net": 0,
+            "victim_gains": 0,
+            "victim_losses": 0,
+            "teacher_net": 0,
+            "exchanged_edges": 33
+          }
+        ]
+      }
+    }
+  },
+  "model_calls": 0,
+  "tensor_loads": false,
+  "wall_seconds": 0.15600000001722947,
+  "process_cpu_seconds": 0.109375,
+  "source_sha256": "79051a2e123758bdcba41f9f0b900a934151b7ee616e4c402f5afc0f790f83bf",
+  "reporting_clarification": "New errors and recoveries in this record are relative to the native AUTHOR ATTACK, not a clean graph. The saved source/output is preserved privately."
+}

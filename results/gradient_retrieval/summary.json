@@ -1,0 +1,1094 @@
+{
+  "status": "completed",
+  "datasets": {
+    "gossipcop": {
+      "metrics": [
+        {
+          "seed": 0,
+          "arm": "native",
+          "wrong": 332,
+          "occurrences": 571,
+          "MR": 58.14360770577933,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 0,
+          "arm": "single_neural",
+          "wrong": 340,
+          "occurrences": 571,
+          "MR": 59.5446584938704,
+          "exchanged_edges": 1092
+        },
+        {
+          "seed": 0,
+          "arm": "rewriter",
+          "wrong": 341,
+          "occurrences": 571,
+          "MR": 59.719789842381786,
+          "exchanged_edges": 2289
+        },
+        {
+          "seed": 0,
+          "arm": "softplus",
+          "wrong": 345,
+          "occurrences": 571,
+          "MR": 60.42031523642732,
+          "exchanged_edges": 2285
+        },
+        {
+          "seed": 0,
+          "arm": "random_softplus",
+          "wrong": 333,
+          "occurrences": 571,
+          "MR": 58.31873905429072,
+          "exchanged_edges": 2285
+        },
+        {
+          "seed": 0,
+          "arm": "boundary",
+          "wrong": 345,
+          "occurrences": 571,
+          "MR": 60.42031523642732,
+          "exchanged_edges": 2278
+        },
+        {
+          "seed": 0,
+          "arm": "random_boundary",
+          "wrong": 335,
+          "occurrences": 571,
+          "MR": 58.66900175131349,
+          "exchanged_edges": 2278
+        },
+        {
+          "seed": 0,
+          "arm": "uniform",
+          "wrong": 342,
+          "occurrences": 571,
+          "MR": 59.89492119089317,
+          "exchanged_edges": 2277
+        },
+        {
+          "seed": 0,
+          "arm": "random_uniform",
+          "wrong": 333,
+          "occurrences": 571,
+          "MR": 58.31873905429072,
+          "exchanged_edges": 2277
+        },
+        {
+          "seed": 1,
+          "arm": "native",
+          "wrong": 332,
+          "occurrences": 571,
+          "MR": 58.14360770577933,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 1,
+          "arm": "single_neural",
+          "wrong": 338,
+          "occurrences": 571,
+          "MR": 59.19439579684764,
+          "exchanged_edges": 1133
+        },
+        {
+          "seed": 1,
+          "arm": "rewriter",
+          "wrong": 341,
+          "occurrences": 571,
+          "MR": 59.719789842381786,
+          "exchanged_edges": 2104
+        },
+        {
+          "seed": 1,
+          "arm": "softplus",
+          "wrong": 345,
+          "occurrences": 571,
+          "MR": 60.42031523642732,
+          "exchanged_edges": 2266
+        },
+        {
+          "seed": 1,
+          "arm": "random_softplus",
+          "wrong": 333,
+          "occurrences": 571,
+          "MR": 58.31873905429072,
+          "exchanged_edges": 2266
+        },
+        {
+          "seed": 1,
+          "arm": "boundary",
+          "wrong": 345,
+          "occurrences": 571,
+          "MR": 60.42031523642732,
+          "exchanged_edges": 2253
+        },
+        {
+          "seed": 1,
+          "arm": "random_boundary",
+          "wrong": 336,
+          "occurrences": 571,
+          "MR": 58.844133099824866,
+          "exchanged_edges": 2253
+        },
+        {
+          "seed": 1,
+          "arm": "uniform",
+          "wrong": 341,
+          "occurrences": 571,
+          "MR": 59.719789842381786,
+          "exchanged_edges": 2218
+        },
+        {
+          "seed": 1,
+          "arm": "random_uniform",
+          "wrong": 328,
+          "occurrences": 571,
+          "MR": 57.443082311733804,
+          "exchanged_edges": 2218
+        },
+        {
+          "seed": 2,
+          "arm": "native",
+          "wrong": 328,
+          "occurrences": 571,
+          "MR": 57.443082311733804,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 2,
+          "arm": "single_neural",
+          "wrong": 335,
+          "occurrences": 571,
+          "MR": 58.66900175131349,
+          "exchanged_edges": 1126
+        },
+        {
+          "seed": 2,
+          "arm": "rewriter",
+          "wrong": 337,
+          "occurrences": 571,
+          "MR": 59.01926444833625,
+          "exchanged_edges": 2247
+        },
+        {
+          "seed": 2,
+          "arm": "softplus",
+          "wrong": 345,
+          "occurrences": 571,
+          "MR": 60.42031523642732,
+          "exchanged_edges": 2242
+        },
+        {
+          "seed": 2,
+          "arm": "random_softplus",
+          "wrong": 332,
+          "occurrences": 571,
+          "MR": 58.14360770577933,
+          "exchanged_edges": 2242
+        },
+        {
+          "seed": 2,
+          "arm": "boundary",
+          "wrong": 345,
+          "occurrences": 571,
+          "MR": 60.42031523642732,
+          "exchanged_edges": 2243
+        },
+        {
+          "seed": 2,
+          "arm": "random_boundary",
+          "wrong": 330,
+          "occurrences": 571,
+          "MR": 57.79334500875657,
+          "exchanged_edges": 2243
+        },
+        {
+          "seed": 2,
+          "arm": "uniform",
+          "wrong": 338,
+          "occurrences": 571,
+          "MR": 59.19439579684764,
+          "exchanged_edges": 2252
+        },
+        {
+          "seed": 2,
+          "arm": "random_uniform",
+          "wrong": 333,
+          "occurrences": 571,
+          "MR": 58.31873905429072,
+          "exchanged_edges": 2252
+        }
+      ],
+      "means": {
+        "native": 57.91009924109749,
+        "single_neural": 59.136018680677175,
+        "rewriter": 59.48628137769994,
+        "softplus": 60.42031523642732,
+        "random_softplus": 58.260361938120255,
+        "boundary": 60.42031523642732,
+        "random_boundary": 58.43549328663164,
+        "uniform": 59.60303561004086,
+        "random_uniform": 58.026853473438415
+      },
+      "contrasts": {
+        "softplus__native": {
+          "mean_pp": 2.5102159953298306,
+          "deltas_pp": [
+            2.276707530647986,
+            2.276707530647986,
+            2.9772329246935203
+          ],
+          "gained_occurrences": 43,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            1.5055101623091007,
+            3.5149218283505608
+          ]
+        },
+        "softplus__single_neural": {
+          "mean_pp": 1.284296555750146,
+          "deltas_pp": [
+            0.8756567425569177,
+            1.2259194395796849,
+            1.7513134851138354
+          ],
+          "gained_occurrences": 22,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.18944375721934326,
+            2.3791493542809485
+          ]
+        },
+        "softplus__rewriter": {
+          "mean_pp": 0.9340338587273789,
+          "deltas_pp": [
+            0.7005253940455342,
+            0.7005253940455342,
+            1.4010507880910683
+          ],
+          "gained_occurrences": 16,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            -0.07067197429335081,
+            1.9387396917481086
+          ]
+        },
+        "softplus__random_softplus": {
+          "mean_pp": 2.1599532983070637,
+          "deltas_pp": [
+            2.1015761821366024,
+            2.1015761821366024,
+            2.276707530647986
+          ],
+          "gained_occurrences": 37,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            1.9087768400518812,
+            2.4111297565622465
+          ]
+        },
+        "softplus__uniform": {
+          "mean_pp": 0.8172796263864566,
+          "deltas_pp": [
+            0.5253940455341506,
+            0.7005253940455342,
+            1.2259194395796849
+          ],
+          "gained_occurrences": 14,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            -0.08834997304204406,
+            1.7229092258149572
+          ]
+        },
+        "boundary__native": {
+          "mean_pp": 2.5102159953298306,
+          "deltas_pp": [
+            2.276707530647986,
+            2.276707530647986,
+            2.9772329246935203
+          ],
+          "gained_occurrences": 43,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            1.5055101623091007,
+            3.5149218283505608
+          ]
+        },
+        "boundary__single_neural": {
+          "mean_pp": 1.284296555750146,
+          "deltas_pp": [
+            0.8756567425569177,
+            1.2259194395796849,
+            1.7513134851138354
+          ],
+          "gained_occurrences": 22,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.18944375721934326,
+            2.3791493542809485
+          ]
+        },
+        "boundary__rewriter": {
+          "mean_pp": 0.9340338587273789,
+          "deltas_pp": [
+            0.7005253940455342,
+            0.7005253940455342,
+            1.4010507880910683
+          ],
+          "gained_occurrences": 16,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            -0.07067197429335081,
+            1.9387396917481086
+          ]
+        },
+        "boundary__random_boundary": {
+          "mean_pp": 1.98482194979568,
+          "deltas_pp": [
+            1.7513134851138354,
+            1.5761821366024518,
+            2.626970227670753
+          ],
+          "gained_occurrences": 34,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.5863306167406128,
+            3.3833132828507475
+          ]
+        },
+        "boundary__uniform": {
+          "mean_pp": 0.8172796263864566,
+          "deltas_pp": [
+            0.5253940455341506,
+            0.7005253940455342,
+            1.2259194395796849
+          ],
+          "gained_occurrences": 14,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            -0.08834997304204406,
+            1.7229092258149572
+          ]
+        },
+        "uniform__native": {
+          "mean_pp": 1.6929363689433743,
+          "deltas_pp": [
+            1.7513134851138354,
+            1.5761821366024518,
+            1.7513134851138354
+          ],
+          "gained_occurrences": 30,
+          "lost_occurrences": 1,
+          "nominal_t95": [
+            1.4417599106881918,
+            1.9441128271985568
+          ]
+        },
+        "uniform__single_neural": {
+          "mean_pp": 0.46701692936368944,
+          "deltas_pp": [
+            0.3502626970227671,
+            0.5253940455341506,
+            0.5253940455341506
+          ],
+          "gained_occurrences": 10,
+          "lost_occurrences": 2,
+          "nominal_t95": [
+            0.21584047110850707,
+            0.7181933876188717
+          ]
+        },
+        "uniform__rewriter": {
+          "mean_pp": 0.11675423234092236,
+          "deltas_pp": [
+            0.17513134851138354,
+            0.0,
+            0.17513134851138354
+          ],
+          "gained_occurrences": 4,
+          "lost_occurrences": 2,
+          "nominal_t95": [
+            -0.13442222591426006,
+            0.3679306905961048
+          ]
+        },
+        "uniform__random_uniform": {
+          "mean_pp": 1.5761821366024518,
+          "deltas_pp": [
+            1.5761821366024518,
+            2.276707530647986,
+            0.8756567425569177
+          ],
+          "gained_occurrences": 28,
+          "lost_occurrences": 1,
+          "nominal_t95": [
+            -0.16401941285026478,
+            3.3163836860551683
+          ]
+        }
+      },
+      "primary_pass": true,
+      "beats_uniform": true,
+      "selections": {
+        "status": "completed",
+        "mode": "selection",
+        "dataset": "gossipcop",
+        "counters": {
+          "physical_builds": 2056,
+          "teacher_forwards": 2424,
+          "teacher_contexts": 23536,
+          "backward_calls": 662,
+          "algebraic_pool_scores": 2545104,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "seal_sha256": "173ab635654b9e7c086a221fea50b81710857549101ae8db5dbfd8923aea18df",
+        "wall_seconds": 1904.8428561470937,
+        "process_cpu_seconds": 4373.183015214
+      },
+      "evaluation": {
+        "status": "completed",
+        "mode": "evaluation",
+        "dataset": "gossipcop",
+        "counters": {
+          "physical_builds": 0,
+          "teacher_forwards": 0,
+          "teacher_contexts": 0,
+          "backward_calls": 0,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 1728,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "rows": 1728,
+        "wall_seconds": 21.965429475996643,
+        "process_cpu_seconds": 42.960136646
+      },
+      "preflight": {
+        "status": "completed",
+        "mode": "preflight",
+        "dataset": "gossipcop",
+        "counters": {
+          "physical_builds": 32,
+          "teacher_forwards": 16,
+          "teacher_contexts": 52,
+          "backward_calls": 4,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "checks": [
+          {
+            "seed": 0,
+            "group": 839,
+            "pool_size": 1617,
+            "sequence_error": 2.384185791015625e-07,
+            "logit_error": 1.1920928955078125e-06,
+            "gradient_norm": 0.2083071917295456,
+            "directional_numeric": 0.20834802091121674,
+            "directional_autograd": 0.2083091288805008
+          },
+          {
+            "seed": 0,
+            "group": 835,
+            "pool_size": 3616,
+            "sequence_error": 1.1920928955078125e-07,
+            "logit_error": 1.1920928955078125e-06,
+            "gradient_norm": 0.5258967280387878,
+            "directional_numeric": 0.5258917808532715,
+            "directional_autograd": 0.5258974432945251
+          },
+          {
+            "seed": 1,
+            "group": 839,
+            "pool_size": 1617,
+            "sequence_error": 1.7881393432617188e-07,
+            "logit_error": 1.430511474609375e-06,
+            "gradient_norm": 0.21505206823349,
+            "directional_numeric": 0.21511314809322357,
+            "directional_autograd": 0.21505394577980042
+          },
+          {
+            "seed": 1,
+            "group": 835,
+            "pool_size": 3616,
+            "sequence_error": 1.1920928955078125e-07,
+            "logit_error": 9.5367431640625e-07,
+            "gradient_norm": 0.4070081114768982,
+            "directional_numeric": 0.4070698916912079,
+            "directional_autograd": 0.4070083498954773
+          }
+        ],
+        "wall_seconds": 46.38199840695597,
+        "process_cpu_seconds": 85.792181499
+      }
+    },
+    "yelpchi": {
+      "metrics": [
+        {
+          "seed": 0,
+          "arm": "native",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 0,
+          "arm": "single_neural",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 877
+        },
+        {
+          "seed": 0,
+          "arm": "rewriter",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1716
+        },
+        {
+          "seed": 0,
+          "arm": "softplus",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1749
+        },
+        {
+          "seed": 0,
+          "arm": "random_softplus",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1749
+        },
+        {
+          "seed": 0,
+          "arm": "boundary",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1750
+        },
+        {
+          "seed": 0,
+          "arm": "random_boundary",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1750
+        },
+        {
+          "seed": 0,
+          "arm": "uniform",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1746
+        },
+        {
+          "seed": 0,
+          "arm": "random_uniform",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1746
+        },
+        {
+          "seed": 1,
+          "arm": "native",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 1,
+          "arm": "single_neural",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 847
+        },
+        {
+          "seed": 1,
+          "arm": "rewriter",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1617
+        },
+        {
+          "seed": 1,
+          "arm": "softplus",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1732
+        },
+        {
+          "seed": 1,
+          "arm": "random_softplus",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1732
+        },
+        {
+          "seed": 1,
+          "arm": "boundary",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1729
+        },
+        {
+          "seed": 1,
+          "arm": "random_boundary",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1729
+        },
+        {
+          "seed": 1,
+          "arm": "uniform",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1717
+        },
+        {
+          "seed": 1,
+          "arm": "random_uniform",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1717
+        },
+        {
+          "seed": 2,
+          "arm": "native",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 2,
+          "arm": "single_neural",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 883
+        },
+        {
+          "seed": 2,
+          "arm": "rewriter",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1616
+        },
+        {
+          "seed": 2,
+          "arm": "softplus",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1751
+        },
+        {
+          "seed": 2,
+          "arm": "random_softplus",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1751
+        },
+        {
+          "seed": 2,
+          "arm": "boundary",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1749
+        },
+        {
+          "seed": 2,
+          "arm": "random_boundary",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1749
+        },
+        {
+          "seed": 2,
+          "arm": "uniform",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1749
+        },
+        {
+          "seed": 2,
+          "arm": "random_uniform",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1749
+        }
+      ],
+      "means": {
+        "native": 29.130434782608695,
+        "single_neural": 29.130434782608695,
+        "rewriter": 29.130434782608695,
+        "softplus": 29.130434782608695,
+        "random_softplus": 29.130434782608695,
+        "boundary": 29.130434782608695,
+        "random_boundary": 29.130434782608695,
+        "uniform": 29.130434782608695,
+        "random_uniform": 29.130434782608695
+      },
+      "contrasts": {
+        "softplus__native": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "softplus__single_neural": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "softplus__rewriter": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "softplus__random_softplus": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "softplus__uniform": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "boundary__native": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "boundary__single_neural": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "boundary__rewriter": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "boundary__random_boundary": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "boundary__uniform": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "uniform__native": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "uniform__single_neural": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "uniform__rewriter": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        },
+        "uniform__random_uniform": {
+          "mean_pp": 0.0,
+          "deltas_pp": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gained_occurrences": 0,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "primary_pass": false,
+      "beats_uniform": false,
+      "selections": {
+        "status": "completed",
+        "mode": "selection",
+        "dataset": "yelpchi",
+        "counters": {
+          "physical_builds": 2211,
+          "teacher_forwards": 2688,
+          "teacher_contexts": 27264,
+          "backward_calls": 768,
+          "algebraic_pool_scores": 29121852,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "seal_sha256": "2b6d37dacd113f97d42acddd6f52483e463cb948e20388de6a66c50dea7e47c0",
+        "wall_seconds": 2012.9361222549342,
+        "process_cpu_seconds": 4739.075672335
+      },
+      "evaluation": {
+        "status": "completed",
+        "mode": "evaluation",
+        "dataset": "yelpchi",
+        "counters": {
+          "physical_builds": 0,
+          "teacher_forwards": 0,
+          "teacher_contexts": 0,
+          "backward_calls": 0,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 1728,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "rows": 1728,
+        "wall_seconds": 11.262711847899482,
+        "process_cpu_seconds": 27.03260028
+      },
+      "preflight": {
+        "status": "completed",
+        "mode": "preflight",
+        "dataset": "yelpchi",
+        "counters": {
+          "physical_builds": 32,
+          "teacher_forwards": 16,
+          "teacher_contexts": 52,
+          "backward_calls": 4,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "checks": [
+          {
+            "seed": 0,
+            "group": 282,
+            "pool_size": 15295,
+            "sequence_error": 5.960464477539063e-08,
+            "logit_error": 3.5762786865234375e-07,
+            "gradient_norm": 1.0097956657409668,
+            "directional_numeric": 1.013040542602539,
+            "directional_autograd": 1.0097956657409668
+          },
+          {
+            "seed": 0,
+            "group": 195,
+            "pool_size": 15648,
+            "sequence_error": 1.1920928955078125e-07,
+            "logit_error": 1.1920928955078125e-06,
+            "gradient_norm": 0.0012941942550241947,
+            "directional_numeric": 0.0012814997462555766,
+            "directional_autograd": 0.0012941944878548384
+          },
+          {
+            "seed": 1,
+            "group": 282,
+            "pool_size": 15295,
+            "sequence_error": 5.960464477539063e-08,
+            "logit_error": 4.76837158203125e-07,
+            "gradient_norm": 1.0097956657409668,
+            "directional_numeric": 1.013040542602539,
+            "directional_autograd": 1.0097956657409668
+          },
+          {
+            "seed": 1,
+            "group": 195,
+            "pool_size": 15648,
+            "sequence_error": 1.1920928955078125e-07,
+            "logit_error": 1.1920928955078125e-06,
+            "gradient_norm": 0.00129455397836864,
+            "directional_numeric": 0.0012814997462555766,
+            "directional_autograd": 0.0012945540947839618
+          }
+        ],
+        "wall_seconds": 29.339080326957628,
+        "process_cpu_seconds": 64.606640713
+      }
+    }
+  },
+  "both_datasets_pass": false,
+  "root_authored_audit": {
+    "checks": 27372,
+    "model_forwards": 0,
+    "tensor_loads": true,
+    "independent_or_human_review": false,
+    "wall_seconds": 4.751400069100782,
+    "process_cpu_seconds": 6.223232877
+  },
+  "protocol_sha256": "eca06cc46543d76a3fa8a3d389a31e0b9034da168c15f53ef939c46a815a2a99",
+  "limitations": [
+    "Reused development cohorts have already been inspected. This is exploratory adaptive development, not untouched confirmation.",
+    "One fixed author checkpoint and one independent TRAIN-fitted teacher per dataset; three capture repetitions are not independent author trainings or independent target samples.",
+    "HotFlip-inspired full legal TRAIN-benign pool retrieval is a downstream optimizer, not a newly trained neural model or first-novelty claim.",
+    "Uniform shortlist uses the same pool, regions, horizon and number of verified surrogate contexts per step. Gradients and algebraic pool scoring are extra computation. Matched random uses the exact selected donor slots and exchange dose.",
+    "All final choices for BOTH datasets seal before any new official victim call. Native and existing models use exact saved graphs. No TEST/API/GPU/new teacher or upstream generation.",
+    "Affine template equivalence must pass fixed TRAIN checks, then EVERY final new/random graph is physically verified before official scoring. Equality is to the locked canonical implementation, not an independent full-graph semantics theorem.",
+    "Sequential dataset phases; no tuning after partial results. A later iteration requires a new evidence-based protocol. No fixed maximum claim of eventual success."
+  ]
+}

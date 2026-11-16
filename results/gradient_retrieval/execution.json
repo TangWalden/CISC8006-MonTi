@@ -1,0 +1,143 @@
+{
+  "source_commit": "5745fb3fa4ad07c821c64ce11aad7cc9052de2d2",
+  "protocol_sha256": "eca06cc46543d76a3fa8a3d389a31e0b9034da168c15f53ef939c46a815a2a99",
+  "remote_stage": "/home/tjy/Project/MonTi-course/runs/gradient_retrieval_20261116_attempt1",
+  "guardian": {
+    "status": "completed",
+    "phases": [
+      {
+        "phase": "preflight_gossipcop",
+        "pid": 3804002,
+        "exit_code": 0,
+        "wall_seconds": 46.943196116015315
+      },
+      {
+        "phase": "preflight_yelpchi",
+        "pid": 3804283,
+        "exit_code": 0,
+        "wall_seconds": 29.870721857994795
+      },
+      {
+        "phase": "selection_gossipcop",
+        "pid": 3804507,
+        "exit_code": 0,
+        "wall_seconds": 1905.4311727818567
+      },
+      {
+        "phase": "selection_yelpchi",
+        "pid": 3815777,
+        "exit_code": 0,
+        "wall_seconds": 2013.4134665750898
+      },
+      {
+        "phase": "evaluation_gossipcop",
+        "pid": 3826936,
+        "exit_code": 0,
+        "wall_seconds": 22.447939249919727
+      },
+      {
+        "phase": "evaluation_yelpchi",
+        "pid": 3827123,
+        "exit_code": 0,
+        "wall_seconds": 11.761968699051067
+      },
+      {
+        "phase": "audit",
+        "pid": 3827216,
+        "exit_code": 0,
+        "wall_seconds": 5.13833218999207
+      }
+    ],
+    "wall_seconds": 4035.007991994964,
+    "GPU_hours": 0,
+    "automatic_retry": false
+  },
+  "closure": {
+    "driver_absent": true,
+    "runtime_head": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+    "runtime_tracked_status": ""
+  },
+  "collection_hashes": {
+    "protocol.json": {
+      "sha256": "eca06cc46543d76a3fa8a3d389a31e0b9034da168c15f53ef939c46a815a2a99"
+    },
+    "source_manifest.json": {
+      "sha256": "229f5fbadcddb4ceef826a4bdda6fe038e7cb7e4863e14a982ae3f1542402120"
+    },
+    "launch_once.json": {
+      "sha256": "4c55a300b935d13234ed15c3bd7c9b1c25ac3cbb0bb4cf3b420ea0684db6f6f2"
+    },
+    "guardian_receipt.json": {
+      "sha256": "f9b9e4047618e64587341336ea3a6dabd46d722d3973d6ad3f25f760f54a9e83"
+    },
+    "summary.json": {
+      "sha256": "b7578afbec95bd9aef369fb3a3e2397112d4cbd2b0236d981b2f5b7483d25254"
+    },
+    "gossipcop/preflight_result.json": {
+      "sha256": "08577bc8951d7a3e5409c7511534201ff873543ac704bde9f54bc2027ed8745d"
+    },
+    "gossipcop/selection_result.json": {
+      "sha256": "b44182e974e991e6ee56795c05bb2d7710b6cd222b711cb3cc9bd84bc98b508d"
+    },
+    "gossipcop/evaluation_result.json": {
+      "sha256": "f5d64dedf19691165e951220b35d6a18b99997321c1e19731cb29940849a1f44"
+    },
+    "gossipcop/sealed_before_victim.json": {
+      "sha256": "173ab635654b9e7c086a221fea50b81710857549101ae8db5dbfd8923aea18df"
+    },
+    "gossipcop/evaluation.jsonl": {
+      "sha256": "83d46a8503aff1503f9f015bda5f2b293e56fe84acd3091c1a410e57e4a9845a"
+    },
+    "yelpchi/preflight_result.json": {
+      "sha256": "51d0a81879c143ea79b00f9641a1b08b588f68e9c80c573cc5100107c9fdcf89"
+    },
+    "yelpchi/selection_result.json": {
+      "sha256": "2c2a0ab029cf387d6cbecdd56db4f97b0752deb9760f6780ec20c4bb92556d55"
+    },
+    "yelpchi/evaluation_result.json": {
+      "sha256": "37477e1796ad63ba0abf8c00d29ba875dc781a1ffc19fcaf4d1d9a47a5fd08d1"
+    },
+    "yelpchi/sealed_before_victim.json": {
+      "sha256": "2b6d37dacd113f97d42acddd6f52483e463cb948e20388de6a66c50dea7e47c0"
+    },
+    "yelpchi/evaluation.jsonl": {
+      "sha256": "64cbf737f4e1c4afa8cc4fa98e9227840e35ec2f5cf9d68d43e2b2f0c911d280"
+    },
+    "audit.log": {
+      "sha256": "7b29b70ec8192da492e2c172a6e4a564f4e7468e1caccea2053d3a1f6144d7f4"
+    },
+    "driver.log": {
+      "sha256": "6f90e384a8bfe6fe3b18c112108fb2e0b58786319788f70d107cd423919d6059"
+    },
+    "evaluation_gossipcop.log": {
+      "sha256": "ba5d7f81e103edb4fa5982292bf97060e46bdf7324a2ed6e219fb6890d5f1a28"
+    },
+    "evaluation_yelpchi.log": {
+      "sha256": "3206c33436834d6e40993e8a66fac95b59b73b171f70bb2a2437e87985b6c9b7"
+    },
+    "preflight_gossipcop.log": {
+      "sha256": "a70f54d1454e02acd164ada00f637a1eae36014b64a2c194ba618d17c4855294"
+    },
+    "preflight_yelpchi.log": {
+      "sha256": "3c1efd7a5d658535fece98783772e7a1f16a87a853cc31dd9208289342869b6f"
+    },
+    "selection_gossipcop.log": {
+      "sha256": "ad6b353b7fc904016e00b31156b4a5cad2626e4d5c0852c4bf10c295323207f4"
+    },
+    "selection_yelpchi.log": {
+      "sha256": "51ce9f4da4ee5f6d7e295e88e4c1872ad3ce144fa480fa64fe4ac6ef4e1084e8"
+    }
+  },
+  "audit": {
+    "checks": 27372,
+    "model_forwards": 0,
+    "tensor_loads": true,
+    "independent_or_human_review": false,
+    "wall_seconds": 4.751400069100782,
+    "process_cpu_seconds": 6.223232877
+  },
+  "API_calls": 0,
+  "TEST_queries": 0,
+  "GPU_hours": 0,
+  "source_note": "Exact source is experiments/gradient_retrieval at the execution commit. Private full per-case predictions, plans, tensors and logs retained."
+}
