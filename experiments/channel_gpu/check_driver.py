@@ -24,7 +24,9 @@ def main():
   if gpu is not None and gpu.poll() is None:
    if (s/'gpu_ready.json').exists():
     try:
-     c=Client(str(s/'teacher.sock'),family='AF_UNIX',authkey=(s/'rpc.key').read_bytes());c.send(dict(action='stop'));c.close()
+     c=Client(str(s/'teacher.sock'),family='AF_UNIX',authkey=(s/'rpc.key').read_bytes());c.send(dict(action='stop'))
+     if c.poll(5):c.recv()
+     c.close()
     except (OSError,EOFError):pass
    try:gpu.wait(timeout=10)
    except subprocess.TimeoutExpired:os.killpg(gpu.pid,signal.SIGTERM);gpu.wait(timeout=10)
