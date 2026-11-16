@@ -1,0 +1,143 @@
+{
+  "source_commit": "6e2982ccf3634a1b924d561f92ff14b7163be075",
+  "protocol_sha256": "d3a7875ff443c96277fd8518825749ba46b5580d313b622c5f8d64f78baad247",
+  "remote_stage": "/home/tjy/Project/MonTi-course/runs/channel_retrieval_20261116_attempt1",
+  "guardian": {
+    "status": "completed",
+    "phases": [
+      {
+        "phase": "preflight_gossipcop",
+        "pid": 3827676,
+        "exit_code": 0,
+        "wall_seconds": 59.895443432964385
+      },
+      {
+        "phase": "preflight_yelpchi",
+        "pid": 3827912,
+        "exit_code": 0,
+        "wall_seconds": 52.67105178791098
+      },
+      {
+        "phase": "selection_gossipcop",
+        "pid": 3828165,
+        "exit_code": 0,
+        "wall_seconds": 2848.768671770813
+      },
+      {
+        "phase": "selection_yelpchi",
+        "pid": 3836692,
+        "exit_code": 0,
+        "wall_seconds": 3049.694133552024
+      },
+      {
+        "phase": "evaluation_gossipcop",
+        "pid": 3858645,
+        "exit_code": 0,
+        "wall_seconds": 25.2171523780562
+      },
+      {
+        "phase": "evaluation_yelpchi",
+        "pid": 3858833,
+        "exit_code": 0,
+        "wall_seconds": 14.621623359853402
+      },
+      {
+        "phase": "audit",
+        "pid": 3858994,
+        "exit_code": 0,
+        "wall_seconds": 5.388663771795109
+      }
+    ],
+    "wall_seconds": 6056.258491555927,
+    "GPU_hours": 0,
+    "automatic_retry": false
+  },
+  "closure": {
+    "driver_absent": true,
+    "runtime_head": "ca093d8b12ea153a076b02bbdbc4ede58508560c",
+    "runtime_tracked_status": ""
+  },
+  "collection_hashes": {
+    "protocol.json": {
+      "sha256": "d3a7875ff443c96277fd8518825749ba46b5580d313b622c5f8d64f78baad247"
+    },
+    "source_manifest.json": {
+      "sha256": "defb69946be8f68ac8f281053cbaa61bc323f7a925069d31e47b9213b3d29eb7"
+    },
+    "launch_once.json": {
+      "sha256": "2f589d594d47f2b5bbf2f4e550073837d05c8cc6ea26d20e4b412bec843393da"
+    },
+    "guardian_receipt.json": {
+      "sha256": "e1ba4c0faf4ee3dd2268b60ef9da89117ecbbca90eb23d55c97622f66764c3c9"
+    },
+    "summary.json": {
+      "sha256": "bf8304079e20e0c1f588960add2f293bcc9d7907e02e379c45b889f993c496cb"
+    },
+    "gossipcop/preflight_result.json": {
+      "sha256": "1d198e9ee7ee470b2826b183e9a4fdbc954a5aecc0270dd68f80ec8cb52e0a3c"
+    },
+    "gossipcop/selection_result.json": {
+      "sha256": "1ebc3279b759cfd305bde2536e79dff3a91bfae95ff6f09cb0de94ccf1addf1c"
+    },
+    "gossipcop/evaluation_result.json": {
+      "sha256": "cec320566cbeb3d99678c920e011e432374984b64337faf1e292d63b94664757"
+    },
+    "gossipcop/sealed_before_victim.json": {
+      "sha256": "215f0f74966e5d22428b716e19224aa527d5791b742c16faee2eee4f1913573a"
+    },
+    "gossipcop/evaluation.jsonl": {
+      "sha256": "b1ae2065f55db98a170bf775e549dfbe5af5a84b85015006b8a98fad75049482"
+    },
+    "yelpchi/preflight_result.json": {
+      "sha256": "59cca4ba94ba1cca1464dda1b34cbfd11f60061a19255724c4a627054fd5cc25"
+    },
+    "yelpchi/selection_result.json": {
+      "sha256": "daf90cbef3bac7926d48d3e99ecb483c045af0560c73b0fcdfb3263197f750b5"
+    },
+    "yelpchi/evaluation_result.json": {
+      "sha256": "6b7ac141788f26d9623c28a851c77b33c82031c2c7236fcb735f777c56e6823b"
+    },
+    "yelpchi/sealed_before_victim.json": {
+      "sha256": "56da6cce3799a0f5827aff74d7c289ef48e69f32abac73b8a597ebd18f872eaf"
+    },
+    "yelpchi/evaluation.jsonl": {
+      "sha256": "872897b82ef767f99d822ed16e364c13a08d885bc8f82b879e6a507c338c959b"
+    },
+    "audit.log": {
+      "sha256": "194b02cb8c650f0ee48801855d22c0cf0a0d47b9c5c84290a5a7a401f87d7ae7"
+    },
+    "driver.log": {
+      "sha256": "c883805168c699a8e434ba8e236d6960861dcd23f9290bcb0492f294b1334769"
+    },
+    "evaluation_gossipcop.log": {
+      "sha256": "ba5d7f81e103edb4fa5982292bf97060e46bdf7324a2ed6e219fb6890d5f1a28"
+    },
+    "evaluation_yelpchi.log": {
+      "sha256": "3206c33436834d6e40993e8a66fac95b59b73b171f70bb2a2437e87985b6c9b7"
+    },
+    "preflight_gossipcop.log": {
+      "sha256": "a70f54d1454e02acd164ada00f637a1eae36014b64a2c194ba618d17c4855294"
+    },
+    "preflight_yelpchi.log": {
+      "sha256": "3c1efd7a5d658535fece98783772e7a1f16a87a853cc31dd9208289342869b6f"
+    },
+    "selection_gossipcop.log": {
+      "sha256": "ad6b353b7fc904016e00b31156b4a5cad2626e4d5c0852c4bf10c295323207f4"
+    },
+    "selection_yelpchi.log": {
+      "sha256": "51ce9f4da4ee5f6d7e295e88e4c1872ad3ce144fa480fa64fe4ac6ef4e1084e8"
+    }
+  },
+  "audit": {
+    "checks": 31224,
+    "model_forwards": 0,
+    "tensor_loads": true,
+    "independent_or_human_review": false,
+    "wall_seconds": 5.029402989894152,
+    "process_cpu_seconds": 6.512728577
+  },
+  "GPU_hours": 0,
+  "API_calls": 0,
+  "TEST_queries": 0,
+  "private_archive": "work/channel_retrieval_20261116 and the recorded remote stage; full plans/tensors/predictions/logs retained."
+}

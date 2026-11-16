@@ -1,0 +1,168 @@
+{
+  "examples": [
+    {
+      "dataset": "gossipcop",
+      "seed": 0,
+      "group": 1402,
+      "scope": "Outcome-selected illustration, not an evaluation selection rule.",
+      "input_sha256": "b1ae2065f55db98a170bf775e549dfbe5af5a84b85015006b8a98fad75049482",
+      "arms": {
+        "native": {
+          "wrong": 15,
+          "occurrences": 42,
+          "exchanged_edges": 0
+        },
+        "benign_retrieval": {
+          "wrong": 18,
+          "occurrences": 42,
+          "exchanged_edges": 86
+        },
+        "channel": {
+          "wrong": 20,
+          "occurrences": 42,
+          "exchanged_edges": 86
+        },
+        "random_channel": {
+          "wrong": 16,
+          "occurrences": 42,
+          "exchanged_edges": 86
+        },
+        "random_joint": {
+          "wrong": 16,
+          "occurrences": 42,
+          "exchanged_edges": 86
+        },
+        "uniform": {
+          "wrong": 14,
+          "occurrences": 42,
+          "exchanged_edges": 86
+        }
+      }
+    },
+    {
+      "dataset": "gossipcop",
+      "seed": 0,
+      "group": 1473,
+      "scope": "Outcome-selected illustration, not an evaluation selection rule.",
+      "input_sha256": "b1ae2065f55db98a170bf775e549dfbe5af5a84b85015006b8a98fad75049482",
+      "arms": {
+        "native": {
+          "wrong": 3,
+          "occurrences": 6,
+          "exchanged_edges": 0
+        },
+        "benign_retrieval": {
+          "wrong": 3,
+          "occurrences": 6,
+          "exchanged_edges": 12
+        },
+        "channel": {
+          "wrong": 2,
+          "occurrences": 6,
+          "exchanged_edges": 12
+        },
+        "random_channel": {
+          "wrong": 2,
+          "occurrences": 6,
+          "exchanged_edges": 12
+        },
+        "random_joint": {
+          "wrong": 2,
+          "occurrences": 6,
+          "exchanged_edges": 12
+        },
+        "uniform": {
+          "wrong": 3,
+          "occurrences": 6,
+          "exchanged_edges": 12
+        }
+      }
+    },
+    {
+      "dataset": "yelpchi",
+      "seed": 0,
+      "group": 619,
+      "scope": "Outcome-selected illustration, not an evaluation selection rule.",
+      "input_sha256": "872897b82ef767f99d822ed16e364c13a08d885bc8f82b879e6a507c338c959b",
+      "arms": {
+        "native": {
+          "wrong": 0,
+          "occurrences": 5,
+          "exchanged_edges": 0,
+          "node41429_margin": 0.0428183376789093
+        },
+        "benign_retrieval": {
+          "wrong": 0,
+          "occurrences": 5,
+          "exchanged_edges": 42,
+          "node41429_margin": 0.02986636757850647
+        },
+        "channel": {
+          "wrong": 1,
+          "occurrences": 5,
+          "exchanged_edges": 42,
+          "node41429_margin": -0.1385837346315384
+        },
+        "random_channel": {
+          "wrong": 1,
+          "occurrences": 5,
+          "exchanged_edges": 42,
+          "node41429_margin": -0.022149264812469482
+        },
+        "random_joint": {
+          "wrong": 0,
+          "occurrences": 5,
+          "exchanged_edges": 42,
+          "node41429_margin": 0.04914425313472748
+        },
+        "uniform": {
+          "wrong": 1,
+          "occurrences": 5,
+          "exchanged_edges": 39,
+          "node41429_margin": -0.10531383007764816
+        }
+      }
+    },
+    {
+      "dataset": "yelpchi",
+      "seed": 0,
+      "group": 655,
+      "scope": "Outcome-selected illustration, not an evaluation selection rule.",
+      "input_sha256": "872897b82ef767f99d822ed16e364c13a08d885bc8f82b879e6a507c338c959b",
+      "arms": {
+        "native": {
+          "wrong": 2,
+          "occurrences": 7,
+          "exchanged_edges": 0
+        },
+        "benign_retrieval": {
+          "wrong": 2,
+          "occurrences": 7,
+          "exchanged_edges": 39
+        },
+        "channel": {
+          "wrong": 5,
+          "occurrences": 7,
+          "exchanged_edges": 39
+        },
+        "random_channel": {
+          "wrong": 2,
+          "occurrences": 7,
+          "exchanged_edges": 39
+        },
+        "random_joint": {
+          "wrong": 2,
+          "occurrences": 7,
+          "exchanged_edges": 39
+        },
+        "uniform": {
+          "wrong": 5,
+          "occurrences": 7,
+          "exchanged_edges": 42
+        }
+      }
+    }
+  ],
+  "model_calls": 0,
+  "tensor_loads": false
+}

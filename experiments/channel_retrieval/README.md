@@ -1,4 +1,11 @@
-# Two-channel relation retrieval: registered development iteration
+# Two-channel relation retrieval: completed development iteration
+
+[The completed comparison](../../results/channel_retrieval/) passes the
+registered two-dataset screen: GossipCop 64.1565% versus native 57.9101% and
+same-class random 57.6182%; YelpChi 34.7826% versus 29.1304% and 30.5797%.
+All three conditional repeats are positive against native, both random
+controls, the previous method and uniform-shortlist search. This remains
+exploratory reused-development evidence, not final TEST confirmation.
 
 The preceding full-pool search improved GossipCop from 57.9101% to 60.4203%
 MR, but YelpChi remained 29.1304%. Neither YelpChi victim nor own-teacher
@@ -9,6 +16,7 @@ GAGA separates known TRAIN-benign and TRAIN-fraud neighborhood summaries.
 Previous remote endpoint retrieval could directly change only the two-hop
 TRAIN-benign token. This iteration lets the frozen-teacher downstream search
 both known TRAIN classes, then retrieve a real node within the chosen class.
+These are label-grouped input channels, not new physical edge-relation types.
 It changes endpoint eligibility, not labels or the author generator. No
 validation/test label is used to form either pool. Unknown-label endpoints
 remain excluded. The same three donor slots and maximum two substitutions
@@ -43,4 +51,5 @@ combinations. Every final graph is physically rebuilt and compared with the
 canonical seven-token input. All actions on both datasets seal before either
 official validation phase. No new upstream/teacher fitting, GPU, API or TEST.
 Finite CPU-four-thread phases; no automatic scientific retry. Root-authored
-checks are not independent or human verification. Results unknown at registration.
+checks are not independent or human verification. Results were unknown at
+registration; execution source is pinned in the completed result record.

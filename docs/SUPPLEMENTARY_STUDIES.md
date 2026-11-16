@@ -8,6 +8,8 @@ All positive, null, negative and failed outcomes keep their original scope.
 
 | Study | Recorded finding | Complete record |
 |---|---|---|
+| Two-channel relation retrieval, both VALID datasets | GossipCop 64.1565% vs native 57.9101% / same-class random 57.6182%; YelpChi 34.7826% vs 29.1304% / 30.5797%. Registered screen passed; each repeat positive versus both random controls and uniform-shortlist search. Reused development, not new TEST confirmation. | [Results, cases and all controls](../results/channel_retrieval/) |
+| Benign-only full-pool gradient retrieval, both VALID datasets | GossipCop 60.4203% vs native 57.9101% / matched random 58.4355%; YelpChi all 29.1304%, zero teacher/victim class changes. Two-dataset criterion failed. | [Complete preceding result](../results/gradient_retrieval/) |
 | YelpChi frozen-method development transfer | All 11 arms 29.1304%, 67/230 misses per repeat; identical paired classes. Rewriter changed 187/192 cases but crossed no target decision boundary. Improvement screen failed; no TEST. | [Results, source and audits](../results/yelpchi_validation/) |
 | Target-aware two-step rewriter, VALID | Neural 59.4863%, native 57.9101%, own random 58.3187%/58.0852%; +0.3503 pp over existing neural. Greedy/independent 59.6030% with identical predictions, so no demonstrated learned interaction advantage. | [All arms, paired evidence and audit](../results/target_rewriter/) |
 | YelpChi readiness, 14 November | Official data, author checkpoint, classifier weights and five input caches prepared; 45 GCN representation forwards only in that preparation phase. The later authorized comparison is above. | [Asset checks and scope](../results/yelpchi_readiness/) |

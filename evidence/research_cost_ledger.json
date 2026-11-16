@@ -15,86 +15,171 @@
   "curation_GPU_hours": 0,
   "archive": "https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/evidence/research_cost_ledger.json",
   "last_completed_extension": {
-    "date": "2026-11-16",
-    "method": "YelpChi frozen-method development validation, completed one scientific launch",
+    "study": "channel_retrieval_20261116_attempt1",
+    "source_commit": "6e2982ccf3634a1b924d561f92ff14b7163be075",
     "GPU_hours": 0,
-    "guardian_wall_seconds": 13191.013999098912,
-    "phase_wall_seconds": {
-      "teacher": 96.92478176904842,
-      "native_preflight": 32.16658117901534,
-      "single": 5136.033476622077,
-      "baseline_audit": 3.2253652750514448,
-      "preflight": 18.021262066205963,
-      "run": 7899.0572639037855,
-      "audit": 5.584266643971205
-    },
-    "recorded_phase_process_CPU_seconds": {
-      "teacher": 373.374405645,
-      "native_preflight": 63.301734843999995,
-      "single": 12169.828556946,
-      "baseline_audit": 2.260469304,
-      "preflight": 28.53895151,
-      "main": 19190.404359063003,
-      "audit": 3.6895911990000005
-    },
-    "teacher_training_steps": 1368,
-    "teacher_forwards": 1404,
-    "single_counters": {
-      "upstream_generations": 576,
-      "physical_canonical_builds": 5184,
-      "own_teacher_batched_forwards": 576,
-      "own_teacher_hard_contexts": 5184,
-      "neural_updates": 3072,
-      "training_visits": 3072,
-      "policy_forwards": 192,
-      "official_GAGA": 0,
-      "TEST_queries": 0
-    },
-    "main_counters": {
-      "physical_builds": 9041,
-      "teacher_batches": 1242,
-      "teacher_contexts": 11891,
-      "policy_forwards": 379,
-      "updates": 14976,
-      "official_GAGA_VALID": 2112,
-      "upstream_generations": 0,
-      "TEST_queries": 0,
-      "API_calls": 0
-    },
-    "native_preflight_counters": {
-      "upstream_generations": 4,
-      "physical_builds": 18,
-      "teacher_batches": 2,
-      "teacher_contexts": 18,
-      "official_GAGA": 0,
-      "TEST_queries": 0
-    },
-    "rewriter_preflight_counters": {
-      "physical_builds": 8,
-      "teacher_batches": 2,
-      "teacher_contexts": 4,
-      "policy_forwards": 0,
-      "updates": 2,
-      "official_GAGA_VALID": 0,
-      "upstream_generations": 0,
-      "TEST_queries": 0,
-      "API_calls": 0
-    },
-    "posthoc_saved_only": {
-      "saved_analysis": {
-        "wall_seconds": 0.15700000000651926,
-        "process_cpu_seconds": 0.0625,
-        "model_calls": 0,
-        "tensor_loads": 0
+    "API_calls": 0,
+    "TEST_queries": 0,
+    "outer_wall_seconds": 6056.258491555927,
+    "phase_outer_receipts": [
+      {
+        "phase": "preflight_gossipcop",
+        "pid": 3827676,
+        "exit_code": 0,
+        "wall_seconds": 59.895443432964385
       },
-      "margin_analysis": {
-        "wall_seconds": 0.062000000034458935,
-        "process_cpu_seconds": 0.0625,
-        "model_calls": 0,
-        "tensor_loads": 0
+      {
+        "phase": "preflight_yelpchi",
+        "pid": 3827912,
+        "exit_code": 0,
+        "wall_seconds": 52.67105178791098
+      },
+      {
+        "phase": "selection_gossipcop",
+        "pid": 3828165,
+        "exit_code": 0,
+        "wall_seconds": 2848.768671770813
+      },
+      {
+        "phase": "selection_yelpchi",
+        "pid": 3836692,
+        "exit_code": 0,
+        "wall_seconds": 3049.694133552024
+      },
+      {
+        "phase": "evaluation_gossipcop",
+        "pid": 3858645,
+        "exit_code": 0,
+        "wall_seconds": 25.2171523780562
+      },
+      {
+        "phase": "evaluation_yelpchi",
+        "pid": 3858833,
+        "exit_code": 0,
+        "wall_seconds": 14.621623359853402
+      },
+      {
+        "phase": "audit",
+        "pid": 3858994,
+        "exit_code": 0,
+        "wall_seconds": 5.388663771795109
+      }
+    ],
+    "phase_process_CPU_seconds": {
+      "gossipcop": {
+        "preflight": 118.867849951,
+        "selection": 6393.195863129,
+        "evaluation": 46.410456289
+      },
+      "yelpchi": {
+        "preflight": 113.131756372,
+        "selection": 7104.202306809,
+        "evaluation": 31.786412606
       }
     },
-    "scope": "CPU4nice10; no GPU/API/TEST/LifeIns. Phase timing windows differ; outer wall includes startup/wait and must not be added to overlapping phase walls. Full source-derived capture accounting is in the execution record. Audits are root-authored."
+    "phase_counters": {
+      "gossipcop": {
+        "preflight": {
+          "physical_builds": 52,
+          "teacher_forwards": 24,
+          "teacher_contexts": 80,
+          "backward_calls": 8,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "selection": {
+          "physical_builds": 2975,
+          "teacher_forwards": 1572,
+          "teacher_contexts": 30116,
+          "backward_calls": 332,
+          "algebraic_pool_scores": 2032273,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "evaluation": {
+          "physical_builds": 0,
+          "teacher_forwards": 0,
+          "teacher_contexts": 0,
+          "backward_calls": 0,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 1920,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        }
+      },
+      "yelpchi": {
+        "preflight": {
+          "physical_builds": 52,
+          "teacher_forwards": 24,
+          "teacher_contexts": 80,
+          "backward_calls": 8,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "selection": {
+          "physical_builds": 3378,
+          "teacher_forwards": 1728,
+          "teacher_contexts": 34944,
+          "backward_calls": 384,
+          "algebraic_pool_scores": 17068101,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "evaluation": {
+          "physical_builds": 0,
+          "teacher_forwards": 0,
+          "teacher_contexts": 0,
+          "backward_calls": 0,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 1920,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        }
+      }
+    },
+    "audit": {
+      "checks": 31224,
+      "model_forwards": 0,
+      "tensor_loads": true,
+      "independent_or_human_review": false,
+      "wall_seconds": 5.029402989894152,
+      "process_cpu_seconds": 6.512728577
+    },
+    "saved_analysis": {
+      "paired": {
+        "wall_seconds": 0.0779999999795109,
+        "process_cpu_seconds": 0.0625,
+        "model_calls": 0,
+        "tensor_loads": false
+      },
+      "channels": {
+        "wall_seconds": 0.125,
+        "process_cpu_seconds": 0.078125,
+        "model_calls": 0,
+        "tensor_loads": false
+      }
+    },
+    "scope": "CPU4nice10. Process CPU and wall times differ; overlapping timing windows are not additive. GPU totals unchanged.",
+    "date": "2026-11-16",
+    "method": "Two-channel relation retrieval, completed two-dataset registered development screen"
   },
   "completed_extensions": [
     {
@@ -817,6 +902,171 @@
         "tensor_loads": false
       },
       "scope": "CPU4nice10. Wall and process CPU are distinct; overlapping timings are not additive. GPU totals unchanged."
+    },
+    {
+      "study": "channel_retrieval_20261116_attempt1",
+      "source_commit": "6e2982ccf3634a1b924d561f92ff14b7163be075",
+      "GPU_hours": 0,
+      "API_calls": 0,
+      "TEST_queries": 0,
+      "outer_wall_seconds": 6056.258491555927,
+      "phase_outer_receipts": [
+        {
+          "phase": "preflight_gossipcop",
+          "pid": 3827676,
+          "exit_code": 0,
+          "wall_seconds": 59.895443432964385
+        },
+        {
+          "phase": "preflight_yelpchi",
+          "pid": 3827912,
+          "exit_code": 0,
+          "wall_seconds": 52.67105178791098
+        },
+        {
+          "phase": "selection_gossipcop",
+          "pid": 3828165,
+          "exit_code": 0,
+          "wall_seconds": 2848.768671770813
+        },
+        {
+          "phase": "selection_yelpchi",
+          "pid": 3836692,
+          "exit_code": 0,
+          "wall_seconds": 3049.694133552024
+        },
+        {
+          "phase": "evaluation_gossipcop",
+          "pid": 3858645,
+          "exit_code": 0,
+          "wall_seconds": 25.2171523780562
+        },
+        {
+          "phase": "evaluation_yelpchi",
+          "pid": 3858833,
+          "exit_code": 0,
+          "wall_seconds": 14.621623359853402
+        },
+        {
+          "phase": "audit",
+          "pid": 3858994,
+          "exit_code": 0,
+          "wall_seconds": 5.388663771795109
+        }
+      ],
+      "phase_process_CPU_seconds": {
+        "gossipcop": {
+          "preflight": 118.867849951,
+          "selection": 6393.195863129,
+          "evaluation": 46.410456289
+        },
+        "yelpchi": {
+          "preflight": 113.131756372,
+          "selection": 7104.202306809,
+          "evaluation": 31.786412606
+        }
+      },
+      "phase_counters": {
+        "gossipcop": {
+          "preflight": {
+            "physical_builds": 52,
+            "teacher_forwards": 24,
+            "teacher_contexts": 80,
+            "backward_calls": 8,
+            "algebraic_pool_scores": 0,
+            "official_GAGA_VALID": 0,
+            "upstream_generations": 0,
+            "updates": 0,
+            "TEST_queries": 0,
+            "API_calls": 0
+          },
+          "selection": {
+            "physical_builds": 2975,
+            "teacher_forwards": 1572,
+            "teacher_contexts": 30116,
+            "backward_calls": 332,
+            "algebraic_pool_scores": 2032273,
+            "official_GAGA_VALID": 0,
+            "upstream_generations": 0,
+            "updates": 0,
+            "TEST_queries": 0,
+            "API_calls": 0
+          },
+          "evaluation": {
+            "physical_builds": 0,
+            "teacher_forwards": 0,
+            "teacher_contexts": 0,
+            "backward_calls": 0,
+            "algebraic_pool_scores": 0,
+            "official_GAGA_VALID": 1920,
+            "upstream_generations": 0,
+            "updates": 0,
+            "TEST_queries": 0,
+            "API_calls": 0
+          }
+        },
+        "yelpchi": {
+          "preflight": {
+            "physical_builds": 52,
+            "teacher_forwards": 24,
+            "teacher_contexts": 80,
+            "backward_calls": 8,
+            "algebraic_pool_scores": 0,
+            "official_GAGA_VALID": 0,
+            "upstream_generations": 0,
+            "updates": 0,
+            "TEST_queries": 0,
+            "API_calls": 0
+          },
+          "selection": {
+            "physical_builds": 3378,
+            "teacher_forwards": 1728,
+            "teacher_contexts": 34944,
+            "backward_calls": 384,
+            "algebraic_pool_scores": 17068101,
+            "official_GAGA_VALID": 0,
+            "upstream_generations": 0,
+            "updates": 0,
+            "TEST_queries": 0,
+            "API_calls": 0
+          },
+          "evaluation": {
+            "physical_builds": 0,
+            "teacher_forwards": 0,
+            "teacher_contexts": 0,
+            "backward_calls": 0,
+            "algebraic_pool_scores": 0,
+            "official_GAGA_VALID": 1920,
+            "upstream_generations": 0,
+            "updates": 0,
+            "TEST_queries": 0,
+            "API_calls": 0
+          }
+        }
+      },
+      "audit": {
+        "checks": 31224,
+        "model_forwards": 0,
+        "tensor_loads": true,
+        "independent_or_human_review": false,
+        "wall_seconds": 5.029402989894152,
+        "process_cpu_seconds": 6.512728577
+      },
+      "saved_analysis": {
+        "paired": {
+          "wall_seconds": 0.0779999999795109,
+          "process_cpu_seconds": 0.0625,
+          "model_calls": 0,
+          "tensor_loads": false
+        },
+        "channels": {
+          "wall_seconds": 0.125,
+          "process_cpu_seconds": 0.078125,
+          "model_calls": 0,
+          "tensor_loads": false
+        }
+      },
+      "scope": "CPU4nice10. Process CPU and wall times differ; overlapping timing windows are not additive. GPU totals unchanged."
     }
   ],
   "current_action_blind_phase_GPU_hours": 0

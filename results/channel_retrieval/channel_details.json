@@ -1,0 +1,123 @@
+{
+  "scope": "Saved-only descriptive strata after actions. Not causal estimates or rules to select cases. Native is the author attack, not clean data. Correlated occurrences remain.",
+  "source_sha256": "33cd0ba2826938ddb1de46d2d2eeef5039d2e2a590699b1884365d3db6c88260",
+  "model_calls": 0,
+  "tensor_loads": false,
+  "full_occurrence_records": "Retained privately in work/channel_retrieval_20261116/channel_saved_analysis.json. Public cases.json contains selected gain and loss illustrations.",
+  "datasets": {
+    "gossipcop": {
+      "strata": {
+        "fraud_only": {
+          "scenarios": 141,
+          "substitutions": 276,
+          "exchanged_edges": 6160,
+          "occurrences": 1346,
+          "gained_vs_native": 89,
+          "lost_vs_native": 0,
+          "gained_vs_same_channel_random": 91,
+          "lost_vs_same_channel_random": 0,
+          "gained_vs_previous_benign": 76,
+          "lost_vs_previous_benign": 9,
+          "teacher_gained_vs_native": 88,
+          "teacher_lost_vs_native": 0
+        },
+        "none": {
+          "scenarios": 22,
+          "substitutions": 0,
+          "exchanged_edges": 0,
+          "occurrences": 116,
+          "gained_vs_native": 0,
+          "lost_vs_native": 0,
+          "gained_vs_same_channel_random": 0,
+          "lost_vs_same_channel_random": 0,
+          "gained_vs_previous_benign": 0,
+          "lost_vs_previous_benign": 0,
+          "teacher_gained_vs_native": 0,
+          "teacher_lost_vs_native": 0
+        },
+        "mixed": {
+          "scenarios": 21,
+          "substitutions": 42,
+          "exchanged_edges": 606,
+          "occurrences": 214,
+          "gained_vs_native": 22,
+          "lost_vs_native": 6,
+          "gained_vs_same_channel_random": 22,
+          "lost_vs_same_channel_random": 3,
+          "gained_vs_previous_benign": 3,
+          "lost_vs_previous_benign": 6,
+          "teacher_gained_vs_native": 31,
+          "teacher_lost_vs_native": 0
+        },
+        "benign_only": {
+          "scenarios": 8,
+          "substitutions": 14,
+          "exchanged_edges": 40,
+          "occurrences": 37,
+          "gained_vs_native": 2,
+          "lost_vs_native": 0,
+          "gained_vs_same_channel_random": 2,
+          "lost_vs_same_channel_random": 0,
+          "gained_vs_previous_benign": 0,
+          "lost_vs_previous_benign": 0,
+          "teacher_gained_vs_native": 0,
+          "teacher_lost_vs_native": 0
+        }
+      },
+      "native_comparison": {
+        "gained_occurrences": 113,
+        "lost_occurrences": 6,
+        "distinct_targets_with_any_gain": 37,
+        "distinct_targets_with_any_loss": 2,
+        "note": "Distinct-target gain/loss sets can overlap across scenarios; do not subtract them as a unique-target effect. Occurrences and repeats are correlated."
+      },
+      "input_hashes": {
+        "evaluation.jsonl": "b1ae2065f55db98a170bf775e549dfbe5af5a84b85015006b8a98fad75049482",
+        "sealed_before_victim.json": "215f0f74966e5d22428b716e19224aa527d5791b742c16faee2eee4f1913573a"
+      }
+    },
+    "yelpchi": {
+      "strata": {
+        "fraud_only": {
+          "scenarios": 189,
+          "substitutions": 378,
+          "exchanged_edges": 5224,
+          "occurrences": 684,
+          "gained_vs_native": 39,
+          "lost_vs_native": 0,
+          "gained_vs_same_channel_random": 29,
+          "lost_vs_same_channel_random": 0,
+          "gained_vs_previous_benign": 39,
+          "lost_vs_previous_benign": 0,
+          "teacher_gained_vs_native": 80,
+          "teacher_lost_vs_native": 0
+        },
+        "mixed": {
+          "scenarios": 3,
+          "substitutions": 6,
+          "exchanged_edges": 6,
+          "occurrences": 6,
+          "gained_vs_native": 0,
+          "lost_vs_native": 0,
+          "gained_vs_same_channel_random": 0,
+          "lost_vs_same_channel_random": 0,
+          "gained_vs_previous_benign": 0,
+          "lost_vs_previous_benign": 0,
+          "teacher_gained_vs_native": 0,
+          "teacher_lost_vs_native": 0
+        }
+      },
+      "native_comparison": {
+        "gained_occurrences": 39,
+        "lost_occurrences": 0,
+        "distinct_targets_with_any_gain": 13,
+        "distinct_targets_with_any_loss": 0,
+        "note": "Distinct-target gain/loss sets can overlap across scenarios; do not subtract them as a unique-target effect. Occurrences and repeats are correlated."
+      },
+      "input_hashes": {
+        "evaluation.jsonl": "872897b82ef767f99d822ed16e364c13a08d885bc8f82b879e6a507c338c959b",
+        "sealed_before_victim.json": "56da6cce3799a0f5827aff74d7c289ef48e69f32abac73b8a597ebd18f872eaf"
+      }
+    }
+  }
+}

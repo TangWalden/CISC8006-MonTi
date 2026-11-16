@@ -277,6 +277,16 @@ Whole driver wall time was 4,035.01 seconds with zero GPU/API/TEST use.
 The next relation-channel iteration is separately registered after these
 outcomes, with no claim of confirmation or guaranteed positive performance.
 
+The root agent then registered and ran two-channel retrieval on both reused
+development cohorts, expanding legal endpoints to both known TRAIN classes.
+The registered primary screen passed; all controls and paired outcomes are
+published in results/channel_retrieval. The root-authored saved audit passed
+31,224 checks, not independent or human
+verification. Saved-only case/channel interpretation added no model calls.
+Whole-driver wall time was 6056.26 seconds; GPU/API/TEST
+use remained zero. The exact source/protocol preceded execution and both
+datasets' plans preceded either official evaluation.
+
 Earlier positive, negative and failed experiments remain in the
 [immutable archive](docs/ARCHIVE.md). Full raw-output review and genuine human
 verification remain distinct from these automated checks.

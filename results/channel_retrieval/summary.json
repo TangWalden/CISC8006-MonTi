@@ -1,0 +1,1245 @@
+{
+  "status": "completed",
+  "datasets": {
+    "gossipcop": {
+      "means": {
+        "native": 57.91009924109749,
+        "single_neural": 59.136018680677175,
+        "rewriter": 59.48628137769994,
+        "benign_retrieval": 60.42031523642732,
+        "benign_random": 58.43549328663164,
+        "channel": 64.15645067133684,
+        "random_channel": 57.61821366024518,
+        "random_joint": 57.55983654407472,
+        "uniform": 61.41272621132516,
+        "random_uniform": 57.32632807939288
+      },
+      "metrics": [
+        {
+          "seed": 0,
+          "arm": "native",
+          "wrong": 332,
+          "occurrences": 571,
+          "MR": 58.14360770577933,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 0,
+          "arm": "single_neural",
+          "wrong": 340,
+          "occurrences": 571,
+          "MR": 59.5446584938704,
+          "exchanged_edges": 1092
+        },
+        {
+          "seed": 0,
+          "arm": "rewriter",
+          "wrong": 341,
+          "occurrences": 571,
+          "MR": 59.719789842381786,
+          "exchanged_edges": 2289
+        },
+        {
+          "seed": 0,
+          "arm": "benign_retrieval",
+          "wrong": 345,
+          "occurrences": 571,
+          "MR": 60.42031523642732,
+          "exchanged_edges": 2278
+        },
+        {
+          "seed": 0,
+          "arm": "benign_random",
+          "wrong": 335,
+          "occurrences": 571,
+          "MR": 58.66900175131349,
+          "exchanged_edges": 2278
+        },
+        {
+          "seed": 0,
+          "arm": "channel",
+          "wrong": 366,
+          "occurrences": 571,
+          "MR": 64.09807355516638,
+          "exchanged_edges": 2288
+        },
+        {
+          "seed": 0,
+          "arm": "random_channel",
+          "wrong": 331,
+          "occurrences": 571,
+          "MR": 57.96847635726795,
+          "exchanged_edges": 2288
+        },
+        {
+          "seed": 0,
+          "arm": "random_joint",
+          "wrong": 331,
+          "occurrences": 571,
+          "MR": 57.96847635726795,
+          "exchanged_edges": 2288
+        },
+        {
+          "seed": 0,
+          "arm": "uniform",
+          "wrong": 347,
+          "occurrences": 571,
+          "MR": 60.770577933450085,
+          "exchanged_edges": 2297
+        },
+        {
+          "seed": 0,
+          "arm": "random_uniform",
+          "wrong": 328,
+          "occurrences": 571,
+          "MR": 57.443082311733804,
+          "exchanged_edges": 2297
+        },
+        {
+          "seed": 1,
+          "arm": "native",
+          "wrong": 332,
+          "occurrences": 571,
+          "MR": 58.14360770577933,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 1,
+          "arm": "single_neural",
+          "wrong": 338,
+          "occurrences": 571,
+          "MR": 59.19439579684764,
+          "exchanged_edges": 1133
+        },
+        {
+          "seed": 1,
+          "arm": "rewriter",
+          "wrong": 341,
+          "occurrences": 571,
+          "MR": 59.719789842381786,
+          "exchanged_edges": 2104
+        },
+        {
+          "seed": 1,
+          "arm": "benign_retrieval",
+          "wrong": 345,
+          "occurrences": 571,
+          "MR": 60.42031523642732,
+          "exchanged_edges": 2253
+        },
+        {
+          "seed": 1,
+          "arm": "benign_random",
+          "wrong": 336,
+          "occurrences": 571,
+          "MR": 58.844133099824866,
+          "exchanged_edges": 2253
+        },
+        {
+          "seed": 1,
+          "arm": "channel",
+          "wrong": 368,
+          "occurrences": 571,
+          "MR": 64.44833625218914,
+          "exchanged_edges": 2270
+        },
+        {
+          "seed": 1,
+          "arm": "random_channel",
+          "wrong": 332,
+          "occurrences": 571,
+          "MR": 58.14360770577933,
+          "exchanged_edges": 2270
+        },
+        {
+          "seed": 1,
+          "arm": "random_joint",
+          "wrong": 333,
+          "occurrences": 571,
+          "MR": 58.31873905429072,
+          "exchanged_edges": 2270
+        },
+        {
+          "seed": 1,
+          "arm": "uniform",
+          "wrong": 350,
+          "occurrences": 571,
+          "MR": 61.29597197898424,
+          "exchanged_edges": 2260
+        },
+        {
+          "seed": 1,
+          "arm": "random_uniform",
+          "wrong": 328,
+          "occurrences": 571,
+          "MR": 57.443082311733804,
+          "exchanged_edges": 2260
+        },
+        {
+          "seed": 2,
+          "arm": "native",
+          "wrong": 328,
+          "occurrences": 571,
+          "MR": 57.443082311733804,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 2,
+          "arm": "single_neural",
+          "wrong": 335,
+          "occurrences": 571,
+          "MR": 58.66900175131349,
+          "exchanged_edges": 1126
+        },
+        {
+          "seed": 2,
+          "arm": "rewriter",
+          "wrong": 337,
+          "occurrences": 571,
+          "MR": 59.01926444833625,
+          "exchanged_edges": 2247
+        },
+        {
+          "seed": 2,
+          "arm": "benign_retrieval",
+          "wrong": 345,
+          "occurrences": 571,
+          "MR": 60.42031523642732,
+          "exchanged_edges": 2243
+        },
+        {
+          "seed": 2,
+          "arm": "benign_random",
+          "wrong": 330,
+          "occurrences": 571,
+          "MR": 57.79334500875657,
+          "exchanged_edges": 2243
+        },
+        {
+          "seed": 2,
+          "arm": "channel",
+          "wrong": 365,
+          "occurrences": 571,
+          "MR": 63.922942206654994,
+          "exchanged_edges": 2248
+        },
+        {
+          "seed": 2,
+          "arm": "random_channel",
+          "wrong": 324,
+          "occurrences": 571,
+          "MR": 56.74255691768827,
+          "exchanged_edges": 2248
+        },
+        {
+          "seed": 2,
+          "arm": "random_joint",
+          "wrong": 322,
+          "occurrences": 571,
+          "MR": 56.3922942206655,
+          "exchanged_edges": 2248
+        },
+        {
+          "seed": 2,
+          "arm": "uniform",
+          "wrong": 355,
+          "occurrences": 571,
+          "MR": 62.171628721541154,
+          "exchanged_edges": 2253
+        },
+        {
+          "seed": 2,
+          "arm": "random_uniform",
+          "wrong": 326,
+          "occurrences": 571,
+          "MR": 57.09281961471103,
+          "exchanged_edges": 2253
+        }
+      ],
+      "contrasts": {
+        "channel__native": {
+          "mean_pp": 6.246351430239346,
+          "deltas_pp": [
+            5.954465849387041,
+            6.304728546409807,
+            6.479859894921191
+          ],
+          "gained_occurrences": 113,
+          "lost_occurrences": 6,
+          "nominal_t95": [
+            5.581800986502137,
+            6.910901873976555
+          ]
+        },
+        "channel__single_neural": {
+          "mean_pp": 5.020431990659661,
+          "deltas_pp": [
+            4.553415061295972,
+            5.253940455341506,
+            5.253940455341506
+          ],
+          "gained_occurrences": 93,
+          "lost_occurrences": 7,
+          "nominal_t95": [
+            4.015726157638932,
+            6.0251378236803905
+          ]
+        },
+        "channel__rewriter": {
+          "mean_pp": 4.670169293636895,
+          "deltas_pp": [
+            4.378283712784588,
+            4.728546409807356,
+            4.903677758318739
+          ],
+          "gained_occurrences": 87,
+          "lost_occurrences": 7,
+          "nominal_t95": [
+            4.005618849899685,
+            5.334719737374105
+          ]
+        },
+        "channel__benign_retrieval": {
+          "mean_pp": 3.7361354349095155,
+          "deltas_pp": [
+            3.677758318739054,
+            4.028021015761821,
+            3.502626970227671
+          ],
+          "gained_occurrences": 79,
+          "lost_occurrences": 15,
+          "nominal_t95": [
+            3.0715849911723065,
+            4.4006858786467244
+          ]
+        },
+        "channel__random_channel": {
+          "mean_pp": 6.538237011091652,
+          "deltas_pp": [
+            6.129597197898423,
+            6.304728546409807,
+            7.1803852889667255
+          ],
+          "gained_occurrences": 115,
+          "lost_occurrences": 3,
+          "nominal_t95": [
+            5.139745678036583,
+            7.9367283441467205
+          ]
+        },
+        "channel__random_joint": {
+          "mean_pp": 6.596614127262113,
+          "deltas_pp": [
+            6.129597197898423,
+            6.129597197898423,
+            7.530647985989492
+          ],
+          "gained_occurrences": 115,
+          "lost_occurrences": 2,
+          "nominal_t95": [
+            4.587202461220652,
+            8.606025793303573
+          ]
+        },
+        "channel__uniform": {
+          "mean_pp": 2.7437244600116752,
+          "deltas_pp": [
+            3.327495621716287,
+            3.1523642732049035,
+            1.7513134851138354
+          ],
+          "gained_occurrences": 56,
+          "lost_occurrences": 9,
+          "nominal_t95": [
+            0.5976718599438042,
+            4.889777060079546
+          ]
+        },
+        "uniform__native": {
+          "mean_pp": 3.502626970227671,
+          "deltas_pp": [
+            2.626970227670753,
+            3.1523642732049035,
+            4.728546409807356
+          ],
+          "gained_occurrences": 66,
+          "lost_occurrences": 6,
+          "nominal_t95": [
+            0.7857381719421688,
+            6.219515768513173
+          ]
+        },
+        "uniform__single_neural": {
+          "mean_pp": 2.276707530647986,
+          "deltas_pp": [
+            1.2259194395796849,
+            2.1015761821366024,
+            3.502626970227671
+          ],
+          "gained_occurrences": 51,
+          "lost_occurrences": 12,
+          "nominal_t95": [
+            -0.5761086394598331,
+            5.129523700755805
+          ]
+        },
+        "uniform__rewriter": {
+          "mean_pp": 1.926444833625219,
+          "deltas_pp": [
+            1.0507880910683012,
+            1.5761821366024518,
+            3.1523642732049035
+          ],
+          "gained_occurrences": 48,
+          "lost_occurrences": 15,
+          "nominal_t95": [
+            -0.7904439646602823,
+            4.64333363191072
+          ]
+        },
+        "uniform__benign_retrieval": {
+          "mean_pp": 0.99241097489784,
+          "deltas_pp": [
+            0.3502626970227671,
+            0.8756567425569177,
+            1.7513134851138354
+          ],
+          "gained_occurrences": 43,
+          "lost_occurrences": 26,
+          "nominal_t95": [
+            -0.765824232888437,
+            2.7506461826841173
+          ]
+        },
+        "uniform__random_uniform": {
+          "mean_pp": 4.086398131932283,
+          "deltas_pp": [
+            3.327495621716287,
+            3.852889667250438,
+            5.078809106830122
+          ],
+          "gained_occurrences": 72,
+          "lost_occurrences": 2,
+          "nominal_t95": [
+            1.8538929379074691,
+            6.318903325957097
+          ]
+        }
+      },
+      "selected_class_counts": {
+        "channel": {
+          "1": 297,
+          "0": 35
+        },
+        "random_channel": {
+          "1": 297,
+          "0": 35
+        },
+        "random_joint": {
+          "0": 191,
+          "1": 141
+        },
+        "uniform": {
+          "1": 299,
+          "0": 33
+        },
+        "random_uniform": {
+          "1": 299,
+          "0": 33
+        }
+      },
+      "primary_pass": true,
+      "beats_uniform": true,
+      "preflight": {
+        "status": "completed",
+        "mode": "preflight",
+        "dataset": "gossipcop",
+        "counters": {
+          "physical_builds": 52,
+          "teacher_forwards": 24,
+          "teacher_contexts": 80,
+          "backward_calls": 8,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "checks": [
+          {
+            "seed": 0,
+            "group": 839,
+            "pool_sizes": {
+              "0": 1617,
+              "1": 810
+            },
+            "sequence_error": 2.384185791015625e-07,
+            "logit_error": 1.430511474609375e-06,
+            "channel_gradients": [
+              {
+                "channel": 0,
+                "norm": 0.07986055314540863,
+                "directional_numeric": 0.07990001887083054,
+                "directional_autograd": 0.07986060529947281
+              },
+              {
+                "channel": 1,
+                "norm": 0.10823073238134384,
+                "directional_numeric": 0.10839103907346725,
+                "directional_autograd": 0.10823077708482742
+              }
+            ]
+          },
+          {
+            "seed": 0,
+            "group": 835,
+            "pool_sizes": {
+              "0": 3616,
+              "1": 1489
+            },
+            "sequence_error": 1.7881393432617188e-07,
+            "logit_error": 1.9073486328125e-06,
+            "channel_gradients": [
+              {
+                "channel": 0,
+                "norm": 0.10096961259841919,
+                "directional_numeric": 0.10102986544370651,
+                "directional_autograd": 0.10096961259841919
+              },
+              {
+                "channel": 1,
+                "norm": 0.5609914660453796,
+                "directional_numeric": 0.5631148815155029,
+                "directional_autograd": 0.560991644859314
+              }
+            ]
+          },
+          {
+            "seed": 1,
+            "group": 839,
+            "pool_sizes": {
+              "0": 1617,
+              "1": 810
+            },
+            "sequence_error": 1.7881393432617188e-07,
+            "logit_error": 1.430511474609375e-06,
+            "channel_gradients": [
+              {
+                "channel": 0,
+                "norm": 0.07988906651735306,
+                "directional_numeric": 0.07990001887083054,
+                "directional_autograd": 0.07988909631967545
+              },
+              {
+                "channel": 1,
+                "norm": 0.11394453793764114,
+                "directional_numeric": 0.1138150617480278,
+                "directional_autograd": 0.11394459009170532
+              }
+            ]
+          },
+          {
+            "seed": 1,
+            "group": 835,
+            "pool_sizes": {
+              "0": 3616,
+              "1": 1489
+            },
+            "sequence_error": 1.7881393432617188e-07,
+            "logit_error": 7.152557373046875e-07,
+            "channel_gradients": [
+              {
+                "channel": 0,
+                "norm": 0.07506174594163895,
+                "directional_numeric": 0.07507205009460449,
+                "directional_autograd": 0.07506173849105835
+              },
+              {
+                "channel": 1,
+                "norm": 0.7578931450843811,
+                "directional_numeric": 0.757872998714447,
+                "directional_autograd": 0.7578932642936707
+              }
+            ]
+          }
+        ],
+        "wall_seconds": 59.34351980709471,
+        "process_cpu_seconds": 118.867849951
+      },
+      "selection": {
+        "status": "completed",
+        "mode": "selection",
+        "dataset": "gossipcop",
+        "counters": {
+          "physical_builds": 2975,
+          "teacher_forwards": 1572,
+          "teacher_contexts": 30116,
+          "backward_calls": 332,
+          "algebraic_pool_scores": 2032273,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "seal_sha256": "215f0f74966e5d22428b716e19224aa527d5791b742c16faee2eee4f1913573a",
+        "wall_seconds": 2848.218323730165,
+        "process_cpu_seconds": 6393.195863129
+      },
+      "evaluation": {
+        "status": "completed",
+        "mode": "evaluation",
+        "dataset": "gossipcop",
+        "counters": {
+          "physical_builds": 0,
+          "teacher_forwards": 0,
+          "teacher_contexts": 0,
+          "backward_calls": 0,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 1920,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "rows": 1920,
+        "wall_seconds": 24.61969435098581,
+        "process_cpu_seconds": 46.410456289
+      }
+    },
+    "yelpchi": {
+      "means": {
+        "native": 29.130434782608695,
+        "single_neural": 29.130434782608695,
+        "rewriter": 29.130434782608695,
+        "benign_retrieval": 29.130434782608695,
+        "benign_random": 29.130434782608695,
+        "channel": 34.78260869565217,
+        "random_channel": 30.579710144927535,
+        "random_joint": 29.27536231884058,
+        "uniform": 32.89855072463768,
+        "random_uniform": 30.144927536231883
+      },
+      "metrics": [
+        {
+          "seed": 0,
+          "arm": "native",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 0,
+          "arm": "single_neural",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 877
+        },
+        {
+          "seed": 0,
+          "arm": "rewriter",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1716
+        },
+        {
+          "seed": 0,
+          "arm": "benign_retrieval",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1750
+        },
+        {
+          "seed": 0,
+          "arm": "benign_random",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1750
+        },
+        {
+          "seed": 0,
+          "arm": "channel",
+          "wrong": 80,
+          "occurrences": 230,
+          "MR": 34.78260869565217,
+          "exchanged_edges": 1748
+        },
+        {
+          "seed": 0,
+          "arm": "random_channel",
+          "wrong": 70,
+          "occurrences": 230,
+          "MR": 30.434782608695652,
+          "exchanged_edges": 1748
+        },
+        {
+          "seed": 0,
+          "arm": "random_joint",
+          "wrong": 68,
+          "occurrences": 230,
+          "MR": 29.565217391304348,
+          "exchanged_edges": 1748
+        },
+        {
+          "seed": 0,
+          "arm": "uniform",
+          "wrong": 76,
+          "occurrences": 230,
+          "MR": 33.04347826086956,
+          "exchanged_edges": 1750
+        },
+        {
+          "seed": 0,
+          "arm": "random_uniform",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1750
+        },
+        {
+          "seed": 1,
+          "arm": "native",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 1,
+          "arm": "single_neural",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 847
+        },
+        {
+          "seed": 1,
+          "arm": "rewriter",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1617
+        },
+        {
+          "seed": 1,
+          "arm": "benign_retrieval",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1729
+        },
+        {
+          "seed": 1,
+          "arm": "benign_random",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1729
+        },
+        {
+          "seed": 1,
+          "arm": "channel",
+          "wrong": 80,
+          "occurrences": 230,
+          "MR": 34.78260869565217,
+          "exchanged_edges": 1730
+        },
+        {
+          "seed": 1,
+          "arm": "random_channel",
+          "wrong": 70,
+          "occurrences": 230,
+          "MR": 30.434782608695652,
+          "exchanged_edges": 1730
+        },
+        {
+          "seed": 1,
+          "arm": "random_joint",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1730
+        },
+        {
+          "seed": 1,
+          "arm": "uniform",
+          "wrong": 77,
+          "occurrences": 230,
+          "MR": 33.47826086956522,
+          "exchanged_edges": 1739
+        },
+        {
+          "seed": 1,
+          "arm": "random_uniform",
+          "wrong": 72,
+          "occurrences": 230,
+          "MR": 31.304347826086957,
+          "exchanged_edges": 1739
+        },
+        {
+          "seed": 2,
+          "arm": "native",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 0
+        },
+        {
+          "seed": 2,
+          "arm": "single_neural",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 883
+        },
+        {
+          "seed": 2,
+          "arm": "rewriter",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1616
+        },
+        {
+          "seed": 2,
+          "arm": "benign_retrieval",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1749
+        },
+        {
+          "seed": 2,
+          "arm": "benign_random",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1749
+        },
+        {
+          "seed": 2,
+          "arm": "channel",
+          "wrong": 80,
+          "occurrences": 230,
+          "MR": 34.78260869565217,
+          "exchanged_edges": 1752
+        },
+        {
+          "seed": 2,
+          "arm": "random_channel",
+          "wrong": 71,
+          "occurrences": 230,
+          "MR": 30.869565217391305,
+          "exchanged_edges": 1752
+        },
+        {
+          "seed": 2,
+          "arm": "random_joint",
+          "wrong": 67,
+          "occurrences": 230,
+          "MR": 29.130434782608695,
+          "exchanged_edges": 1752
+        },
+        {
+          "seed": 2,
+          "arm": "uniform",
+          "wrong": 74,
+          "occurrences": 230,
+          "MR": 32.17391304347826,
+          "exchanged_edges": 1746
+        },
+        {
+          "seed": 2,
+          "arm": "random_uniform",
+          "wrong": 69,
+          "occurrences": 230,
+          "MR": 30.0,
+          "exchanged_edges": 1746
+        }
+      ],
+      "contrasts": {
+        "channel__native": {
+          "mean_pp": 5.6521739130434785,
+          "deltas_pp": [
+            5.6521739130434785,
+            5.6521739130434785,
+            5.6521739130434785
+          ],
+          "gained_occurrences": 39,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            5.6521739130434785,
+            5.6521739130434785
+          ]
+        },
+        "channel__single_neural": {
+          "mean_pp": 5.6521739130434785,
+          "deltas_pp": [
+            5.6521739130434785,
+            5.6521739130434785,
+            5.6521739130434785
+          ],
+          "gained_occurrences": 39,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            5.6521739130434785,
+            5.6521739130434785
+          ]
+        },
+        "channel__rewriter": {
+          "mean_pp": 5.6521739130434785,
+          "deltas_pp": [
+            5.6521739130434785,
+            5.6521739130434785,
+            5.6521739130434785
+          ],
+          "gained_occurrences": 39,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            5.6521739130434785,
+            5.6521739130434785
+          ]
+        },
+        "channel__benign_retrieval": {
+          "mean_pp": 5.6521739130434785,
+          "deltas_pp": [
+            5.6521739130434785,
+            5.6521739130434785,
+            5.6521739130434785
+          ],
+          "gained_occurrences": 39,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            5.6521739130434785,
+            5.6521739130434785
+          ]
+        },
+        "channel__random_channel": {
+          "mean_pp": 4.202898550724638,
+          "deltas_pp": [
+            4.3478260869565215,
+            4.3478260869565215,
+            3.9130434782608696
+          ],
+          "gained_occurrences": 29,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            3.579325691317207,
+            4.8264714101320685
+          ]
+        },
+        "channel__random_joint": {
+          "mean_pp": 5.507246376811595,
+          "deltas_pp": [
+            5.217391304347826,
+            5.6521739130434785,
+            5.6521739130434785
+          ],
+          "gained_occurrences": 38,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            4.883673517404163,
+            6.130819236219026
+          ]
+        },
+        "channel__uniform": {
+          "mean_pp": 1.8840579710144927,
+          "deltas_pp": [
+            1.7391304347826086,
+            1.3043478260869565,
+            2.608695652173913
+          ],
+          "gained_occurrences": 14,
+          "lost_occurrences": 1,
+          "nominal_t95": [
+            0.23423926069298617,
+            3.5338766813359994
+          ]
+        },
+        "uniform__native": {
+          "mean_pp": 3.7681159420289854,
+          "deltas_pp": [
+            3.9130434782608696,
+            4.3478260869565215,
+            3.0434782608695654
+          ],
+          "gained_occurrences": 26,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            2.118297231707479,
+            5.417934652350492
+          ]
+        },
+        "uniform__single_neural": {
+          "mean_pp": 3.7681159420289854,
+          "deltas_pp": [
+            3.9130434782608696,
+            4.3478260869565215,
+            3.0434782608695654
+          ],
+          "gained_occurrences": 26,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            2.118297231707479,
+            5.417934652350492
+          ]
+        },
+        "uniform__rewriter": {
+          "mean_pp": 3.7681159420289854,
+          "deltas_pp": [
+            3.9130434782608696,
+            4.3478260869565215,
+            3.0434782608695654
+          ],
+          "gained_occurrences": 26,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            2.118297231707479,
+            5.417934652350492
+          ]
+        },
+        "uniform__benign_retrieval": {
+          "mean_pp": 3.7681159420289854,
+          "deltas_pp": [
+            3.9130434782608696,
+            4.3478260869565215,
+            3.0434782608695654
+          ],
+          "gained_occurrences": 26,
+          "lost_occurrences": 0,
+          "nominal_t95": [
+            2.118297231707479,
+            5.417934652350492
+          ]
+        },
+        "uniform__random_uniform": {
+          "mean_pp": 2.753623188405797,
+          "deltas_pp": [
+            3.9130434782608696,
+            2.1739130434782608,
+            2.1739130434782608
+          ],
+          "gained_occurrences": 20,
+          "lost_occurrences": 1,
+          "nominal_t95": [
+            0.25933175077607196,
+            5.247914626035522
+          ]
+        }
+      },
+      "selected_class_counts": {
+        "channel": {
+          "1": 381,
+          "0": 3
+        },
+        "random_channel": {
+          "1": 381,
+          "0": 3
+        },
+        "random_joint": {
+          "0": 319,
+          "1": 65
+        },
+        "uniform": {
+          "1": 377,
+          "0": 7
+        },
+        "random_uniform": {
+          "1": 377,
+          "0": 7
+        }
+      },
+      "primary_pass": true,
+      "beats_uniform": true,
+      "preflight": {
+        "status": "completed",
+        "mode": "preflight",
+        "dataset": "yelpchi",
+        "counters": {
+          "physical_builds": 52,
+          "teacher_forwards": 24,
+          "teacher_contexts": 80,
+          "backward_calls": 8,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "checks": [
+          {
+            "seed": 0,
+            "group": 282,
+            "pool_sizes": {
+              "0": 15295,
+              "1": 2635
+            },
+            "sequence_error": 1.1920928955078125e-07,
+            "logit_error": 7.152557373046875e-07,
+            "channel_gradients": [
+              {
+                "channel": 0,
+                "norm": 0.10907741636037827,
+                "directional_numeric": 0.11152028292417526,
+                "directional_autograd": 0.10907741636037827
+              },
+              {
+                "channel": 1,
+                "norm": 0.36859169602394104,
+                "directional_numeric": 0.36865469813346863,
+                "directional_autograd": 0.36859166622161865
+              }
+            ]
+          },
+          {
+            "seed": 0,
+            "group": 195,
+            "pool_sizes": {
+              "0": 15648,
+              "1": 2651
+            },
+            "sequence_error": 1.1920928955078125e-07,
+            "logit_error": 1.430511474609375e-06,
+            "channel_gradients": [
+              {
+                "channel": 0,
+                "norm": 0.00035759576712734997,
+                "directional_numeric": 0.000327825517160818,
+                "directional_autograd": 0.0003575957380235195
+              },
+              {
+                "channel": 1,
+                "norm": 0.0003163653309457004,
+                "directional_numeric": 0.0003576278395485133,
+                "directional_autograd": 0.0003163653309457004
+              }
+            ]
+          },
+          {
+            "seed": 1,
+            "group": 282,
+            "pool_sizes": {
+              "0": 15295,
+              "1": 2635
+            },
+            "sequence_error": 1.1920928955078125e-07,
+            "logit_error": 5.960464477539062e-07,
+            "channel_gradients": [
+              {
+                "channel": 0,
+                "norm": 0.10907741636037827,
+                "directional_numeric": 0.11152028292417526,
+                "directional_autograd": 0.10907741636037827
+              },
+              {
+                "channel": 1,
+                "norm": 0.36859169602394104,
+                "directional_numeric": 0.36865469813346863,
+                "directional_autograd": 0.36859166622161865
+              }
+            ]
+          },
+          {
+            "seed": 1,
+            "group": 195,
+            "pool_sizes": {
+              "0": 15648,
+              "1": 2651
+            },
+            "sequence_error": 1.1920928955078125e-07,
+            "logit_error": 1.430511474609375e-06,
+            "channel_gradients": [
+              {
+                "channel": 0,
+                "norm": 0.00035792766720987856,
+                "directional_numeric": 0.0003874301619362086,
+                "directional_autograd": 0.00035792766720987856
+              },
+              {
+                "channel": 1,
+                "norm": 0.0003166298847645521,
+                "directional_numeric": 0.0003874301619362086,
+                "directional_autograd": 0.0003166298847645521
+              }
+            ]
+          }
+        ],
+        "wall_seconds": 52.15918197017163,
+        "process_cpu_seconds": 113.131756372
+      },
+      "selection": {
+        "status": "completed",
+        "mode": "selection",
+        "dataset": "yelpchi",
+        "counters": {
+          "physical_builds": 3378,
+          "teacher_forwards": 1728,
+          "teacher_contexts": 34944,
+          "backward_calls": 384,
+          "algebraic_pool_scores": 17068101,
+          "official_GAGA_VALID": 0,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "seal_sha256": "56da6cce3799a0f5827aff74d7c289ef48e69f32abac73b8a597ebd18f872eaf",
+        "wall_seconds": 3049.2298040881287,
+        "process_cpu_seconds": 7104.202306809
+      },
+      "evaluation": {
+        "status": "completed",
+        "mode": "evaluation",
+        "dataset": "yelpchi",
+        "counters": {
+          "physical_builds": 0,
+          "teacher_forwards": 0,
+          "teacher_contexts": 0,
+          "backward_calls": 0,
+          "algebraic_pool_scores": 0,
+          "official_GAGA_VALID": 1920,
+          "upstream_generations": 0,
+          "updates": 0,
+          "TEST_queries": 0,
+          "API_calls": 0
+        },
+        "GPU_hours": 0,
+        "rows": 1920,
+        "wall_seconds": 14.07315450697206,
+        "process_cpu_seconds": 31.786412606
+      }
+    }
+  },
+  "both_datasets_pass": true,
+  "root_authored_audit": {
+    "checks": 31224,
+    "model_forwards": 0,
+    "tensor_loads": true,
+    "independent_or_human_review": false,
+    "wall_seconds": 5.029402989894152,
+    "process_cpu_seconds": 6.512728577
+  },
+  "protocol_sha256": "d3a7875ff443c96277fd8518825749ba46b5580d313b622c5f8d64f78baad247",
+  "limitations": [
+    "This is adaptive development after a null YelpChi result, on reused cohorts; not untouched confirmation.",
+    "All target membership/order/features and injected features/physical degrees/budgets remain fixed. Known TRAIN labels may guide endpoint eligibility; no VALID/TEST endpoint labels or victim feedback select actions.",
+    "The endpoint pool expands from TRAIN-benign to TRAIN-benign plus TRAIN-fraud. This changes the downstream candidate setting and must be reported, although the original attack already knows TRAIN labels.",
+    "GAGA has label-grouped relation tokens. Type-aware search borrows the general typed-message idea of HGT and discrete derivative ranking of HotFlip; neither is claimed as a new theorem, HGT implementation or first novelty.",
+    "Same-class random conditions on selected donor slots and endpoint classes, isolating within-class endpoint choice. Joint random samples the full legal union, matching slots/dose but not class frequencies. Uniform shortlist searches both classes with the same per-step verification width, without derivative ranking.",
+    "Search has twice the per-region shortlist opportunities of the prior benign-only study. Same physical budget is not equal computation. Uniform search controls the new per-step verification count; STOP may change total work.",
+    "Both datasets seal before either new official scoring. Fixed TRAIN parity covers both classes and mixed two-substitution combinations; all final new/random graphs are physically checked.",
+    "One fixed author upstream and own teacher per dataset, three correlated capture repetitions. No new upstream/teacher training/API/GPU/TEST. Root authorship is not independent or human review."
+  ]
+}
