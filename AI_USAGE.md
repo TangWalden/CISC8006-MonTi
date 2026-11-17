@@ -302,6 +302,15 @@ did not demonstrate useful overall acceleration. It used 0.0188359131 GPU hours,
 unchanged. The initial launcher parse failure, exact checks and small-sample
 timing limitation are retained in results/channel_gpu and the private record.
 
+On 17 November 2026, the root agent prepared the owner-requested CaPGuard-style
+complete-results presentation as editable PowerPoint and Bento HTML. Public
+notes were translated into English; local Chinese-note copies remain separate.
+The agent checked local Bento playback, editing and saved-copy reopening,
+retained numerical sources, and added planned duties in grading order.
+No new scientific experiments occurred. Automated format checks and planned
+duties are not human review, rehearsal or verified personal contributions.
+Native PowerPoint application review remains pending.
+
 Earlier positive, negative and failed experiments remain in the
 [immutable archive](docs/ARCHIVE.md). Full raw-output review and genuine human
 verification remain distinct from these automated checks.

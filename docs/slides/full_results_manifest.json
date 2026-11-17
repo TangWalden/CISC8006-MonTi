@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-17",
+  "slides": 15,
+  "charts": 3,
+  "tables": 5,
+  "source_commit": "4518a08159ea3fb9301289a054388b8f4427c92d",
+  "changes": "English public speaker notes and planned presenters; slide bodies and scientific results retained. Local Chinese-note copies are unchanged.",
+  "verification": "Local Bento offline playback, text editing and downloaded-copy reopening passed. Zero Bento validation errors or warnings before note translation. PPTX slide-body bytes retained; native PowerPoint application/human rehearsal remains unverified.",
+  "files": {
+    "MonTi_Full_Results.bento.html": "24f1731e446dd7bb3993dee7921b6c0cbe34ada0e44b051bca74b3995be1437c",
+    "MonTi_Full_Results.pptx": "76ca2a08a2e9c34031908fc979a25d35639f8db8243bfce172e83440393e20dd"
+  }
+}

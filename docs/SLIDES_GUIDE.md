@@ -1,4 +1,39 @@
-# MonTi with two construction roles
+# Current presentation: complete two-dataset results
+
+Updated 17 November 2026. Fifteen slides: twelve main and three backup slides.
+
+- [Download editable PowerPoint](slides/MonTi_Full_Results.pptx).
+- [Download standalone Bento HTML](slides/MonTi_Full_Results.bento.html)
+  (use GitHub's **Download raw file**, then open in Edge or Chrome).
+- [Results and limitations](../results/channel_full/),
+  [file checksums](slides/full_results_manifest.json).
+- [Responsibilities in grading order](../CONTRIBUTIONS.md#responsibilities-in-grading-order).
+
+The current deck covers the fixed author upstream, two-channel local correction,
+both fair random controls, complete results, negative cases and course requirements.
+Current-minus-same-class-random gains are **5.0341 pp on GossipCop** and
+**4.7353 pp on YelpChi**. Higher MR means a stronger attack. Historical TEST
+exposure, conditional repeats, correlated targets and extra teacher compute
+remain disclosed. The original reproduction remains inconclusive.
+
+| Planned order | Speaker | Slides and purpose |
+|---|---|---|
+| 1 | Junyi Tang | 1-6: problem, motivation, method and fair controls. Prepare backup 15 on reproduction and execution. |
+| 2 | Yifan Fan | 7-12: results, case gains/losses, contribution, limitations and conclusion. Prepare backup 14 on development ablations. |
+| 3 | Both | Backup 13: grading evidence and missing requirements; individual technical questions. |
+
+This is a plan, not verified contribution, rehearsal or a course timing rule.
+The Bento file includes editable objects, English notes, sources and embedded
+fonts, without collaboration credentials. Offline playback, text editing and
+reopening a saved copy were tested. Use Save/Save a copy to keep edits.
+The PowerPoint retains editable objects and notes; native PowerPoint application
+checks and human review remain outstanding. Local Chinese-note copies remain
+separate. The design follows the owner-supplied CaPGuard reference and Bento shell.
+
+## Historical staged-method deck (not current results)
+
+The remaining text describes the earlier development artifact only. Its pending
+TEST wording is preserved as historical context and does not describe current status.
 
 > The downloadable deck is a dated development draft. The now-completed
 > [formal TEST](../results/final_staged/) failed its improvement criterion;

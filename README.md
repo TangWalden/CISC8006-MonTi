@@ -58,7 +58,8 @@ null/negative attempts are retained in the supplementary index.
 | Results, controls and provenance | [Full TEST](results/channel_full/), [development](results/channel_retrieval/) |
 | Setup and historical reproduction | [Reproducing](docs/REPRODUCING.md) |
 | Other studies and operational checks | [Supplementary index](docs/SUPPLEMENTARY_STUDIES.md), [GPU timing check](results/channel_gpu/) |
-| Dated report and slides | [Report](docs/STAGED_REPORT.md), [slides](docs/SLIDES_GUIDE.md) - predate these results |
+| Current slides and planned presentation | [PowerPoint](docs/slides/MonTi_Full_Results.pptx), [editable Bento HTML](docs/slides/MonTi_Full_Results.bento.html), [guide](docs/SLIDES_GUIDE.md) |
+| Report draft | [Dated report](docs/STAGED_REPORT.md) - still needs the latest result addendum |
 | AI assistance and actual human contributions | [AI use](AI_USAGE.md), [contributions](CONTRIBUTIONS.md) |
 
 Compact source/results are public; large models, graph cards and raw logs stay

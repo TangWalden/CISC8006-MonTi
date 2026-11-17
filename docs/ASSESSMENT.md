@@ -8,8 +8,9 @@ predeclared mean criterion. Current-minus-native gains are
 current-minus-same-class-random gains are +5.0341/+4.7353 pp.
 All original TEST groups and all three conditional repeats were retained.
 The earlier reproduction, nulls and failures are not replaced. Earlier GossipCop
-TEST exposure limits confirmation. Dated report/slides still need the latest
-result addendum and genuine human review before submission.
+TEST exposure limits confirmation. The [current slides](SLIDES_GUIDE.md) include
+the latest complete results. The dated report still needs the result addendum;
+both artifacts require genuine human review before submission.
 
 | Component | Points | Available evidence | Remaining completion item |
 |---|---:|---|---|
@@ -18,8 +19,8 @@ result addendum and genuine human review before submission.
 | Pilot implementation and audit readiness | 10 | [Historical functional tests](../tests/), [current preflight and 192,372-check saved audit](../results/channel_full/), [development ablations](../results/channel_retrieval/) | Complete the human live code/configuration review. Automated audits are root-authored, not independent implementation/human review. |
 | Final reproduction and difference analysis | 20 | [Six-run reproduction](../evidence/reproduction_summary.json), [paper/setup comparison](REPRODUCING.md#claim-and-paper-comparison) | The frozen reproduction conclusion is inconclusive; incorporate the team's verified explanation in the final submission. |
 | Improvement experiments and ablations | 20 | [Frozen complete two-dataset study](../results/channel_full/), [development ablations](../results/channel_retrieval/), [earlier complete benchmark](../results/portal_full/), [all attempts](SUPPLEMENTARY_STUDIES.md) | The new method is fixed and completely evaluated; instructor approval of required pilots/scope remains unrecorded. No untouched-confirmation claim. |
-| Repository, report and agent record | 15 | [Latest complete result addendum](../results/channel_full/), [dated report draft](STAGED_REPORT.md), [PDF](MonTi_Staged_Report.pdf), [setup/source](REPRODUCING.md), [AI use](../AI_USAGE.md) | Incorporate the latest addendum into final report/slides; human review, packaging and owner-confirmed freeze tag. |
-| Presentation and demonstration | 5 | [Bento and PowerPoint draft with speaking notes](SLIDES_GUIDE.md), [historical demo preparation](ARCHIVE.md) | Incorporate positive and negative complete studies; final demonstration, human application checks, rehearsal and presentation. |
+| Repository, report and agent record | 15 | [Latest complete result addendum](../results/channel_full/), [dated report draft](STAGED_REPORT.md), [PDF](MonTi_Staged_Report.pdf), [setup/source](REPRODUCING.md), [AI use](../AI_USAGE.md) | Incorporate the latest addendum into the final report; human review, packaging and owner-confirmed freeze tag. |
+| Presentation and demonstration | 5 | [Current Bento and PowerPoint with speaking notes](SLIDES_GUIDE.md), [historical demo preparation](ARCHIVE.md) | Final demonstration, human application checks, rehearsal and presentation. |
 | Individual technical defense | 10 | [Method explanation](METHOD.md), [report](STAGED_REPORT.md) | Each member must personally explain and defend the work. |
 | Individual contribution | 5 | [Contribution record](../CONTRIBUTIONS.md) | Members confirm actual work and supporting evidence. |
 | **Total** | **100** | **85 team + 15 individual** | **Evidence availability is not a self-awarded mark.** |
