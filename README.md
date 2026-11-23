@@ -59,6 +59,7 @@ null/negative attempts are retained in the supplementary index.
 | Setup and historical reproduction | [Reproducing](docs/REPRODUCING.md) |
 | Other studies and operational checks | [Supplementary index](docs/SUPPLEMENTARY_STUDIES.md), [GPU timing check](results/channel_gpu/) |
 | Current slides and planned presentation | [PowerPoint](docs/slides/MonTi_Full_Results.pptx), [editable Bento HTML](docs/slides/MonTi_Full_Results.bento.html), [guide](docs/SLIDES_GUIDE.md) |
+| Junyi's eight-minute experiments section | [PowerPoint](docs/slides/MonTi_Experiments_Junyi.pptx), [editable Bento HTML](docs/slides/MonTi_Experiments_Junyi.bento.html). Slide 7 follows the same nine YelpChi reviews under both edits. |
 | Report draft | [Dated report](docs/STAGED_REPORT.md) - still needs the latest result addendum |
 | AI assistance and actual human contributions | [AI use](AI_USAGE.md), [contributions](CONTRIBUTIONS.md) |
 
