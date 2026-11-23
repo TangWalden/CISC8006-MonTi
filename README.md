@@ -25,7 +25,9 @@ over same-class random, **+5.0341 / +4.7353 pp**.
   fixed author and teacher checkpoints; repeated target identities are correlated.
 - Parameters and cohorts were fixed before this test. Both datasets' actions
   were sealed before either official evaluation. No test-driven retuning occurred.
-- GossipCop TEST has historical exposure; it is not an untouched holdout.
+- Earlier studies also evaluated the GossipCop test groups. The final study
+  used saved predictions after scoring to illustrate both gains and losses.
+  [Evaluation order and case selection](results/channel_full/#evaluation-order-and-case-selection).
   [Development scores](results/channel_retrieval/) use different groups and
   must not be subtracted from these full-test rates.
 

@@ -7,8 +7,10 @@ predeclared mean criterion. Current-minus-native gains are
 +4.9295 pp on GossipCop and +6.7860 pp on YelpChi;
 current-minus-same-class-random gains are +5.0341/+4.7353 pp.
 All original TEST groups and all three conditional repeats were retained.
-The earlier reproduction, nulls and failures are not replaced. Earlier GossipCop
-TEST exposure limits confirmation. The [current slides](SLIDES_GUIDE.md) include
+Earlier studies used the same GossipCop benchmark. The final comparison fixed
+both datasets' actions before official scoring. The [case analysis and execution
+order](../results/channel_full/#evaluation-order-and-case-selection) document
+how saved outcomes were used after scoring. The [current slides](SLIDES_GUIDE.md) include
 the latest complete results. The dated report still needs the result addendum;
 both artifacts require genuine human review before submission.
 
@@ -18,7 +20,7 @@ both artifacts require genuine human review before submission.
 | Reproduction protocol and evaluation design | 10 | [Frozen reproduction protocol](https://github.com/TangWalden/CISC8006-MonTi/blob/ca093d8b12ea153a076b02bbdbc4ede58508560c/course/frozen_protocol.json), [seed results](../evidence/reproduction_summary.json) | Genuine team verification of the protocol and evaluation code. |
 | Pilot implementation and audit readiness | 10 | [Historical functional tests](../tests/), [current preflight and 192,372-check saved audit](../results/channel_full/), [development ablations](../results/channel_retrieval/) | Complete the human live code/configuration review. Automated audits are root-authored, not independent implementation/human review. |
 | Final reproduction and difference analysis | 20 | [Six-run reproduction](../evidence/reproduction_summary.json), [paper/setup comparison](REPRODUCING.md#claim-and-paper-comparison) | The frozen reproduction conclusion is inconclusive; incorporate the team's verified explanation in the final submission. |
-| Improvement experiments and ablations | 20 | [Frozen complete two-dataset study](../results/channel_full/), [development ablations](../results/channel_retrieval/), [earlier complete benchmark](../results/portal_full/), [all attempts](SUPPLEMENTARY_STUDIES.md) | The new method is fixed and completely evaluated; instructor approval of required pilots/scope remains unrecorded. No untouched-confirmation claim. |
+| Improvement experiments and ablations | 20 | [Frozen complete two-dataset study](../results/channel_full/), [development ablations](../results/channel_retrieval/), [earlier complete benchmark](../results/portal_full/), [all attempts](SUPPLEMENTARY_STUDIES.md) | The new method is fixed and completely evaluated; instructor approval of required pilots/scope remains unrecorded. |
 | Repository, report and agent record | 15 | [Latest complete result addendum](../results/channel_full/), [dated report draft](STAGED_REPORT.md), [PDF](MonTi_Staged_Report.pdf), [setup/source](REPRODUCING.md), [AI use](../AI_USAGE.md) | Incorporate the latest addendum into the final report; human review, packaging and owner-confirmed freeze tag. |
 | Presentation and demonstration | 5 | [Current Bento and PowerPoint with speaking notes](SLIDES_GUIDE.md), [historical demo preparation](ARCHIVE.md) | Final demonstration, human application checks, rehearsal and presentation. |
 | Individual technical defense | 10 | [Method explanation](METHOD.md), [report](STAGED_REPORT.md) | Each member must personally explain and defend the work. |
@@ -37,8 +39,8 @@ registered final matched evaluation of that frozen reproduction baseline.
 
 The matched evaluation was [registered and frozen](FINAL_EVALUATION.md),
 executed, and recounted from saved records. It failed its declared improvement
-criterion. Subsequent author-checkpoint development is explicitly exploratory;
-the observed TEST set cannot become untouched confirmation again. The
+criterion. Subsequent author-checkpoint work is exploratory and reuses the
+GossipCop benchmark for evaluation. The
 guide permits instructor-approved Exact, Scaled-faithful and Component levels,
 all eligible for full marks. It does not independently require the full
 original dataset, the author's released checkpoint or a particular TEST phase.

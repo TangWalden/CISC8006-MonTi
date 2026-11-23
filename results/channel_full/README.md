@@ -54,9 +54,24 @@ Every repetition beats native and both random controls in both datasets.
 YelpChi native/channel error counts happen to be identical across the three
 repeats; their zero-width conditional interval is not zero population or
 generalization uncertainty.
-GossipCop TEST has prior historical exposure and is not an untouched holdout.
+Earlier studies evaluated the same GossipCop test groups. This limits claims
+about generalization to a newly collected or previously unseen cohort.
 The [saved-only paired details](paired_details.json) include positive and negative
 outcome-selected examples for explanation, never for retuning.
+
+## Evaluation order and case selection
+
+1. **Before final scoring.** The [registered protocol](protocol_summary.json)
+   identifies the development-selected method, fixed weights, controls, settings
+   and complete cohorts. Candidate classes came from known TRAIN labels.
+2. **During evaluation.** The independent teacher selected the graph edits.
+   Both datasets' choices were sealed before official GAGA scoring began.
+   Official TEST predictions therefore could not guide those choices.
+   The [execution record](execution.json) lists the selection, scoring and audit phases.
+3. **After scoring.** The [paired analysis](paired_details.json) used saved
+   outputs to explain cases where the method gained or lost misses. These
+   illustrations did not change the method, parameters or evaluation list.
+   Every group contributes to the reported result.
 
 For illustration, GossipCop group 1785 has 35 targets and changes from 17
 native misses to 24 in each repeat. YelpChi group 1287 has nine targets and

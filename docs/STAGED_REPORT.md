@@ -1,5 +1,8 @@
 # MonTi with Staged Role Division
 
+For the later two-dataset study, see the [final evaluation order and case
+selection](../results/channel_full/#evaluation-order-and-case-selection).
+
 > Draft status, updated 13 November: the text and dated PDF below describe
 > the earlier development study. The [completed formal TEST](../results/final_staged/)
 > failed the registered improvement criterion. The [author-checkpoint local

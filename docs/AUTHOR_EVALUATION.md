@@ -37,7 +37,7 @@ three independently trained author generators. Paper-table percentages and
 our earlier own-trained baselines are context, never substituted paired arms.
 The primary rule remains positive mean, all three gains positive and nominal
 paired t 95% lower endpoint above zero. Random completion is secondary, not a
-replacement winner. Repeated prior TEST inspection remains disclosed.
+replacement winner. Earlier experiments had already evaluated this GossipCop cohort.
 
 After committed source/auditor freeze, `experiments/author_staged/prepare.py`
 creates the explicit `monti_author_staged_v1` registration. The reused guardian

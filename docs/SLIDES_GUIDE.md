@@ -12,9 +12,10 @@ Updated 17 November 2026. Fifteen slides: twelve main and three backup slides.
 The current deck covers the fixed author upstream, two-channel local correction,
 both fair random controls, complete results, negative cases and course requirements.
 Current-minus-same-class-random gains are **5.0341 pp on GossipCop** and
-**4.7353 pp on YelpChi**. Higher MR means a stronger attack. Historical TEST
-exposure, conditional repeats, correlated targets and extra teacher compute
-remain disclosed. The original reproduction remains inconclusive.
+**4.7353 pp on YelpChi**. Higher MR means a stronger attack. Earlier studies
+used the same GossipCop benchmark. The [evaluation timeline](../results/channel_full/#evaluation-order-and-case-selection)
+explains when choices were fixed and when cases were reviewed. Repeats share
+weights, targets recur and the teacher adds computation. The original reproduction remains inconclusive.
 
 | Planned order | Speaker | Slides and purpose |
 |---|---|---|

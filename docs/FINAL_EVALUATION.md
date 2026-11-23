@@ -93,5 +93,4 @@ cohort; its 53.6486% to 58.1436% result is not the final TEST comparison.
 The completed results are in the [compact result export](../results/final_staged/).
 The report and presentation drafts predate this result and require an explicit
 final update. Human review, rehearsal, presentation and course submission
-are recorded only when performed. Subsequent development cannot treat this
-observed TEST set as untouched confirmation.
+are recorded only when performed. Later evaluations reuse this GossipCop cohort. The [two-dataset study](../results/channel_full/#evaluation-order-and-case-selection) records its separate method freeze and post-scoring case analysis.

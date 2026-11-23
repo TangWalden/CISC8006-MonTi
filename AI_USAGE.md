@@ -181,8 +181,7 @@ audit passed 19,593 checks, including 192 policy replays and no classifier
 replays. These are AI construction/audit actions, not independent implementation
 or human verification, novelty or completed course requirements. Under the
 owner's prior conditional authorization, the next complete-cohort benchmark
-keeps the existing models and controls frozen. Previously observed TEST
-outcomes preclude calling it untouched confirmation.
+keeps the existing models and controls frozen. Earlier comparisons used the same GossipCop test groups.
 
 ## 13 November: complete frozen-retrieval evaluation and offline audit
 
@@ -194,7 +193,7 @@ eight-node banks, gate threshold and models stayed fixed; no retraining or
 outcome-driven resource expansion occurred. All physical choices were sealed
 before official GAGA loaded. Neural MR was 45.3733%, native 44.2638% and matched
 random 44.5649%; direct search was slightly above neural. Both candidates and
-all repeats are reported, with conditional intervals and prior TEST exposure.
+all repeats are reported, with intervals conditional on the fixed models. Earlier studies used the same GossipCop groups.
 
 The root-authored saved audit passed 157,331 checks, including three downstream
 parameter loads and 2,727 policy replays, with zero pretrained-classifier

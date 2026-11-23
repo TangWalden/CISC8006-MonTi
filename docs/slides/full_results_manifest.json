@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-23",
   "slides": 15,
   "charts": 3,
   "tables": 5,
   "source_commit": "4518a08159ea3fb9301289a054388b8f4427c92d",
-  "changes": "English public speaker notes and planned presenters; slide bodies and scientific results retained. Local Chinese-note copies are unchanged.",
+  "changes": "Clarified GossipCop cohort reuse, the final pre-scoring freeze and the timing of the illustrative case analysis on slides 7 and 11 (body or speaker notes).",
   "verification": "Local Bento offline playback, text editing and downloaded-copy reopening passed. Zero Bento validation errors or warnings before note translation. PPTX slide-body bytes retained; native PowerPoint application/human rehearsal remains unverified.",
   "files": {
-    "MonTi_Full_Results.bento.html": "24f1731e446dd7bb3993dee7921b6c0cbe34ada0e44b051bca74b3995be1437c",
-    "MonTi_Full_Results.pptx": "76ca2a08a2e9c34031908fc979a25d35639f8db8243bfce172e83440393e20dd"
+    "MonTi_Full_Results.bento.html": "0bd3b13ab84f07b92c7070dccd9644f94124be527722ae3e9f080fd9e30c95bd",
+    "MonTi_Full_Results.pptx": "a94c245c8b858a32c825dac32680b83fb42d343c8b55c672e2c2852b9f9d9db7"
   }
 }
